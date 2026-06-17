@@ -1,0 +1,44 @@
+{
+  "name": "nicechunk",
+  "version": "0.1.63",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "locales": "node scripts/update-locales.mjs",
+    "generate:global-config": "node scripts/generate-global-config.ts",
+    "initialize:global-config": "node scripts/initialize-global-config.ts",
+    "core:derive-pdas": "node scripts/derive-pdas.ts",
+    "core:init": "node scripts/init-global-config.ts",
+    "core:verify": "node scripts/verify-global-config.ts",
+    "player:init": "node scripts/init-player.ts",
+    "chunk:record-block-change": "node scripts/record-block-change.ts",
+    "chunk:mine-block": "node scripts/mine-block.ts",
+    "chunk:verify-generated-block": "node scripts/verify-generated-block.ts",
+    "guardian:init-registry": "node scripts/init-guardian-registry.ts",
+    "guardian:register": "node scripts/register-guardian.ts",
+    "guardian:list": "node scripts/list-guardians.ts",
+    "guardian:proof": "node scripts/submit-guardian-proof.ts",
+    "test:core": "node --loader ts-node/esm node_modules/mocha/bin/mocha -t 1000000 tests/**/*.ts",
+    "prebuild": "npm run locales",
+    "build": "vite build",
+    "build:nginx": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.14",
+    "bs58": "^4.0.1",
+    "three": "^0.165.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.9.3",
+    "mocha": "^11.7.6",
+    "playwright": "^1.60.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "vite": "^5.4.19"
+  }
+}

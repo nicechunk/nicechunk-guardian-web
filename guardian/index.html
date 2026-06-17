@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0e12" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=0.1.53" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=0.1.53" />
+    <link rel="shortcut icon" href="/favicon.ico?v=0.1.53" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=0.1.53" />
+    <link rel="manifest" href="/site.webmanifest?v=0.1.53" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta
+      name="description"
+      content="NiceChunk Guardian Network Console for non-custodial region access nodes on Solana devnet."
+    />
+    <title data-i18n="guardian.meta.title">NiceChunk Guardian Network Console</title>
+  </head>
+  <body>
+    <div class="guardian-bg" aria-hidden="true">
+      <div class="grid-field"></div>
+      <div class="scanline-field"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand-mark" href="/" aria-label="NiceChunk">
+        <img src="/media/nck.png" alt="" />
+        <span>NICECHUNK</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="guardian.nav.aria">
+        <div class="nav-links">
+          <a href="/" data-i18n="guardian.nav.home">Home</a>
+          <a href="/roadmap/" data-i18n="guardian.nav.roadbook">Roadbook</a>
+          <a href="/world_rule/" data-i18n="guardian.nav.worldRules">World Rules</a>
+          <a href="/resource_rule/" data-i18n="guardian.nav.resources">Resources</a>
+          <a href="/elements/" data-i18n="guardian.nav.elements">Elements</a>
+          <a href="/fairness/" data-i18n="guardian.nav.fairness">Fairness</a>
+          <a href="/proof-of-frontier/" data-i18n="guardian.nav.proofOfFrontier">Proof</a>
+          <a class="active" href="/guardian/" data-i18n="guardian.nav.guardians">Guardians</a>
+          <a href="/docs/" data-i18n="guardian.nav.docs">Docs</a>
+        </div>
+        <div class="nav-actions">
+          <a class="header-action" href="/play/" data-i18n="guardian.nav.enterWorld">Enter World</a>
+          <div data-i18n-language-menu></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="guardian-shell">
+      <section class="guardian-hero" aria-labelledby="guardianTitle">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="guardian.hero.eyebrow">Watcher access layer</p>
+          <h1 id="guardianTitle" data-i18n="guardian.hero.title">Guardian Network Console</h1>
+          <p data-i18n="guardian.hero.body">
+            Register a non-custodial Guardian to keep a region reachable, synchronize realtime chunk activity, and support local game services.
+            Stable Guardians can earn NCK from future regional resource taxes and trading taxes while never holding player assets or signing for users.
+          </p>
+        </div>
+        <div class="guardian-visual" aria-label="Guardian network model" data-i18n-aria-label="guardian.visual.aria">
+          <div class="region-plane">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="guardian-core">
+            <i></i>
+            <strong data-i18n="guardian.visual.core">GUARDIAN</strong>
+          </div>
+          <div class="network-ring ring-a"></div>
+          <div class="network-ring ring-b"></div>
+        </div>
+        <div class="hero-metrics" aria-label="Guardian registry status" data-i18n-aria-label="guardian.hero.metricsAria">
+          <article>
+            <span data-i18n="guardian.metrics.network">Network</span>
+            <strong data-i18n="guardian.metrics.networkValue">Devnet-01</strong>
+          </article>
+          <article>
+            <span data-i18n="guardian.metrics.stake">Registration Payment</span>
+            <strong data-i18n="guardian.metrics.stakeValue">100,000 NCK</strong>
+          </article>
+          <article>
+            <span data-i18n="guardian.metrics.region">Coverage</span>
+            <strong data-i18n="guardian.metrics.regionValue">100 x 100 Chunks</strong>
+          </article>
+          <article>
+            <span data-i18n="guardian.metrics.contract">Contract</span>
+            <div class="chain-address-row">
+              <a
+                id="programExplorerLink"
+                class="chain-address-link"
+                href="https://explorer.solana.com/address/6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE?cluster=devnet"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria-label="guardian.metrics.viewContract"
+              >6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE</a>
+              <a
+                id="programExplorerIcon"
+                class="inspect-link"
+                href="https://explorer.solana.com/address/6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE?cluster=devnet"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria-label="guardian.metrics.viewContract"
+              ><span aria-hidden="true"></span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guardian-actions" aria-label="Guardian actions" data-i18n-aria-label="guardian.hero.actionsAria">
+        <button id="connectWallet" class="primary-action" type="button" data-i18n="guardian.wallet.connect">Connect Wallet</button>
+        <button id="openRegister" class="secondary-action" type="button" data-i18n="guardian.wallet.register">Register Guardian</button>
+        <span id="walletStatus" class="status-pill" data-i18n="guardian.wallet.disconnected">Disconnected</span>
+      </section>
+
+      <section class="guardian-grid">
+        <article id="registerNode" class="panel register-panel registration-modal" role="dialog" aria-modal="true" aria-labelledby="registerTitle" hidden>
+          <div class="panel-heading modal-heading">
+            <p class="eyebrow" data-i18n="guardian.register.eyebrow">Register</p>
+            <h2 id="registerTitle" data-i18n="guardian.register.title">Register Node</h2>
+            <p data-i18n="guardian.register.body">
+              Publish an endpoint for a 100 x 100 chunk service region. The 100,000 NCK registration payment goes to the treasury and is not withdrawn from this registry.
+            </p>
+            <button id="closeRegister" class="secondary-action close-dialog" type="button" data-i18n="guardian.form.close">Close</button>
+          </div>
+          <form id="guardianForm" class="guardian-form">
+            <div class="field-grid">
+              <label>
+                <span data-i18n="guardian.form.chunkX">Chunk X</span>
+                <input id="chunkX" name="chunkX" type="number" step="1" value="0" />
+              </label>
+              <label>
+                <span data-i18n="guardian.form.chunkY">Chunk Y</span>
+                <input id="chunkY" name="chunkY" type="number" step="1" value="0" />
+              </label>
+            </div>
+            <label>
+              <span data-i18n="guardian.form.connection">Connection Endpoint</span>
+              <input id="connection" name="connection" type="text" inputmode="url" autocomplete="off" data-i18n-placeholder="guardian.form.connectionPlaceholder" placeholder="wss://101.32.242.209:8080" />
+            </label>
+            <div class="region-preview">
+              <span data-i18n="guardian.form.regionPreview">Region</span>
+              <strong id="regionPreview">0, 0</strong>
+            </div>
+            <button class="primary-action submit-action" type="submit" data-i18n="guardian.form.submit">Register and Send 100,000 NCK</button>
+          </form>
+          <p id="formStatus" class="status-line" data-i18n="guardian.status.ready">Ready.</p>
+        </article>
+
+        <article id="activeGuardians" class="panel list-panel">
+          <div class="panel-heading list-heading">
+            <div>
+              <p class="eyebrow" data-i18n="guardian.list.eyebrow">Registry</p>
+              <h2 data-i18n="guardian.list.title">Active Guardians</h2>
+            </div>
+            <div class="view-actions">
+              <button id="listView" class="secondary-action active" type="button" data-i18n="guardian.list.listView">List View</button>
+              <button id="mapView" class="secondary-action" type="button" data-i18n="guardian.list.mapView">Map View</button>
+              <button id="refreshGuardians" class="secondary-action" type="button" data-i18n="guardian.list.refresh">Refresh</button>
+            </div>
+          </div>
+          <div id="registryStatus" class="registry-status" data-i18n="guardian.list.loading">Loading registry...</div>
+          <div id="guardianList" class="guardian-list"></div>
+          <div id="guardianMap" class="guardian-map" hidden>
+            <canvas id="guardianMapCanvas" class="guardian-map-canvas"></canvas>
+          </div>
+        </article>
+      </section>
+
+      <section class="boundary-grid" aria-label="Guardian role boundaries" data-i18n-aria-label="guardian.boundaries.aria">
+        <article class="boundary-card">
+          <span>01</span>
+          <h2 data-i18n="guardian.boundaries.access.title">Access Layer</h2>
+          <p data-i18n="guardian.boundaries.access.body">Guardians keep regional endpoints reachable so clients can discover and communicate with nearby chunk services.</p>
+        </article>
+        <article class="boundary-card">
+          <span>02</span>
+          <h2 data-i18n="guardian.boundaries.realtime.title">Realtime Transport</h2>
+          <p data-i18n="guardian.boundaries.realtime.body">They support live coordination for region activity without replacing wallet signatures or on-chain settlement.</p>
+        </article>
+        <article class="boundary-card">
+          <span>03</span>
+          <h2 data-i18n="guardian.boundaries.nonCustodial.title">Non-Custodial Flow</h2>
+          <p data-i18n="guardian.boundaries.nonCustodial.body">Guardians never custody player assets, sign for users, or process Solana transactions on a player's behalf.</p>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="./guardian.js"></script>
+  </body>
+</html>
