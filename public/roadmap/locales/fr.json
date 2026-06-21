@@ -1,0 +1,404 @@
+{
+  "_meta": {
+    "language": "fr",
+    "label": "French",
+    "version": "roadmap-locale-fr-be9c00befb142577",
+    "contentHash": "be9c00befb142577"
+  },
+  "siteFooter": {
+    "tagline": "Un protocole de monde voxel seedé sur Solana.",
+    "navigationAria": "Navigation du pied de page",
+    "socialAria": "Liens sociaux de NiceChunk",
+    "home": "Accueil",
+    "play": "Entrer dans le monde",
+    "roadmap": "Roadbook",
+    "docs": "Docs",
+    "guardian": "Gardiens",
+    "contracts": "Contrats",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. Tous droits réservés."
+  },
+  "meta": {
+    "title": "NiceChunk Roadbook | Feuille de route et plan d'avenir",
+    "description": "NiceChunk Roadbook : un plan d'avenir transparent pour un monde de voxels ensemencés alimenté par Solana, un gameplay alpha, des règles publiques, l'exploitation minière, la forge, l'utilitaire NCK et le futur réseau Guardian."
+  },
+  "nav": {
+    "aria": "Navigation principale",
+    "home": "Accueil",
+    "roadbook": "Carnet de route",
+    "worldRules": "Règles mondiales",
+    "resources": "Ressources",
+    "elements": "Éléments",
+    "fairness": "Équité",
+    "proofOfFrontier": "Preuve",
+    "docs": "Doc",
+    "enterWorld": "Entrer dans le monde / Enregistrer",
+    "guardians": "Gardiens"
+  },
+  "language": {
+    "aria": "Langue"
+  },
+  "hero": {
+    "eyebrow": "Carnet de route NiceChunk",
+    "title": "Roadbook pour un monde de voxels appartenant aux joueurs.",
+    "subtitle": "NiceChunk passe de la conception de forme longue à la préparation du lancement : un monde de voxels ensemencés, des règles publiques, un gameplay de navigateur, des fondations de ressources, une identité wallet et un futur réseau Guardian construit autour d'un état de jeu vérifiable.",
+    "body": "Ce guide est écrit pour les joueurs, les constructeurs, les guildes, les créateurs et les partenaires de l'écosystème qui veulent une vision claire de ce qui est en direct, de ce qui est préparé et des risques qui sont gérés ouvertement.",
+    "enterWorld": "Entrer dans le monde / Enregistrer",
+    "viewRoadmap": "Voir le Roadbook",
+    "readRules": "Lire les règles mondiales",
+    "statusAria": "Statut du Roadbook",
+    "badges": [
+      "3 ans de conception",
+      "Alpha Client en direct",
+      "Règles publiques en ligne",
+      "Préparation à la Genèse"
+    ],
+    "readout": {
+      "label": "Construction actuelle",
+      "value": "Préparation du lancement"
+    },
+    "signals": [
+      {
+        "label": "avec moteur mondial",
+        "value": "chunks ensemencée"
+      },
+      {
+        "label": "3. Base de ressources.",
+        "value": "118 éléments"
+      },
+      {
+        "label": "Direction de la chaîne",
+        "value": "État vérifiable"
+      },
+      {
+        "label": "Couche réseau",
+        "value": "Guardians prévu"
+      }
+    ]
+  },
+  "credibility": {
+    "aria": "Statistiques de crédibilité",
+    "stats": [
+      {
+        "label": "cote prise pour base des calculs",
+        "value": "3 ans",
+        "description": "Conception du monde, du gameplay, des ressources et de l'économie avant le lancement public."
+      },
+      {
+        "label": "Stade actuel",
+        "value": "Prép. Lancement /",
+        "description": "Le site Web, le client alpha, les règles publiques, l'atlas des ressources et les systèmes linguistiques sont en cours de préparation ensemble."
+      },
+      {
+        "label": "Horizon de planification",
+        "value": "24 mois",
+        "description": "Couvre l'accès à la genèse, les saisons, les boucles de ressources, Guardians, la gouvernance et l'expansion de l'écosystème."
+      },
+      {
+        "label": "PRINCIPE DE BASE",
+        "value": "Jeu d'abord",
+        "description": "La blockchain existe pour soutenir la propriété, la vérification et la coordination, et non pour remplacer le gameplay."
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Chemin d'exécution",
+    "title": "Du client alpha à une économie de voxels ouverte.",
+    "body": "Les jalons à court terme sont écrits autour du travail produit concret. Les jalons à long terme sont intentionnellement définis comme planifiés ou exploratoires, car les protocoles mondiaux doivent s'adapter aux acteurs, aux examens de sécurité, aux contraintes de la chaîne et à la réglementation.",
+    "goalsLabel": "Objectifs",
+    "deliverablesLabel": "Produits livrables"
+  },
+  "phases": [
+    {
+      "phase": "Phase 0",
+      "title": "Fondation terminée",
+      "period": "3 dernières années / Terminé",
+      "confidence": 90,
+      "status": "terminé",
+      "statusLabel": "Terminé",
+      "summary": "NiceChunk a traversé une longue période de conception couvrant la logique mondiale, les actions des joueurs, les fondations des ressources, la direction de l'économie et la structure du site Web public.",
+      "goals": [
+        "Définissez un monde de voxels axé sur le jeu plutôt qu'un emballage de jetons à court terme.",
+        "Construisez les bases de chunks, de l'exploitation minière, de la forge, de l'identité des joueurs et des règles de ressources.",
+        "Préparez une surface publique où les règles peuvent être inspectées avant que les systèmes ne se déplacent sur la chaîne."
+      ],
+      "deliverables": [
+        "Démonstrations du moteur de terrain ensemencé et de la génération chunk.",
+        "Identité du portefeuille et flux de configuration du lecteur.",
+        "Éléments et blocage de la direction de l'atlas des ressources.",
+        "Équité publique, documentation et pages de règles mondiales."
+      ]
+    },
+    {
+      "phase": "Phase 1",
+      "title": "Préparation du lancement",
+      "period": "ÉTAPE ACTUELLE",
+      "confidence": 85,
+      "status": "actuel",
+      "statusLabel": "Créer un scénario",
+      "summary": "Le travail actuel est axé sur la confiance avant l'expansion : chargement stable du client, documentation claire, pages de règles publiques, examen de la sécurité et messagerie de genèse crédible.",
+      "goals": [
+        "Rendez le site Web compréhensible en quelques secondes tout en préservant la profondeur technique.",
+        "Transformez les règles mondiales, les ressources, les éléments et le langage du risque en pages publiques.",
+        "Préparez des points d'entrée alpha pour les joueurs sans trop revendiquer la décentralisation."
+      ],
+      "deliverables": [
+        "Page du livre de route et feuille de route transparente.",
+        "Règles mondiales, règles de ressources, éléments, documents et pages d'équité.",
+        "Améliorations de la progression de la connexion et du chargement du jeu.",
+        "Notes de conception du stockage de la chaîne et préparation de la revue de sécurité."
+      ]
+    },
+    {
+      "phase": "Phase 2",
+      "title": "Genèse alpha",
+      "period": "Lancement + 0-60 jours",
+      "confidence": 80,
+      "status": "planifié",
+      "statusLabel": "Planifié",
+      "summary": "Genesis devrait ouvrir la première vraie boucle de joueur : entrer dans le monde, explorer chunks, miner des blocs, forger des outils et prouver que les règles peuvent survivre au trafic des utilisateurs.",
+      "goals": [
+        "Faites entrer les premiers joueurs dans le monde du navigateur et collectez des données comportementales réelles.",
+        "Valider l'exploitation minière, le mouvement, l'inventaire et le forgeage dans des conditions alpha.",
+        "Séparez les fonctionnalités en direct des fonctionnalités planifiées de la chaîne avec un libellé clair."
+      ],
+      "deliverables": [
+        "Identité Genesis et couche de profil précoce.",
+        "Saison 0 tâches alpha et boucle de rétroaction.",
+        "Surveillance de base des anti-bots et des abus.",
+        "Journal des modifications public et processus de réponse aux problèmes."
+      ]
+    },
+    {
+      "phase": "Phase 3",
+      "title": "Boucle d'extraction et de forgeage",
+      "period": "Après lancement / 2-6 mois",
+      "confidence": 75,
+      "status": "planifié",
+      "statusLabel": "Planifié",
+      "summary": "Le projet passe d'un aperçu jouable à une boucle de jeu reproductible avec des ressources, la durabilité de l'outil, la logique matérielle, les décisions de forgeage et la progression du joueur.",
+      "goals": [
+        "Donnez un sens à l'interaction des blocs grâce aux ressources et aux conséquences de l'artisanat.",
+        "Connectez le fond de teint à 118 éléments avec la composition du bloc et le bilan matière.",
+        "Créez des éviers, des réparations, des mises à niveau et des limites avant d'étendre l'offre d'actifs."
+      ],
+      "deliverables": [
+        "Plages de découverte et de composition des ressources.",
+        "Forgeage des mises à niveau du banc et des règles de l'outil.",
+        "Boucles de durabilité, de réparation et de consommation de matériaux.",
+        "Rapports de réglage saisonnier pour la santé économique."
+      ]
+    },
+    {
+      "phase": "Phase 4",
+      "title": "NCK économie ET marché",
+      "period": "Après lancement / 6-12 mois",
+      "confidence": 70,
+      "status": "planifié",
+      "statusLabel": "Planifié",
+      "summary": "L'utilitaire NCK ne devrait prendre en charge l'accès au gameplay, la création d'actifs, le règlement et la direction de la gouvernance que lorsque les boucles de jeu peuvent justifier le poids économique.",
+      "goals": [
+        "Utilisez NCK autour des services publics, du règlement, de la participation et de la gouvernance future plutôt que des promesses de prix.",
+        "Déplacez les actions économiques et d'état de jeu sélectionnées vers des enregistrements de chaîne vérifiables.",
+        "Concevez des règles de marché autour des actifs des joueurs, des frais, des risques et de la prévention des abus."
+      ],
+      "deliverables": [
+        "Règles d'accès Genesis et d'utilité NCK.",
+        "Spécification de règlement du marché.",
+        "Métadonnées des actifs et limites de l'état de la chaîne.",
+        "Divulgation des risques, politique d'autorisation et procédures de surveillance."
+      ]
+    },
+    {
+      "phase": "Phase 5",
+      "title": "Réseau et gouvernance Guardian",
+      "period": "Long terme / 12-24 mois",
+      "confidence": 65,
+      "status": "à long terme",
+      "statusLabel": "Longue durée",
+      "summary": "Guardians sont prévus comme couche d'accès pour les régions actives. Ils doivent aider les régions à rester joignables et à soutenir la communication sans garder les actifs ni traiter les transactions des joueurs.",
+      "goals": [
+        "Testez les nœuds d'accès aux régions sans leur donner le contrôle des ressources des utilisateurs.",
+        "Ouvrir plus de paramètres mondiaux à un examen transparent et à une gouvernance limitée.",
+        "Soutenez les créateurs, les guildes, les API, les événements et la participation à long terme de la communauté."
+      ],
+      "deliverables": [
+        "Spécification de nœud Guardian et modèle de disponibilité de région.",
+        "Infrastructures de communication et d'activité de la région.",
+        "Version des paramètres mondiaux et des propositions de gouvernance.",
+        "Programmes de partenariat avec les créateurs, les guildes et les écosystèmes."
+      ]
+    }
+  ],
+  "current": {
+    "eyebrow": "Créer un scénario",
+    "title": "Stade actuel : préparation du lancement.",
+    "body": "Le projet a dépassé le travail conceptuel abstrait. La priorité actuelle est le renforcement de la confiance avant la genèse : qualité alpha du client, pages de règles publiques, examen de la sécurité, infrastructure linguistique, définitions des ressources et divulgation claire des risques.",
+    "panelLabel": "Liste de contrôle de l'état de préparation au lancement",
+    "checklist": [
+      "Faites en sorte que le site Web public explique NiceChunk en quelques secondes.",
+      "Gardez le gameplay alpha, l'identité wallet et les flux de chargement stables.",
+      "Publier des pages de génération mondiale, de ressources, d'éléments et d'équité.",
+      "Documenter la direction de stockage chunk et les compromis de compression PDA.",
+      "Préparer des tests de contrats intelligents, des limites d'autorisation et un processus d'examen.",
+      "Gardez un langage de risque explicite : pas de promesse de profit, pas de promesse de rachat, pas de récompenses fixes."
+    ]
+  },
+  "future": {
+    "eyebrow": "Plan pour l&apos;avenir",
+    "title": "Qu'est-ce qui fait que le monde vaut la peine d'y retourner.",
+    "items": [
+      {
+        "title": "Contenu mondial saisonnier",
+        "body": "De nouveaux biomes, des événements de ressources, des objectifs d'objets forgés, des jalons d'exploration et des mises à jour de règles du monde qui incitent les joueurs à revenir pour le jeu."
+      },
+      {
+        "title": "Boucles d'actifs saines",
+        "body": "Production contrôlée, consommation significative, durabilité des outils, réparation, mises à niveau, décisions de forgeage et puits de ressources avant l'expansion à grande échelle des actifs."
+      },
+      {
+        "title": "Guilde et couche sociale",
+        "body": "Activité régionale, objectifs de groupe, exploration partagée, classements, communication et future coordination locale soutenue par Guardian."
+      },
+      {
+        "title": "Participation du créateur",
+        "body": "Guides, flux, vidéos, outils communautaires, recherche de ressources, découvertes de cartes et explications publiques qui facilitent l'entrée dans le monde."
+      },
+      {
+        "title": "Opérations transparentes",
+        "body": "Règles publiques, mises à jour de version, notes d'incident, examens de sécurité, politique anti-bot et communication mensuelle sur les progrès."
+      },
+      {
+        "title": "Protocole monde ouvert",
+        "body": "API, état vérifiable, direction de la gouvernance, réseau Guardian et outils à long terme pour un monde de voxels appartenant aux joueurs."
+      }
+    ]
+  },
+  "trust": {
+    "eyebrow": "Architecture Zero Trust",
+    "title": "La confiance vient de règles visibles, pas de slogans.",
+    "body": "NiceChunk doit être jugé en fonction de ce que les joueurs peuvent inspecter : la génération mondiale, les fondations de ressources, les limites wallet, les règles d'action, la direction du stockage en chaîne et les limites de ce qui est en direct aujourd'hui.",
+    "items": [
+      {
+        "title": "Règles du monde public",
+        "body": "La génération de terrain, les aperçus chunk, la logique du biome, l'eau, les montagnes, les signaux de ressources et les règles de bloc sont publiés pour inspection."
+      },
+      {
+        "title": "Semences vérifiables",
+        "body": "Les Chunks sont générés à partir de graines et de coordonnées afin que les mêmes entrées publiques puissent reconstruire le même monde sous un ensemble de règles versionnées."
+      },
+      {
+        "title": "Limites du portefeuille",
+        "body": "Les joueurs interagissent directement avec Solana wallets. Le projet doit clairement séparer l'intention du joueur signée de la logique de prévisualisation réservée au client."
+      },
+      {
+        "title": "Guardians sans garde",
+        "body": "Guardians est prévu pour aider les régions à rester joignables et à communiquer ; elles ne doivent pas conserver les actifs ou traiter les transactions des joueurs."
+      },
+      {
+        "title": "Divulgation du risque",
+        "body": "Le projet évite les récompenses garanties, les demandes de rachat, les promesses de prix et le cadrage des investissements. La participation comporte des risques."
+      },
+      {
+        "title": "Mises à jour versionnées",
+        "body": "Les fichiers de langue, les configurations mondiales, les documents publics et les futures règles de protocole doivent être versionnés afin que les joueurs puissent voir quand les hypothèses changent."
+      }
+    ]
+  },
+  "confidence": {
+    "eyebrow": "Confiance en la planification",
+    "title": "Le travail à court terme est plus certain. Les systèmes à long terme restent adaptatifs.",
+    "items": [
+      {
+        "stage": "Fondation terminée",
+        "confidence": 90,
+        "reason": "La conception de base, la direction du site Web, le client alpha et les surfaces de règles publiques existent déjà."
+      },
+      {
+        "stage": "Préparation du lancement",
+        "confidence": 85,
+        "reason": "Le travail actuel est concret : pages, qualité du client, infrastructure linguistique et préparation à la sécurité."
+      },
+      {
+        "stage": "Genèse alpha",
+        "confidence": 80,
+        "reason": "Dépend des retours de test, de la fiabilité du flux wallet, des premiers joueurs et des contrôles des abus."
+      },
+      {
+        "stage": "Boucle d'extraction et de forgeage",
+        "confidence": 75,
+        "reason": "Dépend de l'équilibre des ressources, du réglage des matériaux, des boucles de durabilité et de la rétention des joueurs."
+      },
+      {
+        "stage": "NCK économie ET marché",
+        "confidence": 70,
+        "reason": "Dépend de l'examen de la sécurité, des contraintes de la chaîne, des règles relatives aux actifs, de la conformité et de la demande réelle."
+      },
+      {
+        "stage": "Réseau et gouvernance Guardian",
+        "confidence": 65,
+        "reason": "Les systèmes à long terme dépendent des incitations des nœuds, de l'activité régionale, de l'infrastructure et de la maturité de la gouvernance."
+      }
+    ]
+  },
+  "security": {
+    "eyebrow": "Sécurité & Conformité",
+    "title": "Jeu d'abord, transparent et attentif aux promesses.",
+    "body": "Les jeux Web3 gagnent la confiance en expédiant des systèmes jouables, en publiant des règles, en protégeant les joueurs et en évitant les promesses financières. NiceChunk traite les actifs numériques comme des extensions d'état de jeu et d'identité, et non comme des produits à rendement garanti.",
+    "items": [
+      "Tests de contrats intelligents et préparation de la revue de sécurité.",
+      "Limites claires pour les signatures wallet, l'état du client et l'état de la chaîne.",
+      "Autorisations clés conçues pour la révision, la surveillance et le futur contrôle multisig.",
+      "Surveillance du comportement anti-bot, anormal de la frappe, du transfert et du marché.",
+      "Contrat d'utilisation, politique de confidentialité et divulgation des risques avant un lancement plus large.",
+      "Pas de promesse de profit, pas de promesse de rachat, pas de promesse de récompense fixe."
+    ],
+    "notice": "La valeur des actifs numériques peut fluctuer. NiceChunk ne promet pas de bénéfices, de rachats, de récompenses fixes ou d'appréciation des actifs. Les utilisateurs doivent évaluer le risque de participation en fonction de leur propre juridiction."
+  },
+  "risks": {
+    "eyebrow": "Risques et réponses",
+    "title": "Les risques sont plus clairs lorsqu'ils sont notés.",
+    "responseLabel": "La réaction",
+    "items": [
+      {
+        "risk": "Faible rétention",
+        "impact": "Les joueurs peuvent partir après la première exploration.",
+        "response": "Testez les mouvements de noyau, l'exploitation minière et le forgeage avant d'étendre l'émission d'actifs."
+      },
+      {
+        "risk": "Inflation des ressources",
+        "impact": "Les matériaux peuvent perdre leur sens si la production augmente trop rapidement.",
+        "response": "Utilisez la rareté, la durabilité, la réparation, les coûts de forgeage et le réglage saisonnier."
+      },
+      {
+        "risk": "Agriculture de robots",
+        "impact": "Les récompenses et les données peuvent être déformées.",
+        "response": "Utilisez les limites de comportement, la réputation wallet, les contrôles de taux et l'examen manuel."
+      },
+      {
+        "risk": "Bugs contractuels",
+        "impact": "Les actifs et la confiance peuvent être endommagés.",
+        "response": "Exécuter des tests, des audits, une surveillance, des contrôles d'urgence et un déploiement limité."
+      },
+      {
+        "risk": "Changements de conformité",
+        "impact": "Certaines fonctionnalités ou régions peuvent nécessiter un ajustement.",
+        "response": "Évitez le langage d'investissement, publiez des avis de risque et conservez des fonctionnalités modulaires."
+      },
+      {
+        "risk": "Instabilité des marchés",
+        "impact": "Les cycles externes peuvent affecter l'attention et le financement.",
+        "response": "Réduisez la dépendance à la spéculation et concentrez-vous sur les acteurs et le contenu réels."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Étape de la genèse",
+    "title": "Aidez à façonner la première ère jouable de NiceChunk.",
+    "body": "Les premiers joueurs, constructeurs, créateurs, guildes et partenaires d'infrastructure peuvent aider à tester la boucle mondiale, à améliorer les règles et à rendre le protocole public plus facile à comprendre.",
+    "connect": "Connecter le portefeuille",
+    "docs": "Lire la doc",
+    "fairness": "Modèle d'équité"
+  }
+}

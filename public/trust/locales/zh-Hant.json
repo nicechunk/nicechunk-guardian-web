@@ -1,0 +1,1850 @@
+{
+  "_meta": {
+    "language": "zh-Hant",
+    "label": "Traditional Chinese",
+    "version": "trust-locale-zh-Hant-d2387a77ab721a0d",
+    "contentHash": "d2387a77ab721a0d"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的種子體素世界協議。",
+    "navigationAria": "頁腳導航",
+    "socialAria": "NiceChunk 社交連結",
+    "home": "首頁",
+    "play": "進入世界",
+    "roadmap": "路書",
+    "docs": "文檔",
+    "guardian": "守護者",
+    "contracts": "合約",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有權利。"
+  },
+  "meta": {
+    "title": "NiceChunk 信任中心"
+  },
+  "nav": {
+    "aria": "主導航",
+    "home": "首頁",
+    "roadbook": "路書",
+    "worldRules": "世界規則",
+    "resources": "資源",
+    "ncm": "NCM",
+    "elements": "元素",
+    "fairness": "公平性",
+    "proofOfFrontier": "證明",
+    "guardians": "守護者",
+    "contracts": "合約",
+    "trust": "信任",
+    "docs": "文檔",
+    "enterWorld": "進入世界"
+  },
+  "language": {
+    "aria": "語言"
+  },
+  "hero": {
+    "eyebrow": "信任中心",
+    "title": "一個公開的體素世界，在要求信任之前，應該先能被檢查。",
+    "subtitle": "NiceChunk 面向玩家、審計者、工程師與投資人：讓大家看見 Chunk 如何生成、哪些內容上鏈、Guardian 做什麼、NCK 放在哪裡，以及哪些主張仍處於計畫階段。",
+    "contracts": "查看合約",
+    "fairness": "驗證公平性",
+    "docs": "閱讀文檔",
+    "badgesAria": "信任狀態",
+    "badges": {
+      "publicRules": "公開世界規則",
+      "walletOwned": "錢包擁有操作意圖",
+      "openContracts": "合約表面公開",
+      "noOverclaim": "不過度宣稱去中心化"
+    },
+    "readout": {
+      "label": "信任棧",
+      "value": "種子 -> 規則 -> 哈希 -> PDA -> 錢包"
+    }
+  },
+  "why": {
+    "eyebrow": "為什麼重要",
+    "title": "NiceChunk 不要求使用者相信黑箱。",
+    "body": "項目的價值來自一個可玩的體素世界，同時讓重要規則能被檢查、重放，並逐步移到可驗證的鏈上系統。"
+  },
+  "principles": [
+    {
+      "title": "遊戲優先，協議清晰",
+      "body": "世界首先要好玩。協議層的意義，是讓玩家和審查者能檢查狀態、資產和經濟行為。"
+    },
+    {
+      "title": "公開生成規則",
+      "body": "種子 Chunk、方塊資源、元素資料和世界規則演示，應該是公開遊戲規則，而不是隱藏的伺服器魔法。"
+    },
+    {
+      "title": "錢包擁有操作意圖",
+      "body": "玩家直接與 Solana 錢包互動。Guardian 可以協助區域保持可訪問，但不托管資產，也不處理玩家交易。"
+    },
+    {
+      "title": "不製造虛假確定性",
+      "body": "如果系統仍是 Alpha、計畫中、只在 devnet，或尚未完全去中心化，網站應該清楚標示。"
+    }
+  ],
+  "architecture": {
+    "eyebrow": "架構",
+    "title": "項目把遊戲速度和結算信任分開。",
+    "body": "瀏覽器遊戲需要快速本地渲染，區塊鏈遊戲需要公開承諾。NiceChunk 讓每一層的信任對象保持清晰。",
+    "layers": [
+      {
+        "title": "客戶端世界引擎",
+        "body": "瀏覽器負責渲染地形、角色、背包界面、方塊預覽和探索控制。",
+        "points": [
+          "快速本地渲染",
+          "種子地形預覽",
+          "使用者可見的載入與進度",
+          "不把渲染本身宣稱為最終結算"
+        ]
+      },
+      {
+        "title": "公開規則層",
+        "body": "世界生成、資源規則、元素組成和 NCM 資產壓縮，都以可檢查的規則系統方式記錄。",
+        "points": [
+          "世界規則頁面",
+          "資源圖鑑",
+          "118 個元素資料庫",
+          "NCM / NCM DNA 工具"
+        ]
+      },
+      {
+        "title": "Solana 程式層",
+        "body": "目前合約將玩家檔案、Chunk 狀態、背包資源、守護者註冊和全局配置分開處理。",
+        "points": [
+          "基於 PDA 的狀態",
+          "錢包簽名操作",
+          "Devnet 集成表面",
+          "合約頁面連結源碼"
+        ]
+      },
+      {
+        "title": "Guardian / Guardian 層",
+        "body": "Guardian 被設計為區域訪問和通訊基礎設施，而不是資產托管方。",
+        "points": [
+          "區域可達性",
+          "即時通訊",
+          "未來質押設計",
+          "明確的非托管邊界"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "eyebrow": "驗證模型",
+    "title": "信任來自公開輸入和可重複檢查。",
+    "body": "NiceChunk 應該被當作分層驗證系統來審查：確定性生成、明確狀態承諾、錢包簽名狀態轉移，以及仍有鏈下系統參與時的可見邊界。",
+    "labels": {
+      "reviewerCheck": "審查檢查",
+      "currentEvidence": "目前證據"
+    },
+    "steps": [
+      {
+        "title": "公開輸入域",
+        "body": "世界狀態從可檢查輸入開始：種子、Chunk 座標、算法版本、玩家錢包和被請求的動作。",
+        "check": "確認哪些值對使用者可見、哪些值被推導、哪些值由程式或服務提供。",
+        "evidence": "世界規則、公平性演示、合約 PDA seeds 和 SDK 調用點。"
+      },
+      {
+        "title": "確定性推導",
+        "body": "同一個種子和座標，在同一個規則版本下，應該復現同樣的地形和資源候選。",
+        "check": "用固定輸入重放生成過程，並比較輸出哈希或採樣方塊狀態。",
+        "evidence": "世界生成頁面、資源圖鑑、方塊圖鑑和生成器源碼模組。"
+      },
+      {
+        "title": "狀態承諾",
+        "body": "經濟狀態應該表示為緊湊帳戶狀態、哈希、座標或資產記錄，而不是不透明伺服器庫存。",
+        "check": "審查 PDA 布局、帳戶大小假設，以及哪些內容被儲存、哪些內容被重算。",
+        "evidence": "合約頁面、背包程式、Chunk 程式和儲存方案討論。"
+      },
+      {
+        "title": "錢包簽名轉移",
+        "body": "影響所有權或經濟狀態的玩家行為，應該由玩家錢包授權，而不是由托管後端靜默執行。",
+        "check": "對比 UI 動作、SDK 調用、指令參數、簽名帳戶和失敗處理。",
+        "evidence": "登入流程、SDK 文件、挖掘流程、背包購買和交易代碼路徑。"
+      },
+      {
+        "title": "獨立重放",
+        "body": "審查者應該能從公開規則、源碼和鏈上可見狀態，重建一個主張的重要部分。",
+        "check": "重算一個樣例 Chunk，檢查對應狀態變化，並記錄仍然存在的鏈下假設。",
+        "evidence": "公平性頁面、證明演示、合約、文檔和 Trust 邊界。"
+      }
+    ]
+  },
+  "evidence": {
+    "eyebrow": "證據地圖",
+    "title": "審查者今天可以檢查什麼。",
+    "body": "這裡指向具體表面：源碼模組、合約頁、生成演示和明確的限制。",
+    "items": [
+      {
+        "kind": "Contracts",
+        "title": "程式目錄和源碼樹",
+        "body": "檢查程式 ID、PDA seeds、指令表面、帳戶儲存、SDK 文件和目前 devnet 邊界。",
+        "cta": "打開合約",
+        "href": "/contracts/"
+      },
+      {
+        "kind": "Fairness",
+        "title": "Chunk 與挖掘驗證演示",
+        "body": "檢查種子 Chunk 生成和基於哈希的挖掘證明概念所使用的公開輸入模型。",
+        "cta": "打開公平性",
+        "href": "/fairness/"
+      },
+      {
+        "kind": "World Rules",
+        "title": "生成算法表面",
+        "body": "理解世界如何生成、為什麼種子 Chunk 重要，以及使用者如何瀏覽生成的地形。",
+        "cta": "打開世界規則",
+        "href": "/world_rule/"
+      },
+      {
+        "kind": "Resources",
+        "title": "方塊與元素規則詞彙",
+        "body": "查看未來挖掘、鍛造、材料和視覺基因所依賴的資源圖鑑與化學元素基礎庫。",
+        "cta": "打開資源",
+        "href": "/resource_rule/"
+      }
+    ]
+  },
+  "artifacts": {
+    "eyebrow": "源碼與製品地圖",
+    "title": "審查者應該能從主張走到源碼路徑。",
+    "body": "這張地圖索引了支撐 NiceChunk 信任敘事的目前代碼和資料表面。它不是正式審計報告，但能減少工程師直接檢查系統時的歧義。",
+    "groups": [
+      {
+        "status": "程式",
+        "title": "鏈上狀態域",
+        "body": "Solana 程式按職責拆分，方便審查者逐域檢查權限、儲存和失敗行為。",
+        "paths": [
+          {
+            "path": "programs/nicechunk_core/src/lib.rs",
+            "note": "全局配置和協議級控制表面。"
+          },
+          {
+            "path": "programs/nicechunk_player/src/lib.rs",
+            "note": "玩家檔案和錢包擁有的身份狀態。"
+          },
+          {
+            "path": "programs/nicechunk_chunk/src/lib.rs",
+            "note": "Chunk 狀態、方塊變更記錄和面向挖掘的狀態。"
+          },
+          {
+            "path": "programs/nicechunk_backpack/src/lib.rs",
+            "note": "獨立背包庫存記錄和容量規則。"
+          },
+          {
+            "path": "programs/nicechunk_guardian/src/lib.rs",
+            "note": "Guardian 註冊和可用性參與表面。"
+          },
+          {
+            "path": "programs/nicechunk_market/src/lib.rs",
+            "note": "市場掛單和購買程式表面。"
+          }
+        ]
+      },
+      {
+        "status": "客戶端",
+        "title": "世界生成和玩法表面",
+        "body": "瀏覽器客戶端包含目前 Alpha 體驗使用的世界生成、Chunk 渲染、方塊圖鑑和本地玩法狀態。",
+        "paths": [
+          {
+            "path": "src/world/generator.js",
+            "note": "種子地形和方塊推導邏輯。"
+          },
+          {
+            "path": "src/world/chunks.js",
+            "note": "Chunk 載入、生成邊界和客戶端 Chunk 狀態。"
+          },
+          {
+            "path": "src/world/blocks.js",
+            "note": "可玩世界使用的運行時方塊定義。"
+          },
+          {
+            "path": "src/data/blockAtlas.js",
+            "note": "資源方塊詞彙和視覺/材料元資料。"
+          }
+        ]
+      },
+      {
+        "status": "資源",
+        "title": "材料規則詞彙",
+        "body": "NiceChunk 的公開資源敘事依賴明確的方塊和元素資料，而不是隱藏資源表。",
+        "paths": [
+          {
+            "path": "src/data/elements.js",
+            "note": "118 個元素資源基礎，包含物理、遊戲、加工、親和和視覺基因資料。"
+          },
+          {
+            "path": "resource_rule/resource_rule.js",
+            "note": "資源規則頁面渲染器和方塊組成展示。"
+          },
+          {
+            "path": "elements/elements.js",
+            "note": "元素週期表和元素檔案渲染表面。"
+          }
+        ]
+      },
+      {
+        "status": "資產",
+        "title": "NCM 和緊湊體素資產",
+        "body": "項目正在把 NCM 發展為適合鏈上儲存和 RPC 獲取的緊湊文本體素資產格式。",
+        "paths": [
+          {
+            "path": "src/vox/ncm.js",
+            "note": "體素角色和資產工具使用的 NCM 編解碼運行時。"
+          },
+          {
+            "path": "scripts/vox-to-ncm.mjs",
+            "note": "導入體素資產的 VOX 轉 NCM 腳本。"
+          },
+          {
+            "path": "public/media/vox/*.ncm",
+            "note": "目前玩家設定中使用的緊湊角色資產樣例。"
+          }
+        ]
+      },
+      {
+        "status": "SDK",
+        "title": "錢包和合約集成",
+        "body": "SDK 層是審查者可以與鏈上指令表面對照的橋樑。",
+        "paths": [
+          {
+            "path": "sdk/nicechunk-core.ts",
+            "note": "全局配置和 core 程式客戶端輔助函數。"
+          },
+          {
+            "path": "sdk/nicechunk-player.ts",
+            "note": "玩家帳戶和設定客戶端輔助函數。"
+          },
+          {
+            "path": "sdk/nicechunk-chunk.ts",
+            "note": "Chunk 和挖掘指令客戶端輔助函數。"
+          },
+          {
+            "path": "sdk/nicechunk-backpack.ts",
+            "note": "背包購買、庫存和資源記錄客戶端輔助函數。"
+          },
+          {
+            "path": "sdk/nicechunk-guardian.ts",
+            "note": "Guardian 註冊和參與客戶端輔助函數。"
+          }
+        ]
+      },
+      {
+        "status": "腳本",
+        "title": "重放和運行檢查",
+        "body": "腳本為開發階段的推導、驗證、部署支援和可復現檢查提供實際路徑。",
+        "paths": [
+          {
+            "path": "scripts/derive-pdas.ts",
+            "note": "用於帳戶尋址檢查的 PDA 推導工具。"
+          },
+          {
+            "path": "scripts/inspect-client-generated-block.ts",
+            "note": "客戶端方塊生成檢查輔助工具。"
+          },
+          {
+            "path": "scripts/verify-generated-block.ts",
+            "note": "生成方塊預期的驗證工具。"
+          },
+          {
+            "path": "scripts/sync-to-server.sh",
+            "note": "官網構建和部署同步路徑。"
+          }
+        ]
+      }
+    ]
+  },
+  "formal": {
+    "eyebrow": "形式化公平模型",
+    "title": "這個世界應作為確定性狀態轉移系統來審查。",
+    "body": "對公開的鏈上遊戲而言，公平不是一句口號，而是一組可觀察輸入、確定性函式、已認證狀態轉移，以及可被審閱者挑戰的明確假設。",
+    "labels": {
+      "reviewQuestion": "審閱問題",
+      "expectedEvidence": "預期證據"
+    },
+    "cards": [
+      {
+        "status": "輸入域",
+        "title": "公開輸入定義可到達的世界。",
+        "body": "一個生成出的 chunk 應來自有限且可描述的輸入集合：世界種子、chunk 座標、演算法版本、方塊詞彙表與已知環境參數。",
+        "question": "兩個獨立客戶端能否在比較結果前識別同一組輸入？",
+        "evidence": "世界規則頁、生成器程式路徑、chunk 座標、種子處理、方塊圖譜版本與驗證腳本。"
+      },
+      {
+        "status": "函式",
+        "title": "世界生成應表現為純函式。",
+        "body": "在固定輸入下，地形與基礎資源應可重現，不依賴私有伺服器裁量。隨機性需要被種子化、限定作用域並記錄版本。",
+        "question": "同一世界種子和座標，在同一演算法版本下是否生成同一地形？",
+        "evidence": "種子生成器實作、回放展示、生成方塊檢查腳本與已記錄的演算法邊界。"
+      },
+      {
+        "status": "轉移",
+        "title": "玩家行為是經過認證的狀態轉移。",
+        "body": "挖掘、背包寫入、市場掛單與結算都應被視為從舊狀態到新狀態的轉移，並由玩家錢包或程式定義權限授權。",
+        "question": "哪個帳戶簽名、哪個 PDA 改變、哪個不變量阻止未授權修改？",
+        "evidence": "程式指令表面、PDA seed 推導、SDK 呼叫、錢包簽名流程與合約源碼審閱。"
+      },
+      {
+        "status": "承諾",
+        "title": "雜湊和 PDA 讓狀態可以被外部引用。",
+        "body": "公開遊戲狀態需要穩定引用。chunk 記錄、背包物品、玩家帳戶和證明雜湊應讓審閱者不依賴私有資料庫也能定位同一狀態。",
+        "question": "審閱者能否把可見遊戲結果連接到帳戶、雜湊或可回放推導路徑？",
+        "evidence": "PDA 推導腳本、chunk 與背包程式、Proof of Frontier 頁面和公開合約頁。"
+      },
+      {
+        "status": "對手模型",
+        "title": "威脅要被建模，而不是被忽略。",
+        "body": "相關對手包括漂移的客戶端、不可用 RPC、不誠實 UI、過期守護者、無效資源記錄，以及與被出售資產不匹配的市場掛單。",
+        "question": "哪些失敗會被關閉，哪些可以獨立重算，哪些仍依賴客戶端或營運方誠實？",
+        "evidence": "風險登記、信任邊界表、守護者設計說明、市場程式表面與審閱清單。"
+      },
+      {
+        "status": "可證偽性",
+        "title": "信任聲明必須可以被反駁。",
+        "body": "可信協議聲明應說明什麼觀察會推翻它。如果某條規則尚不能驗證，頁面應明確標註為計畫中或設計意圖。",
+        "question": "每條聲明是否標明已實作、設計中、計畫中，或仍依賴鏈下基礎設施？",
+        "evidence": "聲明帳本、路線圖、合約狀態、源碼地圖，以及對去中心化表述的明確邊界。"
+      }
+    ]
+  },
+  "lifecycle": {
+    "eyebrow": "狀態生命週期",
+    "title": "被挖掘的方塊應從種子一路帶著歷史進入錢包資產。",
+    "body": "NiceChunk 的資源設計最有價值之處，是審閱者可以沿著一個方塊追蹤生成、挖掘驗證、背包儲存和未來結算，而不是相信隱藏庫存伺服器。",
+    "labels": {
+      "state": "狀態",
+      "reviewSurface": "審閱表面"
+    },
+    "steps": [
+      {
+        "status": "已生成",
+        "title": "種子和座標定義候選方塊。",
+        "body": "第一事實不是物品，而是在世界種子、chunk 尺寸、地形演算法和方塊詞彙表下被計算出的世界座標。",
+        "state": "此時尚未鑄造資源。方塊只是由公開世界規則推導出的確定性候選。",
+        "surface": "src/world/generator.js、src/world/blocks.js、src/data/blockAtlas.js、world_rule 頁面和驗證腳本。"
+      },
+      {
+        "status": "已渲染",
+        "title": "客戶端展示推導出的世界，但不是最終真相來源。",
+        "body": "瀏覽器為了可玩性快速渲染地形。審閱者應把這一層看成規則和狀態承諾的視圖，而不是最終權限。",
+        "state": "可見方塊由客戶端渲染，可與生成器和後續鏈上狀態交叉檢查。",
+        "surface": "chunk 渲染程式、生成方塊檢查工具、公平性展示和公開演算法文件。"
+      },
+      {
+        "status": "已挖掘",
+        "title": "挖掘把候選方塊變成認證狀態轉移。",
+        "body": "破壞動作應證明被改變的是哪個座標、哪個玩家或會話被授權、目前期望的 block id 是什麼。",
+        "state": "chunk 程式記錄或驗證被挖座標，並拒絕重複挖掘、不可挖方塊或生成結果不匹配。",
+        "surface": "programs/nicechunk_chunk/src/lib.rs、mine_block、verify_generated_block、ChunkBrokenState、玩家會話驗證。"
+      },
+      {
+        "status": "已儲存",
+        "title": "背包儲存緊湊資源記錄，而不是伺服器物品大物件。",
+        "body": "背包 PDA 獨立於玩家檔案。當前資源記錄刻意保持很小：world_x、world_y、world_z，每個被挖方塊一條記錄。",
+        "state": "預設容量 50，最大容量 99；每條資源記錄在帳戶頭部開銷之外為 10 bytes。",
+        "surface": "programs/nicechunk_backpack/src/state.rs、sdk/nicechunk-backpack.ts、BackpackResourceRecord、append_mined_resource。"
+      },
+      {
+        "status": "已結算",
+        "title": "市場行為可以引用物品來源，而不隱藏結算邏輯。",
+        "body": "掛單和購買應暴露賣家、買家、貨幣、價格、來源類型、來源索引和 item hash，讓結算可以獨立於 UI 聲明被審閱。",
+        "state": "市場程式支援 SOL 和 NCK 結算路徑，並透過明確狀態變化標記 sold 或 canceled。",
+        "surface": "programs/nicechunk_market/src/lib.rs、ListingAccount、create_listing、buy_listing、NCK token account 驗證。"
+      },
+      {
+        "status": "可複用",
+        "title": "未來鍛造可從來源重算價值，而不是相信靜態物品表。",
+        "body": "因為被挖資源保留世界座標，未來鍛造可以從種子、方塊類型、生物群系、元素組成和協議版本推導材料特徵。",
+        "state": "座標成為可重現的材料句柄。最終鍛造物可以保留來源證明，而不只是顯示名稱。",
+        "surface": "資源規則圖譜、元素資料、背包記錄、鍛造頁面、未來鍛造合約和回放工具。"
+      }
+    ]
+  },
+  "economics": {
+    "eyebrow": "經濟完整性",
+    "title": "遊戲經濟應公開託管、貨幣和結算假設。",
+    "body": "NiceChunk 的經濟層越透明，越容易被信任。NCK 參數、市場狀態、背包所有權、守護者質押和未完成的結算假設都應放在明面上，而不是藏在 UI 文案後面。",
+    "labels": {
+      "implemented": "已實作表面",
+      "reviewFocus": "審閱重點"
+    },
+    "cards": [
+      {
+        "status": "NCK 創世",
+        "title": "代幣規則從受約束的 mint 開始。",
+        "body": "Core 程式在寫入 GlobalConfig 前，會驗證 NCK mint、decimals、創世供應量，以及沒有 mint/freeze authority。",
+        "implemented": "NCK decimals 為 6，創世供應量為 1,000,000,000 NCK 的 base units，GlobalConfig 保存 mint 和規則雜湊。",
+        "reviewFocus": "確認已部署 mint、關閉的 token 權限、程式升級權限狀態，以及 core genesis config 沒有後續可變更指令。"
+      },
+      {
+        "status": "託管邊界",
+        "title": "錢包所有權和背包所有權分開。",
+        "body": "玩家檔案不是庫存。背包是獨立 PDA，可透過玩家流程裝備，並在明確 owner 校驗下保存資源記錄。",
+        "implemented": "背包帳戶包含 owner 校驗、預設 50 格、最大 99 格，並透過 owner 或授權 session 路徑執行 append/remove。",
+        "reviewFocus": "檢查 session authority、allowed action flags、過期校驗，以及 UI 是否暗示了合約沒有提供的伺服器託管。"
+      },
+      {
+        "status": "來源證明",
+        "title": "原始資源是座標背書記錄。",
+        "body": "被挖資源可以作為緊湊座標記錄保存，而不是一個不透明的大型物品物件。材料意義可以從來源重算。",
+        "implemented": "BackpackResourceRecord 為每個被挖方塊保存 world_x、world_y、world_z，總計 10 bytes。",
+        "reviewFocus": "驗證生成器穩定性、chunk 狀態、重複挖掘拒絕，以及未來鍛造如何從座標重算特徵。"
+      },
+      {
+        "status": "市場",
+        "title": "掛單公開貨幣、來源和 item hash。",
+        "body": "市場程式把掛單狀態放到可見帳戶裡，而不是把交易當成私有資料庫行。當前支援 SOL 和 NCK 支付路徑。",
+        "implemented": "ListingAccount 保存 seller、listing_id、category、currency、source_kind、source_index、quantity、price、item_hash、buyer 和 sold/canceled 狀態。",
+        "reviewFocus": "審閱精確範圍：支付和掛單狀態是明確的，完整資產託管或資源移除語義需要隨市場成熟繼續檢查。"
+      },
+      {
+        "status": "守護者",
+        "title": "Guardian 激勵與玩家資產託管分離。",
+        "body": "守護者區域用於可達性和參與機制，不應託管玩家資產，也不應處理玩家交易。",
+        "implemented": "Guardian 狀態保存區域 owner/operator、NCK stake、proof interval、proof count、endpoint、slashing counters 和 active/removed 狀態。",
+        "reviewFocus": "檢查 treasury token owner、proof submit authority、slashing 行為，以及 UI 是否誇大守護者目前保護的範圍。"
+      },
+      {
+        "status": "政策參數",
+        "title": "經濟參數在成為即時政策前應先可審計。",
+        "body": "價格、費用 bps、guardian tax、market fee 和分配比例，放在公開 config 裡比藏在私有表格裡更可信。",
+        "implemented": "GlobalConfig 保存 starter pass price、genesis pass price、guardian stake、fee bps、守護者區域參數和世界規則雜湊。",
+        "reviewFocus": "區分「已儲存的政策常量」和「已實際執行的經濟流程」。在把它當成即時經濟前，需要檢查哪些程式真正消費了這些值。"
+      }
+    ]
+  },
+  "routes": {
+    "eyebrow": "審查路徑",
+    "title": "三條清晰路徑理解項目。",
+    "body": "嚴肅的審查者不應該猜從哪裡開始。這些路徑把項目主張連接到具體頁面，並說明每個頁面應該提供什麼證據。",
+    "cards": [
+      {
+        "audience": "審計路徑",
+        "title": "從程式和帳戶邊界開始。",
+        "body": "對合約審查者來說，第一問題不是世界看起來是否漂亮，而是哪些狀態存在、誰能修改它、錢包實際簽了什麼。",
+        "steps": [
+          {
+            "label": "合約和源碼樹",
+            "proof": "程式 ID、PDA seeds、指令表面、儲存布局和源碼路徑。",
+            "href": "/contracts/"
+          },
+          {
+            "label": "玩家、Chunk、背包和守護者模組",
+            "proof": "分離的狀態域讓托管和權限邊界更容易審查。",
+            "href": "/contracts/"
+          },
+          {
+            "label": "開發文檔",
+            "proof": "SDK 調用和集成說明可以與合約指令對照。",
+            "href": "/docs/"
+          }
+        ]
+      },
+      {
+        "audience": "公平路徑",
+        "title": "重放世界和資源如何推導。",
+        "body": "對工程師和玩家來說，核心承諾是世界來自公開規則，而不是私有伺服器的隨意裁量。",
+        "steps": [
+          {
+            "label": "世界生成規則",
+            "proof": "種子 Chunk、座標和版本化算法表面解釋地形如何推導。",
+            "href": "/world_rule/"
+          },
+          {
+            "label": "公平性和證明演示",
+            "proof": "公開輸入和哈希讓驗證模型變得具體，而不是停留在抽象概念。",
+            "href": "/fairness/"
+          },
+          {
+            "label": "資源和元素詞彙",
+            "proof": "方塊資源和 118 個元素定義挖掘與鍛造的材料語言。",
+            "href": "/resource_rule/"
+          }
+        ]
+      },
+      {
+        "audience": "價值路徑",
+        "title": "在不接受炒作的前提下理解經濟。",
+        "body": "對投資人和長期玩家來說，重要信號是從可玩的 Alpha 走向公開資源所有權的可信路徑。",
+        "steps": [
+          {
+            "label": "路書和 NCK 方向",
+            "proof": "說明哪些系統已經 live、designed、planned，哪些尚未主張。",
+            "href": "/roadmap/"
+          },
+          {
+            "label": "Guardian 和 Guardian 邊界",
+            "proof": "解釋區域可用性，同時明確不托管資產、不處理玩家交易。",
+            "href": "/guardian/"
+          },
+          {
+            "label": "NCM 資產壓縮",
+            "proof": "展示緊湊體素資產如何為鏈上儲存路徑提供可檢查基礎。",
+            "href": "/ncm/"
+          }
+        ]
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "信任邊界",
+    "title": "清楚的邊界比最大化宣稱更可信。",
+    "body": "NiceChunk 應該根據已實作、可驗證和仍在計畫中的內容被評估。在關鍵系統完成獨立審查前，不應宣稱完全去中心化。",
+    "rows": [
+      {
+        "status": "Live / Alpha",
+        "title": "可玩的瀏覽器世界",
+        "body": "玩家可以進入瀏覽器體素客戶端，並與目前 Alpha 表面互動。隨著合約和數值平衡成熟，Alpha 行為仍可能調整。"
+      },
+      {
+        "status": "Devnet",
+        "title": "Solana 合約集成",
+        "body": "程式頁面記錄目前 devnet 合約和源碼路徑。Devnet 狀態適合審查和測試，但不等於主網最終性。"
+      },
+      {
+        "status": "Designed",
+        "title": "可驗證資源經濟",
+        "body": "挖掘、背包資源、鍛造、NCK 結算和市場流程，設計目標是逐步走向公開驗證，而不是隱藏庫存伺服器。"
+      },
+      {
+        "status": "Coming Soon",
+        "title": "Guardian 網路參與",
+        "body": "Guardian 計畫作為區域訪問節點。它們應該幫助通訊和可用性，但不托管玩家資產。"
+      },
+      {
+        "status": "Not Claimed",
+        "title": "完全去中心化",
+        "body": "在關鍵生成、經濟、市場、治理和可用性層能夠經受獨立審查之前，NiceChunk 不應宣稱已經完全去中心化。"
+      }
+    ]
+  },
+  "risks": {
+    "eyebrow": "風險登記表",
+    "title": "可信協議應該說清楚尚未消除的風險。",
+    "body": "未完成的信任假設越可見，項目越強。這份登記表說明目前技術風險、為什麼重要，以及未來應該用什麼證據降低風險。",
+    "labels": {
+      "impact": "影響",
+      "mitigation": "緩解方式"
+    },
+    "rows": [
+      {
+        "status": "設計風險",
+        "risk": "生成漂移",
+        "impact": "如果客戶端、文檔和合約假設發生分歧，審查者就無法用同樣公開輸入復現同樣世界狀態。",
+        "mitigation": "版本化生成規則，發布重放樣例，並讓未來經濟行為綁定明確規則版本。"
+      },
+      {
+        "status": "儲存風險",
+        "risk": "PDA 增長壓力",
+        "impact": "如果簡單按方塊逐個儲存，隨著挖掘量增加，區域讀取和帳戶租金會變得低效。",
+        "mitigation": "使用緊湊座標記錄、分組 Chunk、確定性重算和明確背包容量限制。"
+      },
+      {
+        "status": "可用性風險",
+        "risk": "RPC 和區域可達性",
+        "impact": "即使系統非托管，如果使用者依賴單一端點或單一區域服務，體驗上仍會顯得中心化。",
+        "mitigation": "開放 RPC 設定，發展 Guardian/Guardian 可用性路徑，並持續明確非托管邊界。"
+      },
+      {
+        "status": "經濟風險",
+        "risk": "市場和 NCK 結算成熟度",
+        "impact": "資源經濟只有在掛單、購買、結算和失敗場景都可見可審查時才可信。",
+        "mitigation": "記錄目前 devnet 限制，公開程式接口，並把已上線行為和計畫中的 NCK 功能分開。"
+      },
+      {
+        "status": "治理風險",
+        "risk": "協議參數控制",
+        "impact": "世界參數、資源率和規則升級需要公開路徑，否則審查者無法評估長期公平性。",
+        "mitigation": "追蹤參數所有權，披露升級權限，並把成熟規則逐步推向可審查治理。"
+      }
+    ]
+  },
+  "reviewers": {
+    "eyebrow": "給審查者",
+    "title": "不同審查者需要不同證據。",
+    "cards": [
+      {
+        "title": "審計者",
+        "body": "從合約頁面、源碼樹、PDA seeds、指令列表和已聲明的帳戶邊界開始。",
+        "checks": [
+          "確認程式 ID",
+          "審查 PDA 推導",
+          "檢查儲存大小",
+          "對比 SDK 調用和合約指令"
+        ]
+      },
+      {
+        "title": "工程師",
+        "body": "審查遊戲架構是否能在保持快速渲染的同時，讓關鍵狀態可復現、可檢查。",
+        "checks": [
+          "世界生成器",
+          "資源規則",
+          "NCM 壓縮",
+          "背包與挖掘流程"
+        ]
+      },
+      {
+        "title": "投資人和玩家",
+        "body": "關注從可玩的 Alpha 走向公開資源經濟的可信路徑，而不只是視覺演示。",
+        "checks": [
+          "遊戲優先體驗",
+          "NCK 功能方向",
+          "公開路線圖",
+          "誠實的 Alpha 限制"
+        ]
+      }
+    ]
+  },
+  "next": {
+    "eyebrow": "下一步信任工作",
+    "title": "信任路線圖是產品路線圖的一部分。",
+    "body": "目標不是今天做出完美宣稱，而是持續縮小可玩體驗、公開算法、鏈上記錄和獨立驗證之間的距離。",
+    "items": [
+      {
+        "status": "近期",
+        "title": "更強的即時狀態矩陣",
+        "body": "讓每個主要主張都標註為 live、devnet、designed、planned 或 not claimed。"
+      },
+      {
+        "status": "近期",
+        "title": "更多可復現演示",
+        "body": "用公開輸入展示方塊生成、挖掘資源推導和 NCM 資產解碼。"
+      },
+      {
+        "status": "中期",
+        "title": "獨立審查包",
+        "body": "準備審計說明、程式不變量、部署哈希和經過審查的規則版本。"
+      }
+    ]
+  },
+  "claims": {
+    "eyebrow": "主張帳本",
+    "title": "每一個嚴肅主張都需要狀態、證據和邊界。",
+    "body": "這份帳本給審計者、工程師和投資人區分已實作系統與設計意圖。它讓項目保持誠實，也讓技術方向的價值更容易被判斷。",
+    "labels": {
+      "evidence": "證據",
+      "boundary": "邊界"
+    },
+    "rows": [
+      {
+        "status": "Live / Alpha",
+        "claim": "種子 Chunk 世界引擎",
+        "evidence": "世界生成頁面和源碼模組展示了地形如何由種子、座標和版本化規則推導。",
+        "boundary": "可玩客戶端仍是 Alpha；最終經濟結算仍依賴合約和規則繼續加固。",
+        "href": "/world_rule/"
+      },
+      {
+        "status": "Devnet",
+        "claim": "公開的 Solana 程式表面",
+        "evidence": "合約頁面公開程式 ID、PDA seeds、帳戶儲存、源文件和 SDK 集成邊界。",
+        "boundary": "Devnet 程式是可審查的集成目標，不等於主網最終保證。",
+        "href": "/contracts/"
+      },
+      {
+        "status": "Live / Data",
+        "claim": "118 個元素資源詞彙表",
+        "evidence": "元素圖鑑使用真實化學元素作為資源、鍛造、視覺基因和未來規則的結構化材料詞彙。",
+        "boundary": "元素數值是遊戲平衡輸入；真實科學欄位和遊戲欄位已分開。",
+        "href": "/elements/"
+      },
+      {
+        "status": "Designed",
+        "claim": "座標推導的挖掘資源",
+        "evidence": "背包資源記錄設計為保留每個方塊座標，方便未來鍛造根據公開世界規則重新計算屬性。",
+        "boundary": "部分資源結算路徑仍在接入，在完成前應標記為設計中或 Devnet。",
+        "href": "/resource_rule/"
+      },
+      {
+        "status": "Designed",
+        "claim": "NCM 作為緊湊鏈上 3D 資產格式",
+        "evidence": "NCM 和 NCM DNA 頁面解釋方向：用極短文本直接在鏈上儲存 3D 資產，而不是依賴可變元數據伺服器。",
+        "boundary": "NCM 仍是協議方向和工具鏈表面，生產資產標準還需要審查和版本化。",
+        "href": "/ncm/"
+      },
+      {
+        "status": "Coming Soon",
+        "claim": "非託管的 Guardian 網路",
+        "evidence": "Guardian 頁面和文件說明 Guardian 是區域接入和通訊基礎設施，不託管玩家資產。",
+        "boundary": "Guardian 質押、懲罰、經濟和主網參與規則尚未最終定稿。",
+        "href": "/guardian/"
+      }
+    ]
+  },
+  "checklist": {
+    "eyebrow": "審查清單",
+    "title": "一條可執行的獨立審查路徑。",
+    "body": "高信任度 Web3 遊戲應該讓審查者直接穿過代碼、規則、演示和限制，而不是反向破解整個網站。",
+    "items": [
+      {
+        "title": "先看目前主張",
+        "body": "用 Trust 和 Contracts 頁面區分 live、devnet、designed、planned 和 not-claimed 系統。",
+        "steps": [
+          "打開合約目錄",
+          "記錄程式 ID 和 PDA seeds",
+          "檢查主張是已上線還是計畫中",
+          "標記缺少證據的主張"
+        ]
+      },
+      {
+        "title": "重放公開規則",
+        "body": "用世界、資源、公平性和元素頁面判斷規則是否能從公開輸入重新計算。",
+        "steps": [
+          "檢查種子世界生成",
+          "查看資源和元素資料",
+          "對比演示與源碼模組",
+          "檢查 Unknown / null 資料處理"
+        ]
+      },
+      {
+        "title": "審查經濟邊界",
+        "body": "沿著挖掘、背包、NCK 功能、市場和 Guardian 主張檢查目前實作狀態。",
+        "steps": [
+          "檢查錢包擁有的操作",
+          "查看背包資源記錄",
+          "區分 NCK 設計和已上線功能",
+          "確認 Guardian 不託管資產"
+        ]
+      }
+    ]
+  },
+  "registry": {
+    "eyebrow": "協議註冊表",
+    "title": "信任表面由程式、帳戶、種子和不變量組成。",
+    "body": "這個註冊表让目前 Solana 協議表面更容易被檢查。它列出程式域、PDA 種子、帳戶 magic、版本化帳戶大小，以及審查者在認可經濟可靠性之前应该提出的問題。",
+    "labels": {
+      "programId": "程式 ID",
+      "pdaSeeds": "PDA 種子",
+      "accounts": "帳戶",
+      "version": "版本 / 大小",
+      "reviewFocus": "審查重点"
+    },
+    "programs": [
+      {
+        "status": "核心",
+        "title": "全域配置",
+        "body": "核心程式錨定公開世界配置：NCK mint 假設、世界種子、地形/資源規則雜湊、chunk 尺寸、守護者政策常量和創世時間。",
+        "programId": "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
+        "seeds": "global-config",
+        "accounts": "GlobalConfig magic NCKCFG01",
+        "version": "v1, 293 bytes",
+        "reviewFocus": "確認 NCK mint、小數位、創世供應、規則雜湊、升級權限，以及配置值只是記錄还是被下游程式實際執行。"
+      },
+      {
+        "status": "玩家",
+        "title": "身份与會話權限",
+        "body": "玩家程式把長期玩家檔案和臨時會話權限分开，让高频遊戲互動可行，同时保持狀態變更的授权來源可查。",
+        "programId": "oeaRMVnPoV4iENnGCCtaEeRxU5be515s4YYe6aXQuKe",
+        "seeds": "player, session",
+        "accounts": "PlayerProfile magic NCKPLY01; PlayerSession magic NCKSES01",
+        "version": "profile 449 bytes, legacy 417 bytes; session 184 bytes",
+        "reviewFocus": "檢查會話過期、允許動作標誌、所有者校驗、已裝備背包綁定，以及客戶端是否安全處理過期或餘額不足的會話。"
+      },
+      {
+        "status": "區塊",
+        "title": "世界變更与挖掘座標",
+        "body": "chunk 程式記錄公開世界變更和被破坏方塊座標，是渲染出的候选方塊与鏈上可见世界變更之间的邊界。",
+        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "seeds": "chunk, chunk-broken",
+        "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
+        "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
+        "reviewFocus": "複放座標推導，檢查重複挖掘拒絕、生成方塊假設，并比較 MagicBlock delegation 路徑与常規 chunk 狀態。"
+      },
+      {
+        "status": "背包",
+        "title": "獨立帳戶形式的可攜帶庫存",
+        "body": "背包不是玩家帳戶里的一個欄位，而是獨立的可攜帶庫存容器，用緊湊座標記錄保存被挖掘資源。",
+        "programId": "FwTrMDGyRg653L9svvt5aoGii9ZjX1WekSFWcwByjxqt",
+        "seeds": "backpack",
+        "accounts": "Backpack magic NCKBPK01",
+        "version": "v1, 1,118 bytes; header 128 bytes; record 10 bytes; default capacity 50; max capacity 99",
+        "reviewFocus": "檢查所有者/會話權限、插入/移除不變量、容量限制、記錄壓縮，以及市場託管路徑是否返還或轉移同一条座標記錄。"
+      },
+      {
+        "status": "守護者",
+        "title": "无資產託管的區域可用性",
+        "body": "守護者帳戶建模區域參與、質押、端點、證明時間和營運者資料。它的目标是可用性和通訊，不是託管玩家資產。",
+        "programId": "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
+        "seeds": "guardian-registry, guardian-region, guardian-treasury",
+        "accounts": "GuardianRegistry magic NCKGDR01; GuardianRegion magic NCKGRG01",
+        "version": "registry 160 bytes; region 256 bytes; stake 100,000 NCK (100,000,000,000 base units); proof interval 3,600 seconds",
+        "reviewFocus": "檢查金庫 token 所有权、證明提交權限、active/removed 狀態、懲罰计数，以及配置常量和守護者狀態中的區域參數是否存在不一致。"
+      },
+      {
+        "status": "市場",
+        "title": "掛單、NCK 結算与資源來源",
+        "body": "市場程式公開掛單狀態，而不是私有市場資料庫行。v3 包含 source inventory 和資源座標，使背包掛單能保留來源。",
+        "programId": "1PwPzFtdJ5gQqku5gBo4b6Wvo48Qe8NuXSogUP8TWpR",
+        "seeds": "listing, market-authority",
+        "accounts": "Listing magic NCKMKT01",
+        "version": "v3, 216 bytes; create-listing payload 99 bytes; SOL and NCK currencies",
+        "reviewFocus": "審查託管語義、背包資源移除/返還/轉移、token 帳戶校驗、market authority 簽名、sold/canceled 狀態轉換，以及 UI 与帳戶結構是否一致。"
+      }
+    ]
+  },
+  "methodology": {
+    "eyebrow": "審計方法論",
+    "title": "公平的鏈上遊戲应被当作可複現系統審查，而不是当作融資演示。",
+    "body": "NiceChunk 的審查標準刻意保持具体：識別公開輸入，複放确定性函數，檢查權限，測試失敗路徑，并區分已實作合约行为和設計意圖。",
+    "labels": {
+      "artifact": "證據對象",
+      "failureMode": "失敗模式"
+    },
+    "steps": [
+      {
+        "title": "定義公開輸入元组。",
+        "body": "每个可驗證動作都应从有邊界的輸入元组开始：種子、座標、世界規則版本、钱包、帳戶地址、指令載荷和預期前狀態。",
+        "artifact": "世界規則、PDA 推導腳本、SDK 指令構造器和交易載荷。",
+        "failureMode": "如果必要輸入是私有的，或可在不揭露的情況下变化，獨立複放就无法證明公平。"
+      },
+      {
+        "title": "複放确定性推導。",
+        "body": "生成和資源身份应在同一演算法版本下可複現。審查应比較客戶端采样結果、腳本結果或獨立實作。",
+        "artifact": "src/world/generator.js、方塊图谱、資源規則页面、生成方塊檢查腳本。",
+        "failureMode": "如果两个客戶端从同一元组推導出不同地形或資源含義，經濟結算就会变得任意。"
+      },
+      {
+        "title": "追蹤權限和託管。",
+        "body": "钱包所有的遊戲必须说明谁簽名、哪个 PDA 改變、谁能移动庫存記錄，以及链下服务能否靜默改變經濟狀態。",
+        "artifact": "玩家會話程式、背包程式、市場程式、钱包登录流程和 SDK 调用。",
+        "failureMode": "如果服务器控制的金鑰能在邊界不清的情況下改變玩家價值，遊戲就不能稱為真正玩家所有。"
+      },
+      {
+        "title": "驗證儲存經濟性。",
+        "body": "鏈上狀態必须足够緊湊才能擴展。審查应區分座標記錄、雜湊、帳戶头、生成資料和可重算材料特徵。",
+        "artifact": "背包記錄布局、chunk-broken 記錄、NCM 資產编码和租金大小假設。",
+        "failureMode": "如果狀態以原始 voxel blob 或逐座標對象无限增长，RPC 讀取和 rent 成本会破坏遊戲規模。"
+      },
+      {
+        "title": "測試对抗路徑。",
+        "body": "審查应測試重複挖掘、過期會話、錯誤背包所有权、錯誤 source index、資源記錄不匹配、無效 token 帳戶、已取消或已售掛單。",
+        "artifact": "程式錯誤、local tests、devnet 交易、SDK 錯誤處理和 UI 失敗狀態。",
+        "failureMode": "公平的正常路徑不够；邊界情況导致隐藏損失、複製或狀態不一致时，經濟信任就会失敗。"
+      },
+      {
+        "title": "按成熟度分類每个聲明。",
+        "body": "网站应把每个聲明标为 live alpha、devnet implementation、designed system、planned feature 或 not claimed，避免营销语言跑在實作之前。",
+        "artifact": "Trust ledger、路線圖、合约页面、文档和公開部署狀態。",
+        "failureMode": "如果成熟度含糊，用户可能把設計意圖误认为已上线安全性，这对公開經濟遊戲不可接受。"
+      }
+    ]
+  },
+  "threats": {
+    "eyebrow": "威脅模型",
+    "title": "項目主动說明可能出錯的地方，信任才会更強。",
+    "body": "NiceChunk 应接受具體對抗者模型的評估：不誠實客戶端、過期生成資料、重複資源、不可用區域、誤導性 UI 聲明和結算不匹配。",
+    "labels": {
+      "attackSurface": "攻擊面",
+      "currentControl": "目前控制",
+      "openQuestion": "開放問題"
+    },
+    "actors": [
+      {
+        "status": "客戶端",
+        "title": "不誠實或漂移的客戶端",
+        "body": "瀏覽器客戶端可能顯示与公開規則集或鏈上狀態不一致的方塊、庫存物品、價格或資源解釋。",
+        "attackSurface": "渲染地形、本地方塊 ID、生成資源標籤、錢包提示、市場顯示和快取帳戶資料。",
+        "currentControl": "生成代码、方塊圖譜、資源圖譜、合約帳戶解碼器和可见交易提示降低了对 UI 的盲目信任。",
+        "openQuestion": "後續版本应發布標準複放樣例，让任何客戶端都能和已知種子、座標輸出进行比較。"
+      },
+      {
+        "status": "狀態",
+        "title": "資源重複或丟失",
+        "body": "挖出的資源不应在挖掘、掛單、取消或購買過程中被建立兩次、靜默刪除或移動到錯誤庫存。",
+        "attackSurface": "chunk-broken 記錄、背包插入/移除、市場 source index、source inventory、market-authority 轉移和 sold/canceled 狀態。",
+        "currentControl": "背包記錄基於座標，市場 v3 儲存 source inventory 和資源記錄，背包掛單会在結算前移除源記錄。",
+        "openQuestion": "最强证据来自覆蓋重複挖掘、取消返還、買家轉移和失敗交易回滾行為的对抗測試。"
+      },
+      {
+        "status": "錢包",
+        "title": "未授權經濟狀態變更",
+        "body": "玩家價值不应因为伺服器、守護者、過期會話或 UI 腳本在没有玩家或有效會話授權的情况下改变狀態而移動。",
+        "attackSurface": "玩家會話权限、會話過期、會話資金、背包 owner 檢查、市場买卖双方帳戶和 NCK token 帳戶。",
+        "currentControl": "程式会驗證签名者、所有者、PDA 推导、會話帳戶、token 帳戶所有權和敏感流程中的程式 ID。",
+        "openQuestion": "審查者应確認會話過期、背包未裝備或 token 帳戶不匹配时，所有特权路径都安全失敗。"
+      },
+      {
+        "status": "可用性",
+        "title": "區域不可用或单端點依賴",
+        "body": "即使系统不托管資產，如果使用者只能依賴一個區域服務、RPC 或營運者，游戏仍会呈现中心化体验。",
+        "attackSurface": "RPC 選擇、區域存取、守護者端點、guardian proof 頻率、即時通訊和客戶端 fallback 行為。",
+        "currentControl": "RPC 設定已暴露，guardian 帳戶建模端點和證明狀態，网站也說明守護者是可用性基礎設施而不是託管方。",
+        "openQuestion": "網路仍需要實測 uptime、多營運者參與、證明驗證和可见失敗处理，才能支援更強的可用性聲明。"
+      },
+      {
+        "status": "經濟",
+        "title": "結算不匹配",
+        "body": "市場可信的前提是頁面顯示的物品、實際掛單的物品、支付的 token 和收到的資源都指向同一公開狀態。",
+        "attackSurface": "item hash、category、currency、price base units、source kind、source index、source inventory、buyer backpack 和 token transfer accounts。",
+        "currentControl": "ListingAccount v3 儲存 currency、source metadata、source inventory、資源座標記錄、buyer、sold slot 和 sold timestamp。",
+        "openQuestion": "UI 应持续展示解码后的掛單狀態，让使用者签名前能对比市場卡片和底层帳戶資料。"
+      },
+      {
+        "status": "治理",
+        "title": "規則變更缺少來源",
+        "body": "如果生成規則、資源表、费用政策或市場行為缺少版本和來源記錄，世界公平性会下降。",
+        "attackSurface": "世界種子、terrain config hash、resource rule hash、client world config hash、全局政策常量和未来治理指令。",
+        "currentControl": "GlobalConfig 儲存規則哈希和協議参数，网站区分 live alpha、devnet、designed、planned 和 not-claimed 系统。",
+        "openQuestion": "主网成熟阶段应包括公開規則版本 manifest、升级权限披露和經濟規則變更的治理流程。"
+      }
+    ]
+  },
+  "invariants": {
+    "eyebrow": "協議不變量",
+    "title": "協議应由能穿越 UI 變化的不變量来判斷。",
+    "body": "不變量是跨客戶端、語言、UI 改版和未来市場功能都应保持成立的規則。随着系统成熟，NiceChunk 应持续公開這些檢查。",
+    "labels": {
+      "rule": "不變量",
+      "test": "证据測試"
+    },
+    "rows": [
+      {
+        "domain": "生成",
+        "title": "相同公開輸入，应得到相同世界候選。",
+        "rule": "在固定世界種子、chunk 座標、方塊词汇表和演算法版本下，独立客戶端应推导出相同的候選地形和資源上下文。",
+        "test": "用 replay fixtures 对 src/world/generator.js 執行檢查，并比較采样方塊 ID、生物群系上下文和衍生資源候選。"
+      },
+      {
+        "domain": "挖掘",
+        "title": "同一個座標不能作为同一活躍方塊被挖兩次。",
+        "rule": "一個方塊座標在目前規則版本下被記錄为 broken 或 mined 后，除非存在顯式 reset 規則，否则不应再建立另一個有效原始資源。",
+        "test": "对同一個 chunk-broken 記錄提交重複挖掘，確認第二次转换失敗或被视为已消耗。"
+      },
+      {
+        "domain": "庫存",
+        "title": "背包記錄是座標支援的資源，不是黑箱物品。",
+        "rule": "原始背包資源应保留 world_x、world_y、world_z，以便後續从公開規則重新计算材料含義。",
+        "test": "解码 BackpackResourceRecord，并把座標与已挖方塊、方塊圖譜元資料和未来鍛造輸入对比。"
+      },
+      {
+        "domain": "托管",
+        "title": "守護者不移動玩家資產。",
+        "rule": "可用性基礎設施可以帮助區域保持可达，但不应托管背包、簽署玩家交易或处理玩家結算。",
+        "test": "審查 guardian 指令和 UI 文案，確認没有通过 guardian authority 轉移玩家庫存、NCK、SOL 或市場資產的路径。"
+      },
+      {
+        "domain": "市場",
+        "title": "掛單必须保留來源證明。",
+        "rule": "掛單应把 seller、listing id、source kind、source index、source inventory、item hash、price、currency 和 resource record 綁定进一個可審查帳戶。",
+        "test": "解码 ListingAccount v3，確認 create、cancel、buy 流程在移除、返還或轉移買家时保持 source record 一致。"
+      },
+      {
+        "domain": "貨幣",
+        "title": "NCK 結算必须匹配 mint 和所有者预期。",
+        "rule": "当掛單以 NCK 定价时，买卖双方 token 帳戶在转账前必须匹配配置的 NCK mint 和预期 owner。",
+        "test": "对 market buy 指令測試 invalid mint、invalid owner、missing token account 和 wrong token program。"
+      },
+      {
+        "domain": "披露",
+        "title": "每个聲明都需要成熟度標籤。",
+        "rule": "网站文案应区分 live alpha、devnet implementation、designed system、planned feature 和 not-claimed decentralization。",
+        "test": "審查公開頁面和导航目标，重点檢查 full decentralization、NCK utility、guardians、governance 和 mainnet readiness 是否过度承诺。"
+      },
+      {
+        "domain": "升级",
+        "title": "規則變化必须可歸因。",
+        "rule": "当世界生成、資源規則、帳戶佈局或經濟常量發生變化时，審查者应能識別變更版本和來源。",
+        "test": "比較規則更新前后的 GlobalConfig hashes、source commits、locale claims、contract account versions 和 public documentation。"
+      }
+    ]
+  },
+  "recipes": {
+    "eyebrow": "驗證配方",
+    "title": "審查者應該能夠複現聲明，而不是只閱讀聲明。",
+    "body": "這些配方把信任模型变成具體審查工作：收集公開輸入，執行複放或帳戶解碼，對比預期狀態，并把任何不匹配記錄为實作問題或揭露問題。",
+    "labels": {
+      "inputs": "輸入",
+      "procedure": "流程",
+      "expected": "預期證據",
+      "failure": "失敗信號"
+    },
+    "items": [
+      {
+        "status": "世界",
+        "title": "複放一個種子 chunk 樣本。",
+        "body": "這個檢查證明可見世界是否能从公開規則輸入複現，而不是依賴私有伺服器裁量。",
+        "inputs": "world seed、chunkX、chunkZ、演算法版本、方塊圖譜版本、選定採樣座標。",
+        "procedure": "用相同 chunk 執行生成器，檢查採樣方塊，并比較地形高度、方塊 ID、生物群系上下文和資源候選元資料。",
+        "expected": "在相同版本化規則下，獨立複放产生相同採樣方塊 ID 和材料上下文。",
+        "failure": "不同客戶端从相同種子和座標产生不兼容的地形或資源身份。"
+      },
+      {
+        "status": "挖掘",
+        "title": "驗證一個被挖座標的狀態转换。",
+        "body": "這個檢查把使用者可見的破壞方塊動作連接到鏈上可見座標記錄，并拒絕重複資源建立。",
+        "inputs": "player wallet、session authority、world_x、world_y、world_z、chunk-broken PDA、預期 previous block id。",
+        "procedure": "提交或檢查 mine 指令，解碼 chunk-broken 記錄，然后对同一座標嘗試重複转换。",
+        "expected": "第一次有效转换記錄座標；重複嘗試失敗或被视为已經消耗。",
+        "failure": "同一座標可以在没有顯式 reset 規則的情况下铸造或插入多個原始資源。"
+      },
+      {
+        "status": "庫存",
+        "title": "解碼一個背包資源記錄。",
+        "body": "這個檢查證明原始資源是緊湊的來源句柄，而不是不透明伺服器庫存行。",
+        "inputs": "backpack PDA、owner wallet、capacity、item count、BackpackResourceRecord entries。",
+        "procedure": "解碼帳戶头和每條 10-byte 記錄，再把 world_x/world_y/world_z 映射回生成方塊和資源圖譜。",
+        "expected": "每个佔用格子解析为一個座標支援資源，空餘容量不会偽造隱藏物品。",
+        "failure": "庫存显示无法連接到帳戶記錄，或資源丟失來源座標。"
+      },
+      {
+        "status": "市場",
+        "title": "追蹤一個背包掛單物品。",
+        "body": "這個檢查跟踪物品从背包來源格到市場掛單、取消返還或買家轉移。",
+        "inputs": "seller wallet、listing PDA、source backpack、source index、item hash、source inventory、resource record、buyer backpack。",
+        "procedure": "建立掛單，解碼 ListingAccount v3，檢查源記錄移除，然后分別测试 cancel 和 buy 路徑。",
+        "expected": "掛單綁定 source metadata 和座標記錄；取消把同一記錄返還賣家；購買把記錄插入買家背包。",
+        "failure": "掛單 item hash、source record、显示物品或轉移資源出现分叉。"
+      },
+      {
+        "status": "NCK",
+        "title": "檢查 NCK 結算帳戶。",
+        "body": "這個檢查驗證 NCK 定價的市場動作轉移的是預期 token，而不是偽造 mint 或錯誤 owner 帳戶。",
+        "inputs": "configured NCK mint、buyer token account、seller token account、token program、price base units、listing currency。",
+        "procedure": "執行正向和負向購買模擬：有效 NCK 帳戶、錯誤 mint、錯誤 owner、缺失 token account、錯誤 token program。",
+        "expected": "只有有效 token-account 組合能轉帳；錯誤 mint、owner 或 token program 路徑在結算前失敗。",
+        "failure": "購買可以在 spoofed mint、owner 不匹配或 token account 未驗證时成功。"
+      },
+      {
+        "status": "守護者",
+        "title": "檢查无託管的區域可用性。",
+        "body": "這個檢查把 guardian/guardian 可达性和資產託管、交易處理區分开。",
+        "inputs": "guardian registry PDA、region PDA、endpoint、stake amount、proof interval、active/removed state、treasury token account。",
+        "procedure": "解碼 guardian 帳戶，驗證 proof metadata 和 treasury ownership，然后確認没有 guardian 指令移動玩家庫存或結算資產。",
+        "expected": "Guardian 狀態描述可用性參與和質押；玩家資產仍由 wallet、backpack、market 或 token programs 控制。",
+        "failure": "guardian 或 guardian 路徑可以託管、轉移或結算玩家資產。"
+      }
+    ]
+  },
+  "commitments": {
+    "eyebrow": "狀態承諾模型",
+    "title": "不是每個 voxel 都需要儲存，但每個經濟聲明都需要公開錨點。",
+    "body": "NiceChunk 的儲存模型应透過区分 canonical account state、確定性重算、client cache 和 planned proof surface 来審查。这样能降低協議成本，同时不隱藏關鍵狀態。",
+    "labels": {
+      "anchor": "公開錨點",
+      "recomputed": "可重算部分",
+      "reviewRisk": "審查風險"
+    },
+    "items": [
+      {
+        "status": "Canonical",
+        "title": "世界配置",
+        "body": "全域配置是世界的根承諾：種子、chunk 尺寸、規則雜湊、NCK mint 假設和政策常量。",
+        "anchor": "GlobalConfig PDA，magic 为 NCKCFG01，包含 world seed、terrainConfigHash、resourceRuleHash、clientWorldConfigHash、chunk size、build bounds 和 guardian parameters。",
+        "recomputed": "地形和资源候選应能从 seed、座標和儲存雜湊指向的規則版本重新推導。",
+        "reviewRisk": "如果規則雜湊不能映射到公開原始碼或版本 manifest，審查者無法證明哪個生成器產生了可見世界狀態。"
+      },
+      {
+        "status": "Canonical",
+        "title": "Chunk 變更記錄",
+        "body": "協議不应在大部分體素都可重算时儲存整个生成體積，而应儲存有意義的 delta 和已消耗座標。",
+        "anchor": "ChunkState 和 ChunkBroken 帳戶儲存版本化 chunk mutation state、broken block records 和 capacity-bounded deltas。",
+        "recomputed": "未修改地形可以从 world seed、chunk coordinates 和 generator version 重新推導。",
+        "reviewRisk": "如果 chunk mutation storage 缺少壓縮或清晰容量行為，讀取和 rent 壓力会破壞遊戲規模。"
+      },
+      {
+        "status": "Canonical",
+        "title": "背包资源來源",
+        "body": "被挖出的原始资源最强的设计，是只存后续重算价值所需的最小來源，而不是大型 item blob。",
+        "anchor": "Backpack PDA，magic 为 NCKBPK01，包含 owner、capacity、item count，以及含 world_x、world_y、world_z 的 10-byte records。",
+        "recomputed": "方块类型、资源組成、材料屬性和未來鍛造特徵可从座標和公開規則数据推導。",
+        "reviewRisk": "如果 UI 名稱、圖示或質量計算無法追溯到座標記錄，庫存就会变成私有顯示層。"
+      },
+      {
+        "status": "Canonical",
+        "title": "市場結算狀態",
+        "body": "公開市場应暴露足够狀態，让使用者能比较 UI 顯示的物品和即将簽名的帳戶狀態。",
+        "anchor": "ListingAccount v3，magic 为 NCKMKT01，包含 seller、listing id、category、currency、source kind、source inventory、item hash、resource record、buyer 和 sold timestamps。",
+        "recomputed": "掛單中的原始资源可以在結算前对照背包 source record 和未來材料規則檢查。",
+        "reviewRisk": "如果市場卡片隱藏 source metadata 或 item hash，使用者無法发现顯示商品和帳戶狀態之間的不匹配。"
+      },
+      {
+        "status": "Derived",
+        "title": "客戶端渲染与預覽",
+        "body": "渲染可以快速、本地、带快取，但除非綁定到已承諾狀態或可复放输入，否则不应被视为最终經濟事實。",
+        "anchor": "可見場景透過 world config、generator source、block atlas、chunk mutation records、backpack records 和 transaction prompts 間接锚定。",
+        "recomputed": "審查者可以复放采样地形、解碼帳戶狀態，并把渲染標籤或預覽与公開数据比较。",
+        "reviewRisk": "如果客戶端顯示不可复放的资源特徵、市場商品或钱包動作，UI 就会成为信任瓶頸。"
+      },
+      {
+        "status": "Emerging",
+        "title": "NCM 緊湊資產狀態",
+        "body": "NCM 是项目面向链上友好型緊湊體素資產的方向。它重要，是因為 3D 遊戲資產不应只依賴可變 metadata server。",
+        "anchor": "当前 NCM 工具和樣本資產是原始碼与文件證據；未來生產使用应把 NCM code、asset hash、owner 和 version 綁定进公開狀態。",
+        "recomputed": "緊湊 NCM 字串可以解碼成 voxel geometry、palette、groups，并最终擴展到 skeleton/binding metadata。",
+        "reviewRisk": "在生產資產帳戶和标准定稿前，NCM 应描述为 emerging asset format 和 tooling surface，而不是完整標準化的 mainnet asset layer。"
+      }
+    ]
+  },
+  "package": {
+    "eyebrow": "獨立審查資料包",
+    "title": "嚴肅的協議應該让盡調材料可以被獨立帶走。",
+    "body": "審計者、投資人和工程師應該能夠收集一套緊湊審查包：原始碼路徑、部署 manifest、帳戶佈局、複放樣例、失敗用例和揭露說明。",
+    "labels": {
+      "current": "目前證據",
+      "reviewerUse": "審查用途",
+      "next": "下一步加固"
+    },
+    "items": [
+      {
+        "status": "Source",
+        "title": "原始碼快照和模組地圖",
+        "body": "審查者需要一种穩定方式，从網站聲明移動到原始碼模組，而不用猜哪个目錄負責哪个信任邊界。",
+        "current": "Trust 頁面原始碼地圖、contracts 頁面、programs/*、src/world/*、src/data/*、src/chain/nicechunkChain.js、SDK helpers 和 verification scripts。",
+        "reviewerUse": "確認每個聲明都有具體程式碼表面、帳戶域或已文件化設計邊界。",
+        "next": "發布带標籤的 review snapshots，并把每個公開聲明映射到 commit hashes 或 release artifacts。"
+      },
+      {
+        "status": "Deploy",
+        "title": "部署和程式 manifest",
+        "body": "Program IDs、PDA seeds、account magic、version 和 account size 必須容易与已部署帳戶比較。",
+        "current": "Protocol Registry 按域列出目前 devnet program IDs、PDA seeds、magic bytes、account sizes 和 review focus。",
+        "reviewerUse": "把網站 program IDs 与錢包交易、account owners、decoded account data 和 SDK constants 对比。",
+        "next": "增加签名部署 manifest，包含 cluster、slot、binary hash、upgrade authority posture 和 deployment timestamp。"
+      },
+      {
+        "status": "Layout",
+        "title": "帳戶佈局和解码證據",
+        "body": "公開状态只有在獨立審查者不依赖 UI 也能解码时才有意义。",
+        "current": "GlobalConfig、PlayerProfile、ChunkState、ChunkBroken、Backpack、Guardian 和 Listing account layouts 通过原始碼路徑和客户端 decoders 呈现。",
+        "reviewerUse": "解码 raw account bytes，验证 magic/version/length，并把 UI 顯示状态与帳戶欄位比較。",
+        "next": "發布 standalone decoder fixtures，包含 sample account bytes 和 expected JSON output。"
+      },
+      {
+        "status": "Replay",
+        "title": "生成和資源複放樣例",
+        "body": "一个种子世界可信的前提，是審查者能从固定輸入复现採樣地形和資源含義。",
+        "current": "World rule 頁面、resource atlas、block atlas、generator source、generated block inspectors 和 verification recipes。",
+        "reviewerUse": "執行固定 seed/chunk/coordinate 样本，并比較 block IDs、resource candidates 和 material context。",
+        "next": "發布覆蓋代表性 biomes、mined blocks、tree resources、water/lava edges 和 rare resource candidates 的 canonical fixtures。"
+      },
+      {
+        "status": "Failure",
+        "title": "对抗性交易用例",
+        "body": "游戏经济不能只靠 happy path 证明。重复挖掘、錯誤 owner、過期 session、錯誤 token accounts 和市場 source 不匹配都应清晰失敗。",
+        "current": "Threat model、invariants、verification recipes、program error types、SDK transaction builders 和 devnet flows。",
+        "reviewerUse": "模擬負向路徑，并確認经济状态變化前就发生失敗。",
+        "next": "維護公開 adversarial test matrix，覆蓋 mining、backpack append/remove、market create/cancel/buy 和 NCK settlement。"
+      },
+      {
+        "status": "Disclosure",
+        "title": "已知限制和成熟度標籤",
+        "body": "当項目说清楚什么是 live、devnet、designed、planned、emerging 或 not claimed，信任会增加。",
+        "current": "Claims Ledger、Trust Boundaries、Risk Register、Next Trust Work 和協議模組状态標籤。",
+        "reviewerUse": "區分已實作行為和設計意圖，防止 decentralization、NCK、guardian 或 governance 過度承諾。",
+        "next": "維護带日期的 disclosure log，記錄 rule changes、deployment changes、audits、incident notes 和 maturity upgrades。"
+      }
+    ]
+  },
+  "scope": {
+    "eyebrow": "審計範圍矩陣",
+    "title": "在任何安全聲明成立之前，審查邊界必須先被說清楚。",
+    "body": "NiceChunk 將合約正確性、確定性生成、經濟結算、客戶端披露和運行可用性分開處理。每個表面都需要自己的證據，也需要明確排除項。",
+    "labels": {
+      "current": "当前审查表面",
+      "excluded": "不包含的假设",
+      "evidence": "所需证据"
+    },
+    "rows": [
+      {
+        "status": "合约",
+        "title": "程序正确性",
+        "current": "Core、player、chunk、backpack、guardian 和 market 程序定义钱包权限、账户布局、PDA 地址和状态转换。",
+        "excluded": "合约审计不等于证明浏览器渲染的是同一个世界，也不等于未来治理参数已经最终确定。",
+        "evidence": "程序源码、部署清单、账户解码样例、负向交易测试和升级权限披露。"
+      },
+      {
+        "status": "生成",
+        "title": "确定性世界推导",
+        "current": "种子、chunk 坐标、算法版本、方块图谱和资源规则定义可复现的地形候选。",
+        "excluded": "生成审查本身不证明某个坐标已经结算，也不证明玩家拥有生成出的资源。",
+        "evidence": "固定回放样例、独立生成器实现、输出哈希、抽样 chunk 截图和规则版本变更记录。"
+      },
+      {
+        "status": "经济",
+        "title": "资产与 NCK 结算",
+        "current": "背包记录、挂单状态、SOL/NCK 货币标记、来源索引和资源来源都是可见合约表面。",
+        "excluded": "当前测试网结算不能被当作最终代币经济、市场流动性或生产金库策略。",
+        "evidence": "托管测试、代币账户校验测试、购买/取消/挂单状态轨迹、费用策略和来源转移证明。"
+      },
+      {
+        "status": "客户端",
+        "title": "用户披露与交易意图",
+        "current": "UI 连接钱包登录、签名恢复、挖掘反馈、背包显示、市场流程和合约代码导航。",
+        "excluded": "精致界面不能证明合约安全；必须和签名指令及解码账户对照。",
+        "evidence": "钱包提示文案、SDK 调用映射、加载/错误状态、语言一致性，以及 UI 截图与原始账户数据对比。"
+      },
+      {
+        "status": "可用性",
+        "title": "RPC 与守护者可达性",
+        "current": "网站通过 RPC 读取公开账户，使用本地生成提升渲染速度，并计划让守护者参与区域通信。",
+        "excluded": "可用性基础设施不托管资产，也不应被描述成最终去中心化共识。",
+        "evidence": "RPC 兜底行为、守护者注册状态、缓存失效规则、陈旧状态提示和区域故障模拟。"
+      }
+    ]
+  },
+  "availability": {
+    "eyebrow": "資料可用性與 RPC 假設",
+    "title": "公開遊戲仍然依賴玩家讀取公開狀態的速度。",
+    "body": "审查者应该区分 Solana 账户的规范状态、RPC 访问、浏览器缓存、守护者中继和本地生成数据。可用性故障应该清晰降级，而不是改变经济事实。",
+    "labels": {
+      "assumption": "假设",
+      "failure": "失败模式",
+      "review": "审查动作"
+    },
+    "cards": [
+      {
+        "status": "规范",
+        "title": "Solana 账户状态",
+        "body": "经济事实应锚定在账户 owner、PDA 地址、账户字节、代币账户和交易签名上。",
+        "assumption": "如果账户在所选集群确认，它就是所有权和结算状态的规范来源。",
+        "failure": "RPC 延迟或集群不一致会显示陈旧余额、缺失背包或旧挂单，但不会改变底层账户。",
+        "review": "对比多个 RPC，检查账户 owner/program ID，解码字节，并记录 slot 与 commitment。"
+      },
+      {
+        "status": "推导",
+        "title": "生成的 chunk 数据",
+        "body": "多数地形候选应由种子和坐标重新计算，而不是作为原始 voxel blob 存储。",
+        "assumption": "生成器版本和输入元组足够公开，可以复现同一个候选方块图。",
+        "failure": "如果客户端静默更换规则版本，玩家看到的资源候选可能和验证者不同。",
+        "review": "固定生成器版本，运行回放样例，哈希抽样输出，并在公开文档显示规则版本变化。"
+      },
+      {
+        "status": "缓存",
+        "title": "浏览器与索引缓存",
+        "body": "客户端可以缓存生成 chunk、解码背包和市场列表，以保持游戏响应速度。",
+        "assumption": "缓存只是性能层，不能成为隐藏的经济权限。",
+        "failure": "陈旧缓存可能在链上状态变化后仍显示已挖方块、缺失物品或旧挂单。",
+        "review": "按 slot 强制刷新，暴露加载/错误状态，交易后失效缓存，并对照解码账户。"
+      },
+      {
+        "status": "守护者",
+        "title": "区域中继与通信",
+        "body": "守护者被设计为帮助区域保持可达并协调实时通信，不持有玩家资产。",
+        "assumption": "守护者消息可以提高可用性，但钱包签名交易仍是经济边界。",
+        "failure": "守护者故障可能降低响应或实时通信能力，但不应转移或没收资源。",
+        "review": "检查守护者注册字段、端点状态、证明间隔、质押策略和非托管表述。"
+      },
+      {
+        "status": "兜底",
+        "title": "降级模式行为",
+        "body": "当 RPC、缓存或守护者访问失败时，用户应看到清楚的降级状态，而不是误导性的成功界面。",
+        "assumption": "界面能区分本地预览、待确认交易、已确认状态和失败状态。",
+        "failure": "模糊加载会制造错误信任：用户可能以为资源已创建、售出或装备，但实际未确认。",
+        "review": "测试失败交易、断网、RPC 超时、加载中切换语言和重连恢复。"
+      },
+      {
+        "status": "归档",
+        "title": "审查快照",
+        "body": "审计者需要稳定证据包，因为官网和测试网程序会在开发中变化。",
+        "assumption": "带日期的快照能冻结正在审查的源码、部署、样例和声明。",
+        "failure": "没有快照时，审查可能把不同版本的代码、UI 和部署产物混在一起比较。",
+        "review": "发布 release tag、部署 slot、程序二进制哈希、生成后的公开语言包和样例校验和。"
+      }
+    ]
+  },
+  "maturity": {
+    "eyebrow": "證明成熟度時間線",
+    "title": "信任声明应从可见设计逐步成熟为可复现证明。",
+    "body": "NiceChunk 将公开信任视为阶段性的工程目标。下面的时间线把今天可见的内容，与功能达到协议级之前需要的证据分开。",
+    "labels": {
+      "proof": "当前证明",
+      "missing": "达到协议级之前"
+    },
+    "rows": [
+      {
+        "phase": "可见",
+        "title": "公开概念与规则披露",
+        "proof": "网站解释了种子 chunk、资源规则、元素词汇、NCM 资产、合约和已知信任边界。",
+        "missing": "带日期的声明账本、关联 commit 的源码引用，以及规则或文案变化日志。"
+      },
+      {
+        "phase": "可玩",
+        "title": "带钱包身份的 Alpha 交互",
+        "proof": "玩家可以进入浏览器世界、连接钱包、挖掘方块、购买/装备背包并查看 UI 状态。",
+        "missing": "覆盖所有钱包路径的稳定集成测试、更清楚的失败交易恢复，以及生产级 session 策略。"
+      },
+      {
+        "phase": "可复现",
+        "title": "独立生成与账户回放",
+        "proof": "生成演示、验证脚本、账户布局和验证步骤定义了回放方向。",
+        "missing": "标准样例、独立验证包，以及代表性 chunk/资源/背包记录的输出哈希。"
+      },
+      {
+        "phase": "已审计",
+        "title": "外部审查与对抗测试",
+        "proof": "Trust 页面列出了审计范围、威胁表面、不变量和失败用例。",
+        "missing": "第三方审计报告、公开问题修复日志、fuzz 测试和负向交易矩阵。"
+      },
+      {
+        "phase": "可治理",
+        "title": "规则变更控制与社区监督",
+        "proof": "治理被表述为未来表面，而不是今天已经完成的能力。",
+        "missing": "升级策略、timelock 或多签姿态、规则哈希投票路径，以及公开参数变更提案。"
+      },
+      {
+        "phase": "协议级",
+        "title": "长期公开世界基础设施",
+        "proof": "守护者、市场、背包、NCK、资源和 NCM 方向已作为协议表面记录。",
+        "missing": "生产部署清单、数据可用性手册、成熟守护者激励和审计后的经济控制。"
+      }
+    ]
+  },
+  "upgrade": {
+    "eyebrow": "升級與治理姿態",
+    "title": "规则变化在变成政治问题之前，必须先变得可见。",
+    "body": "系统仍在演进，所以诚实的问题不是今天治理是否完成，而是规则版本、程序升级、策略常量和未来投票路径将如何披露和约束。",
+    "labels": {
+      "authority": "权限姿态",
+      "disclosure": "披露要求",
+      "maturity": "成熟目标"
+    },
+    "cards": [
+      {
+        "status": "程序",
+        "title": "升级权限",
+        "body": "在活跃开发期，已部署程序可能仍需要受控升级。该权限必须可见、受限，并最终逐步降低。",
+        "authority": "当前姿态应按程序、集群、升级权限和部署 slot 列出。",
+        "disclosure": "每次程序升级都应发布源码 diff、二进制哈希、原因、迁移影响和受影响账户布局。",
+        "maturity": "从开发者控制升级走向多签、timelock、已审计迁移脚本，以及后续治理约束。"
+      },
+      {
+        "status": "规则",
+        "title": "世界规则版本化",
+        "body": "世界生成、资源组成、元素平衡和 NCM 解码必须版本化，使旧声明仍可审查。",
+        "authority": "规则哈希应锚定在全局配置或签名发布清单中，而不是藏在网站文案里。",
+        "disclosure": "规则变化时，发布旧哈希、新哈希、受影响坐标/资源范围和回放影响。",
+        "maturity": "让规则变化可复现、可 diff，并在经济影响重大时逐步进入玩家治理。"
+      },
+      {
+        "status": "经济",
+        "title": "经济参数控制",
+        "body": "NCK 用途、费用、背包容量等级、守护者质押和市场结算都应被视为经济政策，而不是 UI 装饰文字。",
+        "authority": "参数应说明谁能设置，以及程序是强制执行还是仅记录。",
+        "disclosure": "发布费用常量、mint 假设、金库 owner、质押数值和临时测试网例外。",
+        "maturity": "改变玩家成本、奖励或资源稀缺性的参数前，需要正式提案和公开审查。"
+      },
+      {
+        "status": "内容",
+        "title": "客户端与文档变化",
+        "body": "公开游戏也需要文案治理，因为用户会根据网站声明和钱包提示做决定。",
+        "authority": "网站和文档变化可快于合约，所以声明需要状态标签，翻译滞后时应回退英文。",
+        "disclosure": "维护声明措辞、信任边界、语言新增和主要 UI 流程变化的日志。",
+        "maturity": "让合约证据、截图和文档按 release tag 同步，而不是靠记忆同步。"
+      },
+      {
+        "status": "事故",
+        "title": "披露与响应路径",
+        "body": "可信项目应说明 bug、状态不一致、卡住交易、重复资源或市场故障如何处理。",
+        "authority": "事故响应初期由团队主导，但应公开影响范围，不能静默重写经济历史。",
+        "disclosure": "记录严重级别、受影响账户、缓解措施、回放证据，以及是否需要链上迁移。",
+        "maturity": "建立公开安全联系方式、修复日志、复盘模板，并最终形成治理审查的恢复策略。"
+      },
+      {
+        "status": "未来",
+        "title": "治理过渡",
+        "body": "治理应该在规则足够可理解、投票者能评估之后到来。",
+        "authority": "当前设计意图不应被宣传成已经上线的社区控制。",
+        "disclosure": "发布从团队管理 Alpha 到参数治理的路径，包括哪些权限会因安全原因暂时不开放治理。",
+        "maturity": "区分技术紧急控制与长期世界治理、领地政策和经济参数投票。"
+      }
+    ]
+  },
+  "notation": {
+    "eyebrow": "驗證記號體系",
+    "title": "核心遊戲循環可以被描述為公開輸入加受約束的狀態轉換。",
+    "body": "这里的记号是为了让人读懂，而不是制造学术感。它给审计者提供一套共享词汇，用来讨论世界生成、挖掘、背包托管、市场结算和守护者可用性，同时不假装所有计划中的证明都已经完成。",
+    "labels": {
+      "review": "审查含义",
+      "limit": "当前限制"
+    },
+    "items": [
+      {
+        "status": "世界",
+        "title": "种子 Chunk 函数",
+        "formula": "ChunkCandidate = G(worldSeed, chunkCoord, ruleVersion)",
+        "body": "一个 chunk 应该能在固定生成器版本下，由公开输入复现。",
+        "review": "审查者可以回放抽样 chunk，对比方块候选、生态边界和输出哈希。",
+        "limit": "页面还需要继续增加标准样例，让独立客户端验证的不只是截图。"
+      },
+      {
+        "status": "方块",
+        "title": "方块身份函数",
+        "formula": "BlockID = B(worldSeed, chunkCoord, voxelCoord, ruleVersion)",
+        "body": "被挖掘的资源首先应是确定性方块候选，而不是私有服务器里的库存行。",
+        "review": "关键问题是显示的方块、挖掘坐标和记录的资源是否指向同一个推导对象。",
+        "limit": "树木、树叶、地形边缘、水、岩浆和稀有材料还需要更广的资源身份样例。"
+      },
+      {
+        "status": "挖掘",
+        "title": "钱包授权的状态转换",
+        "formula": "State(t+1) = ApplyMine(State(t), wallet, coord, proofInputs)",
+        "body": "挖掘应成为由玩家钱包授权、在重复或无效时被拒绝的受约束状态转换。",
+        "review": "检查签名账户、session 权限、重复坐标拒绝、失败恢复和背包插入行为。",
+        "limit": "生产级信心需要公开负向测试矩阵和可回放交易样例。"
+      },
+      {
+        "status": "背包",
+        "title": "可携带背包记录",
+        "formula": "ResourceRecord = {coord, blockHint, ruleVersion, source}",
+        "body": "背包物品按单个坐标推导记录建模，未来锻造可以使用位置相关属性。",
+        "review": "审查者应验证容量、owner/装备绑定、插入/移除压缩和精确记录转移。",
+        "limit": "高级背包、锻造移除和市场托管路径需要随着功能成熟继续做不变量测试。"
+      },
+      {
+        "status": "市场",
+        "title": "保留来源的结算挂单",
+        "formula": "Listing = Lock(resourceRecord, seller, currency, price)",
+        "body": "挂单应保留来源：卖出的物品必须是离开源背包的那条精确资源记录。",
+        "review": "对比挂单来源字段、托管权限、购买/取消转换、NCK 账户校验和最终背包状态。",
+        "limit": "主网级结算仍需要第三方审查、费用披露和部分失败场景的对抗测试。"
+      },
+      {
+        "status": "守护者",
+        "title": "非托管的可用性",
+        "formula": "Availability(region, t) != Custody(playerAssets)",
+        "body": "守护者可以提升可达性和通信能力，但不应成为隐藏的资产处理者。",
+        "review": "关键不变量是守护者参与不能替代钱包签名的经济转换。",
+        "limit": "守护者证明、质押激励、故障响应和惩罚策略仍是未来强化表面。"
+      }
+    ]
+  },
+  "questions": {
+    "eyebrow": "開放審查問題",
+    "title": "最強的 NiceChunk 應該盡早邀請嚴格問題。",
+    "body": "这些问题不是营销异议，而是在项目获得更强证据、生产部署和独立审查之前，应持续公开的工程与经济问题。",
+    "labels": {
+      "why": "为什么重要",
+      "evidence": "需要的证据",
+      "owner": "可能负责方"
+    },
+    "items": [
+      {
+        "status": "规则",
+        "title": "规则哈希如何跨版本锚定？",
+        "body": "世界生成、资源组成和 NCM 解码应在网站和客户端演进后仍可回放。",
+        "why": "如果旧规则无法重建，历史资源会变得难以审计。",
+        "evidence": "签名发布清单、配置中的规则哈希、样例校验和、清晰迁移说明。",
+        "owner": "协议工程与文档。"
+      },
+      {
+        "status": "程序",
+        "title": "生产环境升级策略是什么？",
+        "body": "测试网程序可以快速演进，但生产信任需要可见的权限、迁移和紧急边界。",
+        "why": "投资人和审计者需要知道谁能改变承载价值的逻辑，以及受到什么约束。",
+        "evidence": "升级权限披露、多签或 timelock 计划、二进制哈希、源码标签和事故流程。",
+        "owner": "核心协议与安全审查。"
+      },
+      {
+        "status": "回放",
+        "title": "独立回放套件覆盖多广？",
+        "body": "少量样例有用，但 voxel 世界需要覆盖常见地形、树木、液体、稀有材料和边缘坐标。",
+        "why": "回放覆盖率能把确定性生成从声明变成工程实践。",
+        "evidence": "标准样例包、独立验证器、CI 检查和不一致报告。",
+        "owner": "世界生成与 QA。"
+      },
+      {
+        "status": "经济",
+        "title": "市场转移能否保留精确资源来源？",
+        "body": "如果未来锻造依赖坐标和生成上下文，挂单不能把挖出的方块压平成可替代 UI 行。",
+        "why": "来源丢失会削弱坐标推导资源这个核心概念。",
+        "evidence": "托管测试、记录相等性检查、购买/取消轨迹、背包前后解码。",
+        "owner": "市场、背包与 SDK。"
+      },
+      {
+        "status": "守护者",
+        "title": "区域可用性失败时会发生什么？",
+        "body": "守护者网络在声明 uptime、质押或区域参与价值前，应先解释故障模式。",
+        "why": "可用性只有在故障行为诚实且不改变所有权时才有价值。",
+        "evidence": "区域故障模拟、陈旧状态 UI、守护者证明间隔和非托管不变量。",
+        "owner": "Guardian 网络与客户端运行时。"
+      },
+      {
+        "status": "NCK",
+        "title": "哪些经济参数会进入治理？",
+        "body": "NCK 用途、费用、守护者质押、背包等级和市场结算策略应从团队常量逐步成熟为公开政策。",
+        "why": "经济参数影响玩家成本、稀缺性、激励和长期可信度。",
+        "evidence": "参数注册表、费用表、治理路线图、变更提案和金库披露。",
+        "owner": "经济设计与治理。"
+      }
+    ]
+  },
+  "adversarial": {
+    "eyebrow": "對抗測試矩陣",
+    "title": "公平的遊戲經濟，要靠它拒絕接受哪些失敗路徑來證明。",
+    "body": "正常路徑只能說明功能能跑通。對抗路徑才能說明經濟系統是否能抵抗重複鑄造、未授權修改、陳舊狀態、錯誤託管和誤導性 UI 確認。",
+    "labels": {
+      "reject": "應該拒絕",
+      "evidence": "需要檢查的證據",
+      "status": "當前狀態"
+    },
+    "rows": [
+      {
+        "domain": "挖掘",
+        "title": "重复坐标挖掘",
+        "reject": "钱包或 session 在某个 chunk 坐标和 voxel 坐标已经记录为被破坏后，再次尝试挖同一个方块。",
+        "evidence": "ChunkBroken 账户记录、重复查找路径、交易日志、UI 失败恢复，以及失败交易前后的背包物品数量。",
+        "status": "每个挖掘版本都需要公开负向测试。"
+      },
+      {
+        "domain": "Session",
+        "title": "过期或错误玩家 Session",
+        "reject": "交易使用过期 session、非该钱包拥有的 session，或缺少挖掘/背包能力标记的 session。",
+        "evidence": "PlayerSession 字段、owner 签名者、过期 slot/时间戳、允许动作标记、SDK 错误处理和钱包提示一致性。",
+        "status": "应在任何经济状态改变前检查 session 权限。"
+      },
+      {
+        "domain": "背包",
+        "title": "未装备背包时写入资源",
+        "reject": "玩家没有有效装备背包 PDA 时挖掘经济方块，或尝试写入另一个 owner 控制的背包。",
+        "evidence": "PlayerProfile 已装备背包字段、Backpack owner/session 校验、容量计数、append 指令账户和失败 UI。",
+        "status": "关键原因：背包是独立且可携带的库存账户。"
+      },
+      {
+        "domain": "容量",
+        "title": "超过容量的库存插入",
+        "reject": "挖出的资源插入会超过背包容量，包括默认 50 格背包和未来任何不超过 99 格上限的高级背包。",
+        "evidence": "Backpack capacity 字段、已占用数量、append 边界检查、失败交易日志，以及拒绝后 UI 不出现虚假物品。",
+        "status": "高级背包或付费容量等级上线前必须具备。"
+      },
+      {
+        "domain": "市场",
+        "title": "错误来源资源挂单",
+        "reject": "卖家创建挂单时使用的 source index 或资源记录，与从源背包移除的物品不一致。",
+        "evidence": "Listing 来源字段、资源记录相等性检查、背包前后解码、托管权限和取消返还路径。",
+        "status": "用于保留坐标推导资源的来源证明。"
+      },
+      {
+        "domain": "NCK",
+        "title": "无效代币账户结算",
+        "reject": "买家或卖家在 NCK 计价挂单中使用错误 mint、owner、authority 或 decimals 的代币账户。",
+        "evidence": "代币账户 owner/mint 校验、GlobalConfig 中的 NCK mint、挂单货币标记、买家扣款、卖家收款和金库费用路径。",
+        "status": "任何生产级 NCK 市场声明之前都必须具备。"
+      },
+      {
+        "domain": "守护者",
+        "title": "把守护者消息当成经济权限",
+        "reject": "guardian、guardian endpoint 或区域中继在没有玩家钱包签名时尝试创建、转移或取消玩家资产。",
+        "evidence": "Guardian 注册状态、endpoint 角色、交易签名者集合、非托管不变量和客户端对 guardian 故障的处理。",
+        "status": "核心边界：可用性不是托管权。"
+      },
+      {
+        "domain": "客户端",
+        "title": "失败后仍显示误导性成功状态",
+        "reject": "交易失败或超时后，UI 仍显示已挖资源、已售物品、已装备背包或已确认市场动作。",
+        "evidence": "RPC 超时路径、SendTransactionError 日志、pending/confirmed/failed UI 状态、缓存失效和解码账户对比。",
+        "status": "即使合约正确，用户信任也依赖这个边界。"
+      }
+    ]
+  },
+  "packet": {
+    "eyebrow": "審計資料包藍圖",
+    "title": "下一步審計需要的是版本化資料包，而不是另一份宣傳文件。",
+    "body": "這個藍圖定義 NiceChunk 應該為獨立審查發布什麼：綁定到某個 release 的精確源碼快照、部署資料、帳戶解碼器、生成樣例、對抗測試和成熟度披露。",
+    "labels": {
+      "purpose": "目的",
+      "proof": "證明目標",
+      "files": "資料包文件"
+    },
+    "items": [
+      {
+        "status": "发布",
+        "title": "源码快照清单",
+        "body": "审查者需要冻结的源码快照，避免代码、网站声明、样例和已部署程序来自不同版本。",
+        "purpose": "把每个信任声明绑定到 release tag、commit hash、生成后的公开资源和明确构建命令。",
+        "proof": "审查者可以重新构建 Trust 页面，并把产物集合和线上网站对比。",
+        "files": [
+          "release-manifest.json",
+          "source-map.md",
+          "build-command.txt",
+          "locale-checks.json"
+        ]
+      },
+      {
+        "status": "部署",
+        "title": "程序部署清单",
+        "body": "Program ID 和升级姿态应该作为可审查数据记录，而不是只写在网站文案里。",
+        "purpose": "列出集群、程序 ID、部署 slot、二进制哈希、升级权限、PDA seeds、账户大小和配置哈希。",
+        "proof": "审查者可以把网站 registry 值与链上 account owner、programdata 账户和 SDK 常量对比。",
+        "files": [
+          "deployment-manifest.json",
+          "program-hashes.txt",
+          "pda-seeds.json",
+          "upgrade-authority.md"
+        ]
+      },
+      {
+        "status": "解码",
+        "title": "账户解码样例集",
+        "body": "公开状态只有在独立审查者不依赖 UI 也能解码账户字节时才真正有用。",
+        "purpose": "提供 global config、player、chunk、backpack、guardian 和 listing 账户的原始样例字节与期望 JSON。",
+        "proof": "审查者可以解码原始账户，并与 UI 状态、SDK 输出和协议文档对比。",
+        "files": [
+          "fixtures/accounts/*.bin",
+          "fixtures/accounts/*.json",
+          "decode-accounts.mjs",
+          "account-layout.md"
+        ]
+      },
+      {
+        "status": "回放",
+        "title": "生成与资源回放包",
+        "body": "种子 chunk 应该能在不同客户端、截图和独立验证脚本之间复现。",
+        "purpose": "发布代表性 seed、chunk 坐标、方块样本、资源候选和期望哈希。",
+        "proof": "审查者可以在固定规则版本下重新计算抽样地形、树木方块、液体、矿石和稀有资源候选。",
+        "files": [
+          "fixtures/generation/*.json",
+          "expected-hashes.json",
+          "verify-generated-block.mjs",
+          "rule-version.md"
+        ]
+      },
+      {
+        "status": "失败",
+        "title": "对抗交易日志集",
+        "body": "经济可信度取决于程序拒绝了什么，而不只是成功了什么。",
+        "purpose": "收集重复挖掘、过期 session、错误背包、超容量、错误挂单来源、无效 NCK token account 和失败 UI 确认案例。",
+        "proof": "审查者可以回放或模拟负向路径，并确认拒绝后状态没有改变。",
+        "files": [
+          "adversarial-matrix.json",
+          "tx-logs/*.json",
+          "simulate-negative-paths.mjs",
+          "failure-ui-cases.md"
+        ]
+      },
+      {
+        "status": "披露",
+        "title": "成熟度与限制账本",
+        "body": "可信审查包必须说明哪些是 live、devnet、designed、planned、experimental，哪些明确不声称。",
+        "purpose": "避免投资人、玩家或审计者把计划中的去中心化、治理、守护者经济或 NCK 策略当成已完成安全性。",
+        "proof": "审查者可以把每个公开声明映射到状态、证据链接、边界和下一步强化要求。",
+        "files": [
+          "claims-ledger.json",
+          "risk-register.md",
+          "known-limits.md",
+          "next-hardening.md"
+        ]
+      }
+    ]
+  },
+  "deployment": {
+    "eyebrow": "部署證據帳本",
+    "title": "Program ID 只是部署信任的第一層。",
+    "body": "嚴肅審查需要把網站 registry 值與源碼路徑、SDK 常量、鏈上 owner、帳戶布局、部署 slot 和未來二進制哈希對比。這個帳本把今天已經可見的證據，與仍需要簽名發布清單補強的證據分開。",
+    "labels": {
+      "visible": "當前可見證據",
+      "missing": "仍需補強"
+    },
+    "rows": [
+      {
+        "domain": "Core",
+        "title": "全局配置程序",
+        "programId": "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
+        "visible": "Program ID、GlobalConfig magic NCKCFG01、global-config PDA seed、源码路径 programs/nicechunk_core/src/lib.rs、配置哈希字段、NCK mint 假设和账户大小已经在 registry 与合约页可见。",
+        "missing": "签名部署 slot、程序二进制哈希、升级权限状态、配置账户样例字节，以及绑定 release tag 的可复现构建命令。"
+      },
+      {
+        "domain": "Player",
+        "title": "玩家身份与 Session 程序",
+        "programId": "oeaRMVnPoV4iENnGCCtaEeRxU5be515s4YYe6aXQuKe",
+        "visible": "Program ID、player/session PDA 域、PlayerProfile 与 PlayerSession account magic、源码路径 programs/nicechunk_player/src/lib.rs 和 session 权限角色已经记录。",
+        "missing": "Session 过期样例、签名者不匹配负向日志、已装备背包账户样例和部署权限证据。"
+      },
+      {
+        "domain": "Chunk",
+        "title": "世界变更与破坏方块程序",
+        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "visible": "Program ID、chunk 与 chunk-broken seeds、ChunkState magic NCKCHK01、ChunkBroken magic NCBK、最大记录数和源码路径 programs/nicechunk_chunk/src/lib.rs 已公开。",
+        "missing": "标准挖掘坐标样例、重复挖掘交易日志、MagicBlock delegation 证据，以及大型 chunk 记录的账户字节解码器。"
+      },
+      {
+        "domain": "Backpack",
+        "title": "可携带库存程序",
+        "programId": "FwTrMDGyRg653L9svvt5aoGii9ZjX1WekSFWcwByjxqt",
+        "visible": "Program ID、backpack seed、NCKBPK01 magic、默认容量 50、最大容量 99、10 字节资源记录和源码路径 programs/nicechunk_backpack/src/lib.rs 已列出。",
+        "missing": "插入/移除不变量测试、超容量日志、转移/托管样例、rent sizing 证明，以及挖掘后的账户解码样例。"
+      },
+      {
+        "domain": "Guardian",
+        "title": "区域可用性与守护者程序",
+        "programId": "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
+        "visible": "Program ID、guardian-registry、guardian-region、guardian-treasury seeds、registry/region 账户大小、质押数量、证明间隔和源码路径 programs/nicechunk_guardian/src/lib.rs 已公开。",
+        "missing": "Endpoint 证明样例、故障模拟日志、质押金库权限证据、惩罚策略测试和非托管失败案例。"
+      },
+      {
+        "domain": "Market",
+        "title": "挂单与 NCK 结算程序",
+        "programId": "1PwPzFtdJ5gQqku5gBo4b6Wvo48Qe8NuXSogUP8TWpR",
+        "visible": "Program ID、listing 与 market-authority seeds、NCKMKT01 magic、v3 挂单大小、SOL/NCK 货币支持、来源库存字段和源码路径 programs/nicechunk_market/src/lib.rs 已记录。",
+        "missing": "托管二进制轨迹、NCK token account 负向日志、购买/取消账户 diff、费用策略证明和 sold 状态回放样例。"
+      }
+    ]
+  },
+  "decoder": {
+    "eyebrow": "帳戶解碼證據",
+    "title": "公開帳戶狀態應該能在不信任 UI 的情況下被讀取。",
+    "body": "NiceChunk 的帳戶資料只有在審查者能從 raw bytes 解碼、驗證 magic/version、檢查 owner 與 PDA 假設，並把解碼狀態和網站及錢包交易歷史對照時，才真正可信。",
+    "labels": {
+      "layout": "帳戶布局",
+      "firstChecks": "第一步檢查",
+      "reviewUse": "審查用途"
+    },
+    "rows": [
+      {
+        "domain": "核心",
+        "title": "GlobalConfig 帳戶",
+        "layout": "NCKCFG01，v1，293 位元組；seed 為 global-config；包含 NCK mint、world id、world seed、規則雜湊、chunk/build 邊界與 guardian 參數。",
+        "checks": "檢查 program owner、PDA seed、magic、version、精確長度、world id、NCK mint、規則雜湊、chunk size、建造邊界與 guardian 常量。",
+        "use": "證明官網與遊戲客戶端讀取的是同一組規範世界參數。"
+      },
+      {
+        "domain": "玩家",
+        "title": "PlayerProfile 帳戶",
+        "layout": "NCKPLY01，v1，449 位元組；相容 legacy 417 位元組；owner offset 12；global config 44；position 78；equipment 103；equipped backpack 393。",
+        "checks": "檢查 owner 錢包、global config 關聯、支援的帳戶長度、裝備槽、已裝備背包公鑰、created slot 與 updated slot。",
+        "use": "驗證錢包身分、可見裝備，以及玩家是否能把挖掘資源寫入已綁定背包。"
+      },
+      {
+        "domain": "會話",
+        "title": "PlayerSession 帳戶",
+        "layout": "NCKSES01，v1，184 位元組；owner 12；session authority 44；player profile 76；global config 108；allowed actions 142；expires_at 144。",
+        "checks": "檢查 session authority 簽名者、profile/global config 關聯、action mask、過期時間、max actions 與 action count。",
+        "use": "把短期遊戲操作權限和長期錢包所有權分離。"
+      },
+      {
+        "domain": "區塊",
+        "title": "ChunkState 帳戶",
+        "layout": "NCKCHK01，v1，8,280 位元組；header 88；最多 128 條 block delta，每條 64 位元組；由 world id、chunk_x、chunk_z 定位。",
+        "checks": "檢查 global config、world id、chunk_x、chunk_z、delta 計數器、capacity、created slot 與 updated slot。",
+        "use": "驗證玩家寫入的方塊變化，而不是把生成地形整塊存進鏈上。"
+      },
+      {
+        "domain": "挖掘",
+        "title": "ChunkBrokenState 帳戶",
+        "layout": "NCBK，v1，可變長度；header 16；record 3 位元組；最大 capacity 2,048；壓縮 local_x、local_z 與相對 min_y 的 y_offset。",
+        "checks": "檢查 min_y、count <= capacity、length = header + capacity * 3，以及重複 packed coordinate 拒絕邏輯。",
+        "use": "用緊湊方式驗證已挖掘生成方塊，並防止同一座標被重複挖掘。"
+      },
+      {
+        "domain": "背包",
+        "title": "BackpackAccount 庫存帳戶",
+        "layout": "NCKBPK01，v1，1,118 位元組；header 128；預設容量 50；最大容量 99；每條資源記錄用 10 位元組儲存 x/y/z。",
+        "checks": "檢查 owner、capacity、item_count <= capacity、carried state、updated slot，以及 records offset 128 後的 x/y/z 記錄。",
+        "use": "驗證背包是可攜帶的獨立帳戶，並保留資源來自世界座標的可追溯性。"
+      },
+      {
+        "domain": "守護者",
+        "title": "Guardian registry 與 region 帳戶",
+        "layout": "NCKGDR01 registry 為 160 位元組；NCKGRG01 region 為 256 位元組；包含 owner/operator/global config、endpoint、stake、proof counters 與 status。",
+        "checks": "檢查 registry global config、treasury token、active count、region status、owner/operator、endpoint、stake、proof interval 與 region-size 常量。",
+        "use": "驗證 guardian 可用性資料，同時明確守護者不託管資產的邊界。"
+      },
+      {
+        "domain": "市場",
+        "title": "ListingAccount 結算狀態",
+        "layout": "NCKMKT01，v3，216 位元組；記錄 listing state、seller、listing id、category、currency、source inventory、resource x/y/z、buyer 與 sold slot。",
+        "checks": "檢查 active/canceled/sold 狀態、seller、price、currency、source kind、source index、item hash、source inventory 與 NCK token 假設。",
+        "use": "驗證掛單保留資源來源，且結算狀態可以被獨立讀取。"
+      }
+    ]
+  }
+}

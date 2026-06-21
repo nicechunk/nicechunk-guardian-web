@@ -1,0 +1,989 @@
+{
+  "_meta": {
+    "language": "zh-Hant",
+    "label": "Traditional Chinese",
+    "version": "elements-locale-zh-Hant-2e1136ade7e6f2ba",
+    "contentHash": "2e1136ade7e6f2ba"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的種子體素世界協議。",
+    "navigationAria": "頁腳導航",
+    "socialAria": "NiceChunk 社交連結",
+    "home": "首頁",
+    "play": "進入世界",
+    "roadmap": "路書",
+    "docs": "文檔",
+    "guardian": "守護者",
+    "contracts": "合約",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有權利。"
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "語言",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "氫",
+      "He": "氦",
+      "Li": "鋰",
+      "Be": "鈹",
+      "B": "硼",
+      "C": "碳",
+      "N": "氮",
+      "O": "氧",
+      "F": "氟",
+      "Ne": "氖",
+      "Na": "鈉",
+      "Mg": "鎂",
+      "Al": "鋁",
+      "Si": "矽",
+      "P": "磷",
+      "S": "硫",
+      "Cl": "氯",
+      "Ar": "氬",
+      "K": "鉀",
+      "Ca": "鈣",
+      "Sc": "鈧",
+      "Ti": "鈦",
+      "V": "釩",
+      "Cr": "鉻",
+      "Mn": "錳",
+      "Fe": "鐵",
+      "Co": "鈷",
+      "Ni": "鎳",
+      "Cu": "銅",
+      "Zn": "鋅",
+      "Ga": "鎵",
+      "Ge": "鍺",
+      "As": "砷",
+      "Se": "硒",
+      "Br": "溴",
+      "Kr": "氪",
+      "Rb": "銣",
+      "Sr": "鍶",
+      "Y": "釔",
+      "Zr": "鋯",
+      "Nb": "鈮",
+      "Mo": "鉬",
+      "Tc": "鎝",
+      "Ru": "釕",
+      "Rh": "銠",
+      "Pd": "鈀",
+      "Ag": "銀",
+      "Cd": "鎘",
+      "In": "銦",
+      "Sn": "錫",
+      "Sb": "銻",
+      "Te": "碲",
+      "I": "碘",
+      "Xe": "氙",
+      "Cs": "銫",
+      "Ba": "鋇",
+      "La": "鑭",
+      "Ce": "鈰",
+      "Pr": "鐠",
+      "Nd": "釹",
+      "Pm": "鉕",
+      "Sm": "釤",
+      "Eu": "銪",
+      "Gd": "釓",
+      "Tb": "鋱",
+      "Dy": "鏑",
+      "Ho": "鈥",
+      "Er": "鉺",
+      "Tm": "銩",
+      "Yb": "鐿",
+      "Lu": "鎦",
+      "Hf": "鉿",
+      "Ta": "鉭",
+      "W": "鎢",
+      "Re": "錸",
+      "Os": "鋨",
+      "Ir": "銥",
+      "Pt": "鉑",
+      "Au": "金",
+      "Hg": "汞",
+      "Tl": "鉈",
+      "Pb": "鉛",
+      "Bi": "鉍",
+      "Po": "釙",
+      "At": "砈",
+      "Rn": "氡",
+      "Fr": "鍅",
+      "Ra": "鐳",
+      "Ac": "錒",
+      "Th": "釷",
+      "Pa": "鏷",
+      "U": "鈾",
+      "Np": "錼",
+      "Pu": "鈽",
+      "Am": "鋂",
+      "Cm": "鋦",
+      "Bk": "鉳",
+      "Cf": "鉲",
+      "Es": "鑀",
+      "Fm": "鐨",
+      "Md": "鍆",
+      "No": "鍩",
+      "Lr": "鐒",
+      "Rf": "𬬻",
+      "Db": "𬭊",
+      "Sg": "𬭳",
+      "Bh": "𬭛",
+      "Hs": "𬭶",
+      "Mt": "鿏",
+      "Ds": "𫟼",
+      "Rg": "𬬭",
+      "Cn": "鎶",
+      "Nh": "鉨",
+      "Fl": "鈇",
+      "Mc": "鏌",
+      "Lv": "鉝",
+      "Ts": "鿬",
+      "Og": "鿫"
+    },
+    "description": {
+      "H": {
+        "short": "氫是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於燃料電池、储氫、生命化學、火箭推進和有機合成。",
+        "gameplayRole": "在 NiceChunk 中，氫會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "He": {
+        "short": "氦是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於低溫冷却、惰性封裝、气球、精密設備和低溫機器。",
+        "gameplayRole": "在 NiceChunk 中，氦會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Li": {
+        "short": "鋰是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、輕量化儲能、活泼化學反应和高階能量單元。",
+        "gameplayRole": "在 NiceChunk 中，鋰會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Be": {
+        "short": "鈹是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鈹會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "B": {
+        "short": "硼是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，硼會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "C": {
+        "short": "碳是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於有機鏈、碳纖維、燃料、鋼材强化、石墨導體和高階复合材料。",
+        "gameplayRole": "在 NiceChunk 中，碳會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "N": {
+        "short": "氮是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於肥料化學、保護氣氛、含能材料、冷卻系統和生物循環。",
+        "gameplayRole": "在 NiceChunk 中，氮會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "O": {
+        "short": "氧是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於氧化反應、助燃、生命維持、陶瓷、玻璃和氧化矿物。",
+        "gameplayRole": "在 NiceChunk 中，氧會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "F": {
+        "short": "氟是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於蝕刻、強腐蝕化工、高風險鹽類和高階含氟材料。",
+        "gameplayRole": "在 NiceChunk 中，氟會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ne": {
+        "short": "氖是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於霓虹光源、電漿显示、光學标识和稳定氣體舱。",
+        "gameplayRole": "在 NiceChunk 中，氖會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Na": {
+        "short": "鈉是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鈉會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mg": {
+        "short": "鎂是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鎂會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Al": {
+        "short": "鋁是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於輕量建築、導電框架、航空部件和耐腐蝕外壳。",
+        "gameplayRole": "在 NiceChunk 中，鋁會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Si": {
+        "short": "矽是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、太陽能材料、岩石化學和可程式化晶體系统。",
+        "gameplayRole": "在 NiceChunk 中，矽會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "P": {
+        "short": "磷是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，磷會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "S": {
+        "short": "硫是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，硫會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cl": {
+        "short": "氯是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，氯會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ar": {
+        "short": "氬是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於惰性气氛、焊接保护、密封加工和電漿灯。",
+        "gameplayRole": "在 NiceChunk 中，氬會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "K": {
+        "short": "鉀是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鉀會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ca": {
+        "short": "鈣是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鈣會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sc": {
+        "short": "鈧是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈧會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ti": {
+        "short": "鈦是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於輕量護甲、高强度工具、航空結構和高階機器。",
+        "gameplayRole": "在 NiceChunk 中，鈦會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "V": {
+        "short": "釩是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釩會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cr": {
+        "short": "鉻是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於不锈合金、耐腐蝕鍍層、硬質塗層和顏料系统。",
+        "gameplayRole": "在 NiceChunk 中，鉻會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mn": {
+        "short": "錳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，錳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fe": {
+        "short": "鐵是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於建築、機械、武器、磁性設備和鋼材合成。",
+        "gameplayRole": "在 NiceChunk 中，鐵會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Co": {
+        "short": "鈷是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於電池正极、强合金、顏料、磁體和高階工具。",
+        "gameplayRole": "在 NiceChunk 中，鈷會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ni": {
+        "short": "鎳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於不鏽鋼、電池、磁體、護甲合金和催化设备。",
+        "gameplayRole": "在 NiceChunk 中，鎳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cu": {
+        "short": "銅是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於導線、電子設備、馬達、導電方塊和銅合金。",
+        "gameplayRole": "在 NiceChunk 中，銅會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Zn": {
+        "short": "鋅是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋅會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ga": {
+        "short": "鎵是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於低熔點電子材料、化合物半導體、顯示材料和特殊液態金屬逻辑。",
+        "gameplayRole": "在 NiceChunk 中，鎵會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ge": {
+        "short": "鍺是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體晶圓、紅外光學、高階電子和晶體配方。",
+        "gameplayRole": "在 NiceChunk 中，鍺會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "As": {
+        "short": "砷是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，砷會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Se": {
+        "short": "硒是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，硒會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Br": {
+        "short": "溴是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，溴會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Kr": {
+        "short": "氪是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於惰性气氛、低溫系统、電漿照明、光學和保護性加工。",
+        "gameplayRole": "在 NiceChunk 中，氪會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rb": {
+        "short": "銣是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，銣會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sr": {
+        "short": "鍶是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鍶會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Y": {
+        "short": "釔是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釔會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Zr": {
+        "short": "鋯是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋯會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nb": {
+        "short": "鈮是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈮會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mo": {
+        "short": "鉬是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉬會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tc": {
+        "short": "鎝是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎝會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ru": {
+        "short": "釕是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釕會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rh": {
+        "short": "銠是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，銠會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pd": {
+        "short": "鈀是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈀會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ag": {
+        "short": "銀是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於頂級導電材料、光學材料、抗菌系统和貴金屬資源路線。",
+        "gameplayRole": "在 NiceChunk 中，銀會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cd": {
+        "short": "鎘是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎘會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "In": {
+        "short": "銦是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於顯示薄膜、觸控介面、焊料系统和专用電子材料。",
+        "gameplayRole": "在 NiceChunk 中，銦會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sn": {
+        "short": "錫是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，錫會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sb": {
+        "short": "銻是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，銻會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Te": {
+        "short": "碲是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，碲會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "I": {
+        "short": "碘是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，碘會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Xe": {
+        "short": "氙是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於離子引擎、閃光燈、麻醉化學和高階光學系统。",
+        "gameplayRole": "在 NiceChunk 中，氙會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cs": {
+        "short": "銫是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，銫會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ba": {
+        "short": "鋇是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鋇會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "La": {
+        "short": "鑭是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鑭會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ce": {
+        "short": "鈰是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鈰會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pr": {
+        "short": "鐠是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鐠會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nd": {
+        "short": "釹是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於永磁體、馬達、發馬達和稀土科技配方。",
+        "gameplayRole": "在 NiceChunk 中，釹會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pm": {
+        "short": "鉕是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鉕會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sm": {
+        "short": "釤是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，釤會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Eu": {
+        "short": "銪是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，銪會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Gd": {
+        "short": "釓是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，釓會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tb": {
+        "short": "鋱是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鋱會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Dy": {
+        "short": "鏑是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於高溫磁體、稀土馬達和精密電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鏑會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ho": {
+        "short": "鈥是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鈥會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Er": {
+        "short": "鉺是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鉺會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tm": {
+        "short": "銩是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，銩會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Yb": {
+        "short": "鐿是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鐿會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lu": {
+        "short": "鎦是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鎦會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hf": {
+        "short": "鉿是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉿會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ta": {
+        "short": "鉭是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉭會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "W": {
+        "short": "鎢是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於高溫工具、硬質護甲、重型武器、熔爐和耐熱機器。",
+        "gameplayRole": "在 NiceChunk 中，鎢會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Re": {
+        "short": "錸是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，錸會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Os": {
+        "short": "鋨是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋨會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ir": {
+        "short": "銥是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，銥會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pt": {
+        "short": "鉑是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於催化剂、燃料電池、精密設備、貴金屬合金和高價值科技配方。",
+        "gameplayRole": "在 NiceChunk 中，鉑會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Au": {
+        "short": "金是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於高價值電子、精密觸點、装饰、金庫資產和協議級收藏品。",
+        "gameplayRole": "在 NiceChunk 中，金會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hg": {
+        "short": "汞是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於液態金屬设备、感測器、毒性陷阱和密封特殊裝備。",
+        "gameplayRole": "在 NiceChunk 中，汞會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tl": {
+        "short": "鉈是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉈會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pb": {
+        "short": "鉛是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於輻射屏蔽、配重、低熔點合金和危險封裝方塊。",
+        "gameplayRole": "在 NiceChunk 中，鉛會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bi": {
+        "short": "鉍是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉍會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Po": {
+        "short": "釙是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，釙會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "At": {
+        "short": "砈是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，砈會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rn": {
+        "short": "氡是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於放射性氣體陷阱、衰變檢测和密封危險研究。",
+        "gameplayRole": "在 NiceChunk 中，氡會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fr": {
+        "short": "鍅是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鍅會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ra": {
+        "short": "鐳是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鐳會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ac": {
+        "short": "錒是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，錒會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Th": {
+        "short": "釷是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，釷會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pa": {
+        "short": "鏷是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鏷會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "U": {
+        "short": "鈾是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核燃料、輻射系统、終局能源和屏蔽工业鏈。",
+        "gameplayRole": "在 NiceChunk 中，鈾會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Np": {
+        "short": "錼是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，錼會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pu": {
+        "short": "鈽是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於反應爐燃料、禁忌武器研究、高風險能源循环和後期協議材料。",
+        "gameplayRole": "在 NiceChunk 中，鈽會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Am": {
+        "short": "鋂是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鋂會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cm": {
+        "short": "鋦是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鋦會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bk": {
+        "short": "鉳是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鉳會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cf": {
+        "short": "鉲是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鉲會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Es": {
+        "short": "鑀是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鑀會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fm": {
+        "short": "鐨是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鐨會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Md": {
+        "short": "鍆是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鍆會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "No": {
+        "short": "鍩是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鍩會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lr": {
+        "short": "鐒是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鐒會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rf": {
+        "short": "𬬻是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬬻會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Db": {
+        "short": "𬭊是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭊會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sg": {
+        "short": "𬭳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bh": {
+        "short": "𬭛是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭛會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hs": {
+        "short": "𬭶是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭶會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mt": {
+        "short": "鿏是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鿏會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ds": {
+        "short": "𫟼是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𫟼會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rg": {
+        "short": "𬬭是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬬭會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cn": {
+        "short": "鎶是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎶會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nh": {
+        "short": "鉨是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉨會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fl": {
+        "short": "鈇是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鈇會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mc": {
+        "short": "鏌是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鏌會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lv": {
+        "short": "鉝是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉝會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ts": {
+        "short": "鿬是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，鿬會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Og": {
+        "short": "鿫是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於不穩定的終局世界規則碎片、放射性异常和實驗性協議材料。",
+        "gameplayRole": "在 NiceChunk 中，鿫會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      }
+    },
+    "process": {
+      "alloy": "合金化",
+      "battery_grade_refine": "電池級精煉",
+      "capture": "捕集",
+      "cast": "鑄造",
+      "compress": "压缩",
+      "corrosion_resistant_container": "耐腐蝕容器",
+      "crush": "破碎",
+      "cryogenic_separate": "低溫分离",
+      "crystallize": "結晶",
+      "distill": "蒸馏",
+      "electrolyze": "電解",
+      "forge": "鍛造",
+      "high_temp_sinter": "高溫烧結",
+      "inert_atmosphere_process": "惰性气氛加工",
+      "ionize": "電离",
+      "isotope_separate": "同位素分离",
+      "mine": "開採",
+      "nuclear_refine": "核級精煉",
+      "oxidize": "氧化",
+      "precision_machine": "精密加工",
+      "quench": "淬火",
+      "radiation_shielding": "輻射屏蔽",
+      "reduce": "還原",
+      "refine": "精煉",
+      "sealed_capture": "密封捕集",
+      "semiconductor_refine": "半導體級精煉",
+      "sinter": "烧結",
+      "smelt": "熔煉",
+      "temper": "回火",
+      "vacuum_refine": "真空精煉",
+      "wash": "洗選"
+    },
+    "visual": {
+      "ceramic_crystal": "陶瓷晶體",
+      "copper_metal": "銅金屬",
+      "corrosive_gas": "腐蝕性氣體",
+      "faceted_crystal": "切面晶體",
+      "gold_metal": "金屬金",
+      "graphite_carbon": "石墨碳",
+      "liquid_metal": "液態金屬",
+      "matte_solid": "哑光固體",
+      "metalloid_crystal": "類金屬晶體",
+      "neon_glow_gas": "霓虹發光氣體",
+      "noble_gas": "稀有氣體",
+      "plasma_gas": "電漿氣體",
+      "radioactive_silver_metal": "放射性銀灰金屬",
+      "rough_crystal": "粗糙晶體",
+      "silver_metal": "銀白金屬",
+      "silvery_metal": "銀白金屬",
+      "solid_powder": "固體粉末",
+      "toxic_halogen": "毒性卤素",
+      "uranium_silver_metal": "鈾銀灰金屬",
+      "volatile_liquid": "挥發性液體",
+      "white_silvery_metal": "白銀色金屬",
+      "yellow_crystal": "黄色晶體",
+      "acid_gas": "酸性氣體",
+      "brushed_metal": "拉丝金屬",
+      "clear_gas": "透明氣體",
+      "corrosive_liquid": "腐蝕性液體",
+      "fresh_cut_metal": "新切金屬",
+      "glowing_rare_earth_veins": "發光稀土矿脈",
+      "halide_crystal": "卤化物晶體",
+      "mineral_metal": "矿物金屬",
+      "powdered_solid": "粉末固體",
+      "radioactive_veins": "放射性矿脈",
+      "soft_brushed_metal": "软質拉丝金屬",
+      "crystal_ore": "晶體矿石",
+      "metallic_ore_veins": "金屬矿脈",
+      "mineral_ore": "矿物矿石",
+      "powder_veins": "粉末矿脈",
+      "radioactive_cracked_ore": "放射性裂紋矿石",
+      "rare_earth_veins": "稀土矿脈",
+      "reactive_salt_ore": "活泼鹽類矿石",
+      "sealed_gas_pocket": "密封氣體囊",
+      "soft_metal_ore": "軟金屬矿石",
+      "corrosive_vapor": "腐蝕性蒸汽",
+      "glowing_dust": "發光塵埃",
+      "mineral_sparks": "矿物火花",
+      "radioactive_sparks": "放射性火花",
+      "soft_glow_mist": "柔和發光霧",
+      "pulse": "脈冲",
+      "slow_flow": "緩慢流動",
+      "subtle_shimmer": "轻微閃烁",
+      "unstable_flicker": "不穩定閃變"
+    },
+    "nav": {
+      "aria": "主導航",
+      "home": "首頁",
+      "roadbook": "路书",
+      "world": "世界",
+      "worldRules": "世界規則",
+      "economy": "经济",
+      "fairness": "公平",
+      "resources": "資源",
+      "elements": "元素",
+      "proofOfFrontier": "證明",
+      "guardians": "守護者",
+      "docs": "文档",
+      "enterWorld": "進入世界"
+    },
+    "page": {
+      "title": "NiceChunk 元素",
+      "shortTitle": "元素",
+      "navAria": "元素導航",
+      "enterWorld": "進入世界",
+      "resourceRules": "資源規則",
+      "eyebrow": "元素資源基礎",
+      "heading": "元素會成為資源。",
+      "body": "NiceChunk 使用 118 個真實化學元素作為未來資源、鍛造、材質視覺和可驗证遊戲規則的公開詞彙。",
+      "statsAria": "元素模型狀態",
+      "tableEyebrow": "週期表接口",
+      "tableTitle": "開放元素地图",
+      "filterAria": "元素分類篩選",
+      "filterAll": "全部",
+      "protocolAria": "元素協議說明",
+      "stat": {
+        "discovered": "已發現元素",
+        "elements": "真實化學元素",
+        "categories": "資源類別",
+        "natural": "天然候選元素",
+        "versioned": "規則集狀態"
+      },
+      "protocol": {
+        "resourceGene": {
+          "title": "資源基因",
+          "body": "每個元素都可以成為挖掘掉落、方塊配方和未來資產元數據里的確定性材料身份。"
+        },
+        "forgingInput": {
+          "title": "鍛造输入",
+          "body": "原子和物理特征會映射到未來的加工等級、温度要求、風險和工站逻辑。"
+        },
+        "visualGene": {
+          "title": "視覺基因",
+          "body": "顏色、金屬度、粗糙度、發光、矿脈、顆粒和裂紋等特征可以驅動體素材質表現。"
+        },
+        "verification": {
+          "title": "公開驗证",
+          "body": "这张表會作為公開規則數據，讓玩家在鏈上提交前檢查資源如何被分類。"
+        }
+      },
+      "tableAria": "化學元素週期表",
+      "legendAria": "元素類別",
+      "detailsEyebrow": "元素詳情",
+      "detailsTitle": "點击一個元素，查看它的屬性和加工要求。",
+      "detailsBody": "下面的加工要求是面向遊戲的佔位規則，用來定義元素類別未來如何成為挖掘資源、加工材料和可構造方塊。",
+      "detailListAria": "元素詳情列表",
+      "elementAria": "{name}，符号 {symbol}，原子序數 {atomicNumber}",
+      "detailHeading": "{name} ({symbol})",
+      "summary": "{name} 是第 {atomicNumber} 号元素。在 NiceChunk 里，它代表一种{category}資源，未來可以通过破坏方塊發現，并進入方塊構造規則。",
+      "blockValue": "{block} 区塊",
+      "processingTitle": "加工要求",
+      "constructionHint": "{name} 可以作為基礎{category}组件，在未來配方里參與構造新的可放置方塊。"
+    },
+    "detail": {
+      "back": "返回元素表",
+      "documentTitle": "NiceChunk 元素档案 | {symbol} {name}",
+      "missingTitle": "NiceChunk 元素档案 | {symbol}",
+      "fileEyebrow": "元素档案",
+      "missingZh": "这個元素档案暂时不存在。",
+      "missingEn": "这個元素档案暂时不存在。",
+      "yes": "是",
+      "no": "否",
+      "notAvailable": "未知",
+      "sections": {
+        "identity": "基礎身份",
+        "atomic": "原子屬性",
+        "physical": "物理屬性",
+        "chemical": "化學屬性",
+        "game": "遊戲屬性",
+        "processing": "加工屬性",
+        "affinity": "合成傾向",
+        "visualGene": "視覺基因",
+        "description": "資源說明"
+      },
+      "field": {
+        "id": "元素 ID",
+        "atomicNumber": "原子序數",
+        "symbol": "符号",
+        "name": "名称",
+        "category": "元素類別",
+        "period": "週期",
+        "group": "族",
+        "block": "電子区塊",
+        "standardState": "标准狀態",
+        "naturalOccurrence": "自然存在",
+        "atomicMass": "原子質量",
+        "atomicRadiusPm": "原子半徑",
+        "covalentRadiusPm": "共價半徑",
+        "electronConfig": "電子排布",
+        "valenceElectrons": "價電子",
+        "commonOxidationStates": "常见氧化態",
+        "maxOxidationState": "最高氧化態",
+        "minOxidationState": "最低氧化態",
+        "densityKgM3": "密度",
+        "referenceDimensions": "参考尺寸",
+        "referenceMassKg": "参考質量",
+        "meltingPointC": "熔點",
+        "boilingPointC": "沸點",
+        "hardness": "硬度",
+        "toughness": "韌性",
+        "ductility": "延展性",
+        "brittleness": "脆性",
+        "electricalConductivity": "導電性",
+        "thermalConductivity": "導熱性",
+        "heatResistance": "耐熱性",
+        "magnetism": "磁性",
+        "transparencyTendency": "透明傾向",
+        "electronegativity": "電负性",
+        "reactivity": "反应性",
+        "stability": "稳定性",
+        "oxidationTendency": "氧化傾向",
+        "corrosiveness": "腐蝕性",
+        "toxicity": "毒性",
+        "radioactivity": "放射性",
+        "flammability": "可燃性",
+        "explosiveTendency": "爆炸傾向",
+        "acidBaseTendency": "酸碱傾向",
+        "rarity": "稀有度",
+        "baseValue": "基礎價值",
+        "miningDifficulty": "開採難度",
+        "refiningDifficulty": "精煉難度",
+        "processingDifficulty": "加工難度",
+        "industrialValue": "工业價值",
+        "weaponValue": "武器價值",
+        "technologyValue": "科技價值",
+        "buildingValue": "建築價值",
+        "energyValue": "能源價值",
+        "biologicalValue": "生物價值",
+        "hazardLevel": "危險等級",
+        "requiredTemperatureC": "所需温度",
+        "minFurnaceTier": "最低熔爐等級",
+        "minToolTier": "最低工具等級",
+        "requiredFuelTier": "所需燃料等級",
+        "oxygenSensitive": "對氧敏感",
+        "waterSensitive": "對水敏感",
+        "requiresInertAtmosphere": "需要惰性气氛",
+        "forgeable": "可鍛造",
+        "castable": "可鑄造",
+        "crystallizable": "可結晶",
+        "alloyable": "可合金化",
+        "preferredProcesses": "推荐工藝",
+        "risk": {
+          "oxidation": "氧化風險",
+          "explosion": "爆炸風險",
+          "vaporization": "汽化風險",
+          "contamination": "汙染風險",
+          "brittleness": "脆化風險"
+        },
+        "metalAffinity": "金屬親和",
+        "alloyAffinity": "合金親和",
+        "oxygenAffinity": "氧親和",
+        "carbonAffinity": "碳親和",
+        "hydrogenAffinity": "氫親和",
+        "siliconAffinity": "矽親和",
+        "sulfurAffinity": "硫親和",
+        "halogenAffinity": "卤素親和",
+        "crystalAffinity": "晶體親和",
+        "ceramicAffinity": "陶瓷親和",
+        "organicAffinity": "有机親和",
+        "gasAffinity": "氣體親和",
+        "energyAffinity": "能量親和",
+        "magneticMaterialAffinity": "磁性材料親和",
+        "structuralMaterialAffinity": "結構材料親和",
+        "opticalMaterialAffinity": "光學材料親和",
+        "electronicMaterialAffinity": "電子材料親和",
+        "baseColor": "基礎顏色",
+        "secondaryColor": "輔助顏色",
+        "oxidizedColor": "氧化顏色",
+        "darkStateColor": "暗態顏色",
+        "emissionColor": "發光顏色",
+        "materialLook": "材質外观",
+        "textureType": "紋理類型",
+        "oreTextureType": "矿石紋理",
+        "metallic": "金屬度",
+        "roughness": "粗糙度",
+        "transparency": "透明度",
+        "emissionStrength": "發光强度",
+        "grain": "顆粒感",
+        "scratchDensity": "劃痕密度",
+        "veinDensity": "矿脈密度",
+        "crackDensity": "裂紋密度",
+        "oxidationPattern": "氧化紋理",
+        "particleEffect": "粒子效果",
+        "animationEffect": "動画效果"
+      }
+    },
+    "category": {
+      "nonmetal": "非金屬",
+      "noble_gas": "稀有氣體",
+      "alkali_metal": "碱金屬",
+      "alkaline_earth_metal": "碱土金屬",
+      "metalloid": "類金屬",
+      "halogen": "卤素",
+      "post_transition_metal": "後过渡金屬",
+      "transition_metal": "过渡金屬",
+      "lanthanide": "鑭系元素",
+      "actinide": "錒系元素",
+      "unknown_properties": "未知屬性"
+    },
+    "state": {
+      "solid": "固態",
+      "liquid": "液態",
+      "gas": "气態",
+      "unknown": "未知"
+    },
+    "phase": {
+      "solid": "固態",
+      "liquid": "液態",
+      "gas": "气態",
+      "unknown": "未知"
+    },
+    "property": {
+      "atomicNumber": "原子序數",
+      "symbol": "符号",
+      "atomicMass": "原子量",
+      "category": "類別",
+      "phase": "狀態",
+      "group": "族",
+      "period": "週期",
+      "block": "電子区塊"
+    },
+    "processing": {
+      "tier": "加工等級",
+      "tierValue": "{tier} 級",
+      "station": {
+        "separator": "分离器",
+        "cryogenicTrap": "低溫捕集器",
+        "stabilizer": "稳定器",
+        "kiln": "窑爐",
+        "refiner": "精煉器",
+        "sealedReactor": "密封反应器",
+        "smelter": "熔煉爐",
+        "alloyForge": "合金鍛爐",
+        "magneticSeparator": "磁選器",
+        "shieldedReactor": "屏蔽反应器"
+      },
+      "heat": {
+        "low": "低溫",
+        "medium": "中温",
+        "high": "高溫",
+        "extreme": "极高溫"
+      },
+      "binder": {
+        "none": "不需要粘結剂",
+        "pressureCell": "压力舱",
+        "sealedCapsule": "密封胶囊",
+        "flux": "助熔剂",
+        "silicateMatrix": "矽酸盐基質",
+        "saltMatrix": "盐基質",
+        "ingotMold": "鑄锭模具",
+        "carbonFlux": "碳助熔剂",
+        "rareEarthFlux": "稀土助熔剂",
+        "containmentCore": "约束核心"
+      }
+    }
+  }
+}

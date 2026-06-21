@@ -1,0 +1,1830 @@
+{
+  "meta": {
+    "title": "NiceChunk Trust Center"
+  },
+  "nav": {
+    "aria": "Primary navigation",
+    "home": "Home",
+    "roadbook": "Roadbook",
+    "worldRules": "World Rules",
+    "resources": "Resources",
+    "ncm": "NCM",
+    "elements": "Elements",
+    "fairness": "Fairness",
+    "proofOfFrontier": "Proof",
+    "guardians": "Guardians",
+    "contracts": "Contracts",
+    "trust": "Trust",
+    "docs": "Docs",
+    "enterWorld": "Enter World"
+  },
+  "language": {
+    "aria": "Language"
+  },
+  "hero": {
+    "eyebrow": "Trust Center",
+    "title": "A public voxel world should be inspectable before it asks for trust.",
+    "subtitle": "NiceChunk is built for players, auditors, engineers, and investors who want to see the rules: how chunks are generated, what goes on-chain, what Guardians do, where NCK fits, and which claims are still planned.",
+    "contracts": "Review Contracts",
+    "fairness": "Verify Fairness",
+    "docs": "Read Docs",
+    "badgesAria": "Trust posture",
+    "badges": {
+      "publicRules": "Public world rules",
+      "walletOwned": "Wallet-owned actions",
+      "openContracts": "Open contract surface",
+      "noOverclaim": "No decentralization overclaim"
+    },
+    "readout": {
+      "label": "Trust Stack",
+      "value": "Seed -> Rule -> Hash -> PDA -> Wallet"
+    }
+  },
+  "why": {
+    "eyebrow": "Why It Matters",
+    "title": "NiceChunk is not asking users to believe a black box.",
+    "body": "The project value comes from making a playable voxel world whose important rules can be inspected, repeated, and gradually moved into verifiable on-chain systems."
+  },
+  "principles": [
+    {
+      "title": "Game-first, protocol-aware",
+      "body": "The world must be fun to explore first. The protocol layer matters because it gives players and reviewers a way to inspect state, assets, and economic actions."
+    },
+    {
+      "title": "Public generation rules",
+      "body": "Seeded chunks, block resources, element data, and world-rule demos are treated as public game rules rather than hidden server magic."
+    },
+    {
+      "title": "Wallet-owned intent",
+      "body": "Players interact with Solana wallets directly. Guardians may help regions stay reachable, but they do not custody assets or process player transactions."
+    },
+    {
+      "title": "No fake certainty",
+      "body": "If a system is alpha, planned, devnet-only, or not fully decentralized yet, the website should say so clearly instead of hiding the boundary."
+    }
+  ],
+  "architecture": {
+    "eyebrow": "Architecture",
+    "title": "The project separates gameplay speed from settlement trust.",
+    "body": "A browser game needs fast local rendering. A blockchain game needs public commitments. NiceChunk keeps those layers explicit so users can understand which system they are trusting at each step.",
+    "layers": [
+      {
+        "title": "Client world engine",
+        "body": "The browser renders terrain, characters, inventory UI, block previews, and exploration controls.",
+        "points": [
+          "Fast local rendering",
+          "Seeded terrain preview",
+          "User-visible loading and progress",
+          "No claim that rendering alone is final settlement"
+        ]
+      },
+      {
+        "title": "Open rule layer",
+        "body": "World generation, resource rules, element composition, and NCM asset compression are documented as inspectable rule systems.",
+        "points": [
+          "World-rule page",
+          "Resource atlas",
+          "118 element database",
+          "NCM / NCM DNA tools"
+        ]
+      },
+      {
+        "title": "Solana program layer",
+        "body": "Current contracts separate player profile, chunk state, backpack resources, guardian registry, and global config.",
+        "points": [
+          "PDA-based state",
+          "Wallet-signed actions",
+          "Devnet integration surface",
+          "Source code linked from the contracts page"
+        ]
+      },
+      {
+        "title": "Guardian / Guardian layer",
+        "body": "Guardians are designed as region access and communication infrastructure, not asset custodians.",
+        "points": [
+          "Region reachability",
+          "Real-time communication",
+          "Future staking design",
+          "Explicit non-custody boundary"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "eyebrow": "Verification Model",
+    "title": "Trust is built from public inputs and repeatable checks.",
+    "body": "NiceChunk should be reviewed as a layered verification system: deterministic generation, explicit state commitments, wallet-signed transitions, and visible boundaries where off-chain systems still participate.",
+    "labels": {
+      "reviewerCheck": "Reviewer check",
+      "currentEvidence": "Current evidence"
+    },
+    "steps": [
+      {
+        "title": "Public input domain",
+        "body": "World state begins with inspectable inputs: seed, chunk coordinates, algorithm version, player wallet, and the action being requested.",
+        "check": "Confirm which values are user-visible, which are derived, and which are supplied by a program or service.",
+        "evidence": "World rules, fairness demos, contract PDA seeds, and SDK call sites."
+      },
+      {
+        "title": "Deterministic derivation",
+        "body": "The same seed and coordinates should reproduce the same terrain and resource candidates under the same rule version.",
+        "check": "Replay generation with fixed inputs and compare output hashes or sampled block states.",
+        "evidence": "World generation page, resource atlas, block atlas, and generator source modules."
+      },
+      {
+        "title": "State commitment",
+        "body": "Economic state should be represented as compact account state, hashes, coordinates, or asset records instead of opaque server inventory.",
+        "check": "Review PDA layout, account size assumptions, and what is stored versus recomputed.",
+        "evidence": "Contracts page, backpack program, chunk program, and storage discussions."
+      },
+      {
+        "title": "Wallet-signed transition",
+        "body": "Player actions that affect ownership or economic state should be authorized by the player wallet, not silently performed by a custodial backend.",
+        "check": "Compare UI actions, SDK calls, instruction arguments, signer accounts, and failure handling.",
+        "evidence": "Login flow, SDK files, mining flow, backpack purchase, and transaction code paths."
+      },
+      {
+        "title": "Independent replay",
+        "body": "A reviewer should be able to reconstruct the important parts of a claim from public rules, source code, and chain-visible state.",
+        "check": "Recompute a sample chunk, inspect resulting state changes, and document any remaining off-chain assumptions.",
+        "evidence": "Fairness page, proof demos, contracts, documentation, and Trust boundaries."
+      }
+    ]
+  },
+  "evidence": {
+    "eyebrow": "Evidence Map",
+    "title": "What a reviewer can inspect today.",
+    "body": "This page points reviewers to concrete surfaces instead of vague promises: source modules, contract pages, generation demos, and stated limitations.",
+    "items": [
+      {
+        "kind": "Contracts",
+        "title": "Program directory and source tree",
+        "body": "Review program IDs, PDA seeds, instruction surfaces, account storage, SDK files, and current devnet boundaries.",
+        "cta": "Open contracts",
+        "href": "/contracts/"
+      },
+      {
+        "kind": "Fairness",
+        "title": "Chunk and mining verification demos",
+        "body": "Inspect the public-input model for seeded chunk generation and hash-derived mining proof concepts.",
+        "cta": "Open fairness",
+        "href": "/fairness/"
+      },
+      {
+        "kind": "World Rules",
+        "title": "Generation algorithm surface",
+        "body": "Understand how the world is generated, why seeded chunks matter, and how users can browse generated terrain.",
+        "cta": "Open world rules",
+        "href": "/world_rule/"
+      },
+      {
+        "kind": "Resources",
+        "title": "Block and element rule vocabulary",
+        "body": "See the resource atlas and chemical element foundation used for future mining, forging, materials, and visual genes.",
+        "cta": "Open resources",
+        "href": "/resource_rule/"
+      }
+    ]
+  },
+  "package": {
+    "eyebrow": "Independent Review Package",
+    "title": "A serious protocol should make due diligence portable.",
+    "body": "Auditors, investors, and engineers should be able to collect a compact review package: source paths, deployment manifests, account layouts, replay fixtures, failure cases, and disclosure notes.",
+    "labels": {
+      "current": "Current artifact",
+      "reviewerUse": "Reviewer use",
+      "next": "Next hardening"
+    },
+    "items": [
+      {
+        "status": "Source",
+        "title": "Source snapshot and module map",
+        "body": "A reviewer needs a stable way to move from website claims to source modules without guessing which folder owns which trust boundary.",
+        "current": "Trust page source map, contracts page, programs/*, src/world/*, src/data/*, src/chain/nicechunkChain.js, SDK helpers, and verification scripts.",
+        "reviewerUse": "Confirm that each claim has a concrete code surface, account domain, or documented design boundary.",
+        "next": "Publish tagged review snapshots and map each public claim to commit hashes or release artifacts."
+      },
+      {
+        "status": "Deploy",
+        "title": "Deployment and program manifest",
+        "body": "Program IDs, PDA seeds, account magic, version, and account size must stay easy to compare against deployed accounts.",
+        "current": "Protocol Registry lists current devnet program IDs, PDA seeds, magic bytes, account sizes, and review focus by domain.",
+        "reviewerUse": "Compare website program IDs against wallet transactions, account owners, decoded account data, and SDK constants.",
+        "next": "Add a signed deployment manifest with cluster, slot, binary hash, upgrade authority posture, and deployment timestamp."
+      },
+      {
+        "status": "Layout",
+        "title": "Account layout and decoder evidence",
+        "body": "Public state is only useful if independent reviewers can decode it without relying on the UI.",
+        "current": "GlobalConfig, PlayerProfile, ChunkState, ChunkBroken, Backpack, Guardian, and Listing account layouts are documented through source paths and client decoders.",
+        "reviewerUse": "Decode raw account bytes, verify magic/version/length, and compare displayed UI state against account fields.",
+        "next": "Publish standalone decoder fixtures with sample account bytes and expected JSON output."
+      },
+      {
+        "status": "Replay",
+        "title": "Generation and resource replay fixtures",
+        "body": "A seeded world becomes credible when reviewers can reproduce sampled terrain and resource meaning from fixed inputs.",
+        "current": "World rule page, resource atlas, block atlas, generator source, generated block inspectors, and verification recipes.",
+        "reviewerUse": "Run fixed seed/chunk/coordinate samples and compare block IDs, resource candidates, and material context.",
+        "next": "Publish canonical fixtures for representative biomes, mined blocks, tree resources, water/lava edges, and rare resource candidates."
+      },
+      {
+        "status": "Failure",
+        "title": "Adversarial transaction cases",
+        "body": "A game economy is not proven by happy paths. Duplicate mining, wrong owners, expired sessions, bad token accounts, and mismatched market sources should fail clearly.",
+        "current": "Threat model, invariants, verification recipes, program error types, SDK transaction builders, and devnet flows.",
+        "reviewerUse": "Simulate negative paths and confirm failures happen before economic state is mutated.",
+        "next": "Maintain a public adversarial test matrix for mining, backpack append/remove, market create/cancel/buy, and NCK settlement."
+      },
+      {
+        "status": "Disclosure",
+        "title": "Known limits and maturity labels",
+        "body": "Trust increases when the project says what is live, devnet, designed, planned, emerging, or not claimed.",
+        "current": "Claims Ledger, Trust Boundaries, Risk Register, Next Trust Work, and status labels across protocol modules.",
+        "reviewerUse": "Separate implemented behavior from design intent and prevent decentralization, NCK, guardian, or governance overclaims.",
+        "next": "Keep a dated disclosure log for rule changes, deployment changes, audits, incident notes, and maturity upgrades."
+      }
+    ]
+  },
+  "artifacts": {
+    "eyebrow": "Source & Artifact Map",
+    "title": "A reviewer should be able to move from claim to source path.",
+    "body": "This map indexes the current code and data surfaces that support NiceChunk's trust story. It is not a formal audit, but it reduces ambiguity for engineers who want to inspect the system directly.",
+    "groups": [
+      {
+        "status": "Programs",
+        "title": "On-chain state domains",
+        "body": "The Solana programs are separated by responsibility so reviewers can inspect authority, storage, and failure behavior one domain at a time.",
+        "paths": [
+          {
+            "path": "programs/nicechunk_core/src/lib.rs",
+            "note": "Global configuration and protocol-level control surface."
+          },
+          {
+            "path": "programs/nicechunk_player/src/lib.rs",
+            "note": "Player profile and wallet-owned identity state."
+          },
+          {
+            "path": "programs/nicechunk_chunk/src/lib.rs",
+            "note": "Chunk state, block change recording, and mining-facing state."
+          },
+          {
+            "path": "programs/nicechunk_backpack/src/lib.rs",
+            "note": "Independent backpack inventory records and capacity rules."
+          },
+          {
+            "path": "programs/nicechunk_guardian/src/lib.rs",
+            "note": "Guardian registry and availability participation surface."
+          },
+          {
+            "path": "programs/nicechunk_market/src/lib.rs",
+            "note": "Marketplace listing and purchase program surface."
+          }
+        ]
+      },
+      {
+        "status": "Client",
+        "title": "World generation and gameplay surface",
+        "body": "The browser client contains the current world generation, chunk rendering, block atlas, and local gameplay state used by the alpha experience.",
+        "paths": [
+          {
+            "path": "src/world/generator.js",
+            "note": "Seeded terrain and block derivation logic."
+          },
+          {
+            "path": "src/world/chunks.js",
+            "note": "Chunk loading, generation boundaries, and client chunk state."
+          },
+          {
+            "path": "src/world/blocks.js",
+            "note": "Runtime block definitions used by the playable world."
+          },
+          {
+            "path": "src/data/blockAtlas.js",
+            "note": "Resource block vocabulary and visual/material metadata."
+          }
+        ]
+      },
+      {
+        "status": "Resources",
+        "title": "Material rule vocabulary",
+        "body": "NiceChunk's public resource story depends on explicit block and element data rather than hidden resource tables.",
+        "paths": [
+          {
+            "path": "src/data/elements.js",
+            "note": "118 element resource foundation with physical, game, processing, affinity, and visual gene data."
+          },
+          {
+            "path": "resource_rule/resource_rule.js",
+            "note": "Resource rule page renderer and block composition presentation."
+          },
+          {
+            "path": "elements/elements.js",
+            "note": "Element table and element dossier rendering surface."
+          }
+        ]
+      },
+      {
+        "status": "Assets",
+        "title": "NCM and compact voxel assets",
+        "body": "The project is developing NCM as a compact text-oriented voxel asset format for on-chain-friendly storage and RPC retrieval.",
+        "paths": [
+          {
+            "path": "src/vox/ncm.js",
+            "note": "NCM encode/decode runtime used by voxel character and asset tooling."
+          },
+          {
+            "path": "scripts/vox-to-ncm.mjs",
+            "note": "VOX-to-NCM conversion script for importing voxel assets."
+          },
+          {
+            "path": "public/media/vox/*.ncm",
+            "note": "Current compact character asset samples used by player setup."
+          }
+        ]
+      },
+      {
+        "status": "SDK",
+        "title": "Wallet and contract integration",
+        "body": "The SDK layer is the bridge reviewers can compare against the on-chain instruction surfaces.",
+        "paths": [
+          {
+            "path": "sdk/nicechunk-core.ts",
+            "note": "Global config and core program client helpers."
+          },
+          {
+            "path": "sdk/nicechunk-player.ts",
+            "note": "Player account and setup client helpers."
+          },
+          {
+            "path": "sdk/nicechunk-chunk.ts",
+            "note": "Chunk and mining instruction client helpers."
+          },
+          {
+            "path": "sdk/nicechunk-backpack.ts",
+            "note": "Backpack purchase, inventory, and resource record client helpers."
+          },
+          {
+            "path": "sdk/nicechunk-guardian.ts",
+            "note": "Guardian registry and participation client helpers."
+          }
+        ]
+      },
+      {
+        "status": "Scripts",
+        "title": "Replay and operational checks",
+        "body": "Scripts provide a practical path for derivation, verification, deployment support, and reproducible checks during development.",
+        "paths": [
+          {
+            "path": "scripts/derive-pdas.ts",
+            "note": "PDA derivation inspection for account addressing."
+          },
+          {
+            "path": "scripts/inspect-client-generated-block.ts",
+            "note": "Client-side block generation inspection helper."
+          },
+          {
+            "path": "scripts/verify-generated-block.ts",
+            "note": "Verification utility for generated block expectations."
+          },
+          {
+            "path": "scripts/sync-to-server.sh",
+            "note": "Build and deployment sync path used for the public website."
+          }
+        ]
+      }
+    ]
+  },
+  "registry": {
+    "eyebrow": "Protocol Registry",
+    "title": "The trust surface is a set of programs, accounts, seeds, and invariants.",
+    "body": "This registry makes the current Solana surface easier to inspect. It lists the program domains, PDA seeds, account magic bytes, versioned account sizes, and the questions a reviewer should ask before treating the system as economically reliable.",
+    "labels": {
+      "programId": "Program ID",
+      "pdaSeeds": "PDA seeds",
+      "accounts": "Accounts",
+      "version": "Version / size",
+      "reviewFocus": "Review focus"
+    },
+    "programs": [
+      {
+        "status": "Core",
+        "title": "Global configuration",
+        "body": "The core program anchors the public world configuration: NCK mint assumptions, world seed, terrain/resource rule hashes, chunk dimensions, guardian policy constants, and genesis timestamps.",
+        "programId": "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
+        "seeds": "global-config",
+        "accounts": "GlobalConfig magic NCKCFG01",
+        "version": "v1, 293 bytes",
+        "reviewFocus": "Confirm the NCK mint, decimals, genesis supply, rule hashes, upgrade posture, and whether config values are only recorded or also enforced by downstream programs."
+      },
+      {
+        "status": "Player",
+        "title": "Identity and session authority",
+        "body": "The player program separates long-lived player profile state from temporary session authority used by gameplay actions. This keeps fast interaction possible without hiding who authorized state changes.",
+        "programId": "oeaRMVnPoV4iENnGCCtaEeRxU5be515s4YYe6aXQuKe",
+        "seeds": "player, session",
+        "accounts": "PlayerProfile magic NCKPLY01; PlayerSession magic NCKSES01",
+        "version": "profile 449 bytes, legacy 417 bytes; session 184 bytes",
+        "reviewFocus": "Inspect session expiry, allowed action flags, owner validation, equipped backpack binding, and whether the client handles expired or underfunded sessions safely."
+      },
+      {
+        "status": "Chunk",
+        "title": "World mutation and mined coordinates",
+        "body": "The chunk program records public world mutations and broken block coordinates. It is the boundary between a rendered block candidate and a chain-visible change to the voxel world.",
+        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "seeds": "chunk, chunk-broken",
+        "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
+        "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
+        "reviewFocus": "Replay coordinate derivation, check duplicate mining rejection, validate generated block assumptions, and compare MagicBlock delegation paths with regular chunk state."
+      },
+      {
+        "status": "Backpack",
+        "title": "Portable inventory as an independent account",
+        "body": "The backpack is intentionally not just a field inside the player account. It can be treated as a portable inventory container with compact coordinate records for mined resources.",
+        "programId": "FwTrMDGyRg653L9svvt5aoGii9ZjX1WekSFWcwByjxqt",
+        "seeds": "backpack",
+        "accounts": "Backpack magic NCKBPK01",
+        "version": "v1, 1,118 bytes; header 128 bytes; record 10 bytes; default capacity 50; max capacity 99",
+        "reviewFocus": "Check owner/session authority, append/remove invariants, capacity limits, record compaction, and whether market escrow paths return or transfer the exact coordinate record."
+      },
+      {
+        "status": "Guardian",
+        "title": "Region availability without asset custody",
+        "body": "Guardian accounts model region participation, stake, endpoints, proof timing, and operator metadata. They are designed for availability and communication, not player asset custody.",
+        "programId": "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
+        "seeds": "guardian-registry, guardian-region, guardian-treasury",
+        "accounts": "GuardianRegistry magic NCKGDR01; GuardianRegion magic NCKGRG01",
+        "version": "registry 160 bytes; region 256 bytes; stake 100,000 NCK (100,000,000,000 base units); proof interval 3,600 seconds",
+        "reviewFocus": "Inspect treasury token ownership, proof submission authority, active/removed state, slashing counters, and any mismatch between region constants in config and guardian state."
+      },
+      {
+        "status": "Market",
+        "title": "Listings, NCK settlement, and resource provenance",
+        "body": "The market program exposes listing state rather than private marketplace rows. Version 3 includes source inventory and resource coordinates so backpack listings can preserve provenance.",
+        "programId": "1PwPzFtdJ5gQqku5gBo4b6Wvo48Qe8NuXSogUP8TWpR",
+        "seeds": "listing, market-authority",
+        "accounts": "Listing magic NCKMKT01",
+        "version": "v3, 216 bytes; create-listing payload 99 bytes; SOL and NCK currencies",
+        "reviewFocus": "Review escrow semantics, backpack resource removal/return/transfer, token account validation, market authority signing, sold/canceled state transitions, and UI-account parity."
+      }
+    ]
+  },
+  "methodology": {
+    "eyebrow": "Audit Methodology",
+    "title": "A fair on-chain game should be reviewed like a reproducible system, not a pitch deck.",
+    "body": "NiceChunk's review standard is intentionally concrete: identify public inputs, replay deterministic functions, inspect authority, test failure cases, and separate implemented contract behavior from design intent.",
+    "labels": {
+      "artifact": "Artifact",
+      "failureMode": "Failure mode"
+    },
+    "steps": [
+      {
+        "title": "Define the public input tuple.",
+        "body": "Every verifiable action should begin with a bounded input tuple: seed, coordinate, world rule version, wallet, account addresses, instruction payload, and expected previous state.",
+        "artifact": "World rules, PDA derivation scripts, SDK instruction builders, and transaction payloads.",
+        "failureMode": "If a required input is private or mutable without disclosure, independent replay cannot establish fairness."
+      },
+      {
+        "title": "Replay deterministic derivation.",
+        "body": "Generation and resource identity should be reproducible under the same algorithm version. Review should compare sampled client output against scripts or independent implementations.",
+        "artifact": "src/world/generator.js, block atlas, resource rule page, generated-block inspection scripts.",
+        "failureMode": "If two clients derive different terrain or resource meaning from the same tuple, economic settlement can become arbitrary."
+      },
+      {
+        "title": "Trace authority and custody.",
+        "body": "A wallet-owned game must show who signs, which PDA changes, who can move inventory records, and whether any off-chain service can silently alter economic state.",
+        "artifact": "Player session program, backpack program, market program, wallet login flow, and SDK calls.",
+        "failureMode": "If server-controlled keys can mutate player value without explicit boundaries, the game is not meaningfully player-owned."
+      },
+      {
+        "title": "Verify storage economics.",
+        "body": "On-chain state must be compact enough to scale. Review should distinguish coordinate records, hashes, account headers, generated data, and recomputed material traits.",
+        "artifact": "Backpack record layout, chunk-broken records, NCM asset encoding, and rent-size assumptions.",
+        "failureMode": "If state grows as raw voxel blobs or per-coordinate objects without compression, RPC reads and rent costs will break gameplay scale."
+      },
+      {
+        "title": "Exercise adversarial paths.",
+        "body": "Review should test duplicate mining, expired sessions, wrong backpack ownership, wrong source index, mismatched resource records, invalid token accounts, and canceled or sold listings.",
+        "artifact": "Program errors, local tests, devnet transactions, SDK error handling, and UI failure states.",
+        "failureMode": "A fair happy path is not enough; economic trust fails when edge cases produce hidden loss, duplication, or inconsistent state."
+      },
+      {
+        "title": "Classify every claim by maturity.",
+        "body": "The website should label each claim as live alpha, devnet implementation, designed system, planned feature, or not claimed. This prevents marketing language from outrunning implementation.",
+        "artifact": "Trust ledger, roadmap, contracts page, docs, and public deployment status.",
+        "failureMode": "If maturity is ambiguous, users may treat design intent as launched security, which is unacceptable for a public economic game."
+      }
+    ]
+  },
+  "threats": {
+    "eyebrow": "Threat Model",
+    "title": "Trust improves when the project states what can go wrong.",
+    "body": "NiceChunk should be evaluated against concrete adversaries: dishonest clients, stale generated data, duplicated resources, unavailable regions, misleading UI claims, and settlement mismatches.",
+    "labels": {
+      "attackSurface": "Attack surface",
+      "currentControl": "Current control",
+      "openQuestion": "Open question"
+    },
+    "actors": [
+      {
+        "status": "Client",
+        "title": "Dishonest or drifting client",
+        "body": "A browser client can display a block, inventory item, price, or resource interpretation that does not match the public rule set or chain state.",
+        "attackSurface": "Rendered terrain, local block IDs, generated resource labels, wallet prompts, market display, and cached account data.",
+        "currentControl": "Generation code, block atlas, resource atlas, contract account decoders, and visible transaction prompts reduce blind trust in the UI.",
+        "openQuestion": "Future releases should publish canonical replay fixtures so any client can be compared against known seed and coordinate outputs."
+      },
+      {
+        "status": "State",
+        "title": "Resource duplication or loss",
+        "body": "A mined resource should not be created twice, silently deleted, or moved into the wrong inventory when mining, listing, canceling, or buying.",
+        "attackSurface": "Chunk-broken records, backpack append/remove, market source index, source inventory, market-authority transfer, and sold/canceled listing state.",
+        "currentControl": "Backpack records are coordinate-based, market v3 stores source inventory and resource record, and backpack listings remove the source record before settlement.",
+        "openQuestion": "The strongest proof will come from adversarial tests covering duplicate mining, cancel return, buyer transfer, and failed transaction rollback behavior."
+      },
+      {
+        "status": "Wallet",
+        "title": "Unauthorized economic mutation",
+        "body": "Player value should not move because a server, guardian, stale session, or UI script mutated state without the player or a valid session authority.",
+        "attackSurface": "Player session authority, session expiry, session funding, backpack owner checks, market seller/buyer accounts, and NCK token accounts.",
+        "currentControl": "Programs validate signers, owners, PDA derivations, session accounts, token account ownership, and program IDs for sensitive flows.",
+        "openQuestion": "Reviewers should confirm all privileged paths fail closed when sessions expire, backpacks are unequipped, or token accounts do not match the expected owner."
+      },
+      {
+        "status": "Availability",
+        "title": "Unavailable region or single endpoint dependency",
+        "body": "A non-custodial game can still feel centralized if users cannot reach a region, RPC endpoint, or guardian service without one operator.",
+        "attackSurface": "RPC selection, region access, guardian endpoints, guardian proof cadence, real-time communication, and client fallback behavior.",
+        "currentControl": "RPC settings are exposed, guardian accounts model endpoint/proof state, and the site states that guardians are availability infrastructure rather than custodians.",
+        "openQuestion": "The network still needs measured uptime, multi-operator participation, proof validation, and visible failure handling before availability claims can be stronger."
+      },
+      {
+        "status": "Economy",
+        "title": "Settlement mismatch",
+        "body": "A marketplace is only credible if the thing displayed, the thing listed, the token paid, and the thing received refer to the same public state.",
+        "attackSurface": "Item hash, category, currency, price base units, source kind, source index, source inventory, buyer backpack, and token transfer accounts.",
+        "currentControl": "ListingAccount v3 stores currency, source metadata, source inventory, resource coordinate record, buyer, sold slot, and sold timestamp.",
+        "openQuestion": "The UI should keep exposing decoded listing state so users can compare market cards with the underlying account data before signing."
+      },
+      {
+        "status": "Governance",
+        "title": "Rule change without clear provenance",
+        "body": "World fairness weakens if generation rules, resource tables, fee policies, or market behavior change without versioning and visible provenance.",
+        "attackSurface": "World seed, terrain config hash, resource rule hash, client world config hash, global policy constants, and future governance instructions.",
+        "currentControl": "GlobalConfig stores rule hashes and protocol parameters, while the website separates live alpha, devnet, designed, planned, and not-claimed systems.",
+        "openQuestion": "Mainnet maturity should include published rule-version manifests, upgrade authority disclosure, and governance procedures for changing economic rules."
+      }
+    ]
+  },
+  "invariants": {
+    "eyebrow": "Protocol Invariants",
+    "title": "The protocol should be judged by invariants that survive UI changes.",
+    "body": "An invariant is a rule that should remain true across clients, languages, UI redesigns, and future market features. These are the checks NiceChunk should keep visible as the system matures.",
+    "labels": {
+      "rule": "Invariant",
+      "test": "Evidence test"
+    },
+    "rows": [
+      {
+        "domain": "Generation",
+        "title": "Same public input, same world candidate.",
+        "rule": "For a fixed world seed, chunk coordinate, block vocabulary, and algorithm version, independent clients should derive the same candidate terrain and resource context.",
+        "test": "Run replay fixtures against src/world/generator.js and compare sampled block IDs, biome context, and derived resource candidates."
+      },
+      {
+        "domain": "Mining",
+        "title": "A coordinate cannot be mined twice as the same live block.",
+        "rule": "Once a block coordinate is recorded as broken or mined under the active rule version, the same coordinate should not create another valid raw resource without an explicit reset rule.",
+        "test": "Submit duplicate mining attempts against the same chunk-broken record and confirm the second transition fails or is treated as already consumed."
+      },
+      {
+        "domain": "Inventory",
+        "title": "A backpack record is a coordinate-backed resource, not an opaque item.",
+        "rule": "Raw backpack resources should preserve world_x, world_y, and world_z so material meaning can be recomputed later from public rules.",
+        "test": "Decode BackpackResourceRecord entries and compare coordinates with mined blocks, block atlas metadata, and future forging inputs."
+      },
+      {
+        "domain": "Custody",
+        "title": "Guardians and guardians do not move player assets.",
+        "rule": "Availability infrastructure may help regions stay reachable, but it should not custody backpacks, sign player transactions, or process player settlement.",
+        "test": "Review guardian instructions and UI copy for any path that transfers player inventory, NCK, SOL, or market assets through guardian authority."
+      },
+      {
+        "domain": "Market",
+        "title": "A listing must preserve source provenance.",
+        "rule": "A listing should bind seller, listing id, source kind, source index, source inventory, item hash, price, currency, and resource record into one reviewable account.",
+        "test": "Decode ListingAccount v3 and verify create, cancel, and buy flows keep source records consistent through removal, return, or buyer transfer."
+      },
+      {
+        "domain": "Currency",
+        "title": "NCK settlement must match mint and owner expectations.",
+        "rule": "When a listing is priced in NCK, buyer and seller token accounts must match the configured NCK mint and the expected owners before transfer.",
+        "test": "Exercise invalid mint, invalid owner, missing token account, and wrong token program cases against the market buy instruction."
+      },
+      {
+        "domain": "Disclosure",
+        "title": "Every claim needs a maturity label.",
+        "rule": "Website copy should distinguish live alpha, devnet implementation, designed system, planned feature, and not-claimed decentralization.",
+        "test": "Audit public pages and navigation destinations for overclaims, especially around full decentralization, NCK utility, guardians, governance, and mainnet readiness."
+      },
+      {
+        "domain": "Upgrade",
+        "title": "Rule changes should be attributable.",
+        "rule": "When world generation, resource rules, account layouts, or economic constants change, reviewers should be able to identify the version and source of the change.",
+        "test": "Compare GlobalConfig hashes, source commits, locale claims, contract account versions, and public documentation before and after a rule update."
+      }
+    ]
+  },
+  "recipes": {
+    "eyebrow": "Verification Recipes",
+    "title": "Reviewers should be able to reproduce the claim, not just read it.",
+    "body": "These recipes turn the trust model into concrete review work: collect public inputs, run a replay or account decode, compare expected state, and document any mismatch as an implementation or disclosure issue.",
+    "labels": {
+      "inputs": "Inputs",
+      "procedure": "Procedure",
+      "expected": "Expected evidence",
+      "failure": "Failure signal"
+    },
+    "items": [
+      {
+        "status": "World",
+        "title": "Replay a seeded chunk sample.",
+        "body": "This check proves whether the visible world can be reproduced from public rule inputs instead of private server discretion.",
+        "inputs": "world seed, chunkX, chunkZ, algorithm version, block atlas version, selected sample coordinates.",
+        "procedure": "Run the generator for the same chunk, inspect sampled blocks, and compare terrain height, block id, biome context, and resource candidate metadata.",
+        "expected": "Independent replay produces the same sampled block IDs and material context under the same versioned rules.",
+        "failure": "Different clients produce incompatible terrain or resource identity from the same seed and coordinates."
+      },
+      {
+        "status": "Mining",
+        "title": "Verify a mined coordinate transition.",
+        "body": "This check links a user-visible block break to a chain-visible coordinate record and rejects duplicate resource creation.",
+        "inputs": "player wallet, session authority, world_x, world_y, world_z, chunk-broken PDA, expected previous block id.",
+        "procedure": "Submit or inspect a mine instruction, decode the chunk-broken record, and attempt a duplicate transition against the same coordinate.",
+        "expected": "The first valid transition records the coordinate; the duplicate attempt fails or is treated as already consumed.",
+        "failure": "The same coordinate can mint or append multiple raw resources without an explicit reset rule."
+      },
+      {
+        "status": "Inventory",
+        "title": "Decode a backpack resource record.",
+        "body": "This check proves that raw resources are stored as compact provenance handles rather than opaque server inventory rows.",
+        "inputs": "backpack PDA, owner wallet, capacity, item count, BackpackResourceRecord entries.",
+        "procedure": "Decode the account header and each 10-byte record, then map world_x/world_y/world_z back to the generated block and resource atlas.",
+        "expected": "Each occupied slot resolves to one coordinate-backed resource, and empty capacity does not invent hidden items.",
+        "failure": "Inventory display cannot be connected to account records, or a resource loses its origin coordinate."
+      },
+      {
+        "status": "Market",
+        "title": "Trace a listed backpack item.",
+        "body": "This check follows an item from backpack source slot to market listing, cancel return, or buyer transfer.",
+        "inputs": "seller wallet, listing PDA, source backpack, source index, item hash, source inventory, resource record, buyer backpack.",
+        "procedure": "Create a listing, decode ListingAccount v3, inspect source removal, then test cancel and buy paths in separate runs.",
+        "expected": "The listing binds source metadata and coordinate record; cancel returns the same record to seller; buy appends the record to buyer backpack.",
+        "failure": "The listed item hash, source record, displayed item, or transferred resource diverges."
+      },
+      {
+        "status": "NCK",
+        "title": "Check NCK settlement accounts.",
+        "body": "This check verifies that NCK-priced market actions transfer the intended token, not a spoofed mint or wrong owner account.",
+        "inputs": "configured NCK mint, buyer token account, seller token account, token program, price base units, listing currency.",
+        "procedure": "Run positive and negative purchase simulations: valid NCK accounts, wrong mint, wrong owner, missing token account, and wrong token program.",
+        "expected": "Only the valid token-account set transfers; invalid mint, owner, or token program paths fail before settlement.",
+        "failure": "A purchase succeeds with a spoofed mint, mismatched owner, or unverified token account."
+      },
+      {
+        "status": "Guardian",
+        "title": "Inspect region availability without custody.",
+        "body": "This check separates guardian/guardian reachability from asset custody and transaction processing.",
+        "inputs": "guardian registry PDA, region PDA, endpoint, stake amount, proof interval, active/removed state, treasury token account.",
+        "procedure": "Decode guardian accounts, verify proof metadata and treasury ownership, then confirm no guardian instruction moves player inventory or settlement assets.",
+        "expected": "Guardian state describes availability participation and stake; player assets remain controlled by wallet, backpack, market, or token programs.",
+        "failure": "A guardian or guardian path can custody, transfer, or settle player-owned assets."
+      }
+    ]
+  },
+  "formal": {
+    "eyebrow": "Formal Fairness Model",
+    "title": "The world should be evaluated as a deterministic state transition system.",
+    "body": "For a public on-chain game, fairness is not a slogan. It is a set of observable inputs, deterministic functions, authenticated transitions, and explicit assumptions that can be challenged by reviewers.",
+    "labels": {
+      "reviewQuestion": "Review question",
+      "expectedEvidence": "Expected evidence"
+    },
+    "cards": [
+      {
+        "status": "Input Domain",
+        "title": "Public inputs define the reachable world.",
+        "body": "A generated chunk should be derived from a bounded input set: world seed, chunk coordinate, algorithm version, block vocabulary, and known environmental parameters.",
+        "question": "Can two independent clients identify the same input tuple before comparing results?",
+        "evidence": "World rule pages, generator code paths, chunk coordinates, seed handling, block atlas versioning, and verification scripts."
+      },
+      {
+        "status": "Function",
+        "title": "Generation should behave like a pure function.",
+        "body": "For a fixed input tuple, terrain and base resources should be reproducible without private server discretion. Randomness should be seeded, scoped, and versioned.",
+        "question": "Does the same seed and coordinate produce the same terrain under the same algorithm version?",
+        "evidence": "Seeded generator implementation, replay demos, generated block inspectors, and documented algorithm boundaries."
+      },
+      {
+        "status": "Transition",
+        "title": "Player actions are authenticated state transitions.",
+        "body": "Mining, backpack insertion, market listing, and settlement should be treated as transitions from previous state to next state, authorized by the player wallet or program-defined authority.",
+        "question": "Which account signs, which PDA changes, and which invariant prevents unauthorized mutation?",
+        "evidence": "Program instruction surfaces, PDA seed derivation, SDK calls, wallet signing flow, and contract source review."
+      },
+      {
+        "status": "Commitment",
+        "title": "Hashes and PDAs make state externally referable.",
+        "body": "A public game state needs stable references. Chunk records, backpack items, player accounts, and proof hashes should let reviewers locate the same state without trusting a private database.",
+        "question": "Can a reviewer connect a visible gameplay result to an account, hash, or replayable derivation path?",
+        "evidence": "PDA derivation scripts, chunk and backpack programs, proof-of-frontier surfaces, and public contract pages."
+      },
+      {
+        "status": "Adversary",
+        "title": "Threats are modeled instead of ignored.",
+        "body": "The relevant adversaries include drifting clients, unavailable RPC nodes, dishonest UI claims, stale guardians, invalid resource records, and market listings that do not match the asset being sold.",
+        "question": "What fails closed, what can be independently recomputed, and what still depends on client or operator honesty?",
+        "evidence": "Risk register, trust boundary table, guardian design notes, market program surface, and reviewer checklist."
+      },
+      {
+        "status": "Falsifiability",
+        "title": "A trust claim must be disprovable.",
+        "body": "A credible protocol claim should tell reviewers what observation would falsify it. If a rule cannot yet be verified, the page should call it planned or design intent.",
+        "question": "Does each claim state whether it is implemented, designed, planned, or still dependent on off-chain infrastructure?",
+        "evidence": "Claims ledger, roadmap, contract status, source map, and explicit limits on decentralization language."
+      }
+    ]
+  },
+  "lifecycle": {
+    "eyebrow": "State Lifecycle",
+    "title": "A mined block should carry its history from seed to wallet-owned inventory.",
+    "body": "NiceChunk's resource design is strongest when reviewers can follow one block across generation, mining validation, backpack storage, and future settlement without relying on a hidden inventory server.",
+    "labels": {
+      "state": "State",
+      "reviewSurface": "Review surface"
+    },
+    "steps": [
+      {
+        "status": "Generated",
+        "title": "Seed and coordinate define the candidate block.",
+        "body": "The first fact is not an item. It is a world coordinate evaluated under a world seed, chunk size, terrain algorithm, and block vocabulary.",
+        "state": "No resource is minted yet. The block is a deterministic candidate derived from public world rules.",
+        "surface": "src/world/generator.js, src/world/blocks.js, src/data/blockAtlas.js, world_rule page, verification scripts."
+      },
+      {
+        "status": "Rendered",
+        "title": "The client presents the derived world, but does not become the source of truth.",
+        "body": "The browser renders terrain quickly for gameplay. Reviewers should treat this layer as a view over rules and commitments, not as final authority.",
+        "state": "The visible block is client-rendered and can be checked against the generator and later chain state.",
+        "surface": "Chunk rendering code, generated block inspection tools, fairness demos, and public algorithm documentation."
+      },
+      {
+        "status": "Mined",
+        "title": "Mining turns a candidate block into an authenticated transition.",
+        "body": "A break action should prove which coordinate is being changed, which player or session is authorized, and which current block id is expected.",
+        "state": "The chunk program records or verifies the mined coordinate and rejects already-mined, unmineable, or mismatched generated blocks.",
+        "surface": "programs/nicechunk_chunk/src/lib.rs, mine_block, verify_generated_block, ChunkBrokenState, player session validation."
+      },
+      {
+        "status": "Stored",
+        "title": "The backpack stores a compact resource record instead of a server-side item blob.",
+        "body": "The backpack PDA is independent from the player profile. Current resource records are deliberately small: world_x, world_y, and world_z, one record per mined block.",
+        "state": "Default capacity is 50, maximum capacity is 99, and each resource record is 10 bytes before account/header overhead.",
+        "surface": "programs/nicechunk_backpack/src/state.rs, sdk/nicechunk-backpack.ts, BackpackResourceRecord, append_mined_resource."
+      },
+      {
+        "status": "Settled",
+        "title": "Market actions can reference item origin without hiding settlement logic.",
+        "body": "Listings and purchases should expose seller, buyer, currency, price, source kind, source index, and item hash so settlement can be reviewed separately from UI claims.",
+        "state": "The market program supports SOL and NCK settlement paths and marks listings sold or canceled through explicit state changes.",
+        "surface": "programs/nicechunk_market/src/lib.rs, ListingAccount, create_listing, buy_listing, NCK token account validation."
+      },
+      {
+        "status": "Reused",
+        "title": "Future forging can recompute value from origin instead of trusting a static item table.",
+        "body": "Because the mined resource keeps its world coordinate, future forging can derive material traits from seed, block type, biome context, element composition, and protocol version.",
+        "state": "The coordinate becomes a reproducible material handle. The final forged item can keep provenance instead of only a display name.",
+        "surface": "Resource rule atlas, elements data, backpack records, forging page, future forging contract and replay tools."
+      }
+    ]
+  },
+  "commitments": {
+    "eyebrow": "State Commitment Model",
+    "title": "Not every voxel needs to be stored, but every economic claim needs a public anchor.",
+    "body": "NiceChunk's storage model should be reviewed by separating canonical account state, deterministic recomputation, client cache, and planned proof surfaces. This makes the protocol cheaper without hiding what matters.",
+    "labels": {
+      "anchor": "Public anchor",
+      "recomputed": "Recomputed",
+      "reviewRisk": "Review risk"
+    },
+    "items": [
+      {
+        "status": "Canonical",
+        "title": "World configuration",
+        "body": "The global config is the root commitment for the world: seed, chunk dimensions, rule hashes, NCK mint assumptions, and policy constants.",
+        "anchor": "GlobalConfig PDA with NCKCFG01 magic, world seed, terrainConfigHash, resourceRuleHash, clientWorldConfigHash, chunk size, build bounds, and guardian parameters.",
+        "recomputed": "Terrain and resource candidates should be replayed from the seed, coordinates, and rule versions referenced by the stored hashes.",
+        "reviewRisk": "If rule hashes do not map to public source or version manifests, reviewers cannot prove which generator produced a visible world state."
+      },
+      {
+        "status": "Canonical",
+        "title": "Chunk mutation records",
+        "body": "The protocol should not store an entire generated voxel volume when most of it can be recomputed. It should store meaningful deltas and consumed coordinates.",
+        "anchor": "ChunkState and ChunkBroken accounts store versioned chunk mutation state, broken block records, and capacity-bounded deltas.",
+        "recomputed": "Unmodified terrain can be derived again from world seed, chunk coordinates, and generator version.",
+        "reviewRisk": "If chunk mutation storage grows without compaction or clear capacity behavior, reads and rent pressure can undermine gameplay scale."
+      },
+      {
+        "status": "Canonical",
+        "title": "Backpack resource provenance",
+        "body": "A mined raw resource is strongest when it stores the minimum provenance needed to recompute value later rather than a large item blob.",
+        "anchor": "Backpack PDA with NCKBPK01 magic, owner, capacity, item count, and 10-byte records containing world_x, world_y, and world_z.",
+        "recomputed": "Block type, resource composition, material properties, and future forging traits can be derived from the coordinate and public rule data.",
+        "reviewRisk": "If UI names, icons, or mass calculations cannot be traced back to the coordinate record, the inventory becomes a private display layer."
+      },
+      {
+        "status": "Canonical",
+        "title": "Market settlement state",
+        "body": "A public marketplace should expose enough state for users to compare the item shown by the UI with the account they are about to sign against.",
+        "anchor": "ListingAccount v3 with NCKMKT01 magic, seller, listing id, category, currency, source kind, source inventory, item hash, resource record, buyer, and sold timestamps.",
+        "recomputed": "The listed raw resource can be checked against its backpack source record and future material rules before settlement.",
+        "reviewRisk": "If market cards hide source metadata or item hashes, users cannot detect mismatches between displayed goods and account state."
+      },
+      {
+        "status": "Derived",
+        "title": "Client rendering and previews",
+        "body": "Rendering is allowed to be fast, cached, and local. It should not be treated as final economic truth unless it is tied back to committed state or replayable inputs.",
+        "anchor": "Visible scenes are anchored indirectly by world config, generator source, block atlas, chunk mutation records, backpack records, and transaction prompts.",
+        "recomputed": "A reviewer can replay sampled terrain, decode account state, and compare rendered labels or previews against public data.",
+        "reviewRisk": "If the client displays unreplayable resource traits, market goods, or wallet actions, the UI can become a trust bottleneck."
+      },
+      {
+        "status": "Emerging",
+        "title": "NCM compact asset state",
+        "body": "NCM is the project's direction for compact on-chain-friendly voxel assets. It matters because 3D game assets should be inspectable without depending only on mutable metadata servers.",
+        "anchor": "Current NCM tooling and sample assets are source and file artifacts; future production use should bind NCM code, asset hash, owner, and version into public state.",
+        "recomputed": "A compact NCM string can be decoded into voxel geometry, palette, groups, and eventually skeleton/binding metadata.",
+        "reviewRisk": "Until production asset accounts and standards are finalized, NCM should be described as an emerging asset format and tooling surface, not a fully standardized mainnet asset layer."
+      }
+    ]
+  },
+  "economics": {
+    "eyebrow": "Economic Integrity",
+    "title": "The game economy should expose custody, currency, and settlement assumptions.",
+    "body": "NiceChunk's economic layer is easiest to trust when NCK parameters, marketplace state, backpack ownership, guardian staking, and unfinished settlement assumptions are visible instead of hidden behind UI copy.",
+    "labels": {
+      "implemented": "Implemented surface",
+      "reviewFocus": "Review focus"
+    },
+    "cards": [
+      {
+        "status": "NCK Genesis",
+        "title": "Token rules start from a constrained mint.",
+        "body": "The core program validates the NCK mint, decimals, genesis supply, and the absence of mint/freeze authorities before writing the global config.",
+        "implemented": "NCK decimals are 6, genesis supply is 1,000,000,000 NCK in base units, and GlobalConfig stores the mint and rule hashes.",
+        "reviewFocus": "Confirm the deployed mint, closed token authorities, program upgrade posture, and that no later instruction can mutate the core genesis config."
+      },
+      {
+        "status": "Custody",
+        "title": "Wallet and backpack ownership are separated.",
+        "body": "The player profile is not the inventory. A backpack is its own PDA, can be equipped by the player flow, and keeps resource records under explicit owner validation.",
+        "implemented": "Backpack accounts use owner checks, default capacity 50, maximum capacity 99, and append/remove instructions controlled by owner or authorized session paths.",
+        "reviewFocus": "Inspect session authority, allowed action flags, expiry checks, and whether UI flows ever imply server custody that the program does not provide."
+      },
+      {
+        "status": "Provenance",
+        "title": "Raw resources are coordinate-backed records.",
+        "body": "A mined resource can be stored as a compact coordinate record rather than a large opaque item object. Material meaning can be recomputed from origin.",
+        "implemented": "BackpackResourceRecord stores world_x, world_y, and world_z as a 10-byte record for each mined block.",
+        "reviewFocus": "Verify generator stability, chunk state, duplicate mining rejection, and the future forging path that recomputes traits from coordinates."
+      },
+      {
+        "status": "Marketplace",
+        "title": "Listings expose currency, source, and item hash.",
+        "body": "The market program makes a listing state visible instead of treating trades as private database rows. It supports SOL and NCK payment paths.",
+        "implemented": "ListingAccount stores seller, listing_id, category, currency, source_kind, source_index, quantity, price, item_hash, buyer, and sold/canceled state.",
+        "reviewFocus": "Review the exact scope: payment and listing state are explicit, while full asset escrow or resource removal semantics must be checked as the market matures."
+      },
+      {
+        "status": "Guardians",
+        "title": "Guardian incentives are separated from player custody.",
+        "body": "Guardian regions are designed for reachability and participation. They should not custody player assets or process player transactions.",
+        "implemented": "Guardian state stores region owner/operator, NCK stake amount, proof interval, proof count, endpoint, slashing counters, and active/removed status.",
+        "reviewFocus": "Check treasury token ownership, proof submission authority, slashing behavior, and whether any UI copy overstates what guardians currently secure."
+      },
+      {
+        "status": "Policy",
+        "title": "Economic parameters should be auditable constants before they become live policy.",
+        "body": "Prices, fee basis points, guardian tax, market fee, and distribution ratios are most credible when they appear in public config instead of private spreadsheets.",
+        "implemented": "GlobalConfig stores starter pass price, genesis pass price, guardian stake amount, fee bps, guardian region parameters, and world rule hashes.",
+        "reviewFocus": "Distinguish stored policy constants from actively enforced flows. Review which programs consume each value before treating it as live economics."
+      }
+    ]
+  },
+  "routes": {
+    "eyebrow": "Reviewer Routes",
+    "title": "Three clean paths through the project.",
+    "body": "A serious reviewer should not have to guess where to start. These routes connect the project thesis to specific pages and the evidence each page is meant to provide.",
+    "cards": [
+      {
+        "audience": "Audit Route",
+        "title": "Start from programs and account boundaries.",
+        "body": "For contract reviewers, the first question is not whether the world looks good. It is which state exists, who can mutate it, and what a wallet actually signs.",
+        "steps": [
+          {
+            "label": "Contracts and source tree",
+            "proof": "Program IDs, PDA seeds, instruction surfaces, storage layout, and linked code paths.",
+            "href": "/contracts/"
+          },
+          {
+            "label": "Player, chunk, backpack, and guardian modules",
+            "proof": "Separated state domains make custody and authority boundaries easier to review.",
+            "href": "/contracts/"
+          },
+          {
+            "label": "Developer documentation",
+            "proof": "SDK calls and integration notes can be compared against contract instructions.",
+            "href": "/docs/"
+          }
+        ]
+      },
+      {
+        "audience": "Fairness Route",
+        "title": "Replay how the world and resources are derived.",
+        "body": "For engineers and players, the core promise is that the world is generated from public rules instead of private server discretion.",
+        "steps": [
+          {
+            "label": "World generation rules",
+            "proof": "Seeded chunks, coordinates, and versioned algorithm surfaces explain how terrain is derived.",
+            "href": "/world_rule/"
+          },
+          {
+            "label": "Fairness and proof demos",
+            "proof": "Public inputs and hashes make the verification model concrete instead of abstract.",
+            "href": "/fairness/"
+          },
+          {
+            "label": "Resource and element vocabulary",
+            "proof": "Block resources and 118 elements define the material language for mining and forging.",
+            "href": "/resource_rule/"
+          }
+        ]
+      },
+      {
+        "audience": "Value Route",
+        "title": "Understand the economy without accepting hype.",
+        "body": "For investors and long-term players, the important signal is a credible path from playable alpha to public resource ownership.",
+        "steps": [
+          {
+            "label": "Roadbook and NCK direction",
+            "proof": "Shows which systems are live, designed, planned, or intentionally not claimed yet.",
+            "href": "/roadmap/"
+          },
+          {
+            "label": "Guardian and Guardian boundary",
+            "proof": "Explains region availability without asset custody or player transaction processing.",
+            "href": "/guardian/"
+          },
+          {
+            "label": "NCM asset compression",
+            "proof": "Shows how compact voxel assets can be made inspectable for on-chain storage paths.",
+            "href": "/ncm/"
+          }
+        ]
+      }
+    ]
+  },
+  "boundaries": {
+    "eyebrow": "Trust Boundaries",
+    "title": "Clear boundaries are more credible than maximal claims.",
+    "body": "NiceChunk should be judged by what is implemented, what is verifiable, and what is still planned. The website must avoid claiming full decentralization before every critical system is decentralized.",
+    "rows": [
+      {
+        "status": "Live / Alpha",
+        "title": "Playable browser world",
+        "body": "Players can enter a browser voxel client and interact with the current alpha surface. Alpha behavior may change as contracts and balancing mature."
+      },
+      {
+        "status": "Devnet",
+        "title": "Solana contract integration",
+        "body": "Program pages document current devnet contracts and source paths. Devnet state is useful for review and testing, but it is not mainnet finality."
+      },
+      {
+        "status": "Designed",
+        "title": "Verifiable resource economy",
+        "body": "Mining, backpack resources, forging, NCK settlement, and market flows are designed to move toward public verification instead of hidden inventory servers."
+      },
+      {
+        "status": "Coming Soon",
+        "title": "Guardian network participation",
+        "body": "Guardians are planned as region access nodes. They should help communication and availability without taking custody of player assets."
+      },
+      {
+        "status": "Not Claimed",
+        "title": "Full decentralization",
+        "body": "NiceChunk should not claim to be fully decentralized until critical generation, economic, marketplace, governance, and availability layers can withstand independent review."
+      }
+    ]
+  },
+  "risks": {
+    "eyebrow": "Risk Register",
+    "title": "A credible protocol names the risks it has not eliminated yet.",
+    "body": "The project is stronger when unfinished trust assumptions are visible. This register frames current technical risks, why they matter, and what evidence should reduce them over time.",
+    "labels": {
+      "impact": "Impact",
+      "mitigation": "Mitigation"
+    },
+    "rows": [
+      {
+        "status": "Design Risk",
+        "risk": "Generation drift",
+        "impact": "If client, docs, and contract assumptions diverge, reviewers cannot reproduce the same world state from the same public inputs.",
+        "mitigation": "Version generation rules, publish replay fixtures, and bind future economic actions to explicit rule versions."
+      },
+      {
+        "status": "Storage Risk",
+        "risk": "PDA growth pressure",
+        "impact": "Naive per-block storage can make region reads and account rent inefficient as mining volume grows.",
+        "mitigation": "Use compact coordinate records, grouped chunks, deterministic recomputation, and explicit backpack capacity limits."
+      },
+      {
+        "status": "Availability Risk",
+        "risk": "RPC and region reachability",
+        "impact": "Even non-custodial systems can feel centralized if users depend on one endpoint or one region service.",
+        "mitigation": "Expose RPC settings, develop Guardian/Guardian availability paths, and keep non-custody boundaries explicit."
+      },
+      {
+        "status": "Economic Risk",
+        "risk": "Market and NCK settlement maturity",
+        "impact": "A resource economy is only credible when listing, buying, settlement, and failure cases are visible and auditable.",
+        "mitigation": "Document current devnet limits, publish program interfaces, and separate live behavior from planned NCK utility."
+      },
+      {
+        "status": "Governance Risk",
+        "risk": "Protocol parameter control",
+        "impact": "World parameters, resource rates, and rule upgrades need a public path or reviewers cannot assess long-term fairness.",
+        "mitigation": "Track parameter ownership, disclose upgrade authority, and move mature rules toward reviewable governance."
+      }
+    ]
+  },
+  "reviewers": {
+    "eyebrow": "For Reviewers",
+    "title": "Different reviewers need different proof.",
+    "cards": [
+      {
+        "title": "Auditors",
+        "body": "Start from the contracts page, source tree, PDA seeds, instruction list, and stated account boundaries.",
+        "checks": [
+          "Confirm program IDs",
+          "Review PDA derivation",
+          "Inspect storage sizes",
+          "Compare SDK calls with contract instructions"
+        ]
+      },
+      {
+        "title": "Engineers",
+        "body": "Review whether the game architecture can keep rendering fast while making critical state reproducible and inspectable.",
+        "checks": [
+          "World generator",
+          "Resource rules",
+          "NCM compression",
+          "Backpack and mining flow"
+        ]
+      },
+      {
+        "title": "Investors and players",
+        "body": "Look for a credible path from a playable alpha to a public resource economy, not only a visual demo.",
+        "checks": [
+          "Game-first experience",
+          "NCK utility direction",
+          "Open roadmap",
+          "Honest alpha limitations"
+        ]
+      }
+    ]
+  },
+  "next": {
+    "eyebrow": "Next Trust Work",
+    "title": "The trust roadmap is part of the product roadmap.",
+    "body": "The goal is not to make a perfect claim today. The goal is to keep narrowing the gap between playable gameplay, public algorithms, on-chain records, and independent verification.",
+    "items": [
+      {
+        "status": "Near term",
+        "title": "Stronger live status matrix",
+        "body": "Keep every major claim labeled as live, devnet, designed, planned, or not claimed."
+      },
+      {
+        "status": "Near term",
+        "title": "More reproducible demos",
+        "body": "Expose block generation, mined resource derivation, and NCM asset decoding with public inputs."
+      },
+      {
+        "status": "Mid term",
+        "title": "Independent review package",
+        "body": "Prepare audit notes, program invariants, deployment hashes, and reviewed rule versions."
+      }
+    ]
+  },
+  "claims": {
+    "eyebrow": "Claims Ledger",
+    "title": "Every serious claim needs a status, evidence, and boundary.",
+    "body": "This ledger is written for reviewers who need to separate implemented systems from design intent. It keeps the project honest while showing why the technical direction matters.",
+    "labels": {
+      "evidence": "Evidence",
+      "boundary": "Boundary"
+    },
+    "rows": [
+      {
+        "status": "Live / Alpha",
+        "claim": "Seeded chunk world engine",
+        "evidence": "World generation demos and source modules show how terrain is derived from seed, coordinates, and versioned rules.",
+        "boundary": "The playable client is alpha; final economic settlement still depends on contract and rule hardening.",
+        "href": "/world_rule/"
+      },
+      {
+        "status": "Devnet",
+        "claim": "Open Solana program surface",
+        "evidence": "The contracts page exposes program IDs, PDA seeds, account storage, source files, and SDK integration boundaries.",
+        "boundary": "Devnet programs are reviewable integration targets, not final mainnet guarantees.",
+        "href": "/contracts/"
+      },
+      {
+        "status": "Live / Data",
+        "claim": "118-element resource vocabulary",
+        "evidence": "The element atlas uses real chemical elements as a structured material vocabulary for resources, forging, visual genes, and future rules.",
+        "boundary": "Element values are game-balancing inputs; scientific fields and game fields are intentionally separated.",
+        "href": "/elements/"
+      },
+      {
+        "status": "Designed",
+        "claim": "Coordinate-derived mined resources",
+        "evidence": "Backpack resource records are designed to keep per-block coordinates so future forging can recompute properties from public world rules.",
+        "boundary": "Some resource settlement paths are still being connected and should remain labeled as designed or devnet until finalized.",
+        "href": "/resource_rule/"
+      },
+      {
+        "status": "Designed",
+        "claim": "NCM as compact on-chain 3D asset format",
+        "evidence": "NCM and NCM DNA pages explain the direction: store compact 3D asset text directly on-chain instead of depending on mutable metadata servers.",
+        "boundary": "NCM is a protocol direction and toolchain surface; production asset standards still need review and versioning.",
+        "href": "/ncm/"
+      },
+      {
+        "status": "Coming Soon",
+        "claim": "Guardian network without custody",
+        "evidence": "Guardian pages and docs describe Guardians as region access and communication infrastructure, not asset custodians.",
+        "boundary": "Guardian staking, slashing, economics, and mainnet participation rules are not final yet.",
+        "href": "/guardian/"
+      }
+    ]
+  },
+  "checklist": {
+    "eyebrow": "Review Checklist",
+    "title": "A practical path for independent review.",
+    "body": "A high-trust Web3 game should give reviewers a route through the code, rules, demos, and limitations without forcing them to reverse-engineer the whole website.",
+    "items": [
+      {
+        "title": "Start with current claims",
+        "body": "Use the Trust and Contracts pages to separate live, devnet, designed, planned, and not-claimed systems.",
+        "steps": [
+          "Open the contracts directory",
+          "Record program IDs and PDA seeds",
+          "Check whether a claim is live or planned",
+          "Flag any claim that lacks evidence"
+        ]
+      },
+      {
+        "title": "Replay public rules",
+        "body": "Use world, resource, fairness, and element pages to understand whether rules can be recomputed from public inputs.",
+        "steps": [
+          "Inspect seeded world generation",
+          "Review resource and element data",
+          "Compare demos with source modules",
+          "Check null or unknown data handling"
+        ]
+      },
+      {
+        "title": "Review economic boundaries",
+        "body": "Follow mining, backpack, NCK utility, marketplace, and Guardian claims through the current implementation status.",
+        "steps": [
+          "Check wallet-owned actions",
+          "Review backpack resource records",
+          "Separate NCK design from launched utility",
+          "Confirm Guardians do not custody assets"
+        ]
+      }
+    ]
+  },
+  "scope": {
+    "eyebrow": "Audit Scope Matrix",
+    "title": "The review surface must be explicit before any security claim is meaningful.",
+    "body": "NiceChunk separates contract correctness, deterministic generation, economy settlement, client disclosure, and operational availability. Each surface needs its own evidence and its own exclusions.",
+    "labels": {
+      "current": "Current surface",
+      "excluded": "Excluded assumptions",
+      "evidence": "Required evidence"
+    },
+    "rows": [
+      {
+        "status": "Contracts",
+        "title": "Program correctness",
+        "current": "Core, player, chunk, backpack, guardian, and market programs define wallet authority, account layout, PDA addressing, and state transitions.",
+        "excluded": "A contract audit does not prove the browser rendered the same world or that future governance parameters are final.",
+        "evidence": "Program source, deployment manifest, account decoder fixtures, negative transaction tests, and upgrade-authority disclosure."
+      },
+      {
+        "status": "Generation",
+        "title": "Deterministic world derivation",
+        "current": "Seed, chunk coordinate, algorithm version, block atlas, and resource rules define reproducible terrain candidates.",
+        "excluded": "Generation review does not by itself prove that a mined coordinate was settled or that a player owns the resulting resource.",
+        "evidence": "Fixed replay fixtures, independent generator implementation, output hashes, sampled chunk screenshots, and rule-version changelog."
+      },
+      {
+        "status": "Economy",
+        "title": "Asset and NCK settlement",
+        "current": "Backpack records, listing state, SOL/NCK currency flags, source indices, and resource provenance are visible contract surfaces.",
+        "excluded": "Current devnet settlement should not be treated as final token economics, market liquidity, or production treasury policy.",
+        "evidence": "Escrow tests, token account validation tests, buy/cancel/listing state traces, fee policy, and provenance transfer proofs."
+      },
+      {
+        "status": "Client",
+        "title": "User disclosure and transaction intent",
+        "current": "The UI connects wallet login, signature recovery, mining feedback, backpack display, marketplace flows, and contract code navigation.",
+        "excluded": "A polished interface does not prove contract safety; it must be compared against signed instructions and decoded accounts.",
+        "evidence": "Wallet prompt copy, SDK call mapping, loading/error states, language parity, and screenshots compared with raw account data."
+      },
+      {
+        "status": "Availability",
+        "title": "RPC and guardian reachability",
+        "current": "The website reads public accounts through RPC, uses local generation for fast rendering, and plans guardian participation for region communication.",
+        "excluded": "Availability infrastructure does not custody assets and should not be described as final decentralized consensus.",
+        "evidence": "RPC fallback behavior, guardian registry state, cache invalidation rules, stale-state warnings, and region outage simulations."
+      }
+    ]
+  },
+  "availability": {
+    "eyebrow": "Data Availability & RPC Assumptions",
+    "title": "A public game still depends on how quickly players can read public state.",
+    "body": "Reviewers should distinguish canonical Solana account state from RPC access, browser cache, guardian relay, and generated local data. Availability failures should degrade clearly instead of changing economic truth.",
+    "labels": {
+      "assumption": "Assumption",
+      "failure": "Failure mode",
+      "review": "Reviewer action"
+    },
+    "cards": [
+      {
+        "status": "Canonical",
+        "title": "Solana account state",
+        "body": "Economic truth should be anchored in account owners, PDA addresses, account bytes, token accounts, and transaction signatures.",
+        "assumption": "If an account is confirmed on the selected cluster, it is the canonical source for ownership and settlement state.",
+        "failure": "RPC delay or cluster mismatch can show stale balances, missing backpacks, or outdated listings without changing the underlying account.",
+        "review": "Compare multiple RPC endpoints, inspect account owner/program ID, decode bytes, and record slot/commitment level."
+      },
+      {
+        "status": "Derived",
+        "title": "Generated chunk data",
+        "body": "Most terrain candidates should be recomputed from seed and coordinates instead of stored as raw voxel blobs.",
+        "assumption": "The generator version and input tuple are public enough to reproduce the same candidate block map.",
+        "failure": "If the client silently changes rule versions, a player may see a different resource candidate than the verifier.",
+        "review": "Pin generator version, run replay fixtures, hash sampled outputs, and display rule-version changes in public docs."
+      },
+      {
+        "status": "Cached",
+        "title": "Browser and index cache",
+        "body": "The client may cache generated chunks, decoded backpacks, and marketplace lists to keep gameplay responsive.",
+        "assumption": "Cache is a performance layer only; it must not become hidden economic authority.",
+        "failure": "A stale cache can show a mined block, missing item, or old listing after the chain state has changed.",
+        "review": "Force refresh by slot, expose loading/error states, invalidate after transactions, and compare UI state with decoded accounts."
+      },
+      {
+        "status": "Guardian",
+        "title": "Region relay and communication",
+        "body": "Guardians are designed to help regions stay reachable and coordinate real-time communication without holding player assets.",
+        "assumption": "Guardian messages can improve availability, but wallet-signed transactions remain the economic boundary.",
+        "failure": "A guardian outage may reduce responsiveness or live region communication, but should not transfer or confiscate resources.",
+        "review": "Inspect guardian registry fields, endpoint status, proof interval, staking policy, and non-custody wording."
+      },
+      {
+        "status": "Fallback",
+        "title": "Degraded-mode behavior",
+        "body": "When RPC, cache, or guardian access fails, the user should see a clear degraded state instead of a misleading success screen.",
+        "assumption": "The interface can separate local preview, pending transaction, confirmed state, and failed state.",
+        "failure": "Ambiguous loading creates false trust: users may believe a resource was created, sold, or equipped when it was not confirmed.",
+        "review": "Test failed transactions, network loss, RPC timeout, language switching during load, and recovery after reconnect."
+      },
+      {
+        "status": "Archive",
+        "title": "Review snapshots",
+        "body": "Auditors need stable evidence packages because live websites and devnet programs can change during active development.",
+        "assumption": "A dated snapshot can freeze the exact source, deployment, fixtures, and claims being reviewed.",
+        "failure": "Without snapshots, a review may compare code, UI, and deployment artifacts from different versions.",
+        "review": "Publish release tags, deployment slots, program binary hashes, generated public locales, and fixture checksums."
+      }
+    ]
+  },
+  "maturity": {
+    "eyebrow": "Proof Maturity Timeline",
+    "title": "A trust claim should mature from visible design to reproducible proof.",
+    "body": "NiceChunk treats public trust as a staged engineering target. The timeline below separates what is visible today from the evidence required before a feature should be considered protocol-grade.",
+    "labels": {
+      "proof": "Current proof",
+      "missing": "Before protocol-grade"
+    },
+    "rows": [
+      {
+        "phase": "Visible",
+        "title": "Public concept and rule disclosure",
+        "proof": "Website pages explain seeded chunks, resource rules, element vocabulary, NCM assets, contracts, and known trust boundaries.",
+        "missing": "Dated claim ledger, commit-linked source references, and changelog for rule or copy changes."
+      },
+      {
+        "phase": "Playable",
+        "title": "Alpha interaction with wallet identity",
+        "proof": "Players can enter the browser world, connect wallets, mine blocks, buy/equip backpacks, and inspect UI state.",
+        "missing": "Stable integration tests for every wallet path, clearer failed-transaction recovery, and production-ready session policy."
+      },
+      {
+        "phase": "Reproducible",
+        "title": "Independent generation and account replay",
+        "proof": "Generation demos, verifier scripts, account layouts, and verification recipes define the replay direction.",
+        "missing": "Canonical fixtures, independent verifier package, and output hashes for representative chunks/resources/backpack records."
+      },
+      {
+        "phase": "Audited",
+        "title": "External review and adversarial testing",
+        "proof": "The trust page names audit scope, threat surfaces, invariants, and failure cases.",
+        "missing": "Third-party audit reports, public issue remediation log, fuzz tests, and negative transaction matrix."
+      },
+      {
+        "phase": "Governed",
+        "title": "Rule change control and community oversight",
+        "proof": "Governance is framed as a future surface rather than claimed as complete today.",
+        "missing": "Upgrade policy, timelock or multisig posture, rule-hash voting path, and public parameter change proposals."
+      },
+      {
+        "phase": "Protocol",
+        "title": "Long-term public world infrastructure",
+        "proof": "Guardian, market, backpack, NCK, resource, and NCM directions are documented as protocol surfaces.",
+        "missing": "Production deployment manifest, data-availability playbook, mature guardian incentives, and post-audit economic controls."
+      }
+    ]
+  },
+  "upgrade": {
+    "eyebrow": "Upgrade & Governance Posture",
+    "title": "Rule changes must become visible before they become political.",
+    "body": "The system is still evolving, so the honest question is not whether governance is finished today. The question is how rule versions, program upgrades, policy constants, and future voting paths will be disclosed and constrained.",
+    "labels": {
+      "authority": "Authority posture",
+      "disclosure": "Disclosure requirement",
+      "maturity": "Maturity target"
+    },
+    "cards": [
+      {
+        "status": "Programs",
+        "title": "Upgrade authority",
+        "body": "During active development, deployed programs may still require controlled upgrades. That authority must be visible, bounded, and eventually reduced.",
+        "authority": "Current posture should be listed by program, cluster, upgrade authority, and deployment slot.",
+        "disclosure": "Every program upgrade should publish source diff, binary hash, reason, migration effect, and affected account layouts.",
+        "maturity": "Move from developer-controlled upgrades toward multisig, timelock, audited migration scripts, and later governance constraints."
+      },
+      {
+        "status": "Rules",
+        "title": "World rule versioning",
+        "body": "World generation, resource composition, element balancing, and NCM decoding must be versioned so old claims remain reviewable.",
+        "authority": "Rule hashes should be anchored in global config or signed release manifests, not hidden in website copy.",
+        "disclosure": "When a rule changes, publish old hash, new hash, affected coordinate/resource scope, and replay impact.",
+        "maturity": "Make rule changes reproducible, diffable, and eventually subject to player governance where economic impact is material."
+      },
+      {
+        "status": "Economy",
+        "title": "Economic parameter control",
+        "body": "NCK utility, fees, backpack capacity tiers, guardian staking, and market settlement must be treated as economic policy, not cosmetic UI text.",
+        "authority": "Parameters should identify who can set them and whether the program enforces them or only records them.",
+        "disclosure": "Publish fee constants, mint assumptions, treasury ownership, staking values, and any temporary devnet exceptions.",
+        "maturity": "Require formal proposals and public review before changing parameters that affect player cost, rewards, or resource scarcity."
+      },
+      {
+        "status": "Content",
+        "title": "Client and documentation changes",
+        "body": "A public game also needs copy governance because users make decisions from website claims and wallet prompts.",
+        "authority": "Website and docs can update faster than contracts, so claims need visible status labels and fallback English when translations lag.",
+        "disclosure": "Maintain changelog entries for claim wording, trust boundaries, language additions, and major UI flow changes.",
+        "maturity": "Keep contract evidence, screenshots, and docs synchronized by release tag, not by memory."
+      },
+      {
+        "status": "Incidents",
+        "title": "Disclosure and response path",
+        "body": "A credible project should state how bugs, mismatches, stuck transactions, duplicated resources, or market failures will be handled.",
+        "authority": "Incident response is initially team-led, but should publish affected scope and not silently rewrite economic history.",
+        "disclosure": "Record severity, affected accounts, mitigation, replay evidence, and whether any on-chain migration was required.",
+        "maturity": "Build a public security contact, remediation log, postmortem template, and eventually governance-reviewed recovery policy."
+      },
+      {
+        "status": "Future",
+        "title": "Governance transition",
+        "body": "Governance should arrive after the rules are understandable enough for voters to evaluate them.",
+        "authority": "Current design intent should not be marketed as launched community control.",
+        "disclosure": "Publish the path from team-managed alpha to governed parameters, including which powers remain non-governed for safety.",
+        "maturity": "Separate technical emergency controls from long-term world governance, territory policy, and economic parameter voting."
+      }
+    ]
+  },
+  "notation": {
+    "eyebrow": "Verification Notation",
+    "title": "The core game loop can be described as public inputs plus constrained transitions.",
+    "body": "This notation is intentionally readable rather than academic theater. It gives auditors a shared vocabulary for generation, mining, backpack custody, market settlement, and guardian availability without pretending every planned proof is already complete.",
+    "labels": {
+      "review": "Review meaning",
+      "limit": "Current limit"
+    },
+    "items": [
+      {
+        "status": "World",
+        "title": "Seeded chunk function",
+        "formula": "ChunkCandidate = G(worldSeed, chunkCoord, ruleVersion)",
+        "body": "A chunk should be reproducible from public inputs under a pinned generator version.",
+        "review": "Reviewers can replay sampled chunks and compare block candidates, biome edges, and output hashes.",
+        "limit": "The page should keep adding canonical fixtures so independent clients can verify more than visual screenshots."
+      },
+      {
+        "status": "Block",
+        "title": "Block identity function",
+        "formula": "BlockID = B(worldSeed, chunkCoord, voxelCoord, ruleVersion)",
+        "body": "A mined resource begins as a deterministic block candidate, not as a private server inventory row.",
+        "review": "The important question is whether the displayed block, mined coordinate, and recorded resource refer to the same derived object.",
+        "limit": "Resource identity still needs broader fixture coverage for trees, leaves, terrain edges, water, lava, and rare materials."
+      },
+      {
+        "status": "Mining",
+        "title": "Wallet-authorized transition",
+        "formula": "State(t+1) = ApplyMine(State(t), wallet, coord, proofInputs)",
+        "body": "Mining should become a constrained state transition authorized by the player wallet and rejected when duplicated or invalid.",
+        "review": "Inspect signer accounts, session authority, duplicate-coordinate rejection, failure recovery, and backpack append behavior.",
+        "limit": "Production confidence requires a public negative-test matrix and replayable transaction examples."
+      },
+      {
+        "status": "Inventory",
+        "title": "Portable backpack record",
+        "formula": "ResourceRecord = {coord, blockHint, ruleVersion, source}",
+        "body": "Backpack items are modeled as individual coordinate-derived records so future forging can use location-specific traits.",
+        "review": "Reviewers should verify capacity, owner/equipped binding, append/remove compaction, and exact record transfer.",
+        "limit": "Advanced backpacks, forging removal, and market escrow paths need continued invariant tests as features mature."
+      },
+      {
+        "status": "Market",
+        "title": "Settlement-preserving listing",
+        "formula": "Listing = Lock(resourceRecord, seller, currency, price)",
+        "body": "A listing should preserve provenance: the sold item must be the exact resource record that left the source backpack.",
+        "review": "Compare listing source fields, escrow authority, buy/cancel transitions, NCK token account checks, and final backpack state.",
+        "limit": "Mainnet-grade settlement still needs third-party review, fee disclosure, and adversarial tests for partial failure cases."
+      },
+      {
+        "status": "Guardian",
+        "title": "Availability without custody",
+        "formula": "Availability(region, t) != Custody(playerAssets)",
+        "body": "Guardians can improve reachability and communication, but they should not become hidden asset processors.",
+        "review": "The key invariant is that guardian participation does not replace wallet-signed economic transitions.",
+        "limit": "Guardian proofs, staking incentives, outage response, and slashing policy are still future hardening surfaces."
+      }
+    ]
+  },
+  "questions": {
+    "eyebrow": "Open Review Questions",
+    "title": "The strongest version of NiceChunk is the one that invites hard questions early.",
+    "body": "These questions are not marketing objections. They are the engineering and economic questions that should remain visible until the project has stronger evidence, production deployments, and independent review.",
+    "labels": {
+      "why": "Why it matters",
+      "evidence": "Evidence needed",
+      "owner": "Likely owner"
+    },
+    "items": [
+      {
+        "status": "Rules",
+        "title": "How are rule hashes anchored across releases?",
+        "body": "World generation, resource composition, and NCM decoding should remain replayable after the website and client evolve.",
+        "why": "If old rules cannot be reconstructed, historical resources become hard to audit.",
+        "evidence": "Signed release manifests, rule hashes in config, fixture checksums, and clear migration notes.",
+        "owner": "Protocol engineering and documentation."
+      },
+      {
+        "status": "Programs",
+        "title": "What is the production upgrade policy?",
+        "body": "Devnet programs can evolve quickly, but production trust requires visible authority, migration, and emergency boundaries.",
+        "why": "Investors and auditors need to know who can change value-bearing logic and under what constraints.",
+        "evidence": "Upgrade authority disclosure, multisig or timelock plan, binary hashes, source tags, and incident procedure.",
+        "owner": "Core protocol and security review."
+      },
+      {
+        "status": "Replay",
+        "title": "How broad is the independent replay suite?",
+        "body": "A few samples are useful, but a voxel world needs fixtures across common terrain, trees, liquids, rare materials, and edge coordinates.",
+        "why": "Replay coverage is what turns deterministic generation from a claim into an engineering practice.",
+        "evidence": "Canonical fixture packs, independent verifier package, CI checks, and mismatch reporting.",
+        "owner": "World generation and QA."
+      },
+      {
+        "status": "Economy",
+        "title": "Can market transfers preserve exact resource provenance?",
+        "body": "Listings should not collapse mined blocks into fungible UI rows if future forging depends on coordinates and generation context.",
+        "why": "Provenance loss would weaken the core idea of coordinate-derived resources.",
+        "evidence": "Escrow tests, record equality checks, buy/cancel traces, and backpack before/after decoders.",
+        "owner": "Marketplace, backpack, and SDK."
+      },
+      {
+        "status": "Guardian",
+        "title": "What happens when region availability fails?",
+        "body": "A guardian network should explain failure modes before it claims uptime, staking, or regional participation value.",
+        "why": "Availability is useful only if outage behavior is honest and does not alter ownership.",
+        "evidence": "Region outage simulations, stale-state UI, guardian proof intervals, and non-custody invariants.",
+        "owner": "Guardian network and client runtime."
+      },
+      {
+        "status": "NCK",
+        "title": "Which economic parameters become governed?",
+        "body": "NCK utility, fees, guardian staking, backpack tiers, and market settlement policy should mature from team-set constants to public policy.",
+        "why": "Economic parameters affect player cost, scarcity, incentives, and long-term credibility.",
+        "evidence": "Parameter registry, fee schedule, governance roadmap, change proposals, and treasury disclosure.",
+        "owner": "Economy design and governance."
+      }
+    ]
+  },
+  "adversarial": {
+    "eyebrow": "Adversarial Test Matrix",
+    "title": "A fair game economy is proven by the failures it refuses to accept.",
+    "body": "Happy paths show that a feature works. Adversarial paths show whether the economy resists duplication, unauthorized mutation, stale state, wrong custody, and misleading UI confirmation.",
+    "labels": {
+      "reject": "Should reject",
+      "evidence": "Evidence to inspect",
+      "status": "Current status"
+    },
+    "rows": [
+      {
+        "domain": "Mining",
+        "title": "Duplicate coordinate mining",
+        "reject": "A wallet or session attempts to mine the same chunk coordinate and voxel coordinate after the block is already recorded as broken.",
+        "evidence": "ChunkBroken account records, duplicate lookup path, transaction logs, UI failure recovery, and backpack item count before and after the failed transaction.",
+        "status": "Required public negative test for every mining release."
+      },
+      {
+        "domain": "Session",
+        "title": "Expired or wrong player session",
+        "reject": "A transaction uses an expired session, a session not owned by the wallet, or a session that lacks the required mining or backpack capability flag.",
+        "evidence": "PlayerSession fields, owner signer, expiry slot/timestamp, allowed action flags, SDK error handling, and wallet prompt parity.",
+        "status": "Session authority should be checked before economic mutation."
+      },
+      {
+        "domain": "Backpack",
+        "title": "Append without equipped backpack",
+        "reject": "A player mines an economic block without a valid equipped backpack PDA or tries to append into a backpack controlled by another owner.",
+        "evidence": "PlayerProfile equipped backpack field, Backpack owner/session validation, capacity count, append instruction accounts, and failure UI.",
+        "status": "Critical because inventory is an independent portable account."
+      },
+      {
+        "domain": "Capacity",
+        "title": "Over-capacity inventory insert",
+        "reject": "A mined resource append would exceed the backpack capacity, including default 50-slot backpacks and any future capacity tier under the 99-slot maximum.",
+        "evidence": "Backpack capacity field, occupied count, append bounds check, failed transaction logs, and no phantom UI item after rejection.",
+        "status": "Required before advanced backpacks or paid capacity tiers."
+      },
+      {
+        "domain": "Market",
+        "title": "Wrong source resource listing",
+        "reject": "A seller creates a listing with a source index or resource record that does not match the item removed from the source backpack.",
+        "evidence": "Listing source fields, resource record equality check, backpack before/after decoder, escrow authority, and cancel return path.",
+        "status": "Needed to preserve coordinate-derived resource provenance."
+      },
+      {
+        "domain": "NCK",
+        "title": "Invalid token account settlement",
+        "reject": "A buyer or seller uses a token account with the wrong mint, wrong owner, wrong authority, or wrong decimals for an NCK-denominated listing.",
+        "evidence": "Token account owner/mint checks, NCK mint from GlobalConfig, listing currency flag, buyer debit, seller credit, and treasury fee path.",
+        "status": "Required before any production NCK marketplace claim."
+      },
+      {
+        "domain": "Guardian",
+        "title": "Guardian message as economic authority",
+        "reject": "A guardian, guardian endpoint, or region relay attempts to create, transfer, or cancel player assets without the player wallet signature.",
+        "evidence": "Guardian registry state, endpoint role, transaction signer set, non-custody invariants, and client handling of guardian outage.",
+        "status": "Core boundary: availability is not custody."
+      },
+      {
+        "domain": "Client",
+        "title": "Misleading success state after failure",
+        "reject": "The UI displays a mined resource, sold item, equipped backpack, or confirmed market action after the transaction fails or times out.",
+        "evidence": "RPC timeout path, SendTransactionError logs, pending/confirmed/failed UI states, cache invalidation, and decoded account comparison.",
+        "status": "Needed for user trust even when contracts are correct."
+      }
+    ]
+  },
+  "packet": {
+    "eyebrow": "Reviewer Packet Blueprint",
+    "title": "The next audit step is a versioned packet, not another pitch document.",
+    "body": "This blueprint defines what NiceChunk should publish for independent review: the exact source snapshot, deployment data, account decoders, generation fixtures, adversarial tests, and maturity disclosures tied to a release.",
+    "labels": {
+      "purpose": "Purpose",
+      "proof": "Proof target",
+      "files": "Packet files"
+    },
+    "items": [
+      {
+        "status": "Release",
+        "title": "Source snapshot manifest",
+        "body": "A reviewer needs a frozen source snapshot so code, website claims, fixtures, and deployed programs are not mixed across versions.",
+        "purpose": "Tie every trust claim to a release tag, commit hash, generated public assets, and documented build command.",
+        "proof": "A reviewer can rebuild the Trust page and compare the artifact set against the public website.",
+        "files": [
+          "release-manifest.json",
+          "source-map.md",
+          "build-command.txt",
+          "locale-checks.json"
+        ]
+      },
+      {
+        "status": "Deploy",
+        "title": "Program deployment manifest",
+        "body": "Program IDs and upgrade posture should be recorded as reviewable data, not only as copy on the website.",
+        "purpose": "List cluster, program ID, deployment slot, binary hash, upgrade authority, PDA seeds, account sizes, and config hashes.",
+        "proof": "A reviewer can compare website registry values with chain account owners, programdata accounts, and SDK constants.",
+        "files": [
+          "deployment-manifest.json",
+          "program-hashes.txt",
+          "pda-seeds.json",
+          "upgrade-authority.md"
+        ]
+      },
+      {
+        "status": "Decode",
+        "title": "Account decoder fixture set",
+        "body": "Public state only becomes useful when independent reviewers can decode account bytes without trusting the UI.",
+        "purpose": "Provide raw sample account bytes and expected JSON for global config, player, chunk, backpack, guardian, and listing accounts.",
+        "proof": "A reviewer can decode raw accounts and compare them with UI state, SDK output, and protocol documentation.",
+        "files": [
+          "fixtures/accounts/*.bin",
+          "fixtures/accounts/*.json",
+          "decode-accounts.mjs",
+          "account-layout.md"
+        ]
+      },
+      {
+        "status": "Replay",
+        "title": "Generation and resource replay pack",
+        "body": "Seeded chunks should be reproducible across clients, screenshots, and independent verifier scripts.",
+        "purpose": "Publish representative seeds, chunk coordinates, block samples, resource candidates, and expected hashes.",
+        "proof": "A reviewer can recompute sampled terrain, tree blocks, liquids, ores, and rare resource candidates under a fixed rule version.",
+        "files": [
+          "fixtures/generation/*.json",
+          "expected-hashes.json",
+          "verify-generated-block.mjs",
+          "rule-version.md"
+        ]
+      },
+      {
+        "status": "Failure",
+        "title": "Adversarial transaction log set",
+        "body": "Economic trust depends on showing what the programs reject, not only what succeeds.",
+        "purpose": "Collect duplicate mining, expired session, wrong backpack, over-capacity, wrong listing source, invalid NCK token account, and failed UI confirmation cases.",
+        "proof": "A reviewer can replay or simulate negative paths and verify that state is unchanged after rejection.",
+        "files": [
+          "adversarial-matrix.json",
+          "tx-logs/*.json",
+          "simulate-negative-paths.mjs",
+          "failure-ui-cases.md"
+        ]
+      },
+      {
+        "status": "Disclose",
+        "title": "Maturity and limitation ledger",
+        "body": "A credible review packet must say what is live, devnet, designed, planned, experimental, or explicitly not claimed.",
+        "purpose": "Prevent investors, players, or auditors from treating planned decentralization, governance, guardian economics, or NCK policy as finished security.",
+        "proof": "A reviewer can map every public claim to a status, evidence link, boundary, and next hardening requirement.",
+        "files": [
+          "claims-ledger.json",
+          "risk-register.md",
+          "known-limits.md",
+          "next-hardening.md"
+        ]
+      }
+    ]
+  },
+  "deployment": {
+    "eyebrow": "Deployment Evidence Ledger",
+    "title": "Program IDs are only the first layer of deployment trust.",
+    "body": "A serious review compares website registry values against source paths, SDK constants, on-chain owners, account layouts, deployment slots, and future binary hashes. This ledger separates what is visible today from what still needs a signed release manifest.",
+    "labels": {
+      "visible": "Visible evidence",
+      "missing": "Still needed"
+    },
+    "rows": [
+      {
+        "domain": "Core",
+        "title": "Global configuration program",
+        "programId": "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
+        "visible": "Program ID, GlobalConfig magic NCKCFG01, global-config PDA seed, source path programs/nicechunk_core/src/lib.rs, config hash fields, NCK mint assumptions, and account size are visible in the registry and contracts page.",
+        "missing": "Signed deployment slot, program binary hash, upgrade authority status, config account sample bytes, and reproducible build command tied to a release tag."
+      },
+      {
+        "domain": "Player",
+        "title": "Player identity and session program",
+        "programId": "oeaRMVnPoV4iENnGCCtaEeRxU5be515s4YYe6aXQuKe",
+        "visible": "Program ID, player/session PDA domains, PlayerProfile and PlayerSession account magic, source path programs/nicechunk_player/src/lib.rs, and session authority role are documented.",
+        "missing": "Session expiry fixtures, signer mismatch negative logs, equipped backpack account samples, and deployment authority evidence."
+      },
+      {
+        "domain": "Chunk",
+        "title": "World mutation and broken block program",
+        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "visible": "Program ID, chunk and chunk-broken seeds, ChunkState magic NCKCHK01, ChunkBroken magic NCBK, max record count, and source path programs/nicechunk_chunk/src/lib.rs are public.",
+        "missing": "Canonical mined-coordinate fixtures, duplicate mining transaction logs, MagicBlock delegation evidence, and account byte decoders for large chunk records."
+      },
+      {
+        "domain": "Backpack",
+        "title": "Portable inventory program",
+        "programId": "FwTrMDGyRg653L9svvt5aoGii9ZjX1WekSFWcwByjxqt",
+        "visible": "Program ID, backpack seed, NCKBPK01 magic, default capacity 50, max capacity 99, 10-byte resource records, and source path programs/nicechunk_backpack/src/lib.rs are listed.",
+        "missing": "Append/remove invariant tests, over-capacity logs, transfer/escrow fixtures, rent sizing proof, and decoded account samples after mining."
+      },
+      {
+        "domain": "Guardian",
+        "title": "Region availability and guardian program",
+        "programId": "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
+        "visible": "Program ID, guardian-registry, guardian-region, guardian-treasury seeds, registry/region account sizes, stake amount, proof interval, and source path programs/nicechunk_guardian/src/lib.rs are public.",
+        "missing": "Endpoint proof fixtures, outage simulation logs, staking treasury authority evidence, slashing policy tests, and non-custody failure cases."
+      },
+      {
+        "domain": "Market",
+        "title": "Listing and NCK settlement program",
+        "programId": "1PwPzFtdJ5gQqku5gBo4b6Wvo48Qe8NuXSogUP8TWpR",
+        "visible": "Program ID, listing and market-authority seeds, NCKMKT01 magic, v3 listing size, SOL/NCK currency support, source inventory fields, and source path programs/nicechunk_market/src/lib.rs are documented.",
+        "missing": "Escrow binary traces, NCK token-account negative logs, buy/cancel account diffs, fee policy proof, and sold-state replay fixtures."
+      }
+    ]
+  },
+  "decoder": {
+    "eyebrow": "Account Decoder Evidence",
+    "title": "Public account state should be readable without trusting the UI.",
+    "body": "NiceChunk account data is most credible when reviewers can decode raw bytes, verify magic and version, check owner and PDA assumptions, then compare the decoded state against the website and wallet transaction history.",
+    "labels": {
+      "layout": "Layout",
+      "firstChecks": "First checks",
+      "reviewUse": "Reviewer use"
+    },
+    "rows": [
+      {
+        "domain": "Core",
+        "title": "GlobalConfig account",
+        "layout": "NCKCFG01, v1, 293 bytes; seed global-config; carries NCK mint, world id, world seed, rule hashes, chunk/build bounds, and guardian parameters.",
+        "checks": "Check program owner, PDA seed, magic, version, exact length, world id, NCK mint, rule hashes, chunk size, build limits, and guardian constants.",
+        "use": "Proves whether the public website and game client are reading the same canonical world parameters."
+      },
+      {
+        "domain": "Player",
+        "title": "PlayerProfile account",
+        "layout": "NCKPLY01, v1, 449 bytes; legacy length 417; owner offset 12; global config 44; position 78; equipment 103; equipped backpack 393.",
+        "checks": "Check owner wallet, global config link, supported length, equipment slots, equipped backpack key, created slot, and updated slot.",
+        "use": "Verifies wallet identity, visible equipment, and whether the player can mine into a bound backpack."
+      },
+      {
+        "domain": "Session",
+        "title": "PlayerSession account",
+        "layout": "NCKSES01, v1, 184 bytes; owner 12; session authority 44; player profile 76; global config 108; allowed actions 142; expires_at 144.",
+        "checks": "Check session authority signer, profile and global config links, action mask, expiry, max actions, and action count.",
+        "use": "Separates short-lived gameplay authority from long-lived wallet ownership."
+      },
+      {
+        "domain": "Chunk",
+        "title": "ChunkState account",
+        "layout": "NCKCHK01, v1, 8,280 bytes; header 88; up to 128 block deltas at 64 bytes each; keyed by world id, chunk_x, and chunk_z.",
+        "checks": "Check global config, world id, chunk_x, chunk_z, delta counters, capacity, created slot, and updated slot.",
+        "use": "Verifies player-authored block changes without storing the generated terrain blob."
+      },
+      {
+        "domain": "Mining",
+        "title": "ChunkBrokenState account",
+        "layout": "NCBK, v1, variable length; header 16; records 3 bytes; max capacity 2,048; packs local_x, local_z, and y_offset from min_y.",
+        "checks": "Check min_y, count <= capacity, length = header + capacity * 3, and duplicate packed coordinate rejection.",
+        "use": "Verifies mined generated blocks compactly and prevents repeated mining of the same coordinate."
+      },
+      {
+        "domain": "Backpack",
+        "title": "BackpackAccount inventory",
+        "layout": "NCKBPK01, v1, 1,118 bytes; header 128; default capacity 50; max capacity 99; each resource record stores x/y/z in 10 bytes.",
+        "checks": "Check owner, capacity, item_count <= capacity, carried state, updated slot, and x/y/z records at records offset 128.",
+        "use": "Verifies inventory as a portable account and preserves coordinate-derived resource provenance."
+      },
+      {
+        "domain": "Guardian",
+        "title": "Guardian registry and region accounts",
+        "layout": "NCKGDR01 registry is 160 bytes; NCKGRG01 region is 256 bytes; includes owner/operator/global config, endpoint, stake, proof counters, and status.",
+        "checks": "Check registry global config, treasury token, active count, region status, owner/operator, endpoint, stake, proof interval, and region-size constants.",
+        "use": "Verifies guardian availability data while preserving the non-custody boundary."
+      },
+      {
+        "domain": "Market",
+        "title": "ListingAccount settlement state",
+        "layout": "NCKMKT01, v3, 216 bytes; stores listing state, seller, listing id, category, currency, source inventory, resource x/y/z, buyer, and sold slot.",
+        "checks": "Check active/canceled/sold state, seller, price, currency, source kind, source index, item hash, source inventory, and NCK token assumptions.",
+        "use": "Verifies listings preserve resource provenance and settlement state."
+      }
+    ]
+  }
+}

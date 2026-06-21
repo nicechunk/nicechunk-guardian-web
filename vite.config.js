@@ -26,6 +26,7 @@ const pageInputs = Object.fromEntries(
     mining: "mining/index.html",
     guardian: "guardian/index.html",
     contracts: "contracts/index.html",
+    trust: "trust/index.html",
     proof_of_frontier: "proof-of-frontier/index.html",
   })
     .map(([name, path]) => [name, resolve(__dirname, path)])

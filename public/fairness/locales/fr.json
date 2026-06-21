@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "language": "fr",
+    "label": "French",
+    "version": "fairness-locale-fr-5863925b8ae21e6c",
+    "contentHash": "5863925b8ae21e6c"
+  },
+  "siteFooter": {
+    "tagline": "Un protocole de monde voxel seedé sur Solana.",
+    "navigationAria": "Navigation du pied de page",
+    "socialAria": "Liens sociaux de NiceChunk",
+    "home": "Accueil",
+    "play": "Entrer dans le monde",
+    "roadmap": "Roadbook",
+    "docs": "Docs",
+    "guardian": "Gardiens",
+    "contracts": "Contrats",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. Tous droits réservés."
+  },
+  "meta": {
+    "title": "Modèle d'équité NiceChunk"
+  },
+  "nav": {
+    "aria": "Navigation principale",
+    "home": "Accueil",
+    "roadbook": "Carnet de route",
+    "docs": "Documents",
+    "worldRules": "Règles mondiales",
+    "resources": "Ressources",
+    "elements": "Éléments",
+    "fairness": "Équité",
+    "proofOfFrontier": "Preuve",
+    "enterWorld": "Entrez dans le monde",
+    "guardians": "Gardiens"
+  },
+  "language": {
+    "aria": "Langue"
+  },
+  "hero": {
+    "eyebrow": "Modèle d'équité",
+    "title": "Un monde n'est juste que lorsque les joueurs peuvent en vérifier les règles.",
+    "subtitle": "NiceChunk est conçu autour de règles de départ publiques, de résultats reproductibles, de mises à niveau versionnées, d'actions appartenant à wallet et de limites de confiance claires entre le client, Guardians et Solana.",
+    "verify": "Vérifier un Chunk",
+    "mining": "Test du rouleau de minage",
+    "docs": "Lire la documentation",
+    "principlesAria": "Principes d'équité",
+    "principles": {
+      "seed": "Même graine, même monde",
+      "version": "Les modifications des règles sont versionnées",
+      "wallet": "Les portefeuilles signent l'intention du joueur",
+      "boundary": "Les limites de confiance sont explicites"
+    },
+    "readout": {
+      "label": "Boucle de vérification",
+      "value": "Seed -> Chunk -> Hash -> Version de la règle"
+    }
+  },
+  "principles": {
+    "eyebrow": "Principes",
+    "title": "L'équité est une contrainte de conception du système, pas un slogan.",
+    "body": "Le projet doit être jugé en fonction de la capacité des joueurs à inspecter les règles, à reproduire les résultats clés et à voir quelles parties sont en direct, planifiées ou encore réservées au client.",
+    "cards": {
+      "deterministic": {
+        "title": "Génération déterministe",
+        "body": "Une graine, une coordonnée chunk et une version de génération doivent produire le même résultat de terrain pour chaque vérificateur."
+      },
+      "reproducible": {
+        "title": "Rouleaux reproductibles",
+        "body": "La découverte des ressources doit être dérivée des entrées publiques autant que possible, au lieu du hasard caché du serveur."
+      },
+      "versioned": {
+        "title": "Règles versionnées",
+        "body": "de l'interface utilisateur, les changements de règles mondiales, les changements de règles économiques et les changements d'état de la chaîne doivent être suivis séparément."
+      },
+      "boundary": {
+        "title": "Limites de confiance",
+        "body": "Le site Web doit indiquer ce qui est réservé au client, ce pour quoi Guardians peut aider et ce qui est destiné à être vérifié en chaîne."
+      }
+    }
+  },
+  "verify": {
+    "eyebrow": "Vérification Chunk",
+    "title": "N'importe qui devrait pouvoir reconstruire un chunk à partir des entrées publiques.",
+    "body": "Cette démo utilise le même générateur de monde et le même moteur de rendu chunk utilisés par le monde jouable. Entrez une graine et une coordonnée chunk pour voir le terrain que le client construit à partir de ces entrées publiques.",
+    "demo": {
+      "eyebrow": "Aperçu du terrain en direct",
+      "title": "Jeu principal Chunk",
+      "random": "Aléatoire",
+      "seed": "Semence",
+      "chunkX": "Chunk X",
+      "chunkZ": "Chunk Y",
+      "canvasAria": "Aperçu interactif du terrain chunk",
+      "controls": "Faites glisser pour faire pivoter. Molette ou pincement pour zoomer."
+    },
+    "controls": {
+      "eyebrow": "Contributions du public",
+      "title": "Graines et paramètres"
+    },
+    "lock": {
+      "lockSeed": "Graine de verrouillage",
+      "unlockSeed": "Débloquer la graine",
+      "lockChunkX": "Verrouillage Chunk X",
+      "unlockChunkX": "Déverrouiller Chunk X",
+      "lockChunkZ": "Verrouillage Chunk Y",
+      "unlockChunkZ": "Déverrouiller Chunk Y"
+    },
+    "metrics": {
+      "source": "Générateur",
+      "height": "Plage de hauteur",
+      "biome": "Mélange de biomes",
+      "terrain": "Hachage du terrain",
+      "version": "Version des règles",
+      "blocks": "Blocs visibles"
+    },
+    "stats": {
+      "seed": "graine",
+      "chunk": "chunk",
+      "chunkSize": "chunkTaille",
+      "seaLevel": "Niveau de la mer",
+      "heightRange": "hauteurPlage",
+      "waterLevelRange": "waterLevelRange",
+      "waterCells": "EauCellules",
+      "primaryBiomes": "Biomes primaires",
+      "primaryBlocks": "blocsprimaires",
+      "none": "aucun"
+    },
+    "rules": {
+      "seed": {
+        "title": "Contrat de contribution publique",
+        "body": "Le vérificateur part de valeurs qui peuvent être montrées aux joueurs : graine, coordonnée chunk et version de génération."
+      },
+      "chain": {
+        "title": "Engagement futur sur la chaîne",
+        "body": "Un futur enregistrement de chaîne peut stocker le hachage d'engagement, tandis que les clients et les explorateurs recalculent le chunk localement."
+      }
+    }
+  },
+  "mining": {
+    "eyebrow": "Preuve minière",
+    "title": "La découverte de ressources devrait expliquer pourquoi ce résultat s'est produit.",
+    "body": "L'alpha réel peut évoluer, mais le modèle cible est simple : chaque résultat économique important doit être dérivé d'entrées explicites et produire un chemin de hachage vérifiable.",
+    "demo": {
+      "seed": "Semence",
+      "block": "Bloc XYZ",
+      "nonce": "Action Non Occasionnelle"
+    },
+    "rules": {
+      "roll": {
+        "title": "Rouleau dérivé du hachage",
+        "body": "Le lancer est calculé à partir de la graine, de la coordonnée du bloc, de la coordonnée chunk et du nombre occasionnel. Cela rend la preuve rejouable."
+      },
+      "limit": {
+        "title": "Limitation Alpha",
+        "body": "Jusqu'à ce que le règlement soit entièrement vérifié en chaîne, le site Web doit étiqueter les démonstrations de preuve comme logique de référence plutôt que comme règlement économique final."
+      }
+    }
+  },
+  "status": {
+    "eyebrow": "Matrice de statut",
+    "title": "Les réclamations en matière d'équité sont suivies par statut de mise en œuvre.",
+    "table": {
+      "system": "Système",
+      "status": "Statut",
+      "verification": "Chemin de vérification"
+    },
+    "rows": {
+      "world": {
+        "system": "Génération chunk ensemencée",
+        "status": "Alpha implémenté",
+        "verification": "Semence publique, règles publiques, recalcul local, engagement futur de la chaîne."
+      },
+      "mining": {
+        "system": "Preuve des résultats miniers",
+        "status": "Modèle de référence",
+        "verification": "Démo de rouleau dérivé du hachage, vérification du règlement planifié."
+      },
+      "forging": {
+        "system": "Historique des actifs falsifiés",
+        "status": "Prévu",
+        "verification": "Entrées de recettes, durabilité, métadonnées de sortie, futurs enregistrements de menthe."
+      },
+      "watchers": {
+        "system": "Réseau Guardian",
+        "status": "À venir",
+        "verification": "Pas de garde, pas de signature de transaction de joueur, rôle de disponibilité par région uniquement."
+      },
+      "governance": {
+        "system": "Mises à niveau des règles",
+        "status": "Prévu",
+        "verification": "Journal des modifications versionné, catégories de changements UI/monde/économie/chaîne séparées."
+      }
+    }
+  },
+  "boundaries": {
+    "eyebrow": "Limites de confiance",
+    "title": "Les pages d'équité honnête révèlent ce qui n'est pas encore définitif.",
+    "body": "NiceChunk devrait éviter de prétendre que chaque système alpha est déjà entièrement décentralisé. L'exigence la plus forte est de publier le chemin depuis la logique client jusqu'à l'état vérifiable du protocole.",
+    "cards": {
+      "client": {
+        "title": "Client",
+        "body": "Rend le monde, prédit le mouvement, affiche des aperçus et peut recalculer la logique de génération publique."
+      },
+      "wallet": {
+        "title": "Portefeuille",
+        "body": "Signe directement l'intention du joueur. Les actifs des joueurs ne doivent pas dépendre d’une signature cachée contrôlée par le projet."
+      },
+      "watcher": {
+        "title": "Guardian",
+        "body": "Aide les régions à rester joignables et à communiquer. Guardians ne conserve pas d'actifs et ne signe pas de transactions avec les joueurs."
+      },
+      "chain": {
+        "title": "Solana",
+        "body": "La couche de règlement cible pour l'identité critique, les actifs, l'engagement et l'état de l'économie."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Suivant",
+    "title": "Inspectez la documentation complète du protocole.",
+    "docs": "Documents ouverts",
+    "worldRules": "Règles mondiales",
+    "enterWorld": "Entrez dans le monde"
+  }
+}

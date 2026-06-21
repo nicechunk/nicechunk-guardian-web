@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "NiceChunk | Possédez le monde, un chunk à la fois"
+  },
+  "nav": {
+    "aria": "Navigation principale",
+    "home": "Accueil",
+    "roadbook": "Carnet de route",
+    "world": "Monde",
+    "worldRules": "Règles mondiales",
+    "fairness": "Équité",
+    "proofOfFrontier": "Preuve",
+    "economy": "Économie",
+    "watchers": "Guardians",
+    "resources": "Ressources",
+    "elements": "Éléments",
+    "docs": "Documents",
+    "enterWorld": "Entrez dans le monde",
+    "guardians": "Gardiens"
+  },
+  "language": {
+    "aria": "Langue"
+  },
+  "sideNav": {
+    "aria": "Navigation dans les sections",
+    "intro": "Introduction",
+    "world": "Monde",
+    "economy": "Économie",
+    "watchers": "Guardians",
+    "roadmap": "Feuille de route"
+  },
+  "hero": {
+    "eyebrow": "Alpha Aperçu en direct",
+    "title": "Possédez le monde, un chunk à la fois.",
+    "subtitle": "NiceChunk est un monde voxel alimenté par Solana où chaque chunk est semé, explorable, exploitable et façonné par les joueurs. Explorez des terres, découvrez des ressources, forgez des actifs et rejoignez une économie mondiale persistante construite autour d'un état de jeu vérifiable.",
+    "enterWorld": "Entrez dans le monde",
+    "connectWallet": "Connecter le portefeuille",
+    "readRoadbook": "Lire le Roadbook",
+    "readRules": "Lire les règles du monde",
+    "statusAria": "Statut du produit",
+    "badges": {
+      "alpha": "Alpha Aperçu en direct",
+      "solana": "Solana Prêt pour le portefeuille",
+      "seeded": "Moteur Chunk ensemencé",
+      "watchers": "Guardian Network à venir"
+    }
+  },
+  "world": {
+    "eyebrow": "Monde",
+    "title": "Un monde généré par les graines, modifié par les joueurs.",
+    "body": "NiceChunk n'est pas une carte fixe. Le monde étend chunk par chunk. Le terrain, les ressources et les actions des joueurs forment un état persistant qui peut être vérifié, échangé et construit. Chaque explorateur contribue à révéler le monde. Chaque constructeur laisse une trace.",
+    "seed": {
+      "eyebrow": "Chunk ensemencé",
+      "title": "Génération de graines vivantes",
+      "body": "Une graine changeante crée un nouvel aperçu chunk avec des indications sur la hauteur du terrain, l'eau, la forêt, le sable, la neige et les ressources.",
+      "label": "Semence"
+    },
+    "readout": {
+      "protocol": "PROTOCOLE : MOTEUR À MORCEAUX GRAINÉS",
+      "state": "ÉTAT : JOUEUR ÉCRITABLE",
+      "verify": "VERIFIER : RÈGLES DÉTERMINISTES"
+    }
+  },
+  "gameplay": {
+    "explore": {
+      "title": "Explorez Chunks",
+      "body": "Entrez dans le monde des voxels basés sur un navigateur. Déplacez-vous sur un terrain ensemencé, découvrez le nouveau chunks et trouvez des endroits qui valent la peine d'être revendiqués."
+    },
+    "mine": {
+      "title": "Ressources minières",
+      "body": "Brisez les blocs, révélez des ressources cachées et transformez l'exploration en matériaux utiles pour l'économie mondiale."
+    },
+    "forge": {
+      "title": "Forger les actifs",
+      "body": "Combinez les matières premières en outils, plans, équipements et futurs actifs de jeu échangeables."
+    },
+    "identity": {
+      "title": "Identité du joueur",
+      "body": "Connectez votre wallet, créez votre profil de joueur et poursuivez votre progression à travers le monde NiceChunk."
+    },
+    "watchers": {
+      "title": "Guardian Network",
+      "body": "Les nœuds Guardian contribuent à rendre les régions accessibles, prennent en charge la communication en temps réel et préparent le monde à une coordination décentralisée."
+    }
+  },
+  "economy": {
+    "eyebrow": "NCK Économie",
+    "title": "NCK alimente l'économie NiceChunk.",
+    "body": "NCK est conçu comme le jeton utilitaire principal de NiceChunk. Il peut être utilisé pour l’accès à la genèse, les actions dans le monde, la forge de systèmes, le règlement du marché et les futurs mécanismes de gouvernance. L’objectif est simple : faire en sorte que l’économie mondiale appartienne aux acteurs qui l’explorent, la construisent, l’exploitent et l’exploitent.",
+    "utilityEyebrow": "Utilité prévue",
+    "utility": {
+      "genesis": "Accès Genesis Pass connecté à NCK",
+      "actions": "Action dans le monde et boucles matérielles",
+      "forging": "Systèmes de forgeage et création d'actifs",
+      "market": "Règlement sur le marché",
+      "governance": "Les futurs mécanismes de gouvernance mondiale"
+    }
+  },
+  "watchers": {
+    "eyebrow": "Guardian Network",
+    "title": "Exécutez un Guardian. Faire vivre une région.",
+    "body": "Les nœuds Guardian constituent la couche d'accès de NiceChunk. Ils ne contrôlent pas les actifs des joueurs et ne traitent pas les transactions en chaîne. Au lieu de cela, ils aident les régions à rester joignables, assurent une communication en temps réel et soutiennent l’activité mondiale locale. À mesure que le monde se développe, Guardians devient l'infrastructure qui maintient chunks en vie.",
+    "badges": {
+      "noCustody": "Pas de garde d'actifs",
+      "noTransactions": "Aucun traitement de transaction de joueur",
+      "communication": "Communication régionale en temps réel"
+    },
+    "animation": {
+      "aria": "Animation réseau Guardian",
+      "title": "Nœud Guardian",
+      "body": "Couche d'accès à la région"
+    },
+    "guardianConsole": "Ouvrir la console Guardian"
+  },
+  "rules": {
+    "eyebrow": "Règles du monde ouvert",
+    "title": "Des règles mondiales transparentes.",
+    "body": "NiceChunk est construit autour de règles de génération ouvertes. Chunks est généré à partir de graines, les actions des joueurs mettent à jour l'état du monde et les actions économiques importantes sont conçues pour être vérifiables. Le monde doit être jouable, mais aussi inspectable.",
+    "cta": "Lire les règles du monde"
+  },
+  "roadmap": {
+    "eyebrow": "Feuille de route",
+    "title": "De l'aperçu mondial alpha au protocole appartenant aux joueurs.",
+    "phase1": {
+      "title": "Phase 1 - Aperçu mondial Alpha",
+      "body": "Client voxel du navigateur, connexion wallet, aperçu du terrain ensemencé, configuration du lecteur."
+    },
+    "phase2": {
+      "title": "Phase 2 - Exploitation minière et forgeage",
+      "body": "Découverte de ressources, interaction de blocs, logique matérielle, banc de forge, boucle d'actifs de base."
+    },
+    "phase3": {
+      "title": "Phase 3 - NCK Économie",
+      "body": "Genesis pass, utilitaire NCK, règlement du marché, couche d'actifs appartenant aux joueurs."
+    },
+    "phase4": {
+      "title": "Phase 4 - Guardian Network",
+      "body": "Nœuds d'accès régionaux, communication en temps réel, jalonnement des observateurs, participation au niveau régional."
+    },
+    "phase5": {
+      "title": "Phase 5 - Gouvernance mondiale",
+      "body": "Règles du territoire, paramètres du monde, vote des joueurs, gouvernance du protocole à long terme."
+    },
+    "readFull": "Lire le Roadbook complet"
+  },
+  "footer": {
+    "aria": "Navigation en pied de page",
+    "tagline": "Un protocole mondial de voxel ensemencé sur Solana.",
+    "enterWorld": "Entrez dans le monde",
+    "roadbook": "Carnet de route",
+    "worldRules": "Règles mondiales",
+    "proofOfFrontier": "Proof of Frontier",
+    "nckEconomy": "NCK Économie",
+    "watcherNetwork": "Guardian Network",
+    "whitepaper": "Livre blanc",
+    "fairness": "Équité",
+    "github": "GitHub"
+  }
+}

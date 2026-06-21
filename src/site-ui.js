@@ -4,8 +4,6 @@ const loadingState = {
   timer: 0,
 };
 
-installSiteUi();
-
 export function startSiteLoading(value = 12) {
   ensureProgressBar();
   loadingState.active = true;
@@ -48,6 +46,8 @@ function installSiteUi() {
   if (window.__nicechunkSiteUiInstalled) return;
   window.__nicechunkSiteUiInstalled = true;
   document.documentElement.classList.add("site-ui-ready");
+  ensureUnifiedNavigation();
+  ensureUnifiedFooter();
   installMobileMenu();
   installHeaderMetrics();
   startSiteLoading(16);
@@ -58,6 +58,368 @@ function installSiteUi() {
       if (loadingState.active) finishSiteLoading();
     }, 900);
   });
+}
+
+const unifiedNavItems = [
+  { key: "home", href: "/" },
+  { key: "roadbook", href: "/roadmap/" },
+  { key: "worldRules", href: "/world_rule/" },
+  { key: "resources", href: "/resource_rule/" },
+  { key: "ncm", href: "/ncm/" },
+  { key: "elements", href: "/elements/" },
+  { key: "fairness", href: "/fairness/" },
+  { key: "proofOfFrontier", href: "/proof-of-frontier/" },
+  { key: "guardians", href: "/guardian/" },
+  { key: "contracts", href: "/contracts/" },
+  { key: "trust", href: "/trust/" },
+  { key: "docs", href: "/docs/" },
+];
+
+const navActiveAliases = {
+  "/ncm_dna/": "/ncm/",
+};
+
+const footerPrimaryLinks = [
+  { key: "home", href: "/" },
+  { key: "play", href: "/play/" },
+  { key: "roadmap", href: "/roadmap/" },
+  { key: "docs", href: "/docs/" },
+  { key: "guardian", href: "/guardian/" },
+  { key: "contracts", href: "/contracts/" },
+];
+
+const footerSocialLinks = [
+  { key: "x", href: "https://x.com/nicechunk/" },
+  { key: "github", href: "https://github.com/nicechunk" },
+];
+
+const footerI18nAttributes = [
+  "data-i18n",
+  "data-home-i18n",
+  "data-docs-i18n",
+  "data-roadmap-i18n",
+  "data-fairness-i18n",
+  "data-trust-i18n",
+  "data-wr-i18n",
+];
+
+const footerAriaI18nAttributes = [
+  "data-i18n-aria-label",
+  "data-home-i18n-aria-label",
+  "data-docs-i18n-aria-label",
+  "data-roadmap-i18n-aria-label",
+  "data-fairness-i18n-aria-label",
+  "data-trust-i18n-aria-label",
+  "data-wr-i18n-aria-label",
+];
+
+const unifiedNavLabels = {
+  en: {
+    home: "Home",
+    roadbook: "Roadbook",
+    worldRules: "World Rules",
+    resources: "Resources",
+    ncm: "NCM",
+    elements: "Elements",
+    fairness: "Fairness",
+    proofOfFrontier: "Proof",
+    guardians: "Guardians",
+    contracts: "Contracts",
+    trust: "Trust",
+    docs: "Docs",
+  },
+  es: {
+    home: "Inicio",
+    roadbook: "Ruta",
+    worldRules: "Reglas",
+    resources: "Recursos",
+    ncm: "NCM",
+    elements: "Elementos",
+    fairness: "Equidad",
+    proofOfFrontier: "Prueba",
+    guardians: "Guardianes",
+    contracts: "Contratos",
+    trust: "Confianza",
+    docs: "Docs",
+  },
+  fr: {
+    home: "Accueil",
+    roadbook: "Route",
+    worldRules: "Règles",
+    resources: "Ressources",
+    ncm: "NCM",
+    elements: "Éléments",
+    fairness: "Équité",
+    proofOfFrontier: "Preuve",
+    guardians: "Gardiens",
+    contracts: "Contrats",
+    trust: "Confiance",
+    docs: "Docs",
+  },
+  de: {
+    home: "Home",
+    roadbook: "Roadbook",
+    worldRules: "Weltregeln",
+    resources: "Ressourcen",
+    ncm: "NCM",
+    elements: "Elemente",
+    fairness: "Fairness",
+    proofOfFrontier: "Proof",
+    guardians: "Guardians",
+    contracts: "Contracts",
+    trust: "Trust",
+    docs: "Docs",
+  },
+  ja: {
+    home: "Home",
+    roadbook: "Roadbook",
+    worldRules: "World Rules",
+    resources: "Resources",
+    ncm: "NCM",
+    elements: "Elements",
+    fairness: "Fairness",
+    proofOfFrontier: "Proof",
+    guardians: "Guardians",
+    contracts: "Contracts",
+    trust: "Trust",
+    docs: "Docs",
+  },
+  ru: {
+    home: "Главная",
+    roadbook: "План",
+    worldRules: "Правила",
+    resources: "Ресурсы",
+    ncm: "NCM",
+    elements: "Элементы",
+    fairness: "Честность",
+    proofOfFrontier: "Доказательство",
+    guardians: "Стражи",
+    contracts: "Контракты",
+    trust: "Доверие",
+    docs: "Документы",
+  },
+  ko: {
+    home: "홈",
+    roadbook: "로드북",
+    worldRules: "월드 규칙",
+    resources: "자원",
+    ncm: "NCM",
+    elements: "원소",
+    fairness: "공정성",
+    proofOfFrontier: "증명",
+    guardians: "가디언",
+    contracts: "컨트랙트",
+    trust: "신뢰",
+    docs: "문서",
+  },
+  "zh-Hant": {
+    home: "Home",
+    roadbook: "Roadbook",
+    worldRules: "World Rules",
+    resources: "Resources",
+    ncm: "NCM",
+    elements: "Elements",
+    fairness: "Fairness",
+    proofOfFrontier: "Proof",
+    guardians: "Guardians",
+    contracts: "Contracts",
+    trust: "Trust",
+    docs: "Docs",
+  },
+  "zh-Hans": {
+    home: "Home",
+    roadbook: "Roadbook",
+    worldRules: "World Rules",
+    resources: "Resources",
+    ncm: "NCM",
+    elements: "Elements",
+    fairness: "Fairness",
+    proofOfFrontier: "Proof",
+    guardians: "Guardians",
+    contracts: "Contracts",
+    trust: "Trust",
+    docs: "Docs",
+  },
+};
+
+function ensureUnifiedNavigation() {
+  document.querySelectorAll(".site-header .nav-links").forEach((container) => {
+    const existingLinks = new Map();
+    container.querySelectorAll("a[href]").forEach((link) => {
+      const path = normalizePath(link.getAttribute("href"));
+      existingLinks.set(path, link);
+    });
+
+    const orderedLinks = unifiedNavItems.map((item) => {
+      const path = normalizePath(item.href);
+      const link = existingLinks.get(path) || document.createElement("a");
+      link.href = item.href;
+      link.dataset.siteNavKey = item.key;
+      link.classList.toggle("active", isActiveNavPath(path));
+      if (!link.textContent?.trim()) link.textContent = navLabel(item.key);
+      return link;
+    });
+
+    container.replaceChildren(...orderedLinks);
+  });
+
+  updateUnifiedNavigationLabels();
+
+  if ("MutationObserver" in window && !window.__nicechunkNavLanguageObserver) {
+    const observer = new MutationObserver(updateUnifiedNavigationLabels);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+    window.__nicechunkNavLanguageObserver = observer;
+  }
+}
+
+function ensureUnifiedFooter() {
+  const existingFooter = document.querySelector(".nicechunk-site-footer, footer.site-footer");
+  const footer = existingFooter || document.createElement("footer");
+  footer.className = "site-footer nicechunk-site-footer";
+  footer.dataset.ncUnifiedFooter = "true";
+  footer.classList.toggle("nicechunk-site-footer-floating", isImmersiveFooterPage());
+
+  const brand = createFooterBrand();
+  const primaryNav = document.createElement("nav");
+  primaryNav.className = "nicechunk-footer-links";
+  setFooterAriaI18n(primaryNav, "siteFooter.navigationAria", "Footer navigation");
+  primaryNav.replaceChildren(
+    ...footerPrimaryLinks.map((item) => {
+      const link = document.createElement("a");
+      link.href = item.href;
+      setFooterTextI18n(link, `siteFooter.${item.key}`, footerFallbackLabel(item.key));
+      return link;
+    }),
+  );
+
+  const socialNav = document.createElement("nav");
+  socialNav.className = "nicechunk-footer-social";
+  setFooterAriaI18n(socialNav, "siteFooter.socialAria", "NiceChunk social links");
+  socialNav.replaceChildren(
+    ...footerSocialLinks.map((item) => {
+      const link = document.createElement("a");
+      link.href = item.href;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      setFooterTextI18n(link, `siteFooter.${item.key}`, footerFallbackLabel(item.key));
+      setFooterAriaI18n(link, `siteFooter.${item.key}`, footerFallbackLabel(item.key));
+      return link;
+    }),
+  );
+
+  const meta = document.createElement("p");
+  meta.className = "nicechunk-footer-meta";
+  setFooterTextI18n(meta, "siteFooter.copyright", "2026 NiceChunk. All rights reserved.");
+
+  footer.replaceChildren(brand, primaryNav, socialNav, meta);
+
+  const target = findFooterInsertionTarget();
+  if (target === document.body) {
+    if (footer.parentElement !== document.body) document.body.append(footer);
+  } else if (footer.parentElement !== document.body || footer.previousElementSibling !== target) {
+    target.insertAdjacentElement("afterend", footer);
+  }
+}
+
+function findFooterInsertionTarget() {
+  const main = document.querySelector("main:last-of-type");
+  if (!main) return document.body;
+  let target = main;
+  while (target.parentElement && target.parentElement !== document.body) {
+    target = target.parentElement;
+  }
+  return target;
+}
+
+function createFooterBrand() {
+  const wrapper = document.createElement("div");
+  wrapper.className = "nicechunk-footer-brand";
+  const link = document.createElement("a");
+  link.className = "brand-mark";
+  link.href = "/";
+  link.setAttribute("aria-label", "NiceChunk");
+
+  const image = document.createElement("img");
+  image.src = "/media/nck.png";
+  image.alt = "";
+
+  const name = document.createElement("span");
+  name.textContent = "NICECHUNK";
+
+  const tagline = document.createElement("p");
+  setFooterTextI18n(tagline, "siteFooter.tagline", "A seeded voxel world protocol on Solana.");
+
+  link.append(image, name);
+  wrapper.append(link, tagline);
+  return wrapper;
+}
+
+function setFooterTextI18n(element, key, fallback) {
+  footerI18nAttributes.forEach((attribute) => {
+    element.setAttribute(attribute, key);
+  });
+  element.textContent = fallback;
+}
+
+function setFooterAriaI18n(element, key, fallback) {
+  footerAriaI18nAttributes.forEach((attribute) => {
+    element.setAttribute(attribute, key);
+  });
+  element.setAttribute("aria-label", fallback);
+}
+
+function footerFallbackLabel(key) {
+  const labels = {
+    home: "Home",
+    play: "Enter World",
+    roadmap: "Roadbook",
+    docs: "Docs",
+    guardian: "Guardians",
+    contracts: "Contracts",
+    x: "X / Twitter",
+    github: "GitHub",
+  };
+  return labels[key] || key;
+}
+
+function isImmersiveFooterPage() {
+  return ["/play/", "/mining/", "/forging/", "/player_set/"].includes(normalizePath(window.location.pathname));
+}
+
+function updateUnifiedNavigationLabels() {
+  document.querySelectorAll("[data-site-nav-key]").forEach((link) => {
+    link.textContent = navLabel(link.dataset.siteNavKey);
+    link.classList.toggle("active", isActiveNavPath(normalizePath(link.getAttribute("href"))));
+  });
+}
+
+function navLabel(key) {
+  const language = normalizeSiteLanguage(
+    document.documentElement.lang || window.localStorage?.getItem("nicechunk.language") || navigator.language,
+  );
+  return unifiedNavLabels[language]?.[key] || unifiedNavLabels.en[key] || key;
+}
+
+function normalizeSiteLanguage(language) {
+  if (!language) return "en";
+  if (language === "zh" || language === "zh-CN" || language === "zh-SG") return "zh-Hans";
+  if (language === "zh-TW" || language === "zh-HK" || language === "zh-MO") return "zh-Hant";
+  if (unifiedNavLabels[language]) return language;
+  const base = language.split("-")[0];
+  return unifiedNavLabels[base] ? base : "en";
+}
+
+function normalizePath(href) {
+  const url = new URL(href || "/", window.location.origin);
+  if (url.pathname === "/index.html") return "/";
+  if (url.pathname === "/") return "/";
+  return url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`;
+}
+
+function isActiveNavPath(path) {
+  const current = normalizePath(window.location.pathname);
+  const activePath = navActiveAliases[current] || current;
+  return path === "/" ? activePath === "/" : activePath === path || activePath.startsWith(path);
 }
 
 function installMobileMenu() {
@@ -215,3 +577,5 @@ function updateProgressBar() {
   if (!fill) return;
   fill.style.transform = `scaleX(${Math.max(0, Math.min(1, loadingState.value / 100))})`;
 }
+
+installSiteUi();

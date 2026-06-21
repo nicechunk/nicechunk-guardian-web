@@ -1,0 +1,181 @@
+{
+  "_meta": {
+    "language": "zh-Hans",
+    "label": "Simplified Chinese",
+    "version": "home-locale-zh-Hans-90d0c7510c83e7a3",
+    "contentHash": "90d0c7510c83e7a3"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的种子体素世界协议。",
+    "navigationAria": "页脚导航",
+    "socialAria": "NiceChunk 社交链接",
+    "home": "首页",
+    "play": "进入世界",
+    "roadmap": "路书",
+    "docs": "文档",
+    "guardian": "守护者",
+    "contracts": "合约",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有权利。"
+  },
+  "meta": {
+    "title": "NiceChunk | 一块一块，开采属于玩家的链上世界"
+  },
+  "nav": {
+    "aria": "主导航",
+    "home": "首页",
+    "roadbook": "路书",
+    "world": "世界",
+    "worldRules": "世界规则",
+    "fairness": "公平",
+    "proofOfFrontier": "证明",
+    "economy": "经济",
+    "watchers": "守护者",
+    "resources": "资源",
+    "elements": "元素表",
+    "contracts": "合约",
+    "docs": "文档",
+    "enterWorld": "进入世界",
+    "guardians": "守护者"
+  },
+  "language": {
+    "aria": "语言"
+  },
+  "sideNav": {
+    "aria": "分屏导航",
+    "intro": "介绍",
+    "world": "世界",
+    "economy": "经济",
+    "watchers": "守护者",
+    "roadmap": "路线图"
+  },
+  "hero": {
+    "eyebrow": "Alpha 预览已开放",
+    "title": "一块一块，开采属于玩家的链上世界",
+    "subtitle": "NiceChunk 是一个运行在 Solana 上的去中心化体素世界。每个 Chunk 都由种子生成，由玩家探索、挖掘、建造，并把关键资产与经济行为写入链上。你不是进入一张地图，而是在参与一个不断扩张的世界协议。",
+    "enterWorld": "进入世界",
+    "connectWallet": "连接钱包",
+    "readRoadbook": "查看路书",
+    "readRules": "查看世界规则",
+    "statusAria": "产品状态",
+    "badges": {
+      "alpha": "Alpha 预览已开放",
+      "solana": "Solana 钱包接入",
+      "seeded": "种子 Chunk 引擎",
+      "watchers": "守护者网络即将开放"
+    }
+  },
+  "world": {
+    "eyebrow": "世界",
+    "title": "一个由种子生成、由玩家改变的世界",
+    "body": "NiceChunk 不是一张固定地图，而是一个不断扩张的方块世界。玩家进入 Chunk，探索地形、挖掘资源、建造资产，并推动世界状态持续变化。每一次行动，都在让这个世界变得更真实。",
+    "seed": {
+      "eyebrow": "种子 Chunk",
+      "title": "实时种子生成",
+      "body": "变化的种子会生成新的 Chunk 预览，包含地形高度、水域、树林、沙地、雪地和资源提示。",
+      "label": "种子"
+    },
+    "readout": {
+      "protocol": "协议：种子 Chunk 引擎",
+      "state": "状态：玩家可写入",
+      "verify": "验证：确定性规则"
+    }
+  },
+  "gameplay": {
+    "explore": {
+      "title": "探索 Chunk",
+      "body": "进入浏览器方块世界，探索由种子生成的地形，发现新的区域和资源点。"
+    },
+    "mine": {
+      "title": "挖掘资源",
+      "body": "破坏方块，触发资源发现，把探索行为转化为可使用的材料。"
+    },
+    "forge": {
+      "title": "锻造资产",
+      "body": "将原始资源合成为工具、蓝图、装备和未来可交易的游戏资产。"
+    },
+    "identity": {
+      "title": "玩家身份",
+      "body": "连接钱包，创建角色档案，让你的身份、资产和进度进入 NiceChunk 世界。"
+    },
+    "watchers": {
+      "title": "守护者网络",
+      "body": "守护者节点让区域可访问、支持实时通信，并为未来的去中心化世界协作提供基础。"
+    }
+  },
+  "economy": {
+    "eyebrow": "NCK 经济",
+    "title": "NCK 驱动 NiceChunk 的世界经济",
+    "body": "NCK 是 NiceChunk 的核心功能型代币，计划用于创世通行证、游戏内行为、锻造系统、市场结算以及未来的治理机制。NiceChunk 的目标不是做一个只有皮肤交易的小游戏，而是建立一个由探索者、矿工、建造者和守护者共同参与的世界经济。",
+    "utilityEyebrow": "计划功能",
+    "utility": {
+      "genesis": "创世通行证与 NCK 连接",
+      "actions": "游戏内行为和材料循环",
+      "forging": "锻造系统和资产创建",
+      "market": "市场结算",
+      "governance": "未来世界治理机制"
+    }
+  },
+  "watchers": {
+    "eyebrow": "守护者网络",
+    "title": "运行守护者，让一个区域保持在线",
+    "body": "守护者是 NiceChunk 的区域访问层。它不托管玩家资产，也不替玩家处理链上交易，而是为特定区域提供连接、通信和实时协作能力。随着世界扩张，守护者将成为维持 Chunk 活跃的重要基础设施。",
+    "badges": {
+      "noCustody": "不托管玩家资产",
+      "noTransactions": "不处理玩家交易",
+      "communication": "区域实时通信"
+    },
+    "animation": {
+      "aria": "守护者网络动画",
+      "title": "守护者节点",
+      "body": "区域访问层"
+    },
+    "guardianConsole": "打开守护者控制台"
+  },
+  "rules": {
+    "eyebrow": "开放世界规则",
+    "title": "透明的世界规则",
+    "body": "NiceChunk 的世界不是黑箱。Chunk 由种子生成，玩家行为改变世界状态，关键经济行为会尽量保持可验证。这个世界既要能玩，也要能被检查。",
+    "cta": "查看世界规则"
+  },
+  "roadmap": {
+    "eyebrow": "路线图",
+    "title": "从 Alpha 世界预览，到玩家拥有的世界协议。",
+    "phase1": {
+      "title": "阶段 1 - Alpha 世界预览",
+      "body": "浏览器体素客户端、钱包连接、种子地形预览、玩家档案。"
+    },
+    "phase2": {
+      "title": "阶段 2 - 挖掘与锻造",
+      "body": "资源发现、方块交互、材料逻辑、锻造台、基础资产循环。"
+    },
+    "phase3": {
+      "title": "阶段 3 - NCK 经济",
+      "body": "创世通行证、NCK 功能场景、市场结算、玩家资产层。"
+    },
+    "phase4": {
+      "title": "阶段 4 - 守护者网络",
+      "body": "区域访问节点、实时通信、守护者质押、区域级参与机制。"
+    },
+    "phase5": {
+      "title": "阶段 5 - 世界治理",
+      "body": "领地规则、世界参数、玩家投票、长期协议治理。"
+    },
+    "readFull": "查看完整路书"
+  },
+  "footer": {
+    "aria": "页脚导航",
+    "tagline": "运行在 Solana 上的种子体素世界协议。",
+    "enterWorld": "进入世界",
+    "roadbook": "路书",
+    "worldRules": "世界规则",
+    "proofOfFrontier": "世界轮廓证明",
+    "contracts": "合约",
+    "nckEconomy": "NCK 经济",
+    "watcherNetwork": "守护者网络",
+    "whitepaper": "白皮书",
+    "fairness": "公平模型",
+    "github": "GitHub"
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "language": "ja",
+    "label": "Japanese",
+    "version": "resource-rule-locale-ja-5e5f0b304bfb11e6",
+    "contentHash": "5e5f0b304bfb11e6"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上のシード型ボクセルワールドプロトコル。",
+    "navigationAria": "フッターナビゲーション",
+    "socialAria": "NiceChunk ソーシャルリンク",
+    "home": "ホーム",
+    "play": "ワールドへ",
+    "roadmap": "ロードブック",
+    "docs": "ドキュメント",
+    "guardian": "ガーディアン",
+    "contracts": "コントラクト",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. All rights reserved."
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "言語",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "Hydrogen",
+      "He": "Helium",
+      "Li": "Lithium",
+      "Be": "Beryllium",
+      "B": "Boron",
+      "C": "Carbon",
+      "N": "Nitrogen",
+      "O": "Oxygen",
+      "F": "Fluorine",
+      "Ne": "Neon",
+      "Na": "Sodium",
+      "Mg": "Magnesium",
+      "Al": "Aluminium",
+      "Si": "Silicon",
+      "P": "Phosphorus",
+      "S": "Sulfur",
+      "Cl": "Chlorine",
+      "Ar": "Argon",
+      "K": "Potassium",
+      "Ca": "Calcium",
+      "Sc": "Scandium",
+      "Ti": "Titanium",
+      "V": "Vanadium",
+      "Cr": "Chromium",
+      "Mn": "Manganese",
+      "Fe": "Iron",
+      "Co": "Cobalt",
+      "Ni": "Nickel",
+      "Cu": "Copper",
+      "Zn": "Zinc",
+      "Ga": "Gallium",
+      "Ge": "Germanium",
+      "As": "Arsenic",
+      "Se": "Selenium",
+      "Br": "Bromine",
+      "Kr": "Krypton",
+      "Rb": "Rubidium",
+      "Sr": "Strontium",
+      "Y": "Yttrium",
+      "Zr": "Zirconium",
+      "Nb": "Niobium",
+      "Mo": "Molybdenum",
+      "Tc": "Technetium",
+      "Ru": "Ruthenium",
+      "Rh": "Rhodium",
+      "Pd": "Palladium",
+      "Ag": "Silver",
+      "Cd": "Cadmium",
+      "In": "Indium",
+      "Sn": "Tin",
+      "Sb": "Antimony",
+      "Te": "Tellurium",
+      "I": "Iodine",
+      "Xe": "Xenon",
+      "Cs": "Caesium",
+      "Ba": "Barium",
+      "La": "Lanthanum",
+      "Ce": "Cerium",
+      "Pr": "Praseodymium",
+      "Nd": "Neodymium",
+      "Pm": "Promethium",
+      "Sm": "Samarium",
+      "Eu": "Europium",
+      "Gd": "Gadolinium",
+      "Tb": "Terbium",
+      "Dy": "Dysprosium",
+      "Ho": "Holmium",
+      "Er": "Erbium",
+      "Tm": "Thulium",
+      "Yb": "Ytterbium",
+      "Lu": "Lutetium",
+      "Hf": "Hafnium",
+      "Ta": "Tantalum",
+      "W": "Tungsten",
+      "Re": "Rhenium",
+      "Os": "Osmium",
+      "Ir": "Iridium",
+      "Pt": "Platinum",
+      "Au": "Gold",
+      "Hg": "Mercury",
+      "Tl": "Thallium",
+      "Pb": "Lead",
+      "Bi": "Bismuth",
+      "Po": "Polonium",
+      "At": "Astatine",
+      "Rn": "Radon",
+      "Fr": "Francium",
+      "Ra": "Radium",
+      "Ac": "Actinium",
+      "Th": "Thorium",
+      "Pa": "Protactinium",
+      "U": "Uranium",
+      "Np": "Neptunium",
+      "Pu": "Plutonium",
+      "Am": "Americium",
+      "Cm": "Curium",
+      "Bk": "Berkelium",
+      "Cf": "Californium",
+      "Es": "Einsteinium",
+      "Fm": "Fermium",
+      "Md": "Mendelevium",
+      "No": "Nobelium",
+      "Lr": "Lawrencium",
+      "Rf": "Rutherfordium",
+      "Db": "Dubnium",
+      "Sg": "Seaborgium",
+      "Bh": "Bohrium",
+      "Hs": "Hassium",
+      "Mt": "Meitnerium",
+      "Ds": "Darmstadtium",
+      "Rg": "Roentgenium",
+      "Cn": "Copernicium",
+      "Nh": "Nihonium",
+      "Fl": "Flerovium",
+      "Mc": "Moscovium",
+      "Lv": "Livermorium",
+      "Ts": "Tennessine",
+      "Og": "Oganesson"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk Box Resource Atlas",
+      "eyebrow": "GENERATED BLOCK RESOURCE ATLAS",
+      "heading": "Every generated block is a public resource rule.",
+      "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
+      "metricsAria": "Atlas status",
+      "workspaceAria": "Block resource atlas",
+      "filtersAria": "Atlas filters",
+      "filterTitle": "Block families",
+      "resultCount": "{count} shown",
+      "modelLabel": "Composition model",
+      "modelBody": "Ranges are material tendencies, not fixed rewards. Actual resource rolls can later use seed, coordinate, depth, biome, and chain-verified state.",
+      "searchLabel": "Search blocks, elements, or signals",
+      "searchPlaceholder": "Search grass, Si, volcanic...",
+      "empty": "No generated blocks match the current filters.",
+      "blockAria": "Open {name} resource details",
+      "compositionTitle": "Element composition range",
+      "physicalTitle": "Density and mass estimate",
+      "densityLabel": "Bulk density",
+      "dimensionsLabel": "Actual block dimensions",
+      "volumeLabel": "Calculated volume",
+      "massLabel": "Calculated mass",
+      "notAvailable": "Unknown",
+      "signalsTitle": "Generation signals",
+      "visualTitle": "Voxel visual gene",
+      "metric": {
+        "blocks": "Generated blocks",
+        "families": "Block families",
+        "elements": "Referenced elements",
+        "ruleSet": "Rule set"
+      },
+      "color": {
+        "0": "Primary face",
+        "1": "Side face",
+        "2": "Top highlight"
+      }
+    },
+    "category": {
+      "all": "All Blocks",
+      "terrain": "Terrain",
+      "fluids": "Fluids",
+      "geological": "Geological",
+      "cold": "Cold",
+      "volcanic": "Volcanic",
+      "organic": "Organic",
+      "plants": "Plants",
+      "aquatic": "Aquatic",
+      "anomaly": "Rare / Anomaly"
+    },
+    "rarity": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Anomaly": "Anomaly"
+    },
+    "signal": {
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "altitude": "Altitude",
+      "slope": "Slope",
+      "rarity": "Rarity"
+    },
+    "block": {
+      "grass": {
+        "name": "草地ブロック",
+        "source": "地表",
+        "description": "湿度、傾斜、森林密度によって形づくられる、薄い生物層を持つケイ酸塩質の生きた表土ブロック。"
+      },
+      "dirt": {
+        "name": "土",
+        "source": "浅い地下",
+        "description": "草地下の風化土壌で、ケイ酸塩粒子、粘土鉱物、酸化鉄、水分、有機残渣を含む。"
+      },
+      "stone": {
+        "name": "石",
+        "source": "地下",
+        "description": "丘陵、崖、洞窟壁、採掘構造の基礎となる一般的なケイ酸塩岩。"
+      },
+      "deepStone": {
+        "name": "深層石",
+        "source": "深い地下",
+        "description": "浅い地殻の下で生成される高密度の下部地層岩で、鉄とマグネシウムの傾向が高い。"
+      },
+      "sand": {
+        "name": "砂",
+        "source": "地表",
+        "description": "砂漠、海岸、河川、湖、海底ルールで生成される、石英主体の粒状堆積物。"
+      },
+      "gravel": {
+        "name": "砂利",
+        "source": "地表 / 地下",
+        "description": "周囲の地形で組成が変わる混合破砕岩粒だが、全体としてケイ酸塩主体。"
+      },
+      "clay": {
+        "name": "粘土",
+        "source": "湿った地表 / 地下",
+        "description": "湿った低傾斜地形や水辺地層で生成される、細粒の含水アルミノケイ酸塩堆積物。"
+      },
+      "mud": {
+        "name": "泥",
+        "source": "湿った地表",
+        "description": "排水が悪く酸素曝露が少ない低湿地生態に現れる、有機物を含む水分の多い土壌。"
+      },
+      "dryDirt": {
+        "name": "乾いた土",
+        "source": "乾燥地表",
+        "description": "低湿度の地表ルールで生成される、氫と有機成分が少ない脱水土壌。"
+      },
+      "saltFlat": {
+        "name": "塩原",
+        "source": "砂漠パッチ",
+        "description": "乾燥盆地の蒸発で残る蒸発岩皮殻。塩化ナトリウムを主成分とし、マグネシウム、カルシウム、硫酸塩、酸素塩を含む。"
+      },
+      "snow": {
+        "name": "雪",
+        "source": "寒冷地表",
+        "description": "雪線以上または寒冷バイオームで生成される凍結降水層で、微量の鉱物塵を含むことがある。"
+      },
+      "ice": {
+        "name": "氷",
+        "source": "凍結流体 / 希少地表",
+        "description": "寒冷流体と希少な雪原ルールで選ばれる固体の水。単純だが環境ルール上重要。"
+      },
+      "frozenSoil": {
+        "name": "凍土",
+        "source": "寒冷地表 / 地下",
+        "description": "鉱物粒子、結合氷、保存された有機物が混ざる永久凍土のような土壌。"
+      },
+      "basalt": {
+        "name": "玄武岩",
+        "source": "火山地表 / 地下",
+        "description": "急冷した溶岩からできる暗色の苦鉄質火山岩で、普通の石より鉄、マグネシウム、カルシウム、チタンの傾向が高い。"
+      },
+      "ash": {
+        "name": "火山灰",
+        "source": "火山地表",
+        "description": "火山バイオームで生成される細粒の火山粒子。ケイ酸塩岩に近いが多孔質で硫酸塩傾向を持ちやすい。"
+      },
+      "bedrock": {
+        "name": "基盤岩",
+        "source": "世界基底",
+        "description": "生成柱の最下部にあるプロトコル基礎層。固定鉱床ではなく硬い基盤岩として扱う。"
+      },
+      "water": {
+        "name": "水",
+        "source": "流体",
+        "description": "海、川、湖、低地水域を覆う標準流体ブロック。バイオームにより溶存イオンが少し変化する。"
+      },
+      "swampWater": {
+        "name": "沼沢水",
+        "source": "沼沢流体",
+        "description": "沼沢と湿地ルールで生成される有機物に富む停滞水。溶存炭素、硫黄、鉄、窒素の痕跡を含む。"
+      },
+      "toxicWater": {
+        "name": "毒性水",
+        "source": "汚染流体",
+        "description": "汚染シグナルで選ばれる危険流体。基礎は水だが、微量金属と硫化物が生物リスクを高める。"
+      },
+      "lava": {
+        "name": "溶岩",
+        "source": "火山流体",
+        "description": "火山シグナルで生成される溶融ケイ酸塩流体。一般的な幻想の火ではなく玄武質メルトに基づく。"
+      },
+      "quicksand": {
+        "name": "流砂",
+        "source": "砂漠地表",
+        "description": "砂漠の異常ルールで生成される水を含んだ不安定な砂の罠。主にシリカで、十分な水分が機械的安定性を下げる。"
+      },
+      "trunk": {
+        "name": "幹",
+        "source": "樹木",
+        "description": "広葉樹ルールで生成される木質構造組織。セルロース、リグニン、水、無機養分が主体。"
+      },
+      "leaves": {
+        "name": "葉",
+        "source": "樹冠",
+        "description": "光合成する樹冠ブロック。有機組織で、マグネシウムを含むクロロフィルと微量金属を持つ。"
+      },
+      "pineTrunk": {
+        "name": "松の幹",
+        "source": "松",
+        "description": "寒冷、高地、常緑樹ルールで生成される樹脂を多く含む針葉樹材。"
+      },
+      "pineLeaves": {
+        "name": "松葉",
+        "source": "松の樹冠",
+        "description": "常緑針葉の樹冠。水分循環が低く、微量の鉱物養分を含む。"
+      },
+      "deadWood": {
+        "name": "枯れ木",
+        "source": "火山 / 乾燥植生",
+        "description": "脱水または熱ストレスを受けた木材。氫が少なく、露出炭素の割合が高い。"
+      },
+      "giantRoot": {
+        "name": "巨大根",
+        "source": "熱帯雨林植生",
+        "description": "湿潤な熱帯雨林ルールで生成される大型の露出根。木質だが土壌付近ではより湿り、鉱物が豊富。"
+      },
+      "grassPlant": {
+        "name": "草本植物",
+        "source": "地表植生",
+        "description": "湿った低傾斜の地表ルールで選ばれる小型の草本植物。"
+      },
+      "dryGrass": {
+        "name": "乾草",
+        "source": "乾燥植生",
+        "description": "低湿度の地表から来る乾いた草本材料。氫が少なく炭素濃度が高い。"
+      },
+      "bush": {
+        "name": "低木",
+        "source": "地表植生",
+        "description": "森林、平原、山地、熱帯雨林の植生ルールで生成される木質低木層。"
+      },
+      "deadBush": {
+        "name": "枯れ低木",
+        "source": "乾燥 / 火山植生",
+        "description": "砂漠と火山地表条件で生成される乾燥した低木の残骸。"
+      },
+      "cactus": {
+        "name": "サボテン",
+        "source": "砂漠植生",
+        "description": "砂漠ルールで生成される貯水性の多肉植物。有機組織だが結合水の割合が非常に高い。"
+      },
+      "reed": {
+        "name": "葦",
+        "source": "水辺植生",
+        "description": "沼沢、河川、湖、湿地の流体近くで生成される水辺植物。"
+      },
+      "swampGrass": {
+        "name": "沼草",
+        "source": "沼沢地表",
+        "description": "有機組織を含み、停滞水の堆積物の影響を受ける湿地の草層。"
+      },
+      "snowBush": {
+        "name": "雪原低木",
+        "source": "寒冷植生",
+        "description": "山地と雪原の植生ルールで選ばれる耐寒低木。雪や霜の色調を帯びることが多い。"
+      },
+      "thorn": {
+        "name": "棘",
+        "source": "乾燥 / 火山植生",
+        "description": "乾燥または火山地表由来の硬化した防御性植物材料で、炭素質構造組織が多い。"
+      },
+      "moss": {
+        "name": "苔",
+        "source": "湿った地表 / 洞窟",
+        "description": "湿った森林、沼沢、洞窟周辺ルールで生成される湿潤な非木質生物マット。"
+      },
+      "lichen": {
+        "name": "地衣類",
+        "source": "寒冷 / 岩石表面",
+        "description": "寒冷または岩石表面の共生クラストで、生物組織と鉱物基質をつなぐ。"
+      },
+      "vine": {
+        "name": "蔓",
+        "source": "湿潤植生",
+        "description": "湿ったバイオームや洞窟状の湿潤領域で生成される、柔軟な炭素豊富なつる植物。"
+      },
+      "glowMycelium": {
+        "name": "発光菌糸",
+        "source": "洞窟植生",
+        "description": "地下の湿潤空間に由来する生物発光性の菌糸マット。生物組織で、リンと硫黄のシグナルが強い。"
+      },
+      "mushroom": {
+        "name": "キノコ",
+        "source": "湿潤 / 洞窟植生",
+        "description": "希少な湿潤植生のランダム結果で選ばれる菌類の子実体。"
+      },
+      "seaweed": {
+        "name": "海藻",
+        "source": "海洋植生",
+        "description": "水中領域の海洋植物状バイオマス。ナトリウム、カリウム、マグネシウム、ヨウ素の微量傾向を持つ。"
+      },
+      "aquaticPlant": {
+        "name": "水生植物",
+        "source": "淡水植生",
+        "description": "堆積物から養分を吸収する、水分を多く含む淡水植生。"
+      },
+      "coral": {
+        "name": "サンゴ",
+        "source": "温暖海洋植生",
+        "description": "温暖な浅海条件で生成される炭酸カルシウム構造。"
+      },
+      "deadCoral": {
+        "name": "死サンゴ",
+        "source": "寒冷 / 汚染海洋植生",
+        "description": "寒冷または汚染海洋ルールで選ばれる死んだ炭酸カルシウム礁体材料。"
+      },
+      "shellBed": {
+        "name": "貝殻層",
+        "source": "希少海岸 / 海底",
+        "description": "貝殻片と炭酸塩粒子が蓄積した、希少な沿岸・海底の斑点として生成される層。"
+      }
+    },
+    "tag": {
+      "plains": "平原",
+      "forest": "森林",
+      "rainforest": "熱帯雨林",
+      "general": "一般",
+      "mountain": "山地",
+      "cave": "洞窟",
+      "foundation": "基礎層",
+      "deepCave": "深層洞窟",
+      "desert": "砂漠",
+      "beach": "海岸",
+      "river": "河川",
+      "oceanFloor": "海底",
+      "wetland": "湿地",
+      "swamp": "沼沢",
+      "lake": "湖",
+      "desertEdge": "砂漠縁辺",
+      "dryPlains": "乾燥平原",
+      "evaporite": "蒸発岩",
+      "snowfield": "雪原",
+      "tundra": "ツンドラ",
+      "frozenWater": "凍結水域",
+      "volcano": "火山",
+      "deepRock": "深層岩",
+      "ejecta": "噴出物",
+      "unbreakable": "破壊不能",
+      "ocean": "海洋",
+      "corruption": "汚染",
+      "heat": "高熱",
+      "hazard": "危険",
+      "tree": "樹木",
+      "dryBiome": "乾燥バイオーム",
+      "rareOrganic": "希少有機物",
+      "succulent": "多肉植物",
+      "hazardPlant": "危険植物",
+      "humid": "湿潤",
+      "bioluminescent": "生物発光",
+      "aquatic": "水域",
+      "warmWater": "温暖水域",
+      "rare": "希少",
+      "coldWater": "寒冷水域"
+    }
+  }
+}

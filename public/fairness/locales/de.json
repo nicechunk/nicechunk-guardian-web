@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "language": "de",
+    "label": "German",
+    "version": "fairness-locale-de-fcf49325e66ac8b9",
+    "contentHash": "fcf49325e66ac8b9"
+  },
+  "siteFooter": {
+    "tagline": "Ein Seed-Voxelwelt-Protokoll auf Solana.",
+    "navigationAria": "Footer-Navigation",
+    "socialAria": "NiceChunk Social Links",
+    "home": "Home",
+    "play": "Welt betreten",
+    "roadmap": "Roadbook",
+    "docs": "Docs",
+    "guardian": "Guardians",
+    "contracts": "Contracts",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. Alle Rechte vorbehalten."
+  },
+  "meta": {
+    "title": "NiceChunk Fairness-Modell"
+  },
+  "nav": {
+    "aria": "Primäre Navigation",
+    "home": "Startseite",
+    "roadbook": "Roadbook",
+    "docs": "Dokumente",
+    "worldRules": "Weltregeln",
+    "resources": "Ressourcen",
+    "elements": "Elemente",
+    "fairness": "Fairness",
+    "proofOfFrontier": "Beweis",
+    "enterWorld": "Betritt die Welt",
+    "guardians": "Wächter"
+  },
+  "language": {
+    "aria": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Fairness-Modell",
+    "title": "Eine Welt ist nur dann fair, wenn Spieler die Regeln überprüfen können.",
+    "subtitle": "NiceChunk basiert auf öffentlichen Seed-Regeln, reproduzierbaren Ergebnissen, versionierten Upgrades, wallet-eigenen Aktionen und klaren Vertrauensgrenzen zwischen dem Client, Guardians und Solana.",
+    "verify": "Überprüfen Sie ein Chunk",
+    "mining": "Prüfungsrolle im Bergbau",
+    "docs": "Dokumente lesen",
+    "principlesAria": "Fairnessgrundsätze",
+    "principles": {
+      "seed": "Gleicher Samen, gleiche Welt",
+      "version": "Regeländerungen werden versioniert",
+      "wallet": "Geldbörsen unterzeichnen die Absicht des Spielers",
+      "boundary": "Vertrauensgrenzen sind explizit"
+    },
+    "readout": {
+      "label": "Verifizierungsschleife",
+      "value": "Seed -> Chunk -> Hash -> Regelversion"
+    }
+  },
+  "principles": {
+    "eyebrow": "Grundsätze",
+    "title": "Fairness ist eine Einschränkung des Systemdesigns, kein Schlagwort.",
+    "body": "Das Projekt sollte danach beurteilt werden, ob Spieler die Regeln einsehen, wichtige Ergebnisse reproduzieren und sehen können, welche Teile live, geplant oder noch nur für den Client verfügbar sind.",
+    "cards": {
+      "deterministic": {
+        "title": "Deterministische Generation",
+        "body": "Ein Startwert, eine chunk-Koordinate und eine Generierungsversion sollten für jeden Prüfer das gleiche Geländeergebnis liefern."
+      },
+      "reproducible": {
+        "title": "Reproduzierbare Rollen",
+        "body": "Die Ressourcenerkennung sollte nach Möglichkeit aus öffentlichen Eingaben und nicht aus versteckten Serverzufällen abgeleitet werden."
+      },
+      "versioned": {
+        "title": "Versionierte Regeln",
+        "body": "UI-Änderungen, Weltregeländerungen, Wirtschaftsregeländerungen und Kettenzustandsänderungen müssen separat verfolgt werden."
+      },
+      "boundary": {
+        "title": "Vertrauensgrenzen",
+        "body": "Auf der Website muss angegeben werden, was nur für den Client gilt, womit Guardians unterstützen kann und was in der Kette überprüft werden soll."
+      }
+    }
+  },
+  "verify": {
+    "eyebrow": "Chunk-Verifizierung",
+    "title": "Jeder sollte in der Lage sein, ein chunk aus öffentlichen Eingaben neu zu erstellen.",
+    "body": "Diese Demo verwendet denselben Weltgenerator und chunk-Renderer, der von der spielbaren Welt verwendet wird. Geben Sie einen Startwert und eine chunk-Koordinate ein, um das Gelände zu sehen, das der Client aus diesen öffentlichen Eingaben erstellt.",
+    "demo": {
+      "eyebrow": "Live-Geländevorschau",
+      "title": "Hauptspiel Chunk",
+      "random": "Zufällig",
+      "seed": "Samen",
+      "chunkX": "Chunk X",
+      "chunkZ": "Chunk Y",
+      "canvasAria": "Interaktive chunk-Geländevorschau",
+      "controls": "Zum Drehen ziehen. Drehen Sie das Rad oder drücken Sie es, um zu zoomen."
+    },
+    "controls": {
+      "eyebrow": "Öffentliche Eingaben",
+      "title": "Startwert und Parameter"
+    },
+    "lock": {
+      "lockSeed": "Samen sperren",
+      "unlockSeed": "Samen freischalten",
+      "lockChunkX": "Chunk X sperren",
+      "unlockChunkX": "Chunk X entsperren",
+      "lockChunkZ": "Chunk Y sperren",
+      "unlockChunkZ": "Chunk Y entsperren"
+    },
+    "metrics": {
+      "source": "Generator",
+      "height": "Höhenbereich",
+      "biome": "Biom-Mix",
+      "terrain": "Gelände-Hash",
+      "version": "Regelversion",
+      "blocks": "Sichtbare Blöcke"
+    },
+    "stats": {
+      "seed": "Samen",
+      "chunk": "chunk",
+      "chunkSize": "chunkSize",
+      "seaLevel": "Meeresspiegel",
+      "heightRange": "heightRange",
+      "waterLevelRange": "waterLevelRange",
+      "waterCells": "WasserZellen",
+      "primaryBiomes": "primäreBiome",
+      "primaryBlocks": "PrimaryBlocks",
+      "none": "keine"
+    },
+    "rules": {
+      "seed": {
+        "title": "Öffentlicher Eingangsvertrag",
+        "body": "Der Verifizierer beginnt mit Werten, die Spielern angezeigt werden können: Startwert, chunk-Koordinate und Generierungsversion."
+      },
+      "chain": {
+        "title": "Zukünftiges On-Chain-Engagement",
+        "body": "Ein zukünftiger Kettendatensatz kann den Commitment-Hash speichern, während Clients und Explorer den chunk lokal neu berechnen."
+      }
+    }
+  },
+  "mining": {
+    "eyebrow": "Bergbaunachweis",
+    "title": "Die Ressourcenerkennung sollte erklären, warum dieses Ergebnis zustande kam.",
+    "body": "Das Live-Alpha kann sich weiterentwickeln, aber das Zielmodell ist einfach: Jedes wichtige wirtschaftliche Ergebnis sollte aus expliziten Eingaben abgeleitet werden und einen überprüfbaren Hash-Pfad erzeugen.",
+    "demo": {
+      "seed": "Samen",
+      "block": "Block XYZ",
+      "nonce": "Aktion Nonce"
+    },
+    "rules": {
+      "roll": {
+        "title": "Hash-abgeleitete Rolle",
+        "body": "Die Rolle wird aus Startwert, Blockkoordinate, chunk-Koordinate und Nonce berechnet. Dadurch wird der Beweis wiederholbar."
+      },
+      "limit": {
+        "title": "Alpha Einschränkung",
+        "body": "Bis die Abwicklung in der Kette vollständig verifiziert ist, muss die Website Proof-Demos als Referenzlogik und nicht als endgültige wirtschaftliche Abwicklung kennzeichnen."
+      }
+    }
+  },
+  "status": {
+    "eyebrow": "Statusmatrix",
+    "title": "Fairnessansprüche werden nach Umsetzungsstatus verfolgt.",
+    "table": {
+      "system": "System",
+      "status": "Status",
+      "verification": "Verifizierungspfad"
+    },
+    "rows": {
+      "world": {
+        "system": "Gesäte chunk-Generierung",
+        "status": "Alpha implementiert",
+        "verification": "Öffentlicher Seed, öffentliche Regeln, lokale Neuberechnung, zukünftige Kettenverpflichtung."
+      },
+      "mining": {
+        "system": "Nachweis des Bergbauergebnisses",
+        "status": "Referenzmodell",
+        "verification": "Hash-abgeleitete Roll-Demo, geplante Abrechnungsüberprüfung."
+      },
+      "forging": {
+        "system": "Gefälschte Vermögenshistorie",
+        "status": "Geplant",
+        "verification": "Rezepteingaben, Haltbarkeit, Ausgabemetadaten, zukünftige Mint-Aufzeichnungen."
+      },
+      "watchers": {
+        "system": "Guardian Netzwerk",
+        "status": "Demnächst verfügbar",
+        "verification": "Keine Verwahrung, keine Unterzeichnung von Spielertransaktionen, nur regionale Verfügbarkeitsrolle."
+      },
+      "governance": {
+        "system": "Regelaktualisierungen",
+        "status": "Geplant",
+        "verification": "Versioniertes Änderungsprotokoll, getrennte Änderungskategorien UI/Welt/Wirtschaft/Kette."
+      }
+    }
+  },
+  "boundaries": {
+    "eyebrow": "Vertrauensgrenzen",
+    "title": "Ehrliche Fairnessseiten offenbaren, was noch nicht endgültig ist.",
+    "body": "NiceChunk sollte es vermeiden, so zu tun, als sei jedes Alpha-System bereits vollständig dezentralisiert. Der stärkere Anspruch besteht darin, den Pfad von der Client-Logik zum überprüfbaren Protokollstatus zu veröffentlichen.",
+    "cards": {
+      "client": {
+        "title": "Kunde",
+        "body": "Rendert die Welt, sagt Bewegungen voraus, zeigt Vorschauen und kann die Logik der öffentlichen Generierung neu berechnen."
+      },
+      "wallet": {
+        "title": "Geldbörse",
+        "body": "Unterschreibt die Absicht des Spielers direkt. Spielervermögen sollte nicht von versteckten, projektgesteuerten Unterzeichnungen abhängen."
+      },
+      "watcher": {
+        "title": "Guardian",
+        "body": "Hilft Regionen, erreichbar zu bleiben und zu kommunizieren. Guardians verwahrt keine Vermögenswerte und unterzeichnet keine Spielertransaktionen."
+      },
+      "chain": {
+        "title": "Solana",
+        "body": "Die Zielabrechnungsschicht für kritische Identität, Vermögenswerte, Engagement und Wirtschaftszustand."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Weiter",
+    "title": "Sehen Sie sich die vollständige Protokolldokumentation an.",
+    "docs": "Dokumente öffnen",
+    "worldRules": "Weltregeln",
+    "enterWorld": "Betritt die Welt"
+  }
+}

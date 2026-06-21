@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "language": "zh-Hans",
+    "label": "Simplified Chinese",
+    "version": "fairness-locale-zh-Hans-1f472bb863cb9806",
+    "contentHash": "1f472bb863cb9806"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的种子体素世界协议。",
+    "navigationAria": "页脚导航",
+    "socialAria": "NiceChunk 社交链接",
+    "home": "首页",
+    "play": "进入世界",
+    "roadmap": "路书",
+    "docs": "文档",
+    "guardian": "守护者",
+    "contracts": "合约",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有权利。"
+  },
+  "meta": {
+    "title": "NiceChunk 公平模型"
+  },
+  "nav": {
+    "aria": "主导航",
+    "home": "首页",
+    "roadbook": "路书",
+    "docs": "文档",
+    "worldRules": "世界规则",
+    "resources": "资源",
+    "elements": "元素表",
+    "fairness": "公平性",
+    "proofOfFrontier": "证明",
+    "enterWorld": "进入世界",
+    "guardians": "守护者"
+  },
+  "language": {
+    "aria": "语言"
+  },
+  "hero": {
+    "eyebrow": "公平模型",
+    "title": "只有玩家能验证规则，世界才真正公平。",
+    "subtitle": "NiceChunk 围绕公开种子规则、可复现结果、版本化升级、钱包拥有的行为，以及客户端、守护者和 Solana 之间清晰的信任边界来设计。",
+    "verify": "验证 Chunk",
+    "mining": "测试挖矿 Roll",
+    "docs": "阅读文档",
+    "principlesAria": "公平原则",
+    "principles": {
+      "seed": "同种子，同世界",
+      "version": "规则变更版本化",
+      "wallet": "钱包签署玩家意图",
+      "boundary": "信任边界明确"
+    },
+    "readout": {
+      "label": "验证循环",
+      "value": "种子 -> Chunk -> 哈希 -> 规则版本"
+    }
+  },
+  "principles": {
+    "eyebrow": "原则",
+    "title": "公平是一种系统设计约束，不是一句口号。",
+    "body": "判断这个项目是否可信，要看玩家能不能检查规则、复现关键输出，并看清哪些已经上线、哪些仍在计划、哪些还只是客户端逻辑。",
+    "cards": {
+      "deterministic": {
+        "title": "确定性生成",
+        "body": "种子、Chunk 坐标和生成版本应该让每个验证者得到同一个地形结果。"
+      },
+      "reproducible": {
+        "title": "可复现 Roll",
+        "body": "资源发现应尽可能来自公开输入，而不是隐藏的服务器随机数。"
+      },
+      "versioned": {
+        "title": "规则版本化",
+        "body": "UI 改动、世界规则改动、经济规则改动和链上状态改动必须分开追踪。"
+      },
+      "boundary": {
+        "title": "信任边界",
+        "body": "网站必须说明哪些只是客户端逻辑，哪些可以由守护者辅助，哪些计划进入链上验证。"
+      }
+    }
+  },
+  "verify": {
+    "eyebrow": "Chunk 验证",
+    "title": "任何人都应该能用公开输入重建一个 Chunk。",
+    "body": "这个演示使用和可游玩世界相同的世界生成器与 Chunk 渲染器。输入种子和 Chunk 坐标，就能看到客户端从这些公开输入生成的地形。",
+    "demo": {
+      "eyebrow": "实时地形预览",
+      "title": "主游戏 Chunk",
+      "random": "随机",
+      "seed": "种子",
+      "chunkX": "Chunk X",
+      "chunkZ": "Chunk Y",
+      "canvasAria": "可交互 Chunk 地形预览",
+      "controls": "拖动旋转，滚轮或双指缩放。"
+    },
+    "controls": {
+      "eyebrow": "公开输入",
+      "title": "种子和参数"
+    },
+    "lock": {
+      "lockSeed": "锁定种子",
+      "unlockSeed": "解锁种子",
+      "lockChunkX": "锁定 Chunk X",
+      "unlockChunkX": "解锁 Chunk X",
+      "lockChunkZ": "锁定 Chunk Y",
+      "unlockChunkZ": "解锁 Chunk Y"
+    },
+    "metrics": {
+      "source": "生成器",
+      "height": "高度范围",
+      "biome": "生态分布",
+      "terrain": "地形哈希",
+      "version": "规则版本",
+      "blocks": "可见方块"
+    },
+    "stats": {
+      "seed": "种子",
+      "chunk": "Chunk",
+      "chunkSize": "Chunk 尺寸",
+      "seaLevel": "海平面",
+      "heightRange": "高度范围",
+      "waterLevelRange": "水面范围",
+      "waterCells": "水体格子",
+      "primaryBiomes": "主要生态",
+      "primaryBlocks": "主要方块",
+      "none": "无"
+    },
+    "rules": {
+      "seed": {
+        "title": "公开输入合约",
+        "body": "验证器从可以展示给玩家的值开始：种子、Chunk 坐标和生成版本。"
+      },
+      "chain": {
+        "title": "未来链上承诺",
+        "body": "未来链上记录可以保存承诺哈希，而客户端和浏览器可以在本地重新计算 Chunk。"
+      }
+    }
+  },
+  "mining": {
+    "eyebrow": "挖矿证明",
+    "title": "资源发现应该解释为什么会得到这个结果。",
+    "body": "当前 alpha 会继续演进，但目标模型很简单：每个重要经济结果都应该来自明确输入，并产生可检查的哈希路径。",
+    "demo": {
+      "seed": "种子",
+      "block": "方块 XYZ",
+      "nonce": "行为 Nonce"
+    },
+    "rules": {
+      "roll": {
+        "title": "哈希派生 Roll",
+        "body": "Roll 由种子、方块坐标、Chunk 坐标和 nonce 计算出来，因此证明可以重放。"
+      },
+      "limit": {
+        "title": "Alpha 限制",
+        "body": "在结算完全进入链上验证之前，网站必须把证明演示标注为参考逻辑，而不是最终经济结算。"
+      }
+    }
+  },
+  "status": {
+    "eyebrow": "状态矩阵",
+    "title": "公平性声明必须按实现状态追踪。",
+    "table": {
+      "system": "系统",
+      "status": "状态",
+      "verification": "验证路径"
+    },
+    "rows": {
+      "world": {
+        "system": "种子 Chunk 生成",
+        "status": "Alpha 已实现",
+        "verification": "公开种子、公开规则、本地重算、未来链上承诺。"
+      },
+      "mining": {
+        "system": "挖矿结果证明",
+        "status": "参考模型",
+        "verification": "哈希派生 roll 演示，计划中的结算验证。"
+      },
+      "forging": {
+        "system": "锻造资产历史",
+        "status": "计划中",
+        "verification": "配方输入、耐久、输出元数据、未来 mint 记录。"
+      },
+      "watchers": {
+        "system": "守护者网络",
+        "status": "即将开放",
+        "verification": "不托管资产，不签署玩家交易，只承担区域可用性角色。"
+      },
+      "governance": {
+        "system": "规则升级",
+        "status": "计划中",
+        "verification": "版本化更新记录，区分 UI、世界、经济和链上变更。"
+      }
+    }
+  },
+  "boundaries": {
+    "eyebrow": "信任边界",
+    "title": "诚实的公平页面必须说明哪些还没有最终完成。",
+    "body": "NiceChunk 不应该假装每个 alpha 系统都已经完全去中心化。更有力的表达是公开从客户端逻辑走向可验证协议状态的路径。",
+    "cards": {
+      "client": {
+        "title": "客户端",
+        "body": "渲染世界、预测移动、显示预览，并能重新计算公开生成逻辑。"
+      },
+      "wallet": {
+        "title": "钱包",
+        "body": "直接签署玩家意图。玩家资产不应该依赖项目方隐藏签名。"
+      },
+      "watcher": {
+        "title": "守护者",
+        "body": "帮助区域保持可访问并进行通信。守护者不托管资产，也不签署玩家交易。"
+      },
+      "chain": {
+        "title": "Solana",
+        "body": "关键身份、资产、承诺和经济状态的目标结算层。"
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "下一步",
+    "title": "检查完整协议文档。",
+    "docs": "打开文档",
+    "worldRules": "世界规则",
+    "enterWorld": "进入世界"
+  }
+}

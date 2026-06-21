@@ -70,6 +70,10 @@ body {
 }
 
 .site-header {
+  position: relative !important;
+  z-index: 9000 !important;
+  overflow: visible !important;
+  isolation: isolate !important;
   display: grid !important;
   grid-template-columns: auto minmax(0, 1fr) !important;
   align-items: center !important;
@@ -214,6 +218,7 @@ body {
 .roadmap-language,
 .docs-language {
   position: relative !important;
+  z-index: 1 !important;
   flex: 0 0 auto !important;
   width: 188px !important;
   min-width: 188px !important;
@@ -303,7 +308,7 @@ body {
 .roadmap-language-menu,
 .docs-language-menu {
   position: absolute !important;
-  z-index: 1000 !important;
+  z-index: 9100 !important;
   top: calc(100% + 8px) !important;
   right: 0 !important;
   display: grid !important;
@@ -410,6 +415,124 @@ body {
   font-size: 9px !important;
 }
 
+.nicechunk-site-footer {
+  position: relative !important;
+  z-index: 10 !important;
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) auto auto !important;
+  align-items: center !important;
+  gap: 16px 22px !important;
+  width: 100% !important;
+  padding: 22px clamp(16px, 4vw, 42px) !important;
+  border-top: 1px solid rgba(152, 203, 255, 0.16) !important;
+  color: rgba(218, 231, 238, 0.72) !important;
+  background:
+    linear-gradient(180deg, rgba(8, 12, 18, 0.62), rgba(8, 12, 18, 0.9)),
+    rgba(8, 12, 18, 0.82) !important;
+  backdrop-filter: blur(18px) !important;
+  box-sizing: border-box !important;
+}
+
+.nicechunk-site-footer .brand-mark {
+  width: fit-content !important;
+}
+
+.nicechunk-footer-brand {
+  display: grid !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+}
+
+.nicechunk-footer-brand p,
+.nicechunk-footer-meta {
+  margin: 0 !important;
+  color: rgba(218, 231, 238, 0.58) !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  line-height: 1.45 !important;
+}
+
+.nicechunk-footer-links,
+.nicechunk-footer-social {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+}
+
+.nicechunk-footer-links a,
+.nicechunk-footer-social a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 34px !important;
+  padding: 0 10px !important;
+  border: 1px solid rgba(152, 203, 255, 0.16) !important;
+  border-radius: 8px !important;
+  color: rgba(218, 231, 238, 0.78) !important;
+  background: rgba(152, 203, 255, 0.04) !important;
+  font-size: 10px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease !important;
+}
+
+.nicechunk-footer-social a {
+  color: var(--nc-nav-blue) !important;
+}
+
+.nicechunk-footer-links a:hover,
+.nicechunk-footer-social a:hover {
+  border-color: rgba(140, 255, 0, 0.34) !important;
+  color: var(--nc-nav-green) !important;
+  background: rgba(140, 255, 0, 0.08) !important;
+}
+
+.nicechunk-site-footer-floating {
+  position: fixed !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  left: 12px !important;
+  z-index: 8200 !important;
+  grid-template-columns: auto minmax(0, 1fr) auto !important;
+  width: auto !important;
+  padding: 8px 10px !important;
+  border: 1px solid rgba(152, 203, 255, 0.18) !important;
+  border-radius: 8px !important;
+  background: rgba(8, 12, 18, 0.7) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.26) !important;
+}
+
+.nicechunk-site-footer-floating .nicechunk-footer-brand p,
+.nicechunk-site-footer-floating .nicechunk-footer-meta,
+.nicechunk-site-footer-floating .nicechunk-footer-links {
+  display: none !important;
+}
+
+.nicechunk-site-footer-floating .brand-mark {
+  font-size: 10px !important;
+}
+
+.nicechunk-site-footer-floating .brand-mark img {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.nicechunk-site-footer-floating .nicechunk-footer-social a {
+  min-height: 28px !important;
+  padding: 0 8px !important;
+  font-size: 9px !important;
+}
+
 @media (max-width: 1180px) {
   .site-header {
     grid-template-columns: 1fr !important;
@@ -425,6 +548,16 @@ body {
   }
 
   .nav-links {
+    justify-content: flex-start !important;
+  }
+
+  .nicechunk-site-footer {
+    grid-template-columns: 1fr !important;
+    align-items: start !important;
+  }
+
+  .nicechunk-footer-links,
+  .nicechunk-footer-social {
     justify-content: flex-start !important;
   }
 }
@@ -449,7 +582,7 @@ body {
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
-    z-index: 3000 !important;
+    z-index: 9000 !important;
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) auto !important;
     align-items: stretch !important;
@@ -766,6 +899,39 @@ body {
   .docs-language-option {
     min-height: 40px !important;
     padding: 8px 10px !important;
+  }
+
+  .nicechunk-site-footer {
+    gap: 12px !important;
+    padding: 18px 14px calc(18px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  .nicechunk-footer-links,
+  .nicechunk-footer-social {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+  }
+
+  .nicechunk-footer-links a,
+  .nicechunk-footer-social a {
+    min-width: 0 !important;
+    padding: 0 8px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .nicechunk-site-footer-floating {
+    right: 8px !important;
+    bottom: calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+    left: 8px !important;
+    grid-template-columns: auto 1fr !important;
+  }
+
+  .nicechunk-site-footer-floating .nicechunk-footer-social {
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: auto !important;
   }
 }
 

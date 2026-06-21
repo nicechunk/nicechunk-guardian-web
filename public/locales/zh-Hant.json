@@ -1,0 +1,2809 @@
+{
+  "_meta": {
+    "language": "zh-Hant",
+    "label": "Traditional Chinese",
+    "version": "locale-zh-Hant-9460ad92f65fa67b",
+    "contentHash": "9460ad92f65fa67b"
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "語言",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "login": {
+    "title": "NICECHUNK 錢包登入",
+    "flowLabel": "登入流程",
+    "brandSubtitle": "體素宇宙",
+    "authEyebrow": "安全閘道",
+    "authTitle": "錢包存取",
+    "authSubtitle": "進入 NiceChunk 生態系統",
+    "heroStatus": "即時引擎渲染",
+    "steps": {
+      "wallet": "連接錢包",
+      "profile": "玩家設定",
+      "ready": "準備進入"
+    },
+    "section": {
+      "wallet": "連接錢包",
+      "profile": "玩家設定",
+      "ready": "進入世界"
+    },
+    "installPhantom": "安裝 Phantom",
+    "playerName": "玩家名",
+    "playerNamePlaceholder": "輸入 3-18 位名字",
+    "saveName": "保存玩家名",
+    "player": "玩家",
+    "wallet": "錢包",
+    "startGame": "開始遊戲",
+    "resetLogin": "重新登入",
+    "returnToBrowser": "返回瀏覽器",
+    "continueInWalletBrowser": "在錢包瀏覽器中繼續",
+    "signLoginMessage": "簽署登入訊息",
+    "completeCopiedLogin": "完成錢包登入",
+    "copyLoginProof": "複製登入憑證",
+    "manualProofLabel": "手動複製此登入憑證",
+    "selectLoginProof": "選取登入憑證",
+    "hudNetwork": "網路",
+    "hudNetworkValue": "SOLANA",
+    "hudBiome": "生態域",
+    "hudBiomeValue": "翡翠森林",
+    "hudWallet": "錢包",
+    "hudWalletValue": "就緒",
+    "status": {
+      "checking": "正在檢測 Solana 錢包...",
+      "walletDetected": "檢測到 Solana 錢包，選擇一個連接。",
+      "noWallet": "未偵測到注入式錢包。請在錢包 App 中開啟此頁，或安裝 Phantom。",
+      "openingWalletApp": "正在開啟 {wallet}...",
+      "connecting": "正在連接 {wallet}...",
+      "publicKeyMissing": "錢包沒有返回 publicKey。",
+      "connectFailed": "連接失敗，請重新嘗試。",
+      "profile": "錢包已連接，設定玩家名。",
+      "invalidUsername": "玩家名需要 3-18 位，只能包含字母、數字、底線和中文。",
+      "ready": "登入資訊已準備好。",
+      "returningToBrowser": "正在返回原本的瀏覽器...",
+      "continuingInWalletBrowser": "正在錢包瀏覽器中繼續...",
+      "signingChallenge": "請在錢包中確認登入訊息。",
+      "signatureFailed": "無法驗證錢包簽名，請重試。",
+      "proofCopied": "登入憑證已複製。返回瀏覽器後完成錢包登入。",
+      "proofCopyFailed": "無法複製登入憑證，請使用返回瀏覽器。",
+      "readingProof": "正在讀取複製的登入憑證...",
+      "noCopiedProof": "沒有找到已複製的 NiceChunk 登入憑證。",
+      "proofSelectReady": "登入憑證已選取。請複製後返回瀏覽器。",
+      "pasteProofReady": "貼上錢包簽名憑證，完成沒有自動跳回時的登入流程。",
+      "resourceFailed": "登入資源載入失敗，請重新整理後再試。"
+    },
+    "walletButton": {
+      "noWallet": "未檢測到錢包",
+      "installRefresh": "安裝錢包後刷新頁面",
+      "connectAuthorize": "連接並授權地址",
+      "openInApp": "在錢包瀏覽器中繼續"
+    },
+    "walletHint": {
+      "recommended": "推薦",
+      "compatible": "相容",
+      "generic": "通用",
+      "mobileApp": "行動 App"
+    },
+    "loading": {
+      "boot": "正在初始化錢包閘道",
+      "checking": "正在準備介面",
+      "waitingForLanguage": "等待語言資料",
+      "video": "載入視覺層",
+      "videoReady": "首屏動畫已就緒。",
+      "visualMetadata": "正在準備透明 Logo 動畫。",
+      "visualReady": "首屏動畫已就緒。",
+      "videoFallback": "影片暫時不可用，正在使用封面圖。",
+      "worldEyebrow": "世界閘道",
+      "worldTitle": "正在準備 NiceChunk 世界",
+      "worldBody": "正在載入玩家會話、地形引擎和第一批可見 Chunk。",
+      "route": "正在開啟遊戲客戶端",
+      "bytesKnown": "已傳輸 {loaded} / {total}",
+      "bytesUnknown": "已傳輸 {loaded}",
+      "stages": {
+        "gateway": {
+          "title": "正在初始化錢包閘道",
+          "body": "正在準備介面"
+        },
+        "visual": {
+          "title": "載入視覺層",
+          "body": "正在取得首屏 Logo 影片資產。"
+        },
+        "visualDecode": {
+          "title": "解碼視覺層",
+          "body": "正在準備透明 Logo 動畫。"
+        },
+        "visualReady": {
+          "title": "視覺層已就緒",
+          "body": "首屏動畫已就緒。"
+        },
+        "visualFallback": {
+          "title": "使用視覺備援",
+          "body": "影片暫時不可用，正在使用封面圖。"
+        },
+        "route": {
+          "title": "開啟遊戲客戶端",
+          "body": "正在把你的錢包會話交給世界閘道。"
+        }
+      }
+    },
+    "pasteProofAction": "貼上簽名憑證完成登入",
+    "pasteProofLabel": "錢包簽名憑證",
+    "pasteProofPlaceholder": "貼上 nicechunk-proof: 開頭的簽名憑證",
+    "pasteFromClipboard": "從剪貼簿貼上",
+    "completePastedProof": "驗證貼上的憑證"
+  },
+  "main": {
+    "title": "Nicechunk 體素原型",
+    "brand": "Nicechunk",
+    "account": {
+      "label": "玩家帳戶",
+      "open": "打開玩家屬性",
+      "guest": "訪客",
+      "level": "Lv. {level}",
+      "defaultTitle": "新手",
+      "notConnected": "未連接",
+      "sessionBalance": "Session：{balance} SOL",
+      "sessionNotFunded": "Session：尚未注資"
+    },
+    "profile": {
+      "eyebrow": "玩家屬性",
+      "title": "角色檔案",
+      "tabs": "角色面板切換",
+      "attributesTab": "屬性",
+      "modelTab": "形象",
+      "name": "名稱",
+      "level": "等級",
+      "titleLabel": "稱號",
+      "wallet": "錢包",
+      "position": "位置",
+      "chunks": "已知區塊",
+      "backpack": "已裝備背包",
+      "noBackpack": "尚未裝備背包",
+      "buyBackpack": "購買背包",
+      "buyingBackpack": "購買中...",
+      "backpackEquipped": "{address} · {count}/{capacity}",
+      "backpackPurchaseFailed": "背包購買失敗：{reason}",
+      "model": "角色模型",
+      "close": "關閉屬性",
+      "logout": "退出"
+    },
+    "debug": "Debug",
+    "minimap": "小地圖",
+    "map": "地圖",
+    "mapGuardian": {
+      "resolving": "守護者：解析中...",
+      "resolvingForChunk": "守護者：正在解析 chunk {chunkX},{chunkZ}",
+      "active": "守護者：{endpoint} | chunk {chunkX},{chunkZ} | 範圍 {minX}..{maxX}, {minZ}..{maxZ}",
+      "none": "守護者：chunk {chunkX},{chunkZ} 沒有匹配節點"
+    },
+    "mapTeleport": {
+      "x": "X",
+      "z": "Z",
+      "xLabel": "世界 X",
+      "zLabel": "世界 Z",
+      "action": "傳送",
+      "invalid": "請輸入有效座標",
+      "done": "已傳送"
+    },
+    "chainLog": {
+      "aria": "鏈上事件日誌",
+      "minePending": "挖掘已經提交，待確認",
+      "minePendingDetail": "正在提交 {coords} 到開發網",
+      "mineSubmitted": "挖掘已確認",
+      "signature": "{coords}: {signature}",
+      "mineSkipped": "挖掘同步已跳過",
+      "disabled": "{coords} 的鏈上同步已關閉",
+      "mineSkippedDetail": "{coords}: {reason}",
+      "mineFailed": "挖掘交易失敗",
+      "mineFailedDetail": "{coords}: {reason}",
+      "alreadyMined": "方塊已登記",
+      "alreadyMinedReason": "已被挖掘",
+      "walletUnavailable": "錢包不可用",
+      "chainDisabledReason": "鏈上同步已關閉",
+      "unknownReason": "未知原因",
+      "noSignature": "沒有簽名",
+      "walletUnexpectedError": "錢包返回了未知錯誤",
+      "sessionFundingCancelled": "已取消 Session 注資",
+      "backpackFull": "背包已滿",
+      "noBackpack": "尚未裝備背包",
+      "noBackpackTitle": "需要背包",
+      "noBackpackDetail": "購買並裝備背包後才能挖掘 {coords}"
+    },
+    "chainSession": {
+      "eyebrow": "挖掘 Session",
+      "title": "設定挖掘 Session SOL",
+      "body": "挖掘可能會建立或擴充 Solana Chunk 儲存帳戶。這些 SOL 會從你的錢包轉到瀏覽器臨時 Session 簽名帳戶，讓挖掘可以自動提交交易，不需要每挖一個方塊都要求你簽名。",
+      "pointStorage": "實際消耗的是 Solana 網路成本：交易手續費，以及 Chunk PDA 的免租金儲存押金。",
+      "pointProject": "這筆 SOL 不是支付給 NiceChunk 專案方，專案方無法提取你的 Session 餘額。",
+      "pointControl": "你的主錢包只會簽署本次設定或之後補充餘額；方塊挖掘交易由臨時 Session key 簽署。",
+      "amountLabel": "Session 注資金額",
+      "minimum": "最低：{amount} SOL",
+      "currentUnknown": "目前 Session 餘額：未知",
+      "current": "目前 Session 餘額：{balance} SOL",
+      "mobileBody": "手機瀏覽器需要在錢包 App 內建瀏覽器中打開此頁，才能喚起簽名。",
+      "openPhantom": "用 Phantom 打開",
+      "openSolflare": "用 Solflare 打開",
+      "openBackpack": "用 Backpack 打開",
+      "cancel": "取消",
+      "confirm": "確認並繼續挖掘"
+    },
+    "chat": {
+      "input": "聊天訊息",
+      "placeholder": "訊息"
+    },
+    "hotbar": "快捷工具列",
+    "chunks": "{active}/{known} chunks",
+    "fps": "{fps} FPS",
+    "item": {
+      "empty": "空手",
+      "iron_pickaxe": "鐵鎬",
+      "dirt": "泥土",
+      "stone": "石頭",
+      "sand": "沙子",
+      "trunk": "樹幹",
+      "leaves": "樹葉",
+      "red_flower": "紅花",
+      "forged_item": "鑄造物品",
+      "backpack": "背包",
+      "backpack_resource": "挖掘資源",
+      "market_phone": "市場電話"
+    },
+    "hotbarSlot": {
+      "empty": "第 {slot} 格：空",
+      "item": "第 {slot} 格：{item}",
+      "detail": "第 {slot} 格：{item}，{amount}",
+      "durability": "耐久 {value}",
+      "count": "數量 {value}"
+    },
+    "backpack": {
+      "eyebrow": "背包工具",
+      "title": "背包",
+      "close": "關閉背包",
+      "slots": "背包格子",
+      "emptySlot": "背包第 {slot} 格：空",
+      "detailLine": "座標 {source}",
+      "emptyDetail": "選擇一個物品查看詳情。",
+      "itemType": "物品",
+      "unknownSource": "未知來源",
+      "coordinateResource": "座標資源",
+      "totalWeight": "總重量：{weight}",
+      "massLine": "質量 {mass}",
+      "unknownMass": "未知"
+    },
+    "loading": {
+      "eyebrow": "世界閘道",
+      "title": "正在準備 NiceChunk 世界",
+      "boot": "正在準備玩家會話和體素引擎。",
+      "session": "進入世界前正在驗證錢包存取狀態。",
+      "i18n": "正在取得介面字典和主網版本資料。",
+      "engine": "正在建立渲染器、材質、角色、光照和輸入系統。",
+      "chunks": "正在生成地形、水體、樹木和第一批可見 Chunk 網格。",
+      "ready": "首幀已渲染，正在進入 NiceChunk。",
+      "bytesKnown": "已傳輸 {loaded} / {total}",
+      "bytesUnknown": "已傳輸 {loaded}",
+      "stages": {
+        "boot": {
+          "title": "啟動客戶端",
+          "body": "正在準備玩家會話和體素引擎。"
+        },
+        "session": {
+          "title": "檢查會話",
+          "body": "進入世界前正在驗證錢包存取狀態。"
+        },
+        "language": {
+          "title": "載入語言資料",
+          "body": "正在取得介面字典和主網版本資料。"
+        },
+        "worldConfig": {
+          "title": "讀取世界參數",
+          "body": "正在載入鏈上世界種子和地形配置。"
+        },
+        "chainSync": {
+          "title": "同步鏈上資源",
+          "body": "正在渲染世界前載入可見 Chunk 的資源變更。"
+        },
+        "engine": {
+          "title": "啟動體素引擎",
+          "body": "正在建立渲染器、材質、角色、光照和輸入系統。"
+        },
+        "chunks": {
+          "title": "生成可見 Chunk",
+          "body": "正在生成地形、水體、樹木和第一批可見 Chunk 網格。"
+        },
+        "ready": {
+          "title": "世界已就緒",
+          "body": "首幀已渲染，正在進入 NiceChunk。"
+        },
+        "redirect": {
+          "title": "開啟錢包閘道",
+          "body": "沒有找到有效遊戲會話，正在跳轉到錢包登入。"
+        }
+      }
+    },
+    "rpcConfig": {
+      "title": "公共 RPC 负载过高",
+      "body": "填寫 Helius 開發網 API key，鏈上读取和交易提交會改用你的专用 RPC。",
+      "link": "申请 Helius API key",
+      "inputLabel": "Helius API key",
+      "placeholder": "粘贴你的 Helius API key",
+      "save": "保存 RPC",
+      "dismiss": "关闭 RPC 提醒",
+      "publicRpcFailed": "公共開發網 RPC 正在限流。添加 Helius API key 後，鏈上读取和挖掘交易會更稳定。",
+      "invalid": "保存前请输入 Helius API key。",
+      "saved": "已保存。NiceChunk 會使用你的 Helius 開發網 RPC 执行鏈上调用。"
+    },
+    "market": {
+      "open": "開啟交易市場",
+      "close": "關閉交易市場",
+      "refresh": "重新整理市場掛單",
+      "eyebrow": "交易終端",
+      "title": "市場",
+      "tabs": "市場欄目",
+      "browseTab": "瀏覽",
+      "sellTab": "出售",
+      "ordersTab": "訂單",
+      "searchLabel": "搜尋",
+      "searchPlaceholder": "資源、裝備、座標",
+      "searchMetaIdle": "{category} · {currency} · {sort}",
+      "searchMetaActive": "{category} · {currency} · {sort} ·「{query}」",
+      "chainListingsSyncing": "正在同步鏈上掛單...",
+      "chainListingsSynced": "鏈上掛單已同步",
+      "chainListingsUnavailable": "鏈上同步不可用",
+      "sortLabel": "排序",
+      "sortNewest": "最新優先",
+      "sortOldest": "最早優先",
+      "sortPriceAsc": "價格從低到高",
+      "sortPriceDesc": "價格從高到低",
+      "currencyFilterLabel": "幣種",
+      "currencyAll": "全部幣種",
+      "filters": "市場篩選",
+      "browsePagination": "瀏覽掛單翻頁",
+      "ordersPagination": "訂單翻頁",
+      "pageSummary": "顯示 {start}-{end} / 共 {total}",
+      "pageIndicator": "第 {page} / {totalPages} 頁",
+      "previousPage": "上一頁",
+      "nextPage": "下一頁",
+      "categoryAll": "全部",
+      "categoryRaw": "原材料",
+      "categoryEquipment": "裝備",
+      "categoryBuilding": "建築材料",
+      "categoryClothing": "服裝",
+      "feeLabel": "市場手續費",
+      "feeValue": "1%",
+      "settlement": "推薦結算：NCK",
+      "backpackCount": "{count}/{capacity}",
+      "sampleIron": "鐵礦碎塊",
+      "sampleIronMeta": "原材料",
+      "samplePickaxe": "鍛造鎬",
+      "samplePickaxeMeta": "工具 · 稀有",
+      "sampleBrick": "石磚堆",
+      "sampleBrickMeta": "建築材料",
+      "sampleCloak": "橡樹葉方塊",
+      "sampleCloakMeta": "服裝",
+      "buy": "購買",
+      "buyNeedsBackpack": "裝備背包後才能購買這個掛單。",
+      "buyBackpackFull": "你的背包已滿。",
+      "buyNeedsHotbarSlot": "空出一個工具列格子才能接收這個物品。",
+      "buyAssetUnavailable": "資產中繼資料不可用。",
+      "buyPending": "購買中...",
+      "buyCreated": "鏈上購買已確認：{signature}",
+      "buyFailed": "購買交易失敗：{reason}",
+      "cancelListing": "取消",
+      "ownListing": "你的掛單",
+      "cancelCreated": "掛單已取消。",
+      "expandDetails": "詳情",
+      "collapseDetails": "收起詳情",
+      "detailTitle": "掛單詳情",
+      "detailClose": "關閉掛單詳情",
+      "cardAria": "{name}，{price} {currency}",
+      "detailItem": "物品",
+      "detailSeller": "賣家",
+      "detailSource": "來源",
+      "detailInventory": "庫存",
+      "detailPayment": "付款",
+      "detailRequirement": "購買條件",
+      "detailUnknown": "未知",
+      "paymentNck": "需要錢包擁有 NCK 代幣帳戶。",
+      "paymentSol": "從錢包 SOL 餘額支付。",
+      "sampleListing": "示例掛單",
+      "loadingListings": "正在載入掛單...",
+      "chainListingLoadFailed": "鏈上掛單暫時不可用。",
+      "chainListingName": "鏈上資源掛單",
+      "chainListingMeta": "{source} 第 {slot} 格",
+      "sourceBackpack": "背包",
+      "sourceHotbar": "工具列",
+      "sourceAsset": "鏈上資產",
+      "listingUnavailable": "掛單不可用",
+      "selfPurchase": "不能購買自己的掛單",
+      "nckTokenMissing": "錢包沒有 NCK 代幣帳戶",
+      "stepSelectItem": "1. 選擇物品",
+      "stepListingDraft": "2. 掛單草稿",
+      "inventoryEyebrow": "背包 + 工具列",
+      "inventoryTitle": "選擇一個物品掛單",
+      "listingEyebrow": "掛單草稿",
+      "noSelection": "尚未選擇物品",
+      "categoryLabel": "分類",
+      "currencyLabel": "幣種",
+      "priceLabel": "價格",
+      "pricePlaceholder": "0.00",
+      "formHint": "選擇物品，設定分類和價格，然後建立鏈上掛單。",
+      "createListing": "建立掛單",
+      "noOrders": "暫無活躍訂單",
+      "noOrdersMeta": "錢包訂單會顯示在這裡。",
+      "noListings": "沒有匹配的掛單",
+      "noListingsMeta": "換一個分類或搜尋詞試試。",
+      "noInventoryItems": "沒有可掛單物品",
+      "noInventoryItemsMeta": "裝備背包或在工具列保留工具後即可建立掛單。",
+      "hotbarSlotMeta": "工具列第 {slot} 格",
+      "invalidListing": "請選擇物品並輸入有效價格。",
+      "listingPending": "請確認交易以建立鏈上掛單。",
+      "listingCreated": "鏈上掛單已建立：{signature}",
+      "listingFailed": "掛單交易失敗：{reason}",
+      "cancelPending": "取消中...",
+      "cancelFailed": "取消交易失敗：{reason}"
+    },
+    "smelting": {
+      "open": "開啟熔煉台",
+      "close": "關閉熔煉台",
+      "eyebrow": "鍛造材料準備",
+      "title": "熔煉台",
+      "modePreview": "本地預覽",
+      "noBackpackShort": "無背包",
+      "backpackCount": "{count}/{capacity}",
+      "inputEyebrow": "背包資源",
+      "inputTitle": "選擇一個已採集資源",
+      "resources": "可熔煉背包資源",
+      "furnaceEyebrow": "熱核心",
+      "furnaceTitle": "配方匹配",
+      "inputSlot": "輸入",
+      "fuelSlot": "燃料",
+      "fuelTitle": "燃料",
+      "fuel": "燃料",
+      "fuelHeat": "熱量等級 {tier}",
+      "outputEyebrow": "可鍛造輸出",
+      "outputTitle": "材料預覽",
+      "start": "開始熔煉",
+      "running": "熔煉中...",
+      "statusIdle": "選擇輸入和燃料。",
+      "statusSyncing": "正在同步已裝備背包...",
+      "statusNoInput": "選擇一個已採集資源。",
+      "statusNoFuel": "加入相容燃料。",
+      "statusHeatMissing": "所選燃料達不到需要的熱量等級。",
+      "statusReady": "可以預覽熔煉。",
+      "statusRunning": "正在加熱資源樣本...",
+      "statusComplete": "鍛造材料預覽完成。",
+      "noResources": "這個背包裡沒有已採集資源。",
+      "noFuel": "背包裡沒有相容燃料。",
+      "selectInput": "選擇一個背包資源以預覽輸出。",
+      "outputName": "{kind}{resource}",
+      "outputDescription": "從 {resource} 提煉出的可鍛造材料批次，元素區間仍綁定原始採集座標。",
+      "requiredHeat": "所需熱量",
+      "yieldRange": "產出區間",
+      "quality": "品質依據",
+      "heatMet": "已滿足等級 {tier}",
+      "heatMissing": "需要等級 {required}，燃料 {fuel}",
+      "previewOnly": "僅預覽：熔煉合約尚未提交。",
+      "kindChar": "碳化",
+      "kindBiochar": "生物炭",
+      "kindCeramic": "燒結",
+      "kindBloom": "精煉",
+      "kindStabilized": "穩定化",
+      "kindMaterial": "加工"
+    },
+    "block": {
+      "unknown": "Unknown Block",
+      "grass": "Grass",
+      "dirt": "Dirt",
+      "stone": "Stone",
+      "deepStone": "Deep Stone",
+      "sand": "Sand",
+      "sandstone": "Sandstone",
+      "gravel": "Gravel",
+      "clay": "Clay",
+      "mud": "Mud",
+      "dryDirt": "Dry Dirt",
+      "saltFlat": "Salt Flat",
+      "snow": "Snow",
+      "ice": "Ice",
+      "frozenSoil": "Frozen Soil",
+      "basalt": "Basalt",
+      "ash": "Ash",
+      "bedrock": "Bedrock",
+      "water": "Water",
+      "swampWater": "Swamp Water",
+      "toxicWater": "Toxic Water",
+      "lava": "Lava",
+      "quicksand": "Quicksand",
+      "trunk": "Log",
+      "trunkDark": "Dark Log",
+      "leaves": "Leaves",
+      "leavesDark": "Dark Leaves",
+      "leavesLight": "Light Leaves",
+      "leavesTeal": "Teal Leaves",
+      "leavesWarm": "Warm Leaves",
+      "pineTrunk": "Pine Log",
+      "pineLeaves": "Pine Leaves",
+      "snowLeaves": "Snowy Leaves",
+      "deadWood": "Dead Wood",
+      "giantRoot": "Giant Root",
+      "grassPlant": "Grass Plant",
+      "dryGrass": "Dry Grass",
+      "bush": "Bush",
+      "deadBush": "Dead Bush",
+      "cactus": "Cactus",
+      "reed": "Reed",
+      "swampGrass": "Swamp Grass",
+      "snowBush": "Snow Bush",
+      "thorn": "Thorn",
+      "moss": "Moss",
+      "lichen": "Lichen",
+      "vine": "Vine",
+      "glowMycelium": "Glow Mycelium",
+      "mushroom": "Mushroom",
+      "seaweed": "Seaweed",
+      "aquaticPlant": "Aquatic Plant",
+      "coral": "Coral",
+      "deadCoral": "Dead Coral",
+      "shellBed": "Shell Bed",
+      "flowerStem": "Flower Stem",
+      "flowerRed": "Red Flower",
+      "flowerYellow": "Yellow Flower",
+      "flowerBlue": "Blue Flower",
+      "flowerWhite": "White Flower"
+    }
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的種子體素世界協議。",
+    "navigationAria": "頁腳導航",
+    "socialAria": "NiceChunk 社交連結",
+    "home": "首頁",
+    "play": "進入世界",
+    "roadmap": "路書",
+    "docs": "文檔",
+    "guardian": "守護者",
+    "contracts": "合約",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有權利。"
+  },
+  "guardian": {
+    "meta": {
+      "title": "NiceChunk 守護者網路控制台"
+    },
+    "nav": {
+      "aria": "主導航",
+      "home": "首頁",
+      "roadbook": "路书",
+      "worldRules": "世界規則",
+      "resources": "資源",
+      "elements": "元素",
+      "fairness": "公平性",
+      "proofOfFrontier": "證明",
+      "guardians": "守護者",
+      "docs": "文档",
+      "enterWorld": "進入世界"
+    },
+    "hero": {
+      "eyebrow": "Guardian 接入層",
+      "title": "守護者網路控制台",
+      "body": "註冊一個非託管 Guardian，讓守护區域保持可存取，即時同步 Chunk 活動，并為本地遊戲服務提供支撑。只要稳定提供守护服務，Guardian 後续可以从守护區域的資源税收和交易税收中赚取 NCK，同时不託管玩家資產，也不替使用者簽名。",
+      "actionsAria": "守護者操作",
+      "registerAction": "註冊節點",
+      "registryAction": "查看登記表",
+      "metricsAria": "守護者登记狀態"
+    },
+    "visual": {
+      "aria": "守護者網路模型",
+      "core": "GUARDIAN"
+    },
+    "metrics": {
+      "network": "網路",
+      "networkValue": "Devnet-01",
+      "stake": "註冊费用",
+      "stakeValue": "100,000 NCK",
+      "region": "覆盖範圍",
+      "regionValue": "100 x 100 Chunks",
+      "contract": "合约",
+      "viewContract": "查看合约"
+    },
+    "register": {
+      "eyebrow": "註冊",
+      "title": "註冊節點",
+      "body": "為一個 100 x 100 Chunk 服務區域發布連接端點。節點掉线或不穩定會受到惩罚；稳定运行的節點，国库會以守護者奖励的形式逐步返回给註冊錢包。"
+    },
+    "wallet": {
+      "connect": "連接錢包",
+      "register": "註冊守護者",
+      "disconnected": "未連接"
+    },
+    "form": {
+      "chunkX": "Chunk X",
+      "chunkY": "Chunk Y",
+      "connection": "連接端點",
+      "connectionPlaceholder": "wss://101.32.242.209:8080",
+      "host": "IP 地址",
+      "hostPlaceholder": "101.32.242.209",
+      "port": "端口",
+      "operator": "操作员授權地址",
+      "operatorPlaceholder": "預設使用已連接錢包",
+      "useTls": "使用 WSS / TLS 傳輸",
+      "genesis": "創世守護者註冊",
+      "regionPreview": "區域",
+      "submit": "註冊并支付 100,000 NCK",
+      "close": "关闭"
+    },
+    "status": {
+      "ready": "准备就绪。",
+      "noWallet": "沒有檢测到 Solana 錢包。请安装 Phantom 或 Solflare。",
+      "walletConnected": "錢包已連接。",
+      "connectFailed": "連接失败。",
+      "confirmWallet": "请在錢包中確认註冊交易。",
+      "registered": "註冊成功。交易：{signature}",
+      "registerFailed": "註冊失败。",
+      "updateConfirm": "请在錢包中確认端點修改交易。",
+      "updated": "端點已更新。交易：{signature}",
+      "updateFailed": "端點更新失败。",
+      "invalidInteger": "{field} 必须是整數。"
+    },
+    "list": {
+      "eyebrow": "登記表",
+      "title": "活躍守護者",
+      "body": "開發網活躍 Guardian 區域列表。連接錢包後，你自己的守護者會优先显示并标记。",
+      "listView": "列表查看",
+      "mapView": "地图查看",
+      "refresh": "重新整理",
+      "loading": "正在載入登記表...",
+      "registryMissing": "守護者登記表尚未初始化。",
+      "registrySummary": "活躍守護者：{active}。累計註冊：{total}。",
+      "connectFirst": "请先連接錢包，再載入守護者登記表。",
+      "empty": "目前還沒有活躍守護者。",
+      "loadFailed": "載入守護者失败。"
+    },
+    "card": {
+      "title": "區域 {x}, {y}",
+      "chunkRange": "Chunk 範圍",
+      "owner": "錢包",
+      "wallet": "錢包",
+      "operator": "操作员",
+      "endpoint": "端點",
+      "chainAddress": "鏈地址",
+      "stake": "剩餘質押",
+      "proof": "最後證明",
+      "never": "从未提交",
+      "viewOnChain": "鏈上查看",
+      "mine": "我的",
+      "edit": "修改",
+      "save": "保存",
+      "cancel": "取消"
+    },
+    "map": {
+      "regionTitle": "Guardian {x}, {y}",
+      "chunkRange": "Chunks {minX}..{maxX}, {minY}..{maxY}",
+      "emptyRegion": "區域 {x}, {y}",
+      "axisX": "Chunk X",
+      "axisY": "Chunk Y",
+      "center": "中心 {x}, {y}"
+    },
+    "boundaries": {
+      "aria": "Guardian 职责边界",
+      "access": {
+        "title": "接入層",
+        "body": "Guardian 讓區域端點保持可存取，方便客户端發現并連接附近的 Chunk 服務。"
+      },
+      "realtime": {
+        "title": "即時通訊",
+        "body": "它支持區域活動的即時協作，但不會取代錢包簽名或鏈上結算。"
+      },
+      "nonCustodial": {
+        "title": "非託管流程",
+        "body": "Guardian 不託管玩家資產，不替使用者簽名，也不代表玩家處理 Solana 交易。"
+      }
+    },
+    "error": {
+      "insufficientSol": "已連接錢包需要少量開發網 SOL 支付交易手续费。",
+      "insufficientNck": "已連接錢包沒有足够的開發網 NCK 支付 100,000 NCK 註冊费用。",
+      "noPriorCredit": "这個錢包還沒有開發網 SOL 记录。註冊前请先领取開發網 SOL。",
+      "invalidTokenAccount": "NCK 代币账户不正確。请確认錢包持有開發網 NCK。",
+      "regionAlreadyActive": "这個區域已经有活躍守護者。",
+      "invalidConnection": "連接端點格式不正確。请使用 ws://主机:端口 或 wss://主机:端口，不要带路徑。",
+      "invalidHost": "主机格式不正確。请只填寫域名、IP 或主机名，不要带 http:// 或 wss://。",
+      "invalidPort": "端口必须在 1 到 65535 之間。",
+      "missingAdjacentGuardian": "非創世守護者必须上下左右至少相邻一個活躍守護者。",
+      "invalidAdjacentGuardian": "相邻區域 PDA 不正確，请重新整理頁面後重试。",
+      "noGenesisPermission": "創世守護者必须由開發錢包註冊。请切换到開發錢包，或不要勾選創世註冊。",
+      "genesisAlreadyRegistered": "創世守護者已经註冊过。",
+      "guardianNotActive": "这個守護者目前不是活躍狀態。",
+      "unknownProgramError": "Guardian 合约返回错误：{code}"
+    }
+  },
+  "ncm": {
+    "nav": {
+      "aria": "主導航",
+      "home": "首頁",
+      "roadbook": "路书",
+      "worldRules": "世界規則",
+      "resources": "資源",
+      "ncm": "NCM",
+      "elements": "元素",
+      "fairness": "公平",
+      "proofOfFrontier": "證明",
+      "guardians": "守護者",
+      "contracts": "合约",
+      "docs": "文档",
+      "enterWorld": "進入世界"
+    },
+    "page": {
+      "title": "NCM 鏈上 3D 資產格式",
+      "description": "NCM 是 NiceChunk 面向 Solana 遊戲设计的紧凑資產格式，可以把體素 3D 模型存成适合 PDA 记录的鏈上文本，不依赖 IPFS。"
+    },
+    "hero": {
+      "eyebrow": "鏈上 3D 資產格式",
+      "title": "我们设计 NCM，是為了讓 Solana 遊戲真正拥有鏈上的 3D 資產。",
+      "body": "NCM 是 NiceChunk 面向 Solana 和其他区塊鏈设计的紧凑 3D 資產格式。我们正在围绕这种格式做更深入的研發和探索，因為它能把體素資產压缩成极小的文本记录，讓客户端通过 RPC 直接读取、公開驗证，并且長期可用，不依赖 IPFS。",
+      "convert": "转换 VOX",
+      "sample": "載入示例",
+      "formatLabel": "格式前缀",
+      "formatBody": "把调色板、模型网格、缩放比例和合并長方體编码成 bit-pack 鏈上文本。"
+    },
+    "principles": {
+      "aria": "NCM 设计原則",
+      "rpc": {
+        "title": "RPC 原生读取",
+        "body": "客户端可以直接从账户數據读取文本，并立即重建 3D 模型。"
+      },
+      "public": {
+        "title": "永久公開",
+        "body": "資產和程序狀態一起儲存，不隐藏在可變的外部网关後面。"
+      },
+      "compact": {
+        "title": "成本敏感",
+        "body": "编码前先把同色體素合并成長方體，减少鏈上儲存體积。"
+      },
+      "portable": {
+        "title": "多鏈可用",
+        "body": "NCM 是纯文本格式，同一套資產表达可以用於不同鏈和运行时。"
+      }
+    },
+    "thesis": {
+      "aria": "NCM 设计意义",
+      "eyebrow": "為什么设计 NCM",
+      "title": "Solana 遊戲資產应该成為狀態的一部分，而不是挂在狀態旁边的一条 URL。",
+      "body": "NiceChunk 選择围绕 NCM 構建，是因為一個體素對象可以小到直接寫入程序拥有的 PDA。資產、規則和所有权能够一起移動，遊戲道具或 NFT 不再依赖某個外部网关持续在线。",
+      "metricsAria": "NCM 压缩示例",
+      "metricSource": "VOX 源文件",
+      "metricNcm": "NCM 记录",
+      "metricGirl": "村民女孩源文件",
+      "metricGirlNcm": "同一模型變成适合 PDA 的文本",
+      "metricGuy": "村民男孩源文件",
+      "metricGuyNcm": "约 400 字节級载荷"
+    },
+    "roadmap": {
+      "aria": "NCM 研發方向",
+      "pda": {
+        "title": "PDA 原生資源",
+        "body": "NCM 可以把小型角色、道具、装备和方塊装饰變成账户數據，Solana 客户端用普通 RPC 调用就能读取。"
+      },
+      "trade": {
+        "title": "更安全的 NFT 交易",
+        "body": "当視覺資產和資產记录一起儲存时，买家不需要相信 IPFS 网关、元數據服務器或可變 JSON 鏈接未來仍然可解析。"
+      },
+      "research": {
+        "title": "有用的压缩研究",
+        "body": "NCM 也是 NCM-DNA 探索的基礎：搜尋更短的確定性基因來复現同一個模型，并把資產压缩转化為有意义的计算。"
+      }
+    },
+    "converter": {
+      "eyebrow": "VOX 转 NCM",
+      "title": "浏览器本地转换器",
+      "body": "上传 MagicaVoxel .vox 文件。文件會在你的浏览器本地解析并转换成 NCM 文本。",
+      "dropTitle": "拖入或選择 .vox 文件",
+      "dropBody": "支持 MagicaVoxel 的 SIZE、XYZI 和 RGBA 數據塊。",
+      "mode": "模式",
+      "merge": "合并方塊",
+      "raw": "原始體素",
+      "height": "目标高度"
+    },
+    "license": {
+      "title": "示例署名",
+      "body": "示例 VOX 角色來自 OpenGameArt，作者 JoshMckay，授權為 CC-BY 4.0。"
+    },
+    "preview": {
+      "eyebrow": "即時预览",
+      "title": "未載入模型",
+      "titleLoaded": "NCM 模型",
+      "reset": "重置视角"
+    },
+    "output": {
+      "eyebrow": "NCM 输出",
+      "title": "紧凑鏈上文本",
+      "body": "可以把这段 payload 存入账户數據或程序拥有的資產记录。客户端无需 IPFS 就能解码。",
+      "placeholder": "NCM2:...",
+      "copy": "复制 NCM",
+      "download": "下载 .ncm"
+    },
+    "stats": {
+      "voxels": "原始體素",
+      "boxes": "NCM 方塊",
+      "chars": "文本字符",
+      "size": "原始尺寸"
+    },
+    "samples": {
+      "girl": "村民女孩",
+      "guy": "村民男孩"
+    },
+    "status": {
+      "ready": "准备就绪。",
+      "loadingSample": "正在載入 NCM 示例...",
+      "sampleLoaded": "示例已載入。",
+      "converting": "正在把 VOX 转换為 NCM...",
+      "converted": "转换完成。",
+      "copied": "NCM 已复制。",
+      "copyFailed": "复制失败。",
+      "downloaded": "NCM 已下载。",
+      "failed": "失败：{reason}"
+    }
+  },
+  "ncmDna": {
+    "nav": {
+      "aria": "主導航",
+      "home": "首頁",
+      "roadbook": "路书",
+      "worldRules": "世界規則",
+      "resources": "資源",
+      "ncm": "NCM",
+      "dna": "DNA 實驗室",
+      "elements": "元素",
+      "fairness": "公平",
+      "proofOfFrontier": "證明",
+      "contracts": "合约",
+      "enterWorld": "進入世界"
+    },
+    "page": {
+      "title": "NCM DNA 實驗室",
+      "description": "NCM DNA 實驗室會搜尋確定性的短基因，讓它可以生長出同一個規範長方體模型。"
+    },
+    "common": {
+      "yes": "是",
+      "no": "否",
+      "on": "開启",
+      "off": "关闭"
+    },
+    "hero": {
+      "eyebrow": "NCM 基因搜尋實驗",
+      "title": "NCM DNA 實驗室",
+      "body": "NCM DNA Lab 是一個面向鏈上 3D 資產的基因搜尋實驗室。它不尝试儲存每一個方塊，而是搜尋一段更短的確定性基因，讓模型可以从基因中重新生長出來。",
+      "pow": "未來，这种搜尋可以成為一种有用的 PoW：矿工消耗 CPU 算力寻找更短基因，降低 PDA 存储體积，并从节省出來的鏈上存储成本中获得奖励。"
+    },
+    "flow": {
+      "raw": "原始長方體模型",
+      "search": "NCM-DNA 基因搜尋",
+      "grow": "Grow(gene) 哈希匹配"
+    },
+    "target": {
+      "eyebrow": "目标模型",
+      "title": "確定性長方體目标",
+      "seed": "目标種子",
+      "source": "來源",
+      "ncmCharacter": "NCM 頁面角色",
+      "hiddenGene": "隐藏基因",
+      "rawVariation": "原始變體",
+      "ornaments": "装饰",
+      "generate": "生成目标",
+      "random": "随机目标",
+      "reveal": "显示隐藏基因"
+    },
+    "search": {
+      "eyebrow": "CPU 搜尋",
+      "title": "Worker 控制的基因搜尋",
+      "mode": "搜尋模式",
+      "seedSearch": "DNA 種子自由搜尋",
+      "ncmRandom": "NCM 角色随机搜尋",
+      "exact": "精確参數恢复",
+      "compression": "压缩搜尋",
+      "evolution": "進化搜尋",
+      "threads": "线程",
+      "auto": "自動",
+      "maxCandidates": "最大候選數",
+      "maxSeedLength": "最大 DNA 種子長度",
+      "start": "開始搜尋",
+      "continuous": "持续搜尋",
+      "pause": "暂停",
+      "resume": "继续",
+      "stop": "停止",
+      "reset": "重置"
+    },
+    "result": {
+      "eyebrow": "最佳結果",
+      "title": "種子与编译後的基因",
+      "seed": "最佳 DNA 種子",
+      "gene": "编译後的基因",
+      "copySeed": "复制種子",
+      "growSeed": "从種子创建",
+      "copy": "复制基因",
+      "grow": "生長基因",
+      "seedInput": "種子输入",
+      "seedPlaceholder": "NCS1.AV...",
+      "geneInput": "基因输入",
+      "genePlaceholder": "NCD1.HM..."
+    },
+    "viewer": {
+      "eyebrow": "3D 预览",
+      "title": "規範長方體模型",
+      "canvasAria": "NCM DNA 3D 模型查看器",
+      "modelAria": "查看器模型",
+      "renderAria": "渲染模式",
+      "target": "目标模型",
+      "best": "最佳基因模型",
+      "compare": "并排對比",
+      "diff": "差异视图",
+      "cuboid": "長方體",
+      "voxel": "體素",
+      "wireframe": "线框",
+      "resetCamera": "重置相机"
+    },
+    "cpu": {
+      "eyebrow": "CPU 友好",
+      "title": "為什么优先 CPU？",
+      "body": "NCM-DNA v1 使用規則型方塊生長语言，而不是 GPU 友好的體素坐标函數。搜尋过程中包含模板判断、分支、鏡像、重复、變長基因、cuboid 合并、标准化排序和 hash 校驗。这些任务更适合 CPU，也更符合 NiceChunk 想要的有用 PoW 方向。"
+    },
+    "chain": {
+      "eyebrow": "未來鏈上流程",
+      "title": "节省存储的提交路徑",
+      "step1": "資產 PDA 保存 canonical_model_hash 和 current_encoding。",
+      "step2": "矿工提交更短的基因。",
+      "step3": "程序驗证 grow(gene) 哈希等于 canonical_model_hash。",
+      "step4": "如果基因更短，則更新資產编码。",
+      "step5": "释放的 PDA 租金可在矿工、所有者和協議池之間分配。"
+    },
+    "metrics": {
+      "status": "狀態",
+      "candidates": "候選數",
+      "speed": "速度",
+      "speedValue": "{value}/秒",
+      "generation": "世代",
+      "bestGeneSize": "最佳基因大小",
+      "rawModelSize": "原始模型大小",
+      "ratio": "压缩率",
+      "score": "得分",
+      "targetHash": "目标哈希",
+      "bestHash": "最佳哈希",
+      "bestSeed": "最佳種子",
+      "seedLength": "種子長度",
+      "exact": "精確匹配",
+      "threads": "线程",
+      "threadValue": "{value}/{planned}",
+      "elapsed": "用时",
+      "saved": "节省",
+      "bytes": "{value} 字节"
+    },
+    "status": {
+      "idle": "空闲",
+      "running": "运行中",
+      "paused": "已暂停",
+      "stopped": "已停止",
+      "success": "成功"
+    },
+    "log": {
+      "eyebrow": "搜尋日志",
+      "title": "Worker 事件",
+      "targetGenerated": "目标已生成：{hash}",
+      "ncmTargetLoaded": "已載入 NCM 角色目标，共 {boxes} 個長方體。",
+      "workerError": "Worker 错误：{message}",
+      "searchStarted": "搜尋已開始。",
+      "continuousStarted": "持续搜尋已启動，使用 {threads} 個 Worker 线程。",
+      "searchPaused": "搜尋已暂停。",
+      "searchResumed": "搜尋已继续。",
+      "searchReset": "搜尋已重置。",
+      "best": "最佳得分 {score}：{gene}",
+      "success": "在 {candidates} 個候選後找到精確匹配。",
+      "copied": "基因已复制。",
+      "seedCopied": "種子已复制。",
+      "geneGrown": "基因已生長：{hash}",
+      "seedGrown": "種子已生長：{hash}",
+      "invalidGene": "无效基因：{message}",
+      "invalidSeed": "无效種子：{message}"
+    }
+  },
+  "resourceSimulator": {
+    "resource": {
+      "gravel": "碎石"
+    },
+    "material": {
+      "stone": "石頭",
+      "dirt": "泥土",
+      "sand": "沙子",
+      "unknown": "未知"
+    },
+    "debug": {
+      "aria": "資源模擬除錯記錄",
+      "enabled": "除錯模式已開啟",
+      "reward": "{material} -> +{amount} {resource}",
+      "noReward": "{material} -> +0 資源"
+    },
+    "page": {
+      "title": "NiceChunk 資源規則",
+      "navAria": "資源導覽",
+      "enterWorld": "進入世界",
+      "worldRules": "世界規則",
+      "eyebrow": "公開資源規則",
+      "heading": "方塊到資源發現的公開規則。",
+      "body": "NiceChunk 資源規則描述被破壞的方塊如何轉化為材料。這個頁面公開目前規則清單、確定性模擬器，以及後續可映射到鏈上驗證邏輯的事件格式。",
+      "statusAria": "模擬器狀態",
+      "statusLabel": "目前啟用規則",
+      "statusValue": "石頭方塊 -> 0.1 碎石",
+      "statusNote": "本地確定性預覽",
+      "statusGridAria": "資源規則狀態",
+      "statusCard": {
+        "rule": "規則 ID",
+        "source": "來源方塊",
+        "output": "產出資源",
+        "verification": "驗證方式",
+        "local": "本地確定性"
+      },
+      "ruleEyebrow": "規則清單",
+      "ruleTitle": "石頭挖掘規則",
+      "inputMaterial": "輸入材料",
+      "outputResource": "產出資源",
+      "outputAmount": "產出數量",
+      "condition": "條件",
+      "conditionValue": "只有被破壞的石頭方塊會產生這個資源。",
+      "simEyebrow": "確定性模擬器",
+      "tryTitle": "提交一個方塊測試",
+      "material": "材料",
+      "x": "X",
+      "y": "Y",
+      "z": "Z",
+      "simulate": "模擬發現",
+      "resultReward": "{material} 產生 +{amount} {resource}。",
+      "resultNoReward": "{material} 不符合目前規則。",
+      "flowEyebrow": "驗證流程",
+      "flowTitle": "這個測試如何映射到未來合約",
+      "flow1": "客戶端提交被破壞方塊的座標和材料。",
+      "flow2": "模擬器檢查材料是否為石頭。",
+      "flow3": "如果符合條件，返回確定性的資源獎勵。",
+      "flow4": "遊戲熱欄會清空非工具物品，並記錄產出的資源。",
+      "logEyebrow": "事件載荷",
+      "logTitle": "除錯事件格式"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk 方塊資源圖鑑",
+      "eyebrow": "生成方塊資源圖鑑",
+      "heading": "每一種生成方塊，都是公開資源規則。",
+      "body": "NiceChunk 會把地形方塊映射為有科學依據的資源基礎。每個方塊都會公開生成訊號、可能的元素組成區間，以及它在未來挖礦和鍛造經濟中的定位。",
+      "metricsAria": "圖鑑狀態",
+      "workspaceAria": "方塊資源圖鑑",
+      "filtersAria": "圖鑑篩選",
+      "filterTitle": "方塊類別",
+      "resultCount": "顯示 {count} 個",
+      "modelLabel": "組成模型",
+      "modelBody": "區間表示材料傾向，不是固定獎勵。後續真實資源產出可以繼續結合種子、座標、深度、生物群系和鏈上驗證狀態。",
+      "searchLabel": "搜尋方塊、元素或生成訊號",
+      "searchPlaceholder": "搜尋 grass、Si、volcanic...",
+      "empty": "目前篩選下沒有匹配的生成方塊。",
+      "blockAria": "打開 {name} 資源詳情",
+      "compositionTitle": "元素組成區間",
+      "physicalTitle": "密度與質量估算",
+      "densityLabel": "體積密度",
+      "dimensionsLabel": "實際方塊尺寸",
+      "volumeLabel": "計算體積",
+      "massLabel": "計算質量",
+      "notAvailable": "未知",
+      "signalsTitle": "生成訊號",
+      "visualTitle": "方塊視覺基因",
+      "metric": {
+        "blocks": "生成方塊",
+        "families": "方塊類別",
+        "elements": "關聯元素",
+        "ruleSet": "規則集"
+      },
+      "color": {
+        "0": "主表面",
+        "1": "側面",
+        "2": "頂部高光"
+      }
+    },
+    "category": {
+      "all": "全部方塊",
+      "terrain": "地形",
+      "fluids": "流體",
+      "geological": "地質",
+      "cold": "寒冷",
+      "volcanic": "火山",
+      "organic": "有機",
+      "plants": "植物",
+      "aquatic": "水域",
+      "anomaly": "稀有 / 異常"
+    },
+    "rarity": {
+      "Common": "常見",
+      "Uncommon": "不常見",
+      "Rare": "稀有",
+      "Anomaly": "異常"
+    },
+    "signal": {
+      "temperature": "溫度",
+      "humidity": "濕度",
+      "altitude": "海拔",
+      "slope": "坡度",
+      "rarity": "稀有度"
+    },
+    "block": {
+      "grass": {
+        "name": "草地方塊",
+        "source": "地表",
+        "description": "有生命的表层土方塊：矽酸盐土壤上覆盖一层薄薄的生物层，由湿度、坡度和森林密度共同塑造。"
+      },
+      "dirt": {
+        "name": "泥土",
+        "source": "浅层地下",
+        "description": "草地下方的风化土壤，混合了矽酸盐顆粒、黏土矿物、鐵氧化物、水分和有机残留。"
+      },
+      "stone": {
+        "name": "石头",
+        "source": "地下",
+        "description": "常见的矽酸盐岩石，是丘陵、峭壁、洞穴墙體和結構性挖掘的基礎地質材料。"
+      },
+      "deepStone": {
+        "name": "深层石",
+        "source": "深层地下",
+        "description": "更致密的下部地层岩石，鐵和鎂的傾向更高，用於生成浅层地壳以下的岩层。"
+      },
+      "sand": {
+        "name": "沙子",
+        "source": "地表",
+        "description": "以石英為主的顆粒沉积物，由沙漠、海滩、河流、湖泊和海底規則生成。"
+      },
+      "gravel": {
+        "name": "砾石",
+        "source": "地表 / 地下",
+        "description": "混合的破碎岩粒，组成會随附近地形明显變化，但整體仍以矽酸盐為主。"
+      },
+      "clay": {
+        "name": "黏土",
+        "source": "潮湿地表 / 地下",
+        "description": "细粒含水鋁矽酸盐沉积物，生成于潮湿、低坡度地形和邻水地层。"
+      },
+      "mud": {
+        "name": "泥浆",
+        "source": "潮湿地表",
+        "description": "含水量很高的土壤，带有有机質，常见于排水差、氧暴露有限的低洼湿地生態。"
+      },
+      "dryDirt": {
+        "name": "干土",
+        "source": "干燥地表",
+        "description": "脱水土壤，氫和有机组分较低，由低湿度地表規則生成。"
+      },
+      "saltFlat": {
+        "name": "盐滩",
+        "source": "沙漠斑塊",
+        "description": "干旱盆地蒸發後留下的蒸發岩壳，氯化鈉佔主導，并混有鎂、鈣、硫酸盐和含氧盐。"
+      },
+      "snow": {
+        "name": "雪",
+        "source": "寒冷地表",
+        "description": "在雪线以上或寒冷生物群系中生成的冻結降水层，可能含有微量矿物塵埃。"
+      },
+      "ice": {
+        "name": "冰",
+        "source": "冻結流體 / 稀有地表",
+        "description": "由寒冷流體和稀有雪原規則選中的固態水，相對简单但在环境規則中很重要。"
+      },
+      "frozenSoil": {
+        "name": "冻土",
+        "source": "寒冷地表 / 地下",
+        "description": "類似永久冻土的土壤，混合矿物顆粒、結合水冰和被保存的有机質。"
+      },
+      "basalt": {
+        "name": "玄武岩",
+        "source": "火山地表 / 地下",
+        "description": "由快速冷却的熔岩形成的深色鎂鐵質火山岩，相比普通石头更偏向鐵、鎂、鈣和鈦。"
+      },
+      "ash": {
+        "name": "火山灰",
+        "source": "火山地表",
+        "description": "火山生物群系中生成的细粒火山顆粒，化學上接近矽酸盐岩石，但孔隙更多，也更容易带硫酸盐傾向。"
+      },
+      "bedrock": {
+        "name": "基岩",
+        "source": "世界基底",
+        "description": "生成柱底部的協議基礎层。它表現為坚硬的基底岩，而不是固定的化學資源矿床。"
+      },
+      "water": {
+        "name": "水",
+        "source": "流體",
+        "description": "用於海洋、河流、湖泊和低洼水域覆盖的标准流體方塊，會根據生物群系产生少量溶解离子差异。"
+      },
+      "swampWater": {
+        "name": "沼泽水",
+        "source": "沼泽流體",
+        "description": "由沼泽和湿地規則生成的富有机質滞流水，化學组成包含溶解碳、硫、鐵和氮的痕量信号。"
+      },
+      "toxicWater": {
+        "name": "毒水",
+        "source": "汙染流體",
+        "description": "由汙染信号選中的危險流體。基礎仍然是水，但痕量金屬和硫化物會提高生物風險。"
+      },
+      "lava": {
+        "name": "熔岩",
+        "source": "火山流體",
+        "description": "由火山信号生成的熔融矽酸盐流體。组成遵循玄武質熔體，而不是普通幻想火焰。"
+      },
+      "quicksand": {
+        "name": "流沙",
+        "source": "沙漠地表",
+        "description": "由沙漠异常規則生成的含水松散沙陷阱，主要為二氧化矽，并含有足够水分降低力学稳定性。"
+      },
+      "trunk": {
+        "name": "树干",
+        "source": "树木",
+        "description": "由阔叶树規則生成的木質結構组织，主要由纤维素、木質素、水和矿物养分構成。"
+      },
+      "leaves": {
+        "name": "树叶",
+        "source": "树冠",
+        "description": "光合作用树冠方塊，化學上屬于有机组织，并带有含鎂叶绿素和营养痕量金屬。"
+      },
+      "pineTrunk": {
+        "name": "松树干",
+        "source": "松树",
+        "description": "树脂含量较高的针叶木，由寒冷、高海拔或常绿树規則生成。"
+      },
+      "pineLeaves": {
+        "name": "松针叶",
+        "source": "松树冠",
+        "description": "常绿针叶树冠，水分循环较低，并含有矿物营养痕量。"
+      },
+      "deadWood": {
+        "name": "枯木",
+        "source": "火山 / 干燥植被",
+        "description": "脱水或受熱胁迫的木材，氫含量较低，暴露碳比例较高。"
+      },
+      "giantRoot": {
+        "name": "巨型树根",
+        "source": "雨林植被",
+        "description": "由潮湿雨林規則生成的大型裸露根系，結構上屬于木質组织，但靠近土壤处更湿润且矿物更丰富。"
+      },
+      "grassPlant": {
+        "name": "草本植物",
+        "source": "地表植被",
+        "description": "由潮湿、低坡度地表規則選中的小型草本植物。"
+      },
+      "dryGrass": {
+        "name": "干草",
+        "source": "干燥植被",
+        "description": "來自低湿度地表的干燥草本材料，氫含量较低，碳浓度较高。"
+      },
+      "bush": {
+        "name": "灌木",
+        "source": "地表植被",
+        "description": "由森林、平原、山地和雨林植被規則生成的木質灌木层。"
+      },
+      "deadBush": {
+        "name": "枯灌木",
+        "source": "干燥 / 火山植被",
+        "description": "由沙漠和火山地表条件生成的干枯灌木残留物。"
+      },
+      "cactus": {
+        "name": "仙人掌",
+        "source": "沙漠植被",
+        "description": "由沙漠規則生成的储水多肉植物，化學上屬于有机组织，但結合水比例异常高。"
+      },
+      "reed": {
+        "name": "芦苇",
+        "source": "水边植被",
+        "description": "生成于沼泽、河流、湖泊和湿地流體附近的水边植物。"
+      },
+      "swampGrass": {
+        "name": "沼泽草",
+        "source": "沼泽地表",
+        "description": "湿地草层，包含有机组织，并受到滞流水沉积物汙染。"
+      },
+      "snowBush": {
+        "name": "雪地灌木",
+        "source": "寒冷植被",
+        "description": "耐寒灌木，常带雪霜色调，由山地和雪原植被規則選中。"
+      },
+      "thorn": {
+        "name": "荆棘",
+        "source": "干燥 / 火山植被",
+        "description": "來自干燥或火山地表的硬化防御性植物材料，富集碳質結構组织。"
+      },
+      "moss": {
+        "name": "苔藓",
+        "source": "潮湿地表 / 洞穴",
+        "description": "由潮湿森林、沼泽和邻近洞穴規則生成的湿润非木質生物垫。"
+      },
+      "lichen": {
+        "name": "地衣",
+        "source": "寒冷 / 岩石表面",
+        "description": "寒冷或岩石表面上的共生壳层，連接生物组织和矿物基質。"
+      },
+      "vine": {
+        "name": "藤蔓",
+        "source": "潮湿植被",
+        "description": "由潮湿生物群系和類似洞穴的湿润區域生成的攀缘植物，具有柔韌的富碳组织。"
+      },
+      "glowMycelium": {
+        "name": "發光菌丝",
+        "source": "洞穴植被",
+        "description": "來自地下潮湿空間的生物發光真菌垫，化學上屬于生物组织，并强化磷和硫信号。"
+      },
+      "mushroom": {
+        "name": "蘑菇",
+        "source": "潮湿 / 洞穴植被",
+        "description": "由稀有潮湿植被随机結果選中的真菌子實體。"
+      },
+      "seaweed": {
+        "name": "海藻",
+        "source": "海洋植被",
+        "description": "來自水下區域的海洋植物狀生物質，带有鈉、鉀、鎂和碘的痕量傾向。"
+      },
+      "aquaticPlant": {
+        "name": "水生植物",
+        "source": "淡水植被",
+        "description": "含水量很高的淡水植被，會从沉积物中吸收养分。"
+      },
+      "coral": {
+        "name": "珊瑚",
+        "source": "温暖海洋植被",
+        "description": "在温暖浅海条件中生成的碳酸鈣結構。"
+      },
+      "deadCoral": {
+        "name": "死亡珊瑚",
+        "source": "寒冷 / 汙染海洋植被",
+        "description": "由寒冷或汙染海洋規則選中的死亡碳酸鈣礁體材料。"
+      },
+      "shellBed": {
+        "name": "贝壳层",
+        "source": "稀有海滩 / 海底",
+        "description": "由贝壳碎片和碳酸盐顆粒堆积形成，作為稀有海岸和海底斑點生成。"
+      }
+    },
+    "tag": {
+      "plains": "平原",
+      "forest": "森林",
+      "rainforest": "雨林",
+      "general": "通用",
+      "mountain": "山地",
+      "cave": "洞穴",
+      "foundation": "基礎层",
+      "deepCave": "深层洞穴",
+      "desert": "沙漠",
+      "beach": "海滩",
+      "river": "河流",
+      "oceanFloor": "海底",
+      "wetland": "湿地",
+      "swamp": "沼泽",
+      "lake": "湖泊",
+      "desertEdge": "沙漠边缘",
+      "dryPlains": "干燥平原",
+      "evaporite": "蒸發岩",
+      "snowfield": "雪原",
+      "tundra": "苔原",
+      "frozenWater": "冻結水體",
+      "volcano": "火山",
+      "deepRock": "深层岩石",
+      "ejecta": "喷出物",
+      "unbreakable": "不可破坏",
+      "ocean": "海洋",
+      "corruption": "汙染",
+      "heat": "高熱",
+      "hazard": "危險",
+      "tree": "树木",
+      "dryBiome": "干燥生物群系",
+      "rareOrganic": "稀有有机物",
+      "succulent": "多肉植物",
+      "hazardPlant": "危險植物",
+      "humid": "潮湿",
+      "bioluminescent": "生物發光",
+      "aquatic": "水域",
+      "warmWater": "温暖水域",
+      "rare": "稀有",
+      "coldWater": "寒冷水域"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "氫",
+      "He": "氦",
+      "Li": "鋰",
+      "Be": "鈹",
+      "B": "硼",
+      "C": "碳",
+      "N": "氮",
+      "O": "氧",
+      "F": "氟",
+      "Ne": "氖",
+      "Na": "鈉",
+      "Mg": "鎂",
+      "Al": "鋁",
+      "Si": "矽",
+      "P": "磷",
+      "S": "硫",
+      "Cl": "氯",
+      "Ar": "氬",
+      "K": "鉀",
+      "Ca": "鈣",
+      "Sc": "鈧",
+      "Ti": "鈦",
+      "V": "釩",
+      "Cr": "鉻",
+      "Mn": "錳",
+      "Fe": "鐵",
+      "Co": "鈷",
+      "Ni": "鎳",
+      "Cu": "銅",
+      "Zn": "鋅",
+      "Ga": "鎵",
+      "Ge": "鍺",
+      "As": "砷",
+      "Se": "硒",
+      "Br": "溴",
+      "Kr": "氪",
+      "Rb": "銣",
+      "Sr": "鍶",
+      "Y": "釔",
+      "Zr": "鋯",
+      "Nb": "鈮",
+      "Mo": "鉬",
+      "Tc": "鎝",
+      "Ru": "釕",
+      "Rh": "銠",
+      "Pd": "鈀",
+      "Ag": "銀",
+      "Cd": "鎘",
+      "In": "銦",
+      "Sn": "錫",
+      "Sb": "銻",
+      "Te": "碲",
+      "I": "碘",
+      "Xe": "氙",
+      "Cs": "銫",
+      "Ba": "鋇",
+      "La": "鑭",
+      "Ce": "鈰",
+      "Pr": "鐠",
+      "Nd": "釹",
+      "Pm": "鉕",
+      "Sm": "釤",
+      "Eu": "銪",
+      "Gd": "釓",
+      "Tb": "鋱",
+      "Dy": "鏑",
+      "Ho": "鈥",
+      "Er": "鉺",
+      "Tm": "銩",
+      "Yb": "鐿",
+      "Lu": "鎦",
+      "Hf": "鉿",
+      "Ta": "鉭",
+      "W": "鎢",
+      "Re": "錸",
+      "Os": "鋨",
+      "Ir": "銥",
+      "Pt": "鉑",
+      "Au": "金",
+      "Hg": "汞",
+      "Tl": "鉈",
+      "Pb": "鉛",
+      "Bi": "鉍",
+      "Po": "釙",
+      "At": "砈",
+      "Rn": "氡",
+      "Fr": "鍅",
+      "Ra": "鐳",
+      "Ac": "錒",
+      "Th": "釷",
+      "Pa": "鏷",
+      "U": "鈾",
+      "Np": "錼",
+      "Pu": "鈽",
+      "Am": "鋂",
+      "Cm": "鋦",
+      "Bk": "鉳",
+      "Cf": "鉲",
+      "Es": "鑀",
+      "Fm": "鐨",
+      "Md": "鍆",
+      "No": "鍩",
+      "Lr": "鐒",
+      "Rf": "𬬻",
+      "Db": "𬭊",
+      "Sg": "𬭳",
+      "Bh": "𬭛",
+      "Hs": "𬭶",
+      "Mt": "鿏",
+      "Ds": "𫟼",
+      "Rg": "𬬭",
+      "Cn": "鎶",
+      "Nh": "鉨",
+      "Fl": "鈇",
+      "Mc": "鏌",
+      "Lv": "鉝",
+      "Ts": "鿬",
+      "Og": "鿫"
+    },
+    "description": {
+      "H": {
+        "short": "氫是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於燃料電池、储氫、生命化學、火箭推進和有機合成。",
+        "gameplayRole": "在 NiceChunk 中，氫會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "He": {
+        "short": "氦是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於低溫冷却、惰性封裝、气球、精密設備和低溫機器。",
+        "gameplayRole": "在 NiceChunk 中，氦會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Li": {
+        "short": "鋰是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、輕量化儲能、活泼化學反应和高階能量單元。",
+        "gameplayRole": "在 NiceChunk 中，鋰會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Be": {
+        "short": "鈹是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鈹會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "B": {
+        "short": "硼是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，硼會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "C": {
+        "short": "碳是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於有機鏈、碳纖維、燃料、鋼材强化、石墨導體和高階复合材料。",
+        "gameplayRole": "在 NiceChunk 中，碳會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "N": {
+        "short": "氮是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於肥料化學、保護氣氛、含能材料、冷卻系統和生物循環。",
+        "gameplayRole": "在 NiceChunk 中，氮會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "O": {
+        "short": "氧是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於氧化反應、助燃、生命維持、陶瓷、玻璃和氧化矿物。",
+        "gameplayRole": "在 NiceChunk 中，氧會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "F": {
+        "short": "氟是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於蝕刻、強腐蝕化工、高風險鹽類和高階含氟材料。",
+        "gameplayRole": "在 NiceChunk 中，氟會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ne": {
+        "short": "氖是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於霓虹光源、電漿显示、光學标识和稳定氣體舱。",
+        "gameplayRole": "在 NiceChunk 中，氖會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Na": {
+        "short": "鈉是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鈉會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mg": {
+        "short": "鎂是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鎂會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Al": {
+        "short": "鋁是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於輕量建築、導電框架、航空部件和耐腐蝕外壳。",
+        "gameplayRole": "在 NiceChunk 中，鋁會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Si": {
+        "short": "矽是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、太陽能材料、岩石化學和可程式化晶體系统。",
+        "gameplayRole": "在 NiceChunk 中，矽會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "P": {
+        "short": "磷是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，磷會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "S": {
+        "short": "硫是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，硫會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cl": {
+        "short": "氯是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，氯會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ar": {
+        "short": "氬是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於惰性气氛、焊接保护、密封加工和電漿灯。",
+        "gameplayRole": "在 NiceChunk 中，氬會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "K": {
+        "short": "鉀是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鉀會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ca": {
+        "short": "鈣是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鈣會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sc": {
+        "short": "鈧是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈧會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ti": {
+        "short": "鈦是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於輕量護甲、高强度工具、航空結構和高階機器。",
+        "gameplayRole": "在 NiceChunk 中，鈦會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "V": {
+        "short": "釩是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釩會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cr": {
+        "short": "鉻是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於不锈合金、耐腐蝕鍍層、硬質塗層和顏料系统。",
+        "gameplayRole": "在 NiceChunk 中，鉻會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mn": {
+        "short": "錳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，錳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fe": {
+        "short": "鐵是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於建築、機械、武器、磁性設備和鋼材合成。",
+        "gameplayRole": "在 NiceChunk 中，鐵會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Co": {
+        "short": "鈷是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於電池正极、强合金、顏料、磁體和高階工具。",
+        "gameplayRole": "在 NiceChunk 中，鈷會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ni": {
+        "short": "鎳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於不鏽鋼、電池、磁體、護甲合金和催化设备。",
+        "gameplayRole": "在 NiceChunk 中，鎳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cu": {
+        "short": "銅是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於導線、電子設備、馬達、導電方塊和銅合金。",
+        "gameplayRole": "在 NiceChunk 中，銅會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Zn": {
+        "short": "鋅是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋅會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ga": {
+        "short": "鎵是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於低熔點電子材料、化合物半導體、顯示材料和特殊液態金屬逻辑。",
+        "gameplayRole": "在 NiceChunk 中，鎵會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ge": {
+        "short": "鍺是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體晶圓、紅外光學、高階電子和晶體配方。",
+        "gameplayRole": "在 NiceChunk 中，鍺會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "As": {
+        "short": "砷是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，砷會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Se": {
+        "short": "硒是 NiceChunk 材料和鍛造詞彙表中的非金屬資源基礎，可用於生命材料、氣體化學、燃料、陶瓷、肥料和反應鏈。",
+        "gameplayRole": "在 NiceChunk 中，硒會作為非金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Br": {
+        "short": "溴是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，溴會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Kr": {
+        "short": "氪是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於惰性气氛、低溫系统、電漿照明、光學和保護性加工。",
+        "gameplayRole": "在 NiceChunk 中，氪會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rb": {
+        "short": "銣是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，銣會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sr": {
+        "short": "鍶是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鍶會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Y": {
+        "short": "釔是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釔會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Zr": {
+        "short": "鋯是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋯會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nb": {
+        "short": "鈮是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈮會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mo": {
+        "short": "鉬是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉬會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tc": {
+        "short": "鎝是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎝會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ru": {
+        "short": "釕是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，釕會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rh": {
+        "short": "銠是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，銠會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pd": {
+        "short": "鈀是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鈀會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ag": {
+        "short": "銀是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於頂級導電材料、光學材料、抗菌系统和貴金屬資源路線。",
+        "gameplayRole": "在 NiceChunk 中，銀會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cd": {
+        "short": "鎘是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎘會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "In": {
+        "short": "銦是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於顯示薄膜、觸控介面、焊料系统和专用電子材料。",
+        "gameplayRole": "在 NiceChunk 中，銦會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sn": {
+        "short": "錫是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，錫會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sb": {
+        "short": "銻是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，銻會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Te": {
+        "short": "碲是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，碲會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "I": {
+        "short": "碘是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，碘會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Xe": {
+        "short": "氙是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於離子引擎、閃光燈、麻醉化學和高階光學系统。",
+        "gameplayRole": "在 NiceChunk 中，氙會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cs": {
+        "short": "銫是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，銫會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ba": {
+        "short": "鋇是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鋇會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "La": {
+        "short": "鑭是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鑭會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ce": {
+        "short": "鈰是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鈰會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pr": {
+        "short": "鐠是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鐠會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nd": {
+        "short": "釹是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於永磁體、馬達、發馬達和稀土科技配方。",
+        "gameplayRole": "在 NiceChunk 中，釹會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pm": {
+        "short": "鉕是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鉕會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sm": {
+        "short": "釤是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，釤會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Eu": {
+        "short": "銪是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，銪會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Gd": {
+        "short": "釓是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，釓會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tb": {
+        "short": "鋱是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鋱會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Dy": {
+        "short": "鏑是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於高溫磁體、稀土馬達和精密電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鏑會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ho": {
+        "short": "鈥是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鈥會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Er": {
+        "short": "鉺是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鉺會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tm": {
+        "short": "銩是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，銩會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Yb": {
+        "short": "鐿是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鐿會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lu": {
+        "short": "鎦是 NiceChunk 材料和鍛造詞彙表中的鑭系元素資源基礎，可用於稀土磁體、光學、激光、螢光材料和高階電子。",
+        "gameplayRole": "在 NiceChunk 中，鎦會作為鑭系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hf": {
+        "short": "鉿是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉿會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ta": {
+        "short": "鉭是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鉭會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "W": {
+        "short": "鎢是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於高溫工具、硬質護甲、重型武器、熔爐和耐熱機器。",
+        "gameplayRole": "在 NiceChunk 中，鎢會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Re": {
+        "short": "錸是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，錸會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Os": {
+        "short": "鋨是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鋨會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ir": {
+        "short": "銥是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，銥會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pt": {
+        "short": "鉑是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於催化剂、燃料電池、精密設備、貴金屬合金和高價值科技配方。",
+        "gameplayRole": "在 NiceChunk 中，鉑會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Au": {
+        "short": "金是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於高價值電子、精密觸點、装饰、金庫資產和協議級收藏品。",
+        "gameplayRole": "在 NiceChunk 中，金會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hg": {
+        "short": "汞是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於液態金屬设备、感測器、毒性陷阱和密封特殊裝備。",
+        "gameplayRole": "在 NiceChunk 中，汞會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Tl": {
+        "short": "鉈是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉈會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pb": {
+        "short": "鉛是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於輻射屏蔽、配重、低熔點合金和危險封裝方塊。",
+        "gameplayRole": "在 NiceChunk 中，鉛會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bi": {
+        "short": "鉍是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉍會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Po": {
+        "short": "釙是 NiceChunk 材料和鍛造詞彙表中的類金屬資源基礎，可用於半導體、玻璃、陶瓷晶體、光學部件和精密電子。",
+        "gameplayRole": "在 NiceChunk 中，釙會作為類金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "At": {
+        "short": "砈是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，砈會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rn": {
+        "short": "氡是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於放射性氣體陷阱、衰變檢测和密封危險研究。",
+        "gameplayRole": "在 NiceChunk 中，氡會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fr": {
+        "short": "鍅是 NiceChunk 材料和鍛造詞彙表中的碱金屬資源基礎，可用於電池、高反应化學、能量單元和密封儲存路線。",
+        "gameplayRole": "在 NiceChunk 中，鍅會作為碱金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ra": {
+        "short": "鐳是 NiceChunk 材料和鍛造詞彙表中的碱土金屬資源基礎，可用於矿物、陶瓷、結構化合物、合金和生物矿物循环。",
+        "gameplayRole": "在 NiceChunk 中，鐳會作為碱土金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ac": {
+        "short": "錒是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，錒會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Th": {
+        "short": "釷是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，釷會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pa": {
+        "short": "鏷是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鏷會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "U": {
+        "short": "鈾是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核燃料、輻射系统、終局能源和屏蔽工业鏈。",
+        "gameplayRole": "在 NiceChunk 中，鈾會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Np": {
+        "short": "錼是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，錼會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Pu": {
+        "short": "鈽是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於反應爐燃料、禁忌武器研究、高風險能源循环和後期協議材料。",
+        "gameplayRole": "在 NiceChunk 中，鈽會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Am": {
+        "short": "鋂是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鋂會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cm": {
+        "short": "鋦是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鋦會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bk": {
+        "short": "鉳是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鉳會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cf": {
+        "short": "鉲是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鉲會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Es": {
+        "short": "鑀是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鑀會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fm": {
+        "short": "鐨是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鐨會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Md": {
+        "short": "鍆是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鍆會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "No": {
+        "short": "鍩是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鍩會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lr": {
+        "short": "鐒是 NiceChunk 材料和鍛造詞彙表中的錒系元素資源基礎，可用於核能、輻射系统、屏蔽研究和終局危險材料。",
+        "gameplayRole": "在 NiceChunk 中，鐒會作為錒系元素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rf": {
+        "short": "𬬻是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬬻會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Db": {
+        "short": "𬭊是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭊會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Sg": {
+        "short": "𬭳是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭳會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Bh": {
+        "short": "𬭛是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭛會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Hs": {
+        "short": "𬭶是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬭶會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mt": {
+        "short": "鿏是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鿏會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ds": {
+        "short": "𫟼是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𫟼會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Rg": {
+        "short": "𬬭是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，𬬭會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Cn": {
+        "short": "鎶是 NiceChunk 材料和鍛造詞彙表中的过渡金屬資源基礎，可用於工业機器、武器、工具、合金、結構部件和導電系统。",
+        "gameplayRole": "在 NiceChunk 中，鎶會作為过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Nh": {
+        "short": "鉨是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉨會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Fl": {
+        "short": "鈇是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鈇會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Mc": {
+        "short": "鏌是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鏌會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Lv": {
+        "short": "鉝是 NiceChunk 材料和鍛造詞彙表中的後过渡金屬資源基礎，可用於特殊合金、軟金屬、屏蔽、低熔點配方和電子材料。",
+        "gameplayRole": "在 NiceChunk 中，鉝會作為後过渡金屬材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Ts": {
+        "short": "鿬是 NiceChunk 材料和鍛造詞彙表中的卤素資源基礎，可用於腐蝕化學、鹽類、蝕刻、毒性武器和高風險工业反应。",
+        "gameplayRole": "在 NiceChunk 中，鿬會作為卤素材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      },
+      "Og": {
+        "short": "鿫是 NiceChunk 材料和鍛造詞彙表中的稀有氣體資源基礎，可用於不穩定的終局世界規則碎片、放射性异常和實驗性協議材料。",
+        "gameplayRole": "在 NiceChunk 中，鿫會作為稀有氣體材料參與平衡：它定義加工路線、合成親和、視覺資源基因，以及玩家在種子 Chunk 中發現它时面對的價值与風險。"
+      }
+    },
+    "process": {
+      "alloy": "合金化",
+      "battery_grade_refine": "電池級精煉",
+      "capture": "捕集",
+      "cast": "鑄造",
+      "compress": "压缩",
+      "corrosion_resistant_container": "耐腐蝕容器",
+      "crush": "破碎",
+      "cryogenic_separate": "低溫分离",
+      "crystallize": "結晶",
+      "distill": "蒸馏",
+      "electrolyze": "電解",
+      "forge": "鍛造",
+      "high_temp_sinter": "高溫烧結",
+      "inert_atmosphere_process": "惰性气氛加工",
+      "ionize": "電离",
+      "isotope_separate": "同位素分离",
+      "mine": "開採",
+      "nuclear_refine": "核級精煉",
+      "oxidize": "氧化",
+      "precision_machine": "精密加工",
+      "quench": "淬火",
+      "radiation_shielding": "輻射屏蔽",
+      "reduce": "還原",
+      "refine": "精煉",
+      "sealed_capture": "密封捕集",
+      "semiconductor_refine": "半導體級精煉",
+      "sinter": "烧結",
+      "smelt": "熔煉",
+      "temper": "回火",
+      "vacuum_refine": "真空精煉",
+      "wash": "洗選"
+    },
+    "visual": {
+      "ceramic_crystal": "陶瓷晶體",
+      "copper_metal": "銅金屬",
+      "corrosive_gas": "腐蝕性氣體",
+      "faceted_crystal": "切面晶體",
+      "gold_metal": "金屬金",
+      "graphite_carbon": "石墨碳",
+      "liquid_metal": "液態金屬",
+      "matte_solid": "哑光固體",
+      "metalloid_crystal": "類金屬晶體",
+      "neon_glow_gas": "霓虹發光氣體",
+      "noble_gas": "稀有氣體",
+      "plasma_gas": "電漿氣體",
+      "radioactive_silver_metal": "放射性銀灰金屬",
+      "rough_crystal": "粗糙晶體",
+      "silver_metal": "銀白金屬",
+      "silvery_metal": "銀白金屬",
+      "solid_powder": "固體粉末",
+      "toxic_halogen": "毒性卤素",
+      "uranium_silver_metal": "鈾銀灰金屬",
+      "volatile_liquid": "挥發性液體",
+      "white_silvery_metal": "白銀色金屬",
+      "yellow_crystal": "黄色晶體",
+      "acid_gas": "酸性氣體",
+      "brushed_metal": "拉丝金屬",
+      "clear_gas": "透明氣體",
+      "corrosive_liquid": "腐蝕性液體",
+      "fresh_cut_metal": "新切金屬",
+      "glowing_rare_earth_veins": "發光稀土矿脈",
+      "halide_crystal": "卤化物晶體",
+      "mineral_metal": "矿物金屬",
+      "powdered_solid": "粉末固體",
+      "radioactive_veins": "放射性矿脈",
+      "soft_brushed_metal": "软質拉丝金屬",
+      "crystal_ore": "晶體矿石",
+      "metallic_ore_veins": "金屬矿脈",
+      "mineral_ore": "矿物矿石",
+      "powder_veins": "粉末矿脈",
+      "radioactive_cracked_ore": "放射性裂紋矿石",
+      "rare_earth_veins": "稀土矿脈",
+      "reactive_salt_ore": "活泼鹽類矿石",
+      "sealed_gas_pocket": "密封氣體囊",
+      "soft_metal_ore": "軟金屬矿石",
+      "corrosive_vapor": "腐蝕性蒸汽",
+      "glowing_dust": "發光塵埃",
+      "mineral_sparks": "矿物火花",
+      "radioactive_sparks": "放射性火花",
+      "soft_glow_mist": "柔和發光霧",
+      "pulse": "脈冲",
+      "slow_flow": "緩慢流動",
+      "subtle_shimmer": "轻微閃烁",
+      "unstable_flicker": "不穩定閃變"
+    },
+    "nav": {
+      "aria": "主導航",
+      "home": "首頁",
+      "roadbook": "路书",
+      "world": "世界",
+      "worldRules": "世界規則",
+      "economy": "经济",
+      "fairness": "公平",
+      "resources": "資源",
+      "elements": "元素",
+      "proofOfFrontier": "證明",
+      "guardians": "守護者",
+      "docs": "文档",
+      "enterWorld": "進入世界"
+    },
+    "page": {
+      "title": "NiceChunk 元素",
+      "shortTitle": "元素",
+      "navAria": "元素導航",
+      "enterWorld": "進入世界",
+      "resourceRules": "資源規則",
+      "eyebrow": "元素資源基礎",
+      "heading": "元素會成為資源。",
+      "body": "NiceChunk 使用 118 個真實化學元素作為未來資源、鍛造、材質視覺和可驗证遊戲規則的公開詞彙。",
+      "statsAria": "元素模型狀態",
+      "tableEyebrow": "週期表接口",
+      "tableTitle": "開放元素地图",
+      "filterAria": "元素分類篩選",
+      "filterAll": "全部",
+      "protocolAria": "元素協議說明",
+      "stat": {
+        "discovered": "已發現元素",
+        "elements": "真實化學元素",
+        "categories": "資源類別",
+        "natural": "天然候選元素",
+        "versioned": "規則集狀態"
+      },
+      "protocol": {
+        "resourceGene": {
+          "title": "資源基因",
+          "body": "每個元素都可以成為挖掘掉落、方塊配方和未來資產元數據里的確定性材料身份。"
+        },
+        "forgingInput": {
+          "title": "鍛造输入",
+          "body": "原子和物理特征會映射到未來的加工等級、温度要求、風險和工站逻辑。"
+        },
+        "visualGene": {
+          "title": "視覺基因",
+          "body": "顏色、金屬度、粗糙度、發光、矿脈、顆粒和裂紋等特征可以驅動體素材質表現。"
+        },
+        "verification": {
+          "title": "公開驗证",
+          "body": "这张表會作為公開規則數據，讓玩家在鏈上提交前檢查資源如何被分類。"
+        }
+      },
+      "tableAria": "化學元素週期表",
+      "legendAria": "元素類別",
+      "detailsEyebrow": "元素詳情",
+      "detailsTitle": "點击一個元素，查看它的屬性和加工要求。",
+      "detailsBody": "下面的加工要求是面向遊戲的佔位規則，用來定義元素類別未來如何成為挖掘資源、加工材料和可構造方塊。",
+      "detailListAria": "元素詳情列表",
+      "elementAria": "{name}，符号 {symbol}，原子序數 {atomicNumber}",
+      "detailHeading": "{name} ({symbol})",
+      "summary": "{name} 是第 {atomicNumber} 号元素。在 NiceChunk 里，它代表一种{category}資源，未來可以通过破坏方塊發現，并進入方塊構造規則。",
+      "blockValue": "{block} 区塊",
+      "processingTitle": "加工要求",
+      "constructionHint": "{name} 可以作為基礎{category}组件，在未來配方里參與構造新的可放置方塊。"
+    },
+    "detail": {
+      "back": "返回元素表",
+      "documentTitle": "NiceChunk 元素档案 | {symbol} {name}",
+      "missingTitle": "NiceChunk 元素档案 | {symbol}",
+      "fileEyebrow": "元素档案",
+      "missingZh": "这個元素档案暂时不存在。",
+      "missingEn": "这個元素档案暂时不存在。",
+      "yes": "是",
+      "no": "否",
+      "notAvailable": "未知",
+      "sections": {
+        "identity": "基礎身份",
+        "atomic": "原子屬性",
+        "physical": "物理屬性",
+        "chemical": "化學屬性",
+        "game": "遊戲屬性",
+        "processing": "加工屬性",
+        "affinity": "合成傾向",
+        "visualGene": "視覺基因",
+        "description": "資源說明"
+      },
+      "field": {
+        "id": "元素 ID",
+        "atomicNumber": "原子序數",
+        "symbol": "符号",
+        "name": "名称",
+        "category": "元素類別",
+        "period": "週期",
+        "group": "族",
+        "block": "電子区塊",
+        "standardState": "标准狀態",
+        "naturalOccurrence": "自然存在",
+        "atomicMass": "原子質量",
+        "atomicRadiusPm": "原子半徑",
+        "covalentRadiusPm": "共價半徑",
+        "electronConfig": "電子排布",
+        "valenceElectrons": "價電子",
+        "commonOxidationStates": "常见氧化態",
+        "maxOxidationState": "最高氧化態",
+        "minOxidationState": "最低氧化態",
+        "densityKgM3": "密度",
+        "referenceDimensions": "参考尺寸",
+        "referenceMassKg": "参考質量",
+        "meltingPointC": "熔點",
+        "boilingPointC": "沸點",
+        "hardness": "硬度",
+        "toughness": "韌性",
+        "ductility": "延展性",
+        "brittleness": "脆性",
+        "electricalConductivity": "導電性",
+        "thermalConductivity": "導熱性",
+        "heatResistance": "耐熱性",
+        "magnetism": "磁性",
+        "transparencyTendency": "透明傾向",
+        "electronegativity": "電负性",
+        "reactivity": "反应性",
+        "stability": "稳定性",
+        "oxidationTendency": "氧化傾向",
+        "corrosiveness": "腐蝕性",
+        "toxicity": "毒性",
+        "radioactivity": "放射性",
+        "flammability": "可燃性",
+        "explosiveTendency": "爆炸傾向",
+        "acidBaseTendency": "酸碱傾向",
+        "rarity": "稀有度",
+        "baseValue": "基礎價值",
+        "miningDifficulty": "開採難度",
+        "refiningDifficulty": "精煉難度",
+        "processingDifficulty": "加工難度",
+        "industrialValue": "工业價值",
+        "weaponValue": "武器價值",
+        "technologyValue": "科技價值",
+        "buildingValue": "建築價值",
+        "energyValue": "能源價值",
+        "biologicalValue": "生物價值",
+        "hazardLevel": "危險等級",
+        "requiredTemperatureC": "所需温度",
+        "minFurnaceTier": "最低熔爐等級",
+        "minToolTier": "最低工具等級",
+        "requiredFuelTier": "所需燃料等級",
+        "oxygenSensitive": "對氧敏感",
+        "waterSensitive": "對水敏感",
+        "requiresInertAtmosphere": "需要惰性气氛",
+        "forgeable": "可鍛造",
+        "castable": "可鑄造",
+        "crystallizable": "可結晶",
+        "alloyable": "可合金化",
+        "preferredProcesses": "推荐工藝",
+        "risk": {
+          "oxidation": "氧化風險",
+          "explosion": "爆炸風險",
+          "vaporization": "汽化風險",
+          "contamination": "汙染風險",
+          "brittleness": "脆化風險"
+        },
+        "metalAffinity": "金屬親和",
+        "alloyAffinity": "合金親和",
+        "oxygenAffinity": "氧親和",
+        "carbonAffinity": "碳親和",
+        "hydrogenAffinity": "氫親和",
+        "siliconAffinity": "矽親和",
+        "sulfurAffinity": "硫親和",
+        "halogenAffinity": "卤素親和",
+        "crystalAffinity": "晶體親和",
+        "ceramicAffinity": "陶瓷親和",
+        "organicAffinity": "有机親和",
+        "gasAffinity": "氣體親和",
+        "energyAffinity": "能量親和",
+        "magneticMaterialAffinity": "磁性材料親和",
+        "structuralMaterialAffinity": "結構材料親和",
+        "opticalMaterialAffinity": "光學材料親和",
+        "electronicMaterialAffinity": "電子材料親和",
+        "baseColor": "基礎顏色",
+        "secondaryColor": "輔助顏色",
+        "oxidizedColor": "氧化顏色",
+        "darkStateColor": "暗態顏色",
+        "emissionColor": "發光顏色",
+        "materialLook": "材質外观",
+        "textureType": "紋理類型",
+        "oreTextureType": "矿石紋理",
+        "metallic": "金屬度",
+        "roughness": "粗糙度",
+        "transparency": "透明度",
+        "emissionStrength": "發光强度",
+        "grain": "顆粒感",
+        "scratchDensity": "劃痕密度",
+        "veinDensity": "矿脈密度",
+        "crackDensity": "裂紋密度",
+        "oxidationPattern": "氧化紋理",
+        "particleEffect": "粒子效果",
+        "animationEffect": "動画效果"
+      }
+    },
+    "category": {
+      "nonmetal": "非金屬",
+      "noble_gas": "稀有氣體",
+      "alkali_metal": "碱金屬",
+      "alkaline_earth_metal": "碱土金屬",
+      "metalloid": "類金屬",
+      "halogen": "卤素",
+      "post_transition_metal": "後过渡金屬",
+      "transition_metal": "过渡金屬",
+      "lanthanide": "鑭系元素",
+      "actinide": "錒系元素",
+      "unknown_properties": "未知屬性"
+    },
+    "state": {
+      "solid": "固態",
+      "liquid": "液態",
+      "gas": "气態",
+      "unknown": "未知"
+    },
+    "phase": {
+      "solid": "固態",
+      "liquid": "液態",
+      "gas": "气態",
+      "unknown": "未知"
+    },
+    "property": {
+      "atomicNumber": "原子序數",
+      "symbol": "符号",
+      "atomicMass": "原子量",
+      "category": "類別",
+      "phase": "狀態",
+      "group": "族",
+      "period": "週期",
+      "block": "電子区塊"
+    },
+    "processing": {
+      "tier": "加工等級",
+      "tierValue": "{tier} 級",
+      "station": {
+        "separator": "分离器",
+        "cryogenicTrap": "低溫捕集器",
+        "stabilizer": "稳定器",
+        "kiln": "窑爐",
+        "refiner": "精煉器",
+        "sealedReactor": "密封反应器",
+        "smelter": "熔煉爐",
+        "alloyForge": "合金鍛爐",
+        "magneticSeparator": "磁選器",
+        "shieldedReactor": "屏蔽反应器"
+      },
+      "heat": {
+        "low": "低溫",
+        "medium": "中温",
+        "high": "高溫",
+        "extreme": "极高溫"
+      },
+      "binder": {
+        "none": "不需要粘結剂",
+        "pressureCell": "压力舱",
+        "sealedCapsule": "密封胶囊",
+        "flux": "助熔剂",
+        "silicateMatrix": "矽酸盐基質",
+        "saltMatrix": "盐基質",
+        "ingotMold": "鑄锭模具",
+        "carbonFlux": "碳助熔剂",
+        "rareEarthFlux": "稀土助熔剂",
+        "containmentCore": "约束核心"
+      }
+    }
+  },
+  "forging": {
+    "title": "Nicechunk 鍛造台",
+    "appName": "鍛造台",
+    "sceneLabel": "鍛造場景",
+    "equipmentPreview": "裝備預覽",
+    "toolSlots": "工具格子",
+    "chainCode": "鏈代碼",
+    "resetView": "重設視角",
+    "panelEyebrow": "MVP 工作台",
+    "panelTitle": "工具鍛造",
+    "hammer": "鐵錘",
+    "tool": {
+      "gloves": "手套",
+      "hammer": "鐵錘",
+      "saw": "鋸子",
+      "handDrill": "手鑽",
+      "carvingKnife": "刻刀",
+      "axe": "斧頭",
+      "sprayGun": "噴槍",
+      "empty": "空"
+    },
+    "toolMenu": {
+      "sawTitle": "鋸子設定",
+      "drillTitle": "手鑽設定",
+      "direction": "方向",
+      "directionAuto": "自動",
+      "directionA": "方向 A",
+      "directionB": "方向 B",
+      "size": "大小",
+      "sizeSmall": "1 格",
+      "sizeMedium": "3 格",
+      "sizeLarge": "5 格"
+    },
+    "axis": {
+      "front": "前",
+      "up": "上",
+      "right": "右"
+    },
+    "resources": "資源",
+    "drafts": "草稿",
+    "draftList": "草稿列表",
+    "saveDraft": "保存草稿",
+    "newDraft": "新建草稿",
+    "noDrafts": "暫無草稿",
+    "draftName": "草稿 {index}",
+    "workpiece": "工件",
+    "material": "材料",
+    "heat": "熱度",
+    "mass": "質量",
+    "shape": "形狀",
+    "normalize": "整形",
+    "rotateX": "旋轉 X",
+    "rotateY": "旋轉 Y",
+    "rotateZ": "旋轉 Z",
+    "cast": "鑄造",
+    "clear": "清空",
+    "chainCodeTitle": "鑄造鏈代碼",
+    "chainCodeHint": "這段壓縮代碼保存組件、坐標、尺寸、材料與體素切割。",
+    "chainCodePlaceholder": "貼上鏈代碼即可生成可編輯工件。",
+    "generateCode": "生成",
+    "saveCode": "保存",
+    "copyCode": "複製代碼",
+    "close": "關閉",
+    "percent": "{value}%",
+    "massValue": "{value} 單位",
+    "shapeValue": "{x} x {y} x {z}",
+    "resource": {
+      "iron": {
+        "name": "鐵礦",
+        "detail": "堅硬工具核心"
+      },
+      "copper": {
+        "name": "銅礦",
+        "detail": "柔軟導電金屬"
+      },
+      "tin": {
+        "name": "錫礦",
+        "detail": "輕量合金材料"
+      },
+      "handle": {
+        "name": "握把",
+        "detail": "可綁定到手部的握持點"
+      },
+      "coal": {
+        "name": "煤炭",
+        "detail": "提升鍛造熱度"
+      }
+    },
+    "status": {
+      "ready": "就緒",
+      "hammerReady": "鐵錘啟用",
+      "glovesReady": "手套啟用",
+      "sawReady": "鋸子啟用",
+      "drillReady": "手鑽啟用",
+      "toolPending": "此工具尚未實作",
+      "orbitReady": "僅旋轉視角",
+      "dropReady": "放到鐵砧上",
+      "resourceAdded": "已加入資源",
+      "heatAdded": "熱度提升",
+      "empty": "請先加入礦石",
+      "miss": "未擊中面",
+      "hit": "面已壓縮",
+      "sawCut": "切口加深",
+      "sawComplete": "切口已打開",
+      "drillCut": "孔洞加深",
+      "drillThrough": "孔洞已打穿",
+      "castComplete": "物品已鑄造",
+      "castLocked": "鑄造物品會作為整體移動",
+      "castDisconnected": "工件必須接觸後才能鑄造",
+      "draftSaved": "草稿已保存",
+      "draftLoaded": "草稿已載入",
+      "shapeSettled": "已重建切割後主體",
+      "pieceRemoved": "工件已移除",
+      "noChainCode": "請先鑄造物品",
+      "chainCopied": "鏈代碼已複製",
+      "chainSaved": "鑄造物品已保存",
+      "chainLoaded": "鏈代碼已載入",
+      "invalidChainCode": "鏈代碼無效",
+      "normalized": "形狀已整形",
+      "rotated": "工件已旋轉",
+      "cleared": "工件已清空"
+    }
+  },
+  "mining": {
+    "title": "Nicechunk 挖礦",
+    "canvasLabel": "地下礦洞",
+    "player": {
+      "title": "新手礦工",
+      "wallet": "錢包"
+    },
+    "panel": {
+      "kicker": "當前礦洞",
+      "title": "線上用戶",
+      "depth": "礦洞深度",
+      "ore": "礦石",
+      "oreCount": "剩餘 {count}",
+      "contractAddress": "礦洞合約地址",
+      "hashrate": "總算力",
+      "blockTime": "平均出塊時間",
+      "totalBlocks": "總區塊",
+      "minedBlocks": "已挖區塊",
+      "remainingBlocks": "剩餘區塊",
+      "hashrateH": "{value} H/s",
+      "hashrateKh": "{value} KH/s",
+      "seconds": "{value} 秒",
+      "meters": "{value} 米"
+    },
+    "controls": {
+      "label": "挖礦控制",
+      "mine": "挖礦"
+    },
+    "inventory": {
+      "ore": "礦石",
+      "energy": "體力"
+    },
+    "status": {
+      "label": "狀態",
+      "ready": "準備挖礦",
+      "noTarget": "請瞄準發光礦脈",
+      "mined": "已採出礦石"
+    },
+    "userStatus": {
+      "mining": "正在中心礦脈附近挖礦",
+      "drilling": "正在鑽探側壁",
+      "hauling": "正在搬運礦車",
+      "scanning": "正在掃描礦石品質",
+      "resting": "正在恢復體力",
+      "yield": "{count} 礦石"
+    },
+    "system": {
+      "label": "電腦資訊",
+      "cpu": "CPU",
+      "memory": "記憶體",
+      "cores": "{count} 核心",
+      "memoryGb": "{value} GB",
+      "unknown": "未知"
+    },
+    "tools": {
+      "label": "工具",
+      "slot": "第 {slot} 格：{item}",
+      "drill": "採礦鑽機",
+      "scanner": "礦石掃描器",
+      "lantern": "礦洞提燈",
+      "hammer": "岩石錘"
+    }
+  },
+  "proofOfFrontier": {
+    "meta": {
+      "title": "短種子證明 | NiceChunk"
+    },
+    "common": {
+      "yes": "是",
+      "no": "否"
+    },
+    "nav": {
+      "aria": "主導覽",
+      "home": "首頁",
+      "roadbook": "路书",
+      "worldRules": "世界規則",
+      "resources": "资源",
+      "elements": "元素表",
+      "fairness": "公平模型",
+      "proofOfFrontier": "证明",
+      "guardians": "守护者",
+      "docs": "文件",
+      "enterWorld": "進入世界"
+    },
+    "hero": {
+      "eyebrow": "NiceChunk Proof of Short Seed",
+      "title": "短種子證明",
+      "subtitle": "礦工競爭為目前世界輪廓尋找最短的有效種子。",
+      "body": "在 NiceChunk 中，目前世界輪廓會被標準化為 Frontier Root。礦工需要尋找一個可以還原該輪廓的 Shape Seed。Seed 越短，表示它對世界輪廓的描述越高效。"
+    },
+    "concepts": {
+      "aria": "核心理念",
+      "boundary": {
+        "title": "Frontier Target",
+        "body": "当前世界轮廓会被标准化成 target_frontier_root。"
+      },
+      "context": {
+        "title": "Short Seed Mining",
+        "body": "矿工竞争寻找一个足够短的 Shape Seed 来还原当前轮廓。"
+      },
+      "meaningful": {
+        "title": "First Valid Wins",
+        "body": "谁最先提交通过验证的 Seed，谁完成本轮出块并获得模拟奖励。"
+      },
+      "tiny": {
+        "title": "Auto Retarget",
+        "body": "系统每分钟根据出块速度自动调整 max_seed_bytes。"
+      }
+    },
+    "demo": {
+      "aria": "短种子证明演示"
+    },
+    "grid": {
+      "eyebrow": "世界網格",
+      "title": "目前輪廓目標",
+      "legend": "地图图例",
+      "unlocked": "已解鎖",
+      "candidate": "候選",
+      "selected": "已選擇",
+      "canvas": "短种子证明网格"
+    },
+    "steps": {
+      "genesis": "创世 Chunk",
+      "find": "寻找候选 Chunk",
+      "select": "搜索 Seed",
+      "mine": "验证",
+      "update": "完成出块"
+    },
+    "panel": {
+      "aria": "算法状态",
+      "selected": {
+        "title": "Selected Chunk",
+        "coords": "坐标",
+        "status": "状态",
+        "neighbors": "已解锁邻居",
+        "reward": "预估奖励"
+      },
+      "seed": {
+        "title": "Short Seed Mining",
+        "epoch": "当前 Epoch",
+        "targetRoot": "Target Frontier Root",
+        "maxSeedBytes": "Max Seed Bytes",
+        "rawSeedBytes": "RAW 兜底字节",
+        "candidateBytes": "候选 Seed 字节",
+        "lastCalculations": "本次结果计算次数",
+        "currentEpochCalculations": "当前轮计算次数",
+        "bestBytes": "已接受最短 Seed 字节",
+        "blocksLastMinute": "最近一分钟出块",
+        "lastBlockAge": "上次出块距今",
+        "nextRetarget": "下次调难倒计时",
+        "difficultyStatus": "难度状态",
+        "stuckMinutes": "连续卡住分钟",
+        "miningStatus": "搜索状态",
+        "status": "难度状态"
+      },
+      "candidate": {
+        "title": "Candidate Seed",
+        "encoding": "编码",
+        "decodedRoot": "反解 Root",
+        "rootValid": "Root 匹配",
+        "lengthValid": "长度合格",
+        "canonical": "规范格式",
+        "seed": "Shape Seed"
+      },
+      "keys": {
+        "title": "Neighbor Keys"
+      },
+      "context": {
+        "title": "Neighbor Context",
+        "note": "由 N/E/S/W 四个方向的已解锁 Chunk Key 按固定顺序计算得出。"
+      },
+      "pow": {
+        "title": "Proof of Work",
+        "difficultyAria": "演示难度",
+        "easy": "简单",
+        "normal": "普通",
+        "hard": "困难",
+        "nonce": "Nonce",
+        "target": "Target",
+        "attempts": "尝试次数",
+        "rate": "模拟算力",
+        "currentHash": "当前 Hash",
+        "status": "状态"
+      },
+      "newKey": {
+        "title": "New Chunk Key"
+      }
+    },
+    "actions": {
+      "randomMine": "隨機挖礦",
+      "growWorld": "扩张世界",
+      "reset": "重置世界",
+      "startSearch": "开始搜索",
+      "searchOne": "搜索一个候选",
+      "submitCandidate": "提交候选 Seed",
+      "autoRun": "自动运行",
+      "autoSolve": "自动尝试提交",
+      "retargetNow": "立即调难",
+      "resetDifficulty": "重置难度",
+      "startMining": "開始挖礦",
+      "stop": "停止",
+      "mineStep": "單步計算",
+      "autoExpand": "自動擴張",
+      "stopAuto": "停止自動擴張",
+      "decodeSeed": "反解 Contour Seed",
+      "copySeed": "複製 Seed",
+      "copyState": "複製狀態 JSON",
+      "showLog": "顯示交易日誌",
+      "hideLog": "隱藏交易日誌"
+    },
+    "worldState": {
+      "title": "World State",
+      "unlocked": "已解锁 Chunk",
+      "candidates": "候选 Chunk",
+      "perimeter": "轮廓边数",
+      "frontierRoot": "Frontier Root",
+      "contourSeed": "Contour Seed",
+      "seedBytes": "Seed 字节",
+      "seedAttempts": "Seed 搜索次数",
+      "avgBlockTime": "平均出块时间",
+      "nextRetarget": "下次调难",
+      "nextRetargetValue": "还差 {count} 个区块",
+      "seedTargetValue": "左侧更难：最大 {max} 字节 / RAW {raw} 字节",
+      "difficulty": "当前难度"
+    },
+    "contour": {
+      "title": "Contour Encoding",
+      "body": "DecodeShapeSeed v1 支持 RAW_EDGES、PATH_RLE 和 RECT。RAW_EDGES 是兜底编码：当 max_seed_bytes 放宽到 RAW 长度时，任意有限轮廓都一定可解。",
+      "path": "简化轮廓路径",
+      "seed": "压缩后的 Contour Seed",
+      "seedLength": "{bytes} 字节，目标 <= {target} 字节",
+      "pasteSeed": "粘贴 Contour Seed 进行反解",
+      "pastePlaceholder": "在这里粘贴 NSS1|RAW|...、NSS1|PATH|... 或 NSS1|RECT|...。"
+    },
+    "formulas": {
+      "eyebrow": "NPoSS 公式",
+      "title": "seed_bytes <= max_seed_bytes",
+      "body": "演示不证明 Seed 是全世界最短，只证明它能还原当前 Frontier Root、格式规范，并且长度小于当前 max_seed_bytes 难度限制。"
+    },
+    "advanced": {
+      "eyebrow": "高级协议说明",
+      "title": "正式协议使用 commit-reveal",
+      "body": "演示页为了清晰直接 reveal Seed。正式协议应先提交 commit_hash，再在短暂延迟后 reveal seed 和 salt，避免别人复制有效 Seed 抢先提交。"
+    },
+    "transactions": {
+      "eyebrow": "模拟交易日志",
+      "title": "SeedBlock 事件",
+      "empty": "还没有 Seed 区块。搜索并提交有效 Seed 后会完成第一个 epoch。",
+      "nonce": "nonce",
+      "powHash": "pow_hash",
+      "chunkKey": "chunk_key",
+      "frontierRoot": "frontier_root",
+      "blockTime": "block_time",
+      "seedTarget": "seed_target"
+    },
+    "difficultyStatus": {
+      "hardening": "Hardening",
+      "stable": "Stable",
+      "relaxing": "Relaxing",
+      "guaranteed_solvable": "Guaranteed Solvable"
+    },
+    "encoding": {
+      "RAW_EDGES": "RAW_EDGES",
+      "PATH_RLE": "PATH_RLE",
+      "RECT": "RECT",
+      "UNION": "UNION"
+    },
+    "directions": {
+      "north": "North",
+      "east": "East",
+      "south": "South",
+      "west": "West"
+    },
+    "chunkStatus": {
+      "locked": "Locked",
+      "candidate": "Candidate",
+      "unlocked": "Unlocked"
+    },
+    "status": {
+      "idle": "Idle",
+      "mining": "Mining",
+      "searching": "Searching",
+      "autoRunning": "自动运行中：持续搜索并提交有效 Seed。",
+      "stopped": "Stopped",
+      "valid": "Valid Seed Found",
+      "noValidSeed": "当前 max_seed_bytes 下没有有效 Seed。",
+      "noCandidate": "请先搜索一个候选 Seed",
+      "rootMismatch": "Seed does not reconstruct the current frontier.",
+      "nonCanonical": "Seed is not canonical.",
+      "notCandidate": "请先选择候选 Chunk",
+      "seedTooLong": "Seed is valid but too long for current difficulty.",
+      "relaxed": "连续 10 分钟无新区块，Seed 长度目标已自动放宽。"
+    },
+    "messages": {
+      "locked": "This chunk has no unlocked neighbors. Frontier proof requires at least one confirmed neighbor key.",
+      "unlocked": "This chunk is already unlocked. Its key can now be used by adjacent chunks.",
+      "candidate": "This chunk can be mined because it touches the current world frontier.",
+      "decoded": "已从 Contour Seed 反解出 {count} 条边界边，并在地图上高亮显示。",
+      "invalidSeed": "这个 Contour Seed 无法反解，请粘贴有效的 nckc_ Seed。",
+      "seedCopied": "Contour Seed 已复制。",
+      "stateCopied": "世界状态 JSON 已复制。",
+      "copyFailed": "当前浏览器环境无法复制。"
+    }
+  }
+}

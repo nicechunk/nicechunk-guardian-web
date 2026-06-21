@@ -4,8 +4,10 @@ import {
   TransactionInstruction,
 } from "@solana/web3.js";
 
+const env = typeof process !== "undefined" ? process.env : {};
+
 export const NICECHUNK_CORE_PROGRAM_ID = new PublicKey(
-  process.env.NICECHUNK_CORE_PROGRAM_ID ?? "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
+  env.NICECHUNK_CORE_PROGRAM_ID ?? "9EhMCRYMJej1F21KzaA5Zao3khGGc5aJbDGbnxaogQHu",
 );
 export const GLOBAL_CONFIG_SEED = "global-config";
 export const GLOBAL_CONFIG_LEN = 293;

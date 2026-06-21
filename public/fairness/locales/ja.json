@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "language": "ja",
+    "label": "Japanese",
+    "version": "fairness-locale-ja-79747db2c57677d0",
+    "contentHash": "79747db2c57677d0"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上のシード型ボクセルワールドプロトコル。",
+    "navigationAria": "フッターナビゲーション",
+    "socialAria": "NiceChunk ソーシャルリンク",
+    "home": "ホーム",
+    "play": "ワールドへ",
+    "roadmap": "ロードブック",
+    "docs": "ドキュメント",
+    "guardian": "ガーディアン",
+    "contracts": "コントラクト",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. All rights reserved."
+  },
+  "meta": {
+    "title": "NiceChunk 公平性モデル"
+  },
+  "nav": {
+    "aria": "プライマリナビゲーション",
+    "home": "ホーム",
+    "roadbook": "ロードブック",
+    "docs": "ドキュメント",
+    "worldRules": "世界ルール",
+    "resources": "リソース",
+    "elements": "要素",
+    "fairness": "公平性",
+    "proofOfFrontier": "証明",
+    "enterWorld": "世界に入る",
+    "guardians": "ガーディアン"
+  },
+  "language": {
+    "aria": "言語"
+  },
+  "hero": {
+    "eyebrow": "公平性モデル",
+    "title": "プレイヤーがルールを検証できる場合にのみ、世界は公平になります。",
+    "subtitle": "NiceChunk は、パブリック シード ルール、再現可能な結果、バージョン管理されたアップグレード、wallet 所有のアクション、およびクライアント、Guardians、および Solana 間の明確な信頼境界を中心に設計されています。",
+    "verify": "Chunk を検証する",
+    "mining": "テストマイニングロール",
+    "docs": "ドキュメントを読む",
+    "principlesAria": "公平性の原則",
+    "principles": {
+      "seed": "同じ種、同じ世界",
+      "version": "ルールの変更はバージョン管理されます",
+      "wallet": "ウォレットはプレーヤーの意図に署名します",
+      "boundary": "信頼制限は明示的です"
+    },
+    "readout": {
+      "label": "検証ループ",
+      "value": "シード -> Chunk -> ハッシュ -> ルール バージョン"
+    }
+  },
+  "principles": {
+    "eyebrow": "原則",
+    "title": "公平性はシステム設計上の制約であり、スローガンではありません。",
+    "body": "プロジェクトは、プレイヤーがルールを調べ、主要な出力を再現し、どの部分がライブ、計画中、またはまだクライアント専用であるかを確認できるかどうかによって判断される必要があります。",
+    "cards": {
+      "deterministic": {
+        "title": "決定論的生成",
+        "body": "シード、chunk 座標、および生成バージョンは、すべての検証者に対して同じ地形結果を生成する必要があります。"
+      },
+      "reproducible": {
+        "title": "再現可能なロール",
+        "body": "リソースの検出は、サーバーの非表示のランダム性ではなく、可能な限りパブリック入力から導出される必要があります。"
+      },
+      "versioned": {
+        "title": "バージョン管理されたルール",
+        "body": "UI の変更、世界ルールの変更、経済ルールの変更、およびチェーン状態の変更は個別に追跡する必要があります。"
+      },
+      "boundary": {
+        "title": "信頼境界",
+        "body": "Web サイトには、何がクライアント専用なのか、Guardians が何を支援できるのか、何がオンチェーンで検証されることを意図しているのかを記載する必要があります。"
+      }
+    }
+  },
+  "verify": {
+    "eyebrow": "Chunk の検証",
+    "title": "誰でもパブリック入力から chunk を再構築できる必要があります。",
+    "body": "このデモでは、プレイ可能なワールドで使用されているものと同じワールド ジェネレーターと chunk レンダラーを使用します。 シードと chunk 座標を入力すると、クライアントがそれらのパブリック入力から構築する地形が表示されます。",
+    "demo": {
+      "eyebrow": "ライブ地形プレビュー",
+      "title": "メインゲーム Chunk",
+      "random": "ランダム",
+      "seed": "種子",
+      "chunkX": "Chunk X",
+      "chunkZ": "Chunk Y",
+      "canvasAria": "インタラクティブな chunk 地形プレビュー",
+      "controls": "ドラッグして回転します。 ホイールまたはピンチでズームします。"
+    },
+    "controls": {
+      "eyebrow": "パブリック入力",
+      "title": "シードとパラメータ"
+    },
+    "lock": {
+      "lockSeed": "ロックシード",
+      "unlockSeed": "シードのロックを解除する",
+      "lockChunkX": "ロック Chunk X",
+      "unlockChunkX": "Chunk X のロックを解除する",
+      "lockChunkZ": "ロック Chunk Y",
+      "unlockChunkZ": "Chunk Y のロックを解除する"
+    },
+    "metrics": {
+      "source": "ジェネレーター",
+      "height": "高さ範囲",
+      "biome": "バイオームミックス",
+      "terrain": "地形ハッシュ",
+      "version": "ルールバージョン",
+      "blocks": "可視ブロック"
+    },
+    "stats": {
+      "seed": "シード",
+      "chunk": "chunk",
+      "chunkSize": "chunkサイズ",
+      "seaLevel": "海面",
+      "heightRange": "高さ範囲",
+      "waterLevelRange": "水レベル範囲",
+      "waterCells": "水細胞",
+      "primaryBiomes": "主要バイオーム",
+      "primaryBlocks": "プライマリブロック",
+      "none": "なし"
+    },
+    "rules": {
+      "seed": {
+        "title": "パブリック入力契約",
+        "body": "検証者は、プレイヤーに表示できる値 (シード、chunk 座標、および世代バージョン) から開始します。"
+      },
+      "chain": {
+        "title": "将来のオンチェーンコミットメント",
+        "body": "クライアントとエクスプローラーがローカルで chunk を再計算している間、将来のチェーン レコードにコミットメント ハッシュを保存できます。"
+      }
+    }
+  },
+  "mining": {
+    "eyebrow": "マイニングプルーフ",
+    "title": "リソースの発見により、この結果が発生した理由が説明されるはずです。",
+    "body": "ライブアルファは進化する可能性がありますが、ターゲットモデルは単純です。すべての重要な経済的結果は明示的な入力から導出され、チェック可能なハッシュパスを生成する必要があります。",
+    "demo": {
+      "seed": "種子",
+      "block": "ブロック XYZ",
+      "nonce": "アクションナンス"
+    },
+    "rules": {
+      "roll": {
+        "title": "ハッシュ派生ロール",
+        "body": "ロールはシード、ブロック座標、chunk 座標、および nonce から計算されます。 これにより、証明が再現可能になります。"
+      },
+      "limit": {
+        "title": "Alpha の制限事項",
+        "body": "決済がオンチェーンで完全に検証されるまで、Web サイトは最終的な経済決済ではなく参照ロジックとして証明デモをラベル付けする必要があります。"
+      }
+    }
+  },
+  "status": {
+    "eyebrow": "ステータスマトリクス",
+    "title": "公平性の主張は、実装ステータスによって追跡されます。",
+    "table": {
+      "system": "システム",
+      "status": "ステータス",
+      "verification": "検証パス"
+    },
+    "rows": {
+      "world": {
+        "system": "シードされた chunk 生成",
+        "status": "Alpha の実装",
+        "verification": "公開シード、公開ルール、ローカル再計算、将来のチェーンコミットメント。"
+      },
+      "mining": {
+        "system": "マイニング成果証明",
+        "status": "参考モデル",
+        "verification": "ハッシュ派生ロールのデモ、計画された決済の検証。"
+      },
+      "forging": {
+        "system": "資産の偽造履歴",
+        "status": "計画中",
+        "verification": "レシピ入力、耐久性、出力メタデータ、将来の造幣記録。"
+      },
+      "watchers": {
+        "system": "Guardian ネットワーク",
+        "status": "近日公開予定",
+        "verification": "カストディなし、プレイヤーのトランザクション署名なし、リージョン利用可能ロールのみ。"
+      },
+      "governance": {
+        "system": "ルールのアップグレード",
+        "status": "計画中",
+        "verification": "バージョン管理された変更ログ、分離された UI/世界/経済/チェーン変更カテゴリ。"
+      }
+    }
+  },
+  "boundaries": {
+    "eyebrow": "信頼境界",
+    "title": "正直な公平性に関するページでは、まだ最終的なものではないものを開示しています。",
+    "body": "NiceChunk は、すべてのアルファ システムがすでに完全に分散化されているかのように振る舞うことを避けるべきです。 より強力な主張は、クライアント ロジックから検証可能なプロトコル状態へのパスを公開することです。",
+    "cards": {
+      "client": {
+        "title": "クライアント",
+        "body": "世界をレンダリングし、動きを予測し、プレビューを表示し、パブリック生成ロジックを再計算できます。"
+      },
+      "wallet": {
+        "title": "財布",
+        "body": "プレイヤーの意図に直接署名します。 プレーヤーのアセットは、プロジェクトによって制御される非表示の署名に依存すべきではありません。"
+      },
+      "watcher": {
+        "title": "Guardian",
+        "body": "リージョン間の到達可能性と通信を維持するのに役立ちます。 Guardians は資産を管理したり、プレイヤーのトランザクションに署名したりしません。"
+      },
+      "chain": {
+        "title": "Solana",
+        "body": "重要なアイデンティティ、資産、コミットメント、および経済状態のターゲット決済層。"
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "次へ",
+    "title": "完全なプロトコル文書を調べてください。",
+    "docs": "ドキュメントを開く",
+    "worldRules": "世界ルール",
+    "enterWorld": "世界に入る"
+  }
+}

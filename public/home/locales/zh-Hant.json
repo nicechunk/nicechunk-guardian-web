@@ -1,0 +1,179 @@
+{
+  "_meta": {
+    "language": "zh-Hant",
+    "label": "Traditional Chinese",
+    "version": "home-locale-zh-Hant-f14caeeeac036376",
+    "contentHash": "f14caeeeac036376"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的種子體素世界協議。",
+    "navigationAria": "頁腳導航",
+    "socialAria": "NiceChunk 社交連結",
+    "home": "首頁",
+    "play": "進入世界",
+    "roadmap": "路書",
+    "docs": "文檔",
+    "guardian": "守護者",
+    "contracts": "合約",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有權利。"
+  },
+  "meta": {
+    "title": "NiceChunk |一次擁有一個 chunk，擁有世界"
+  },
+  "nav": {
+    "aria": "主要導航",
+    "home": "首頁",
+    "roadbook": "路線手冊",
+    "world": "世界",
+    "worldRules": "世界規則",
+    "fairness": "公平",
+    "proofOfFrontier": "證明",
+    "economy": "經濟",
+    "watchers": "Guardians",
+    "resources": "資源",
+    "elements": "元素",
+    "docs": "文檔",
+    "enterWorld": "進入世界",
+    "guardians": "守護者"
+  },
+  "language": {
+    "aria": "語言"
+  },
+  "sideNav": {
+    "aria": "章節導航",
+    "intro": "簡介",
+    "world": "世界",
+    "economy": "經濟",
+    "watchers": "Guardians",
+    "roadmap": "路線圖"
+  },
+  "hero": {
+    "eyebrow": "Alpha 預覽直播",
+    "title": "擁有世界，一次一個 chunk。",
+    "subtitle": "NiceChunk 是一個由 Solana 驅動的體素世界，其中每個 chunk 都是由玩家播種、探索、挖掘和塑造的。探索土地、發現資源、打造資產，並加入圍繞可驗證遊戲狀態建構的持久世界經濟。",
+    "enterWorld": "進入世界",
+    "connectWallet": "連結錢包",
+    "readRoadbook": "閱讀路線手冊",
+    "readRules": "閱讀世界規則",
+    "statusAria": "產品狀態",
+    "badges": {
+      "alpha": "Alpha 預覽直播",
+      "solana": "Solana 錢包就緒",
+      "seeded": "種子 Chunk 引擎",
+      "watchers": "Guardian Network 即將推出"
+    }
+  },
+  "world": {
+    "eyebrow": "世界",
+    "title": "一個由種子生成、由玩家改變的世界。",
+    "body": "NiceChunk 不是固定地圖。世界透過 chunk 擴展了 chunk。地形、資源和玩家行為形成了可以驗證、交易和建構的持久狀態。每個探險家都有助於揭示世界。每個建設者都會留下痕跡。",
+    "seed": {
+      "eyebrow": "種子 Chunk",
+      "title": "活種子生成",
+      "body": "不斷變化的種子會創建一個新的 chunk 預覽，其中包含地形高度、水、森林、沙子、雪和資源提示。",
+      "label": "種子"
+    },
+    "readout": {
+      "protocol": "協議：種子塊引擎",
+      "state": "狀態：玩家可寫",
+      "verify": "驗證：確定性規則"
+    }
+  },
+  "gameplay": {
+    "explore": {
+      "title": "探索 Chunks",
+      "body": "進入基於瀏覽器的體素世界。穿越播種地形，發現新的 chunks，並找到值得佔領的地方。"
+    },
+    "mine": {
+      "title": "礦山資源",
+      "body": "打破障礙，揭示隱藏的資源，並將探索轉化為對世界經濟有用的材料。"
+    },
+    "forge": {
+      "title": "鍛造資產",
+      "body": "將原料組合成工具、藍圖、裝備和未來可交易的遊戲資產。"
+    },
+    "identity": {
+      "title": "玩家身份",
+      "body": "連結您的 wallet，建立您的玩家檔案，並在 NiceChunk 世界中記錄您的進度。"
+    },
+    "watchers": {
+      "title": "Guardian Network",
+      "body": "Guardian 節點有助於使區域可存取、支援即時通訊並為世界的去中心化協調做好準備。"
+    }
+  },
+  "economy": {
+    "eyebrow": "NCK 經濟",
+    "title": "NCK 為 NiceChunk 經濟提供動力。",
+    "body": "NCK 被設計為 NiceChunk 的核心實用代幣。它可用於創世訪問、世界內行動、鍛造系統、市場結算和未來治理機制。目標很簡單：讓世界經濟屬於探索、建造、開採和營運的參與者。",
+    "utilityEyebrow": "計劃公用事業",
+    "utility": {
+      "genesis": "Genesis Pass 存取連接到 NCK",
+      "actions": "世界中的動作和材料循環",
+      "forging": "鍛造系統和資產創建",
+      "market": "市場結算",
+      "governance": "未來世界治理機制"
+    }
+  },
+  "watchers": {
+    "eyebrow": "Guardian Network",
+    "title": "運行 Guardian。保持一個地區的活力。",
+    "body": "Guardian 節點是 NiceChunk 的存取層。他們不控制玩家資產或處理鏈上交易。相反，它們幫助各地區保持聯繫、提供即時通訊並支援當地的活動。隨著世界的發展，Guardians 成為維持 chunks 活力的基礎設施。",
+    "badges": {
+      "noCustody": "無資產託管",
+      "noTransactions": "無玩家交易處理",
+      "communication": "實時區域通信"
+    },
+    "animation": {
+      "aria": "Guardian 網路動畫",
+      "title": "Guardian 節點",
+      "body": "区域接入层"
+    },
+    "guardianConsole": "開啟守護者控制台"
+  },
+  "rules": {
+    "eyebrow": "開放世界規則",
+    "title": "透明的世界規則。",
+    "body": "NiceChunk 是圍繞開放生成規則建構的。 Chunks 由種子生成，玩家行為更新世界狀態，重要的經濟行為被設計為可驗證的。世界應該是可玩的，但也應該是可檢查的。",
+    "cta": "閱讀世界規則"
+  },
+  "roadmap": {
+    "eyebrow": "路线图",
+    "title": "從阿爾法世界預覽到玩家擁有的協議。",
+    "phase1": {
+      "title": "第 1 階段 - Alpha 世界預覽",
+      "body": "瀏覽器體素用戶端、wallet 連線、種子地形預覽、玩家設定。"
+    },
+    "phase2": {
+      "title": "第 2 階段 - 採礦和鍛造",
+      "body": "資源發現、區塊互動、材料邏輯、鍛造台、基礎資產循環。"
+    },
+    "phase3": {
+      "title": "第 3 階段 - NCK 經濟",
+      "body": "創世通行證、NCK 公用程式、市場結算、玩家擁有的資產層。"
+    },
+    "phase4": {
+      "title": "第 4 階段 - Guardian Network",
+      "body": "區域接觸節點，即時通訊，觀察者質押，區域級參與。"
+    },
+    "phase5": {
+      "title": "第五階段－世界治理",
+      "body": "領土規則、世界參數、玩家投票、長期協議治理。"
+    },
+    "readFull": "閱讀完整的路線手冊"
+  },
+  "footer": {
+    "aria": "页脚导航",
+    "tagline": "Solana 上的種子體素世界協議。",
+    "enterWorld": "进入世界",
+    "roadbook": "路线手册",
+    "worldRules": "世界规则",
+    "proofOfFrontier": "Proof of Frontier",
+    "nckEconomy": "NCK 經濟",
+    "watcherNetwork": "Guardian Network",
+    "whitepaper": "白皮书",
+    "fairness": "公平",
+    "github": "GitHub"
+  }
+}

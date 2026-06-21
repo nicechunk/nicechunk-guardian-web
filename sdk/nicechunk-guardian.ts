@@ -9,11 +9,13 @@ import {
   NICECHUNK_CORE_PROGRAM_ID,
 } from "./nicechunk-core.ts";
 
+const env = typeof process !== "undefined" ? process.env : {};
+
 export const NICECHUNK_GUARDIAN_PROGRAM_ID = new PublicKey(
-  process.env.NICECHUNK_GUARDIAN_PROGRAM_ID ?? "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
+  env.NICECHUNK_GUARDIAN_PROGRAM_ID ?? "6frJyJSirfEwsztsxijcJLe29LSaceET1wanXSFwPQyE",
 );
 export const DEVNET_NCK_MINT = new PublicKey(
-  process.env.NCK_MINT ?? "HSnWF5kjkWVrceW2SaSskScuLveUZE4gpthZ2ZXRPQPo",
+  env.NCK_MINT ?? "HSnWF5kjkWVrceW2SaSskScuLveUZE4gpthZ2ZXRPQPo",
 );
 export const GUARDIAN_REGISTRY_SEED = "guardian-registry";
 export const GUARDIAN_REGION_SEED = "guardian-region";

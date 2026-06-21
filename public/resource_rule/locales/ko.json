@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "language": "ko",
+    "label": "Korean",
+    "version": "resource-rule-locale-ko-71afdef547905bb3",
+    "contentHash": "71afdef547905bb3"
+  },
+  "siteFooter": {
+    "tagline": "Solana 기반 시드형 복셀 월드 프로토콜.",
+    "navigationAria": "푸터 내비게이션",
+    "socialAria": "NiceChunk 소셜 링크",
+    "home": "홈",
+    "play": "월드 입장",
+    "roadmap": "로드북",
+    "docs": "문서",
+    "guardian": "가디언",
+    "contracts": "컨트랙트",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. All rights reserved."
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "언어",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "Hydrogen",
+      "He": "Helium",
+      "Li": "Lithium",
+      "Be": "Beryllium",
+      "B": "Boron",
+      "C": "Carbon",
+      "N": "Nitrogen",
+      "O": "Oxygen",
+      "F": "Fluorine",
+      "Ne": "Neon",
+      "Na": "Sodium",
+      "Mg": "Magnesium",
+      "Al": "Aluminium",
+      "Si": "Silicon",
+      "P": "Phosphorus",
+      "S": "Sulfur",
+      "Cl": "Chlorine",
+      "Ar": "Argon",
+      "K": "Potassium",
+      "Ca": "Calcium",
+      "Sc": "Scandium",
+      "Ti": "Titanium",
+      "V": "Vanadium",
+      "Cr": "Chromium",
+      "Mn": "Manganese",
+      "Fe": "Iron",
+      "Co": "Cobalt",
+      "Ni": "Nickel",
+      "Cu": "Copper",
+      "Zn": "Zinc",
+      "Ga": "Gallium",
+      "Ge": "Germanium",
+      "As": "Arsenic",
+      "Se": "Selenium",
+      "Br": "Bromine",
+      "Kr": "Krypton",
+      "Rb": "Rubidium",
+      "Sr": "Strontium",
+      "Y": "Yttrium",
+      "Zr": "Zirconium",
+      "Nb": "Niobium",
+      "Mo": "Molybdenum",
+      "Tc": "Technetium",
+      "Ru": "Ruthenium",
+      "Rh": "Rhodium",
+      "Pd": "Palladium",
+      "Ag": "Silver",
+      "Cd": "Cadmium",
+      "In": "Indium",
+      "Sn": "Tin",
+      "Sb": "Antimony",
+      "Te": "Tellurium",
+      "I": "Iodine",
+      "Xe": "Xenon",
+      "Cs": "Caesium",
+      "Ba": "Barium",
+      "La": "Lanthanum",
+      "Ce": "Cerium",
+      "Pr": "Praseodymium",
+      "Nd": "Neodymium",
+      "Pm": "Promethium",
+      "Sm": "Samarium",
+      "Eu": "Europium",
+      "Gd": "Gadolinium",
+      "Tb": "Terbium",
+      "Dy": "Dysprosium",
+      "Ho": "Holmium",
+      "Er": "Erbium",
+      "Tm": "Thulium",
+      "Yb": "Ytterbium",
+      "Lu": "Lutetium",
+      "Hf": "Hafnium",
+      "Ta": "Tantalum",
+      "W": "Tungsten",
+      "Re": "Rhenium",
+      "Os": "Osmium",
+      "Ir": "Iridium",
+      "Pt": "Platinum",
+      "Au": "Gold",
+      "Hg": "Mercury",
+      "Tl": "Thallium",
+      "Pb": "Lead",
+      "Bi": "Bismuth",
+      "Po": "Polonium",
+      "At": "Astatine",
+      "Rn": "Radon",
+      "Fr": "Francium",
+      "Ra": "Radium",
+      "Ac": "Actinium",
+      "Th": "Thorium",
+      "Pa": "Protactinium",
+      "U": "Uranium",
+      "Np": "Neptunium",
+      "Pu": "Plutonium",
+      "Am": "Americium",
+      "Cm": "Curium",
+      "Bk": "Berkelium",
+      "Cf": "Californium",
+      "Es": "Einsteinium",
+      "Fm": "Fermium",
+      "Md": "Mendelevium",
+      "No": "Nobelium",
+      "Lr": "Lawrencium",
+      "Rf": "Rutherfordium",
+      "Db": "Dubnium",
+      "Sg": "Seaborgium",
+      "Bh": "Bohrium",
+      "Hs": "Hassium",
+      "Mt": "Meitnerium",
+      "Ds": "Darmstadtium",
+      "Rg": "Roentgenium",
+      "Cn": "Copernicium",
+      "Nh": "Nihonium",
+      "Fl": "Flerovium",
+      "Mc": "Moscovium",
+      "Lv": "Livermorium",
+      "Ts": "Tennessine",
+      "Og": "Oganesson"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk Box Resource Atlas",
+      "eyebrow": "GENERATED BLOCK RESOURCE ATLAS",
+      "heading": "Every generated block is a public resource rule.",
+      "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
+      "metricsAria": "Atlas status",
+      "workspaceAria": "Block resource atlas",
+      "filtersAria": "Atlas filters",
+      "filterTitle": "Block families",
+      "resultCount": "{count} shown",
+      "modelLabel": "Composition model",
+      "modelBody": "Ranges are material tendencies, not fixed rewards. Actual resource rolls can later use seed, coordinate, depth, biome, and chain-verified state.",
+      "searchLabel": "Search blocks, elements, or signals",
+      "searchPlaceholder": "Search grass, Si, volcanic...",
+      "empty": "No generated blocks match the current filters.",
+      "blockAria": "Open {name} resource details",
+      "compositionTitle": "Element composition range",
+      "physicalTitle": "Density and mass estimate",
+      "densityLabel": "Bulk density",
+      "dimensionsLabel": "Actual block dimensions",
+      "volumeLabel": "Calculated volume",
+      "massLabel": "Calculated mass",
+      "notAvailable": "Unknown",
+      "signalsTitle": "Generation signals",
+      "visualTitle": "Voxel visual gene",
+      "metric": {
+        "blocks": "Generated blocks",
+        "families": "Block families",
+        "elements": "Referenced elements",
+        "ruleSet": "Rule set"
+      },
+      "color": {
+        "0": "Primary face",
+        "1": "Side face",
+        "2": "Top highlight"
+      }
+    },
+    "category": {
+      "all": "All Blocks",
+      "terrain": "Terrain",
+      "fluids": "Fluids",
+      "geological": "Geological",
+      "cold": "Cold",
+      "volcanic": "Volcanic",
+      "organic": "Organic",
+      "plants": "Plants",
+      "aquatic": "Aquatic",
+      "anomaly": "Rare / Anomaly"
+    },
+    "rarity": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Anomaly": "Anomaly"
+    },
+    "signal": {
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "altitude": "Altitude",
+      "slope": "Slope",
+      "rarity": "Rarity"
+    },
+    "block": {
+      "grass": {
+        "name": "잔디 블록",
+        "source": "표면",
+        "description": "습도, 경사, 숲 밀도에 의해 형성되는 얇은 생물층 아래의 규산염 표토 블록입니다."
+      },
+      "dirt": {
+        "name": "흙",
+        "source": "얕은 지하",
+        "description": "잔디 아래의 풍화 토양으로, 규산염 입자, 점토 광물, 산화철, 수분, 유기 잔류물이 섞여 있습니다."
+      },
+      "stone": {
+        "name": "돌",
+        "source": "지하",
+        "description": "언덕, 절벽, 동굴 벽, 구조적 채굴의 기본 지질 재료가 되는 일반적인 규산염 암석입니다."
+      },
+      "deepStone": {
+        "name": "심층석",
+        "source": "깊은 지하",
+        "description": "얕은 지각 아래에서 생성되는 치밀한 하부 지층 암석으로, 철과 마그네슘 경향이 더 높습니다."
+      },
+      "sand": {
+        "name": "모래",
+        "source": "표면",
+        "description": "사막, 해변, 강, 호수, 해저 규칙으로 생성되는 석영 중심의 입상 퇴적물입니다."
+      },
+      "gravel": {
+        "name": "자갈",
+        "source": "표면 / 지하",
+        "description": "주변 지형에 따라 조성이 크게 달라지는 혼합 암석 파편이지만, 전체적으로 규산염이 주를 이룹니다."
+      },
+      "clay": {
+        "name": "점토",
+        "source": "습한 표면 / 지하",
+        "description": "습하고 경사가 낮은 지형과 물가 지층에서 생성되는 미세한 함수 알루미노규산염 퇴적물입니다."
+      },
+      "mud": {
+        "name": "진흙",
+        "source": "습한 표면",
+        "description": "배수가 나쁘고 산소 노출이 제한된 저지대 습지 생태에서 나타나는 유기물 함유 고수분 토양입니다."
+      },
+      "dryDirt": {
+        "name": "마른 흙",
+        "source": "건조 표면",
+        "description": "저습도 표면 규칙으로 생성되는 탈수 토양으로, 수소와 유기 성분이 적습니다."
+      },
+      "saltFlat": {
+        "name": "염전 지대",
+        "source": "사막 패치",
+        "description": "건조 분지의 증발 뒤 남는 증발암 껍질로, 염화나트륨이 주성분이며 마그네슘, 칼슘, 황산염, 산소염이 섞입니다."
+      },
+      "snow": {
+        "name": "눈",
+        "source": "한랭 표면",
+        "description": "설선 위나 추운 바이옴에서 생성되는 얼어붙은 강수층으로, 미량의 광물 먼지를 포함할 수 있습니다."
+      },
+      "ice": {
+        "name": "얼음",
+        "source": "동결 유체 / 희귀 표면",
+        "description": "찬 유체와 희귀 설원 규칙이 선택하는 물의 고체상입니다. 화학적으로 단순하지만 환경 규칙에서 중요합니다."
+      },
+      "frozenSoil": {
+        "name": "동토",
+        "source": "한랭 표면 / 지하",
+        "description": "광물 입자, 결합 얼음, 보존된 유기물이 섞인 영구동토형 토양입니다."
+      },
+      "basalt": {
+        "name": "현무암",
+        "source": "화산 표면 / 지하",
+        "description": "빠르게 식은 용암에서 생긴 어두운 고철질 화산암으로, 일반 돌보다 철, 마그네슘, 칼슘, 티타늄 경향이 높습니다."
+      },
+      "ash": {
+        "name": "화산재",
+        "source": "화산 표면",
+        "description": "화산 바이옴에서 생성되는 미세한 화산 입자로, 규산염 암석과 비슷하지만 더 다공성이며 황산염 경향이 큽니다."
+      },
+      "bedrock": {
+        "name": "기반암",
+        "source": "세계 기반",
+        "description": "생성 기둥 바닥의 프로토콜 기반층입니다. 고정 화학 광상이 아니라 단단한 기반암처럼 동작합니다."
+      },
+      "water": {
+        "name": "물",
+        "source": "유체",
+        "description": "바다, 강, 호수, 저지대 물 영역을 덮는 표준 유체 블록이며 바이옴에 따라 용존 이온이 조금 달라집니다."
+      },
+      "swampWater": {
+        "name": "늪물",
+        "source": "늪 유체",
+        "description": "늪과 습지 규칙으로 생성되는 유기물이 풍부한 정체수로, 탄소, 황, 철, 질소의 미량 신호를 포함합니다."
+      },
+      "toxicWater": {
+        "name": "독성 물",
+        "source": "오염 유체",
+        "description": "오염 신호가 선택하는 위험 유체입니다. 기본은 물이지만 미량 금속과 황화물이 생물학적 위험을 높입니다."
+      },
+      "lava": {
+        "name": "용암",
+        "source": "화산 유체",
+        "description": "화산 신호로 생성되는 용융 규산염 유체입니다. 일반 판타지 불이 아니라 현무질 용융물 조성을 따릅니다."
+      },
+      "quicksand": {
+        "name": "유사",
+        "source": "사막 표면",
+        "description": "사막 이상성으로 생성되는 물에 느슨해진 모래 함정입니다. 주로 실리카이며 충분한 수분이 기계적 안정성을 낮춥니다."
+      },
+      "trunk": {
+        "name": "나무줄기",
+        "source": "나무",
+        "description": "활엽수 규칙으로 생성되는 목질 구조 조직으로, 셀룰로오스, 리그닌, 물, 무기 영양분이 주를 이룹니다."
+      },
+      "leaves": {
+        "name": "잎",
+        "source": "수관",
+        "description": "광합성 수관 블록입니다. 유기 조직이며 마그네슘 함유 엽록소와 영양 미량 금속을 지닙니다."
+      },
+      "pineTrunk": {
+        "name": "소나무 줄기",
+        "source": "소나무",
+        "description": "추운 지역, 고지대, 상록수 규칙으로 생성되는 수지가 많은 침엽수 목재입니다."
+      },
+      "pineLeaves": {
+        "name": "소나무 잎",
+        "source": "소나무 수관",
+        "description": "수분 순환이 낮고 미량 무기 영양분을 포함하는 상록 침엽 수관입니다."
+      },
+      "deadWood": {
+        "name": "죽은 나무",
+        "source": "화산 / 건조 식생",
+        "description": "탈수되거나 열 스트레스를 받은 목재로, 수소가 적고 노출 탄소 비율이 높습니다."
+      },
+      "giantRoot": {
+        "name": "거대 뿌리",
+        "source": "열대우림 식생",
+        "description": "습한 열대우림 규칙에서 생성되는 큰 노출 뿌리 덩어리입니다. 목질이지만 토양 근처에서는 더 습하고 광물이 풍부합니다."
+      },
+      "grassPlant": {
+        "name": "초본 식물",
+        "source": "표면 식생",
+        "description": "습하고 경사가 낮은 표면 규칙이 선택하는 작은 초본 식물입니다."
+      },
+      "dryGrass": {
+        "name": "마른 풀",
+        "source": "건조 식생",
+        "description": "저습도 표면의 건조 초본 재료로, 수소가 적고 탄소 농도가 높습니다."
+      },
+      "bush": {
+        "name": "관목",
+        "source": "표면 식생",
+        "description": "숲, 평원, 산지, 열대우림 식생 규칙으로 생성되는 목질 관목층입니다."
+      },
+      "deadBush": {
+        "name": "죽은 관목",
+        "source": "건조 / 화산 식생",
+        "description": "사막과 화산 표면 조건으로 생성되는 말라 죽은 관목 잔재입니다."
+      },
+      "cactus": {
+        "name": "선인장",
+        "source": "사막 식생",
+        "description": "사막 규칙으로 생성되는 물 저장 다육식물입니다. 유기 조직이지만 결합수 비율이 비정상적으로 높습니다."
+      },
+      "reed": {
+        "name": "갈대",
+        "source": "물가 식생",
+        "description": "늪, 강, 호수, 습지 유체 가까이에서 생성되는 물가 식물입니다."
+      },
+      "swampGrass": {
+        "name": "늪풀",
+        "source": "늪 표면",
+        "description": "유기 조직을 포함하고 정체수 퇴적물의 영향을 받는 습지 풀층입니다."
+      },
+      "snowBush": {
+        "name": "눈 관목",
+        "source": "한랭 식생",
+        "description": "산지와 설원 식생 규칙이 선택하는 내한성 관목으로, 눈이나 서리 색조를 띠는 경우가 많습니다."
+      },
+      "thorn": {
+        "name": "가시",
+        "source": "건조 / 화산 식생",
+        "description": "건조하거나 화산성 표면에서 온 단단한 방어성 식물 재료로, 탄소 구조 조직이 풍부합니다."
+      },
+      "moss": {
+        "name": "이끼",
+        "source": "습한 표면 / 동굴",
+        "description": "습한 숲, 늪, 동굴 주변 규칙으로 생성되는 습윤한 비목질 생물 매트입니다."
+      },
+      "lichen": {
+        "name": "지의류",
+        "source": "한랭 / 암석 표면",
+        "description": "추운 표면이나 암석 표면의 공생 껍질로, 생물 조직과 광물 기질을 연결합니다."
+      },
+      "vine": {
+        "name": "덩굴",
+        "source": "습윤 식생",
+        "description": "습한 바이옴과 동굴 같은 습윤 영역에서 생성되는 유연하고 탄소가 풍부한 덩굴식물입니다."
+      },
+      "glowMycelium": {
+        "name": "발광 균사",
+        "source": "동굴 식생",
+        "description": "습한 지하 공간의 생물발광 균사 매트로, 인과 황 신호가 강화됩니다."
+      },
+      "mushroom": {
+        "name": "버섯",
+        "source": "습윤 / 동굴 식생",
+        "description": "희귀한 습윤 식생 무작위 결과로 선택되는 균류 자실체입니다."
+      },
+      "seaweed": {
+        "name": "해조류",
+        "source": "해양 식생",
+        "description": "수중 영역의 해양 식물형 바이오매스로, 나트륨, 칼륨, 마그네슘, 요오드 미량 경향을 지닙니다."
+      },
+      "aquaticPlant": {
+        "name": "수생 식물",
+        "source": "담수 식생",
+        "description": "퇴적물에서 영양분을 흡수하는 수분 함량 높은 담수 식생입니다."
+      },
+      "coral": {
+        "name": "산호",
+        "source": "온난 해양 식생",
+        "description": "따뜻한 얕은 바다 조건에서 생성되는 탄산칼슘 구조입니다."
+      },
+      "deadCoral": {
+        "name": "죽은 산호",
+        "source": "한랭 / 오염 해양 식생",
+        "description": "차갑거나 오염된 해양 규칙이 선택하는 죽은 탄산칼슘 암초 재료입니다."
+      },
+      "shellBed": {
+        "name": "조개층",
+        "source": "희귀 해변 / 해저",
+        "description": "조개 조각과 탄산염 입자가 쌓여 희귀한 해안 및 해저 반점으로 생성되는 층입니다."
+      }
+    },
+    "tag": {
+      "plains": "평원",
+      "forest": "숲",
+      "rainforest": "열대우림",
+      "general": "일반",
+      "mountain": "산지",
+      "cave": "동굴",
+      "foundation": "기반",
+      "deepCave": "심층 동굴",
+      "desert": "사막",
+      "beach": "해변",
+      "river": "강",
+      "oceanFloor": "해저",
+      "wetland": "습지",
+      "swamp": "늪",
+      "lake": "호수",
+      "desertEdge": "사막 가장자리",
+      "dryPlains": "건조 평원",
+      "evaporite": "증발암",
+      "snowfield": "설원",
+      "tundra": "툰드라",
+      "frozenWater": "얼어붙은 물",
+      "volcano": "화산",
+      "deepRock": "심층 암석",
+      "ejecta": "분출물",
+      "unbreakable": "파괴 불가",
+      "ocean": "해양",
+      "corruption": "오염",
+      "heat": "고열",
+      "hazard": "위험",
+      "tree": "나무",
+      "dryBiome": "건조 바이옴",
+      "rareOrganic": "희귀 유기물",
+      "succulent": "다육식물",
+      "hazardPlant": "위험 식물",
+      "humid": "습윤",
+      "bioluminescent": "생물발광",
+      "aquatic": "수생",
+      "warmWater": "온난 수역",
+      "rare": "희귀",
+      "coldWater": "한랭 수역"
+    }
+  }
+}

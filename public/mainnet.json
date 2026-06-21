@@ -1,0 +1,952 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "id": "nicechunk",
+    "name": "NICECHUNK",
+    "version": "0.1.63",
+    "minClientVersion": "0.1.21",
+    "network": "mainnet"
+  },
+  "updatePolicy": {
+    "entry": "/mainnet.json",
+    "strategy": "version-compare",
+    "cacheStorage": "localStorage",
+    "notes": "Client checks this file first. If a resource version matches local storage, reuse local content; otherwise fetch only that resource."
+  },
+  "i18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.locale.version.",
+      "localeDataPrefix": "nicechunk.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "locale-en-58ae3d7d4fa1e620",
+        "contentHash": "58ae3d7d4fa1e620",
+        "url": "/locales/en.json",
+        "bytes": 142243
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "locale-es-5282ff4f172d4d0f",
+        "contentHash": "5282ff4f172d4d0f",
+        "url": "/locales/es.json",
+        "bytes": 144456
+      },
+      "fr": {
+        "label": "French",
+        "version": "locale-fr-57ca2f192b28b187",
+        "contentHash": "57ca2f192b28b187",
+        "url": "/locales/fr.json",
+        "bytes": 145025
+      },
+      "de": {
+        "label": "German",
+        "version": "locale-de-78f43509c766a2ff",
+        "contentHash": "78f43509c766a2ff",
+        "url": "/locales/de.json",
+        "bytes": 144014
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "locale-ja-a7acbcdc7d55e3aa",
+        "contentHash": "a7acbcdc7d55e3aa",
+        "url": "/locales/ja.json",
+        "bytes": 147088
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "locale-ru-bc823e2ff205ed86",
+        "contentHash": "bc823e2ff205ed86",
+        "url": "/locales/ru.json",
+        "bytes": 158179
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "locale-ko-8a69beb66660b527",
+        "contentHash": "8a69beb66660b527",
+        "url": "/locales/ko.json",
+        "bytes": 145084
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "locale-zh-Hant-9460ad92f65fa67b",
+        "contentHash": "9460ad92f65fa67b",
+        "url": "/locales/zh-Hant.json",
+        "bytes": 134947
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "locale-zh-Hans-3d5f7acbd30fae51",
+        "contentHash": "3d5f7acbd30fae51",
+        "url": "/locales/zh-Hans.json",
+        "bytes": 135108
+      }
+    }
+  },
+  "homeI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.home.locale.version.",
+      "localeDataPrefix": "nicechunk.home.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "home-locale-en-2ae008cf96cfb95b",
+        "contentHash": "2ae008cf96cfb95b",
+        "url": "/home/locales/en.json",
+        "bytes": 7065
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "home-locale-es-1ff87ecb08196dec",
+        "contentHash": "1ff87ecb08196dec",
+        "url": "/home/locales/es.json",
+        "bytes": 7937
+      },
+      "fr": {
+        "label": "French",
+        "version": "home-locale-fr-4b19b3d521baaee8",
+        "contentHash": "4b19b3d521baaee8",
+        "url": "/home/locales/fr.json",
+        "bytes": 8187
+      },
+      "de": {
+        "label": "German",
+        "version": "home-locale-de-7cd6a66f78e6a0d2",
+        "contentHash": "7cd6a66f78e6a0d2",
+        "url": "/home/locales/de.json",
+        "bytes": 7757
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "home-locale-ja-1ed6859d44e738f2",
+        "contentHash": "1ed6859d44e738f2",
+        "url": "/home/locales/ja.json",
+        "bytes": 9177
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "home-locale-ru-89de847c07aacb45",
+        "contentHash": "89de847c07aacb45",
+        "url": "/home/locales/ru.json",
+        "bytes": 11462
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "home-locale-ko-1fb69d584de3a925",
+        "contentHash": "1fb69d584de3a925",
+        "url": "/home/locales/ko.json",
+        "bytes": 7937
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "home-locale-zh-Hant-f14caeeeac036376",
+        "contentHash": "f14caeeeac036376",
+        "url": "/home/locales/zh-Hant.json",
+        "bytes": 6820
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "home-locale-zh-Hans-90d0c7510c83e7a3",
+        "contentHash": "90d0c7510c83e7a3",
+        "url": "/home/locales/zh-Hans.json",
+        "bytes": 6895
+      }
+    }
+  },
+  "docsI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.docs.locale.version.",
+      "localeDataPrefix": "nicechunk.docs.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "docs-locale-en-38396b925639964b",
+        "contentHash": "38396b925639964b",
+        "url": "/docs/locales/en.json",
+        "bytes": 26705
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "docs-locale-es-3fcecd035c15b2c2",
+        "contentHash": "3fcecd035c15b2c2",
+        "url": "/docs/locales/es.json",
+        "bytes": 26753
+      },
+      "fr": {
+        "label": "French",
+        "version": "docs-locale-fr-13e5064bf54d44cb",
+        "contentHash": "13e5064bf54d44cb",
+        "url": "/docs/locales/fr.json",
+        "bytes": 26736
+      },
+      "de": {
+        "label": "German",
+        "version": "docs-locale-de-ce4f111e292c007a",
+        "contentHash": "ce4f111e292c007a",
+        "url": "/docs/locales/de.json",
+        "bytes": 26710
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "docs-locale-ja-312a25d0eebd4f29",
+        "contentHash": "312a25d0eebd4f29",
+        "url": "/docs/locales/ja.json",
+        "bytes": 26812
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "docs-locale-ru-d6d32bc39a630b0f",
+        "contentHash": "d6d32bc39a630b0f",
+        "url": "/docs/locales/ru.json",
+        "bytes": 26801
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "docs-locale-ko-7ca0260bdd3a4dd7",
+        "contentHash": "7ca0260bdd3a4dd7",
+        "url": "/docs/locales/ko.json",
+        "bytes": 26728
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "docs-locale-zh-Hant-51545ec1cc902270",
+        "contentHash": "51545ec1cc902270",
+        "url": "/docs/locales/zh-Hant.json",
+        "bytes": 26724
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "docs-locale-zh-Hans-98084956ef5cfdb3",
+        "contentHash": "98084956ef5cfdb3",
+        "url": "/docs/locales/zh-Hans.json",
+        "bytes": 25301
+      }
+    }
+  },
+  "roadmapI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.roadmap.locale.version.",
+      "localeDataPrefix": "nicechunk.roadmap.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "roadmap-locale-en-a8e2ce3b6302bc11",
+        "contentHash": "a8e2ce3b6302bc11",
+        "url": "/roadmap/locales/en.json",
+        "bytes": 17640
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "roadmap-locale-es-02b1b21dfc41ffbe",
+        "contentHash": "02b1b21dfc41ffbe",
+        "url": "/roadmap/locales/es.json",
+        "bytes": 20743
+      },
+      "fr": {
+        "label": "French",
+        "version": "roadmap-locale-fr-be9c00befb142577",
+        "contentHash": "be9c00befb142577",
+        "url": "/roadmap/locales/fr.json",
+        "bytes": 21563
+      },
+      "de": {
+        "label": "German",
+        "version": "roadmap-locale-de-df309d18f5670007",
+        "contentHash": "df309d18f5670007",
+        "url": "/roadmap/locales/de.json",
+        "bytes": 20028
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "roadmap-locale-ja-890bcbccb1dd126f",
+        "contentHash": "890bcbccb1dd126f",
+        "url": "/roadmap/locales/ja.json",
+        "bytes": 23499
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "roadmap-locale-ru-a01f85acff70350e",
+        "contentHash": "a01f85acff70350e",
+        "url": "/roadmap/locales/ru.json",
+        "bytes": 30690
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "roadmap-locale-ko-977495e7ccb19f00",
+        "contentHash": "977495e7ccb19f00",
+        "url": "/roadmap/locales/ko.json",
+        "bytes": 19881
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "roadmap-locale-zh-Hant-13f63c757c860cc4",
+        "contentHash": "13f63c757c860cc4",
+        "url": "/roadmap/locales/zh-Hant.json",
+        "bytes": 16554
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "roadmap-locale-zh-Hans-997ad8a5ee764c1d",
+        "contentHash": "997ad8a5ee764c1d",
+        "url": "/roadmap/locales/zh-Hans.json",
+        "bytes": 16269
+      }
+    }
+  },
+  "fairnessI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.fairness.locale.version.",
+      "localeDataPrefix": "nicechunk.fairness.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "fairness-locale-en-cee7c0ca92d891a7",
+        "contentHash": "cee7c0ca92d891a7",
+        "url": "/fairness/locales/en.json",
+        "bytes": 8153
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "fairness-locale-es-a0beb7f0675c6e29",
+        "contentHash": "a0beb7f0675c6e29",
+        "url": "/fairness/locales/es.json",
+        "bytes": 9393
+      },
+      "fr": {
+        "label": "French",
+        "version": "fairness-locale-fr-5863925b8ae21e6c",
+        "contentHash": "5863925b8ae21e6c",
+        "url": "/fairness/locales/fr.json",
+        "bytes": 9591
+      },
+      "de": {
+        "label": "German",
+        "version": "fairness-locale-de-fcf49325e66ac8b9",
+        "contentHash": "fcf49325e66ac8b9",
+        "url": "/fairness/locales/de.json",
+        "bytes": 9191
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "fairness-locale-ja-79747db2c57677d0",
+        "contentHash": "79747db2c57677d0",
+        "url": "/fairness/locales/ja.json",
+        "bytes": 10701
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "fairness-locale-ru-fca7b35e97847cd4",
+        "contentHash": "fca7b35e97847cd4",
+        "url": "/fairness/locales/ru.json",
+        "bytes": 13536
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "fairness-locale-ko-fd8d8308a110210f",
+        "contentHash": "fd8d8308a110210f",
+        "url": "/fairness/locales/ko.json",
+        "bytes": 9211
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "fairness-locale-zh-Hant-10308a7df962f8f9",
+        "contentHash": "10308a7df962f8f9",
+        "url": "/fairness/locales/zh-Hant.json",
+        "bytes": 7876
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "fairness-locale-zh-Hans-1f472bb863cb9806",
+        "contentHash": "1f472bb863cb9806",
+        "url": "/fairness/locales/zh-Hans.json",
+        "bytes": 7860
+      }
+    }
+  },
+  "elementsI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.elements.locale.version.",
+      "localeDataPrefix": "nicechunk.elements.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "elements-locale-en-d37eabd1f088e70e",
+        "contentHash": "d37eabd1f088e70e",
+        "url": "/elements/locales/en.json",
+        "bytes": 72790
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "elements-locale-es-ce05905463dc6e71",
+        "contentHash": "ce05905463dc6e71",
+        "url": "/elements/locales/es.json",
+        "bytes": 72803
+      },
+      "fr": {
+        "label": "French",
+        "version": "elements-locale-fr-546215b0244faa4d",
+        "contentHash": "546215b0244faa4d",
+        "url": "/elements/locales/fr.json",
+        "bytes": 72786
+      },
+      "de": {
+        "label": "German",
+        "version": "elements-locale-de-c63b910150948267",
+        "contentHash": "c63b910150948267",
+        "url": "/elements/locales/de.json",
+        "bytes": 72761
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "elements-locale-ja-dd413ad27119a57f",
+        "contentHash": "dd413ad27119a57f",
+        "url": "/elements/locales/ja.json",
+        "bytes": 72862
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "elements-locale-ru-55ef37aab44d2e1c",
+        "contentHash": "55ef37aab44d2e1c",
+        "url": "/elements/locales/ru.json",
+        "bytes": 72853
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "elements-locale-ko-b46f74ad7623e6aa",
+        "contentHash": "b46f74ad7623e6aa",
+        "url": "/elements/locales/ko.json",
+        "bytes": 72778
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "elements-locale-zh-Hant-2e1136ade7e6f2ba",
+        "contentHash": "2e1136ade7e6f2ba",
+        "url": "/elements/locales/zh-Hant.json",
+        "bytes": 65611
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "elements-locale-zh-Hans-e2922c673154f8b5",
+        "contentHash": "e2922c673154f8b5",
+        "url": "/elements/locales/zh-Hans.json",
+        "bytes": 65653
+      }
+    }
+  },
+  "resourceRuleI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.resourceRule.locale.version.",
+      "localeDataPrefix": "nicechunk.resourceRule.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "resource-rule-locale-en-da01409b7dd624fe",
+        "contentHash": "da01409b7dd624fe",
+        "url": "/resource_rule/locales/en.json",
+        "bytes": 16810
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "resource-rule-locale-es-b4048ecb1e55550d",
+        "contentHash": "b4048ecb1e55550d",
+        "url": "/resource_rule/locales/es.json",
+        "bytes": 18627
+      },
+      "fr": {
+        "label": "French",
+        "version": "resource-rule-locale-fr-83842de5fdb16122",
+        "contentHash": "83842de5fdb16122",
+        "url": "/resource_rule/locales/fr.json",
+        "bytes": 18817
+      },
+      "de": {
+        "label": "German",
+        "version": "resource-rule-locale-de-c8c6d5ae01254afa",
+        "contentHash": "c8c6d5ae01254afa",
+        "url": "/resource_rule/locales/de.json",
+        "bytes": 18416
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "resource-rule-locale-ja-5e5f0b304bfb11e6",
+        "contentHash": "5e5f0b304bfb11e6",
+        "url": "/resource_rule/locales/ja.json",
+        "bytes": 18265
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "resource-rule-locale-ru-86511ee91ad94f6a",
+        "contentHash": "86511ee91ad94f6a",
+        "url": "/resource_rule/locales/ru.json",
+        "bytes": 24709
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "resource-rule-locale-ko-71afdef547905bb3",
+        "contentHash": "71afdef547905bb3",
+        "url": "/resource_rule/locales/ko.json",
+        "bytes": 18666
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "resource-rule-locale-zh-Hant-a83e41624e9b2598",
+        "contentHash": "a83e41624e9b2598",
+        "url": "/resource_rule/locales/zh-Hant.json",
+        "bytes": 16811
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "resource-rule-locale-zh-Hans-c37a34d078a979c5",
+        "contentHash": "c37a34d078a979c5",
+        "url": "/resource_rule/locales/zh-Hans.json",
+        "bytes": 16839
+      }
+    }
+  },
+  "proofOfFrontierI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.proofOfFrontier.locale.version.",
+      "localeDataPrefix": "nicechunk.proofOfFrontier.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "proof-of-frontier-locale-en-27df386e43b6cf6d",
+        "contentHash": "27df386e43b6cf6d",
+        "url": "/proof-of-frontier/locales/en.json",
+        "bytes": 9920
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "proof-of-frontier-locale-es-8aaaeb09aaa4b335",
+        "contentHash": "8aaaeb09aaa4b335",
+        "url": "/proof-of-frontier/locales/es.json",
+        "bytes": 9933
+      },
+      "fr": {
+        "label": "French",
+        "version": "proof-of-frontier-locale-fr-5e9ddf5aaea83f00",
+        "contentHash": "5e9ddf5aaea83f00",
+        "url": "/proof-of-frontier/locales/fr.json",
+        "bytes": 9916
+      },
+      "de": {
+        "label": "German",
+        "version": "proof-of-frontier-locale-de-5bcb4119b691d27a",
+        "contentHash": "5bcb4119b691d27a",
+        "url": "/proof-of-frontier/locales/de.json",
+        "bytes": 9891
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "proof-of-frontier-locale-ja-7e645ddc02d70fd3",
+        "contentHash": "7e645ddc02d70fd3",
+        "url": "/proof-of-frontier/locales/ja.json",
+        "bytes": 9992
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "proof-of-frontier-locale-ru-c44f5e499d814d6b",
+        "contentHash": "c44f5e499d814d6b",
+        "url": "/proof-of-frontier/locales/ru.json",
+        "bytes": 9983
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "proof-of-frontier-locale-ko-531589387b2eb06b",
+        "contentHash": "531589387b2eb06b",
+        "url": "/proof-of-frontier/locales/ko.json",
+        "bytes": 9908
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "proof-of-frontier-locale-zh-Hant-76b41150bbb6ce1e",
+        "contentHash": "76b41150bbb6ce1e",
+        "url": "/proof-of-frontier/locales/zh-Hant.json",
+        "bytes": 9717
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "proof-of-frontier-locale-zh-Hans-aec0b9893155915f",
+        "contentHash": "aec0b9893155915f",
+        "url": "/proof-of-frontier/locales/zh-Hans.json",
+        "bytes": 9899
+      }
+    }
+  },
+  "trustI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.trust.locale.version.",
+      "localeDataPrefix": "nicechunk.trust.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "trust-locale-en-72c7891f48775ab0",
+        "contentHash": "72c7891f48775ab0",
+        "url": "/trust/locales/en.json",
+        "bytes": 112654
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "trust-locale-es-ecbaaec868f3143b",
+        "contentHash": "ecbaaec868f3143b",
+        "url": "/trust/locales/es.json",
+        "bytes": 110267
+      },
+      "fr": {
+        "label": "French",
+        "version": "trust-locale-fr-5bef6fcf95a61306",
+        "contentHash": "5bef6fcf95a61306",
+        "url": "/trust/locales/fr.json",
+        "bytes": 110001
+      },
+      "de": {
+        "label": "German",
+        "version": "trust-locale-de-55a6f409297d48b2",
+        "contentHash": "55a6f409297d48b2",
+        "url": "/trust/locales/de.json",
+        "bytes": 107766
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "trust-locale-ja-686d2a7dc88382cd",
+        "contentHash": "686d2a7dc88382cd",
+        "url": "/trust/locales/ja.json",
+        "bytes": 113565
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "trust-locale-ru-92e87208d80c621c",
+        "contentHash": "92e87208d80c621c",
+        "url": "/trust/locales/ru.json",
+        "bytes": 126590
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "trust-locale-ko-96f495c55189feca",
+        "contentHash": "96f495c55189feca",
+        "url": "/trust/locales/ko.json",
+        "bytes": 110639
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "trust-locale-zh-Hant-d2387a77ab721a0d",
+        "contentHash": "d2387a77ab721a0d",
+        "url": "/trust/locales/zh-Hant.json",
+        "bytes": 103751
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "trust-locale-zh-Hans-cae07eac1c82b026",
+        "contentHash": "cae07eac1c82b026",
+        "url": "/trust/locales/zh-Hans.json",
+        "bytes": 103747
+      }
+    }
+  },
+  "playerSetI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.playerSet.locale.version.",
+      "localeDataPrefix": "nicechunk.playerSet.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "player-set-locale-en-7284c51b89666b32",
+        "contentHash": "7284c51b89666b32",
+        "url": "/player_set/locales/en.json",
+        "bytes": 4045
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "player-set-locale-es-deba46876b6a8d04",
+        "contentHash": "deba46876b6a8d04",
+        "url": "/player_set/locales/es.json",
+        "bytes": 4227
+      },
+      "fr": {
+        "label": "French",
+        "version": "player-set-locale-fr-e86c95e74e370591",
+        "contentHash": "e86c95e74e370591",
+        "url": "/player_set/locales/fr.json",
+        "bytes": 4201
+      },
+      "de": {
+        "label": "German",
+        "version": "player-set-locale-de-1a264dc498cc89e9",
+        "contentHash": "1a264dc498cc89e9",
+        "url": "/player_set/locales/de.json",
+        "bytes": 4162
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "player-set-locale-ja-5858d8a1503f7b15",
+        "contentHash": "5858d8a1503f7b15",
+        "url": "/player_set/locales/ja.json",
+        "bytes": 4369
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "player-set-locale-ru-a554ee8997bcca81",
+        "contentHash": "a554ee8997bcca81",
+        "url": "/player_set/locales/ru.json",
+        "bytes": 4675
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "player-set-locale-ko-9fbffa6b6a5e0057",
+        "contentHash": "9fbffa6b6a5e0057",
+        "url": "/player_set/locales/ko.json",
+        "bytes": 4178
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "player-set-locale-zh-Hant-ae90bc9df04a7f28",
+        "contentHash": "ae90bc9df04a7f28",
+        "url": "/player_set/locales/zh-Hant.json",
+        "bytes": 3993
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "player-set-locale-zh-Hans-6562d5020532195c",
+        "contentHash": "6562d5020532195c",
+        "url": "/player_set/locales/zh-Hans.json",
+        "bytes": 3992
+      }
+    }
+  },
+  "worldRuleI18n": {
+    "defaultLanguage": "en",
+    "storageKeys": {
+      "language": "nicechunk.language",
+      "localeVersionPrefix": "nicechunk.worldRule.locale.version.",
+      "localeDataPrefix": "nicechunk.worldRule.locale.data."
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "ru",
+      "ko",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "locales": {
+      "en": {
+        "label": "English",
+        "version": "world-rule-locale-en-bca2bacaf2982409",
+        "contentHash": "bca2bacaf2982409",
+        "url": "/world_rule/locales/en.json",
+        "bytes": 20477
+      },
+      "es": {
+        "label": "Spanish",
+        "version": "world-rule-locale-es-1643159ca97e8577",
+        "contentHash": "1643159ca97e8577",
+        "url": "/world_rule/locales/es.json",
+        "bytes": 20525
+      },
+      "fr": {
+        "label": "French",
+        "version": "world-rule-locale-fr-4cd340f8a6847eb4",
+        "contentHash": "4cd340f8a6847eb4",
+        "url": "/world_rule/locales/fr.json",
+        "bytes": 20508
+      },
+      "de": {
+        "label": "German",
+        "version": "world-rule-locale-de-ab15c9e3f8a5d213",
+        "contentHash": "ab15c9e3f8a5d213",
+        "url": "/world_rule/locales/de.json",
+        "bytes": 20482
+      },
+      "ja": {
+        "label": "Japanese",
+        "version": "world-rule-locale-ja-a6bf1dabb3db0954",
+        "contentHash": "a6bf1dabb3db0954",
+        "url": "/world_rule/locales/ja.json",
+        "bytes": 20584
+      },
+      "ru": {
+        "label": "Russian",
+        "version": "world-rule-locale-ru-f48484ea83c5ed55",
+        "contentHash": "f48484ea83c5ed55",
+        "url": "/world_rule/locales/ru.json",
+        "bytes": 20573
+      },
+      "ko": {
+        "label": "Korean",
+        "version": "world-rule-locale-ko-65fe612ab644d3a0",
+        "contentHash": "65fe612ab644d3a0",
+        "url": "/world_rule/locales/ko.json",
+        "bytes": 20500
+      },
+      "zh-Hant": {
+        "label": "Traditional Chinese",
+        "version": "world-rule-locale-zh-Hant-e0a694b064a039a2",
+        "contentHash": "e0a694b064a039a2",
+        "url": "/world_rule/locales/zh-Hant.json",
+        "bytes": 20496
+      },
+      "zh-Hans": {
+        "label": "Simplified Chinese",
+        "version": "world-rule-locale-zh-Hans-ffbf650878179e03",
+        "contentHash": "ffbf650878179e03",
+        "url": "/world_rule/locales/zh-Hans.json",
+        "bytes": 19407
+      }
+    }
+  },
+  "world": {
+    "seed": "nicechunk-mainnet-001",
+    "configVersion": "world-002",
+    "generator": "voxel-seeded-terrain-v2",
+    "chunkSize": 16,
+    "renderDistance": 6,
+    "seaLevel": 2
+  },
+  "resources": {
+    "manifests": {},
+    "assets": {}
+  }
+}

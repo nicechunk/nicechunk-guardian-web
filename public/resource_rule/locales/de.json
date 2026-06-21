@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "language": "de",
+    "label": "German",
+    "version": "resource-rule-locale-de-c8c6d5ae01254afa",
+    "contentHash": "c8c6d5ae01254afa"
+  },
+  "siteFooter": {
+    "tagline": "Ein Seed-Voxelwelt-Protokoll auf Solana.",
+    "navigationAria": "Footer-Navigation",
+    "socialAria": "NiceChunk Social Links",
+    "home": "Home",
+    "play": "Welt betreten",
+    "roadmap": "Roadbook",
+    "docs": "Docs",
+    "guardian": "Guardians",
+    "contracts": "Contracts",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. Alle Rechte vorbehalten."
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "Sprache",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "Hydrogen",
+      "He": "Helium",
+      "Li": "Lithium",
+      "Be": "Beryllium",
+      "B": "Boron",
+      "C": "Carbon",
+      "N": "Nitrogen",
+      "O": "Oxygen",
+      "F": "Fluorine",
+      "Ne": "Neon",
+      "Na": "Sodium",
+      "Mg": "Magnesium",
+      "Al": "Aluminium",
+      "Si": "Silicon",
+      "P": "Phosphorus",
+      "S": "Sulfur",
+      "Cl": "Chlorine",
+      "Ar": "Argon",
+      "K": "Potassium",
+      "Ca": "Calcium",
+      "Sc": "Scandium",
+      "Ti": "Titanium",
+      "V": "Vanadium",
+      "Cr": "Chromium",
+      "Mn": "Manganese",
+      "Fe": "Iron",
+      "Co": "Cobalt",
+      "Ni": "Nickel",
+      "Cu": "Copper",
+      "Zn": "Zinc",
+      "Ga": "Gallium",
+      "Ge": "Germanium",
+      "As": "Arsenic",
+      "Se": "Selenium",
+      "Br": "Bromine",
+      "Kr": "Krypton",
+      "Rb": "Rubidium",
+      "Sr": "Strontium",
+      "Y": "Yttrium",
+      "Zr": "Zirconium",
+      "Nb": "Niobium",
+      "Mo": "Molybdenum",
+      "Tc": "Technetium",
+      "Ru": "Ruthenium",
+      "Rh": "Rhodium",
+      "Pd": "Palladium",
+      "Ag": "Silver",
+      "Cd": "Cadmium",
+      "In": "Indium",
+      "Sn": "Tin",
+      "Sb": "Antimony",
+      "Te": "Tellurium",
+      "I": "Iodine",
+      "Xe": "Xenon",
+      "Cs": "Caesium",
+      "Ba": "Barium",
+      "La": "Lanthanum",
+      "Ce": "Cerium",
+      "Pr": "Praseodymium",
+      "Nd": "Neodymium",
+      "Pm": "Promethium",
+      "Sm": "Samarium",
+      "Eu": "Europium",
+      "Gd": "Gadolinium",
+      "Tb": "Terbium",
+      "Dy": "Dysprosium",
+      "Ho": "Holmium",
+      "Er": "Erbium",
+      "Tm": "Thulium",
+      "Yb": "Ytterbium",
+      "Lu": "Lutetium",
+      "Hf": "Hafnium",
+      "Ta": "Tantalum",
+      "W": "Tungsten",
+      "Re": "Rhenium",
+      "Os": "Osmium",
+      "Ir": "Iridium",
+      "Pt": "Platinum",
+      "Au": "Gold",
+      "Hg": "Mercury",
+      "Tl": "Thallium",
+      "Pb": "Lead",
+      "Bi": "Bismuth",
+      "Po": "Polonium",
+      "At": "Astatine",
+      "Rn": "Radon",
+      "Fr": "Francium",
+      "Ra": "Radium",
+      "Ac": "Actinium",
+      "Th": "Thorium",
+      "Pa": "Protactinium",
+      "U": "Uranium",
+      "Np": "Neptunium",
+      "Pu": "Plutonium",
+      "Am": "Americium",
+      "Cm": "Curium",
+      "Bk": "Berkelium",
+      "Cf": "Californium",
+      "Es": "Einsteinium",
+      "Fm": "Fermium",
+      "Md": "Mendelevium",
+      "No": "Nobelium",
+      "Lr": "Lawrencium",
+      "Rf": "Rutherfordium",
+      "Db": "Dubnium",
+      "Sg": "Seaborgium",
+      "Bh": "Bohrium",
+      "Hs": "Hassium",
+      "Mt": "Meitnerium",
+      "Ds": "Darmstadtium",
+      "Rg": "Roentgenium",
+      "Cn": "Copernicium",
+      "Nh": "Nihonium",
+      "Fl": "Flerovium",
+      "Mc": "Moscovium",
+      "Lv": "Livermorium",
+      "Ts": "Tennessine",
+      "Og": "Oganesson"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk Box Resource Atlas",
+      "eyebrow": "GENERATED BLOCK RESOURCE ATLAS",
+      "heading": "Every generated block is a public resource rule.",
+      "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
+      "metricsAria": "Atlas status",
+      "workspaceAria": "Block resource atlas",
+      "filtersAria": "Atlas filters",
+      "filterTitle": "Block families",
+      "resultCount": "{count} shown",
+      "modelLabel": "Composition model",
+      "modelBody": "Ranges are material tendencies, not fixed rewards. Actual resource rolls can later use seed, coordinate, depth, biome, and chain-verified state.",
+      "searchLabel": "Search blocks, elements, or signals",
+      "searchPlaceholder": "Search grass, Si, volcanic...",
+      "empty": "No generated blocks match the current filters.",
+      "blockAria": "Open {name} resource details",
+      "compositionTitle": "Element composition range",
+      "physicalTitle": "Density and mass estimate",
+      "densityLabel": "Bulk density",
+      "dimensionsLabel": "Actual block dimensions",
+      "volumeLabel": "Calculated volume",
+      "massLabel": "Calculated mass",
+      "notAvailable": "Unknown",
+      "signalsTitle": "Generation signals",
+      "visualTitle": "Voxel visual gene",
+      "metric": {
+        "blocks": "Generated blocks",
+        "families": "Block families",
+        "elements": "Referenced elements",
+        "ruleSet": "Rule set"
+      },
+      "color": {
+        "0": "Primary face",
+        "1": "Side face",
+        "2": "Top highlight"
+      }
+    },
+    "category": {
+      "all": "All Blocks",
+      "terrain": "Terrain",
+      "fluids": "Fluids",
+      "geological": "Geological",
+      "cold": "Cold",
+      "volcanic": "Volcanic",
+      "organic": "Organic",
+      "plants": "Plants",
+      "aquatic": "Aquatic",
+      "anomaly": "Rare / Anomaly"
+    },
+    "rarity": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Anomaly": "Anomaly"
+    },
+    "signal": {
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "altitude": "Altitude",
+      "slope": "Slope",
+      "rarity": "Rarity"
+    },
+    "block": {
+      "grass": {
+        "name": "Grasblock",
+        "source": "Oberfläche",
+        "description": "Lebendiger Oberbodenblock aus Silikatboden mit dünner biologischer Schicht, geprägt durch Feuchtigkeit, Hangneigung und Walddichte."
+      },
+      "dirt": {
+        "name": "Erde",
+        "source": "Flacher Untergrund",
+        "description": "Verwitterter Boden unter Gras, gemischt aus Silikatkörnern, Tonmineralen, Eisenoxiden, Feuchtigkeit und organischen Resten."
+      },
+      "stone": {
+        "name": "Stein",
+        "source": "Untergrund",
+        "description": "Gewöhnliches Silikatgestein für Hügel, Klippen, Höhlenwände und geologisches Grundmaterial beim strukturellen Abbau."
+      },
+      "deepStone": {
+        "name": "Tiefengestein",
+        "source": "Tiefer Untergrund",
+        "description": "Dichtes Gestein tiefer Schichten mit stärkerer Eisen- und Magnesiumtendenz, erzeugt unterhalb der flachen Kruste."
+      },
+      "sand": {
+        "name": "Sand",
+        "source": "Oberfläche",
+        "description": "Quarzdominierter körniger Sedimentblock aus Regeln für Wüste, Strand, Fluss, See und Meeresboden."
+      },
+      "gravel": {
+        "name": "Kies",
+        "source": "Oberfläche / Untergrund",
+        "description": "Gemischte Gesteinsbruchstücke; die Zusammensetzung variiert mit der Umgebung, bleibt aber überwiegend silikatisch."
+      },
+      "clay": {
+        "name": "Ton",
+        "source": "Feuchte Oberfläche / Untergrund",
+        "description": "Feines hydratisiertes Alumosilikat-Sediment aus feuchten, flachen und wasser nahen Schichten."
+      },
+      "mud": {
+        "name": "Schlamm",
+        "source": "Feuchte Oberfläche",
+        "description": "Wasserreicher Boden mit organischem Anteil, typisch für schlecht entwässerte Niederungen mit geringer Sauerstoffexposition."
+      },
+      "dryDirt": {
+        "name": "Trockene Erde",
+        "source": "Trockene Oberfläche",
+        "description": "Ausgetrockneter Boden mit weniger Wasserstoff und organischem Anteil, erzeugt durch Regeln niedriger Feuchtigkeit."
+      },
+      "saltFlat": {
+        "name": "Salzebene",
+        "source": "Wüstenfleck",
+        "description": "Evaporitische Kruste trockener Becken, dominiert von Natriumchlorid und gemischt mit Magnesium, Kalzium, Sulfaten und Sauerstoffsalzen."
+      },
+      "snow": {
+        "name": "Schnee",
+        "source": "Kalte Oberfläche",
+        "description": "Gefrorene Niederschlagsschicht oberhalb der Schneegrenze oder in kalten Biomen, mit möglichem mineralischem Staub."
+      },
+      "ice": {
+        "name": "Eis",
+        "source": "Gefrorene Flüssigkeit / Seltene Oberfläche",
+        "description": "Feste Wasserphase aus Kälte- und Schneeregeln; chemisch einfach, aber für Umweltregeln wichtig."
+      },
+      "frozenSoil": {
+        "name": "Gefrorener Boden",
+        "source": "Kalte Oberfläche / Untergrund",
+        "description": "Permafrostähnlicher Boden aus Mineralkörnern, gebundenem Eis und konservierter organischer Substanz."
+      },
+      "basalt": {
+        "name": "Basalt",
+        "source": "Vulkanische Oberfläche / Untergrund",
+        "description": "Dunkles mafisches Vulkangestein aus schnell abgekühlter Lava, mit stärkerer Tendenz zu Eisen, Magnesium, Kalzium und Titan."
+      },
+      "ash": {
+        "name": "Vulkanasche",
+        "source": "Vulkanische Oberfläche",
+        "description": "Feine vulkanische Partikel aus Vulkanbiomen, silikatischem Gestein ähnlich, aber poröser und sulfatanfälliger."
+      },
+      "bedrock": {
+        "name": "Grundgestein",
+        "source": "Weltbasis",
+        "description": "Protokoll-Fundamentschicht am Boden generierter Säulen; verhält sich wie hartes Basement-Gestein, nicht wie ein festes Erzdepot."
+      },
+      "water": {
+        "name": "Wasser",
+        "source": "Flüssigkeit",
+        "description": "Standard-Flüssigkeitsblock für Ozeane, Flüsse, Seen und Niederungen, mit leichten biomeabhängigen Ionenunterschieden."
+      },
+      "swampWater": {
+        "name": "Sumpfwasser",
+        "source": "Sumpfflüssigkeit",
+        "description": "Organikreiches Stauwasser aus Sumpf- und Feuchtgebietsregeln, mit Spuren von Kohlenstoff, Schwefel, Eisen und Stickstoff."
+      },
+      "toxicWater": {
+        "name": "Giftwasser",
+        "source": "Kontaminierte Flüssigkeit",
+        "description": "Gefährliche Flüssigkeit aus Verschmutzungssignalen. Die Basis bleibt Wasser, doch Spurmetalle und Sulfide erhöhen das biologische Risiko."
+      },
+      "lava": {
+        "name": "Lava",
+        "source": "Vulkanische Flüssigkeit",
+        "description": "Geschmolzene Silikatflüssigkeit aus Vulkansignalen. Die Zusammensetzung folgt basaltischer Schmelze, nicht generischem Fantasy-Feuer."
+      },
+      "quicksand": {
+        "name": "Treibsand",
+        "source": "Wüstenoberfläche",
+        "description": "Wasseraufgelockerte Sandfalle aus Wüsten-Anomalien; überwiegend Siliziumdioxid mit genug Wasser zur Verringerung mechanischer Stabilität."
+      },
+      "trunk": {
+        "name": "Stamm",
+        "source": "Baum",
+        "description": "Holziges Strukturgewebe aus Laubbaumregeln, dominiert von Zellulose, Lignin, Wasser und Mineralnährstoffen."
+      },
+      "leaves": {
+        "name": "Blätter",
+        "source": "Baumkrone",
+        "description": "Photosynthetische Kronenblöcke; organisches Gewebe mit magnesiumhaltigem Chlorophyll und Nährstoff-Spurenmetallen."
+      },
+      "pineTrunk": {
+        "name": "Kiefernstamm",
+        "source": "Kiefer",
+        "description": "Harzreiches Nadelholz aus kalten, hohen oder immergrünen Baumregeln."
+      },
+      "pineLeaves": {
+        "name": "Kiefernnadeln",
+        "source": "Kiefernkrone",
+        "description": "Immergrüne Nadelkrone mit geringerem Wasserumsatz und mineralischen Spurennährstoffen."
+      },
+      "deadWood": {
+        "name": "Totholz",
+        "source": "Vulkanische / trockene Vegetation",
+        "description": "Ausgetrocknetes oder hitzegestresstes Holz mit weniger Wasserstoff und höherem Anteil freiliegenden Kohlenstoffs."
+      },
+      "giantRoot": {
+        "name": "Riesenwurzel",
+        "source": "Regenwaldvegetation",
+        "description": "Große freiliegende Wurzelmasse aus feuchten Regenwaldregeln; holzig, aber nahe am Boden feuchter und mineralreicher."
+      },
+      "grassPlant": {
+        "name": "Graspflanze",
+        "source": "Oberflächenvegetation",
+        "description": "Kleine krautige Pflanze aus feuchten, flachen Oberflächenregeln."
+      },
+      "dryGrass": {
+        "name": "Trockenes Gras",
+        "source": "Trockene Vegetation",
+        "description": "Getrocknetes krautiges Material aus niederschlagsarmen Oberflächen, mit weniger Wasserstoff und höherer Kohlenstoffkonzentration."
+      },
+      "bush": {
+        "name": "Busch",
+        "source": "Oberflächenvegetation",
+        "description": "Holzige Strauchschicht aus Wald-, Ebenen-, Berg- und Regenwaldregeln."
+      },
+      "deadBush": {
+        "name": "Toter Busch",
+        "source": "Trockene / vulkanische Vegetation",
+        "description": "Ausgetrockneter Strauchrest aus Wüsten- und Vulkanoberflächenbedingungen."
+      },
+      "cactus": {
+        "name": "Kaktus",
+        "source": "Wüstenvegetation",
+        "description": "Wasserspeichernde Sukkulente aus Wüstenregeln; organisch, aber mit ungewöhnlich hohem Anteil gebundenen Wassers."
+      },
+      "reed": {
+        "name": "Schilf",
+        "source": "Ufervegetation",
+        "description": "Wasserpflanze an Rändern von Sumpf-, Fluss-, See- und Feuchtgebietsflüssigkeiten."
+      },
+      "swampGrass": {
+        "name": "Sumpfgras",
+        "source": "Sumpfoberfläche",
+        "description": "Feuchtgebiets-Grasschicht mit organischem Gewebe und Sedimenteinfluss durch stehendes Wasser."
+      },
+      "snowBush": {
+        "name": "Schneebusch",
+        "source": "Kalte Vegetation",
+        "description": "Kälteresistenter Strauch, oft von Schnee oder Frost getönt und durch Berg- und Schneeregeln gewählt."
+      },
+      "thorn": {
+        "name": "Dorn",
+        "source": "Trockene / vulkanische Vegetation",
+        "description": "Gehärtetes defensives Pflanzenmaterial aus trockenen oder vulkanischen Oberflächen, reich an kohlenstoffreichem Strukturgewebe."
+      },
+      "moss": {
+        "name": "Moos",
+        "source": "Feuchte Oberfläche / Höhle",
+        "description": "Feuchte, nicht holzige biologische Matte aus feuchten Wald-, Sumpf- und Höhlenrandregeln."
+      },
+      "lichen": {
+        "name": "Flechte",
+        "source": "Kalte / felsige Oberfläche",
+        "description": "Symbiotische Kruste auf kalten oder felsigen Oberflächen, die biologisches Gewebe und mineralisches Substrat verbindet."
+      },
+      "vine": {
+        "name": "Ranke",
+        "source": "Feuchte Vegetation",
+        "description": "Flexible, kohlenstoffreiche Kletterpflanze aus feuchten Biomen und höhlenähnlichen Nassbereichen."
+      },
+      "glowMycelium": {
+        "name": "Leuchtmyzel",
+        "source": "Höhlenvegetation",
+        "description": "Biolumineszente Pilzmatte aus feuchten unterirdischen Räumen, mit verstärkten Phosphor- und Schwefelsignalen."
+      },
+      "mushroom": {
+        "name": "Pilz",
+        "source": "Feuchte / Höhlenvegetation",
+        "description": "Pilzfruchtkörper, ausgewählt durch seltene Zufallsergebnisse feuchter Vegetation."
+      },
+      "seaweed": {
+        "name": "Seegras",
+        "source": "Meeresvegetation",
+        "description": "Marine pflanzenartige Biomasse aus Unterwassergebieten mit Spurentrends von Natrium, Kalium, Magnesium und Jod."
+      },
+      "aquaticPlant": {
+        "name": "Wasserpflanze",
+        "source": "Süßwasservegetation",
+        "description": "Sehr wasserreiche Süßwasservegetation, die Nährstoffe aus Sedimenten aufnimmt."
+      },
+      "coral": {
+        "name": "Koralle",
+        "source": "Warme Meeresvegetation",
+        "description": "Kalziumkarbonat-Struktur, erzeugt in warmen Flachwasserbedingungen."
+      },
+      "deadCoral": {
+        "name": "Tote Koralle",
+        "source": "Kalte / verschmutzte Meeresvegetation",
+        "description": "Totes Kalziumkarbonat-Riffmaterial aus kalten oder verschmutzten Ozeanregeln."
+      },
+      "shellBed": {
+        "name": "Muschelbett",
+        "source": "Seltener Strand / Meeresboden",
+        "description": "Ansammlung von Muschelfragmenten und Karbonatkörnern als seltene Küsten- und Meeresbodenflecken."
+      }
+    },
+    "tag": {
+      "plains": "Ebenen",
+      "forest": "Wald",
+      "rainforest": "Regenwald",
+      "general": "Allgemein",
+      "mountain": "Gebirge",
+      "cave": "Höhle",
+      "foundation": "Fundament",
+      "deepCave": "Tiefenhöhle",
+      "desert": "Wüste",
+      "beach": "Strand",
+      "river": "Fluss",
+      "oceanFloor": "Meeresboden",
+      "wetland": "Feuchtgebiet",
+      "swamp": "Sumpf",
+      "lake": "See",
+      "desertEdge": "Wüstenrand",
+      "dryPlains": "Trockene Ebenen",
+      "evaporite": "Evaporit",
+      "snowfield": "Schneefeld",
+      "tundra": "Tundra",
+      "frozenWater": "Gefrorenes Wasser",
+      "volcano": "Vulkan",
+      "deepRock": "Tiefengestein",
+      "ejecta": "Auswurf",
+      "unbreakable": "Unzerstörbar",
+      "ocean": "Ozean",
+      "corruption": "Verschmutzung",
+      "heat": "Hitze",
+      "hazard": "Gefahr",
+      "tree": "Baum",
+      "dryBiome": "Trockenbiom",
+      "rareOrganic": "Seltene Organik",
+      "succulent": "Sukkulente",
+      "hazardPlant": "Gefahrenpflanze",
+      "humid": "Feucht",
+      "bioluminescent": "Biolumineszent",
+      "aquatic": "Aquatisch",
+      "warmWater": "Warmes Wasser",
+      "rare": "Selten",
+      "coldWater": "Kaltes Wasser"
+    }
+  }
+}

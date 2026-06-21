@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "language": "zh-Hant",
+    "label": "Traditional Chinese",
+    "version": "resource-rule-locale-zh-Hant-a83e41624e9b2598",
+    "contentHash": "a83e41624e9b2598"
+  },
+  "siteFooter": {
+    "tagline": "Solana 上的種子體素世界協議。",
+    "navigationAria": "頁腳導航",
+    "socialAria": "NiceChunk 社交連結",
+    "home": "首頁",
+    "play": "進入世界",
+    "roadmap": "路書",
+    "docs": "文檔",
+    "guardian": "守護者",
+    "contracts": "合約",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk。保留所有權利。"
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "語言",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "氫",
+      "He": "氦",
+      "Li": "鋰",
+      "Be": "鈹",
+      "B": "硼",
+      "C": "碳",
+      "N": "氮",
+      "O": "氧",
+      "F": "氟",
+      "Ne": "氖",
+      "Na": "鈉",
+      "Mg": "鎂",
+      "Al": "鋁",
+      "Si": "矽",
+      "P": "磷",
+      "S": "硫",
+      "Cl": "氯",
+      "Ar": "氬",
+      "K": "鉀",
+      "Ca": "鈣",
+      "Sc": "鈧",
+      "Ti": "鈦",
+      "V": "釩",
+      "Cr": "鉻",
+      "Mn": "錳",
+      "Fe": "鐵",
+      "Co": "鈷",
+      "Ni": "鎳",
+      "Cu": "銅",
+      "Zn": "鋅",
+      "Ga": "鎵",
+      "Ge": "鍺",
+      "As": "砷",
+      "Se": "硒",
+      "Br": "溴",
+      "Kr": "氪",
+      "Rb": "銣",
+      "Sr": "鍶",
+      "Y": "釔",
+      "Zr": "鋯",
+      "Nb": "鈮",
+      "Mo": "鉬",
+      "Tc": "鎝",
+      "Ru": "釕",
+      "Rh": "銠",
+      "Pd": "鈀",
+      "Ag": "銀",
+      "Cd": "鎘",
+      "In": "銦",
+      "Sn": "錫",
+      "Sb": "銻",
+      "Te": "碲",
+      "I": "碘",
+      "Xe": "氙",
+      "Cs": "銫",
+      "Ba": "鋇",
+      "La": "鑭",
+      "Ce": "鈰",
+      "Pr": "鐠",
+      "Nd": "釹",
+      "Pm": "鉕",
+      "Sm": "釤",
+      "Eu": "銪",
+      "Gd": "釓",
+      "Tb": "鋱",
+      "Dy": "鏑",
+      "Ho": "鈥",
+      "Er": "鉺",
+      "Tm": "銩",
+      "Yb": "鐿",
+      "Lu": "鎦",
+      "Hf": "鉿",
+      "Ta": "鉭",
+      "W": "鎢",
+      "Re": "錸",
+      "Os": "鋨",
+      "Ir": "銥",
+      "Pt": "鉑",
+      "Au": "金",
+      "Hg": "汞",
+      "Tl": "鉈",
+      "Pb": "鉛",
+      "Bi": "鉍",
+      "Po": "釙",
+      "At": "砈",
+      "Rn": "氡",
+      "Fr": "鍅",
+      "Ra": "鐳",
+      "Ac": "錒",
+      "Th": "釷",
+      "Pa": "鏷",
+      "U": "鈾",
+      "Np": "錼",
+      "Pu": "鈽",
+      "Am": "鋂",
+      "Cm": "鋦",
+      "Bk": "鉳",
+      "Cf": "鉲",
+      "Es": "鑀",
+      "Fm": "鐨",
+      "Md": "鍆",
+      "No": "鍩",
+      "Lr": "鐒",
+      "Rf": "𬬻",
+      "Db": "𬭊",
+      "Sg": "𬭳",
+      "Bh": "𬭛",
+      "Hs": "𬭶",
+      "Mt": "鿏",
+      "Ds": "𫟼",
+      "Rg": "𬬭",
+      "Cn": "鎶",
+      "Nh": "鉨",
+      "Fl": "鈇",
+      "Mc": "鏌",
+      "Lv": "鉝",
+      "Ts": "鿬",
+      "Og": "鿫"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk 方塊資源圖鑑",
+      "eyebrow": "生成方塊資源圖鑑",
+      "heading": "每一種生成方塊，都是公開資源規則。",
+      "body": "NiceChunk 會把地形方塊映射為有科學依據的資源基礎。每個方塊都會公開生成訊號、可能的元素組成區間，以及它在未來挖礦和鍛造經濟中的定位。",
+      "metricsAria": "圖鑑狀態",
+      "workspaceAria": "方塊資源圖鑑",
+      "filtersAria": "圖鑑篩選",
+      "filterTitle": "方塊類別",
+      "resultCount": "顯示 {count} 個",
+      "modelLabel": "組成模型",
+      "modelBody": "區間表示材料傾向，不是固定獎勵。後續真實資源產出可以繼續結合種子、座標、深度、生物群系和鏈上驗證狀態。",
+      "searchLabel": "搜尋方塊、元素或生成訊號",
+      "searchPlaceholder": "搜尋 grass、Si、volcanic...",
+      "empty": "目前篩選下沒有匹配的生成方塊。",
+      "blockAria": "打開 {name} 資源詳情",
+      "compositionTitle": "元素組成區間",
+      "physicalTitle": "密度與質量估算",
+      "densityLabel": "體積密度",
+      "dimensionsLabel": "實際方塊尺寸",
+      "volumeLabel": "計算體積",
+      "massLabel": "計算質量",
+      "notAvailable": "未知",
+      "signalsTitle": "生成訊號",
+      "visualTitle": "方塊視覺基因",
+      "metric": {
+        "blocks": "生成方塊",
+        "families": "方塊類別",
+        "elements": "關聯元素",
+        "ruleSet": "規則集"
+      },
+      "color": {
+        "0": "主表面",
+        "1": "側面",
+        "2": "頂部高光"
+      }
+    },
+    "category": {
+      "all": "全部方塊",
+      "terrain": "地形",
+      "fluids": "流體",
+      "geological": "地質",
+      "cold": "寒冷",
+      "volcanic": "火山",
+      "organic": "有機",
+      "plants": "植物",
+      "aquatic": "水域",
+      "anomaly": "稀有 / 異常"
+    },
+    "rarity": {
+      "Common": "常見",
+      "Uncommon": "不常見",
+      "Rare": "稀有",
+      "Anomaly": "異常"
+    },
+    "signal": {
+      "temperature": "溫度",
+      "humidity": "濕度",
+      "altitude": "海拔",
+      "slope": "坡度",
+      "rarity": "稀有度"
+    },
+    "block": {
+      "grass": {
+        "name": "草地方塊",
+        "source": "地表",
+        "description": "有生命的表层土方塊：矽酸盐土壤上覆盖一层薄薄的生物层，由湿度、坡度和森林密度共同塑造。"
+      },
+      "dirt": {
+        "name": "泥土",
+        "source": "浅层地下",
+        "description": "草地下方的风化土壤，混合了矽酸盐顆粒、黏土矿物、鐵氧化物、水分和有机残留。"
+      },
+      "stone": {
+        "name": "石头",
+        "source": "地下",
+        "description": "常见的矽酸盐岩石，是丘陵、峭壁、洞穴墙體和結構性挖掘的基礎地質材料。"
+      },
+      "deepStone": {
+        "name": "深层石",
+        "source": "深层地下",
+        "description": "更致密的下部地层岩石，鐵和鎂的傾向更高，用於生成浅层地壳以下的岩层。"
+      },
+      "sand": {
+        "name": "沙子",
+        "source": "地表",
+        "description": "以石英為主的顆粒沉积物，由沙漠、海滩、河流、湖泊和海底規則生成。"
+      },
+      "gravel": {
+        "name": "砾石",
+        "source": "地表 / 地下",
+        "description": "混合的破碎岩粒，组成會随附近地形明显變化，但整體仍以矽酸盐為主。"
+      },
+      "clay": {
+        "name": "黏土",
+        "source": "潮湿地表 / 地下",
+        "description": "细粒含水鋁矽酸盐沉积物，生成于潮湿、低坡度地形和邻水地层。"
+      },
+      "mud": {
+        "name": "泥浆",
+        "source": "潮湿地表",
+        "description": "含水量很高的土壤，带有有机質，常见于排水差、氧暴露有限的低洼湿地生態。"
+      },
+      "dryDirt": {
+        "name": "干土",
+        "source": "干燥地表",
+        "description": "脱水土壤，氫和有机组分较低，由低湿度地表規則生成。"
+      },
+      "saltFlat": {
+        "name": "盐滩",
+        "source": "沙漠斑塊",
+        "description": "干旱盆地蒸發後留下的蒸發岩壳，氯化鈉佔主導，并混有鎂、鈣、硫酸盐和含氧盐。"
+      },
+      "snow": {
+        "name": "雪",
+        "source": "寒冷地表",
+        "description": "在雪线以上或寒冷生物群系中生成的冻結降水层，可能含有微量矿物塵埃。"
+      },
+      "ice": {
+        "name": "冰",
+        "source": "冻結流體 / 稀有地表",
+        "description": "由寒冷流體和稀有雪原規則選中的固態水，相對简单但在环境規則中很重要。"
+      },
+      "frozenSoil": {
+        "name": "冻土",
+        "source": "寒冷地表 / 地下",
+        "description": "類似永久冻土的土壤，混合矿物顆粒、結合水冰和被保存的有机質。"
+      },
+      "basalt": {
+        "name": "玄武岩",
+        "source": "火山地表 / 地下",
+        "description": "由快速冷却的熔岩形成的深色鎂鐵質火山岩，相比普通石头更偏向鐵、鎂、鈣和鈦。"
+      },
+      "ash": {
+        "name": "火山灰",
+        "source": "火山地表",
+        "description": "火山生物群系中生成的细粒火山顆粒，化學上接近矽酸盐岩石，但孔隙更多，也更容易带硫酸盐傾向。"
+      },
+      "bedrock": {
+        "name": "基岩",
+        "source": "世界基底",
+        "description": "生成柱底部的協議基礎层。它表現為坚硬的基底岩，而不是固定的化學資源矿床。"
+      },
+      "water": {
+        "name": "水",
+        "source": "流體",
+        "description": "用於海洋、河流、湖泊和低洼水域覆盖的标准流體方塊，會根據生物群系产生少量溶解离子差异。"
+      },
+      "swampWater": {
+        "name": "沼泽水",
+        "source": "沼泽流體",
+        "description": "由沼泽和湿地規則生成的富有机質滞流水，化學组成包含溶解碳、硫、鐵和氮的痕量信号。"
+      },
+      "toxicWater": {
+        "name": "毒水",
+        "source": "汙染流體",
+        "description": "由汙染信号選中的危險流體。基礎仍然是水，但痕量金屬和硫化物會提高生物風險。"
+      },
+      "lava": {
+        "name": "熔岩",
+        "source": "火山流體",
+        "description": "由火山信号生成的熔融矽酸盐流體。组成遵循玄武質熔體，而不是普通幻想火焰。"
+      },
+      "quicksand": {
+        "name": "流沙",
+        "source": "沙漠地表",
+        "description": "由沙漠异常規則生成的含水松散沙陷阱，主要為二氧化矽，并含有足够水分降低力学稳定性。"
+      },
+      "trunk": {
+        "name": "树干",
+        "source": "树木",
+        "description": "由阔叶树規則生成的木質結構组织，主要由纤维素、木質素、水和矿物养分構成。"
+      },
+      "leaves": {
+        "name": "树叶",
+        "source": "树冠",
+        "description": "光合作用树冠方塊，化學上屬于有机组织，并带有含鎂叶绿素和营养痕量金屬。"
+      },
+      "pineTrunk": {
+        "name": "松树干",
+        "source": "松树",
+        "description": "树脂含量较高的针叶木，由寒冷、高海拔或常绿树規則生成。"
+      },
+      "pineLeaves": {
+        "name": "松针叶",
+        "source": "松树冠",
+        "description": "常绿针叶树冠，水分循环较低，并含有矿物营养痕量。"
+      },
+      "deadWood": {
+        "name": "枯木",
+        "source": "火山 / 干燥植被",
+        "description": "脱水或受熱胁迫的木材，氫含量较低，暴露碳比例较高。"
+      },
+      "giantRoot": {
+        "name": "巨型树根",
+        "source": "雨林植被",
+        "description": "由潮湿雨林規則生成的大型裸露根系，結構上屬于木質组织，但靠近土壤处更湿润且矿物更丰富。"
+      },
+      "grassPlant": {
+        "name": "草本植物",
+        "source": "地表植被",
+        "description": "由潮湿、低坡度地表規則選中的小型草本植物。"
+      },
+      "dryGrass": {
+        "name": "干草",
+        "source": "干燥植被",
+        "description": "來自低湿度地表的干燥草本材料，氫含量较低，碳浓度较高。"
+      },
+      "bush": {
+        "name": "灌木",
+        "source": "地表植被",
+        "description": "由森林、平原、山地和雨林植被規則生成的木質灌木层。"
+      },
+      "deadBush": {
+        "name": "枯灌木",
+        "source": "干燥 / 火山植被",
+        "description": "由沙漠和火山地表条件生成的干枯灌木残留物。"
+      },
+      "cactus": {
+        "name": "仙人掌",
+        "source": "沙漠植被",
+        "description": "由沙漠規則生成的储水多肉植物，化學上屬于有机组织，但結合水比例异常高。"
+      },
+      "reed": {
+        "name": "芦苇",
+        "source": "水边植被",
+        "description": "生成于沼泽、河流、湖泊和湿地流體附近的水边植物。"
+      },
+      "swampGrass": {
+        "name": "沼泽草",
+        "source": "沼泽地表",
+        "description": "湿地草层，包含有机组织，并受到滞流水沉积物汙染。"
+      },
+      "snowBush": {
+        "name": "雪地灌木",
+        "source": "寒冷植被",
+        "description": "耐寒灌木，常带雪霜色调，由山地和雪原植被規則選中。"
+      },
+      "thorn": {
+        "name": "荆棘",
+        "source": "干燥 / 火山植被",
+        "description": "來自干燥或火山地表的硬化防御性植物材料，富集碳質結構组织。"
+      },
+      "moss": {
+        "name": "苔藓",
+        "source": "潮湿地表 / 洞穴",
+        "description": "由潮湿森林、沼泽和邻近洞穴規則生成的湿润非木質生物垫。"
+      },
+      "lichen": {
+        "name": "地衣",
+        "source": "寒冷 / 岩石表面",
+        "description": "寒冷或岩石表面上的共生壳层，連接生物组织和矿物基質。"
+      },
+      "vine": {
+        "name": "藤蔓",
+        "source": "潮湿植被",
+        "description": "由潮湿生物群系和類似洞穴的湿润區域生成的攀缘植物，具有柔韌的富碳组织。"
+      },
+      "glowMycelium": {
+        "name": "發光菌丝",
+        "source": "洞穴植被",
+        "description": "來自地下潮湿空間的生物發光真菌垫，化學上屬于生物组织，并强化磷和硫信号。"
+      },
+      "mushroom": {
+        "name": "蘑菇",
+        "source": "潮湿 / 洞穴植被",
+        "description": "由稀有潮湿植被随机結果選中的真菌子實體。"
+      },
+      "seaweed": {
+        "name": "海藻",
+        "source": "海洋植被",
+        "description": "來自水下區域的海洋植物狀生物質，带有鈉、鉀、鎂和碘的痕量傾向。"
+      },
+      "aquaticPlant": {
+        "name": "水生植物",
+        "source": "淡水植被",
+        "description": "含水量很高的淡水植被，會从沉积物中吸收养分。"
+      },
+      "coral": {
+        "name": "珊瑚",
+        "source": "温暖海洋植被",
+        "description": "在温暖浅海条件中生成的碳酸鈣結構。"
+      },
+      "deadCoral": {
+        "name": "死亡珊瑚",
+        "source": "寒冷 / 汙染海洋植被",
+        "description": "由寒冷或汙染海洋規則選中的死亡碳酸鈣礁體材料。"
+      },
+      "shellBed": {
+        "name": "贝壳层",
+        "source": "稀有海滩 / 海底",
+        "description": "由贝壳碎片和碳酸盐顆粒堆积形成，作為稀有海岸和海底斑點生成。"
+      }
+    },
+    "tag": {
+      "plains": "平原",
+      "forest": "森林",
+      "rainforest": "雨林",
+      "general": "通用",
+      "mountain": "山地",
+      "cave": "洞穴",
+      "foundation": "基礎层",
+      "deepCave": "深层洞穴",
+      "desert": "沙漠",
+      "beach": "海滩",
+      "river": "河流",
+      "oceanFloor": "海底",
+      "wetland": "湿地",
+      "swamp": "沼泽",
+      "lake": "湖泊",
+      "desertEdge": "沙漠边缘",
+      "dryPlains": "干燥平原",
+      "evaporite": "蒸發岩",
+      "snowfield": "雪原",
+      "tundra": "苔原",
+      "frozenWater": "冻結水體",
+      "volcano": "火山",
+      "deepRock": "深层岩石",
+      "ejecta": "喷出物",
+      "unbreakable": "不可破坏",
+      "ocean": "海洋",
+      "corruption": "汙染",
+      "heat": "高熱",
+      "hazard": "危險",
+      "tree": "树木",
+      "dryBiome": "干燥生物群系",
+      "rareOrganic": "稀有有机物",
+      "succulent": "多肉植物",
+      "hazardPlant": "危險植物",
+      "humid": "潮湿",
+      "bioluminescent": "生物發光",
+      "aquatic": "水域",
+      "warmWater": "温暖水域",
+      "rare": "稀有",
+      "coldWater": "寒冷水域"
+    }
+  }
+}

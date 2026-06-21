@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "language": "ru",
+    "label": "Russian",
+    "version": "resource-rule-locale-ru-86511ee91ad94f6a",
+    "contentHash": "86511ee91ad94f6a"
+  },
+  "siteFooter": {
+    "tagline": "Seeded voxel world protocol on Solana.",
+    "navigationAria": "Навигация в футере",
+    "socialAria": "Социальные ссылки NiceChunk",
+    "home": "Главная",
+    "play": "Войти в мир",
+    "roadmap": "План",
+    "docs": "Документы",
+    "guardian": "Стражи",
+    "contracts": "Контракты",
+    "x": "X / Twitter",
+    "github": "GitHub",
+    "copyright": "2026 NiceChunk. Все права защищены."
+  },
+  "common": {
+    "brand": "NICECHUNK",
+    "language": "Язык",
+    "languageNative": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zhHant": "繁體中文",
+      "zhHans": "简体中文"
+    }
+  },
+  "elements": {
+    "names": {
+      "H": "Hydrogen",
+      "He": "Helium",
+      "Li": "Lithium",
+      "Be": "Beryllium",
+      "B": "Boron",
+      "C": "Carbon",
+      "N": "Nitrogen",
+      "O": "Oxygen",
+      "F": "Fluorine",
+      "Ne": "Neon",
+      "Na": "Sodium",
+      "Mg": "Magnesium",
+      "Al": "Aluminium",
+      "Si": "Silicon",
+      "P": "Phosphorus",
+      "S": "Sulfur",
+      "Cl": "Chlorine",
+      "Ar": "Argon",
+      "K": "Potassium",
+      "Ca": "Calcium",
+      "Sc": "Scandium",
+      "Ti": "Titanium",
+      "V": "Vanadium",
+      "Cr": "Chromium",
+      "Mn": "Manganese",
+      "Fe": "Iron",
+      "Co": "Cobalt",
+      "Ni": "Nickel",
+      "Cu": "Copper",
+      "Zn": "Zinc",
+      "Ga": "Gallium",
+      "Ge": "Germanium",
+      "As": "Arsenic",
+      "Se": "Selenium",
+      "Br": "Bromine",
+      "Kr": "Krypton",
+      "Rb": "Rubidium",
+      "Sr": "Strontium",
+      "Y": "Yttrium",
+      "Zr": "Zirconium",
+      "Nb": "Niobium",
+      "Mo": "Molybdenum",
+      "Tc": "Technetium",
+      "Ru": "Ruthenium",
+      "Rh": "Rhodium",
+      "Pd": "Palladium",
+      "Ag": "Silver",
+      "Cd": "Cadmium",
+      "In": "Indium",
+      "Sn": "Tin",
+      "Sb": "Antimony",
+      "Te": "Tellurium",
+      "I": "Iodine",
+      "Xe": "Xenon",
+      "Cs": "Caesium",
+      "Ba": "Barium",
+      "La": "Lanthanum",
+      "Ce": "Cerium",
+      "Pr": "Praseodymium",
+      "Nd": "Neodymium",
+      "Pm": "Promethium",
+      "Sm": "Samarium",
+      "Eu": "Europium",
+      "Gd": "Gadolinium",
+      "Tb": "Terbium",
+      "Dy": "Dysprosium",
+      "Ho": "Holmium",
+      "Er": "Erbium",
+      "Tm": "Thulium",
+      "Yb": "Ytterbium",
+      "Lu": "Lutetium",
+      "Hf": "Hafnium",
+      "Ta": "Tantalum",
+      "W": "Tungsten",
+      "Re": "Rhenium",
+      "Os": "Osmium",
+      "Ir": "Iridium",
+      "Pt": "Platinum",
+      "Au": "Gold",
+      "Hg": "Mercury",
+      "Tl": "Thallium",
+      "Pb": "Lead",
+      "Bi": "Bismuth",
+      "Po": "Polonium",
+      "At": "Astatine",
+      "Rn": "Radon",
+      "Fr": "Francium",
+      "Ra": "Radium",
+      "Ac": "Actinium",
+      "Th": "Thorium",
+      "Pa": "Protactinium",
+      "U": "Uranium",
+      "Np": "Neptunium",
+      "Pu": "Plutonium",
+      "Am": "Americium",
+      "Cm": "Curium",
+      "Bk": "Berkelium",
+      "Cf": "Californium",
+      "Es": "Einsteinium",
+      "Fm": "Fermium",
+      "Md": "Mendelevium",
+      "No": "Nobelium",
+      "Lr": "Lawrencium",
+      "Rf": "Rutherfordium",
+      "Db": "Dubnium",
+      "Sg": "Seaborgium",
+      "Bh": "Bohrium",
+      "Hs": "Hassium",
+      "Mt": "Meitnerium",
+      "Ds": "Darmstadtium",
+      "Rg": "Roentgenium",
+      "Cn": "Copernicium",
+      "Nh": "Nihonium",
+      "Fl": "Flerovium",
+      "Mc": "Moscovium",
+      "Lv": "Livermorium",
+      "Ts": "Tennessine",
+      "Og": "Oganesson"
+    }
+  },
+  "resourceAtlas": {
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "elements": "Elements",
+      "fairness": "Fairness",
+      "proofOfFrontier": "Proof",
+      "guardians": "Guardians",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "page": {
+      "title": "NiceChunk Box Resource Atlas",
+      "eyebrow": "GENERATED BLOCK RESOURCE ATLAS",
+      "heading": "Every generated block is a public resource rule.",
+      "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
+      "metricsAria": "Atlas status",
+      "workspaceAria": "Block resource atlas",
+      "filtersAria": "Atlas filters",
+      "filterTitle": "Block families",
+      "resultCount": "{count} shown",
+      "modelLabel": "Composition model",
+      "modelBody": "Ranges are material tendencies, not fixed rewards. Actual resource rolls can later use seed, coordinate, depth, biome, and chain-verified state.",
+      "searchLabel": "Search blocks, elements, or signals",
+      "searchPlaceholder": "Search grass, Si, volcanic...",
+      "empty": "No generated blocks match the current filters.",
+      "blockAria": "Open {name} resource details",
+      "compositionTitle": "Element composition range",
+      "physicalTitle": "Density and mass estimate",
+      "densityLabel": "Bulk density",
+      "dimensionsLabel": "Actual block dimensions",
+      "volumeLabel": "Calculated volume",
+      "massLabel": "Calculated mass",
+      "notAvailable": "Unknown",
+      "signalsTitle": "Generation signals",
+      "visualTitle": "Voxel visual gene",
+      "metric": {
+        "blocks": "Generated blocks",
+        "families": "Block families",
+        "elements": "Referenced elements",
+        "ruleSet": "Rule set"
+      },
+      "color": {
+        "0": "Primary face",
+        "1": "Side face",
+        "2": "Top highlight"
+      }
+    },
+    "category": {
+      "all": "All Blocks",
+      "terrain": "Terrain",
+      "fluids": "Fluids",
+      "geological": "Geological",
+      "cold": "Cold",
+      "volcanic": "Volcanic",
+      "organic": "Organic",
+      "plants": "Plants",
+      "aquatic": "Aquatic",
+      "anomaly": "Rare / Anomaly"
+    },
+    "rarity": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Anomaly": "Anomaly"
+    },
+    "signal": {
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "altitude": "Altitude",
+      "slope": "Slope",
+      "rarity": "Rarity"
+    },
+    "block": {
+      "grass": {
+        "name": "Блок травы",
+        "source": "Поверхность",
+        "description": "Живой верхний почвенный блок: силикатная почва под тонким биологическим слоем, сформированным влажностью, уклоном и плотностью леса."
+      },
+      "dirt": {
+        "name": "Почва",
+        "source": "Мелкий подземный слой",
+        "description": "Выветренная почва под травой, смешанная с силикатными зернами, глинами, оксидами железа, влагой и органическими остатками."
+      },
+      "stone": {
+        "name": "Камень",
+        "source": "Подземный слой",
+        "description": "Обычная силикатная порода для холмов, скал, стен пещер и базового геологического материала при добыче."
+      },
+      "deepStone": {
+        "name": "Глубинный камень",
+        "source": "Глубокий подземный слой",
+        "description": "Плотная порода нижних пластов с повышенной склонностью к железу и магнию, генерируемая ниже мелкой коры."
+      },
+      "sand": {
+        "name": "Песок",
+        "source": "Поверхность",
+        "description": "Кварцевый зернистый осадок, создаваемый правилами пустынь, пляжей, рек, озер и морского дна."
+      },
+      "gravel": {
+        "name": "Гравий",
+        "source": "Поверхность / Подземный слой",
+        "description": "Смешанные обломки пород; состав сильно меняется по соседнему рельефу, но остается в основном силикатным."
+      },
+      "clay": {
+        "name": "Глина",
+        "source": "Влажная поверхность / Подземный слой",
+        "description": "Мелкий гидратированный алюмосиликатный осадок во влажных, пологих местах и слоях рядом с водой."
+      },
+      "mud": {
+        "name": "Грязь",
+        "source": "Влажная поверхность",
+        "description": "Почва с высоким содержанием воды и органики, характерная для низких плохо дренированных экосистем с малым доступом кислорода."
+      },
+      "dryDirt": {
+        "name": "Сухая почва",
+        "source": "Сухая поверхность",
+        "description": "Высушенная почва с меньшей долей водорода и органики, создаваемая правилами низкой влажности."
+      },
+      "saltFlat": {
+        "name": "Солончак",
+        "source": "Пустынный участок",
+        "description": "Эвапоритовая корка сухого бассейна, где преобладает хлорид натрия с примесями магния, кальция, сульфатов и кислородных солей."
+      },
+      "snow": {
+        "name": "Снег",
+        "source": "Холодная поверхность",
+        "description": "Слой замерзших осадков выше снеговой линии или в холодном биоме, возможно с следами минеральной пыли."
+      },
+      "ice": {
+        "name": "Лед",
+        "source": "Замерзшая жидкость / Редкая поверхность",
+        "description": "Твердая фаза воды, выбранная холодными жидкостями и редкими снежными правилами; химически проста, но важна для среды."
+      },
+      "frozenSoil": {
+        "name": "Мерзлая почва",
+        "source": "Холодная поверхность / Подземный слой",
+        "description": "Почва типа вечной мерзлоты, смешивающая минеральные зерна, связанный лед и сохраненную органику."
+      },
+      "basalt": {
+        "name": "Базальт",
+        "source": "Вулканическая поверхность / Подземный слой",
+        "description": "Темная мафическая вулканическая порода из быстро остывшей лавы, с большей склонностью к железу, магнию, кальцию и титану."
+      },
+      "ash": {
+        "name": "Вулканический пепел",
+        "source": "Вулканическая поверхность",
+        "description": "Мелкие вулканические частицы из вулканических биомов, похожие на силикатную породу, но более пористые и склонные к сульфатам."
+      },
+      "bedrock": {
+        "name": "Коренная порода",
+        "source": "Основание мира",
+        "description": "Протокольный фундаментальный слой в основании генерируемых колонн; ведет себя как твердая порода, а не фиксированное химическое месторождение."
+      },
+      "water": {
+        "name": "Вода",
+        "source": "Жидкость",
+        "description": "Стандартный жидкий блок для океанов, рек, озер и низинных вод, с небольшими различиями растворенных ионов по биому."
+      },
+      "swampWater": {
+        "name": "Болотная вода",
+        "source": "Болотная жидкость",
+        "description": "Органически богатая стоячая вода из правил болот и влажных земель, со следами растворенного углерода, серы, железа и азота."
+      },
+      "toxicWater": {
+        "name": "Токсичная вода",
+        "source": "Загрязненная жидкость",
+        "description": "Опасная жидкость, выбранная сигналами загрязнения. Основой остается вода, но следовые металлы и сульфиды повышают биологический риск."
+      },
+      "lava": {
+        "name": "Лава",
+        "source": "Вулканическая жидкость",
+        "description": "Расплавленная силикатная жидкость из вулканических сигналов. Состав следует базальтовому расплаву, а не условному фэнтезийному огню."
+      },
+      "quicksand": {
+        "name": "Зыбучий песок",
+        "source": "Пустынная поверхность",
+        "description": "Водонасыщенная песчаная ловушка из пустынной аномальности; в основном кремнезем с водой, снижающей механическую устойчивость."
+      },
+      "trunk": {
+        "name": "Ствол",
+        "source": "Дерево",
+        "description": "Древесная структурная ткань широколиственных деревьев, состоящая главным образом из целлюлозы, лигнина, воды и минеральных питательных веществ."
+      },
+      "leaves": {
+        "name": "Листья",
+        "source": "Крона дерева",
+        "description": "Фотосинтетические блоки кроны; органическая ткань с магниевым хлорофиллом и питательными следовыми металлами."
+      },
+      "pineTrunk": {
+        "name": "Сосновый ствол",
+        "source": "Сосна",
+        "description": "Смолистая древесина хвойного дерева, создаваемая холодными, высокогорными или вечнозелеными правилами."
+      },
+      "pineLeaves": {
+        "name": "Сосновая хвоя",
+        "source": "Крона сосны",
+        "description": "Вечнозеленая хвойная крона с меньшим водообменом и следами минеральных питательных веществ."
+      },
+      "deadWood": {
+        "name": "Мертвая древесина",
+        "source": "Вулканическая / сухая растительность",
+        "description": "Высушенная или перегретая древесина с меньшим содержанием водорода и большей долей открытого углерода."
+      },
+      "giantRoot": {
+        "name": "Гигантский корень",
+        "source": "Растительность тропического леса",
+        "description": "Большая открытая корневая масса из влажных тропических лесов; древесная, но у почвы более влажная и минерализованная."
+      },
+      "grassPlant": {
+        "name": "Травянистое растение",
+        "source": "Поверхностная растительность",
+        "description": "Малое травянистое растение, выбранное влажными и пологими поверхностными правилами."
+      },
+      "dryGrass": {
+        "name": "Сухая трава",
+        "source": "Сухая растительность",
+        "description": "Высушенный травянистый материал с низковлажных поверхностей, с меньшим водородом и более высокой концентрацией углерода."
+      },
+      "bush": {
+        "name": "Куст",
+        "source": "Поверхностная растительность",
+        "description": "Древесный кустарниковый слой из правил леса, равнин, гор и тропического леса."
+      },
+      "deadBush": {
+        "name": "Сухой куст",
+        "source": "Сухая / вулканическая растительность",
+        "description": "Высохший остаток кустарника, создаваемый пустынными и вулканическими поверхностными условиями."
+      },
+      "cactus": {
+        "name": "Кактус",
+        "source": "Пустынная растительность",
+        "description": "Запасающий воду суккулент из пустынных правил; органический, но с необычно высокой долей связанной воды."
+      },
+      "reed": {
+        "name": "Камыш",
+        "source": "Прибрежная растительность",
+        "description": "Водное краевое растение, генерируемое рядом с болотами, реками, озерами и влажными землями."
+      },
+      "swampGrass": {
+        "name": "Болотная трава",
+        "source": "Болотная поверхность",
+        "description": "Травяной слой влажных земель с органической тканью и осадочным влиянием стоячей воды."
+      },
+      "snowBush": {
+        "name": "Снежный куст",
+        "source": "Холодная растительность",
+        "description": "Холодостойкий куст, часто окрашенный снегом или инеем и выбранный горными и снежными правилами."
+      },
+      "thorn": {
+        "name": "Колючка",
+        "source": "Сухая / вулканическая растительность",
+        "description": "Затвердевший защитный растительный материал сухих или вулканических поверхностей, богатый углеродной структурной тканью."
+      },
+      "moss": {
+        "name": "Мох",
+        "source": "Влажная поверхность / Пещера",
+        "description": "Влажный недревесный биологический мат из влажных лесов, болот и правил рядом с пещерами."
+      },
+      "lichen": {
+        "name": "Лишайник",
+        "source": "Холодная / каменная поверхность",
+        "description": "Симбиотическая корка холодных или каменных поверхностей, соединяющая биологическую ткань и минеральный субстрат."
+      },
+      "vine": {
+        "name": "Лиана",
+        "source": "Влажная растительность",
+        "description": "Гибкое углеродистое вьющееся растение, генерируемое во влажных биомах и влажных пещероподобных областях."
+      },
+      "glowMycelium": {
+        "name": "Светящийся мицелий",
+        "source": "Пещерная растительность",
+        "description": "Биолюминесцентный грибной мат из влажных подземных пространств, с усиленными сигналами фосфора и серы."
+      },
+      "mushroom": {
+        "name": "Гриб",
+        "source": "Влажная / пещерная растительность",
+        "description": "Плодовое тело гриба, выбранное редкими случайными результатами влажной растительности."
+      },
+      "seaweed": {
+        "name": "Морские водоросли",
+        "source": "Морская растительность",
+        "description": "Морская растительная биомасса под водой, с следовыми тенденциями натрия, калия, магния и йода."
+      },
+      "aquaticPlant": {
+        "name": "Водное растение",
+        "source": "Пресноводная растительность",
+        "description": "Пресноводная растительность с высоким содержанием воды, поглощающая питательные вещества из осадка."
+      },
+      "coral": {
+        "name": "Коралл",
+        "source": "Теплая морская растительность",
+        "description": "Структура из карбоната кальция, создаваемая в теплых мелководных условиях."
+      },
+      "deadCoral": {
+        "name": "Мертвый коралл",
+        "source": "Холодная / загрязненная морская растительность",
+        "description": "Мертвый карбонатно-кальциевый рифовый материал из холодных или загрязненных океанских правил."
+      },
+      "shellBed": {
+        "name": "Ракушечный слой",
+        "source": "Редкий пляж / Морское дно",
+        "description": "Накопление фрагментов раковин и карбонатных зерен, создаваемое как редкие пятна побережья и морского дна."
+      }
+    },
+    "tag": {
+      "plains": "Равнины",
+      "forest": "Лес",
+      "rainforest": "Тропический лес",
+      "general": "Общее",
+      "mountain": "Горы",
+      "cave": "Пещера",
+      "foundation": "Основание",
+      "deepCave": "Глубокая пещера",
+      "desert": "Пустыня",
+      "beach": "Пляж",
+      "river": "Река",
+      "oceanFloor": "Морское дно",
+      "wetland": "Влажные земли",
+      "swamp": "Болото",
+      "lake": "Озеро",
+      "desertEdge": "Край пустыни",
+      "dryPlains": "Сухие равнины",
+      "evaporite": "Эвапорит",
+      "snowfield": "Снежное поле",
+      "tundra": "Тундра",
+      "frozenWater": "Замерзшая вода",
+      "volcano": "Вулкан",
+      "deepRock": "Глубинная порода",
+      "ejecta": "Выбросы",
+      "unbreakable": "Неразрушимое",
+      "ocean": "Океан",
+      "corruption": "Загрязнение",
+      "heat": "Жар",
+      "hazard": "Опасность",
+      "tree": "Дерево",
+      "dryBiome": "Сухой биом",
+      "rareOrganic": "Редкая органика",
+      "succulent": "Суккулент",
+      "hazardPlant": "Опасное растение",
+      "humid": "Влажно",
+      "bioluminescent": "Биолюминесценция",
+      "aquatic": "Водное",
+      "warmWater": "Теплая вода",
+      "rare": "Редкое",
+      "coldWater": "Холодная вода"
+    }
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "meta": {
+    "title": "NiceChunk 协议文档"
+  },
+  "nav": {
+    "aria": "主导航",
+    "home": "首页",
+    "roadbook": "路书",
+    "enterWorld": "进入世界",
+    "worldRules": "世界规则",
+    "resources": "资源",
+    "elements": "元素表",
+    "fairness": "公平性",
+    "proofOfFrontier": "证明",
+    "docs": "文档",
+    "guardians": "守护者"
+  },
+  "language": {
+    "aria": "语言"
+  },
+  "sidebar": {
+    "aria": "文档导航",
+    "title": "协议文档"
+  },
+  "navigation": [
+    {
+      "title": "开始",
+      "items": [
+        {
+          "id": "overview",
+          "label": "概览"
+        },
+        {
+          "id": "protocol-map",
+          "label": "协议地图"
+        },
+        {
+          "id": "status-model",
+          "label": "状态模型"
+        },
+        {
+          "id": "implementation-snapshot",
+          "label": "实现快照"
+        },
+        {
+          "id": "quick-start",
+          "label": "快速开始"
+        }
+      ]
+    },
+    {
+      "title": "规则",
+      "items": [
+        {
+          "id": "world-generation",
+          "label": "世界生成"
+        },
+        {
+          "id": "water-system",
+          "label": "水系统"
+        },
+        {
+          "id": "chunk-system",
+          "label": "Chunk 系统"
+        },
+        {
+          "id": "on-chain-state",
+          "label": "链上状态"
+        },
+        {
+          "id": "player-backpack-contracts",
+          "label": "玩家与背包"
+        },
+        {
+          "id": "performance-storage",
+          "label": "性能与存储"
+        },
+        {
+          "id": "player-actions",
+          "label": "玩家行为"
+        },
+        {
+          "id": "mining-resources",
+          "label": "挖矿与资源"
+        },
+        {
+          "id": "forging-assets",
+          "label": "锻造与资产"
+        },
+        {
+          "id": "assets-market",
+          "label": "资产与市场"
+        }
+      ]
+    },
+    {
+      "title": "协议",
+      "items": [
+        {
+          "id": "nck-economy",
+          "label": "NCK 经济"
+        },
+        {
+          "id": "guardian-network",
+          "label": "守护者网络"
+        },
+        {
+          "id": "magicblock-er",
+          "label": "MagicBlock ER"
+        },
+        {
+          "id": "solana-integration",
+          "label": "Solana 集成"
+        },
+        {
+          "id": "transaction-debugging",
+          "label": "交易排查"
+        },
+        {
+          "id": "fairness",
+          "label": "公平性"
+        },
+        {
+          "id": "changelog",
+          "label": "更新记录"
+        }
+      ]
+    }
+  ],
+  "hero": {
+    "eyebrow": "公开协议手册",
+    "title": "一个公平的体素世界，必须先公开规则，再要求玩家信任。",
+    "subtitle": "NiceChunk 把从种子到 Chunk、从玩家行为到状态变化、从客户端体验到未来链上验证的路径写成公开文档。",
+    "startReading": "阅读架构",
+    "fairnessModel": "验证规则",
+    "enterWorld": "进入世界",
+    "statusAria": "文档状态",
+    "seedLabel": "种子",
+    "badges": {
+      "alpha": "Alpha 文档",
+      "seeded": "种子 Chunk 引擎",
+      "publicRules": "公开规则书",
+      "chainBoundaries": "链上边界",
+      "versioned": "版本化规范"
+    }
+  },
+  "protocolMap": {
+    "eyebrow": "协议地图",
+    "title": "文档结构要和产品层级一致。",
+    "body": "NiceChunk 不是用营销页来解释自己，而是把规则面向玩家、开发者、节点运行者、审计者和未来治理公开。",
+    "cards": {
+      "world": {
+        "title": "世界协议",
+        "body": "种子地形、大范围生物群系遮罩、坡度受限山体、海洋、森林、雪带和方块资源规则。"
+      },
+      "actions": {
+        "title": "行为规则",
+        "body": "工具栏选择决定行为、挖矿范围、方块放置、背包移动、锻造输入和验证边界。"
+      },
+      "verification": {
+        "title": "状态与 PDA 模型",
+        "body": "GlobalConfig、Chunk 覆盖账户、Guardian 登记 PDA、版本哈希，以及哪些内容不应该上链存储。"
+      },
+      "network": {
+        "title": "Guardian 网络",
+        "body": "区域接入节点、实时消息、非托管边界、NCK 质押和未来可用性证明。"
+      }
+    }
+  },
+  "statusModel": {
+    "eyebrow": "状态模型",
+    "title": "每条规则都必须说明：已上线、计划中、仅客户端，还是未来链上验证目标。",
+    "body": "这是 NiceChunk 文档的核心规则。一个功能可以先变得可玩，再逐步走向完整去中心化，但页面必须说明哪部分已经上线，哪部分仍是协议目标。",
+    "cards": {
+      "live": {
+        "label": "Alpha 已上线",
+        "title": "可玩的客户端行为",
+        "body": "浏览器世界、种子地形、移动、挖矿交互、放置预览、工具栏、背包 UI、锻造 UI、小地图和钱包登录。"
+      },
+      "chain": {
+        "label": "Devnet / 链上",
+        "title": "明确的 Solana 状态",
+        "body": "GlobalConfig、玩家/会话桥、Guardian 登记表和区域账户、NCK mint 绑定，以及 PDA 派生规则。"
+      },
+      "planned": {
+        "label": "计划中的协议",
+        "title": "未来验证层",
+        "body": "Chunk 覆盖压缩、资源结算、资产所有权、市场结算、Guardian 证明和治理控制。"
+      },
+      "boundary": {
+        "label": "信任边界",
+        "title": "不做隐藏承诺",
+        "body": "文档不能暗示仅客户端渲染、本地缓存或未发布系统已经完全去中心化。"
+      }
+    }
+  },
+  "implementation": {
+    "eyebrow": "实现快照",
+    "title": "当前文档应该描述今天真实存在的游戏。",
+    "body": "这个快照会区分已经上线的浏览器行为、开发网支持的状态，以及仍属于路线图的协议目标，让玩家知道现在什么是权威状态，什么还在规划中。",
+    "status": {
+      "live": "Alpha 已上线",
+      "chain": "Devnet / 链上",
+      "realtime": "实时"
+    },
+    "cards": {
+      "world": {
+        "title": "无限种子世界",
+        "body": "地形按确定性规则按需生成。客户端加载附近 Chunk，保留已发现地图信息，并卸载活跃区域外的渲染资源。"
+      },
+      "water": {
+        "title": "水作为方块",
+        "body": "河流、湖泊、海洋和动态水视觉都使用水方块条目。水比普通方块矮，不参与碰撞，会阻止被水覆盖格子的挖掘选中，并使用基于深度的颜色。"
+      },
+      "player": {
+        "title": "玩家和背包 PDA",
+        "body": "PlayerProfile 存储公开玩家状态和已装备背包地址。背包内容存在 Backpack 账户中；挖矿会在有效玩家会话后追加资源记录。"
+      },
+      "guardian": {
+        "title": "Guardian 接入层",
+        "body": "浏览器可以连接 Guardian 实时端点，接收附近玩家移动、聊天和挖掘事件。Guardian 提供接入和可见性，不托管资产，也不替玩家签名交易。"
+      }
+    }
+  },
+  "quickStart": {
+    "eyebrow": "快速开始",
+    "title": "进入、检查并验证 alpha 世界。",
+    "steps": {
+      "enter": {
+        "title": "进入世界",
+        "body": "打开浏览器客户端，连接 Solana 钱包，并创建玩家档案后进入体素世界。"
+      },
+      "explore": {
+        "title": "探索 Chunk",
+        "body": "玩家穿过种子地形时，客户端会加载附近 Chunk，缓存已探索地图数据，并在区域远离后卸载 GPU 资源。"
+      },
+      "act": {
+        "title": "使用选中物品",
+        "body": "工具栏决定行为：空手只挥手，镐子挖矿，方块物品在范围内放置方块。"
+      }
+    }
+  },
+  "worldGeneration": {
+    "eyebrow": "世界生成",
+    "title": "同一个种子和规则版本必须重建同一个世界。",
+    "body": "地形来自确定性输入。系统先采样大范围气候区域，再叠加海洋、沙丘、山脚、山体、雪带、树木和资源提示。",
+    "demo": {
+      "eyebrow": "交互演示",
+      "title": "种子 Chunk 预览",
+      "random": "随机种子",
+      "seedLabel": "种子",
+      "biome": "主要地形",
+      "height": "高度哈希",
+      "resources": "资源提示"
+    },
+    "rules": {
+      "seed": {
+        "title": "种子合约",
+        "body": "公开种子会被标准化为数值流。地形、气候、树木配色和资源提示都必须使用由种子派生的数值流。"
+      },
+      "slope": {
+        "title": "坡度限制山体",
+        "body": "山体增长是大范围且概率化的。最终地形会把相邻柱体限制为更自然的一格步进，以保证玩法可通行。"
+      },
+      "biomes": {
+        "title": "大面积生物群系",
+        "body": "低频气候遮罩允许大平原、沙漠、海洋、森林、山脚和雪地连续出现，同时不对大小做硬限制。"
+      }
+    }
+  },
+  "waterSystem": {
+    "eyebrow": "水系统",
+    "title": "水首先是方块状态，其次才是视觉表面。",
+    "body": "地形生成器和动态水层都把水当作格子数据处理。渲染可以让水透明、变矮，但玩法检测必须来自方块状态，而不是屏幕像素。",
+    "status": {
+      "generated": "生成态",
+      "collision": "碰撞边界",
+      "selection": "选择规则"
+    },
+    "cards": {
+      "generated": {
+        "title": "生成水方块",
+        "body": "海水、湖水和河水格子会解析为水类方块 id。水面顶部不应该高于周围地平面。"
+      },
+      "collision": {
+        "title": "不作为实体碰撞",
+        "body": "玩家碰撞会忽略水格子，让角色自然落到水下真实的实体方块上，而不是站在水上。"
+      },
+      "selection": {
+        "title": "水阻止挖掘",
+        "body": "如果目标列被水覆盖，挖掘选择会被阻止，避免玩家站在水里继续挖隐藏在水下的方块。"
+      }
+    }
+  },
+  "chunkSystem": {
+    "eyebrow": "Chunk 系统",
+    "title": "世界坐标会转换为 Chunk 坐标、本地方块坐标和缓存键。",
+    "body": "一个 Chunk 是 X/Z 平面的 16 x 16 区域。客户端当前渲染 13 x 13 的可见 Chunk 方阵，并预载更大的 19 x 19 方阵来减少卡顿。渲染资源可以卸载，但已探索小地图数据会继续缓存。",
+    "demo": {
+      "eyebrow": "坐标演示",
+      "title": "世界坐标转 Chunk",
+      "worldX": "世界 X",
+      "worldZ": "世界 Z"
+    }
+  },
+  "chainState": {
+    "eyebrow": "链上状态",
+    "title": "链上存储承诺和玩家拥有的状态，而不是每一个生成方块。",
+    "body": "NiceChunk 的存储模型遵守一个原则：确定性生成地形应该可以免费重建，只有玩家改变过或具有经济意义的状态才变成明确且可验证的链上状态。",
+    "table": {
+      "account": "账户",
+      "seed": "PDA 种子",
+      "role": "作用",
+      "rows": {
+        "global": "不可变的世界规则层：NCK mint、世界种子哈希、Chunk 尺寸、规则哈希、费用和 Guardian 参数。",
+        "player": "公开玩家账户，包含 owner、global config、位置、可见装备、背包样式和已装备背包地址。",
+        "session": "短期授权账户，让玩法行为不需要每挖一个方块都请求钱包签名。",
+        "backpack": "玩家拥有的背包账户，存储容量、物品数量、携带状态和已挖资源坐标记录。",
+        "chunkBroken": "被挖生成格子的紧凑记录，用来避免把完整生成地形写入链上存储。",
+        "registry": "活跃 Guardian 区域的登记表，包含 NCK 质押数量、国库代币账户和注册计数。",
+        "region": "已注册的区域端点，包含 owner、operator、host、TLS 标记、质押、证明计数和更新 slot。",
+        "chunk": "未来生产版本的当前方块覆盖账户，只存玩家改变过的状态；未改变的生成地形不应存储。"
+      }
+    }
+  },
+  "playerBackpack": {
+    "eyebrow": "玩家与背包合约",
+    "title": "购买背包和装备背包是两个不同的状态变化。",
+    "body": "Backpack 程序负责创建背包账户，Player 程序负责把这个账户绑定到玩家公开档案。个人面板只有在 PlayerProfile 的 equipped backpack 字段指向同一钱包拥有的有效 Backpack 账户后，才会显示背包。",
+    "flow": {
+      "eyebrow": "购买流程",
+      "title": "必须执行的指令顺序",
+      "steps": {
+        "player": "如果 PlayerProfile 不存在，先创建玩家档案。",
+        "create": "使用 [\"backpack\", owner, backpack_id] 种子创建 Backpack PDA。",
+        "bind": "调用 Player 程序指令 5，把 Backpack 公钥写入 PlayerProfile。",
+        "verify": "重新加载 PlayerProfile，再加载引用的 Backpack，并验证两个账户 owner 一致。"
+      }
+    }
+  },
+  "performance": {
+    "eyebrow": "性能与存储",
+    "title": "无限世界要保持低成本：先推导，只存变化。",
+    "body": "NiceChunk 不应该为每一个生成方块付费，也不应该把可以在生成、构建 Chunk、点击或交易阶段解决的规则放到每帧里执行。",
+    "status": {
+      "render": "渲染阶段",
+      "algorithm": "算法计算",
+      "storage": "PDA 存储",
+      "ephemeral": "临时态"
+    },
+    "cards": {
+      "render": {
+        "title": "按 Chunk 批处理",
+        "body": "方块、水、树木和装饰会构建成 Chunk 网格或实例批次。远处 Chunk 使用更便宜的细节模式，而不是每个对象都实时判断。"
+      },
+      "algorithm": {
+        "title": "逻辑不做视觉检测",
+        "body": "碰撞、水覆盖、挖掘选择和寻路检查都应该使用生成方块状态和本地增量，而不是浏览器截图或像素识别。"
+      },
+      "storage": {
+        "title": "稀疏存储变化格子",
+        "body": "默认世界由种子重建。PDA 数据只应该保存玩家改变过区域的紧凑增量、挖掘掩码或 section patch。"
+      },
+      "water": {
+        "title": "动态水保持有限",
+        "body": "MVP 流动水是视觉或客户端临时态。未来如果要权威化，也应只存紧凑水源变化，而不是完整流动网格。"
+      }
+    }
+  },
+  "playerActions": {
+    "eyebrow": "玩家行为",
+    "title": "选中的工具栏格子就是行为合约。",
+    "body": "NiceChunk 的行为应该在提交前就可预测。客户端先根据手持物品解析输入，再由范围和目标规则决定行为是否有效。",
+    "cards": {
+      "empty": {
+        "title": "空手",
+        "body": "没有手持物品时点击只会挥手，不会挖矿，也不会放置。"
+      },
+      "pickaxe": {
+        "title": "镐子",
+        "body": "挖矿工具会把点击解析为挖矿尝试，并在成功时消耗耐久。"
+      },
+      "block": {
+        "title": "方块物品",
+        "body": "方块堆叠会把点击解析为范围内的放置尝试，每次成功放置消耗一个物品。"
+      }
+    }
+  },
+  "mining": {
+    "eyebrow": "挖矿与资源",
+    "title": "资源结果应该能从公开输入复现。",
+    "body": "基础地形可以确定性生成，但高价值资源不能只由公开世界种子完全预测。资源发现应该把公开承诺和行为输入结合起来，让玩家能验证结果，又不能提前离线扫描所有高价值坐标。",
+    "demo": {
+      "eyebrow": "证明演示",
+      "title": "挖矿 Roll",
+      "seed": "种子",
+      "block": "方块",
+      "nonce": "随机数"
+    }
+  },
+  "forging": {
+    "eyebrow": "锻造、资产与背包",
+    "title": "物品在成为可交易资产前，必须先有可读状态。",
+    "body": "工具栏格子、耐久、堆叠限制、配方、材料输入和未来资产元数据，都应该作为状态模型公开，而不是隐藏在 UI 行为里。",
+    "cards": {
+      "hotbar": {
+        "title": "工具栏",
+        "body": "当前工具栏有 9 个格子。可堆叠物品每格最多 99 个。"
+      },
+      "durability": {
+        "title": "耐久",
+        "body": "工具使用耐久而不是堆叠数量。当前默认工具耐久是 999。"
+      },
+      "recipes": {
+        "title": "配方",
+        "body": "锻造输出应该声明输入材料、输出物品、质量字段和未来验证路径。"
+      }
+    }
+  },
+  "assetsMarket": {
+    "eyebrow": "资产与市场",
+    "title": "可交易物品需要紧凑资产数据和明确挂单状态。",
+    "body": "NiceChunk 现在有三个独立方向：紧凑链上 3D 资产、可 CPU 搜索的资产基因、市场挂单。在所有权和结算规则完成前，这些系统必须和原始玩法背包明确分开。",
+    "status": {
+      "tool": "工具",
+      "experiment": "实验",
+      "contract": "合约"
+    },
+    "cards": {
+      "ncm": {
+        "title": "NCM 资产格式",
+        "body": "NCM 会把体素模型转换为紧凑的链上可读文本，让客户端可以从账户数据重建 3D 资产，不依赖外部网关。"
+      },
+      "dna": {
+        "title": "NCM DNA 搜索",
+        "body": "NCM DNA 探索 CPU 友好的搜索方式，寻找能复现同一资产哈希的更短确定性基因，从而降低未来 PDA 存储尺寸。"
+      },
+      "market": {
+        "title": "市场挂单",
+        "body": "Market 程序会创建卖家拥有的 Listing PDA，包含分类、货币、来源类型、来源索引、数量、价格和物品哈希。当前范围是创建挂单和取消挂单。"
+      }
+    }
+  },
+  "economy": {
+    "eyebrow": "NCK 经济",
+    "title": "NCK 功能必须按状态记录，而不是靠宣传语表达。",
+    "body": "NCK 被设计为 NiceChunk 的核心功能型代币，用于访问、游戏内行为、锻造系统、市场结算、守护者激励和未来治理机制。",
+    "status": {
+      "planned": "计划中",
+      "devnet": "开发网",
+      "longTerm": "长期"
+    },
+    "table": {
+      "utility": "用途",
+      "status": "状态",
+      "notes": "说明",
+      "rows": {
+        "genesis": {
+          "utility": "创世访问",
+          "notes": "访问机制可以与 NCK 和 Genesis Pass 逻辑连接。"
+        },
+        "forging": {
+          "utility": "锻造系统",
+          "notes": "经济结算应该公开配方和材料状态。"
+        },
+        "market": {
+          "utility": "市场结算",
+          "notes": "玩家拥有的资产需要明确的资产元数据和结算规则。"
+        },
+        "guardian": {
+          "utility": "Guardian 质押",
+          "notes": "Guardian 注册当前会在开发网把 100,000 NCK 发送到国库代币账户。"
+        },
+        "governance": {
+          "utility": "治理",
+          "notes": "协议参数修改应该被版本化并可审查。"
+        }
+      }
+    }
+  },
+  "watchers": {
+    "eyebrow": "守护者网络",
+    "title": "Guardian 和 Guardian 是接入基础设施，不是资产托管方。",
+    "body": "当前 Guardian 程序已经在开发网上注册区域端点和 NCK 质押。更大的 Guardian 网络概念是实时接入层，用来保持区域可访问，但不拥有玩家资产，也不替玩家签名交易。",
+    "demo": {
+      "title": "守护者区域",
+      "body": "实时访问概念"
+    },
+    "status": {
+      "boundary": "边界",
+      "devnet": "开发网"
+    },
+    "rules": {
+      "noCustody": {
+        "title": "不托管资产",
+        "body": "守护者不持有玩家资产，也不替代钱包授权。"
+      },
+      "noTransactions": {
+        "title": "不签署交易",
+        "body": "玩家直接与 Solana 钱包交互。守护者不应该作为隐藏所有者处理交易。"
+      },
+      "registry": {
+        "title": "Guardian 登记表",
+        "body": "GuardianRegion 账户会存储区域坐标、端点、owner、operator、质押、证明计数和更新 slot。"
+      }
+    }
+  },
+  "magicblock": {
+    "eyebrow": "MagicBlock ER",
+    "title": "高频 Chunk 变化应该走有限的实时路径。",
+    "body": "MagicBlock Ephemeral Rollups 桥接会先限制在一个活跃 Chunk 内。它是面向快速挖掘/放置更新的开发网方向，不替代钱包所有权，也不替代最终结算。",
+    "status": {
+      "scope": "范围",
+      "session": "会话",
+      "boundary": "边界",
+      "devnet": "开发网"
+    },
+    "cards": {
+      "singleChunk": {
+        "title": "单活跃 Chunk",
+        "body": "客户端应该只订阅玩家当前所在 Chunk；跨越 Chunk 边界时，取消旧订阅并订阅新 Chunk。"
+      },
+      "session": {
+        "title": "PlayerSession 授权",
+        "body": "钱包签名一次即可创建或刷新 session PDA。临时 session key 可以在过期前签署允许的玩法行为。"
+      },
+      "noPolling": {
+        "title": "不做大范围 RPC 轮询",
+        "body": "设计上不应该重新启用公开 RPC 的多 Chunk 大范围轮询。实时更新必须限制在活跃关注区域。"
+      },
+      "notProd": {
+        "title": "尚未生产启用",
+        "body": "在 chunk 程序重新部署并完成端到端委托验证前，不要在生产环境启用浏览器 ER 开关。"
+      }
+    }
+  },
+  "solana": {
+    "eyebrow": "Solana 集成",
+    "title": "钱包身份和协议状态必须保持明确。",
+    "body": "文档会区分已经运行的钱包流程、开发网程序、本地客户端缓存和未来主网承诺，避免把 alpha 客户端行为误认为最终协议保证。"
+  },
+  "debugging": {
+    "eyebrow": "交易排查",
+    "title": "有签名不等于成功，确认后的交易必须检查错误。",
+    "body": "钱包可能返回 signature，但确认后的交易仍然包含错误。客户端和支持文档应该先验证确认状态、账户所有权和 PDA 字段，再告诉玩家状态已经绑定。",
+    "status": {
+      "wallet": "钱包",
+      "confirmation": "确认",
+      "pda": "PDA"
+    },
+    "cards": {
+      "wallet": {
+        "title": "钱包不匹配",
+        "body": "连接的 provider 必须和 NiceChunk 存储的钱包地址一致。浏览器装了多个钱包时，不同 provider 可能暴露不同账号。"
+      },
+      "confirm": {
+        "title": "检查 value.err",
+        "body": "confirmTransaction 之后，要检查返回错误字段，再把购买、挂单、挖矿或 session 刷新视为成功。"
+      },
+      "pda": {
+        "title": "读取权威 PDA",
+        "body": "背包场景必须先读取 PlayerProfile。Profile 必须指向一个 owner 等于钱包地址的 Backpack 账户。"
+      }
+    }
+  },
+  "fairness": {
+    "eyebrow": "公平、安全与治理",
+    "title": "只有玩家能检查规则书，规则才真正公平。",
+    "body": "NiceChunk 应该公开确定性规则、版本化重大规则变更、发布测试向量、披露信任边界，并区分已上线功能和计划中的协议机制。",
+    "cards": {
+      "deterministic": {
+        "title": "确定性生成",
+        "body": "同一个种子、Chunk 坐标和生成版本应该产生同一个结果。"
+      },
+      "versioned": {
+        "title": "规则变更版本化",
+        "body": "UI 改动、世界规则改动、经济改动和链上状态改动应该分开追踪。"
+      },
+      "limits": {
+        "title": "信任边界",
+        "body": "文档必须说明哪些是客户端行为，哪些由守护者辅助，哪些计划进入链上验证。"
+      }
+    }
+  },
+  "changelog": {
+    "eyebrow": "更新记录",
+    "title": "协议文档必须记录改变了什么，也要记录没有改变什么。",
+    "items": {
+      "v0163": {
+        "title": "协议文档扩展",
+        "body": "补充当前实现快照、水方块规则、玩家/背包绑定流程、扩展 PDA 账户覆盖、存储原则、市场范围、MagicBlock ER 边界和交易排查。"
+      },
+      "v0150": {
+        "title": "文档 alpha 上线",
+        "body": "增加协议文档页面、公开架构、演示、独立 docs 语言资源和主网 docs 语言索引。"
+      },
+      "v0148": {
+        "title": "首页主 logo 尺寸更新",
+        "body": "仅 UI 改动。不涉及玩法、世界生成、经济或链上状态规则变更。"
+      }
+    }
+  },
+  "biomes": {
+    "grassland": "草地",
+    "forest": "森林",
+    "desert": "沙漠",
+    "snow": "雪地",
+    "water": "水域"
+  }
+}
