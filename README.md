@@ -20,6 +20,14 @@ The web UI resolves Guardian coverage from on-chain region accounts. It fetches 
 
 That flow gives operators and client developers the same mental model: chunks are not routed to a hardcoded server unless the registry cannot provide a match. The UI remains an operator surface for registration and inspection; the realtime server and registry program remain the enforcement layers.
 
+## Operator Registration Flow
+
+![Operator registration flow](docs/diagrams/operator-registration-flow.svg)
+
+Registration should be previewed before a wallet prompt appears. The operator needs to see region bounds, endpoint host, port, TLS mode, program IDs, treasury expectations, and the account surface that will be touched.
+
+The UI should reduce operator error, not hide protocol details. That is why this repository belongs next to the Guardian service and Guardian program but remains separate from both.
+
 ## System Principles
 
 - Operator clarity: registration inputs, program IDs, treasury accounts, and region previews should be visible before a wallet signs anything.
