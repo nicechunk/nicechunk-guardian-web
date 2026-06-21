@@ -1,4 +1,5 @@
 import { resolve } from "node:path";
+import { existsSync } from "node:fs";
 import { defineConfig } from "vite";
 import pkg from "./package.json" with { type: "json" };
 
@@ -6,6 +7,30 @@ const buildVersion = `${pkg.version}-${new Date()
   .toISOString()
   .replace(/\D/g, "")
   .slice(0, 14)}`;
+
+const pageInputs = Object.fromEntries(
+  Object.entries({
+    home: "index.html",
+    play: "play/index.html",
+    login: "login/index.html",
+    docs: "docs/index.html",
+    roadmap: "roadmap/index.html",
+    fairness: "fairness/index.html",
+    player_set: "player_set/index.html",
+    world_rule: "world_rule/index.html",
+    resource_rule: "resource_rule/index.html",
+    ncm: "ncm/index.html",
+    ncm_dna: "ncm_dna/index.html",
+    elements: "elements/index.html",
+    forging: "forging/index.html",
+    mining: "mining/index.html",
+    guardian: "guardian/index.html",
+    contracts: "contracts/index.html",
+    proof_of_frontier: "proof-of-frontier/index.html",
+  })
+    .map(([name, path]) => [name, resolve(__dirname, path)])
+    .filter(([, path]) => existsSync(path)),
+);
 
 function appendAssetVersion() {
   return {
@@ -47,23 +72,7 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        home: resolve(__dirname, "index.html"),
-        play: resolve(__dirname, "play/index.html"),
-        login: resolve(__dirname, "login/index.html"),
-        docs: resolve(__dirname, "docs/index.html"),
-        roadmap: resolve(__dirname, "roadmap/index.html"),
-        fairness: resolve(__dirname, "fairness/index.html"),
-        player_set: resolve(__dirname, "player_set/index.html"),
-        world_rule: resolve(__dirname, "world_rule/index.html"),
-        resource_rule: resolve(__dirname, "resource_rule/index.html"),
-        elements: resolve(__dirname, "elements/index.html"),
-        forging: resolve(__dirname, "forging/index.html"),
-        mining: resolve(__dirname, "mining/index.html"),
-        guardian: resolve(__dirname, "guardian/index.html"),
-        contracts: resolve(__dirname, "contracts/index.html"),
-        proof_of_frontier: resolve(__dirname, "proof-of-frontier/index.html"),
-      },
+      input: pageInputs,
     },
   },
 });

@@ -120,6 +120,7 @@ export function applyTranslations(root = document) {
   translateAttribute(root, "data-i18n-aria-label", "aria-label");
   translateAttribute(root, "data-i18n-label", "label");
   translateAttribute(root, "data-i18n-value", "value");
+  translateAttribute(root, "data-i18n-content", "content");
 }
 
 export function setupLanguageControls(root = document) {
