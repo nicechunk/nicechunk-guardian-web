@@ -12,6 +12,14 @@ The UI is separate from the C++ Guardian service because it serves a different r
 
 The page uses the same SDK and RPC configuration conventions as the main web client so registry data and region coverage can be tested consistently.
 
+## Registry Resolution
+
+![Guardian registry resolution](docs/diagrams/guardian-registry-resolution.svg)
+
+The web UI resolves Guardian coverage from on-chain region accounts. It fetches registry accounts, decodes active regions, filters by chunk bounds, ranks matching Guardians by distance and proof freshness, then normalizes a `ws` or `wss` endpoint for the realtime client.
+
+That flow gives operators and client developers the same mental model: chunks are not routed to a hardcoded server unless the registry cannot provide a match. The UI remains an operator surface for registration and inspection; the realtime server and registry program remain the enforcement layers.
+
 ## System Principles
 
 - Operator clarity: registration inputs, program IDs, treasury accounts, and region previews should be visible before a wallet signs anything.

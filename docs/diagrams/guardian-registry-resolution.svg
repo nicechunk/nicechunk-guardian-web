@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Guardian registry resolution</title>
+  <desc id="desc">A diagram showing how the browser loads Guardian registry accounts, filters active regions, chooses a matching endpoint for a chunk, and reconnects the realtime client.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081018"/>
+      <stop offset="1" stop-color="#13160d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#8fdcff"/>
+    </marker>
+    <style>
+      .label{font:800 12px Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:.16em;fill:#90ff1a}
+      .title{font:850 42px Inter,ui-sans-serif,system-ui,sans-serif;fill:#f3f8ff}
+      .copy{font:500 17px Inter,ui-sans-serif,system-ui,sans-serif;fill:#b8c7d4}
+      .card{fill:rgba(255,255,255,.06);stroke:rgba(255,255,255,.16);stroke-width:1.2;rx:18}
+      .head{font:800 18px Inter,ui-sans-serif,system-ui,sans-serif;fill:#f3f8ff}
+      .small{font:600 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#bdd0df}
+      .mono{font:750 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f7d98f}
+      .line{stroke:#8fdcff;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1030" cy="128" r="250" fill="#83ff00" opacity=".08"/>
+  <circle cx="220" cy="606" r="270" fill="#00c2ff" opacity=".08"/>
+  <text x="70" y="78" class="label">GUARDIAN OPERATOR UI</text>
+  <text x="70" y="132" class="title">Registry data chooses the realtime endpoint.</text>
+  <text x="70" y="168" class="copy">The browser resolves chunk coverage from on-chain Guardian regions before opening or switching WebSocket sessions.</text>
+
+  <g transform="translate(82 270)"><rect class="card" width="218" height="172"/><text x="24" y="42" class="head">Chunk target</text><text x="24" y="78" class="mono">chunkX, chunkZ</text><text x="24" y="112" class="small">from map or player</text></g>
+  <path class="line" d="M300 356 H372"/>
+  <g transform="translate(394 238)"><rect class="card" width="262" height="236"/><text x="24" y="42" class="head">Registry resolver</text><text x="24" y="78" class="small">fetch program accounts</text><text x="24" y="108" class="small">decode region data</text><text x="24" y="138" class="small">filter active hosts</text><text x="24" y="168" class="small">cache for 30 seconds</text><text x="24" y="202" class="mono">GUARDIAN_REGION_LEN</text></g>
+  <path class="line" d="M656 356 H728"/>
+  <g transform="translate(750 238)"><rect class="card" width="226" height="236"/><text x="24" y="42" class="head">Region ranking</text><text x="24" y="78" class="small">contains chunk</text><text x="24" y="108" class="small">closest center wins</text><text x="24" y="138" class="small">newer proof breaks tie</text><text x="24" y="172" class="mono">ws:// or wss://</text></g>
+  <path class="line" d="M976 356 H1044"/>
+  <g transform="translate(1066 270)"><rect class="card" width="148" height="172"/><text x="24" y="42" class="head">Client</text><text x="24" y="78" class="small">HELLO</text><text x="24" y="108" class="small">move</text><text x="24" y="138" class="small">dig/chat</text></g>
+
+  <g transform="translate(290 540)"><rect class="card" width="700" height="84"/><text x="26" y="36" class="head">Operator boundary</text><text x="26" y="62" class="small">The UI prepares registration; service and program layers enforce realtime authority.</text></g>
+</svg>
