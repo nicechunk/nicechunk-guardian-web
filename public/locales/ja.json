@@ -2,8 +2,8 @@
   "_meta": {
     "language": "ja",
     "label": "Japanese",
-    "version": "locale-ja-a7acbcdc7d55e3aa",
-    "contentHash": "a7acbcdc7d55e3aa"
+    "version": "locale-ja-a5f56a9ffdf71715",
+    "contentHash": "a5f56a9ffdf71715"
   },
   "common": {
     "brand": "NICECHUNK",
@@ -189,14 +189,14 @@
     "chainLog": {
       "aria": "Chain event log",
       "minePending": "Mining submitted, awaiting confirmation",
-      "minePendingDetail": "Submitting {coords} to devnet",
+      "minePendingDetail": "Submitting {resource} at {coords} to devnet",
       "mineSubmitted": "Mining confirmed",
-      "signature": "{coords}: {signature}",
+      "signature": "{resource} at {coords}: {signature}",
       "mineSkipped": "Mining sync skipped",
-      "disabled": "On-chain sync is disabled for {coords}",
-      "mineSkippedDetail": "{coords}: {reason}",
+      "disabled": "On-chain sync is disabled for {resource} at {coords}",
+      "mineSkippedDetail": "{resource} at {coords}: {reason}",
       "mineFailed": "Mining transaction failed",
-      "mineFailedDetail": "{coords}: {reason}",
+      "mineFailedDetail": "{resource} at {coords}: {reason}",
       "alreadyMined": "Block already recorded",
       "alreadyMinedReason": "already mined",
       "walletUnavailable": "wallet unavailable",
@@ -204,7 +204,8 @@
       "unknownReason": "unknown reason",
       "noSignature": "no signature",
       "walletUnexpectedError": "wallet returned an unexpected error",
-      "sessionFundingCancelled": "session funding cancelled"
+      "sessionFundingCancelled": "session funding cancelled",
+      "sessionFundingFailed": "session funding failed"
     },
     "chainSession": {
       "eyebrow": "Mining Session",
@@ -337,6 +338,8 @@
       "sortPriceDesc": "Price high to low",
       "currencyFilterLabel": "Currency",
       "currencyAll": "All currencies",
+      "currencyNck": "NCK",
+      "currencySol": "SOL",
       "filters": "Market filters",
       "browsePagination": "Browse listings pages",
       "ordersPagination": "Order pages",
@@ -362,6 +365,7 @@
       "sampleCloak": "Oak Leaf Block",
       "sampleCloakMeta": "Clothing",
       "buy": "購入",
+      "buyNeedsWallet": "Connect a wallet to buy this listing.",
       "buyNeedsBackpack": "Equip a backpack to buy this listing.",
       "buyBackpackFull": "Your backpack is full.",
       "buyNeedsHotbarSlot": "Free one hotbar slot to receive this item.",
@@ -370,6 +374,7 @@
       "buyCreated": "Purchase confirmed on-chain: {signature}",
       "buyFailed": "Buy transaction failed: {reason}",
       "cancelListing": "Cancel",
+      "cancelNeedsBackpackSpace": "Free one backpack slot before canceling this listing.",
       "ownListing": "Your listing",
       "cancelCreated": "Listing canceled.",
       "expandDetails": "Details",
@@ -397,6 +402,7 @@
       "listingUnavailable": "listing unavailable",
       "selfPurchase": "cannot buy your own listing",
       "nckTokenMissing": "wallet has no NCK token account",
+      "sellSteps": "Sell listing steps",
       "stepSelectItem": "1. Select Item",
       "stepListingDraft": "2. Listing Draft",
       "inventoryEyebrow": "Backpack + Hotbar",
@@ -415,6 +421,18 @@
       "noListingsMeta": "Try another category or search term.",
       "noInventoryItems": "No listable items",
       "noInventoryItemsMeta": "Equip a backpack or keep tools in your hotbar to create listings.",
+      "emptyHintChain": "Chain sync",
+      "emptyHintPda": "PDA scan",
+      "emptyHintRetry": "Retry sync",
+      "emptyHintRpc": "RPC status",
+      "emptyHintFilters": "Adjust filters",
+      "emptyHintAll": "Show all",
+      "emptyHintWallet": "Wallet orders",
+      "emptyHintSettlement": "NCK / SOL",
+      "emptyHintBackpack": "Equip backpack",
+      "emptyHintResources": "Mine resources",
+      "emptyHintMarket": "Market terminal",
+      "emptyHintOnchain": "On-chain listings",
       "hotbarSlotMeta": "Hotbar slot {slot}",
       "invalidListing": "Select an item and enter a valid price.",
       "listingPending": "Confirm the transaction to create this listing on-chain.",
@@ -429,7 +447,14 @@
       "eyebrow": "鍛造素材準備",
       "title": "精錬ステーション",
       "modePreview": "ローカルプレビュー",
+      "coreMeta": "Station Core: Forge Alpha | Thermal Level: Stable",
+      "safetyLabel": "Safety Protocols",
+      "safetyActive": "Thermal shield active",
+      "closeHint": "[ESC] Close",
+      "forgeHint": "[F] Forge",
       "noBackpackShort": "バッグなし",
+      "statusNoBackpack": "精錬前にバックパックを装備してください。",
+      "noBackpackResources": "資源を精錬する前にバックパックを装備してください。",
       "backpackCount": "{count}/{capacity}",
       "inputEyebrow": "バックパック資源",
       "inputTitle": "採掘資源を選択",
@@ -441,6 +466,8 @@
       "fuelTitle": "燃料",
       "fuel": "燃料",
       "fuelHeat": "熱レベル {tier}",
+      "addInput": "入力",
+      "addFuel": "燃料",
       "outputEyebrow": "鍛造用出力",
       "outputTitle": "素材プレビュー",
       "start": "精錬開始",
@@ -450,20 +477,53 @@
       "statusNoInput": "採掘資源を選択してください。",
       "statusNoFuel": "対応する燃料を追加してください。",
       "statusHeatMissing": "選択した燃料は必要な熱レベルに届きません。",
+      "statusHeatMissingMulti": "Fuel heat tier {fuel} is below required tier {required}.",
       "statusReady": "精錬プレビュー準備完了。",
       "statusRunning": "資源サンプルを加熱中...",
       "statusComplete": "鍛造素材プレビュー完了。",
       "noResources": "このバックパックに採掘資源がありません。",
       "noFuel": "対応燃料がありません。",
       "selectInput": "出力を見る資源を選択してください。",
+      "materialSource": "Mined material",
+      "dropInputHint": "Drag mined materials here",
+      "dropFuelHint": "Drag fuel blocks here",
+      "emptySyncTitle": "Syncing backpack",
+      "emptyNoBackpackTitle": "Backpack required",
+      "emptyNoResourcesTitle": "No smeltable resources",
+      "emptyNoFuelTitle": "Fuel missing",
+      "emptySelectInputTitle": "Awaiting material",
+      "emptyIdleTitle": "Station idle",
+      "emptyHintReadPda": "Reading PDA",
+      "emptyHintSlots": "Checking slots",
+      "emptyHintEquip": "Equip backpack",
+      "emptyHintMine": "Mine resources",
+      "emptyHintCoordinate": "Coordinate-bound",
+      "emptyHintWood": "Wood blocks",
+      "emptyHintBiomass": "Biomass",
+      "emptyHintSelect": "Select input",
+      "emptyHintPreview": "Preview output",
+      "emptyHintFuel": "Add fuel",
       "outputName": "{kind} {resource}",
       "outputDescription": "A forge-ready material batch derived from {resource}. Its element ranges stay tied to the original mined coordinate.",
+      "mixedBatch": "Mixed batch",
+      "batchBasis": "{inputs} inputs / {fuels} fuels",
       "requiredHeat": "必要熱量",
       "yieldRange": "産出範囲",
       "quality": "品質基準",
       "heatMet": "Tier {tier} met",
       "heatMissing": "Tier {required} required, fuel {fuel}",
+      "noRecipeName": "未一致バッチ",
+      "noRecipeDescription": "選択したバッチは、まだ公式のNiceChunk精錬レシピに一致していません。公開素材テーブルに合わせて入力ブロックを調整してください。",
+      "recipeMatched": "レシピ一致: {recipe}",
+      "recipeCandidate": "候補レシピ: {recipe}。",
+      "statusRecipeIncomplete": "候補レシピ {recipe}: 不足 {missing}。",
+      "statusRecipeExtra": "候補レシピ {recipe}: 余分な {extra} を外してください。",
+      "noRecipeMatch": "このバッチに一致する公開レシピはありません。",
+      "missingInputLabel": "{amount}x {resource}",
       "previewOnly": "プレビューのみ: 精錬コントラクトはまだ送信されません。",
+      "chainSubmitNotice": "On-chain smelting consumes selected inputs and fuel, then writes the forge material back into your equipped backpack.",
+      "submitFailed": "Smelting transaction failed: {reason}",
+      "submitComplete": "Smelting confirmed on-chain: {signature}",
       "kindChar": "炭化",
       "kindBiochar": "バイオ炭",
       "kindCeramic": "焼結",
@@ -477,6 +537,7 @@
       "dirt": "Dirt",
       "stone": "Stone",
       "deepStone": "Deep Stone",
+      "coal": "Coal",
       "sand": "Sand",
       "sandstone": "Sandstone",
       "gravel": "Gravel",
@@ -724,7 +785,8 @@
       "convert": "VOX を変換",
       "sample": "サンプルを読み込む",
       "formatLabel": "Format prefix",
-      "formatBody": "Palette, box count, signed positions, and dimensions encoded as compact varints."
+      "formatBody": "Palette, box count, signed positions, and dimensions encoded as compact varints.",
+      "dna": "NCM-DNA Lab"
     },
     "principles": {
       "aria": "NCM principles",
@@ -772,6 +834,14 @@
         "title": "Useful compression research",
         "body": "NCM is also the base for our NCM-DNA exploration: searching for shorter deterministic genes that reproduce the same model and can turn asset compression into useful computation."
       }
+    },
+    "dna": {
+      "aria": "NCM-DNA Lab",
+      "eyebrow": "NCM-DNA LAB",
+      "title": "View the NCM-DNA experiment beside the format it builds on.",
+      "body": "NCM-DNA continues the same direction: instead of only storing compact cuboids, it searches for deterministic genes that can reproduce the same model with fewer bytes.",
+      "open": "Open full lab",
+      "frameTitle": "NCM-DNA Lab"
     },
     "converter": {
       "eyebrow": "VOX TO NCM",
@@ -985,6 +1055,406 @@
       "invalidSeed": "無効なシード: {message}"
     }
   },
+  "ncmFourier": {
+    "common": {
+      "yes": "Yes",
+      "budget": "Budgeted preview"
+    },
+    "page": {
+      "title": "NCM Function Model Lab",
+      "description": "A NiceChunk lab that loads VOX models, maps colors to a shared palette, emits compact on-chain function bytes, and redraws the model from that payload."
+    },
+    "hero": {
+      "eyebrow": "NiceChunk Function Asset Lab",
+      "title": "Load a VOX model and redraw it from a function"
+    },
+    "viewer": {
+      "source": "Element model",
+      "function": "Function redraw",
+      "pow": "PoW best model",
+      "sourceAria": "Loaded element model",
+      "functionAria": "Function generated model",
+      "powAria": "PoW best generated model"
+    },
+    "controls": {
+      "drop": "Drop or choose .vox",
+      "compute": "Compute function",
+      "optimize": "Optimize function",
+      "exprBytes": "Expr bytes",
+      "maxBasis": "Max basis",
+      "scale": "View scale"
+    },
+    "metrics": {
+      "grid": "Model size",
+      "coefficients": "Function basis",
+      "voxels": "Redrawn voxels",
+      "storage": "On-chain bytes"
+    },
+    "badges": {
+      "noVoxels": "0 voxels",
+      "voxels": "{value} voxels",
+      "waiting": "waiting",
+      "basis": "{value} basis"
+    },
+    "palette": {
+      "title": "G0 global colors used"
+    },
+    "tech": {
+      "title": "Technical idea",
+      "body": "The function payload stores only G0 palette indexes and box-basis bytes. Later miners can use the exact model hash as the target and search for a shorter Fourier gene."
+    },
+    "steps": {
+      "sample": "Load VOX and canonicalize its voxel/color grid.",
+      "fit": "Map colors to the shared G0 palette and merge same-color voxels into box basis functions.",
+      "rebuild": "Evaluate the function bytes and redraw the model from G0 palette indexes.",
+      "bake": "Use the exact result hash as a future PoW target for shorter genes."
+    },
+    "formula": {
+      "title": "On-chain function data",
+      "copy": "Copy function",
+      "copied": "Copied",
+      "copyFailed": "Copy failed",
+      "chainPayload": "On-chain payload",
+      "chainBytes": "Payload size",
+      "modelHash": "Model hash",
+      "exact": "Exact redraw",
+      "empty": "Drop a VOX file, then click Compute function."
+    },
+    "algorithm": {
+      "title": "Original algorithm",
+      "empty": "Compute a function to show its decoder algorithm."
+    },
+    "pow": {
+      "title": "PoW expression search",
+      "start": "Start PoW",
+      "stop": "Stop",
+      "hashrate": "Hashrate",
+      "attempts": "Attempts",
+      "best": "Best match",
+      "bytes": "Expr bytes",
+      "empty": "Load a VOX model, then start local PoW.",
+      "started": "target={hash}, voxels={voxels}; searching seed expressions locally",
+      "stopped": "stopped",
+      "bestLog": "best seed={seed} iou={score} hit={hit}/{union} bytes={bytes} proof={proof} expr={expr}"
+    },
+    "coefficients": {
+      "title": "Basis preview",
+      "empty": "No basis functions yet."
+    },
+    "status": {
+      "ready": "Drop a VOX file",
+      "loading": "Loading VOX...",
+      "loaded": "VOX loaded. Click Compute function.",
+      "computing": "Computing function...",
+      "optimizing": "Searching shorter exact function...",
+      "computedExact": "Exact function redraw generated.",
+      "computedBudget": "Budgeted function preview generated.",
+      "optimized": "Optimized exact function from {count} strategies.",
+      "optimizedBudget": "Optimized budgeted preview from {count} strategies.",
+      "failed": "Failed: {reason}"
+    }
+  },
+  "civilization": {
+    "meta": {
+      "title": "NiceChunk Civilization Codex",
+      "description": "NiceChunk Civilization Codex: players write, read, sign, validate, and execute world rules without project-side privilege."
+    },
+    "nav": {
+      "aria": "Primary navigation",
+      "home": "Home",
+      "roadbook": "Roadbook",
+      "worldRules": "World Rules",
+      "resources": "Resources",
+      "civilization": "Civilization",
+      "trust": "Trust",
+      "docs": "Docs",
+      "enterWorld": "Enter World"
+    },
+    "hero": {
+      "eyebrow": "Civilization Codex",
+      "title": "Civilization Codex",
+      "subtitle": "Players do not only play the world. They write the laws of the world.",
+      "body": "NiceChunk civilization rules are designed for a public on-chain world where resources, equipment, privileges, and world parameters cannot appear from nowhere.",
+      "panelAria": "Civilization consensus model",
+      "metric": {
+        "natural": "Natural Law threshold",
+        "civilization": "Civilization Law threshold",
+        "epoch": "Snapshot epoch",
+        "citizens": "Active citizens"
+      }
+    },
+    "actions": {
+      "create": "Create Rule Book",
+      "reviewMock": "Review Mock Rules",
+      "read": "Read Rule",
+      "signAgree": "Sign Agree",
+      "signReject": "Sign Reject",
+      "execute": "Execute Rule",
+      "comingSoon": "On-chain interaction coming later."
+    },
+    "lawType": {
+      "natural": "Natural Law",
+      "civilization": "Civilization Law"
+    },
+    "risk": {
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "status": {
+      "draft": "Draft",
+      "reading": "Reading Period",
+      "cooling": "Cooling Period",
+      "challenge": "Challenge Period",
+      "ready": "Ready to Execute",
+      "active": "Active",
+      "not_enough": "Not Enough Consensus"
+    },
+    "layers": {
+      "eyebrow": "Two Layers of Law",
+      "title": "A world constitution and an evolving civilization layer.",
+      "body": "Natural Law protects the world from arbitrary authority. Civilization Law lets players evolve production, construction, craft, and society without turning governance into capital voting.",
+      "natural": {
+        "title": "Natural Law",
+        "subtitle": "Constitution-level consensus for the deepest fairness rules: conservation, asset protection, world generation, NCK principles, and zero project-side privilege.",
+        "meta": {
+          "constitution": "Constitution-level consensus",
+          "longDelay": "Long delay and challenge window",
+          "strictValidator": "Strict RuleValidator required"
+        }
+      },
+      "civilization": {
+        "title": "Civilization Law",
+        "subtitle": "Open evolution for production, building, craft, resource processing, non-constitutional parameters, and society-level rules.",
+        "meta": {
+          "production": "Production and social rules",
+          "normalDelay": "Normal delay",
+          "openEvolution": "Open civilization evolution"
+        }
+      }
+    },
+    "constitution": {
+      "eyebrow": "World-level consensus",
+      "title": "Natural Law is not a normal vote.",
+      "body": "A Natural Law change must face stronger prompts, stricter validators, longer cooling, and broader challenge windows because it can affect the deepest fairness assumptions of the world.",
+      "checks": {
+        "higherRisk": "Higher risk classification before signing",
+        "longerCooldown": "Longer cooling period before execution",
+        "stricterValidation": "Validator rejects privilege, inflation, and ownership seizure",
+        "strongerPrompt": "Players must explicitly confirm they understand the rule",
+        "widerChallenge": "Longer challenge window for auditors and citizens"
+      }
+    },
+    "power": {
+      "eyebrow": "Civilization Power",
+      "title": "Power comes from real participation, not wallet count or raw NCK balance.",
+      "body": "The future contract should weight citizens by world participation while limiting abuse through maturity, caps, active windows, decay, and anomaly penalties.",
+      "sourcesTitle": "Participation sources",
+      "guardsTitle": "Anti-abuse guards",
+      "sources": {
+        "registration": "Registered citizen state and mature world identity",
+        "exploration": "Exploration and visited chunk history",
+        "mining": "Mined blocks with verifiable generated sources",
+        "forging": "Forging and material processing participation",
+        "trading": "Marketplace activity and settlement history",
+        "guardianService": "Guardian service coverage and proof submission",
+        "ruleReading": "Reading and understanding rule books before signing",
+        "longActivity": "Long-term active presence across epochs"
+      },
+      "guards": {
+        "maturity": "New account maturity period",
+        "walletCap": "Single-wallet power cap",
+        "activeWindow": "Recent active window requirement",
+        "decay": "Long inactivity power decay",
+        "anomalyPenalty": "Suspicious behavior reduction"
+      },
+      "snapshot": {
+        "total": "Total power",
+        "mature": "Mature citizens"
+      }
+    },
+    "lifecycle": {
+      "eyebrow": "Lifecycle",
+      "title": "A rule book moves from writing to execution without project-side permission.",
+      "steps": {
+        "draft": {
+          "title": "Draft Rule Book",
+          "body": "A player writes readable intent and a machine patch for a target module."
+        },
+        "publish": {
+          "title": "Publish On-chain Hash",
+          "body": "The book fixes text_hash, patch_hash, author, law type, risk level, and snapshot epoch."
+        },
+        "read": {
+          "title": "Read & Understand",
+          "body": "Citizens inspect the text, impact scope, old asset policy, and validator warnings."
+        },
+        "sign": {
+          "title": "Sign Civilization Power",
+          "body": "Citizens sign agree, reject, or abstain with snapshot-based civilization power."
+        },
+        "threshold": {
+          "title": "Reach Threshold",
+          "body": "Civilization Law needs over 50%; Natural Law needs over 90% active civilization power."
+        },
+        "cooling": {
+          "title": "Cooling & Challenge",
+          "body": "The rule waits through cooling and challenge windows so mistakes can be disputed."
+        },
+        "execute": {
+          "title": "Execute Rule",
+          "body": "Any player can call execute_rule when on-chain conditions are satisfied."
+        },
+        "active": {
+          "title": "Rule Becomes Active",
+          "body": "The program writes the approved config into rule registries and module config PDAs."
+        }
+      }
+    },
+    "schema": {
+      "eyebrow": "Rule Book Structure",
+      "title": "Human-readable intent and machine-executable patch stay bound by hashes.",
+      "body": "The UI stores mock data locally today. Later these fields can map directly to rule_book_pda, rule_signature_pda, and rule_registry_pda account layouts.",
+      "fields": {
+        "title": "Readable rule name shown to players and reviewers.",
+        "author": "Wallet that published the rule book hash.",
+        "category": "Natural Law or Civilization Law threshold class.",
+        "target_module": "One or more configuration modules affected by the patch.",
+        "human_readable_text": "Readable explanation that players review before signing.",
+        "machine_patch": "Structured patch bytes consumed by the RuleValidator.",
+        "risk_level": "UI and validator risk classification.",
+        "threshold": "Required active civilization power percentage.",
+        "snapshot_epoch": "Epoch used to freeze signer power.",
+        "status": "Lifecycle state from draft to active.",
+        "yes_power": "Agreeing civilization power.",
+        "no_power": "Rejecting civilization power.",
+        "abstain_power": "Abstaining civilization power.",
+        "cooldown_end": "Earliest execution time after consensus.",
+        "execute_status": "Current execution readiness or result."
+      }
+    },
+    "modules": {
+      "eyebrow": "Target Modules",
+      "title": "Civilization changes the configuration layer, not core code by text command.",
+      "short": {
+        "smelting": "Smelting",
+        "forging": "Forging",
+        "block_properties": "Block Properties",
+        "resource_rules": "Resource Rules",
+        "element_rules": "Element Rules",
+        "world_knowledge": "World Knowledge"
+      },
+      "items": {
+        "smelting": {
+          "title": "Smelting",
+          "body": "Fuel tiers, raw inputs, conservation checks, material outputs, and processing requirements."
+        },
+        "forging": {
+          "title": "Forging",
+          "body": "Tool, equipment, and building recipes that consume validated material resources."
+        },
+        "block_properties": {
+          "title": "Block Properties",
+          "body": "Hardness, drops, break requirements, hazard flags, and world interaction parameters."
+        },
+        "resource_rules": {
+          "title": "Resource Rules",
+          "body": "Generated resource sources, output logic, provenance requirements, and conservation boundaries."
+        },
+        "element_rules": {
+          "title": "Element Rules",
+          "body": "Element profiles, material tendencies, and future chemistry or alloy constraints."
+        },
+        "world_knowledge": {
+          "title": "World Knowledge",
+          "body": "Versioned public knowledge, civilization records, rule explanations, and audit notes."
+        }
+      }
+    },
+    "examples": {
+      "aria": "Rule examples",
+      "naturalEyebrow": "Natural Law Examples",
+      "naturalTitle": "Rules that protect the world itself.",
+      "civilizationEyebrow": "Civilization Law Examples",
+      "civilizationTitle": "Rules that let civilization advance.",
+      "natural": {
+        "resourceConservation": "Resources cannot be created without generated source, input burn, or validated transformation.",
+        "assetProtection": "Player-owned assets cannot be seized or reassigned without valid rule authority.",
+        "publicWorldGeneration": "World seed and generation principles cannot be quietly changed.",
+        "noProjectPrivilege": "No address receives hidden minting, bypass, or privileged production rights.",
+        "transparentAuthority": "Contract authorities and config owners must remain inspectable.",
+        "nckPrinciples": "NCK and core economic principles cannot be casually broken."
+      },
+      "civilization": {
+        "bronze": "Copper + tin can unlock bronze through smelting and forging configs.",
+        "oreEnergy": "A rule can increase energy requirements for a rare ore smelting path.",
+        "blockHardness": "A new block can receive hardness, drops, and required tool tiers.",
+        "toolRecipe": "A civilization can add a new tool forging recipe with material inputs.",
+        "materialProcessing": "A material can require extra processing before construction use."
+      }
+    },
+    "execution": {
+      "eyebrow": "Execution Model",
+      "title": "Automatic execution means permissionless execution, not a server changing code.",
+      "body": "Once threshold, cooling, and challenge conditions are satisfied, any player can call execute_rule. The contract checks only on-chain state and writes the approved configuration into PDA registries.",
+      "items": {
+        "ruleValidator": {
+          "title": "RuleValidator gate",
+          "body": "Rejects patches that create resources from nothing, bypass inputs, grant address privilege, or seize owned assets."
+        },
+        "registryWrite": {
+          "title": "Registry write",
+          "body": "Approved patches update rule_registry, smelting_config, forging_config, block_property_config, or resource_config PDAs."
+        },
+        "permissionlessCaller": {
+          "title": "No privileged executor",
+          "body": "Execution has no project-side allowlist; any player can submit the transaction when conditions pass."
+        },
+        "fixedCoreContracts": {
+          "title": "Fixed core contracts",
+          "body": "Gameplay contracts should read active config PDAs instead of letting text rules upgrade program code."
+        }
+      }
+    },
+    "mock": {
+      "eyebrow": "Mock Rule Books",
+      "title": "Local data today, chain accounts tomorrow.",
+      "body": "These examples are intentionally structured like future on-chain data so wallet signing, PDA reads, and execute_rule flows can replace the mock layer later.",
+      "yesPower": "Signed yes",
+      "threshold": "Threshold",
+      "risk": "Risk",
+      "epoch": "Epoch",
+      "rules": {
+        "bronze": {
+          "title": "Bronze Age Rule"
+        },
+        "conservation": {
+          "title": "World Conservation Amendment"
+        },
+        "cactus": {
+          "title": "Desert Cactus Block Rule"
+        },
+        "noAdminMint": {
+          "title": "No Admin Minting Principle"
+        }
+      }
+    },
+    "contract": {
+      "eyebrow": "Future Contract Direction",
+      "title": "The civilization program should mutate rule configuration PDAs through validators.",
+      "body": "Core gameplay contracts should stay fixed where possible and read active configuration PDAs. Civilization consensus changes configuration, not ownership by fiat.",
+      "accountsTitle": "Program and PDA surfaces",
+      "validatorTitle": "RuleValidator must reject",
+      "assetProtectionTitle": "Old asset protection principle",
+      "assetProtectionBody": "Civilization Law should affect newly generated resources, equipment, and block rules by default. Retroactive effects on existing player assets require Natural Law consensus, stronger prompts, and 90% world-level agreement.",
+      "validator": {
+        "noResourceFromNothing": "Creating resources from nothing",
+        "noInputBypass": "Bypassing required input resources",
+        "noAddressPrivilege": "Granting single-address privilege",
+        "noOwnershipSeizure": "Changing ownership of existing player assets"
+      }
+    }
+  },
   "resourceSimulator": {
     "resource": {
       "gravel": "Crushed Stone"
@@ -1068,6 +1538,11 @@
       "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
       "metricsAria": "Atlas status",
       "workspaceAria": "Block resource atlas",
+      "modeAria": "Resource data mode",
+      "rawMode": "Raw Resources",
+      "materialMode": "Material Data",
+      "rawModeBody": "Raw resources are mined from generated blocks. They must be smelted into material resources before forging.",
+      "materialModeBody": "Material data defines fuel heat, smelting inputs, artisan requirements, and the forge-ready outputs created from raw resources.",
       "filtersAria": "Atlas filters",
       "filterTitle": "Block families",
       "resultCount": "{count} shown",
@@ -1090,12 +1565,217 @@
         "blocks": "Generated blocks",
         "families": "Block families",
         "elements": "Referenced elements",
+        "materials": "Smeltable materials",
+        "worldRules": "World rules",
         "ruleSet": "Rule set"
       },
       "color": {
         "0": "Primary face",
         "1": "Side face",
         "2": "Top highlight"
+      }
+    },
+    "material": {
+      "workspaceAria": "Material resource data",
+      "eyebrow": "SMELTING DATA",
+      "title": "Raw resources become forgeable materials.",
+      "body": "Raw resources cannot be forged directly. A smelter consumes fuel heat, checks the material recipe, then outputs material resources for item forging.",
+      "ruleSetLabel": "Rule source",
+      "contractBody": "This table is a standalone JSON rule source so the game client and future contracts can reference the same smelting requirements.",
+      "fuelTitle": "Fuel heat tiers",
+      "fuelBody": "Burnable fuels provide heat tiers. Higher tier recipes require stronger fuel or a hotter furnace source.",
+      "recipeTitle": "Material atlas",
+      "recipeBody": "Browse forge-ready materials by class, inspect their element profile, and review the smelting requirements behind each output.",
+      "atlasAria": "Material atlas",
+      "filtersAria": "Material filters",
+      "categoryTitle": "Material classes",
+      "allMaterials": "All Materials",
+      "resultCount": "{count} shown",
+      "searchLabel": "Search materials, classes, elements, or inputs",
+      "searchPlaceholder": "Search steel, Si, glass...",
+      "empty": "No material recipes match the current filters.",
+      "materialAria": "Open {name} material details",
+      "visualModelLabel": "Element color model",
+      "visualModelBody": "Material thumbnails are generated from the dominant elements in each recipe profile.",
+      "processTitle": "Smelting process",
+      "compositionTitle": "Material element profile",
+      "forgeUseTitle": "Forge unlock",
+      "sourceBlocksTitle": "Raw resource sources",
+      "heatLabel": "Heat",
+      "burnTimeLabel": "Burn time",
+      "sourceLabel": "Source",
+      "consumableLabel": "Use",
+      "consumable": "Consumable",
+      "reusable": "Reusable heat source",
+      "burnSeconds": "{seconds}s",
+      "requiredHeatLabel": "Required heat",
+      "artisanLevelLabel": "Artisan level",
+      "artisanLevel": "Level {level}",
+      "rawInputsLabel": "Raw inputs",
+      "catalystLabel": "Catalyst",
+      "yieldLabel": "Yield",
+      "yieldCount": "{count} batch",
+      "forgeUseLabel": "Forge role",
+      "inputAmount": "{amount}x {resource}",
+      "heatTierValue": "Tier {tier}: {name} ({temp} C)",
+      "heatTierShort": "Heat T{tier}",
+      "heatTier": {
+        "low": "Low kiln",
+        "workshop": "Workshop furnace",
+        "forge": "Forge heat",
+        "blast": "Blast heat",
+        "unknown": "Unknown heat"
+      },
+      "class": {
+        "carbon": "Carbon",
+        "ceramic": "Ceramic",
+        "glass": "Glass",
+        "metal": "Metal",
+        "alloy": "Alloy",
+        "fiber": "Fiber",
+        "polymer": "Polymer",
+        "chemical": "Chemical",
+        "composite": "Composite",
+        "crystal": "Crystal"
+      },
+      "forgeUse": {
+        "fuel": "High-density fuel and reducing agent",
+        "soilCatalyst": "Soil amendment, bio-reactor feed, and low-tier catalyst",
+        "mold": "Forge molds, bricks, and furnace lining",
+        "binding": "Heat-stable binder and ceramic additive",
+        "flux": "Smelting flux for cleaner melts and lower slag",
+        "masonry": "Structural blocks, kiln bodies, and field construction",
+        "lens": "Optics, windows, gauges, and fragile fittings",
+        "circuit": "Circuits, sensors, logic plates, and signal devices",
+        "cooling": "Cooling cells, stabilizers, and frost-grade fittings",
+        "toolHead": "Pickaxe heads, blades, tools, and structural fittings",
+        "conductor": "Conductive fittings, coils, and precision parts",
+        "armorPlate": "Armor plates, shields, and impact-resistant panels",
+        "magneticCore": "Magnetic cores, motor parts, and advanced mechanisms",
+        "reinforcement": "Light reinforcement plates and carbon inserts",
+        "weaponAndTool": "Durable tools, weapons, and armor plates",
+        "heatShield": "Heat shields, furnace lining, and high-temperature parts",
+        "sealedVessel": "Sealed vessels, toxic containment, and hazard tools"
+      },
+      "fuel": {
+        "dry_grass": {
+          "name": "Dry Biomass",
+          "description": "Low heat starter fuel from dry grass, dead bush, or thorn. Useful for first kiln recipes."
+        },
+        "wood": {
+          "name": "Wood Fuel",
+          "description": "General workshop fuel made from logs, dead wood, or giant roots. Burns longer than grass fuel."
+        },
+        "charcoal": {
+          "name": "Charcoal",
+          "description": "Processed carbon fuel made from wood resources. Cleaner and steadier than raw wood."
+        },
+        "coal": {
+          "name": "Coal",
+          "description": "Deep stone seam fuel with strong forge heat. It is uncommon and suited for metal blooms."
+        },
+        "lava_heat": {
+          "name": "Lava Heat",
+          "description": "A non-consumed high heat source for blast-tier recipes, anchored to volcanic resources."
+        }
+      },
+      "item": {
+        "charcoal": {
+          "name": "Charcoal",
+          "description": "Carbonized wood material used as fuel, reducing agent, and early alloy support."
+        },
+        "biochar_compost": {
+          "name": "Biochar Compost",
+          "description": "Low-heat carbon and nutrient material made from leaves, moss, and mud for soil systems and biological stations."
+        },
+        "plant_fiber": {
+          "name": "Plant Fiber",
+          "description": "Dried reed and vine fiber used for bindings, wraps, handles, and early composite support."
+        },
+        "resin_binder": {
+          "name": "Resin Binder",
+          "description": "Pine and vine resin concentrate that binds fibers, seals vessels, and supports low-temperature composites."
+        },
+        "ceramic_brick": {
+          "name": "Ceramic Brick",
+          "description": "Fired clay and sand material for furnace walls, molds, and basic construction recipes."
+        },
+        "lime_ceramic": {
+          "name": "Lime Ceramic",
+          "description": "Shell-bed lime and clay ceramic used as a heat-stable binder and refractory additive."
+        },
+        "quicklime": {
+          "name": "Quicklime",
+          "description": "Reactive calcium-rich lime fired from shells and coral, useful as flux, mortar base, and chemical reagent."
+        },
+        "salt_flux": {
+          "name": "Salt Flux",
+          "description": "Salt-flat and ash flux that helps smelting separate slag and stabilizes cleaner metal batches."
+        },
+        "ash_cement": {
+          "name": "Ash Cement",
+          "description": "Volcanic ash, clay, and shell lime binder for masonry, furnace shells, and heat-stable construction."
+        },
+        "glass_ingot": {
+          "name": "Glass Ingot",
+          "description": "Silica-rich glass stock for lenses, windows, gauges, and fragile technical parts."
+        },
+        "obsidian_glass": {
+          "name": "Obsidian Glass",
+          "description": "Dark volcanic glass made from silica and basalt under lava heat, suited to durable optics and sealed panes."
+        },
+        "silicon_wafer": {
+          "name": "Silicon Wafer",
+          "description": "Purified silicon plate reduced with carbon, intended for circuits, sensors, and future signal devices."
+        },
+        "ice_crystal": {
+          "name": "Ice Crystal",
+          "description": "Stabilized ice and salt crystal for cooling cells, frost tools, and thermal-control assemblies."
+        },
+        "iron_bloom": {
+          "name": "Iron Bloom",
+          "description": "Forge-ready iron mass reduced from deep stone and stone with coal as the carbon reducer."
+        },
+        "copper_bloom": {
+          "name": "Copper Bloom",
+          "description": "Conductive metal bloom concentrated from gravel and basalt trace metal tendencies."
+        },
+        "alumina_plate": {
+          "name": "Alumina Plate",
+          "description": "Aluminum-rich ceramic plate from clay and deep stone, useful for impact panels and insulated fittings."
+        },
+        "nickel_iron": {
+          "name": "Nickel Iron",
+          "description": "Magnetic iron alloy refined from deep stone and basalt trace metals for motors and advanced mechanisms."
+        },
+        "carbon_plate": {
+          "name": "Carbon Plate",
+          "description": "Compressed coal and deep stone carbon material for light reinforcement and inserts."
+        },
+        "carbon_steel": {
+          "name": "Carbon Steel",
+          "description": "High-tier steel billet made from deep stone iron tendency and coal carbon control."
+        },
+        "basalt_fiber": {
+          "name": "Basalt Fiber",
+          "description": "Pulled volcanic fiber from basalt and lava heat, suited to heat shields and furnace parts."
+        },
+        "basalt_composite": {
+          "name": "Basalt Composite",
+          "description": "High-heat basalt, carbon, and resin composite for armor panels, shields, and durable housings."
+        },
+        "geopolymer_block": {
+          "name": "Geopolymer Block",
+          "description": "Ash, basalt, and salt-activated stone composite for strong masonry and kiln bodies."
+        },
+        "coral_lime": {
+          "name": "Coral Lime",
+          "description": "Calcium-rich coral and sand ceramic for marine masonry, mortar, and heat-stable blocks."
+        },
+        "toxic_glass": {
+          "name": "Toxic Glass",
+          "description": "Sealed hazardous glass from toxic water, salt, and silica, intended for containment vessels and risk tools."
+        }
       }
     },
     "category": {
@@ -1353,6 +2033,11 @@
         "name": "貝殻層",
         "source": "希少海岸 / 海底",
         "description": "貝殻片と炭酸塩粒子が蓄積した、希少な沿岸・海底の斑点として生成される層。"
+      },
+      "coal": {
+        "name": "Coal",
+        "source": "Deep Stone Seam",
+        "description": "Carbon-rich sedimentary fuel generated as low-frequency seams inside deep stone, useful for smelting heat rather than direct forging."
       }
     },
     "tag": {

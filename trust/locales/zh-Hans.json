@@ -824,7 +824,7 @@
         "status": "区块",
         "title": "世界变更与挖掘坐标",
         "body": "chunk 程序记录公开世界变更和被破坏方块坐标，是渲染出的候选方块与链上可见世界变更之间的边界。",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "seeds": "chunk, chunk-broken",
         "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
         "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
@@ -1732,7 +1732,7 @@
       {
         "domain": "Chunk",
         "title": "世界变更与破坏方块程序",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "visible": "Program ID、chunk 与 chunk-broken seeds、ChunkState magic NCKCHK01、ChunkBroken magic NCBK、最大记录数和源码路径 programs/nicechunk_chunk/src/lib.rs 已公开。",
         "missing": "标准挖掘坐标样例、重复挖掘交易日志、MagicBlock delegation 证据，以及大型 chunk 记录的账户字节解码器。"
       },

@@ -2,8 +2,8 @@
   "_meta": {
     "language": "zh-Hant",
     "label": "Traditional Chinese",
-    "version": "trust-locale-zh-Hant-d2387a77ab721a0d",
-    "contentHash": "d2387a77ab721a0d"
+    "version": "trust-locale-zh-Hant-87de763902f9d7e5",
+    "contentHash": "87de763902f9d7e5"
   },
   "siteFooter": {
     "tagline": "Solana 上的種子體素世界協議。",
@@ -844,7 +844,7 @@
         "status": "區塊",
         "title": "世界變更与挖掘座標",
         "body": "chunk 程式記錄公開世界變更和被破坏方塊座標，是渲染出的候选方塊与鏈上可见世界變更之间的邊界。",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "seeds": "chunk, chunk-broken",
         "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
         "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
@@ -1752,7 +1752,7 @@
       {
         "domain": "Chunk",
         "title": "世界变更与破坏方块程序",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "visible": "Program ID、chunk 与 chunk-broken seeds、ChunkState magic NCKCHK01、ChunkBroken magic NCBK、最大记录数和源码路径 programs/nicechunk_chunk/src/lib.rs 已公开。",
         "missing": "标准挖掘坐标样例、重复挖掘交易日志、MagicBlock delegation 证据，以及大型 chunk 记录的账户字节解码器。"
       },

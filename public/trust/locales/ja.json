@@ -2,8 +2,8 @@
   "_meta": {
     "language": "ja",
     "label": "Japanese",
-    "version": "trust-locale-ja-686d2a7dc88382cd",
-    "contentHash": "686d2a7dc88382cd"
+    "version": "trust-locale-ja-7cbee64d43c9f386",
+    "contentHash": "7cbee64d43c9f386"
   },
   "siteFooter": {
     "tagline": "Solana 上のシード型ボクセルワールドプロトコル。",
@@ -844,7 +844,7 @@
         "status": "チャンク",
         "title": "世界変更と採掘座標",
         "body": "chunk プログラムは公開世界の変更と破壊済みブロック座標を記録します。",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "seeds": "chunk, chunk-broken",
         "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
         "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
@@ -1752,7 +1752,7 @@
       {
         "domain": "Chunk",
         "title": "World mutation and broken block program",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "visible": "Program ID, chunk and chunk-broken seeds, ChunkState magic NCKCHK01, ChunkBroken magic NCBK, max record count, and source path programs/nicechunk_chunk/src/lib.rs are public.",
         "missing": "Canonical mined-coordinate fixtures, duplicate mining transaction logs, MagicBlock delegation evidence, and account byte decoders for large chunk records."
       },

@@ -2,8 +2,8 @@
   "_meta": {
     "language": "zh-Hans",
     "label": "Simplified Chinese",
-    "version": "resource-rule-locale-zh-Hans-c37a34d078a979c5",
-    "contentHash": "c37a34d078a979c5"
+    "version": "resource-rule-locale-zh-Hans-72c1e9a740ec1c51",
+    "contentHash": "72c1e9a740ec1c51"
   },
   "siteFooter": {
     "tagline": "Solana 上的种子体素世界协议。",
@@ -178,6 +178,11 @@
       "body": "NiceChunk 会把地形方块映射为有科学依据的资源基础。每个方块都会公开生成信号、可能的元素组成区间，以及它在未来挖矿和锻造经济中的定位。",
       "metricsAria": "图鉴状态",
       "workspaceAria": "方块资源图鉴",
+      "modeAria": "资源数据分类",
+      "rawMode": "原始资源",
+      "materialMode": "材料资料",
+      "rawModeBody": "原始资源来自生成方块的挖掘。它们必须先熔炼成材料资源，才能进入锻造。",
+      "materialModeBody": "材料资料定义燃料热量、熔炼输入、工匠要求，以及由原始资源产出的可锻造材料。",
       "filtersAria": "图鉴筛选",
       "filterTitle": "方块类别",
       "resultCount": "显示 {count} 个",
@@ -200,12 +205,217 @@
         "blocks": "生成方块",
         "families": "方块类别",
         "elements": "关联元素",
+        "materials": "可熔炼材料",
+        "worldRules": "世界规则",
         "ruleSet": "规则集"
       },
       "color": {
         "0": "主表面",
         "1": "侧面",
         "2": "顶部高光"
+      }
+    },
+    "material": {
+      "workspaceAria": "材料资源资料",
+      "eyebrow": "熔炼资料",
+      "title": "原始资源会变成可锻造材料。",
+      "body": "原始资源不能直接锻造。熔炼炉会消耗燃料热量，检查材料配方，然后产出可用于物品锻造的材料资源。",
+      "ruleSetLabel": "规则来源",
+      "contractBody": "这张表来自独立 JSON 规则源，方便游戏客户端和未来合约引用同一套熔炼要求。",
+      "fuelTitle": "燃料热量等级",
+      "fuelBody": "可燃燃料提供热量等级。更高阶的配方需要更强燃料或更热的炉源。",
+      "recipeTitle": "材料图鉴",
+      "recipeBody": "按材料类别浏览可锻造材料，查看元素构成，并核对每个产物背后的熔炼要求。",
+      "atlasAria": "材料图鉴",
+      "filtersAria": "材料筛选",
+      "categoryTitle": "材料类别",
+      "allMaterials": "全部材料",
+      "resultCount": "显示 {count} 个",
+      "searchLabel": "搜索材料、类别、元素或输入",
+      "searchPlaceholder": "搜索 steel、Si、glass...",
+      "empty": "当前筛选下没有匹配的材料配方。",
+      "materialAria": "打开 {name} 材料详情",
+      "visualModelLabel": "元素色彩模型",
+      "visualModelBody": "材料缩略图会根据每个配方档案中的主导元素生成。",
+      "processTitle": "熔炼流程",
+      "compositionTitle": "材料元素档案",
+      "forgeUseTitle": "锻造解锁",
+      "sourceBlocksTitle": "原始资源来源",
+      "heatLabel": "热量",
+      "burnTimeLabel": "燃烧时间",
+      "sourceLabel": "来源",
+      "consumableLabel": "消耗",
+      "consumable": "会消耗",
+      "reusable": "可复用热源",
+      "burnSeconds": "{seconds} 秒",
+      "requiredHeatLabel": "所需热量",
+      "artisanLevelLabel": "工匠等级",
+      "artisanLevel": "{level} 级",
+      "rawInputsLabel": "原始输入",
+      "catalystLabel": "催化/还原",
+      "yieldLabel": "产出",
+      "yieldCount": "{count} 批",
+      "forgeUseLabel": "锻造用途",
+      "inputAmount": "{amount}x {resource}",
+      "heatTierValue": "{tier} 级：{name}（{temp} C）",
+      "heatTierShort": "热量 T{tier}",
+      "heatTier": {
+        "low": "低温窑",
+        "workshop": "工坊炉",
+        "forge": "锻造热",
+        "blast": "鼓风高热",
+        "unknown": "未知热量"
+      },
+      "class": {
+        "carbon": "碳材料",
+        "ceramic": "陶瓷",
+        "glass": "玻璃",
+        "metal": "金属",
+        "alloy": "合金",
+        "fiber": "纤维",
+        "polymer": "聚合物",
+        "chemical": "化工",
+        "composite": "复合材料",
+        "crystal": "晶体"
+      },
+      "forgeUse": {
+        "fuel": "高密度燃料和还原剂",
+        "soilCatalyst": "土壤改良、生物反应器原料和低阶催化剂",
+        "mold": "锻造模具、砖和炉衬",
+        "binding": "耐热粘结剂和陶瓷添加物",
+        "flux": "熔炼助熔剂，用于净化熔体并减少炉渣",
+        "masonry": "结构砌块、窑炉主体和野外建造",
+        "lens": "镜片、窗片、仪表和易碎配件",
+        "circuit": "电路、传感器、逻辑板和信号装置",
+        "cooling": "冷却单元、稳定器和寒冷等级配件",
+        "toolHead": "镐头、刀刃、工具和结构件",
+        "conductor": "导电配件、线圈和精密零件",
+        "armorPlate": "护甲板、盾牌和抗冲击面板",
+        "magneticCore": "磁芯、电机部件和高级机构",
+        "reinforcement": "轻量加固板和碳质嵌件",
+        "weaponAndTool": "耐用工具、武器和护甲板",
+        "heatShield": "隔热板、炉衬和高温部件",
+        "sealedVessel": "密封容器、毒性封存和危险工具"
+      },
+      "fuel": {
+        "dry_grass": {
+          "name": "干燥生物质",
+          "description": "来自干草、枯灌木或荆棘的低热量起火燃料，适合第一批窑炉配方。"
+        },
+        "wood": {
+          "name": "木质燃料",
+          "description": "由原木、枯木或巨型树根提供的通用工坊燃料，比草本燃料燃烧更久。"
+        },
+        "charcoal": {
+          "name": "木炭",
+          "description": "由木质资源加工出的碳燃料，比原木更稳定也更干净。"
+        },
+        "coal": {
+          "name": "煤炭",
+          "description": "来自深层石煤层的强力锻造燃料，不常见，适合金属海绵坯。"
+        },
+        "lava_heat": {
+          "name": "熔岩热源",
+          "description": "不直接消耗的高热炉源，绑定火山资源，用于鼓风级配方。"
+        }
+      },
+      "item": {
+        "charcoal": {
+          "name": "木炭",
+          "description": "碳化木质材料，可作为燃料、还原剂和早期合金辅助材料。"
+        },
+        "biochar_compost": {
+          "name": "生物炭堆肥",
+          "description": "由树叶、苔藓和泥浆低温制成的碳与养分材料，可用于土壤系统和生物站点。"
+        },
+        "plant_fiber": {
+          "name": "植物纤维",
+          "description": "由芦苇和藤蔓干燥得到的纤维，可用于绑扎、缠绕、握柄和早期复合材料。"
+        },
+        "resin_binder": {
+          "name": "树脂粘结剂",
+          "description": "由松木和藤蔓提取的树脂浓缩物，可粘合纤维、密封容器，并支持低温复合材料。"
+        },
+        "ceramic_brick": {
+          "name": "陶瓷砖",
+          "description": "由黏土和沙烧制成的材料，可用于炉壁、模具和基础建造配方。"
+        },
+        "lime_ceramic": {
+          "name": "石灰陶瓷",
+          "description": "由贝壳层石灰和黏土制成的陶瓷，可作为耐热粘结剂和耐火添加物。"
+        },
+        "quicklime": {
+          "name": "生石灰",
+          "description": "由贝壳和珊瑚烧制出的富钙活性石灰，可作为助熔剂、砂浆基底和化学试剂。"
+        },
+        "salt_flux": {
+          "name": "盐助熔剂",
+          "description": "由盐滩和火山灰制成的助熔材料，可帮助熔炼分离炉渣并稳定更干净的金属批次。"
+        },
+        "ash_cement": {
+          "name": "灰质水泥",
+          "description": "由火山灰、黏土和贝壳石灰制成的粘结材料，可用于砌体、炉壳和耐热建造。"
+        },
+        "glass_ingot": {
+          "name": "玻璃锭",
+          "description": "富硅玻璃坯料，可用于镜片、窗片、仪表和易碎技术部件。"
+        },
+        "obsidian_glass": {
+          "name": "黑曜玻璃",
+          "description": "由硅质沙和玄武岩在熔岩高热下形成的暗色火山玻璃，适合耐用光学件和密封窗片。"
+        },
+        "silicon_wafer": {
+          "name": "硅晶片",
+          "description": "用碳还原得到的纯化硅片，可用于电路、传感器和未来信号装置。"
+        },
+        "ice_crystal": {
+          "name": "冰晶",
+          "description": "由冰、雪和盐稳定出的晶体，可用于冷却单元、冰霜工具和热控组件。"
+        },
+        "iron_bloom": {
+          "name": "铁海绵坯",
+          "description": "从深层石和石头中还原出的可锻铁质坯料，煤炭负责供碳和还原。"
+        },
+        "copper_bloom": {
+          "name": "铜海绵坯",
+          "description": "从砾石和玄武岩的痕量金属倾向中富集出的导电金属坯。"
+        },
+        "alumina_plate": {
+          "name": "氧化铝板",
+          "description": "由黏土和深层石制成的富铝陶瓷板，可用于抗冲击面板和绝缘配件。"
+        },
+        "nickel_iron": {
+          "name": "镍铁合金",
+          "description": "从深层石和玄武岩痕量金属中精炼出的磁性铁合金，可用于电机和高级机构。"
+        },
+        "carbon_plate": {
+          "name": "碳板",
+          "description": "由煤炭和深层石压制出的碳材料，可用于轻量加固和嵌件。"
+        },
+        "carbon_steel": {
+          "name": "碳钢坯",
+          "description": "高阶钢材坯料，来自深层石的铁倾向和煤炭的控碳。"
+        },
+        "basalt_fiber": {
+          "name": "玄武岩纤维",
+          "description": "由玄武岩和熔岩高热拉制的火山纤维，适合隔热板和炉体部件。"
+        },
+        "basalt_composite": {
+          "name": "玄武岩复合板",
+          "description": "由高热玄武岩、碳和树脂方向形成的复合材料，可用于护甲板、盾牌和耐用外壳。"
+        },
+        "geopolymer_block": {
+          "name": "地聚物块",
+          "description": "由火山灰、玄武岩和盐激发形成的石质复合材料，可用于高强砌体和窑炉主体。"
+        },
+        "coral_lime": {
+          "name": "珊瑚石灰",
+          "description": "由珊瑚、死珊瑚和沙制成的富钙陶瓷，可用于海洋砌体、砂浆和耐热块。"
+        },
+        "toxic_glass": {
+          "name": "毒性玻璃",
+          "description": "由毒水、盐和硅质沙制成的密封危险玻璃，用于封存容器和风险工具。"
+        }
       }
     },
     "category": {
@@ -463,6 +673,11 @@
         "name": "贝壳层",
         "source": "稀有海滩 / 海底",
         "description": "由贝壳碎片和碳酸盐颗粒堆积形成，作为稀有海岸和海底斑点生成。"
+      },
+      "coal": {
+        "name": "煤炭",
+        "source": "深层石煤层",
+        "description": "富碳沉积燃料，会以较低频率在深层石中成片生成，主要用于熔炼热量，而不是直接锻造。"
       }
     },
     "tag": {
@@ -494,6 +709,8 @@
       "ocean": "海洋",
       "corruption": "污染",
       "heat": "高热",
+      "fuel": "燃料",
+      "carbon": "碳",
       "hazard": "危险",
       "tree": "树木",
       "dryBiome": "干燥生物群系",

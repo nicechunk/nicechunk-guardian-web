@@ -2,8 +2,8 @@
   "_meta": {
     "language": "ko",
     "label": "Korean",
-    "version": "trust-locale-ko-96f495c55189feca",
-    "contentHash": "96f495c55189feca"
+    "version": "trust-locale-ko-48a36ea2da6076d2",
+    "contentHash": "48a36ea2da6076d2"
   },
   "siteFooter": {
     "tagline": "Solana 기반 시드형 복셀 월드 프로토콜.",
@@ -844,7 +844,7 @@
         "status": "청크",
         "title": "월드 변경과 채굴 좌표",
         "body": "chunk 프로그램은 공개 월드 변경과 파괴된 블록 좌표를 기록합니다.",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "seeds": "chunk, chunk-broken",
         "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
         "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
@@ -1752,7 +1752,7 @@
       {
         "domain": "Chunk",
         "title": "World mutation and broken block program",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "visible": "Program ID, chunk and chunk-broken seeds, ChunkState magic NCKCHK01, ChunkBroken magic NCBK, max record count, and source path programs/nicechunk_chunk/src/lib.rs are public.",
         "missing": "Canonical mined-coordinate fixtures, duplicate mining transaction logs, MagicBlock delegation evidence, and account byte decoders for large chunk records."
       },

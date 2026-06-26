@@ -2,8 +2,8 @@
   "_meta": {
     "language": "de",
     "label": "German",
-    "version": "trust-locale-de-55a6f409297d48b2",
-    "contentHash": "55a6f409297d48b2"
+    "version": "trust-locale-de-6ec998085ffa556e",
+    "contentHash": "6ec998085ffa556e"
   },
   "siteFooter": {
     "tagline": "Ein Seed-Voxelwelt-Protokoll auf Solana.",
@@ -844,7 +844,7 @@
         "status": "Chunk",
         "title": "Weltmutation und Mining-Koordinaten",
         "body": "Das Chunk-Programm speichert öffentliche Weltänderungen und gebrochene Blockkoordinaten.",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "seeds": "chunk, chunk-broken",
         "accounts": "ChunkState magic NCKCHK01; ChunkBroken magic NCBK",
         "version": "chunk 8,280 bytes; broken header 16 bytes; record 3 bytes; max 2,048 records",
@@ -1752,7 +1752,7 @@
       {
         "domain": "Chunk",
         "title": "World mutation and broken block program",
-        "programId": "12rCvz9PZ64Uix1TCiHEGU4AN4ZS1h4jv5u7CkqTRdk5",
+        "programId": "7JD6kASAfQeiVLUi51mrfWSbeh96ntRJnRiFQKCqUVhn",
         "visible": "Program ID, chunk and chunk-broken seeds, ChunkState magic NCKCHK01, ChunkBroken magic NCBK, max record count, and source path programs/nicechunk_chunk/src/lib.rs are public.",
         "missing": "Canonical mined-coordinate fixtures, duplicate mining transaction logs, MagicBlock delegation evidence, and account byte decoders for large chunk records."
       },

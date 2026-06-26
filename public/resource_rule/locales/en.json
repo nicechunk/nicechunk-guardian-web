@@ -2,8 +2,8 @@
   "_meta": {
     "language": "en",
     "label": "English",
-    "version": "resource-rule-locale-en-da01409b7dd624fe",
-    "contentHash": "da01409b7dd624fe"
+    "version": "resource-rule-locale-en-66b997e8ee8a8bd4",
+    "contentHash": "66b997e8ee8a8bd4"
   },
   "siteFooter": {
     "tagline": "A seeded voxel world protocol on Solana.",
@@ -178,6 +178,11 @@
       "body": "NiceChunk maps terrain blocks into scientifically scoped resource foundations. Each block exposes its generation signal, likely elemental composition range, and role in the future mining and forging economy.",
       "metricsAria": "Atlas status",
       "workspaceAria": "Block resource atlas",
+      "modeAria": "Resource data mode",
+      "rawMode": "Raw Resources",
+      "materialMode": "Material Data",
+      "rawModeBody": "Raw resources are mined from generated blocks. They must be smelted into material resources before forging.",
+      "materialModeBody": "Material data defines fuel heat, smelting inputs, artisan requirements, and the forge-ready outputs created from raw resources.",
       "filtersAria": "Atlas filters",
       "filterTitle": "Block families",
       "resultCount": "{count} shown",
@@ -200,12 +205,217 @@
         "blocks": "Generated blocks",
         "families": "Block families",
         "elements": "Referenced elements",
+        "materials": "Smeltable materials",
+        "worldRules": "World rules",
         "ruleSet": "Rule set"
       },
       "color": {
         "0": "Primary face",
         "1": "Side face",
         "2": "Top highlight"
+      }
+    },
+    "material": {
+      "workspaceAria": "Material resource data",
+      "eyebrow": "SMELTING DATA",
+      "title": "Raw resources become forgeable materials.",
+      "body": "Raw resources cannot be forged directly. A smelter consumes fuel heat, checks the material recipe, then outputs material resources for item forging.",
+      "ruleSetLabel": "Rule source",
+      "contractBody": "This table is a standalone JSON rule source so the game client and future contracts can reference the same smelting requirements.",
+      "fuelTitle": "Fuel heat tiers",
+      "fuelBody": "Burnable fuels provide heat tiers. Higher tier recipes require stronger fuel or a hotter furnace source.",
+      "recipeTitle": "Material atlas",
+      "recipeBody": "Browse forge-ready materials by class, inspect their element profile, and review the smelting requirements behind each output.",
+      "atlasAria": "Material atlas",
+      "filtersAria": "Material filters",
+      "categoryTitle": "Material classes",
+      "allMaterials": "All Materials",
+      "resultCount": "{count} shown",
+      "searchLabel": "Search materials, classes, elements, or inputs",
+      "searchPlaceholder": "Search steel, Si, glass...",
+      "empty": "No material recipes match the current filters.",
+      "materialAria": "Open {name} material details",
+      "visualModelLabel": "Element color model",
+      "visualModelBody": "Material thumbnails are generated from the dominant elements in each recipe profile.",
+      "processTitle": "Smelting process",
+      "compositionTitle": "Material element profile",
+      "forgeUseTitle": "Forge unlock",
+      "sourceBlocksTitle": "Raw resource sources",
+      "heatLabel": "Heat",
+      "burnTimeLabel": "Burn time",
+      "sourceLabel": "Source",
+      "consumableLabel": "Use",
+      "consumable": "Consumable",
+      "reusable": "Reusable heat source",
+      "burnSeconds": "{seconds}s",
+      "requiredHeatLabel": "Required heat",
+      "artisanLevelLabel": "Artisan level",
+      "artisanLevel": "Level {level}",
+      "rawInputsLabel": "Raw inputs",
+      "catalystLabel": "Catalyst",
+      "yieldLabel": "Yield",
+      "yieldCount": "{count} batch",
+      "forgeUseLabel": "Forge role",
+      "inputAmount": "{amount}x {resource}",
+      "heatTierValue": "Tier {tier}: {name} ({temp} C)",
+      "heatTierShort": "Heat T{tier}",
+      "heatTier": {
+        "low": "Low kiln",
+        "workshop": "Workshop furnace",
+        "forge": "Forge heat",
+        "blast": "Blast heat",
+        "unknown": "Unknown heat"
+      },
+      "class": {
+        "carbon": "Carbon",
+        "ceramic": "Ceramic",
+        "glass": "Glass",
+        "metal": "Metal",
+        "alloy": "Alloy",
+        "fiber": "Fiber",
+        "polymer": "Polymer",
+        "chemical": "Chemical",
+        "composite": "Composite",
+        "crystal": "Crystal"
+      },
+      "forgeUse": {
+        "fuel": "High-density fuel and reducing agent",
+        "soilCatalyst": "Soil amendment, bio-reactor feed, and low-tier catalyst",
+        "mold": "Forge molds, bricks, and furnace lining",
+        "binding": "Heat-stable binder and ceramic additive",
+        "flux": "Smelting flux for cleaner melts and lower slag",
+        "masonry": "Structural blocks, kiln bodies, and field construction",
+        "lens": "Optics, windows, gauges, and fragile fittings",
+        "circuit": "Circuits, sensors, logic plates, and signal devices",
+        "cooling": "Cooling cells, stabilizers, and frost-grade fittings",
+        "toolHead": "Pickaxe heads, blades, tools, and structural fittings",
+        "conductor": "Conductive fittings, coils, and precision parts",
+        "armorPlate": "Armor plates, shields, and impact-resistant panels",
+        "magneticCore": "Magnetic cores, motor parts, and advanced mechanisms",
+        "reinforcement": "Light reinforcement plates and carbon inserts",
+        "weaponAndTool": "Durable tools, weapons, and armor plates",
+        "heatShield": "Heat shields, furnace lining, and high-temperature parts",
+        "sealedVessel": "Sealed vessels, toxic containment, and hazard tools"
+      },
+      "fuel": {
+        "dry_grass": {
+          "name": "Dry Biomass",
+          "description": "Low heat starter fuel from dry grass, dead bush, or thorn. Useful for first kiln recipes."
+        },
+        "wood": {
+          "name": "Wood Fuel",
+          "description": "General workshop fuel made from logs, dead wood, or giant roots. Burns longer than grass fuel."
+        },
+        "charcoal": {
+          "name": "Charcoal",
+          "description": "Processed carbon fuel made from wood resources. Cleaner and steadier than raw wood."
+        },
+        "coal": {
+          "name": "Coal",
+          "description": "Deep stone seam fuel with strong forge heat. It is uncommon and suited for metal blooms."
+        },
+        "lava_heat": {
+          "name": "Lava Heat",
+          "description": "A non-consumed high heat source for blast-tier recipes, anchored to volcanic resources."
+        }
+      },
+      "item": {
+        "charcoal": {
+          "name": "Charcoal",
+          "description": "Carbonized wood material used as fuel, reducing agent, and early alloy support."
+        },
+        "biochar_compost": {
+          "name": "Biochar Compost",
+          "description": "Low-heat carbon and nutrient material made from leaves, moss, and mud for soil systems and biological stations."
+        },
+        "plant_fiber": {
+          "name": "Plant Fiber",
+          "description": "Dried reed and vine fiber used for bindings, wraps, handles, and early composite support."
+        },
+        "resin_binder": {
+          "name": "Resin Binder",
+          "description": "Pine and vine resin concentrate that binds fibers, seals vessels, and supports low-temperature composites."
+        },
+        "ceramic_brick": {
+          "name": "Ceramic Brick",
+          "description": "Fired clay and sand material for furnace walls, molds, and basic construction recipes."
+        },
+        "lime_ceramic": {
+          "name": "Lime Ceramic",
+          "description": "Shell-bed lime and clay ceramic used as a heat-stable binder and refractory additive."
+        },
+        "quicklime": {
+          "name": "Quicklime",
+          "description": "Reactive calcium-rich lime fired from shells and coral, useful as flux, mortar base, and chemical reagent."
+        },
+        "salt_flux": {
+          "name": "Salt Flux",
+          "description": "Salt-flat and ash flux that helps smelting separate slag and stabilizes cleaner metal batches."
+        },
+        "ash_cement": {
+          "name": "Ash Cement",
+          "description": "Volcanic ash, clay, and shell lime binder for masonry, furnace shells, and heat-stable construction."
+        },
+        "glass_ingot": {
+          "name": "Glass Ingot",
+          "description": "Silica-rich glass stock for lenses, windows, gauges, and fragile technical parts."
+        },
+        "obsidian_glass": {
+          "name": "Obsidian Glass",
+          "description": "Dark volcanic glass made from silica and basalt under lava heat, suited to durable optics and sealed panes."
+        },
+        "silicon_wafer": {
+          "name": "Silicon Wafer",
+          "description": "Purified silicon plate reduced with carbon, intended for circuits, sensors, and future signal devices."
+        },
+        "ice_crystal": {
+          "name": "Ice Crystal",
+          "description": "Stabilized ice and salt crystal for cooling cells, frost tools, and thermal-control assemblies."
+        },
+        "iron_bloom": {
+          "name": "Iron Bloom",
+          "description": "Forge-ready iron mass reduced from deep stone and stone with coal as the carbon reducer."
+        },
+        "copper_bloom": {
+          "name": "Copper Bloom",
+          "description": "Conductive metal bloom concentrated from gravel and basalt trace metal tendencies."
+        },
+        "alumina_plate": {
+          "name": "Alumina Plate",
+          "description": "Aluminum-rich ceramic plate from clay and deep stone, useful for impact panels and insulated fittings."
+        },
+        "nickel_iron": {
+          "name": "Nickel Iron",
+          "description": "Magnetic iron alloy refined from deep stone and basalt trace metals for motors and advanced mechanisms."
+        },
+        "carbon_plate": {
+          "name": "Carbon Plate",
+          "description": "Compressed coal and deep stone carbon material for light reinforcement and inserts."
+        },
+        "carbon_steel": {
+          "name": "Carbon Steel",
+          "description": "High-tier steel billet made from deep stone iron tendency and coal carbon control."
+        },
+        "basalt_fiber": {
+          "name": "Basalt Fiber",
+          "description": "Pulled volcanic fiber from basalt and lava heat, suited to heat shields and furnace parts."
+        },
+        "basalt_composite": {
+          "name": "Basalt Composite",
+          "description": "High-heat basalt, carbon, and resin composite for armor panels, shields, and durable housings."
+        },
+        "geopolymer_block": {
+          "name": "Geopolymer Block",
+          "description": "Ash, basalt, and salt-activated stone composite for strong masonry and kiln bodies."
+        },
+        "coral_lime": {
+          "name": "Coral Lime",
+          "description": "Calcium-rich coral and sand ceramic for marine masonry, mortar, and heat-stable blocks."
+        },
+        "toxic_glass": {
+          "name": "Toxic Glass",
+          "description": "Sealed hazardous glass from toxic water, salt, and silica, intended for containment vessels and risk tools."
+        }
       }
     },
     "category": {
@@ -463,6 +673,11 @@
         "name": "Shell Bed",
         "source": "Rare Beach / Ocean Floor",
         "description": "Accumulated shell fragments and carbonate grains generated as rare coastal and ocean-floor speckles."
+      },
+      "coal": {
+        "name": "Coal",
+        "source": "Deep Stone Seam",
+        "description": "Carbon-rich sedimentary fuel generated as low-frequency seams inside deep stone, useful for smelting heat rather than direct forging."
       }
     }
   }

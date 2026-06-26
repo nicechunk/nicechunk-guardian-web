@@ -97,6 +97,7 @@ const blockDensityKgM3 = {
   coral: 1600,
   deadCoral: 1500,
   shellBed: 1500,
+  coal: 1400,
 };
 
 export const blockAtlas = [
@@ -957,6 +958,27 @@ export const blockAtlas = [
     ],
     signals: { temperature: 52, humidity: 100, altitude: 12, slope: 8, rarity: 70 },
     colors: ["#e4d6b5", "#a89166", "#fff1ce"],
+  }),
+  block({
+    id: "NCK_47",
+    key: "coal",
+    name: "Coal",
+    category: "geological",
+    source: "Deep Stone Seam",
+    tags: ["Deep Cave", "Deep Rock", "Fuel", "Carbon"],
+    description: "Carbon-rich sedimentary fuel generated as low-frequency seams inside deep stone, useful for smelting heat rather than direct forging.",
+    composition: [
+      ["C", "58-82%"],
+      ["O", "5-16%"],
+      ["H", "2-7%"],
+      ["S", "0.5-5%"],
+      ["N", "0.3-3%"],
+      ["Fe", "0.2-4%"],
+      ["Si", "2-12%"],
+      ["Al", "0.5-6%"],
+    ],
+    signals: { temperature: 34, humidity: 10, altitude: 14, slope: 42, rarity: 62 },
+    colors: ["#1b1a1d", "#0d0c0e", "#343030"],
   }),
 ];
 

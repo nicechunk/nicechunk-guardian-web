@@ -2,8 +2,8 @@
   "_meta": {
     "language": "zh-Hans",
     "label": "Simplified Chinese",
-    "version": "locale-zh-Hans-3d5f7acbd30fae51",
-    "contentHash": "3d5f7acbd30fae51"
+    "version": "locale-zh-Hans-eddec8f4f8be4ee5",
+    "contentHash": "eddec8f4f8be4ee5"
   },
   "common": {
     "brand": "NICECHUNK",
@@ -66,6 +66,13 @@
       "noWallet": "没有检测到注入式钱包。请在钱包 App 中打开此页面，或安装 Phantom。",
       "openingWalletApp": "正在打开 {wallet}...",
       "connecting": "正在连接 {wallet}...",
+      "networkChecking": "正在检查 NiceChunk 网络...",
+      "networkSwitching": "正在请求钱包切换到 Solana {network}...",
+      "networkReady": "钱包网络已就绪：Solana {network}。",
+      "networkUnknownValue": "未知",
+      "networkMismatch": "NiceChunk 需要 Solana {expected}，但钱包当前报告为 {detected}。请切换网络后重新连接。",
+      "networkSwitchFailed": "钱包网络切换失败。请在钱包中切换到 Solana {expected} 后重新连接。",
+      "networkSwitchUnsupported": "当前钱包不支持自动切换网络。请在钱包设置中切换到 Solana {expected} 后重新连接。",
       "publicKeyMissing": "钱包没有返回 publicKey。",
       "connectFailed": "连接失败，请重新尝试。",
       "profile": "钱包已连接，设置玩家名。",
@@ -199,14 +206,14 @@
     "chainLog": {
       "aria": "链上事件日志",
       "minePending": "挖掘已经提交，待确认",
-      "minePendingDetail": "正在提交 {coords} 到开发网",
+      "minePendingDetail": "正在提交 {resource}（{coords}）到开发网",
       "mineSubmitted": "挖掘已确认",
-      "signature": "{coords}: {signature}",
+      "signature": "{resource}（{coords}）：{signature}",
       "mineSkipped": "挖掘同步已跳过",
-      "disabled": "{coords} 的链上同步已关闭",
-      "mineSkippedDetail": "{coords}: {reason}",
+      "disabled": "{resource}（{coords}）的链上同步已关闭",
+      "mineSkippedDetail": "{resource}（{coords}）：{reason}",
       "mineFailed": "挖掘交易失败",
-      "mineFailedDetail": "{coords}: {reason}",
+      "mineFailedDetail": "{resource}（{coords}）：{reason}",
       "alreadyMined": "方块已登记",
       "alreadyMinedReason": "已被挖掘",
       "walletUnavailable": "钱包不可用",
@@ -215,6 +222,7 @@
       "noSignature": "没有签名",
       "walletUnexpectedError": "钱包返回了未知错误",
       "sessionFundingCancelled": "已取消 Session 注资",
+      "sessionFundingFailed": "Session 注资失败",
       "backpackFull": "背包已满",
       "noBackpack": "尚未装备背包",
       "noBackpackTitle": "需要背包",
@@ -274,11 +282,18 @@
       "emptySlot": "背包第 {slot} 格：空",
       "detailLine": "坐标 {source}",
       "emptyDetail": "选择一个物品查看详情。",
+      "emptyDetailTitle": "尚未选择资源",
+      "emptyHintSelect": "选择格子",
+      "emptyHintInspect": "查看来源",
+      "emptyHintSmelt": "之后熔炼",
       "itemType": "物品",
       "unknownSource": "未知来源",
       "coordinateResource": "坐标资源",
       "totalWeight": "总重量：{weight}",
       "massLine": "质量 {mass}",
+      "quantityLine": "数量 {count}",
+      "itemIdLine": "物品 ID {id}",
+      "materialIdLine": "材料 {id}",
       "unknownMass": "未知"
     },
     "loading": {
@@ -367,6 +382,8 @@
       "sortPriceDesc": "价格从高到低",
       "currencyFilterLabel": "币种",
       "currencyAll": "全部币种",
+      "currencyNck": "NCK",
+      "currencySol": "SOL",
       "filters": "市场筛选",
       "browsePagination": "浏览挂单翻页",
       "ordersPagination": "订单翻页",
@@ -392,6 +409,7 @@
       "sampleCloak": "橡树叶方块",
       "sampleCloakMeta": "服装",
       "buy": "购买",
+      "buyNeedsWallet": "连接钱包后才能购买这个挂单。",
       "buyNeedsBackpack": "装备背包后才能购买这个挂单。",
       "buyBackpackFull": "你的背包已满。",
       "buyNeedsHotbarSlot": "空出一个工具栏格子才能接收这个物品。",
@@ -400,6 +418,7 @@
       "buyCreated": "链上购买已确认：{signature}",
       "buyFailed": "购买交易失败：{reason}",
       "cancelListing": "取消",
+      "cancelNeedsBackpackSpace": "请先空出一个背包格子，再取消这个挂单。",
       "ownListing": "你的挂单",
       "cancelCreated": "挂单已取消。",
       "expandDetails": "详情",
@@ -427,6 +446,7 @@
       "listingUnavailable": "挂单不可用",
       "selfPurchase": "不能购买自己的挂单",
       "nckTokenMissing": "钱包没有 NCK 代币账户",
+      "sellSteps": "出售挂单步骤",
       "stepSelectItem": "1. 选择物品",
       "stepListingDraft": "2. 挂单草稿",
       "inventoryEyebrow": "背包 + 工具栏",
@@ -445,6 +465,18 @@
       "noListingsMeta": "换一个分类或搜索词试试。",
       "noInventoryItems": "没有可挂单物品",
       "noInventoryItemsMeta": "装备背包或在工具栏保留工具后即可创建挂单。",
+      "emptyHintChain": "链上同步",
+      "emptyHintPda": "PDA 扫描",
+      "emptyHintRetry": "重试同步",
+      "emptyHintRpc": "RPC 状态",
+      "emptyHintFilters": "调整筛选",
+      "emptyHintAll": "显示全部",
+      "emptyHintWallet": "钱包订单",
+      "emptyHintSettlement": "NCK / SOL",
+      "emptyHintBackpack": "装备背包",
+      "emptyHintResources": "采集资源",
+      "emptyHintMarket": "市场终端",
+      "emptyHintOnchain": "链上挂单",
       "hotbarSlotMeta": "工具栏第 {slot} 格",
       "invalidListing": "请选择物品并输入有效价格。",
       "listingPending": "请确认交易以创建链上挂单。",
@@ -459,7 +491,14 @@
       "eyebrow": "锻造材料准备",
       "title": "熔炼台",
       "modePreview": "本地预览",
+      "coreMeta": "站点核心：Forge Alpha | 热量等级：稳定",
+      "safetyLabel": "安全协议",
+      "safetyActive": "热防护已激活",
+      "closeHint": "[ESC] 关闭",
+      "forgeHint": "[F] 锻造",
       "noBackpackShort": "无背包",
+      "statusNoBackpack": "熔炼前请先装备背包。",
+      "noBackpackResources": "熔炼资源前请先装备背包。",
       "backpackCount": "{count}/{capacity}",
       "inputEyebrow": "背包资源",
       "inputTitle": "选择一个已采集资源",
@@ -471,6 +510,8 @@
       "fuelTitle": "燃料",
       "fuel": "燃料",
       "fuelHeat": "热量等级 {tier}",
+      "addInput": "输入",
+      "addFuel": "燃料",
       "outputEyebrow": "可锻造输出",
       "outputTitle": "材料预览",
       "start": "开始熔炼",
@@ -480,20 +521,53 @@
       "statusNoInput": "选择一个已采集资源。",
       "statusNoFuel": "加入兼容燃料。",
       "statusHeatMissing": "所选燃料达不到需要的热量等级。",
+      "statusHeatMissingMulti": "燃料热量等级 {fuel} 低于所需等级 {required}。",
       "statusReady": "可以预览熔炼。",
       "statusRunning": "正在加热资源样本...",
       "statusComplete": "锻造材料预览完成。",
       "noResources": "这个背包里没有已采集资源。",
       "noFuel": "背包里没有兼容燃料。",
       "selectInput": "选择一个背包资源以预览输出。",
+      "materialSource": "已采集材料",
+      "dropInputHint": "把已采集材料拖到这里",
+      "dropFuelHint": "把燃料方块拖到这里",
+      "emptySyncTitle": "正在同步背包",
+      "emptyNoBackpackTitle": "需要背包",
+      "emptyNoResourcesTitle": "没有可熔炼资源",
+      "emptyNoFuelTitle": "缺少燃料",
+      "emptySelectInputTitle": "等待材料",
+      "emptyIdleTitle": "熔炼台待命",
+      "emptyHintReadPda": "读取 PDA",
+      "emptyHintSlots": "检查格子",
+      "emptyHintEquip": "装备背包",
+      "emptyHintMine": "采集资源",
+      "emptyHintCoordinate": "坐标绑定",
+      "emptyHintWood": "木质方块",
+      "emptyHintBiomass": "生物质",
+      "emptyHintSelect": "选择输入",
+      "emptyHintPreview": "预览产物",
+      "emptyHintFuel": "加入燃料",
       "outputName": "{kind}{resource}",
       "outputDescription": "从 {resource} 提炼出的可锻造材料批次，元素区间仍绑定原始采集坐标。",
+      "mixedBatch": "混合批次",
+      "batchBasis": "{inputs} 个输入 / {fuels} 个燃料",
       "requiredHeat": "所需热量",
       "yieldRange": "产出区间",
       "quality": "品质依据",
       "heatMet": "已满足等级 {tier}",
       "heatMissing": "需要等级 {required}，燃料 {fuel}",
+      "noRecipeName": "未匹配批次",
+      "noRecipeDescription": "所选批次尚未匹配 NiceChunk 官方熔炼配方。请按照公开材料表调整输入方块。",
+      "recipeMatched": "配方已匹配：{recipe}",
+      "recipeCandidate": "候选配方：{recipe}。",
+      "statusRecipeIncomplete": "候选配方 {recipe}：缺少 {missing}。",
+      "statusRecipeExtra": "候选配方 {recipe}：移除多余 {extra}。",
+      "noRecipeMatch": "此批次没有匹配公开配方。",
+      "missingInputLabel": "{amount}x {resource}",
       "previewOnly": "仅预览：熔炼合约尚未提交。",
+      "chainSubmitNotice": "On-chain smelting consumes selected inputs and fuel, then writes the forge material back into your equipped backpack.",
+      "submitFailed": "Smelting transaction failed: {reason}",
+      "submitComplete": "Smelting confirmed on-chain: {signature}",
       "kindChar": "碳化",
       "kindBiochar": "生物炭",
       "kindCeramic": "烧结",
@@ -507,6 +581,7 @@
       "dirt": "泥土",
       "stone": "石头",
       "deepStone": "深层石头",
+      "coal": "煤炭",
       "sand": "沙子",
       "sandstone": "砂岩",
       "gravel": "砾石",
@@ -754,7 +829,8 @@
       "convert": "转换 VOX",
       "sample": "加载示例",
       "formatLabel": "格式前缀",
-      "formatBody": "把调色板、模型网格、缩放比例和合并长方体编码成 bit-pack 链上文本。"
+      "formatBody": "把调色板、模型网格、缩放比例和合并长方体编码成 bit-pack 链上文本。",
+      "dna": "NCM-DNA 实验室"
     },
     "principles": {
       "aria": "NCM 设计原则",
@@ -802,6 +878,14 @@
         "title": "有用的压缩研究",
         "body": "NCM 也是 NCM-DNA 探索的基础：搜索更短的确定性基因来复现同一个模型，并把资产压缩转化为有意义的计算。"
       }
+    },
+    "dna": {
+      "aria": "NCM-DNA 实验室",
+      "eyebrow": "NCM-DNA 实验室",
+      "title": "把 NCM-DNA 实验和它所基于的 NCM 格式放在一起查看。",
+      "body": "NCM-DNA 延续同一条研发方向：不只是储存紧凑长方体，而是搜索能用更少字节复现同一模型的确定性基因。",
+      "open": "打开完整实验室",
+      "frameTitle": "NCM-DNA 实验室"
     },
     "converter": {
       "eyebrow": "VOX 转 NCM",
@@ -1015,6 +1099,406 @@
       "invalidSeed": "无效种子：{message}"
     }
   },
+  "ncmFourier": {
+    "common": {
+      "yes": "是",
+      "budget": "预算预览"
+    },
+    "page": {
+      "title": "NCM 函数模型实验室",
+      "description": "NiceChunk 实验页：加载 VOX 模型，把颜色映射到公共色表，生成紧凑链上函数字节，并用 payload 重新绘制模型。"
+    },
+    "hero": {
+      "eyebrow": "NiceChunk 函数资产实验室",
+      "title": "加载 VOX 模型，并用函数重新绘制"
+    },
+    "viewer": {
+      "source": "元素模型",
+      "function": "函数重绘",
+      "pow": "PoW 当前最优模型",
+      "sourceAria": "已加载的元素模型",
+      "functionAria": "由函数生成的模型",
+      "powAria": "由 PoW 当前最优表达式生成的模型"
+    },
+    "controls": {
+      "drop": "拖入或选择 .vox",
+      "compute": "计算函数",
+      "optimize": "优化函数",
+      "exprBytes": "表达式字节",
+      "maxBasis": "最大 basis",
+      "scale": "视图缩放"
+    },
+    "metrics": {
+      "grid": "模型尺寸",
+      "coefficients": "函数 basis",
+      "voxels": "重绘体素",
+      "storage": "链上字节"
+    },
+    "badges": {
+      "noVoxels": "0 体素",
+      "voxels": "{value} 体素",
+      "waiting": "等待计算",
+      "basis": "{value} basis"
+    },
+    "palette": {
+      "title": "G0 公共色表已用颜色"
+    },
+    "tech": {
+      "title": "技术思路",
+      "body": "函数 payload 只存 G0 公共色表索引和 box-basis 字节。后续矿工可以把精确模型 hash 作为目标，继续搜索更短的 Fourier gene。"
+    },
+    "steps": {
+      "sample": "加载 VOX，并规范化体素/颜色网格。",
+      "fit": "把颜色映射到 G0 公共色表，并把同色体素合并成 box basis 函数。",
+      "rebuild": "执行函数字节，用 G0 色表索引重新绘制模型。",
+      "bake": "把精确结果 hash 作为未来短 gene PoW 的目标。"
+    },
+    "formula": {
+      "title": "链上函数数据",
+      "copy": "复制函数",
+      "copied": "已复制",
+      "copyFailed": "复制失败",
+      "chainPayload": "链上 payload",
+      "chainBytes": "Payload 大小",
+      "modelHash": "模型 hash",
+      "exact": "精确重绘",
+      "empty": "拖入 VOX 文件，然后点击计算函数。"
+    },
+    "algorithm": {
+      "title": "原始算法",
+      "empty": "先计算函数，然后这里会显示解码执行算法。"
+    },
+    "pow": {
+      "title": "PoW 表达式搜索",
+      "start": "开始 PoW",
+      "stop": "停止",
+      "hashrate": "算力",
+      "attempts": "尝试次数",
+      "best": "最佳命中",
+      "bytes": "表达式字节",
+      "empty": "加载 VOX 模型后，可以开始本地 PoW。",
+      "started": "target={hash}，体素={voxels}；开始在本地搜索 seed 表达式",
+      "stopped": "已停止",
+      "bestLog": "best seed={seed} iou={score} hit={hit}/{union} bytes={bytes} proof={proof} expr={expr}"
+    },
+    "coefficients": {
+      "title": "Basis 预览",
+      "empty": "还没有 basis 函数。"
+    },
+    "status": {
+      "ready": "拖入 VOX 文件",
+      "loading": "正在加载 VOX...",
+      "loaded": "VOX 已加载，点击计算函数。",
+      "computing": "正在计算函数...",
+      "optimizing": "正在搜索更短的精确函数...",
+      "computedExact": "已生成精确函数重绘。",
+      "computedBudget": "已生成预算内函数预览。",
+      "optimized": "已从 {count} 种策略中优化出精确函数。",
+      "optimizedBudget": "已从 {count} 种策略中优化出预算预览。",
+      "failed": "失败：{reason}"
+    }
+  },
+  "civilization": {
+    "meta": {
+      "title": "NiceChunk 文明法典",
+      "description": "NiceChunk 文明法典：玩家书写、阅读、签署、校验并执行世界规则，不依赖项目方特权。"
+    },
+    "nav": {
+      "aria": "主导航",
+      "home": "首页",
+      "roadbook": "路书",
+      "worldRules": "世界规则",
+      "resources": "资源",
+      "civilization": "文明",
+      "trust": "信任",
+      "docs": "文档",
+      "enterWorld": "进入世界"
+    },
+    "hero": {
+      "eyebrow": "Civilization Codex",
+      "title": "Civilization Codex / 文明法典",
+      "subtitle": "玩家不只是进入世界，而是共同书写世界的法则。",
+      "body": "NiceChunk 的文明规则服务于一个公开链上世界：资源、装备、特权和世界参数都不能凭空出现。",
+      "panelAria": "文明共识模型",
+      "metric": {
+        "natural": "自然法则门槛",
+        "civilization": "文明法则门槛",
+        "epoch": "快照纪元",
+        "citizens": "活跃公民"
+      }
+    },
+    "actions": {
+      "create": "创建规则书",
+      "reviewMock": "查看模拟规则",
+      "read": "阅读规则",
+      "signAgree": "签署同意",
+      "signReject": "签署反对",
+      "execute": "执行规则",
+      "comingSoon": "链上交互将在后续接入。"
+    },
+    "lawType": {
+      "natural": "Natural Law / 自然法则",
+      "civilization": "Civilization Law / 文明法则"
+    },
+    "risk": {
+      "medium": "中等",
+      "high": "高",
+      "critical": "关键"
+    },
+    "status": {
+      "draft": "草稿",
+      "reading": "阅读期",
+      "cooling": "冷却期",
+      "challenge": "挑战期",
+      "ready": "可执行",
+      "active": "已生效",
+      "not_enough": "共识不足"
+    },
+    "layers": {
+      "eyebrow": "两层规则",
+      "title": "世界宪法层与持续演进的文明层。",
+      "body": "自然法则保护世界不被任意权力破坏；文明法则让玩家持续演进生产、建造、工艺和社会规则，而不是把治理变成资本投票。",
+      "natural": {
+        "title": "Natural Law / 自然法则",
+        "subtitle": "宪法级共识，保护资源守恒、资产归属、世界生成、NCK 原则和零项目方特权。",
+        "meta": {
+          "constitution": "宪法级共识",
+          "longDelay": "更长延迟与挑战期",
+          "strictValidator": "必须通过严格 RuleValidator"
+        }
+      },
+      "civilization": {
+        "title": "Civilization Law / 文明法则",
+        "subtitle": "面向生产、建造、工艺、资源加工、非宪法级参数和社会规则的开放演化层。",
+        "meta": {
+          "production": "生产与社会规则",
+          "normalDelay": "普通延迟",
+          "openEvolution": "开放文明演化"
+        }
+      }
+    },
+    "constitution": {
+      "eyebrow": "世界级共识",
+      "title": "自然法则不是普通投票。",
+      "body": "自然法则变更会触及世界最深层的公平假设，所以必须有更强提示、更严格校验、更长冷却期和更宽挑战窗口。",
+      "checks": {
+        "higherRisk": "签署前展示更高风险等级",
+        "longerCooldown": "执行前必须经过更长冷却期",
+        "stricterValidation": "校验器拒绝特权、通胀和资产没收",
+        "strongerPrompt": "玩家必须明确确认理解规则",
+        "widerChallenge": "给审计者和文明成员更长挑战窗口"
+      }
+    },
+    "power": {
+      "eyebrow": "文明权重",
+      "title": "权重来自真实参与，不是钱包数量，也不是单纯 NCK 持仓。",
+      "body": "未来合约应按玩家对世界的真实参与计算文明权重，同时用成熟期、上限、活跃窗口、衰减和异常惩罚限制刷权。",
+      "sourcesTitle": "参与来源",
+      "guardsTitle": "防刷约束",
+      "sources": {
+        "registration": "注册公民状态和成熟世界身份",
+        "exploration": "探索和访问 Chunk 的历史",
+        "mining": "挖掘有可验证生成来源的方块",
+        "forging": "锻造和材料加工参与",
+        "trading": "市场交易和结算历史",
+        "guardianService": "守护者服务覆盖与证明提交",
+        "ruleReading": "签署前阅读并理解规则书",
+        "longActivity": "跨纪元长期活跃"
+      },
+      "guards": {
+        "maturity": "新账号成熟期",
+        "walletCap": "单钱包权重上限",
+        "activeWindow": "近期活跃窗口要求",
+        "decay": "长期不活跃权重衰减",
+        "anomalyPenalty": "异常行为削减"
+      },
+      "snapshot": {
+        "total": "总权重",
+        "mature": "成熟公民"
+      }
+    },
+    "lifecycle": {
+      "eyebrow": "流程",
+      "title": "规则书从撰写到执行，不需要项目方许可。",
+      "steps": {
+        "draft": {
+          "title": "Draft Rule Book / 撰写规则书",
+          "body": "玩家为目标模块写下可读说明和机器补丁。"
+        },
+        "publish": {
+          "title": "Publish On-chain Hash / 发布链上哈希",
+          "body": "固定 text_hash、patch_hash、作者、规则类型、风险等级和快照纪元。"
+        },
+        "read": {
+          "title": "Read & Understand / 阅读并理解",
+          "body": "公民查看文本、影响范围、旧资产策略和校验警告。"
+        },
+        "sign": {
+          "title": "Sign Civilization Power / 签署文明权重",
+          "body": "公民按快照权重签署同意、反对或弃权。"
+        },
+        "threshold": {
+          "title": "Reach Threshold / 达到门槛",
+          "body": "文明法则超过 50%；自然法则超过 90% 活跃文明权重。"
+        },
+        "cooling": {
+          "title": "Cooling & Challenge / 冷却与挑战",
+          "body": "规则等待冷却和挑战窗口，给错误与风险留下审查时间。"
+        },
+        "execute": {
+          "title": "Execute Rule / 执行规则",
+          "body": "链上条件满足后，任何玩家都可调用 execute_rule。"
+        },
+        "active": {
+          "title": "Rule Becomes Active / 规则生效",
+          "body": "程序把批准配置写入规则注册表和目标模块配置 PDA。"
+        }
+      }
+    },
+    "schema": {
+      "eyebrow": "Rule Book Structure",
+      "title": "Human-readable intent and machine-executable patch stay bound by hashes.",
+      "body": "The UI stores mock data locally today. Later these fields can map directly to rule_book_pda, rule_signature_pda, and rule_registry_pda account layouts.",
+      "fields": {
+        "title": "Readable rule name shown to players and reviewers.",
+        "author": "Wallet that published the rule book hash.",
+        "category": "Natural Law or Civilization Law threshold class.",
+        "target_module": "One or more configuration modules affected by the patch.",
+        "human_readable_text": "Readable explanation that players review before signing.",
+        "machine_patch": "Structured patch bytes consumed by the RuleValidator.",
+        "risk_level": "UI and validator risk classification.",
+        "threshold": "Required active civilization power percentage.",
+        "snapshot_epoch": "Epoch used to freeze signer power.",
+        "status": "Lifecycle state from draft to active.",
+        "yes_power": "Agreeing civilization power.",
+        "no_power": "Rejecting civilization power.",
+        "abstain_power": "Abstaining civilization power.",
+        "cooldown_end": "Earliest execution time after consensus.",
+        "execute_status": "Current execution readiness or result."
+      }
+    },
+    "modules": {
+      "eyebrow": "Target Modules",
+      "title": "Civilization changes the configuration layer, not core code by text command.",
+      "short": {
+        "smelting": "Smelting",
+        "forging": "Forging",
+        "block_properties": "Block Properties",
+        "resource_rules": "Resource Rules",
+        "element_rules": "Element Rules",
+        "world_knowledge": "World Knowledge"
+      },
+      "items": {
+        "smelting": {
+          "title": "Smelting",
+          "body": "Fuel tiers, raw inputs, conservation checks, material outputs, and processing requirements."
+        },
+        "forging": {
+          "title": "Forging",
+          "body": "Tool, equipment, and building recipes that consume validated material resources."
+        },
+        "block_properties": {
+          "title": "Block Properties",
+          "body": "Hardness, drops, break requirements, hazard flags, and world interaction parameters."
+        },
+        "resource_rules": {
+          "title": "Resource Rules",
+          "body": "Generated resource sources, output logic, provenance requirements, and conservation boundaries."
+        },
+        "element_rules": {
+          "title": "Element Rules",
+          "body": "Element profiles, material tendencies, and future chemistry or alloy constraints."
+        },
+        "world_knowledge": {
+          "title": "World Knowledge",
+          "body": "Versioned public knowledge, civilization records, rule explanations, and audit notes."
+        }
+      }
+    },
+    "examples": {
+      "aria": "Rule examples",
+      "naturalEyebrow": "Natural Law Examples",
+      "naturalTitle": "Rules that protect the world itself.",
+      "civilizationEyebrow": "Civilization Law Examples",
+      "civilizationTitle": "Rules that let civilization advance.",
+      "natural": {
+        "resourceConservation": "Resources cannot be created without generated source, input burn, or validated transformation.",
+        "assetProtection": "Player-owned assets cannot be seized or reassigned without valid rule authority.",
+        "publicWorldGeneration": "World seed and generation principles cannot be quietly changed.",
+        "noProjectPrivilege": "No address receives hidden minting, bypass, or privileged production rights.",
+        "transparentAuthority": "Contract authorities and config owners must remain inspectable.",
+        "nckPrinciples": "NCK and core economic principles cannot be casually broken."
+      },
+      "civilization": {
+        "bronze": "Copper + tin can unlock bronze through smelting and forging configs.",
+        "oreEnergy": "A rule can increase energy requirements for a rare ore smelting path.",
+        "blockHardness": "A new block can receive hardness, drops, and required tool tiers.",
+        "toolRecipe": "A civilization can add a new tool forging recipe with material inputs.",
+        "materialProcessing": "A material can require extra processing before construction use."
+      }
+    },
+    "execution": {
+      "eyebrow": "Execution Model",
+      "title": "Automatic execution means permissionless execution, not a server changing code.",
+      "body": "Once threshold, cooling, and challenge conditions are satisfied, any player can call execute_rule. The contract checks only on-chain state and writes the approved configuration into PDA registries.",
+      "items": {
+        "ruleValidator": {
+          "title": "RuleValidator gate",
+          "body": "Rejects patches that create resources from nothing, bypass inputs, grant address privilege, or seize owned assets."
+        },
+        "registryWrite": {
+          "title": "Registry write",
+          "body": "Approved patches update rule_registry, smelting_config, forging_config, block_property_config, or resource_config PDAs."
+        },
+        "permissionlessCaller": {
+          "title": "No privileged executor",
+          "body": "Execution has no project-side allowlist; any player can submit the transaction when conditions pass."
+        },
+        "fixedCoreContracts": {
+          "title": "Fixed core contracts",
+          "body": "Gameplay contracts should read active config PDAs instead of letting text rules upgrade program code."
+        }
+      }
+    },
+    "mock": {
+      "eyebrow": "Mock Rule Books",
+      "title": "Local data today, chain accounts tomorrow.",
+      "body": "These examples are intentionally structured like future on-chain data so wallet signing, PDA reads, and execute_rule flows can replace the mock layer later.",
+      "yesPower": "Signed yes",
+      "threshold": "Threshold",
+      "risk": "Risk",
+      "epoch": "Epoch",
+      "rules": {
+        "bronze": {
+          "title": "Bronze Age Rule"
+        },
+        "conservation": {
+          "title": "World Conservation Amendment"
+        },
+        "cactus": {
+          "title": "Desert Cactus Block Rule"
+        },
+        "noAdminMint": {
+          "title": "No Admin Minting Principle"
+        }
+      }
+    },
+    "contract": {
+      "eyebrow": "Future Contract Direction",
+      "title": "The civilization program should mutate rule configuration PDAs through validators.",
+      "body": "Core gameplay contracts should stay fixed where possible and read active configuration PDAs. Civilization consensus changes configuration, not ownership by fiat.",
+      "accountsTitle": "Program and PDA surfaces",
+      "validatorTitle": "RuleValidator must reject",
+      "assetProtectionTitle": "Old asset protection principle",
+      "assetProtectionBody": "Civilization Law should affect newly generated resources, equipment, and block rules by default. Retroactive effects on existing player assets require Natural Law consensus, stronger prompts, and 90% world-level agreement.",
+      "validator": {
+        "noResourceFromNothing": "Creating resources from nothing",
+        "noInputBypass": "Bypassing required input resources",
+        "noAddressPrivilege": "Granting single-address privilege",
+        "noOwnershipSeizure": "Changing ownership of existing player assets"
+      }
+    }
+  },
   "resourceSimulator": {
     "resource": {
       "gravel": "碎石"
@@ -1098,6 +1582,11 @@
       "body": "NiceChunk 会把地形方块映射为有科学依据的资源基础。每个方块都会公开生成信号、可能的元素组成区间，以及它在未来挖矿和锻造经济中的定位。",
       "metricsAria": "图鉴状态",
       "workspaceAria": "方块资源图鉴",
+      "modeAria": "资源数据分类",
+      "rawMode": "原始资源",
+      "materialMode": "材料资料",
+      "rawModeBody": "原始资源来自生成方块的挖掘。它们必须先熔炼成材料资源，才能进入锻造。",
+      "materialModeBody": "材料资料定义燃料热量、熔炼输入、工匠要求，以及由原始资源产出的可锻造材料。",
       "filtersAria": "图鉴筛选",
       "filterTitle": "方块类别",
       "resultCount": "显示 {count} 个",
@@ -1120,12 +1609,217 @@
         "blocks": "生成方块",
         "families": "方块类别",
         "elements": "关联元素",
+        "materials": "可熔炼材料",
+        "worldRules": "世界规则",
         "ruleSet": "规则集"
       },
       "color": {
         "0": "主表面",
         "1": "侧面",
         "2": "顶部高光"
+      }
+    },
+    "material": {
+      "workspaceAria": "材料资源资料",
+      "eyebrow": "熔炼资料",
+      "title": "原始资源会变成可锻造材料。",
+      "body": "原始资源不能直接锻造。熔炼炉会消耗燃料热量，检查材料配方，然后产出可用于物品锻造的材料资源。",
+      "ruleSetLabel": "规则来源",
+      "contractBody": "这张表来自独立 JSON 规则源，方便游戏客户端和未来合约引用同一套熔炼要求。",
+      "fuelTitle": "燃料热量等级",
+      "fuelBody": "可燃燃料提供热量等级。更高阶的配方需要更强燃料或更热的炉源。",
+      "recipeTitle": "材料图鉴",
+      "recipeBody": "按材料类别浏览可锻造材料，查看元素构成，并核对每个产物背后的熔炼要求。",
+      "atlasAria": "材料图鉴",
+      "filtersAria": "材料筛选",
+      "categoryTitle": "材料类别",
+      "allMaterials": "全部材料",
+      "resultCount": "显示 {count} 个",
+      "searchLabel": "搜索材料、类别、元素或输入",
+      "searchPlaceholder": "搜索 steel、Si、glass...",
+      "empty": "当前筛选下没有匹配的材料配方。",
+      "materialAria": "打开 {name} 材料详情",
+      "visualModelLabel": "元素色彩模型",
+      "visualModelBody": "材料缩略图会根据每个配方档案中的主导元素生成。",
+      "processTitle": "熔炼流程",
+      "compositionTitle": "材料元素档案",
+      "forgeUseTitle": "锻造解锁",
+      "sourceBlocksTitle": "原始资源来源",
+      "heatLabel": "热量",
+      "burnTimeLabel": "燃烧时间",
+      "sourceLabel": "来源",
+      "consumableLabel": "消耗",
+      "consumable": "会消耗",
+      "reusable": "可复用热源",
+      "burnSeconds": "{seconds} 秒",
+      "requiredHeatLabel": "所需热量",
+      "artisanLevelLabel": "工匠等级",
+      "artisanLevel": "{level} 级",
+      "rawInputsLabel": "原始输入",
+      "catalystLabel": "催化/还原",
+      "yieldLabel": "产出",
+      "yieldCount": "{count} 批",
+      "forgeUseLabel": "锻造用途",
+      "inputAmount": "{amount}x {resource}",
+      "heatTierValue": "{tier} 级：{name}（{temp} C）",
+      "heatTierShort": "热量 T{tier}",
+      "heatTier": {
+        "low": "低温窑",
+        "workshop": "工坊炉",
+        "forge": "锻造热",
+        "blast": "鼓风高热",
+        "unknown": "未知热量"
+      },
+      "class": {
+        "carbon": "碳材料",
+        "ceramic": "陶瓷",
+        "glass": "玻璃",
+        "metal": "金属",
+        "alloy": "合金",
+        "fiber": "纤维",
+        "polymer": "聚合物",
+        "chemical": "化工",
+        "composite": "复合材料",
+        "crystal": "晶体"
+      },
+      "forgeUse": {
+        "fuel": "高密度燃料和还原剂",
+        "soilCatalyst": "土壤改良、生物反应器原料和低阶催化剂",
+        "mold": "锻造模具、砖和炉衬",
+        "binding": "耐热粘结剂和陶瓷添加物",
+        "flux": "熔炼助熔剂，用于净化熔体并减少炉渣",
+        "masonry": "结构砌块、窑炉主体和野外建造",
+        "lens": "镜片、窗片、仪表和易碎配件",
+        "circuit": "电路、传感器、逻辑板和信号装置",
+        "cooling": "冷却单元、稳定器和寒冷等级配件",
+        "toolHead": "镐头、刀刃、工具和结构件",
+        "conductor": "导电配件、线圈和精密零件",
+        "armorPlate": "护甲板、盾牌和抗冲击面板",
+        "magneticCore": "磁芯、电机部件和高级机构",
+        "reinforcement": "轻量加固板和碳质嵌件",
+        "weaponAndTool": "耐用工具、武器和护甲板",
+        "heatShield": "隔热板、炉衬和高温部件",
+        "sealedVessel": "密封容器、毒性封存和危险工具"
+      },
+      "fuel": {
+        "dry_grass": {
+          "name": "干燥生物质",
+          "description": "来自干草、枯灌木或荆棘的低热量起火燃料，适合第一批窑炉配方。"
+        },
+        "wood": {
+          "name": "木质燃料",
+          "description": "由原木、枯木或巨型树根提供的通用工坊燃料，比草本燃料燃烧更久。"
+        },
+        "charcoal": {
+          "name": "木炭",
+          "description": "由木质资源加工出的碳燃料，比原木更稳定也更干净。"
+        },
+        "coal": {
+          "name": "煤炭",
+          "description": "来自深层石煤层的强力锻造燃料，不常见，适合金属海绵坯。"
+        },
+        "lava_heat": {
+          "name": "熔岩热源",
+          "description": "不直接消耗的高热炉源，绑定火山资源，用于鼓风级配方。"
+        }
+      },
+      "item": {
+        "charcoal": {
+          "name": "木炭",
+          "description": "碳化木质材料，可作为燃料、还原剂和早期合金辅助材料。"
+        },
+        "biochar_compost": {
+          "name": "生物炭堆肥",
+          "description": "由树叶、苔藓和泥浆低温制成的碳与养分材料，可用于土壤系统和生物站点。"
+        },
+        "plant_fiber": {
+          "name": "植物纤维",
+          "description": "由芦苇和藤蔓干燥得到的纤维，可用于绑扎、缠绕、握柄和早期复合材料。"
+        },
+        "resin_binder": {
+          "name": "树脂粘结剂",
+          "description": "由松木和藤蔓提取的树脂浓缩物，可粘合纤维、密封容器，并支持低温复合材料。"
+        },
+        "ceramic_brick": {
+          "name": "陶瓷砖",
+          "description": "由黏土和沙烧制成的材料，可用于炉壁、模具和基础建造配方。"
+        },
+        "lime_ceramic": {
+          "name": "石灰陶瓷",
+          "description": "由贝壳层石灰和黏土制成的陶瓷，可作为耐热粘结剂和耐火添加物。"
+        },
+        "quicklime": {
+          "name": "生石灰",
+          "description": "由贝壳和珊瑚烧制出的富钙活性石灰，可作为助熔剂、砂浆基底和化学试剂。"
+        },
+        "salt_flux": {
+          "name": "盐助熔剂",
+          "description": "由盐滩和火山灰制成的助熔材料，可帮助熔炼分离炉渣并稳定更干净的金属批次。"
+        },
+        "ash_cement": {
+          "name": "灰质水泥",
+          "description": "由火山灰、黏土和贝壳石灰制成的粘结材料，可用于砌体、炉壳和耐热建造。"
+        },
+        "glass_ingot": {
+          "name": "玻璃锭",
+          "description": "富硅玻璃坯料，可用于镜片、窗片、仪表和易碎技术部件。"
+        },
+        "obsidian_glass": {
+          "name": "黑曜玻璃",
+          "description": "由硅质沙和玄武岩在熔岩高热下形成的暗色火山玻璃，适合耐用光学件和密封窗片。"
+        },
+        "silicon_wafer": {
+          "name": "硅晶片",
+          "description": "用碳还原得到的纯化硅片，可用于电路、传感器和未来信号装置。"
+        },
+        "ice_crystal": {
+          "name": "冰晶",
+          "description": "由冰、雪和盐稳定出的晶体，可用于冷却单元、冰霜工具和热控组件。"
+        },
+        "iron_bloom": {
+          "name": "铁海绵坯",
+          "description": "从深层石和石头中还原出的可锻铁质坯料，煤炭负责供碳和还原。"
+        },
+        "copper_bloom": {
+          "name": "铜海绵坯",
+          "description": "从砾石和玄武岩的痕量金属倾向中富集出的导电金属坯。"
+        },
+        "alumina_plate": {
+          "name": "氧化铝板",
+          "description": "由黏土和深层石制成的富铝陶瓷板，可用于抗冲击面板和绝缘配件。"
+        },
+        "nickel_iron": {
+          "name": "镍铁合金",
+          "description": "从深层石和玄武岩痕量金属中精炼出的磁性铁合金，可用于电机和高级机构。"
+        },
+        "carbon_plate": {
+          "name": "碳板",
+          "description": "由煤炭和深层石压制出的碳材料，可用于轻量加固和嵌件。"
+        },
+        "carbon_steel": {
+          "name": "碳钢坯",
+          "description": "高阶钢材坯料，来自深层石的铁倾向和煤炭的控碳。"
+        },
+        "basalt_fiber": {
+          "name": "玄武岩纤维",
+          "description": "由玄武岩和熔岩高热拉制的火山纤维，适合隔热板和炉体部件。"
+        },
+        "basalt_composite": {
+          "name": "玄武岩复合板",
+          "description": "由高热玄武岩、碳和树脂方向形成的复合材料，可用于护甲板、盾牌和耐用外壳。"
+        },
+        "geopolymer_block": {
+          "name": "地聚物块",
+          "description": "由火山灰、玄武岩和盐激发形成的石质复合材料，可用于高强砌体和窑炉主体。"
+        },
+        "coral_lime": {
+          "name": "珊瑚石灰",
+          "description": "由珊瑚、死珊瑚和沙制成的富钙陶瓷，可用于海洋砌体、砂浆和耐热块。"
+        },
+        "toxic_glass": {
+          "name": "毒性玻璃",
+          "description": "由毒水、盐和硅质沙制成的密封危险玻璃，用于封存容器和风险工具。"
+        }
       }
     },
     "category": {
@@ -1383,6 +2077,11 @@
         "name": "贝壳层",
         "source": "稀有海滩 / 海底",
         "description": "由贝壳碎片和碳酸盐颗粒堆积形成，作为稀有海岸和海底斑点生成。"
+      },
+      "coal": {
+        "name": "煤炭",
+        "source": "深层石煤层",
+        "description": "富碳沉积燃料，会以较低频率在深层石中成片生成，主要用于熔炼热量，而不是直接锻造。"
       }
     },
     "tag": {
@@ -1414,6 +2113,8 @@
       "ocean": "海洋",
       "corruption": "污染",
       "heat": "高热",
+      "fuel": "燃料",
+      "carbon": "碳",
       "hazard": "危险",
       "tree": "树木",
       "dryBiome": "干燥生物群系",

@@ -2,8 +2,8 @@
   "_meta": {
     "language": "ru",
     "label": "Russian",
-    "version": "world-rule-locale-ru-f48484ea83c5ed55",
-    "contentHash": "f48484ea83c5ed55"
+    "version": "world-rule-locale-ru-09f5ef8ed15f5860",
+    "contentHash": "09f5ef8ed15f5860"
   },
   "siteFooter": {
     "tagline": "Seeded voxel world protocol on Solana.",
@@ -19,321 +19,282 @@
     "github": "GitHub",
     "copyright": "2026 NiceChunk. Все права защищены."
   },
-  "title": "NiceChunk World Generation Algorithm",
+  "title": "NiceChunk Алгоритм генерации мира",
   "nav": {
-    "aria": "Primary navigation",
-    "home": "Home",
-    "roadbook": "Roadbook",
-    "worldRules": "World Rules",
-    "resources": "Resources",
-    "elements": "Elements",
-    "fairness": "Fairness",
-    "proofOfFrontier": "Proof",
-    "guardians": "Guardians",
-    "docs": "Docs",
-    "enterWorld": "Enter World"
+    "aria": "Основная навигация",
+    "home": "Главная страница",
+    "roadbook": "Дорожная книга",
+    "worldRules": "Мировые правила",
+    "resources": "Ресурсы",
+    "elements": "Элементы",
+    "fairness": "Справедливость",
+    "proofOfFrontier": "Доказательство",
+    "docs": "Документы",
+    "enterWorld": "Войдите в мир",
+    "guardians": "Хранители"
   },
   "preview": {
-    "label": "World preview",
-    "heading": "WORLD PREVIEW",
-    "fly": "WASD Fly",
-    "look": "Mouse Drag Look",
-    "vertical": "Space / C Vertical",
+    "label": "Мировой предварительный просмотр",
+    "heading": "МИРОВОЙ ОБЗОР",
+    "fly": "WASD Полет",
+    "look": "Перетаскивание мышью",
+    "vertical": "Пробел / C Вертикальный",
     "chunks": "{active}/{total} chunks",
-    "metricsLabel": "Preview constants"
+    "metricsLabel": "Константы предварительного просмотра"
   },
   "header": {
-    "eyebrow": "PUBLIC GENERATION SPEC",
-    "title": "World Generation Algorithm",
-    "body": "NiceChunk terrain is generated from a public seed pipeline. The same seed and coordinates produce the same terrain profile, biome, water, caves, trees, and block query results.",
-    "enterWorld": "Enter World",
-    "language": "English"
+    "eyebrow": "СПЕЦИФИКАЦИЯ ПУБЛИЧНОЙ ГЕНЕРАЦИИ",
+    "title": "Алгоритм генерации мира",
+    "body": "Ландшафт NiceChunk генерируется из общедоступного исходного конвейера. Одни и те же начальные значения и координаты дают одинаковый профиль местности, биом, воду, пещеры, деревья и результаты запроса блоков.",
+    "enterWorld": "Войдите в мир",
+    "language": "английский"
   },
   "metrics": {
-    "statusLabel": "World generation status",
+    "statusLabel": "Статус генерации мира",
     "chunkSizeLabel": "Chunk",
-    "seaLevelLabel": "Sea",
-    "renderRadiusLabel": "Render",
-    "deterministic": "Deterministic",
-    "inspectable": "Inspectable",
-    "runtime": "Runtime rules"
+    "seaLevelLabel": "Море",
+    "renderRadiusLabel": "Рендеринг",
+    "deterministic": "Детерминированный",
+    "inspectable": "Осматриваемый",
+    "runtime": "Правила выполнения"
   },
   "seed": {
-    "label": "Seed controls",
-    "field": "World Seed",
-    "render": "Render Seed",
-    "random": "Random Seed"
+    "label": "Контроль семян",
+    "field": "Мировое семя",
+    "render": "Начальное значение рендеринга",
+    "random": "Случайное начальное число"
   },
   "overview": {
-    "label": "Generation overview",
+    "label": "Обзор поколений",
     "seed": {
-      "title": "Seeded world state",
-      "body": "A text seed is hashed once, then mixed into every coordinate sample."
+      "title": "Затравленное мировое государство",
+      "body": "Текстовое начальное число хешируется один раз, а затем смешивается с каждым образцом координат."
     },
     "height": {
-      "title": "Heightfield first",
-      "body": "Continents, oceans, relief, rivers, dunes, and mountains produce the base terrain."
+      "title": "Сначала поле высот",
+      "body": "Континенты, океаны, рельеф, реки, дюны и горы создают базовый ландшафт."
     },
     "biome": {
-      "title": "Climate and biome pass",
-      "body": "Temperature, humidity, slope, altitude, water, and special masks select the biome."
+      "title": "Климат и биомный пропуск",
+      "body": "Температура, влажность, уклон, высота, вода и специальные маски выбирают биом."
     },
     "block": {
-      "title": "Block query rules",
-      "body": "The engine answers block requests from depth, fluid, cave, surface, and vegetation rules."
+      "title": "Правила запроса блокировки",
+      "body": "Движок отвечает на запросы блоков по правилам глубины, жидкости, пещеры, поверхности и растительности."
     }
   },
   "pipeline": {
-    "label": "Generation pipeline",
-    "eyebrow": "GENERATION PIPELINE",
-    "title": "From seed to playable chunks",
-    "steps": [
-      {
-        "title": "Hash seed",
-        "body": "Convert the visible seed into a stable integer used by all random functions."
+    "label": "Конвейер генерации",
+    "eyebrow": "ТРУБОПРОВОД ГЕНЕРАЦИИ",
+    "title": "От начального уровня до играбельного chunks",
+    "steps": {
+      "hashSeed": {
+        "title": "Хэш-семя",
+        "body": "Преобразуйте видимое начальное число в стабильное целое число, используемое всеми случайными функциями."
       },
-      {
-        "title": "Sample fields",
-        "body": "Read continentalness, erosion, weirdness, temperature, humidity, volcanic, and corruption noise."
+      "sampleFields": {
+        "title": "Примеры полей",
+        "body": "Узнайте о континентальности, эрозии, странностях, температуре, влажности, вулканическом и коррупционном шуме."
       },
-      {
-        "title": "Build height",
-        "body": "Blend ocean basins, land shelves, lowland relief, rivers, dunes, mountains, and slope limits."
+      "buildHeight": {
+        "title": "Строительная высота",
+        "body": "Смешайте океанские бассейны, шельфы суши, равнинный рельеф, реки, дюны, горы и пределы склонов."
       },
-      {
-        "title": "Choose biome",
-        "body": "Apply the ordered biome priority so water, cold, altitude, wetness, heat, and forest masks resolve consistently."
+      "chooseBiome": {
+        "title": "Выбрать биом",
+        "body": "Примените упорядоченный приоритет биома, чтобы маски воды, холода, высоты, влажности, жары и леса учитывались последовательно."
       },
-      {
-        "title": "Answer blocks",
-        "body": "Return terrain, fluid, caves, cave walls, vegetation, trees, and decorations from coordinate queries."
+      "answerBlocks": {
+        "title": "Блоки ответов",
+        "body": "Возвращает местность, жидкость, пещеры, стены пещер, растительность, деревья и украшения из запросов координат."
       }
-    ]
+    }
   },
   "biomes": {
-    "label": "Biome priority",
-    "eyebrow": "BIOME PRIORITY",
-    "title": "Water and extreme terrain win first",
-    "items": [
-      "Ocean",
-      "River",
-      "Lake",
-      "Beach",
-      "Volcano",
-      "Snowfield",
-      "Mountain",
-      "Swamp",
-      "Wetland",
-      "Tundra",
-      "Desert",
-      "Rainforest",
-      "Forest",
-      "Plains"
-    ]
+    "label": "Приоритет биома",
+    "eyebrow": "ПРИОРИТЕТ БИОМА",
+    "title": "Вода и экстремальный рельеф побеждают первыми",
+    "items": {
+      "ocean": "Океан",
+      "river": "Река",
+      "lake": "Озеро",
+      "beach": "Пляж",
+      "volcano": "Вулкан",
+      "snowfield": "Снежное поле",
+      "mountain": "Гора",
+      "swamp": "Болото",
+      "wetland": "",
+      "tundra": "Тундра",
+      "desert": "Пустыня",
+      "rainforest": "Тропический лес",
+      "forest": "Лес",
+      "plains": "Равнины"
+    }
   },
   "rules": {
-    "label": "Generation rules",
-    "generationTitle": "GENERATION PIPELINE",
-    "blockTitle": "BLOCK, FLUID, AND DECORATION RULES",
-    "generation": [
-      {
-        "title": "Deterministic Seed",
-        "code": "worldSeed = hashSeed(seed)\nrandom2(x, z) = hash(x, z, worldSeed)\ncache.clear() when seed changes",
-        "description": "The seed is reduced to a stable integer and mixed into every random sample. Terrain height, climate, water, trees, caves, and material rolls are deterministic for the same seed and coordinates."
+    "label": "Правила генерации",
+    "generationTitle": "ТРУБОПРОВОД ГЕНЕРАЦИИ",
+    "blockTitle": "ПРАВИЛА БЛОКА, ЖИДКОСТИ И УКРАШЕНИЯ",
+    "items": {
+      "deterministicSeed": {
+        "title": "Детерминированное начальное число",
+        "description": "Начальное число сводится к стабильному целому числу и смешивается с каждой случайной выборкой. Высота местности, климат, вода, деревья, пещеры и рулоны материалов детерминированы для одних и тех же семян и координат."
       },
-      {
-        "title": "Noise Toolkit",
-        "code": "valueNoise = smoothed grid random\nfbm = layered valueNoise\nridgeNoise = 1 - abs(valueNoise)\nsmoothstep = soft threshold",
-        "description": "The generator is built from simple seeded noise primitives. FBM creates broad variation, ridge noise creates bands and channels, and smoothstep turns noisy values into soft biome and feature masks."
+      "noiseToolkit": {
+        "title": "Набор инструментов для работы с шумом",
+        "description": "Генератор построен из простых примитивов шума с начальным значением. FBM создает широкие вариации, гребневой шум создает полосы и каналы, а Smoothstep превращает шумовые значения в мягкие маски биомов и объектов."
       },
-      {
-        "title": "Column Profile",
-        "code": "profile(x, z):\n  groundHeight = rawTerrainHeight(x, z)\n  slope = max(neighbor height delta)\n  sample = climate + erosion + weirdness + volcanic + corruption\n  biome = chooseBiome(...)\n  terrain/fluid/vegetation = surface rules",
-        "description": "Every world column is summarized into a terrain profile. Rendering, collision, minimap color, trees, and water all read from this same profile, so the page is explaining the actual runtime data path."
+      "columnProfile": {
+        "title": "Профиль столбца",
+        "description": "Каждый столбец мира суммируется в профиль местности. Рендеринг, коллизия, цвет мини-карты, деревья и вода — все считывается из одного и того же профиля, поэтому на странице объясняется фактический путь к данным во время выполнения."
       },
-      {
-        "title": "Continent And Ocean Mask",
-        "code": "continent = oceanBasins * 0.78 + detail * 0.34 + coastalWarp + 0.12\nshelf = smoothstep(-0.36, 0.14, continent)\ninland = smoothstep(-0.06, 0.56, continent)",
-        "description": "Very low frequency noise decides broad ocean basins, shelves, coastlines, and inland land before local hills are added. Shelf and inland masks blend sea floor into raised land instead of switching abruptly."
+      "continentOceanMask": {
+        "title": "Маска континента и океана",
+        "description": "Очень низкочастотный шум определяет обширные океанские бассейны, шельфы, береговые линии и внутренние районы суши, прежде чем к ним присоединятся местные холмы. Шельфовые и внутренние маски смешивают морское дно с возвышенностью, а не резко переключаются."
       },
-      {
-        "title": "Base Land Height",
-        "code": "oceanFloor = seaLevel - 10 + seabedNoise\ncoastHeight = seaLevel - 1 + shelf * (landBaseHeight - seaLevel + 1)\nlandHeight = landBaseHeight + inland * 4 + lowlandRelief + dunes",
-        "description": "Current client constants are chunkSize 16, seaLevel 96, and landBaseHeight 100. Oceans sit below sea level, coasts rise through the shelf, and inland columns start near the land base before hills and dunes are applied."
+      "baseLandHeight": {
+        "title": "Высота базовой площадки",
+        "description": "Текущие клиентские константы: chunkSize 16, seaLevel 96 и LandBaseHeight 100. Океаны расположены ниже уровня моря, побережья поднимаются через шельф, а внутренние колонны начинаются возле основания суши, прежде чем применяются холмы и дюны."
       },
-      {
-        "title": "Lowland Relief",
-        "code": "lowlandRelief = inland * (plains + lowHills + rollingRelief + dryWash + microRidges)",
-        "description": "Flat land is not perfectly flat. Multiple medium-frequency noise layers create plains, low hills, dry washes, and small ridges while keeping the terrain readable at walking scale."
+      "lowlandRelief": {
+        "title": "Равнинный рельеф",
+        "description": "Плоская земля не является идеально ровной. Множественные слои среднечастотного шума создают равнины, невысокие холмы, сухие реки и небольшие хребты, сохраняя при этом местность читаемой в масштабе пешехода."
       },
-      {
-        "title": "Desert Dunes",
-        "code": "desert = smoothstep(-0.46, 0.18, desertMass * 1.25 + temperature * 0.44 - moisture * 0.28)\ndunes = inland * smoothstep(0.24, 0.72, desert) * duneNoise",
-        "description": "Deserts come from hot, dry, broad climate noise. When a desert mask is strong enough, extra dune height is added on inland land using ridge and FBM noise."
+      "desertDunes": {
+        "title": "Пустынные дюны",
+        "description": "Пустыни возникают из-за жаркого, сухого и широкого климатического шума. Когда маска пустыни достаточно сильна, дополнительная высота дюн добавляется во внутренних районах с помощью хребта и шума FBM."
       },
-      {
-        "title": "River, Canyon, And Lake Carving",
-        "code": "riverCut = smoothstep(0.9, 0.985, riverAt(x, z))\ncanyonCut = smoothstep(0.72, 0.94, canyonAt(x, z)) * inland\nlakeCarve = smoothstep(0.78, 0.96, lakeAt(x, z)) * basinDepth",
-        "description": "Rivers, canyons, and lakes are carved into the base height field before normalization. River paths use warped line noise, canyons cut deeper in dry terrain, and lake basins flatten low inland areas."
+      "riverCanyonLakeCarving": {
+        "title": "Резьба по реке, каньону и озеру",
+        "description": "Реки, каньоны и озера перед нормализацией вырезаются в базовом поле высот. Речные пути используют искаженный шум линий, каньоны углубляются в сухой местности, а бассейны озер выравнивают низкие внутренние территории."
       },
-      {
-        "title": "Mountain Cells",
-        "code": "cellSize = 192\npresence = random2(cellX + 811, cellZ - 433)\nif presence < 0.36: no mountain\nsearch nearby cells for overlapping mountains",
-        "description": "Mountains are seeded per 192-column cell. A cell may have no mountain, and each visible column checks nearby cells so large mountain footprints can cross cell boundaries."
+      "mountainCells": {
+        "title": "Горные клетки",
+        "description": "Горы засеиваются по ячейкам со 192 столбцами. В ячейке может не быть горы, и каждый видимый столбец проверяет соседние ячейки, поэтому большие следы гор могут пересекать границы ячеек."
       },
-      {
-        "title": "Mountain Shape",
-        "code": "longRadius = radius * random(0.78..1.60)\nshortRadius = radius * random(0.38..0.84)\nangle = random * PI\nwarp = radius * random(0.035..0.11)",
-        "description": "A mountain is an angled, warped ellipse. Long and short radii vary independently, then local coordinate warping bends the ridge so mountains do not look like perfect cones."
+      "mountainShape": {
+        "title": "Форма горы",
+        "description": "Гора представляет собой наклонный искривленный эллипс. Длинные и короткие радиусы изменяются независимо, тогда локальное искажение координат искривляет гребень, поэтому горы не выглядят как идеальные конусы."
       },
-      {
-        "title": "Mountain Height And Texture",
-        "code": "radius starts 72..168 and can grow up to 8 times\nheight starts 12..27 and can grow up to 520 one-block attempts\nlocalHeight = base + height * (shoulder + spine + crag + summitNoise)",
-        "description": "Large mountains are rare but possible. Final elevation combines falloff shoulders, a central spine, ridge crags, erosion, and summit roughness, then takes the maximum over all candidate mountains."
+      "mountainHeightTexture": {
+        "title": "Высота и текстура горы",
+        "description": "Большие горы встречаются редко, но возможны. Конечная высота сочетает в себе уступы обрыва, центральный хребет, скалы хребта, эрозию и неровности вершины, а затем достигает максимума для всех гор-кандидатов."
       },
-      {
-        "title": "Slope Limiter",
-        "code": "allowedStep = manhattanDistance * lerp(1.05, 4.4 + roughness * 1.4, mountainWeight)\nconstrainedHeight = min(rawHeight, neighborRaw + allowedStep)",
-        "description": "After raw height is computed, a local pass limits cliffs against nearby columns. Lowlands stay gentle, while mountain areas are allowed to be rougher without becoming unbounded spikes."
+      "slopeLimiter": {
+        "title": "Ограничитель наклона",
+        "description": "После вычисления исходной высоты локальный проход ограничивает скалы относительно близлежащих колонн. Низины остаются пологими, а горные районы могут быть более грубыми, не превращаясь в бесконечные пики."
       },
-      {
-        "title": "Height Normalization",
-        "code": "if rawHeight < seaLevel: keep underwater height\nelse if rawHeight < landBaseHeight: clamp to at least seaLevel + 1\nelse clamp to at least landBaseHeight",
-        "description": "The final height preserves underwater basins, keeps carved low land above sea level when it is no longer ocean, and keeps regular land from dropping below the land base."
+      "heightNormalization": {
+        "title": "Нормализация высоты",
+        "description": "Окончательная высота сохраняет подводные бассейны, удерживает вырезанную низину над уровнем моря, когда она больше не является океаном, и не дает обычной земле опускаться ниже основания суши."
       },
-      {
-        "title": "Climate Sampling",
-        "code": "temperature = fbm(0.0032 scale) + broad sine/cosine bands\nmoisture = fbm(0.0038 scale) + broad sine/cosine bands\nvalues are clamped to -1..1",
-        "description": "Temperature and moisture are broad fields. They create large hot, cold, wet, and dry regions that later decide desert, tundra, rainforest, forest, swamp, and snow."
+      "climateSampling": {
+        "title": "Отбор проб климата",
+        "description": "Температура и влажность — это широкие области. Они создают большие жаркие, холодные, влажные и засушливые регионы, которые позже образуют пустыню, тундру, тропические леса, леса, болота и снега."
       },
-      {
-        "title": "Biome Priority",
-        "code": "Ocean -> River -> Lake -> Ocean edge -> Beach -> Volcano -> Snowfield -> Mountain -> Swamp -> Wetland -> Tundra -> Desert -> Rainforest -> Forest -> Plains",
-        "description": "Biome selection is ordered. Water and special terrain win first, then altitude and slope, then wet/cold/hot climate categories, with plains as the fallback."
+      "biomePriority": {
+        "title": "Приоритет биома",
+        "description": "Заказан выбор биома. Сначала выигрывают вода и особый рельеф, затем высота и склон, затем категории влажного/холодного/жаркого климата, а равнины являются запасным вариантом."
       },
-      {
-        "title": "Water Profile",
-        "code": "surfaceFluid = getSurfaceFluidBlock(...)\nwaterSurfaceHeight = seaLevel for ocean/underwater\nwaterFloorHeight = surface - visualDepth\nwaterLevel may rise above terrain for lake/river/swamp/wetland",
-        "description": "Water is part of the terrain profile, not a post-process. Oceans fill to sea level; rivers, lakes, swamps, and wetlands can place water above local ground; visual depth is capped for readable rendering."
+      "waterProfile": {
+        "title": "Водный профиль",
+        "description": "Вода — это часть профиля местности, а не результат постобработки. Океаны заполняются до уровня моря; реки, озера, болота и водно-болотные угодья могут располагать воду над поверхностью земли; визуальная глубина ограничена для читаемости рендеринга."
       },
-      {
-        "title": "Cave Cells",
-        "code": "if y >= surfaceHeight - 3 or y <= bedrock: no cave\ncaveNoise = ridgeNoise(x * 0.052 + y * 0.013, z * 0.052 - y * 0.017)\nthreshold = depth > 18 ? 0.72 : 0.84",
-        "description": "Caves are generated on demand per block query. They only appear below the near-surface layer, get easier to form when deeper, and expose walls when adjacent cells are open.",
-        "action": {
-          "id": "findNearestCave",
-          "label": "Search",
-          "searching": "Searching",
-          "notFound": "No cave was found near the current coordinates."
-        }
+      "caveCells": {
+        "title": "Пещерные камеры",
+        "description": "Пещеры создаются по требованию для каждого запроса блока. Они появляются только под приповерхностным слоем, легче формируются, когда они глубже, и обнажают стенки, когда соседние ячейки открыты."
       },
-      {
-        "title": "Chunk Rendering Strategy",
-        "code": "visible radius = 6 chunks\nnear radius = 1 chunk full detail\nfar visible chunks = distant detail\npreload radius = 9 chunks surface detail",
-        "description": "The rule preview page uses the same terrain generator but loads chunks progressively. Near chunks keep full decoration; farther chunks use lighter detail so fast world browsing stays responsive."
+      "chunkRenderingStrategy": {
+        "title": "Стратегия рендеринга Chunk",
+        "description": "Страница предварительного просмотра правил использует тот же генератор ландшафта, но chunks загружается постепенно. Рядом с chunks держите полное оформление; chunks использует более легкую детализацию, поэтому быстрый просмотр мира остается отзывчивым."
+      },
+      "depthLayers": {
+        "title": "Слои глубины",
+        "description": "Тип блока в первую очередь зависит от вертикальной глубины. Коренная порода закрепляет дно, глубокий камень заполняет нижние слои, обычный камень заполняет более глубокую местность, а слои, специфичные для биома, появляются ближе к верху."
+      },
+      "waterEdgeSurfaces": {
+        "title": "Поверхность океана, пляжа, реки и озера",
+        "description": "Биомы у кромки воды используют блоки отложений. Океаны и пляжи могут содержать ракушечники, реки склоняются к гравию и глине, а в озерах используется глина или песок с некоторыми вариациями гравия."
+      },
+      "volcanoSurface": {
+        "title": "Поверхность вулкана",
+        "description": "Биомы вулканов появляются только тогда, когда вулканический шум очень высок и находится над уровнем моря. Их поверхность в основном состоит из базальта и пепла, с редкими ячейками лавы вблизи самых горячих жерл."
+      },
+      "coldMountainSurfaces": {
+        "title": "Горные, снежные поля и тундровые поверхности",
+        "description": "Холодная и высокогорная местность обнажает камни, снег, мерзлую почву, лед и гравий. На более пологих горных полках по-прежнему можно хранить траву, что делает горные базы пригодными для игры."
+      },
+      "desertSurface": {
+        "title": "Поверхность пустыни",
+        "description": "Пустыни в основном представляют собой песчаную местность, но могут содержать зыбучие пески, солончаки и сухую грязь. Странный шум создает дополнительные участки зыбучего песка, независимые от нормального покачивания поверхности."
+      },
+      "swampWetlandSurfaces": {
+        "title": "Болота и заболоченные поверхности",
+        "description": "Влажные зоны сочетают в себе твердую почву и неглубокие водные поверхности. Поврежденные образцы болота могут стать токсичной водой; водно-болотные угодья остаются мягче с глиной, грязью и травой."
+      },
+      "landSurfaces": {
+        "title": "Тропические леса, леса и равнинные поверхности",
+        "description": "Обычные земные поверхности чувствительны к климату. Тропический лес более влажный и грязный, во влажных клетках леса может расти мох, а в экстремальных климатических условиях равнины слегка смещаются в сторону сухой грязи или глины."
+      },
+      "subsurfaceRules": {
+        "title": "Правила недропользования",
+        "description": "Блок под верхней поверхностью также соответствует биому. Это заставляет скалы и заминированные боковые поверхности соответствовать местной окружающей среде, а не превращает каждую колонну в один и тот же слой грязи."
+      },
+      "naturalFluids": {
+        "title": "Природные жидкости",
+        "description": "Блоки жидкости выбираются после биома. Холодные подводные клетки превращаются в лед, поврежденные влажные участки могут стать токсичной водой, болотистые участки используют болотную воду, а жерла вулканов могут испускать лаву."
+      },
+      "fluidHeight": {
+        "title": "Высота жидкости",
+        "description": "Разные жидкости используют разные видимые уровни. Это позволяет рекам и озерам располагаться над локальными этажами, в то время как океаны остаются на общем уровне моря."
+      },
+      "waterDepthRendering": {
+        "title": "Визуализация глубины воды",
+        "description": "Визуальная глубина воды ограничена четырьмя блоками. Благодаря этому колпаку подводные колонны удешевляются при рендеринге, а глубокие бассейны не перегружают изображение при предварительном просмотре."
+      },
+      "aquaticDecoration": {
+        "title": "Водное украшение",
+        "description": "Растения также могут происходить из водных клеток. Кораллы обитают только в неглубоких теплых океанах, мертвые кораллы отмечают холодную или испорченную воду, а тростник редко появляется вблизи влажных биомов, не относящихся к океану."
+      },
+      "dryHotVegetation": {
+        "title": "Сухая и жаркая растительность",
+        "description": "Пустынный декор появляется только на соответствующих сухих поверхностях. Кактусу требуется дополнительный грубый перекат, чтобы он выглядел как разрозненные стойки, а не как однородный шум."
+      },
+      "wetForestVegetation": {
+        "title": "Влажная и лесная растительность",
+        "description": "Влажные регионы благоприятствуют почвенному покрову, виноградным лозам, корням, тростнику и грибам. Тропический лес получает самый сильный импульс, в то время как обычный лес остается в основном травой и кустами."
+      },
+      "coldMountainVegetation": {
+        "title": "Холод и горная растительность",
+        "description": "Холодные биомы используют редкие выносливые украшения. Крутые склоны подавляют большую часть растительности, за исключением характерных для гор украшений, которые сохраняют скалы визуально чистыми."
+      },
+      "treeDensity": {
+        "title": "Плотность дерева",
+        "description": "Деревья контролируются биомом, уклоном, высотой, силой леса, шумом луга и усилением биома. Тропический лес и лес получают более сильное усиление, а большая высота снижает плотность."
+      },
+      "treeTypeLeaves": {
+        "title": "Тип дерева и листья",
+        "description": "Форма и цвет дерева являются детерминированными для каждой площади. Холодные и высокие места предпочитают сосны, в тропических лесах могут использоваться гигантские корни и бирюзовые/темные листья, а в обычных лесах тон листьев варьируется в зависимости от рулона семян."
+      },
+      "caveWallBlocks": {
+        "title": "Стенные блоки пещеры",
+        "description": "Твердая ячейка рядом с открытой пещерой становится открытой стеной пещеры. В глубоких пещерах чаще используют глубокий камень и светящийся мицелий; вулканические или поврежденные пещеры могут содержать опасные жидкости."
+      },
+      "caveDecoration": {
+        "title": "Украшение пещеры",
+        "description": "Поверхности пещер могут быть украшены небольшими украшениями. В глубоких пещерах благоприятствует светящийся мицелий, во влажных пещерах могут образовываться грибы или мох, а лишайник выступает в качестве общего покрытия пещер."
+      },
+      "generatedBlockQuery": {
+        "title": "Сгенерированный блочный запрос",
+        "description": "Двигатель не сохраняет всю местность заранее. Он отвечает на запросы блоков из правил профиля и глубины, что позволяет рендерингу, столкновению, добыче полезных ископаемых и моделированию воды читать один и тот же процедурный мир."
       }
-    ],
-    "blocks": [
-      {
-        "title": "Depth Layers",
-        "code": "y <= 0 -> bedrock\ny < 45 -> deepStone\ny < surfaceY - 6 -> stone or basalt\nnear surface -> biome subsurface\nsurfaceY -> biome surface",
-        "description": "Block type depends on vertical depth first. Bedrock anchors the bottom, deep stone fills low layers, ordinary stone fills deeper terrain, and biome-specific layers appear near the top."
-      },
-      {
-        "title": "Ocean, Beach, River, And Lake Surfaces",
-        "code": "Ocean: shellBed/clay/sand/gravel\nBeach: shellBed/gravel/sand\nRiver: gravel/clay/sand\nLake: clay/sand/gravel",
-        "description": "Water-edge biomes use sediment blocks. Oceans and beaches can show shell beds, rivers bias toward gravel and clay, and lakes use clay or sand with some gravel variation."
-      },
-      {
-        "title": "Volcano Surface",
-        "code": "if volcanic > 0.96 and roll > 0.92 -> lava\nelse basalt / ash / stone",
-        "description": "Volcano biomes appear only when volcanic noise is very high and above sea level. Their surfaces are mostly basalt and ash, with rare lava cells near the hottest vents."
-      },
-      {
-        "title": "Mountain, Snowfield, And Tundra Surfaces",
-        "code": "Mountain: high/cold -> snow or stone, steep -> gravel or stone, gentle -> grass or stone\nSnowfield: snow/frozenSoil/ice\nTundra: frozenSoil/snow",
-        "description": "Cold and high terrain exposes rock, snow, frozen soil, ice, and gravel. Gentler mountain shelves can still carry grass, which keeps mountain bases playable."
-      },
-      {
-        "title": "Desert Surface",
-        "code": "if roll > 0.52 or weirdness < -0.68 -> quicksand\nelse saltFlat / dryDirt / sand",
-        "description": "Deserts are mostly sand-like terrain but can contain quicksand, salt flats, and dry dirt. Weirdness noise creates extra quicksand patches independent of the normal surface roll."
-      },
-      {
-        "title": "Swamp And Wetland Surfaces",
-        "code": "Swamp: toxicWater / swampWater / mud / clay\nWetland: clay / mud / grass",
-        "description": "Wet areas blend solid ground with shallow water-like surfaces. Corrupted swamp samples can become toxic water; wetlands stay gentler with clay, mud, and grass."
-      },
-      {
-        "title": "Rainforest, Forest, And Plains Surfaces",
-        "code": "Rainforest: mud or grass, rare moss\nForest: grass, rare moss when humid\nPlains: grass, with dryDirt or clay when humidity is extreme",
-        "description": "Regular land surfaces are climate-sensitive. Rainforest is wetter and muddier, forest can grow moss in humid cells, and plains shift slightly toward dry dirt or clay at climate extremes."
-      },
-      {
-        "title": "Subsurface Rules",
-        "code": "Desert/Beach -> sand/gravel/stone\nWet biomes -> clay/mud/stone\nSnow/Tundra -> frozenSoil/stone\nVolcano -> basalt/lava/stone\nDefault -> dirt/gravel/clay",
-        "description": "The block below the top surface also follows biome. This makes cliffs and mined side faces match the local environment instead of turning every column into the same dirt layer."
-      },
-      {
-        "title": "Natural Fluids",
-        "code": "Volcano vent -> lava\nRiver/Lake -> water\nSwamp -> swampWater\nWetland chance -> water\nunder seaLevel -> water/ice/toxicWater/swampWater",
-        "description": "Fluid blocks are selected after biome. Cold underwater cells become ice, corrupted wet areas may become toxic water, swampy areas use swamp water, and volcano vents can emit lava."
-      },
-      {
-        "title": "Fluid Height",
-        "code": "Lava level = terrain height\nOcean/underwater level = seaLevel\nLake level = height + 2..4\nRiver level = height + 1..2\nSwamp/Wetland level = height + 1",
-        "description": "Different fluids use different visible levels. This lets rivers and lakes sit above local floors while oceans stay at a shared sea level."
-      },
-      {
-        "title": "Water Depth Rendering",
-        "code": "Ocean depth = clamp(seaLevel - groundHeight, 1, 4)\nRiver depth grows near erosion center\nLake depth grows near basin center\nSwamp/Wetland depth = 1",
-        "description": "Visual water depth is capped at four blocks. The cap keeps underwater columns cheap to render and prevents deep basins from overwhelming the preview."
-      },
-      {
-        "title": "Aquatic Decoration",
-        "code": "Ocean: warm shallow water can spawn coral\nOcean: cold/corrupted water can spawn dead coral\nSwamp/Wetland/River/Lake: rare reeds",
-        "description": "Plants can also come from water cells. Coral is restricted to shallow warm oceans, dead coral marks cold or corrupted water, and reeds appear rarely near non-ocean wet biomes."
-      },
-      {
-        "title": "Dry And Hot Vegetation",
-        "code": "Desert on sand/dryDirt/ash:\n  cactus, deadBush, thorn, dryGrass by roll thresholds",
-        "description": "Desert decoration only appears on appropriate dry surfaces. Cactus requires an additional coarse roll so it appears as scattered stands instead of uniform noise."
-      },
-      {
-        "title": "Wet And Forest Vegetation",
-        "code": "Swamp/Wetland: moss, vine, reed, rare mushroom\nRainforest: giantRoot, moss, vine, rare mushroom, bush\nForest: bush, vine, rare mushroom, grassPlant",
-        "description": "Wet regions favor ground cover, vines, roots, reeds, and mushrooms. Rainforest gets the strongest boost, while regular forest stays mostly grass and bushes."
-      },
-      {
-        "title": "Cold And Mountain Vegetation",
-        "code": "Snowfield/Tundra: snowBush or lichen\nMountain: snowBush when cold, otherwise lichen or bush\nslope > 4 blocks most non-mountain vegetation",
-        "description": "Cold biomes use sparse hardy decoration. Steep slopes suppress most vegetation except mountain-specific decoration, which keeps cliffs visually clean."
-      },
-      {
-        "title": "Tree Density",
-        "code": "treeDensity = forestFloor * (1 - altitudePenalty) + meadowTrees + biomeBoost\nblocked if biome cannot grow trees, slope > 3, or height <= 4",
-        "description": "Trees are controlled by biome, slope, altitude, forest strength, meadow noise, and biome boosts. Rainforest and forest receive stronger boosts, while high altitude reduces density."
-      },
-      {
-        "title": "Tree Type And Leaves",
-        "code": "pine when cold/high/mountain/snow or seed roll says evergreen\ntrunkType = pineTrunk / giantRoot / deadWood / trunk\nleafType = pine, snow, teal, dark, light, warm, or normal leaves",
-        "description": "Tree shape and color are deterministic per area. Cold and high locations prefer pines, rainforest can use giant roots and teal/dark leaves, and normal forests vary leaf tone by seed roll."
-      },
-      {
-        "title": "Cave Wall Blocks",
-        "code": "adjacent open cave -> cave wall\nif y < 45 -> deep cave\nrare lava in deep or volcanic caves\nrare toxic water in corrupted caves\nwall = deepStone or stone, sometimes gravel",
-        "description": "A solid cell beside an open cave becomes an exposed cave wall. Deep caves use deep stone and glow mycelium more often; volcanic or corrupted caves can expose dangerous fluids."
-      },
-      {
-        "title": "Cave Decoration",
-        "code": "deep cave and floorNoise > 0.45 -> glowMycelium\nhumid rare roll -> mushroom\notherwise lichen or moss by floorNoise and humidity",
-        "description": "Cave surfaces can carry small decorations. Deep caves favor glow mycelium, humid caves can produce mushrooms or moss, and lichen appears as general cave cover."
-      },
-      {
-        "title": "Generated Block Query",
-        "code": "getGeneratedBlock(x, y, z):\n  water above surface when inside fluid level\n  null above terrain and above seaLevel\n  cave cells return null\n  cave-adjacent cells return cave walls\n  otherwise return terrain by depth",
-        "description": "The engine does not pre-store full terrain. It answers block queries from the profile and depth rules, which lets rendering, collision, mining, and water simulation read the same procedural world."
+    },
+    "actions": {
+      "findNearestCave": {
+        "label": "Search",
+        "searching": "Searching",
+        "notFound": "No cave was found near the current coordinates."
       }
-    ]
+    }
   }
 }

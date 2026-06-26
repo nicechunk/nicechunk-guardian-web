@@ -2,8 +2,8 @@
   "_meta": {
     "language": "ja",
     "label": "Japanese",
-    "version": "world-rule-locale-ja-a6bf1dabb3db0954",
-    "contentHash": "a6bf1dabb3db0954"
+    "version": "world-rule-locale-ja-fa4d0443bbd74c23",
+    "contentHash": "fa4d0443bbd74c23"
   },
   "siteFooter": {
     "tagline": "Solana 上のシード型ボクセルワールドプロトコル。",
@@ -19,321 +19,282 @@
     "github": "GitHub",
     "copyright": "2026 NiceChunk. All rights reserved."
   },
-  "title": "NiceChunk World Generation Algorithm",
+  "title": "NiceChunk ワールド生成アルゴリズム",
   "nav": {
-    "aria": "Primary navigation",
-    "home": "Home",
-    "roadbook": "Roadbook",
-    "worldRules": "World Rules",
-    "resources": "Resources",
-    "elements": "Elements",
-    "fairness": "Fairness",
-    "proofOfFrontier": "Proof",
-    "guardians": "Guardians",
-    "docs": "Docs",
-    "enterWorld": "Enter World"
+    "aria": "プライマリナビゲーション",
+    "home": "ホーム",
+    "roadbook": "ロードブック",
+    "worldRules": "世界ルール",
+    "resources": "リソース",
+    "elements": "要素",
+    "fairness": "公平性",
+    "proofOfFrontier": "証明",
+    "docs": "ドキュメント",
+    "enterWorld": "世界に入る",
+    "guardians": "ガーディアン"
   },
   "preview": {
-    "label": "World preview",
-    "heading": "WORLD PREVIEW",
-    "fly": "WASD Fly",
-    "look": "Mouse Drag Look",
-    "vertical": "Space / C Vertical",
+    "label": "ワールドプレビュー",
+    "heading": "ワールドプレビュー",
+    "fly": "WASD フライ",
+    "look": "マウスドラッグルック",
+    "vertical": "スペース / C 縦",
     "chunks": "{active}/{total} chunks",
-    "metricsLabel": "Preview constants"
+    "metricsLabel": "プレビュー定数"
   },
   "header": {
-    "eyebrow": "PUBLIC GENERATION SPEC",
-    "title": "World Generation Algorithm",
-    "body": "NiceChunk terrain is generated from a public seed pipeline. The same seed and coordinates produce the same terrain profile, biome, water, caves, trees, and block query results.",
-    "enterWorld": "Enter World",
-    "language": "English"
+    "eyebrow": "パブリックジェネレーション仕様",
+    "title": "ワールド生成アルゴリズム",
+    "body": "NiceChunk 地形はパブリック シード パイプラインから生成されます。 同じシードと座標により、同じ地形プロファイル、バイオーム、水、洞窟、樹木、およびブロック クエリ結果が生成されます。",
+    "enterWorld": "世界に入る",
+    "language": "英語"
   },
   "metrics": {
-    "statusLabel": "World generation status",
+    "statusLabel": "ワールド生成ステータス",
     "chunkSizeLabel": "Chunk",
-    "seaLevelLabel": "Sea",
-    "renderRadiusLabel": "Render",
-    "deterministic": "Deterministic",
-    "inspectable": "Inspectable",
-    "runtime": "Runtime rules"
+    "seaLevelLabel": "海",
+    "renderRadiusLabel": "レンダリング",
+    "deterministic": "決定論的",
+    "inspectable": "検査可能",
+    "runtime": "実行時ルール"
   },
   "seed": {
-    "label": "Seed controls",
-    "field": "World Seed",
-    "render": "Render Seed",
-    "random": "Random Seed"
+    "label": "種子管理",
+    "field": "ワールドシード",
+    "render": "レンダーシード",
+    "random": "ランダムシード"
   },
   "overview": {
-    "label": "Generation overview",
+    "label": "生成の概要",
     "seed": {
-      "title": "Seeded world state",
-      "body": "A text seed is hashed once, then mixed into every coordinate sample."
+      "title": "シードされた世界状態",
+      "body": "テキスト シードは 1 回ハッシュされ、すべての座標サンプルに混合されます。"
     },
     "height": {
-      "title": "Heightfield first",
-      "body": "Continents, oceans, relief, rivers, dunes, and mountains produce the base terrain."
+      "title": "最初のハイトフィールド",
+      "body": "大陸、海洋、起伏、川、砂丘、山は基本地形を生成します。"
     },
     "biome": {
-      "title": "Climate and biome pass",
-      "body": "Temperature, humidity, slope, altitude, water, and special masks select the biome."
+      "title": "気候とバイオームパス",
+      "body": "温度、湿度、傾斜、高度、水、特別なマスクによってバイオームが選択されます。"
     },
     "block": {
-      "title": "Block query rules",
-      "body": "The engine answers block requests from depth, fluid, cave, surface, and vegetation rules."
+      "title": "ブロッククエリルール",
+      "body": "エンジンは、深さ、流体、洞窟、表面、植生ルールからのブロック リクエストに応答します。"
     }
   },
   "pipeline": {
-    "label": "Generation pipeline",
-    "eyebrow": "GENERATION PIPELINE",
-    "title": "From seed to playable chunks",
-    "steps": [
-      {
-        "title": "Hash seed",
-        "body": "Convert the visible seed into a stable integer used by all random functions."
+    "label": "生成パイプライン",
+    "eyebrow": "生成パイプライン",
+    "title": "シードからプレイアブルまで chunks",
+    "steps": {
+      "hashSeed": {
+        "title": "ハッシュシード",
+        "body": "可視シードを、すべてのランダム関数で使用される安定した整数に変換します。"
       },
-      {
-        "title": "Sample fields",
-        "body": "Read continentalness, erosion, weirdness, temperature, humidity, volcanic, and corruption noise."
+      "sampleFields": {
+        "title": "サンプルフィールド",
+        "body": "大陸性、侵食、奇妙さ、温度、湿度、火山、および破損ノイズを読み取ります。"
       },
-      {
-        "title": "Build height",
-        "body": "Blend ocean basins, land shelves, lowland relief, rivers, dunes, mountains, and slope limits."
+      "buildHeight": {
+        "title": "ビルド高さ",
+        "body": "海洋盆地、陸棚、低地の起伏、川、砂丘、山、および斜面限界をブレンドします。"
       },
-      {
-        "title": "Choose biome",
-        "body": "Apply the ordered biome priority so water, cold, altitude, wetness, heat, and forest masks resolve consistently."
+      "chooseBiome": {
+        "title": "バイオームの選択",
+        "body": "水、寒さ、高度、湿気、暑さ、森林マスクが一貫して解決されるように、順序付けられたバイオームの優先順位を適用します。"
       },
-      {
-        "title": "Answer blocks",
-        "body": "Return terrain, fluid, caves, cave walls, vegetation, trees, and decorations from coordinate queries."
+      "answerBlocks": {
+        "title": "解答ブロック",
+        "body": "座標クエリから地形、流体、洞窟、洞窟の壁、植生、樹木、装飾を返します。"
       }
-    ]
+    }
   },
   "biomes": {
-    "label": "Biome priority",
-    "eyebrow": "BIOME PRIORITY",
-    "title": "Water and extreme terrain win first",
-    "items": [
-      "Ocean",
-      "River",
-      "Lake",
-      "Beach",
-      "Volcano",
-      "Snowfield",
-      "Mountain",
-      "Swamp",
-      "Wetland",
-      "Tundra",
-      "Desert",
-      "Rainforest",
-      "Forest",
-      "Plains"
-    ]
+    "label": "バイオームの優先順位",
+    "eyebrow": "バイオームの優先順位",
+    "title": "水と極端な地形が最初に勝つ",
+    "items": {
+      "ocean": "オーシャン",
+      "river": "川",
+      "lake": "湖",
+      "beach": "ビーチ",
+      "volcano": "火山",
+      "snowfield": "雪原",
+      "mountain": "山",
+      "swamp": "沼地",
+      "wetland": "湿地",
+      "tundra": "ツンドラ",
+      "desert": "砂漠",
+      "rainforest": "熱帯雨林",
+      "forest": "森",
+      "plains": "平原"
+    }
   },
   "rules": {
-    "label": "Generation rules",
-    "generationTitle": "GENERATION PIPELINE",
-    "blockTitle": "BLOCK, FLUID, AND DECORATION RULES",
-    "generation": [
-      {
-        "title": "Deterministic Seed",
-        "code": "worldSeed = hashSeed(seed)\nrandom2(x, z) = hash(x, z, worldSeed)\ncache.clear() when seed changes",
-        "description": "The seed is reduced to a stable integer and mixed into every random sample. Terrain height, climate, water, trees, caves, and material rolls are deterministic for the same seed and coordinates."
+    "label": "生成規則",
+    "generationTitle": "生成パイプライン",
+    "blockTitle": "ブロック、流体、装飾のルール",
+    "items": {
+      "deterministicSeed": {
+        "title": "決定的シード",
+        "description": "シードは安定した整数に減らされ、すべてのランダム サンプルに混合されます。 地形の高さ、気候、水、木、洞窟、マテリアル ロールは、同じシードと座標に対して決定的です。"
       },
-      {
-        "title": "Noise Toolkit",
-        "code": "valueNoise = smoothed grid random\nfbm = layered valueNoise\nridgeNoise = 1 - abs(valueNoise)\nsmoothstep = soft threshold",
-        "description": "The generator is built from simple seeded noise primitives. FBM creates broad variation, ridge noise creates bands and channels, and smoothstep turns noisy values into soft biome and feature masks."
+      "noiseToolkit": {
+        "title": "ノイズツールキット",
+        "description": "ジェネレータは、単純なシードされたノイズ プリミティブから構築されます。 FBM は幅広いバリエーションを作成し、リッジ ノイズはバンドとチャネルを作成し、スムーズステップはノイズの多い値をソフト バイオームとフィーチャ マスクに変換します。"
       },
-      {
-        "title": "Column Profile",
-        "code": "profile(x, z):\n  groundHeight = rawTerrainHeight(x, z)\n  slope = max(neighbor height delta)\n  sample = climate + erosion + weirdness + volcanic + corruption\n  biome = chooseBiome(...)\n  terrain/fluid/vegetation = surface rules",
-        "description": "Every world column is summarized into a terrain profile. Rendering, collision, minimap color, trees, and water all read from this same profile, so the page is explaining the actual runtime data path."
+      "columnProfile": {
+        "title": "カラムプロファイル",
+        "description": "すべてのワールド列は地形プロファイルに要約されます。 レンダリング、衝突、ミニマップの色、木、水はすべてこの同じプロファイルから読み取られるため、このページでは実際のランタイム データ パスについて説明しています。"
       },
-      {
-        "title": "Continent And Ocean Mask",
-        "code": "continent = oceanBasins * 0.78 + detail * 0.34 + coastalWarp + 0.12\nshelf = smoothstep(-0.36, 0.14, continent)\ninland = smoothstep(-0.06, 0.56, continent)",
-        "description": "Very low frequency noise decides broad ocean basins, shelves, coastlines, and inland land before local hills are added. Shelf and inland masks blend sea floor into raised land instead of switching abruptly."
+      "continentOceanMask": {
+        "title": "大陸と海洋のマスク",
+        "description": "局所的な丘が追加される前に、超低周波ノイズが広い海洋盆地、陸棚、海岸線、内陸地を決定します。 陸棚マスクと内陸マスクは、突然切り替わるのではなく、海底を隆起した陸地に溶け込ませます。"
       },
-      {
-        "title": "Base Land Height",
-        "code": "oceanFloor = seaLevel - 10 + seabedNoise\ncoastHeight = seaLevel - 1 + shelf * (landBaseHeight - seaLevel + 1)\nlandHeight = landBaseHeight + inland * 4 + lowlandRelief + dunes",
-        "description": "Current client constants are chunkSize 16, seaLevel 96, and landBaseHeight 100. Oceans sit below sea level, coasts rise through the shelf, and inland columns start near the land base before hills and dunes are applied."
+      "baseLandHeight": {
+        "title": "基礎地高さ",
+        "description": "現在のクライアント定数は、chunkSize 16、seaLevel 96、landBaseHeight 100 です。海洋は海面より下に位置し、海岸は陸棚を通って隆起し、内陸の列は丘と砂丘が適用される前に陸地基礎近くから始まります。"
       },
-      {
-        "title": "Lowland Relief",
-        "code": "lowlandRelief = inland * (plains + lowHills + rollingRelief + dryWash + microRidges)",
-        "description": "Flat land is not perfectly flat. Multiple medium-frequency noise layers create plains, low hills, dry washes, and small ridges while keeping the terrain readable at walking scale."
+      "lowlandRelief": {
+        "title": "低地救済",
+        "description": "平らな土地は完全に平らではありません。 複数の中周波ノイズ レイヤーにより、平地、低い丘、乾燥した谷地、小さな尾根が作成され、同時に歩行スケールで地形を読み取ることができます。"
       },
-      {
-        "title": "Desert Dunes",
-        "code": "desert = smoothstep(-0.46, 0.18, desertMass * 1.25 + temperature * 0.44 - moisture * 0.28)\ndunes = inland * smoothstep(0.24, 0.72, desert) * duneNoise",
-        "description": "Deserts come from hot, dry, broad climate noise. When a desert mask is strong enough, extra dune height is added on inland land using ridge and FBM noise."
+      "desertDunes": {
+        "title": "砂漠の砂丘",
+        "description": "砂漠は、暑く、乾燥した、広範囲にわたる気候騒音から生じます。 砂漠マスクが十分に強い場合、尾根と FBM ノイズを使用して内陸地に砂丘の高さが追加されます。"
       },
-      {
-        "title": "River, Canyon, And Lake Carving",
-        "code": "riverCut = smoothstep(0.9, 0.985, riverAt(x, z))\ncanyonCut = smoothstep(0.72, 0.94, canyonAt(x, z)) * inland\nlakeCarve = smoothstep(0.78, 0.96, lakeAt(x, z)) * basinDepth",
-        "description": "Rivers, canyons, and lakes are carved into the base height field before normalization. River paths use warped line noise, canyons cut deeper in dry terrain, and lake basins flatten low inland areas."
+      "riverCanyonLakeCarving": {
+        "title": "川、渓谷、湖の彫刻",
+        "description": "河川、渓谷、湖は、正規化の前に基本高さフィールドに刻まれます。 川の流れは歪んだライン ノイズを使用し、渓谷は乾燥した地形をより深く切り込み、湖の盆地は内陸の低い地域を平らにします。"
       },
-      {
-        "title": "Mountain Cells",
-        "code": "cellSize = 192\npresence = random2(cellX + 811, cellZ - 433)\nif presence < 0.36: no mountain\nsearch nearby cells for overlapping mountains",
-        "description": "Mountains are seeded per 192-column cell. A cell may have no mountain, and each visible column checks nearby cells so large mountain footprints can cross cell boundaries."
+      "mountainCells": {
+        "title": "山岳細胞",
+        "description": "山は 192 列のセルごとにシードされます。 セルには山がない場合があり、表示されている各列が近くのセルをチェックするため、大きな山のフットプリントがセルの境界を越える可能性があります。"
       },
-      {
-        "title": "Mountain Shape",
-        "code": "longRadius = radius * random(0.78..1.60)\nshortRadius = radius * random(0.38..0.84)\nangle = random * PI\nwarp = radius * random(0.035..0.11)",
-        "description": "A mountain is an angled, warped ellipse. Long and short radii vary independently, then local coordinate warping bends the ridge so mountains do not look like perfect cones."
+      "mountainShape": {
+        "title": "山の形",
+        "description": "山は角度があり、歪んだ楕円です。 長半径と短半径が独立して変化すると、局所的な座標のワーピングによって尾根が曲がり、山が完全な円錐形のように見えなくなります。"
       },
-      {
-        "title": "Mountain Height And Texture",
-        "code": "radius starts 72..168 and can grow up to 8 times\nheight starts 12..27 and can grow up to 520 one-block attempts\nlocalHeight = base + height * (shoulder + spine + crag + summitNoise)",
-        "description": "Large mountains are rare but possible. Final elevation combines falloff shoulders, a central spine, ridge crags, erosion, and summit roughness, then takes the maximum over all candidate mountains."
+      "mountainHeightTexture": {
+        "title": "山の高さと質感",
+        "description": "大きな山はまれですが、存在する可能性はあります。 最終的な標高は、肩の落ち込み、中央の背骨、尾根の岩、侵食、頂上の粗さを組み合わせて、すべての候補の山の最大値を取得します。"
       },
-      {
-        "title": "Slope Limiter",
-        "code": "allowedStep = manhattanDistance * lerp(1.05, 4.4 + roughness * 1.4, mountainWeight)\nconstrainedHeight = min(rawHeight, neighborRaw + allowedStep)",
-        "description": "After raw height is computed, a local pass limits cliffs against nearby columns. Lowlands stay gentle, while mountain areas are allowed to be rougher without becoming unbounded spikes."
+      "slopeLimiter": {
+        "title": "スロープリミッター",
+        "description": "生の高さが計算された後、ローカル パスによって近くの柱に対する崖が制限されます。 低地は穏やかなままですが、山岳地帯は際限のないスパイクになることなく、より荒れた状態が許容されます。"
       },
-      {
-        "title": "Height Normalization",
-        "code": "if rawHeight < seaLevel: keep underwater height\nelse if rawHeight < landBaseHeight: clamp to at least seaLevel + 1\nelse clamp to at least landBaseHeight",
-        "description": "The final height preserves underwater basins, keeps carved low land above sea level when it is no longer ocean, and keeps regular land from dropping below the land base."
+      "heightNormalization": {
+        "title": "高さの正規化",
+        "description": "最終的な高さは、水中の盆地を保存し、海でなくなったときに削られた低地を海面より上に保ち、通常の土地が陸地の基礎より下に落ちないようにします。"
       },
-      {
-        "title": "Climate Sampling",
-        "code": "temperature = fbm(0.0032 scale) + broad sine/cosine bands\nmoisture = fbm(0.0038 scale) + broad sine/cosine bands\nvalues are clamped to -1..1",
-        "description": "Temperature and moisture are broad fields. They create large hot, cold, wet, and dry regions that later decide desert, tundra, rainforest, forest, swamp, and snow."
+      "climateSampling": {
+        "title": "気候サンプリング",
+        "description": "温度と湿度は幅広い分野です。 それらは、後に砂漠、ツンドラ、熱帯雨林、森林、湿地、雪を決定する広大な暑さ、寒さ、湿潤、乾燥した地域を作り出します。"
       },
-      {
-        "title": "Biome Priority",
-        "code": "Ocean -> River -> Lake -> Ocean edge -> Beach -> Volcano -> Snowfield -> Mountain -> Swamp -> Wetland -> Tundra -> Desert -> Rainforest -> Forest -> Plains",
-        "description": "Biome selection is ordered. Water and special terrain win first, then altitude and slope, then wet/cold/hot climate categories, with plains as the fallback."
+      "biomePriority": {
+        "title": "バイオームの優先順位",
+        "description": "バイオームの選択は順序付けされます。 まず水域と特殊な地形が優先され、次に標高と傾斜、次に湿潤/寒冷/高温の気候カテゴリが優先され、平地が代替地となります。"
       },
-      {
-        "title": "Water Profile",
-        "code": "surfaceFluid = getSurfaceFluidBlock(...)\nwaterSurfaceHeight = seaLevel for ocean/underwater\nwaterFloorHeight = surface - visualDepth\nwaterLevel may rise above terrain for lake/river/swamp/wetland",
-        "description": "Water is part of the terrain profile, not a post-process. Oceans fill to sea level; rivers, lakes, swamps, and wetlands can place water above local ground; visual depth is capped for readable rendering."
+      "waterProfile": {
+        "title": "水プロフィール",
+        "description": "水は地形プロファイルの一部であり、後処理ではありません。 海は海面まで満たされます。 川、湖、沼地、湿地では、その地域の地面の上に水が溜まる可能性があります。 視覚的な奥行きは、読みやすいレンダリングのために制限されています。"
       },
-      {
-        "title": "Cave Cells",
-        "code": "if y >= surfaceHeight - 3 or y <= bedrock: no cave\ncaveNoise = ridgeNoise(x * 0.052 + y * 0.013, z * 0.052 - y * 0.017)\nthreshold = depth > 18 ? 0.72 : 0.84",
-        "description": "Caves are generated on demand per block query. They only appear below the near-surface layer, get easier to form when deeper, and expose walls when adjacent cells are open.",
-        "action": {
-          "id": "findNearestCave",
-          "label": "Search",
-          "searching": "Searching",
-          "notFound": "No cave was found near the current coordinates."
-        }
+      "caveCells": {
+        "title": "洞窟セル",
+        "description": "洞窟はブロック クエリごとにオンデマンドで生成されます。 それらは表面近くの層の下にのみ現れ、深くなると形成されやすくなり、隣接するセルが開いていると壁が露出します。"
       },
-      {
-        "title": "Chunk Rendering Strategy",
-        "code": "visible radius = 6 chunks\nnear radius = 1 chunk full detail\nfar visible chunks = distant detail\npreload radius = 9 chunks surface detail",
-        "description": "The rule preview page uses the same terrain generator but loads chunks progressively. Near chunks keep full decoration; farther chunks use lighter detail so fast world browsing stays responsive."
+      "chunkRenderingStrategy": {
+        "title": "Chunk レンダリング戦略",
+        "description": "ルール プレビュー ページは同じ地形ジェネレーターを使用しますが、chunks を段階的にロードします。 chunks の近くでは完全な装飾を維持します。 より遠くの chunks はより軽いディテールを使用するため、世界の高速ブラウジングの応答性が維持されます。"
+      },
+      "depthLayers": {
+        "title": "深層レイヤー",
+        "description": "ブロックのタイプは、まず垂直方向の深さに依存します。 岩盤が底部を固定し、深い石が低層を埋め、通常の石がより深い地形を埋め、バイオーム固有の層が上部近くに現れます。"
+      },
+      "waterEdgeSurfaces": {
+        "title": "海、海岸、川、湖の表面",
+        "description": "水辺バイオームは堆積物ブロックを使用します。 海やビーチには貝殻が見られ、川には砂利や粘土が多く、湖には粘土や砂が使用されていますが、砂利は多少異なります。"
+      },
+      "volcanoSurface": {
+        "title": "火山表面",
+        "description": "火山バイオームは、火山騒音が非常に高く、海面より高い場合にのみ現れます。 それらの表面はほとんどが玄武岩と灰であり、最も高温の噴出孔の近くにはまれに溶岩細胞があります。"
+      },
+      "coldMountainSurfaces": {
+        "title": "山、雪原、ツンドラの表面",
+        "description": "寒くて高い地形では、岩、雪、凍土、氷、砂利が露出しています。 緩やかな山の棚には草が生えているため、山のベースはプレイ可能な状態に保たれます。"
+      },
+      "desertSurface": {
+        "title": "砂漠の表面",
+        "description": "砂漠はほとんどが砂のような地形ですが、流砂、塩原、乾燥した土が含まれる場合もあります。 奇妙なノイズは、通常の表面のロールとは関係なく、追加の流砂パッチを作成します。"
+      },
+      "swampWetlandSurfaces": {
+        "title": "沼地と湿地の表面",
+        "description": "湿ったエリアでは、固い地面と浅い水のような表面が混ざり合っています。 腐敗した沼地のサンプルは有毒な水になる可能性があります。 湿地は粘土、泥、草で穏やかなままです。"
+      },
+      "landSurfaces": {
+        "title": "熱帯雨林、森林、および平原の表面",
+        "description": "通常の地表は気候に敏感です。 熱帯雨林はより湿っていて泥が多く、森林は湿気の多い細胞内でコケを成長させることができ、極端な気候では平地が乾燥した土や粘土の方にわずかに移動します。"
+      },
+      "subsurfaceRules": {
+        "title": "地下ルール",
+        "description": "上面下のブロックもバイオームに従います。 これにより、すべての柱が同じ土の層になるのではなく、崖と採掘された側面が地元の環境と一致します。"
+      },
+      "naturalFluids": {
+        "title": "天然液体",
+        "description": "流体ブロックはバイオームの後に選択されます。 冷たい水中の細胞は氷になり、腐敗した湿地帯は有毒な水になり、湿地帯では湿地の水を使用し、火山噴火口からは溶岩が噴出する可能性があります。"
+      },
+      "fluidHeight": {
+        "title": "流体高さ",
+        "description": "流体が異なれば、使用する可視レベルも異なります。 これにより、川や湖は地元の床よりも上に位置し、海は共有の海面に留まります。"
+      },
+      "waterDepthRendering": {
+        "title": "水深のレンダリング",
+        "description": "目視水深の上限は 4 ブロックです。 キャップにより、水中の柱のレンダリングが安価に保たれ、深い盆地がプレビューを圧倒するのを防ぎます。"
+      },
+      "aquaticDecoration": {
+        "title": "水生装飾",
+        "description": "植物は水細胞からもたらされます。 サンゴは浅い暖かい海に限定されており、死んだサンゴは冷たい水や腐敗した水の跡を示し、アシは海以外の湿った生物群系の近くに現れることはほとんどありません。"
+      },
+      "dryHotVegetation": {
+        "title": "乾燥した暑い植物",
+        "description": "砂漠の装飾は、適切な乾燥した表面にのみ表示されます。 サボテンには、均一なノイズではなく散在するスタンドとして表示されるように、追加の粗いロールが必要です。"
+      },
+      "wetForestVegetation": {
+        "title": "湿った森林の植生",
+        "description": "湿った地域では、地被、蔓、根、葦、キノコが育ちます。 熱帯雨林が最も強力なブーストを受けますが、通常の森はほとんどが草や低木のままです。"
+      },
+      "coldMountainVegetation": {
+        "title": "寒さと山の植物",
+        "description": "寒冷バイオームではまばらな丈夫な装飾が使用されます。 急な斜面では、山特有の装飾を除いてほとんどの植生が抑制され、崖が視覚的にきれいに保たれます。"
+      },
+      "treeDensity": {
+        "title": "ツリー密度",
+        "description": "樹木は、バイオーム、傾斜、標高、森林の強さ、牧草地の騒音、バイオームブーストによって制御されます。 熱帯雨林と森林はより強力なブーストを受けますが、標高が高いと密度が減少します。"
+      },
+      "treeTypeLeaves": {
+        "title": "木の種類と葉",
+        "description": "木の形と色はエリアごとに決定されます。 寒くて高い場所では松が好まれ、熱帯雨林では巨大な根と青緑/濃い色の葉が使用され、通常の森林では種子のロールによって葉の色合いが変わります。"
+      },
+      "caveWallBlocks": {
+        "title": "洞窟壁ブロック",
+        "description": "開いた洞窟の横にある固体セルは、露出した洞窟の壁になります。 深い洞窟では、深い石と光る菌糸体がより頻繁に使用されます。 火山洞窟や破損した洞窟では、危険な液体が露出する可能性があります。"
+      },
+      "caveDecoration": {
+        "title": "洞窟の装飾",
+        "description": "洞窟の表面には小さな装飾を施すことができます。 深い洞窟では光る菌糸体が好まれ、湿気の多い洞窟ではキノコやコケが発生し、一般的な洞窟の覆いとして地衣類が現れます。"
+      },
+      "generatedBlockQuery": {
+        "title": "生成されたブロッククエリ",
+        "description": "エンジンは完全な地形を事前に保存しません。 プロファイルと深さのルールからのブロック クエリに応答し、レンダリング、衝突、採掘、水のシミュレーションで同じ手続き型の世界を読み取ることができます。"
       }
-    ],
-    "blocks": [
-      {
-        "title": "Depth Layers",
-        "code": "y <= 0 -> bedrock\ny < 45 -> deepStone\ny < surfaceY - 6 -> stone or basalt\nnear surface -> biome subsurface\nsurfaceY -> biome surface",
-        "description": "Block type depends on vertical depth first. Bedrock anchors the bottom, deep stone fills low layers, ordinary stone fills deeper terrain, and biome-specific layers appear near the top."
-      },
-      {
-        "title": "Ocean, Beach, River, And Lake Surfaces",
-        "code": "Ocean: shellBed/clay/sand/gravel\nBeach: shellBed/gravel/sand\nRiver: gravel/clay/sand\nLake: clay/sand/gravel",
-        "description": "Water-edge biomes use sediment blocks. Oceans and beaches can show shell beds, rivers bias toward gravel and clay, and lakes use clay or sand with some gravel variation."
-      },
-      {
-        "title": "Volcano Surface",
-        "code": "if volcanic > 0.96 and roll > 0.92 -> lava\nelse basalt / ash / stone",
-        "description": "Volcano biomes appear only when volcanic noise is very high and above sea level. Their surfaces are mostly basalt and ash, with rare lava cells near the hottest vents."
-      },
-      {
-        "title": "Mountain, Snowfield, And Tundra Surfaces",
-        "code": "Mountain: high/cold -> snow or stone, steep -> gravel or stone, gentle -> grass or stone\nSnowfield: snow/frozenSoil/ice\nTundra: frozenSoil/snow",
-        "description": "Cold and high terrain exposes rock, snow, frozen soil, ice, and gravel. Gentler mountain shelves can still carry grass, which keeps mountain bases playable."
-      },
-      {
-        "title": "Desert Surface",
-        "code": "if roll > 0.52 or weirdness < -0.68 -> quicksand\nelse saltFlat / dryDirt / sand",
-        "description": "Deserts are mostly sand-like terrain but can contain quicksand, salt flats, and dry dirt. Weirdness noise creates extra quicksand patches independent of the normal surface roll."
-      },
-      {
-        "title": "Swamp And Wetland Surfaces",
-        "code": "Swamp: toxicWater / swampWater / mud / clay\nWetland: clay / mud / grass",
-        "description": "Wet areas blend solid ground with shallow water-like surfaces. Corrupted swamp samples can become toxic water; wetlands stay gentler with clay, mud, and grass."
-      },
-      {
-        "title": "Rainforest, Forest, And Plains Surfaces",
-        "code": "Rainforest: mud or grass, rare moss\nForest: grass, rare moss when humid\nPlains: grass, with dryDirt or clay when humidity is extreme",
-        "description": "Regular land surfaces are climate-sensitive. Rainforest is wetter and muddier, forest can grow moss in humid cells, and plains shift slightly toward dry dirt or clay at climate extremes."
-      },
-      {
-        "title": "Subsurface Rules",
-        "code": "Desert/Beach -> sand/gravel/stone\nWet biomes -> clay/mud/stone\nSnow/Tundra -> frozenSoil/stone\nVolcano -> basalt/lava/stone\nDefault -> dirt/gravel/clay",
-        "description": "The block below the top surface also follows biome. This makes cliffs and mined side faces match the local environment instead of turning every column into the same dirt layer."
-      },
-      {
-        "title": "Natural Fluids",
-        "code": "Volcano vent -> lava\nRiver/Lake -> water\nSwamp -> swampWater\nWetland chance -> water\nunder seaLevel -> water/ice/toxicWater/swampWater",
-        "description": "Fluid blocks are selected after biome. Cold underwater cells become ice, corrupted wet areas may become toxic water, swampy areas use swamp water, and volcano vents can emit lava."
-      },
-      {
-        "title": "Fluid Height",
-        "code": "Lava level = terrain height\nOcean/underwater level = seaLevel\nLake level = height + 2..4\nRiver level = height + 1..2\nSwamp/Wetland level = height + 1",
-        "description": "Different fluids use different visible levels. This lets rivers and lakes sit above local floors while oceans stay at a shared sea level."
-      },
-      {
-        "title": "Water Depth Rendering",
-        "code": "Ocean depth = clamp(seaLevel - groundHeight, 1, 4)\nRiver depth grows near erosion center\nLake depth grows near basin center\nSwamp/Wetland depth = 1",
-        "description": "Visual water depth is capped at four blocks. The cap keeps underwater columns cheap to render and prevents deep basins from overwhelming the preview."
-      },
-      {
-        "title": "Aquatic Decoration",
-        "code": "Ocean: warm shallow water can spawn coral\nOcean: cold/corrupted water can spawn dead coral\nSwamp/Wetland/River/Lake: rare reeds",
-        "description": "Plants can also come from water cells. Coral is restricted to shallow warm oceans, dead coral marks cold or corrupted water, and reeds appear rarely near non-ocean wet biomes."
-      },
-      {
-        "title": "Dry And Hot Vegetation",
-        "code": "Desert on sand/dryDirt/ash:\n  cactus, deadBush, thorn, dryGrass by roll thresholds",
-        "description": "Desert decoration only appears on appropriate dry surfaces. Cactus requires an additional coarse roll so it appears as scattered stands instead of uniform noise."
-      },
-      {
-        "title": "Wet And Forest Vegetation",
-        "code": "Swamp/Wetland: moss, vine, reed, rare mushroom\nRainforest: giantRoot, moss, vine, rare mushroom, bush\nForest: bush, vine, rare mushroom, grassPlant",
-        "description": "Wet regions favor ground cover, vines, roots, reeds, and mushrooms. Rainforest gets the strongest boost, while regular forest stays mostly grass and bushes."
-      },
-      {
-        "title": "Cold And Mountain Vegetation",
-        "code": "Snowfield/Tundra: snowBush or lichen\nMountain: snowBush when cold, otherwise lichen or bush\nslope > 4 blocks most non-mountain vegetation",
-        "description": "Cold biomes use sparse hardy decoration. Steep slopes suppress most vegetation except mountain-specific decoration, which keeps cliffs visually clean."
-      },
-      {
-        "title": "Tree Density",
-        "code": "treeDensity = forestFloor * (1 - altitudePenalty) + meadowTrees + biomeBoost\nblocked if biome cannot grow trees, slope > 3, or height <= 4",
-        "description": "Trees are controlled by biome, slope, altitude, forest strength, meadow noise, and biome boosts. Rainforest and forest receive stronger boosts, while high altitude reduces density."
-      },
-      {
-        "title": "Tree Type And Leaves",
-        "code": "pine when cold/high/mountain/snow or seed roll says evergreen\ntrunkType = pineTrunk / giantRoot / deadWood / trunk\nleafType = pine, snow, teal, dark, light, warm, or normal leaves",
-        "description": "Tree shape and color are deterministic per area. Cold and high locations prefer pines, rainforest can use giant roots and teal/dark leaves, and normal forests vary leaf tone by seed roll."
-      },
-      {
-        "title": "Cave Wall Blocks",
-        "code": "adjacent open cave -> cave wall\nif y < 45 -> deep cave\nrare lava in deep or volcanic caves\nrare toxic water in corrupted caves\nwall = deepStone or stone, sometimes gravel",
-        "description": "A solid cell beside an open cave becomes an exposed cave wall. Deep caves use deep stone and glow mycelium more often; volcanic or corrupted caves can expose dangerous fluids."
-      },
-      {
-        "title": "Cave Decoration",
-        "code": "deep cave and floorNoise > 0.45 -> glowMycelium\nhumid rare roll -> mushroom\notherwise lichen or moss by floorNoise and humidity",
-        "description": "Cave surfaces can carry small decorations. Deep caves favor glow mycelium, humid caves can produce mushrooms or moss, and lichen appears as general cave cover."
-      },
-      {
-        "title": "Generated Block Query",
-        "code": "getGeneratedBlock(x, y, z):\n  water above surface when inside fluid level\n  null above terrain and above seaLevel\n  cave cells return null\n  cave-adjacent cells return cave walls\n  otherwise return terrain by depth",
-        "description": "The engine does not pre-store full terrain. It answers block queries from the profile and depth rules, which lets rendering, collision, mining, and water simulation read the same procedural world."
+    },
+    "actions": {
+      "findNearestCave": {
+        "label": "Search",
+        "searching": "Searching",
+        "notFound": "No cave was found near the current coordinates."
       }
-    ]
+    }
   }
 }
