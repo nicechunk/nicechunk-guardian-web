@@ -19,6 +19,8 @@
     "guardian:register": "node scripts/register-guardian.ts",
     "guardian:list": "node scripts/list-guardians.ts",
     "guardian:proof": "node scripts/submit-guardian-proof.ts",
+    "repo:audit": "node scripts/audit-repository-health.mjs",
+    "smelting:sync-recipes": "node scripts/sync-smelting-recipes.ts",
     "test:core": "node --loader ts-node/esm node_modules/mocha/bin/mocha -t 1000000 tests/**/*.ts",
     "prebuild": "npm run locales",
     "build": "vite build",

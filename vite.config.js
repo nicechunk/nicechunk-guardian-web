@@ -21,11 +21,13 @@ const pageInputs = Object.fromEntries(
     resource_rule: "resource_rule/index.html",
     ncm: "ncm/index.html",
     ncm_dna: "ncm_dna/index.html",
+    fourier_pickaxe: "fourier-pickaxe/index.html",
     elements: "elements/index.html",
     forging: "forging/index.html",
     mining: "mining/index.html",
     guardian: "guardian/index.html",
     contracts: "contracts/index.html",
+    civilization: "civilization/index.html",
     trust: "trust/index.html",
     proof_of_frontier: "proof-of-frontier/index.html",
   })
