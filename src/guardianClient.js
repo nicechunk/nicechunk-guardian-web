@@ -1,8 +1,8 @@
-export const DEFAULT_NICECHUNK_GUARDIAN_URL = "wss://guardian.101.32.242.209.sslip.io/ws";
+export const DEFAULT_NICECHUNK_GUARDIAN_URL = "wss://guardian.nicechunk.com/ws";
 const LEGACY_NICECHUNK_GUARDIAN_URLS = new Set([
-  "ws://101.32.242.209:8080/ws",
   "wss://nicechunk.com/guardian-ws",
 ]);
+const LEGACY_IPV4_GUARDIAN_URL_PATTERN = /^wss?:\/\/(?:guardian\.)?(?:\d{1,3}\.){3}\d{1,3}(?::\d+)?(?:\.sslip\.io)?\/ws$/;
 
 const MSG_HELLO = 0x01;
 const MSG_HELLO_ACK = 0x02;
@@ -51,9 +51,13 @@ export function resolveNiceChunkGuardianUrl(defaultUrl = DEFAULT_NICECHUNK_GUARD
   const queryUrl = guardianUrlFromQuery();
   if (queryUrl) return queryUrl;
   const storedUrl = localStorage.getItem(guardianUrlStorageKey);
-  if (storedUrl && !LEGACY_NICECHUNK_GUARDIAN_URLS.has(storedUrl)) return storedUrl;
-  if (storedUrl && LEGACY_NICECHUNK_GUARDIAN_URLS.has(storedUrl)) localStorage.setItem(guardianUrlStorageKey, defaultUrl);
+  if (storedUrl && !isLegacyNiceChunkGuardianUrl(storedUrl)) return storedUrl;
+  if (storedUrl && isLegacyNiceChunkGuardianUrl(storedUrl)) localStorage.setItem(guardianUrlStorageKey, defaultUrl);
   return window.NICECHUNK_GUARDIAN_URL || defaultUrl;
+}
+
+function isLegacyNiceChunkGuardianUrl(url) {
+  return LEGACY_NICECHUNK_GUARDIAN_URLS.has(url) || LEGACY_IPV4_GUARDIAN_URL_PATTERN.test(url);
 }
 
 export function shouldUseGuardianSpawnForSession(session) {

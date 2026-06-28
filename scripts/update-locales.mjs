@@ -47,11 +47,11 @@ const languageNativeNames = {
   es: "Español",
   fr: "Français",
   de: "Deutsch",
-  ja: "日本語",
+  ja: "Japanese",
   ru: "Русский",
   ko: "한국어",
-  zhHant: "繁體中文",
-  zhHans: "简体中文",
+  zhHant: "Traditional Chinese",
+  zhHans: "Simplified Chinese",
 };
 
 function createTitleizedLabels(keys) {
@@ -5172,9 +5172,12 @@ for (const language of languageOrder) {
 }
 
 for (const language of worldRuleLanguageOrder) {
+  const worldRuleSourceDictionary = await readLocaleJsonWithGeneratedFallback("world_rule", language, () =>
+    createWorldRuleDictionary(language),
+  );
   const worldRuleDictionary = deepMerge(
     createSiteFooterLocalePatch(language),
-    await readLocaleJsonWithGeneratedFallback("world_rule", language, () => createWorldRuleDictionary(language)),
+    deepMerge(createWorldRuleDictionary(language), worldRuleSourceDictionary),
   );
   const worldRuleContentHash = hashJson(worldRuleDictionary);
   const worldRuleVersion = `world-rule-locale-${language}-${worldRuleContentHash}`;
@@ -7876,11 +7879,19 @@ function createWorldRuleDictionary(language) {
     preview: {
       label: "World preview",
       heading: "WORLD PREVIEW",
+      coordinates: "Coordinates",
+      coordinatesLabel: "Current preview coordinates",
+      coordinatesValue: "X {x}  Y {y}  Z {z}",
       fly: "WASD Fly",
       look: "Mouse Drag Look",
       vertical: "Space / C Vertical",
       chunks: "{active}/{total} chunks",
       metricsLabel: "Preview constants",
+    },
+    algorithm: {
+      collapse: "Collapse rules",
+      expand: "Expand rules",
+      toggleLabel: "Toggle algorithm panel",
     },
     header: {
       eyebrow: "PUBLIC GENERATION SPEC",
@@ -8207,11 +8218,19 @@ function createWorldRuleDictionary(language) {
     preview: {
       label: "世界预览",
       heading: "世界预览",
+      coordinates: "坐标",
+      coordinatesLabel: "当前预览坐标",
+      coordinatesValue: "X {x}  Y {y}  Z {z}",
       fly: "WASD 飞行",
       look: "鼠标拖拽视角",
       vertical: "Space / C 垂直移动",
       chunks: "{active}/{total} 个 Chunk",
       metricsLabel: "预览常量",
+    },
+    algorithm: {
+      collapse: "折叠规则",
+      expand: "展开规则",
+      toggleLabel: "切换算法面板",
     },
     header: {
       eyebrow: "公开生成规格",
@@ -8219,7 +8238,7 @@ function createWorldRuleDictionary(language) {
       body:
         "NiceChunk 地形来自公开的种子生成流水线。同一个种子和坐标会得到同样的地形档案、生物群系、水体、洞穴、树木和方块查询结果。",
       enterWorld: "进入世界",
-      language: "简体中文",
+      language: "Simplified Chinese",
     },
     metrics: {
       statusLabel: "世界生成状态",
@@ -10290,6 +10309,35 @@ function createSmeltingLocalePatch(language) {
         kindBloom: "Refined",
         kindStabilized: "Stabilized",
         kindMaterial: "Processed",
+        mobileTabsAria: "Smelting sections",
+        tabBackpack: "Backpack",
+        tabRecipes: "Recipes",
+        tabFurnace: "Furnace",
+        filterAria: "Smelting resource filters",
+        filterAll: "All",
+        filterRaw: "Raw",
+        filterFuel: "Fuel",
+        filterReady: "Ready",
+        filterMissing: "Missing",
+        recipesEyebrow: "Public Recipe Table",
+        recipesTitle: "Match backpack inputs",
+        recipeFilterAria: "Smelting recipe filters",
+        recipeProgress: "{matched}/{required} input slots matched · heat tier {tier}",
+        recipeRequirement: "{resource} {available}/{amount}",
+        selectRecipe: "Select Recipe",
+        findInputs: "Find Inputs",
+        recipeReady: "Ready",
+        recipeFuelMissing: "Missing fuel",
+        recipeMissingInputs: "Missing {count} input slots",
+        recipePartial: "Partial match",
+        coordinateUnknown: "Coordinate unknown",
+        closeDrawer: "Close item actions",
+        singleItemCoordinate: "Single slot · {coord}",
+        removeInput: "Remove Input",
+        addInputFull: "Add Input",
+        removeFuel: "Remove Fuel",
+        useAsFuel: "Use as Fuel",
+        viewRecipes: "View Recipes",
       },
     },
   };
@@ -10301,8 +10349,74 @@ function createSmeltingLocalePatch(language) {
     ja: { main: { smelting: { open: "精錬ステーションを開く", close: "精錬ステーションを閉じる", eyebrow: "鍛造素材準備", title: "精錬ステーション", modePreview: "ローカルプレビュー", noBackpackShort: "バッグなし", statusNoBackpack: "精錬前にバックパックを装備してください。", noBackpackResources: "資源を精錬する前にバックパックを装備してください。", inputEyebrow: "バックパック資源", inputTitle: "採掘資源を選択", resources: "精錬可能な資源", furnaceEyebrow: "熱コア", furnaceTitle: "レシピ一致", inputSlot: "入力", fuelSlot: "燃料", fuelTitle: "燃料", fuel: "燃料", fuelHeat: "熱レベル {tier}", addInput: "入力", addFuel: "燃料", outputEyebrow: "鍛造用出力", outputTitle: "素材プレビュー", start: "精錬開始", running: "精錬中...", statusSyncing: "装備中のバックパックを同期中...", statusNoInput: "採掘資源を選択してください。", statusNoFuel: "対応する燃料を追加してください。", statusHeatMissing: "選択した燃料は必要な熱レベルに届きません。", statusReady: "精錬プレビュー準備完了。", statusRunning: "資源サンプルを加熱中...", statusComplete: "鍛造素材プレビュー完了。", noResources: "このバックパックに採掘資源がありません。", noFuel: "対応燃料がありません。", selectInput: "出力を見る資源を選択してください。", requiredHeat: "必要熱量", yieldRange: "産出範囲", quality: "品質基準", previewOnly: "プレビューのみ: 精錬コントラクトはまだ送信されません。", kindChar: "炭化", kindBiochar: "バイオ炭", kindCeramic: "焼結", kindBloom: "精製", kindStabilized: "安定化", kindMaterial: "加工" } } },
     ru: { main: { smelting: { open: "Открыть плавильню", close: "Закрыть плавильню", eyebrow: "Подготовка ковки", title: "Плавильная станция", modePreview: "Локальный просмотр", noBackpackShort: "Нет рюкзака", statusNoBackpack: "Экипируйте рюкзак перед плавкой.", noBackpackResources: "Экипируйте рюкзак перед плавкой ресурсов.", inputEyebrow: "Ресурсы рюкзака", inputTitle: "Выберите добытый ресурс", resources: "Ресурсы для плавки", furnaceEyebrow: "Термоядро", furnaceTitle: "Рецепт", inputSlot: "Вход", fuelSlot: "Топливо", fuelTitle: "Топливо", fuel: "Топливо", fuelHeat: "Уровень жара {tier}", addInput: "Вход", addFuel: "Топливо", outputEyebrow: "Выход для ковки", outputTitle: "Просмотр материала", start: "Начать плавку", running: "Плавка...", statusSyncing: "Синхронизация экипированного рюкзака...", statusNoInput: "Выберите добытый ресурс.", statusNoFuel: "Добавьте подходящее топливо.", statusHeatMissing: "Топливо не достигает нужного жара.", statusReady: "Готово к просмотру плавки.", statusRunning: "Нагрев образца...", statusComplete: "Просмотр материала завершен.", noResources: "В рюкзаке нет добытых ресурсов.", noFuel: "Нет подходящего топлива.", selectInput: "Выберите ресурс для просмотра выхода.", requiredHeat: "Нужный жар", yieldRange: "Диапазон выхода", quality: "Основа качества", previewOnly: "Только просмотр: контракт плавки еще не отправляется.", kindChar: "Карбонизированный", kindBiochar: "Биоуголь", kindCeramic: "Спеченный", kindBloom: "Очищенный", kindStabilized: "Стабилизированный", kindMaterial: "Обработанный" } } },
     ko: { main: { smelting: { open: "제련소 열기", close: "제련소 닫기", eyebrow: "제작 재료 준비", title: "제련 스테이션", modePreview: "로컬 미리보기", noBackpackShort: "배낭 없음", statusNoBackpack: "제련 전에 배낭을 장착하세요.", noBackpackResources: "자원을 제련하기 전에 배낭을 장착하세요.", inputEyebrow: "배낭 자원", inputTitle: "채굴 자원 선택", resources: "제련 가능한 자원", furnaceEyebrow: "열 코어", furnaceTitle: "레시피 매칭", inputSlot: "입력", fuelSlot: "연료", fuelTitle: "연료", fuel: "연료", fuelHeat: "열 등급 {tier}", addInput: "입력", addFuel: "연료", outputEyebrow: "제작용 출력", outputTitle: "재료 미리보기", start: "제련 시작", running: "제련 중...", statusSyncing: "장착한 백팩을 동기화하는 중...", statusNoInput: "채굴 자원을 선택하세요.", statusNoFuel: "호환 연료를 추가하세요.", statusHeatMissing: "선택한 연료가 필요한 열 등급에 도달하지 못합니다.", statusReady: "제련 미리보기 준비 완료.", statusRunning: "자원 샘플 가열 중...", statusComplete: "제작 재료 미리보기 완료.", noResources: "이 배낭에 채굴 자원이 없습니다.", noFuel: "호환되는 연료가 없습니다.", selectInput: "출력을 볼 자원을 선택하세요.", requiredHeat: "필요 열", yieldRange: "산출 범위", quality: "품질 기준", previewOnly: "미리보기 전용: 제련 계약은 아직 제출되지 않습니다.", kindChar: "탄화", kindBiochar: "바이오차", kindCeramic: "소결", kindBloom: "정제", kindStabilized: "안정화", kindMaterial: "가공" } } },
-    "zh-Hant": { main: { smelting: { open: "開啟熔煉台", close: "關閉熔煉台", eyebrow: "鍛造材料準備", title: "熔煉台", modePreview: "本地預覽", coreMeta: "站點核心：Forge Alpha | 熱量等級：穩定", safetyLabel: "安全協議", safetyActive: "熱防護已啟用", closeHint: "[ESC] 關閉", forgeHint: "[F] 鍛造", noBackpackShort: "無背包", statusNoBackpack: "熔煉前請先裝備背包。", noBackpackResources: "熔煉資源前請先裝備背包。", backpackCount: "{count}/{capacity}", inputEyebrow: "背包資源", inputTitle: "選擇一個已採集資源", resources: "可熔煉背包資源", furnaceEyebrow: "熱核心", furnaceTitle: "配方匹配", inputSlot: "輸入", fuelSlot: "燃料", fuelTitle: "燃料", fuel: "燃料", fuelHeat: "熱量等級 {tier}", addInput: "輸入", addFuel: "燃料", outputEyebrow: "可鍛造輸出", outputTitle: "材料預覽", start: "開始熔煉", running: "熔煉中...", statusIdle: "選擇輸入和燃料。", statusSyncing: "正在同步已裝備背包...", statusNoInput: "選擇一個已採集資源。", statusNoFuel: "加入相容燃料。", statusHeatMissing: "所選燃料達不到需要的熱量等級。", statusHeatMissingMulti: "燃料熱量等級 {fuel} 低於所需等級 {required}。", statusReady: "可以預覽熔煉。", statusRunning: "正在加熱資源樣本...", statusComplete: "鍛造材料預覽完成。", noResources: "這個背包裡沒有已採集資源。", noFuel: "背包裡沒有相容燃料。", selectInput: "選擇一個背包資源以預覽輸出。", materialSource: "已採集材料", dropInputHint: "把已採集材料拖到這裡", dropFuelHint: "把燃料方塊拖到這裡", emptySyncTitle: "正在同步背包", emptyNoBackpackTitle: "需要背包", emptyNoResourcesTitle: "沒有可熔煉資源", emptyNoFuelTitle: "缺少燃料", emptySelectInputTitle: "等待材料", emptyIdleTitle: "熔煉台待命", emptyHintReadPda: "讀取 PDA", emptyHintSlots: "檢查格子", emptyHintEquip: "裝備背包", emptyHintMine: "採集資源", emptyHintCoordinate: "座標綁定", emptyHintWood: "木質方塊", emptyHintBiomass: "生物質", emptyHintSelect: "選擇輸入", emptyHintPreview: "預覽產物", emptyHintFuel: "加入燃料", outputName: "{kind}{resource}", outputDescription: "從 {resource} 提煉出的可鍛造材料批次，元素區間仍綁定原始採集座標。", mixedBatch: "混合批次", batchBasis: "{inputs} 個輸入 / {fuels} 個燃料", requiredHeat: "所需熱量", yieldRange: "產出區間", quality: "品質依據", heatMet: "已滿足等級 {tier}", heatMissing: "需要等級 {required}，燃料 {fuel}", previewOnly: "僅預覽：熔煉合約尚未提交。", kindChar: "碳化", kindBiochar: "生物炭", kindCeramic: "燒結", kindBloom: "精煉", kindStabilized: "穩定化", kindMaterial: "加工" } } },
-    "zh-Hans": { main: { smelting: { open: "打开熔炼台", close: "关闭熔炼台", eyebrow: "锻造材料准备", title: "熔炼台", modePreview: "本地预览", coreMeta: "站点核心：Forge Alpha | 热量等级：稳定", safetyLabel: "安全协议", safetyActive: "热防护已激活", closeHint: "[ESC] 关闭", forgeHint: "[F] 锻造", noBackpackShort: "无背包", statusNoBackpack: "熔炼前请先装备背包。", noBackpackResources: "熔炼资源前请先装备背包。", backpackCount: "{count}/{capacity}", inputEyebrow: "背包资源", inputTitle: "选择一个已采集资源", resources: "可熔炼背包资源", furnaceEyebrow: "热核心", furnaceTitle: "配方匹配", inputSlot: "输入", fuelSlot: "燃料", fuelTitle: "燃料", fuel: "燃料", fuelHeat: "热量等级 {tier}", addInput: "输入", addFuel: "燃料", outputEyebrow: "可锻造输出", outputTitle: "材料预览", start: "开始熔炼", running: "熔炼中...", statusIdle: "选择输入和燃料。", statusSyncing: "正在同步已装备背包...", statusNoInput: "选择一个已采集资源。", statusNoFuel: "加入兼容燃料。", statusHeatMissing: "所选燃料达不到需要的热量等级。", statusHeatMissingMulti: "燃料热量等级 {fuel} 低于所需等级 {required}。", statusReady: "可以预览熔炼。", statusRunning: "正在加热资源样本...", statusComplete: "锻造材料预览完成。", noResources: "这个背包里没有已采集资源。", noFuel: "背包里没有兼容燃料。", selectInput: "选择一个背包资源以预览输出。", materialSource: "已采集材料", dropInputHint: "把已采集材料拖到这里", dropFuelHint: "把燃料方块拖到这里", emptySyncTitle: "正在同步背包", emptyNoBackpackTitle: "需要背包", emptyNoResourcesTitle: "没有可熔炼资源", emptyNoFuelTitle: "缺少燃料", emptySelectInputTitle: "等待材料", emptyIdleTitle: "熔炼台待命", emptyHintReadPda: "读取 PDA", emptyHintSlots: "检查格子", emptyHintEquip: "装备背包", emptyHintMine: "采集资源", emptyHintCoordinate: "坐标绑定", emptyHintWood: "木质方块", emptyHintBiomass: "生物质", emptyHintSelect: "选择输入", emptyHintPreview: "预览产物", emptyHintFuel: "加入燃料", outputName: "{kind}{resource}", outputDescription: "从 {resource} 提炼出的可锻造材料批次，元素区间仍绑定原始采集坐标。", mixedBatch: "混合批次", batchBasis: "{inputs} 个输入 / {fuels} 个燃料", requiredHeat: "所需热量", yieldRange: "产出区间", quality: "品质依据", heatMet: "已满足等级 {tier}", heatMissing: "需要等级 {required}，燃料 {fuel}", previewOnly: "仅预览：熔炼合约尚未提交。", kindChar: "碳化", kindBiochar: "生物炭", kindCeramic: "烧结", kindBloom: "精炼", kindStabilized: "稳定化", kindMaterial: "加工" } } },
+    "zh-Hant": { main: { smelting: { open: "開啟熔煉台", close: "關閉熔煉台", eyebrow: "鍛造材料準備", title: "熔煉台", modePreview: "本地預覽", coreMeta: "站點核心：Forge Alpha | 熱量等級：穩定", safetyLabel: "安全協議", safetyActive: "熱防護已啟用", closeHint: "[ESC] 關閉", forgeHint: "[F] 鍛造", noBackpackShort: "無背包", statusNoBackpack: "熔煉前請先裝備背包。", noBackpackResources: "熔煉資源前請先裝備背包。", backpackCount: "{count}/{capacity}", inputEyebrow: "背包資源", inputTitle: "選擇一個已採集資源", resources: "可熔煉背包資源", furnaceEyebrow: "熱核心", furnaceTitle: "配方匹配", inputSlot: "輸入", fuelSlot: "燃料", fuelTitle: "燃料", fuel: "燃料", fuelHeat: "熱量等級 {tier}", addInput: "輸入", addFuel: "燃料", outputEyebrow: "可鍛造輸出", outputTitle: "材料預覽", start: "開始熔煉", running: "熔煉中...", statusIdle: "選擇輸入和燃料。", statusSyncing: "正在同步已裝備背包...", statusNoInput: "選擇一個已採集資源。", statusNoFuel: "加入相容燃料。", statusHeatMissing: "所選燃料達不到需要的熱量等級。", statusHeatMissingMulti: "燃料熱量等級 {fuel} 低於所需等級 {required}。", statusReady: "可以預覽熔煉。", statusRunning: "正在加熱資源樣本...", statusComplete: "鍛造材料預覽完成。", noResources: "這個背包裡沒有已採集資源。", noFuel: "背包裡沒有相容燃料。", selectInput: "選擇一個背包資源以預覽輸出。", materialSource: "已採集材料", dropInputHint: "把已採集材料拖到這裡", dropFuelHint: "把燃料方塊拖到這裡", emptySyncTitle: "正在同步背包", emptyNoBackpackTitle: "需要背包", emptyNoResourcesTitle: "沒有可熔煉資源", emptyNoFuelTitle: "缺少燃料", emptySelectInputTitle: "等待材料", emptyIdleTitle: "熔煉台待命", emptyHintReadPda: "讀取 PDA", emptyHintSlots: "檢查格子", emptyHintEquip: "裝備背包", emptyHintMine: "採集資源", emptyHintCoordinate: "座標綁定", emptyHintWood: "木質方塊", emptyHintBiomass: "生物質", emptyHintSelect: "選擇輸入", emptyHintPreview: "預覽產物", emptyHintFuel: "加入燃料", outputName: "{kind}{resource}", outputDescription: "從 {resource} 提煉出的可鍛造材料批次，元素區間仍綁定原始採集座標。", mixedBatch: "混合批次", batchBasis: "{inputs} 個輸入 / {fuels} 個燃料", requiredHeat: "所需熱量", yieldRange: "產出區間", quality: "品質依據", heatMet: "已滿足等級 {tier}", heatMissing: "需要等級 {required}，燃料 {fuel}", previewOnly: "僅預覽：熔煉合約尚未提交。", kindChar: "碳化", kindBiochar: "生物炭", kindCeramic: "燒結", kindBloom: "精煉", kindStabilized: "穩定化", kindMaterial: "加工", mobileTabsAria: "熔煉分區", tabBackpack: "背包", tabRecipes: "配方", tabFurnace: "熔爐", filterAria: "熔煉資源篩選", filterAll: "全部", filterRaw: "原料", filterFuel: "燃料", filterReady: "可用", filterMissing: "缺少", recipesEyebrow: "公開配方表", recipesTitle: "匹配背包輸入", recipeFilterAria: "熔煉配方篩選", recipeProgress: "已匹配 {matched}/{required} 個輸入格 · 熱量等級 {tier}", recipeRequirement: "{resource} {available}/{amount}", selectRecipe: "選擇配方", findInputs: "查找輸入", recipeReady: "可熔煉", recipeFuelMissing: "缺少燃料", recipeMissingInputs: "缺少 {count} 個輸入格", recipePartial: "部分匹配", coordinateUnknown: "座標未知", closeDrawer: "關閉物品操作", singleItemCoordinate: "單格物品 · {coord}", removeInput: "移除原料", addInputFull: "加入原料", removeFuel: "移除燃料", useAsFuel: "設為燃料", viewRecipes: "查看配方", } } },
+    "zh-Hans": { main: { smelting: { open: "打开熔炼台", close: "关闭熔炼台", eyebrow: "锻造材料准备", title: "熔炼台", modePreview: "本地预览", coreMeta: "站点核心：Forge Alpha | 热量等级：稳定", safetyLabel: "安全协议", safetyActive: "热防护已激活", closeHint: "[ESC] 关闭", forgeHint: "[F] 锻造", noBackpackShort: "无背包", statusNoBackpack: "熔炼前请先装备背包。", noBackpackResources: "熔炼资源前请先装备背包。", backpackCount: "{count}/{capacity}", inputEyebrow: "背包资源", inputTitle: "选择一个已采集资源", resources: "可熔炼背包资源", furnaceEyebrow: "热核心", furnaceTitle: "配方匹配", inputSlot: "输入", fuelSlot: "燃料", fuelTitle: "燃料", fuel: "燃料", fuelHeat: "热量等级 {tier}", addInput: "输入", addFuel: "燃料", outputEyebrow: "可锻造输出", outputTitle: "材料预览", start: "开始熔炼", running: "熔炼中...", statusIdle: "选择输入和燃料。", statusSyncing: "正在同步已装备背包...", statusNoInput: "选择一个已采集资源。", statusNoFuel: "加入兼容燃料。", statusHeatMissing: "所选燃料达不到需要的热量等级。", statusHeatMissingMulti: "燃料热量等级 {fuel} 低于所需等级 {required}。", statusReady: "可以预览熔炼。", statusRunning: "正在加热资源样本...", statusComplete: "锻造材料预览完成。", noResources: "这个背包里没有已采集资源。", noFuel: "背包里没有兼容燃料。", selectInput: "选择一个背包资源以预览输出。", materialSource: "已采集材料", dropInputHint: "把已采集材料拖到这里", dropFuelHint: "把燃料方块拖到这里", emptySyncTitle: "正在同步背包", emptyNoBackpackTitle: "需要背包", emptyNoResourcesTitle: "没有可熔炼资源", emptyNoFuelTitle: "缺少燃料", emptySelectInputTitle: "等待材料", emptyIdleTitle: "熔炼台待命", emptyHintReadPda: "读取 PDA", emptyHintSlots: "检查格子", emptyHintEquip: "装备背包", emptyHintMine: "采集资源", emptyHintCoordinate: "坐标绑定", emptyHintWood: "木质方块", emptyHintBiomass: "生物质", emptyHintSelect: "选择输入", emptyHintPreview: "预览产物", emptyHintFuel: "加入燃料", outputName: "{kind}{resource}", outputDescription: "从 {resource} 提炼出的可锻造材料批次，元素区间仍绑定原始采集坐标。", mixedBatch: "混合批次", batchBasis: "{inputs} 个输入 / {fuels} 个燃料", requiredHeat: "所需热量", yieldRange: "产出区间", quality: "品质依据", heatMet: "已满足等级 {tier}", heatMissing: "需要等级 {required}，燃料 {fuel}", previewOnly: "仅预览：熔炼合约尚未提交。", kindChar: "碳化", kindBiochar: "生物炭", kindCeramic: "烧结", kindBloom: "精炼", kindStabilized: "稳定化", kindMaterial: "加工", mobileTabsAria: "熔炼分区", tabBackpack: "背包", tabRecipes: "配方", tabFurnace: "熔炉", filterAria: "熔炼资源筛选", filterAll: "全部", filterRaw: "原料", filterFuel: "燃料", filterReady: "可用", filterMissing: "缺少", recipesEyebrow: "公开配方表", recipesTitle: "匹配背包输入", recipeFilterAria: "熔炼配方筛选", recipeProgress: "已匹配 {matched}/{required} 个输入格 · 热量等级 {tier}", recipeRequirement: "{resource} {available}/{amount}", selectRecipe: "选择配方", findInputs: "查找输入", recipeReady: "可熔炼", recipeFuelMissing: "缺少燃料", recipeMissingInputs: "缺少 {count} 个输入格", recipePartial: "部分匹配", coordinateUnknown: "坐标未知", closeDrawer: "关闭物品操作", singleItemCoordinate: "单格物品 · {coord}", removeInput: "移除原料", addInputFull: "加入原料", removeFuel: "移除燃料", useAsFuel: "设为燃料", viewRecipes: "查看配方", } } },
+  };
+
+  const materialPropertyPatches = {
+    en: {
+      main: {
+        smelting: { purity: "Purity", grade: "Grade" },
+        backpack: { materialPropertyLine: "{grade} grade · Purity {purity}/100" },
+        materialGrade: { crude: "Crude", standard: "Standard", refined: "Refined", prime: "Prime", mythic: "Mythic" },
+        materialAttributes: {
+          hardness: "Hardness",
+          durability: "Durability",
+          toughness: "Toughness",
+          ductility: "Ductility",
+          brittleness: "Brittleness",
+          density: "Density",
+          heatResistance: "Heat Resistance",
+          corrosionResistance: "Corrosion Resistance",
+          conductivity: "Conductivity",
+          thermalConductivity: "Thermal Conductivity",
+          magnetism: "Magnetism",
+          workability: "Workability",
+        },
+      },
+    },
+    "zh-Hans": {
+      main: {
+        smelting: { purity: "纯度", grade: "品级" },
+        backpack: { materialPropertyLine: "{grade}品级 · 纯度 {purity}/100" },
+        materialGrade: { crude: "粗制", standard: "标准", refined: "精炼", prime: "优质", mythic: "神话" },
+        materialAttributes: {
+          hardness: "硬度",
+          durability: "耐久",
+          toughness: "韧性",
+          ductility: "延展",
+          brittleness: "脆性",
+          density: "密度",
+          heatResistance: "耐热",
+          corrosionResistance: "抗腐蚀",
+          conductivity: "导电",
+          thermalConductivity: "导热",
+          magnetism: "磁性",
+          workability: "加工性",
+        },
+      },
+    },
+    "zh-Hant": {
+      main: {
+        smelting: { purity: "純度", grade: "品級" },
+        backpack: { materialPropertyLine: "{grade}品級 · 純度 {purity}/100" },
+        materialGrade: { crude: "粗製", standard: "標準", refined: "精煉", prime: "優質", mythic: "神話" },
+        materialAttributes: {
+          hardness: "硬度",
+          durability: "耐久",
+          toughness: "韌性",
+          ductility: "延展",
+          brittleness: "脆性",
+          density: "密度",
+          heatResistance: "耐熱",
+          corrosionResistance: "抗腐蝕",
+          conductivity: "導電",
+          thermalConductivity: "導熱",
+          magnetism: "磁性",
+          workability: "加工性",
+        },
+      },
+    },
   };
 
   const recipeStatusPatches = {
@@ -10316,7 +10430,8 @@ function createSmeltingLocalePatch(language) {
     "zh-Hans": { main: { smelting: { noRecipeName: "未匹配批次", noRecipeDescription: "所选批次尚未匹配 NiceChunk 官方熔炼配方。请按照公开材料表调整输入方块。", recipeMatched: "配方已匹配：{recipe}", recipeCandidate: "候选配方：{recipe}。", statusRecipeIncomplete: "候选配方 {recipe}：缺少 {missing}。", statusRecipeExtra: "候选配方 {recipe}：移除多余 {extra}。", noRecipeMatch: "此批次没有匹配公开配方。", missingInputLabel: "{amount}x {resource}" } } },
   };
 
-  return deepMerge(deepMerge(en, recipeStatusPatches[language] ?? {}), patches[language] ?? {});
+  const base = deepMerge(en, materialPropertyPatches.en);
+  return deepMerge(deepMerge(deepMerge(base, recipeStatusPatches[language] ?? {}), materialPropertyPatches[language] ?? {}), patches[language] ?? {});
 }
 
 function createRpcConfigLocalePatch(language) {
@@ -10405,9 +10520,9 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "Connection Endpoint",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "IP Address",
-        hostPlaceholder: "101.32.242.209",
+        hostPlaceholder: "guardian.example.com",
         port: "Port",
         operator: "Operator Authority",
         operatorPlaceholder: "Defaults to connected wallet",
@@ -10545,7 +10660,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "Endpoint de conexión",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "Host o IP",
         hostPlaceholder: "guardian.example.com",
         port: "Puerto",
@@ -10663,7 +10778,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "Endpoint de connexion",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "Hôte ou IP",
         hostPlaceholder: "guardian.example.com",
         port: "Port",
@@ -10782,7 +10897,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "Verbindungs-Endpoint",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "Host oder IP",
         hostPlaceholder: "guardian.example.com",
         port: "Port",
@@ -10900,7 +11015,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "接続エンドポイント",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "ホストまたは IP",
         hostPlaceholder: "guardian.example.com",
         port: "ポート",
@@ -11019,7 +11134,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "Endpoint подключения",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "Host или IP",
         hostPlaceholder: "guardian.example.com",
         port: "Порт",
@@ -11137,7 +11252,7 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "연결 endpoint",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "Host 또는 IP",
         hostPlaceholder: "guardian.example.com",
         port: "포트",
@@ -11256,9 +11371,9 @@ function createGuardianLocalePatch(language) {
         chunkX: "Chunk X",
         chunkY: "Chunk Y",
         connection: "连接端点",
-        connectionPlaceholder: "wss://101.32.242.209:8080",
+        connectionPlaceholder: "wss://guardian.example.com/ws",
         host: "IP 地址",
-        hostPlaceholder: "101.32.242.209",
+        hostPlaceholder: "guardian.example.com",
         port: "端口",
         operator: "操作员授权地址",
         operatorPlaceholder: "默认使用已连接钱包",
