@@ -24,6 +24,7 @@
     "validate:core": "npm run test:core",
     "validate:guardian": "ctest --test-dir Guardian/build --output-on-failure",
     "validate:release": "npm run validate:repo && npm run test:core && npm run build",
+    "validate:release:full": "npm run validate:release && npm run validate:guardian",
     "smelting:sync-recipes": "node scripts/sync-smelting-recipes.ts",
     "test:core": "node --loader ts-node/esm node_modules/mocha/bin/mocha -t 1000000 tests/**/*.ts",
     "prebuild": "npm run locales",
