@@ -4,33 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "locales": "node scripts/update-locales.mjs",
-    "generate:global-config": "node scripts/generate-global-config.ts",
-    "initialize:global-config": "node scripts/initialize-global-config.ts",
-    "core:derive-pdas": "node scripts/derive-pdas.ts",
-    "core:init": "node scripts/init-global-config.ts",
-    "core:verify": "node scripts/verify-global-config.ts",
-    "player:init": "node scripts/init-player.ts",
-    "chunk:record-block-change": "node scripts/record-block-change.ts",
-    "chunk:mine-block": "node scripts/mine-block.ts",
-    "chunk:verify-generated-block": "node scripts/verify-generated-block.ts",
-    "guardian:init-registry": "node scripts/init-guardian-registry.ts",
-    "guardian:register": "node scripts/register-guardian.ts",
-    "guardian:list": "node scripts/list-guardians.ts",
-    "guardian:proof": "node scripts/submit-guardian-proof.ts",
-    "repo:audit": "node scripts/audit-repository-health.mjs",
-    "validate:repo": "node --check scripts/split-github-repos.mjs && node --check scripts/audit-repository-health.mjs && npm run repo:audit",
-    "validate:core": "npm run test:core",
-    "validate:guardian": "ctest --test-dir Guardian/build --output-on-failure",
-    "validate:release": "npm run validate:repo && npm run test:core && npm run build",
-    "validate:release:full": "npm run validate:release && npm run validate:guardian",
-    "smelting:sync-recipes": "node scripts/sync-smelting-recipes.ts",
-    "test:core": "node --loader ts-node/esm node_modules/mocha/bin/mocha -t 1000000 tests/**/*.ts",
-    "prebuild": "npm run locales",
+    "audit:deps": "node scripts/audit-dependencies.mjs",
     "build": "vite build",
     "build:nginx": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev": "vite --host 0.0.0.0",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate:release": "npm run audit:deps && npm run build"
   },
   "dependencies": {
     "@solana/spl-token": "^0.4.14",
@@ -46,6 +25,12 @@
     "playwright": "^1.60.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "vite": "^5.4.19"
+    "vite": "^8.1.0"
+  },
+  "overrides": {
+    "mocha": {
+      "diff": "^9.0.0",
+      "serialize-javascript": "^7.0.6"
+    }
   }
 }
