@@ -4,6 +4,12 @@
 
 Web interface for Guardian registry inspection and registration workflows.
 
+## Official Links
+
+GitHub: [https://github.com/nicechunk/nicechunk-guardian-web](https://github.com/nicechunk/nicechunk-guardian-web)
+
+Website: [https://nicechunk.com/guardian/](https://nicechunk.com/guardian/)
+
 ## Project Overview
 
 This repository contains the browser interface for interacting with the Guardian registry. It allows developers and operators to inspect the current Guardian program, connect a wallet, preview region ownership, and prepare registration flows.
