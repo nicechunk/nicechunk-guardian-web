@@ -22,6 +22,7 @@ const pageInputs = Object.fromEntries(
     ncm: "ncm/index.html",
     ncm_dna: "ncm_dna/index.html",
     fourier_pickaxe: "fourier-pickaxe/index.html",
+    fourier_voxel: "fourier-voxel/index.html",
     elements: "elements/index.html",
     forging: "forging/index.html",
     mining: "mining/index.html",
