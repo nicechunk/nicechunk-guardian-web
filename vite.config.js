@@ -20,12 +20,14 @@ const pageInputs = Object.fromEntries(
     world_rule: "world_rule/index.html",
     resource_rule: "resource_rule/index.html",
     ncm: "ncm/index.html",
+    ncfm: "ncfm/index.html",
     ncm_dna: "ncm_dna/index.html",
     fourier_pickaxe: "fourier-pickaxe/index.html",
     fourier_voxel: "fourier-voxel/index.html",
     elements: "elements/index.html",
     forging: "forging/index.html",
     mining: "mining/index.html",
+    seed: "seed/index.html",
     guardian: "guardian/index.html",
     contracts: "contracts/index.html",
     civilization: "civilization/index.html",
@@ -77,6 +79,11 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: pageInputs,
+      output: {
+        manualChunks(id) {
+          return id.replaceAll("\\", "/").endsWith("/src/render/resourcePreview.js") ? "resourcePreview" : undefined;
+        },
+      },
     },
   },
 });
