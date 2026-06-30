@@ -15,19 +15,112 @@ export const languages = [
 ];
 
 const languageCodes = new Set(languageOrder);
-const enabledLanguageFallback = new Set(["en", "zh-Hans"]);
 const defaultI18nConfig = {
-  mainnetKey: "i18n",
-  localeBase: "/locales",
+  localeBase: "/home/locales",
   storageKeys: {
     language: "nicechunk.language",
-    localeVersionPrefix: "nicechunk.locale.version.",
-    localeDataPrefix: "nicechunk.locale.data.",
+    localeVersionPrefix: "nicechunk.home.locale.version.",
+    localeDataPrefix: "nicechunk.home.locale.data.",
   },
 };
 const scopedI18nConfig = {
+  home: {
+    localeBase: "/home/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.home.locale.version.",
+      localeDataPrefix: "nicechunk.home.locale.data.",
+    },
+  },
+  login: {
+    localeBase: "/login/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.login.locale.version.",
+      localeDataPrefix: "nicechunk.login.locale.data.",
+    },
+  },
+  docs: {
+    localeBase: "/docs/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.docs.locale.version.",
+      localeDataPrefix: "nicechunk.docs.locale.data.",
+    },
+  },
+  roadmap: {
+    localeBase: "/roadmap/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.roadmap.locale.version.",
+      localeDataPrefix: "nicechunk.roadmap.locale.data.",
+    },
+  },
+  fairness: {
+    localeBase: "/fairness/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.fairness.locale.version.",
+      localeDataPrefix: "nicechunk.fairness.locale.data.",
+    },
+  },
+  play: {
+    localeBase: "/play/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.play.locale.version.",
+      localeDataPrefix: "nicechunk.play.locale.data.",
+    },
+  },
+  ncm: {
+    localeBase: "/ncm/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.ncm.locale.version.",
+      localeDataPrefix: "nicechunk.ncm.locale.data.",
+    },
+  },
+  ncfm: {
+    localeBase: "/ncfm/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.ncfm.locale.version.",
+      localeDataPrefix: "nicechunk.ncfm.locale.data.",
+    },
+  },
+  ncmDna: {
+    localeBase: "/ncm_dna/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.ncmDna.locale.version.",
+      localeDataPrefix: "nicechunk.ncmDna.locale.data.",
+    },
+  },
+  fourierPickaxe: {
+    localeBase: "/fourier-pickaxe/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.fourierPickaxe.locale.version.",
+      localeDataPrefix: "nicechunk.fourierPickaxe.locale.data.",
+    },
+  },
+  fourierVoxel: {
+    localeBase: "/fourier-voxel/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.fourierVoxel.locale.version.",
+      localeDataPrefix: "nicechunk.fourierVoxel.locale.data.",
+    },
+  },
+  trust: {
+    localeBase: "/trust/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.trust.locale.version.",
+      localeDataPrefix: "nicechunk.trust.locale.data.",
+    },
+  },
   elements: {
-    mainnetKey: "elementsI18n",
     localeBase: "/elements/locales",
     storageKeys: {
       language: "nicechunk.language",
@@ -36,7 +129,6 @@ const scopedI18nConfig = {
     },
   },
   resourceRule: {
-    mainnetKey: "resourceRuleI18n",
     localeBase: "/resource_rule/locales",
     storageKeys: {
       language: "nicechunk.language",
@@ -45,12 +137,75 @@ const scopedI18nConfig = {
     },
   },
   proofOfFrontier: {
-    mainnetKey: "proofOfFrontierI18n",
     localeBase: "/proof-of-frontier/locales",
     storageKeys: {
       language: "nicechunk.language",
       localeVersionPrefix: "nicechunk.proofOfFrontier.locale.version.",
       localeDataPrefix: "nicechunk.proofOfFrontier.locale.data.",
+    },
+  },
+  forging: {
+    localeBase: "/forging/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.forging.locale.version.",
+      localeDataPrefix: "nicechunk.forging.locale.data.",
+    },
+  },
+  contracts: {
+    localeBase: "/contracts/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.contracts.locale.version.",
+      localeDataPrefix: "nicechunk.contracts.locale.data.",
+    },
+  },
+  seed: {
+    localeBase: "/seed/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.seed.locale.version.",
+      localeDataPrefix: "nicechunk.seed.locale.data.",
+    },
+  },
+  playerSet: {
+    localeBase: "/player_set/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.playerSet.locale.version.",
+      localeDataPrefix: "nicechunk.playerSet.locale.data.",
+    },
+  },
+  worldRule: {
+    localeBase: "/world_rule/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.worldRule.locale.version.",
+      localeDataPrefix: "nicechunk.worldRule.locale.data.",
+    },
+  },
+  mining: {
+    localeBase: "/mining/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.mining.locale.version.",
+      localeDataPrefix: "nicechunk.mining.locale.data.",
+    },
+  },
+  guardian: {
+    localeBase: "/guardian/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.guardian.locale.version.",
+      localeDataPrefix: "nicechunk.guardian.locale.data.",
+    },
+  },
+  civilization: {
+    localeBase: "/civilization/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.civilization.locale.version.",
+      localeDataPrefix: "nicechunk.civilization.locale.data.",
     },
   },
 };
@@ -66,7 +221,6 @@ let activeLanguage = normalizeLanguage(localStorage.getItem(languageStorageKey))
 let activeDictionary = {};
 let fallbackDictionary = {};
 let fallbackDictionaryPromise = null;
-let mainnetIndex = null;
 let readyPromise = null;
 
 function detectPageI18nScope() {
@@ -253,9 +407,7 @@ function comingSoonLabel() {
 }
 
 function isLanguageAvailable(language) {
-  const scopedIndex = mainnetIndex?.[activeI18nConfig.mainnetKey] ?? mainnetIndex?.i18n;
-  if (scopedIndex?.locales) return Boolean(scopedIndex.locales[language]);
-  return enabledLanguageFallback.has(language);
+  return languageCodes.has(language);
 }
 
 async function loadLanguage(language) {
@@ -296,31 +448,17 @@ async function ensureFallbackDictionary() {
 }
 
 async function loadDictionary(language) {
-  const mainnet = await fetchMainnetIndex().catch(() => null);
-  const scopedIndex = mainnet?.[activeI18nConfig.mainnetKey] ?? mainnet?.i18n;
-  const remoteLocale = scopedIndex?.locales?.[language];
-  if (scopedIndex?.locales && !remoteLocale) throw new Error(`Locale is not published: ${language}`);
-  const cached = readCachedDictionary(language, remoteLocale?.version);
+  const version = buildVersion;
+  const cached = readCachedDictionary(language, version);
   if (cached) return cached;
 
-  const dictionary = await fetchDictionary(language, remoteLocale);
-  writeCachedDictionary(language, dictionary, remoteLocale?.version ?? dictionary?._meta?.version ?? buildVersion);
+  const dictionary = await fetchDictionary(language, version);
+  writeCachedDictionary(language, dictionary, version);
   return dictionary;
 }
 
-async function fetchMainnetIndex() {
-  if (mainnetIndex) return mainnetIndex;
-  const response = await fetch(`/mainnet.json?v=${encodeURIComponent(buildVersion)}`, {
-    cache: "no-store",
-  });
-  if (!response.ok) throw new Error("Failed to load mainnet index");
-  mainnetIndex = await response.json();
-  return mainnetIndex;
-}
-
-async function fetchDictionary(language, remoteLocale = null) {
-  const url = remoteLocale?.url || `${activeI18nConfig.localeBase}/${language}.json`;
-  const version = remoteLocale?.version || buildVersion;
+async function fetchDictionary(language, version = buildVersion) {
+  const url = `${activeI18nConfig.localeBase}/${language}.json`;
   const response = await fetch(`${url}?v=${encodeURIComponent(version)}`, {
     cache: "no-store",
   });
