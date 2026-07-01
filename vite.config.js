@@ -28,6 +28,7 @@ const pageInputs = Object.fromEntries(
     forging: "forging/index.html",
     mining: "mining/index.html",
     seed: "seed/index.html",
+    chip: "chip/index.html",
     guardian: "guardian/index.html",
     contracts: "contracts/index.html",
     civilization: "civilization/index.html",

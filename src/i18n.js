@@ -168,6 +168,14 @@ const scopedI18nConfig = {
       localeDataPrefix: "nicechunk.seed.locale.data.",
     },
   },
+  chip: {
+    localeBase: "/chip/locales",
+    storageKeys: {
+      language: "nicechunk.language",
+      localeVersionPrefix: "nicechunk.chip.locale.version.",
+      localeDataPrefix: "nicechunk.chip.locale.data.",
+    },
+  },
   playerSet: {
     localeBase: "/player_set/locales",
     storageKeys: {
@@ -417,7 +425,8 @@ async function loadLanguage(language) {
       fallbackDictionary = activeDictionary;
       fallbackDictionaryPromise = Promise.resolve(fallbackDictionary);
     } else {
-      await ensureFallbackDictionary();
+      fallbackDictionary = {};
+      fallbackDictionaryPromise = null;
     }
   } catch (error) {
     if (language === defaultLanguage) throw error;
@@ -429,22 +438,6 @@ async function loadLanguage(language) {
   }
   document.documentElement.lang = activeLanguage;
   return activeDictionary;
-}
-
-async function ensureFallbackDictionary() {
-  if (Object.keys(fallbackDictionary).length) return fallbackDictionary;
-  if (!fallbackDictionaryPromise) {
-    fallbackDictionaryPromise = loadDictionary(defaultLanguage)
-      .then((dictionary) => {
-        fallbackDictionary = dictionary;
-        return fallbackDictionary;
-      })
-      .catch((error) => {
-        fallbackDictionaryPromise = null;
-        throw error;
-      });
-  }
-  return fallbackDictionaryPromise;
 }
 
 async function loadDictionary(language) {
